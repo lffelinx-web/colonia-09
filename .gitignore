@@ -27,3 +27,6 @@
 
 # Android build temp
 /.utmp/
+
+# Sprite render test output
+/Tools/Render/out/
