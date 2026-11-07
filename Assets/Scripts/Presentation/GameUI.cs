@@ -20,7 +20,7 @@ namespace Colonia09.Presentation
     /// <summary>Builds the whole portrait interface from code, inside the device safe area.</summary>
     public sealed class GameUI : MonoBehaviour
     {
-        const float RefWidth = 1080, HudHeight = 226, DockHeight = 352;
+        const float RefWidth = 1080, HudHeight = 218, DockHeight = 352;
 
         static readonly Color Bg = Html("#071622"), Panel = Html("#102638"), PanelLight = Html("#173449"), Line = Html("#35566a"),
             Cyan = Html("#86e6ee"), Txt = Html("#eaf9fb"), Muted = Html("#99b5c7"), Gold = Html("#ffd38b"), Red = Html("#ff8c8a"), Green = Html("#91e5bd");
@@ -29,7 +29,10 @@ namespace Colonia09.Presentation
         Font font;
         Sprite rounded;
         RectTransform safeArea, field;
-        Text waveText, coreText, chargeText, capacityText, powerText, statusText, toastText, dockTitle, dockHint;
+        Text waveText, coreText, chargeText, powerText, usageText, statusText, toastText, dockTitle, dockHint;
+        RectTransform waveFill, energyFill;
+        Image energyFillImage;
+        readonly List<Image> corePips = new List<Image>();
         Text modalKicker, modalTitle, modalLead, modalInfo, modalFooter, primaryLabel, secondaryLabel;
         Text inspectName, inspectDetail, upgradeLabel, sellLabel;
         Image inspectIcon, toastBg;
@@ -152,54 +155,109 @@ namespace Colonia09.Presentation
             hud.sizeDelta = new Vector2(0, HudHeight);
             hud.anchoredPosition = Vector2.zero;
 
-            var brand = Label(hud, "COLONIA <color=#86e6ee>09</color>", 42, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
-            Place(brand.rectTransform, new Vector2(24, -88), new Vector2(330, 0), true);
-            statusText = Label(hud, "", 25, Muted, TextAnchor.MiddleLeft);
-            statusText.resizeTextForBestFit = true; statusText.resizeTextMinSize = 16; statusText.resizeTextMaxSize = 25;
+            // Top row: wave chip, status ticker, audio and menu buttons.
+            Icon(hud, "icon_wave", 14, -8, 66);
+            waveText = Label(hud, "", 36, Cyan, TextAnchor.MiddleLeft, FontStyle.Bold);
+            TopLeft(waveText.rectTransform, 86, -6, 240, 50);
+            waveFill = Bar(hud, 88, -60, 220, 12, Cyan);
+
+            statusText = Label(hud, "", 24, Muted, TextAnchor.MiddleLeft);
+            statusText.horizontalOverflow = HorizontalWrapMode.Wrap;
+            statusText.resizeTextForBestFit = true; statusText.resizeTextMinSize = 14; statusText.resizeTextMaxSize = 24;
             var statusRt = statusText.rectTransform;
             statusRt.anchorMin = new Vector2(0, 1); statusRt.anchorMax = Vector2.one; statusRt.pivot = new Vector2(.5f, 1);
-            statusRt.offsetMin = new Vector2(345, -88); statusRt.offsetMax = new Vector2(-212, 0);
+            statusRt.offsetMin = new Vector2(330, -84); statusRt.offsetMax = new Vector2(-206, -4);
 
             MenuButton = TextButton(hud, "≡", 52, PanelLight, Txt, game.Pause);
             var menuRt = (RectTransform)MenuButton.transform;
             menuRt.anchorMin = menuRt.anchorMax = Vector2.one; menuRt.pivot = Vector2.one;
-            menuRt.sizeDelta = new Vector2(88, 74); menuRt.anchoredPosition = new Vector2(-14, -8);
+            menuRt.sizeDelta = new Vector2(86, 72); menuRt.anchoredPosition = new Vector2(-14, -8);
             AudioButton = TextButton(hud, "♪", 46, PanelLight, Cyan, () => { game.Audio.Toggle(); RefreshAudioButton(); });
             audioLabel = AudioButton.GetComponentInChildren<Text>();
             var audioRt = (RectTransform)AudioButton.transform;
             audioRt.anchorMin = audioRt.anchorMax = Vector2.one; audioRt.pivot = Vector2.one;
-            audioRt.sizeDelta = new Vector2(88, 74); audioRt.anchoredPosition = new Vector2(-114, -8);
+            audioRt.sizeDelta = new Vector2(86, 72); audioRt.anchoredPosition = new Vector2(-110, -8);
             RefreshAudioButton();
 
-            var row = Rt("Stats", hud);
-            row.anchorMin = Vector2.zero; row.anchorMax = new Vector2(1, 0); row.pivot = new Vector2(.5f, 0);
-            row.sizeDelta = new Vector2(-28, 128);
-            row.anchoredPosition = new Vector2(0, 8);
-            var layout = row.gameObject.AddComponent<HorizontalLayoutGroup>();
-            layout.spacing = 12; layout.childForceExpandHeight = true; layout.childForceExpandWidth = true;
-            layout.childControlHeight = true; layout.childControlWidth = true;
+            // Bottom row: base integrity on the left, the energy battery on the right.
+            var panel = Rt("Vitals", hud);
+            panel.anchorMin = Vector2.zero; panel.anchorMax = new Vector2(1, 0); panel.pivot = new Vector2(.5f, 0);
+            panel.sizeDelta = new Vector2(-24, 118);
+            panel.anchoredPosition = new Vector2(0, 6);
+            var panelBg = panel.gameObject.AddComponent<Image>();
+            panelBg.sprite = rounded; panelBg.type = Image.Type.Sliced; panelBg.color = Panel; panelBg.raycastTarget = false;
+            var outline = panel.gameObject.AddComponent<Outline>();
+            outline.effectColor = new Color(Line.r, Line.g, Line.b, .8f); outline.effectDistance = new Vector2(2, -2);
 
-            waveText = StatBox(row, "OLA", Cyan, out _);
-            coreText = StatBox(row, "BASE", Red, out _);
-            chargeText = StatBox(row, "/230 MÁX.", Gold, out capacityText);
-            powerText = StatBox(row, "ENERGÍA /SEG.", Green, out _);
+            Icon(panel, "icon_base", 10, -12, 92);
+            coreText = Label(panel, "", 50, Red, TextAnchor.MiddleLeft, FontStyle.Bold);
+            TopLeft(coreText.rectTransform, 108, -6, 120, 62);
+            var baseCaption = Label(panel, "BASE", 20, Muted, TextAnchor.MiddleLeft, FontStyle.Bold);
+            TopLeft(baseCaption.rectTransform, 196, -20, 120, 36);
+            for (int i = 0; i < GameData.CoreMax; i++)
+            {
+                var pip = Rt("Pip", panel).gameObject.AddComponent<Image>();
+                pip.sprite = rounded; pip.type = Image.Type.Sliced; pip.raycastTarget = false;
+                TopLeft(pip.rectTransform, 110 + i * 15, -78, 12, 24);
+                corePips.Add(pip);
+            }
+
+            Icon(panel, "icon_energy", 348, -12, 92);
+            var track = Rt("Battery", panel);
+            track.anchorMin = new Vector2(0, 1); track.anchorMax = Vector2.one; track.pivot = new Vector2(0, 1);
+            track.offsetMin = new Vector2(446, -64); track.offsetMax = new Vector2(-18, -14);
+            var trackBg = track.gameObject.AddComponent<Image>();
+            trackBg.sprite = rounded; trackBg.type = Image.Type.Sliced; trackBg.color = Html("#071620"); trackBg.raycastTarget = false;
+            energyFill = Rt("Charge", track);
+            energyFill.anchorMin = Vector2.zero; energyFill.anchorMax = new Vector2(.5f, 1);
+            energyFill.offsetMin = new Vector2(3, 3); energyFill.offsetMax = new Vector2(-3, -3);
+            energyFillImage = energyFill.gameObject.AddComponent<Image>();
+            energyFillImage.sprite = rounded; energyFillImage.type = Image.Type.Sliced; energyFillImage.color = Gold; energyFillImage.raycastTarget = false;
+            var sheen = Rt("Sheen", energyFill).gameObject.AddComponent<Image>();
+            sheen.sprite = rounded; sheen.type = Image.Type.Sliced; sheen.color = new Color(1, 1, 1, .22f); sheen.raycastTarget = false;
+            sheen.rectTransform.anchorMin = new Vector2(0, .55f); sheen.rectTransform.anchorMax = Vector2.one;
+            sheen.rectTransform.offsetMin = new Vector2(4, 0); sheen.rectTransform.offsetMax = new Vector2(-4, -3);
+            chargeText = Label(track, "", 30, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
+            var chargeOutline = chargeText.gameObject.AddComponent<Outline>();  // Readable over both the gold fill and the dark track.
+            chargeOutline.effectColor = new Color(.03f, .08f, .12f, .95f); chargeOutline.effectDistance = new Vector2(2, -2);
+
+            powerText = Label(panel, "", 22, Green, TextAnchor.MiddleLeft, FontStyle.Bold);
+            var powerRt = powerText.rectTransform;
+            powerRt.anchorMin = new Vector2(0, 0); powerRt.anchorMax = new Vector2(1, 0); powerRt.pivot = new Vector2(0, 0);
+            powerRt.offsetMin = new Vector2(450, 8); powerRt.offsetMax = new Vector2(-20, 44);
+            usageText = Label(panel, "", 22, Red, TextAnchor.MiddleRight, FontStyle.Bold);
+            var usageRt = usageText.rectTransform;
+            usageRt.anchorMin = new Vector2(0, 0); usageRt.anchorMax = new Vector2(1, 0); usageRt.pivot = new Vector2(0, 0);
+            usageRt.offsetMin = new Vector2(450, 8); usageRt.offsetMax = new Vector2(-20, 44);
         }
 
-        Text StatBox(RectTransform parent, string caption, Color accent, out Text captionText)
+        void Icon(RectTransform parent, string name, float x, float y, float size)
         {
-            var box = Rt("Stat", parent);
-            var bg = box.gameObject.AddComponent<Image>();
-            bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = Panel; bg.raycastTarget = false;
-            var value = Label(box, "", 54, accent, TextAnchor.MiddleCenter, FontStyle.Bold);
-            value.resizeTextForBestFit = true; value.resizeTextMinSize = 28; value.resizeTextMaxSize = 54;
-            value.rectTransform.anchorMin = new Vector2(0, .34f); value.rectTransform.anchorMax = Vector2.one;
-            value.rectTransform.offsetMin = new Vector2(6, 0); value.rectTransform.offsetMax = new Vector2(-6, -4);
-            captionText = Label(box, caption, 24, Muted, TextAnchor.MiddleCenter);
-            captionText.rectTransform.anchorMin = Vector2.zero; captionText.rectTransform.anchorMax = new Vector2(1, .36f);
-            captionText.rectTransform.offsetMin = new Vector2(4, 4); captionText.rectTransform.offsetMax = new Vector2(-4, 0);
-            return value;
+            var image = Rt("Icon", parent).gameObject.AddComponent<Image>();
+            image.sprite = Resources.Load<Sprite>("Sprites/UI/" + name);
+            image.preserveAspect = true; image.raycastTarget = false;
+            TopLeft(image.rectTransform, x, y, size, size);
         }
 
+        RectTransform Bar(RectTransform parent, float x, float y, float width, float height, Color color)
+        {
+            var track = Rt("Bar", parent).gameObject.AddComponent<Image>();
+            track.sprite = rounded; track.type = Image.Type.Sliced; track.color = Html("#0b2232"); track.raycastTarget = false;
+            TopLeft(track.rectTransform, x, y, width, height);
+            var fill = Rt("Fill", track.transform).gameObject.AddComponent<Image>();
+            fill.sprite = rounded; fill.type = Image.Type.Sliced; fill.color = color; fill.raycastTarget = false;
+            fill.rectTransform.anchorMin = Vector2.zero; fill.rectTransform.anchorMax = new Vector2(0, 1);
+            fill.rectTransform.offsetMin = fill.rectTransform.offsetMax = Vector2.zero;
+            return fill.rectTransform;
+        }
+
+        static void TopLeft(RectTransform rt, float x, float y, float width, float height)
+        {
+            rt.anchorMin = rt.anchorMax = new Vector2(0, 1);
+            rt.pivot = new Vector2(0, 1);
+            rt.anchoredPosition = new Vector2(x, y);
+            rt.sizeDelta = new Vector2(width, height);
+        }
         void BuildDock()
         {
             var dock = Rt("Dock", safeArea);
@@ -465,11 +523,23 @@ namespace Colonia09.Presentation
             labelsUsed = 0;
 
             var sim = game.Sim;
-            waveText.text = $"{sim.Wave}/{GameData.MaxWave}";
-            coreText.text = Mathf.CeilToInt((float)sim.Core).ToString();
-            chargeText.text = Mathf.FloorToInt((float)sim.Charge).ToString();
-            capacityText.text = $"ENERGÍA /{sim.EnergyCapacity:0}";
-            powerText.text = $"+{sim.ChargingGeneration:0.0}";
+            waveText.text = $"OLA {sim.Wave}<size=26><color=#99b5c7>/{GameData.MaxWave}</color></size>";
+            float waveDone = sim.WaveTotal > 0 && sim.WaveBreak <= 0 ? 1 - (sim.SpawnRemaining + sim.Enemies.Count) / (float)sim.WaveTotal : 1;
+            waveFill.anchorMax = new Vector2(Mathf.Clamp01(waveDone), 1);
+
+            int core = Mathf.CeilToInt((float)sim.Core);
+            coreText.text = core.ToString();
+            for (int i = 0; i < corePips.Count; i++)
+                corePips[i].color = i < core ? (core <= 5 ? Color.Lerp(Red, Color.white, Mathf.PingPong(Time.unscaledTime * 2, .35f)) : Red) : Html("#2a1d22");
+
+            float capacity = Mathf.Max(1, (float)sim.EnergyCapacity);
+            float fraction = Mathf.Clamp01((float)sim.Charge / capacity);
+            energyFill.anchorMax = new Vector2(Mathf.Max(.02f, fraction), 1);
+            bool low = sim.Charge < GameSimulation.BuildCost(ModuleType.Relay);
+            energyFillImage.color = low ? Color.Lerp(Red, Gold, Mathf.PingPong(Time.unscaledTime * 2, 1)) : Gold;
+            chargeText.text = $"{Mathf.FloorToInt((float)sim.Charge)} <size=22>/ {sim.EnergyCapacity:0}</size>";
+            powerText.text = $"+{sim.ChargingGeneration:0.0}/s  PRODUCCIÓN";
+            usageText.text = sim.ConsumptionRate > .05 ? $"GASTO  −{sim.ConsumptionRate:0.0}/s" : "";
             statusText.text = Safe(sim.StatusText());
             statusText.color = statusText.text.StartsWith("!") ? Red : Muted;
             if (toastBg.gameObject.activeSelf && Time.unscaledTime > toastUntil) toastBg.gameObject.SetActive(false);

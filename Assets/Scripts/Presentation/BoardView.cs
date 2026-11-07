@@ -12,6 +12,8 @@ namespace Colonia09.Presentation
     public sealed class BoardView : MonoBehaviour
     {
         const int W = GameData.Width, H = GameData.Height;
+        // Pieces leave a margin inside their cell so a full board still shows the deck between them.
+        const float ModuleScale = .82f, EnemyScale = .88f;
         const int OrderBoard = 0, OrderWreck = 5, OrderLinks = 10, OrderModules = 20, OrderMarks = 25, OrderEnemies = 30, OrderBars = 40, OrderFx = 50;
 
         GameController game;
@@ -255,23 +257,23 @@ namespace Colonia09.Presentation
                     fanAngle.TryGetValue(m, out var angle);
                     if (m.Powered && !m.IsDeploying && !jam) angle += Time.unscaledDeltaTime * (38 + m.Level * 16);
                     fanAngle[m] = angle;
-                    Draw(generatorBase, pos, Vector2.one, color, OrderModules);
-                    Draw(generatorFan, pos, Vector2.one, color, OrderModules + 1, -angle);
+                    Draw(generatorBase, pos, Vector2.one * ModuleScale, color, OrderModules);
+                    Draw(generatorFan, pos, Vector2.one * ModuleScale, color, OrderModules + 1, -angle);
                 }
                 else if (m.Type == ModuleType.Pulse && pulseBase != null && pulseBarrel != null)
                 {
                     // The barrel slides back into its housing when it fires, then returns.
-                    Draw(pulseBase, pos, Vector2.one, color, OrderModules);
-                    Draw(pulseBarrel, pos + new Vector2(0, -fire * .13f), Vector2.one, color, OrderModules + 1);
+                    Draw(pulseBase, pos, Vector2.one * ModuleScale, color, OrderModules);
+                    Draw(pulseBarrel, pos + new Vector2(0, -fire * .11f), Vector2.one * ModuleScale, color, OrderModules + 1);
                 }
                 else
                 {
-                    Draw(moduleSprites[m.Type], pos, Vector2.one, color, OrderModules);
+                    Draw(moduleSprites[m.Type], pos, Vector2.one * ModuleScale, color, OrderModules);
                 }
                 if (fire > 0 && (m.Type == ModuleType.Pulse || m.Type == ModuleType.Cryo || m.Type == ModuleType.Tesla))
                 {
                     var bloom = m.Type == ModuleType.Tesla ? Hex("#caa4ff") : m.Type == ModuleType.Cryo ? Hex("#a9efff") : Hex("#ffe7a7");
-                    var muzzle = pos + new Vector2(0, m.Type == ModuleType.Pulse ? .47f - fire * .13f : .2f);
+                    var muzzle = pos + new Vector2(0, m.Type == ModuleType.Pulse ? .39f - fire * .11f : .2f);
                     Draw(circle, muzzle, Vector2.one * (.18f + fire * .26f), Alpha(bloom, fire * .7f), OrderMarks);
                     Draw(circle, muzzle, Vector2.one * (.08f + fire * .1f), new Color(1, 1, 1, fire), OrderMarks + 1);
                 }
@@ -279,7 +281,7 @@ namespace Colonia09.Presentation
                 if (!m.IsDeploying && m.Hp < m.MaxHp * .35) DrawSmoke(pos, m.C * 3 + m.R * 7, .5f, t);
 
                 if (m == game.Selected)
-                    Draw(ring, pos, Vector2.one * 1.1f, Alpha(Hex("#ffd38b"), .7f + .3f * Mathf.Sin(t * 6)), OrderMarks);
+                    Draw(ring, pos, Vector2.one * .98f, Alpha(Hex("#ffd38b"), .7f + .3f * Mathf.Sin(t * 6)), OrderMarks);
 
                 for (int i = 0; i < m.Level - 1; i++)
                     Draw(circle, pos + new Vector2(-.36f + i * .13f, -.38f), Vector2.one * .1f, Hex(def.Color), OrderMarks);
@@ -395,12 +397,12 @@ namespace Colonia09.Presentation
                 int order = OrderEnemies + (air ? 4 : 0);
                 float rot = e.Kind == EnemyKind.Helicopter ? Mathf.Sin(t * 1.7f + e.Id) * 3 : 0;
                 var frames = enemySprites[e.Kind];
-                Draw(frames[Mathf.FloorToInt(t * fps + (float)e.Phase * 2) % frames.Length], pos, Vector2.one, tint, order, rot);
+                Draw(frames[Mathf.FloorToInt(t * fps + (float)e.Phase * 2) % frames.Length], pos, Vector2.one * EnemyScale, tint, order, rot);
                 if (e.Kind == EnemyKind.Helicopter && helicopterRotor != null)
                 {
                     float spin = t * 600 + e.Id * 37;
-                    Draw(helicopterRotor, pos, Vector2.one, new Color(tint.r, tint.g, tint.b, .35f), order + 1, rot - spin + 14);
-                    Draw(helicopterRotor, pos, Vector2.one, tint, order + 2, rot - spin);
+                    Draw(helicopterRotor, pos, Vector2.one * EnemyScale, new Color(tint.r, tint.g, tint.b, .35f), order + 1, rot - spin + 14);
+                    Draw(helicopterRotor, pos, Vector2.one * EnemyScale, tint, order + 2, rot - spin);
                 }
                 if (e.Hit > 0) Draw(circle, pos, Vector2.one * .56f, new Color(1, 1, 1, (float)(e.Hit / .2) * .3f), order + 1);
 

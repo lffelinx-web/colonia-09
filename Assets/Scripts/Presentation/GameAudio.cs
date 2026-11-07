@@ -13,6 +13,9 @@ namespace Colonia09.Presentation
     {
         const int Rate = 44100;
         const float Master = .76f, MusicMix = .56f;
+        // The prototype's levels were tuned for a browser and are far too quiet on a phone speaker.
+        // Effects are driven harder into a soft limiter; music gets a plain boost.
+        const float EffectsDrive = 5.5f, MusicBoost = 4.5f;
         const string PrefKey = "colonia09.audio";
 
         AudioSource sfxSource, musicSource;
@@ -78,7 +81,7 @@ namespace Colonia09.Presentation
             float gap = MinGap.TryGetValue(name, out var g) ? g : .24f;
             if (!force && lastPlayed.TryGetValue(name, out var last) && last + gap > now) return;
             lastPlayed[name] = now;
-            sfxSource.PlayOneShot(clip, Master);
+            sfxSource.PlayOneShot(clip, 1);
         }
 
         /// <summary>One step of the ambient soundtrack, every 1.48 s while playing.</summary>
@@ -89,7 +92,7 @@ namespace Colonia09.Presentation
             float root = new[] { 55f, 49f, 61.735f, 43.655f }[(musicStep / 8) % 4];
             PlayNote(root, 1.95f, .062f + tension * .018f, Wave.Sine);
             if (musicStep % 2 == 0) PlayNote(root * 1.498f, 1.45f, .025f + tension * .015f, Wave.Triangle);
-            if (tension > .34f && musicStep % 2 == 1) musicSource.PlayOneShot(clips["musicThump"], (.028f + tension * .015f) * MusicMix * Master);
+            if (tension > .34f && musicStep % 2 == 1) musicSource.PlayOneShot(clips["musicThump"], Mathf.Min(1, (.028f + tension * .015f) * MusicMix * Master * MusicBoost));
             musicStep++;
         }
 
@@ -104,7 +107,7 @@ namespace Colonia09.Presentation
                 clip.SetData(buffer, 0);
                 musicClips[key] = clip;
             }
-            musicSource.PlayOneShot(clip, volume * MusicMix * Master);
+            musicSource.PlayOneShot(clip, Mathf.Min(1, volume * MusicMix * Master * MusicBoost));
         }
 
         // ---- Synthesis ----------------------------------------------------------------
@@ -115,6 +118,8 @@ namespace Colonia09.Presentation
         {
             var buffer = new float[(int)((length + .03f) * Rate)];
             synth(buffer);
+            if (name != "musicThump")
+                for (int i = 0; i < buffer.Length; i++) buffer[i] = (float)Math.Tanh(buffer[i] * Master * EffectsDrive);
             var clip = AudioClip.Create(name, buffer.Length, 1, Rate, false);
             clip.SetData(buffer, 0);
             clips[name] = clip;

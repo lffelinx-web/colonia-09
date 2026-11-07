@@ -40,6 +40,8 @@ namespace Colonia09.Simulation
         public int TotalKills { get; private set; }
         public double Elapsed { get; private set; }
         public int SpawnRemaining { get; private set; }
+        /// <summary>Enemies the current wave started with, for the HUD progress bar.</summary>
+        public int WaveTotal { get; private set; }
         public double WaveBreak { get; private set; }
         public double FrontDelay { get; private set; }
         public uint RandomSeed { get; private set; } = 271;
@@ -120,6 +122,7 @@ namespace Colonia09.Simulation
             var plan = Plan;
             spawnIndex = 0;
             SpawnRemaining = Math.Max(1, (int)JsRound(plan.Count * Conf.Size));
+            WaveTotal = SpawnRemaining;
             waveGateAt = (int)Math.Ceiling(SpawnRemaining / 3.0);
             secondFront = 0; FrontDelay = 0;
             spawnClock = Wave == 1 ? 2.4 : Math.Max(1.1, plan.Gap * .95);
@@ -1374,7 +1377,7 @@ namespace Colonia09.Simulation
             if (ChargingGeneration <= .01) return "CONECTA UN GENERADOR AL NÚCLEO";
             if (WaveBreak > 0) return $"SECTOR SEGURO · {Math.Ceiling(WaveBreak)}s";
             if (FrontDelay > 0) return $"REFUERZOS EN {Math.Ceiling(FrontDelay)}s";
-            return $"⚡ {Math.Floor(Charge)}/{EnergyCapacity} · PRODUCCIÓN +{ChargingGeneration:0.0}/s · GASTO −{ConsumptionRate:0.0}/s";
+            return "RED ESTABLE · DEFENSAS OPERATIVAS"; // Energy figures now live in the HUD battery.
         }
     }
 }

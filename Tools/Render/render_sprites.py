@@ -334,6 +334,9 @@ def build_tank():
 
 def prism(points, z, height, mat, bevel=.012):
     """Extrudes a polygon, given counterclockwise, into a flat solid."""
+    area = sum(points[i][0] * points[(i + 1) % len(points)][1] - points[(i + 1) % len(points)][0] * points[i][1] for i in range(len(points)))
+    if area < 0:  # Faces must wind counterclockwise or the solid renders inside out.
+        points = list(reversed(points))
     n = len(points)
     verts = [(x, y, z - height / 2) for x, y in points] + [(x, y, z + height / 2) for x, y in points]
     faces = [tuple(range(n - 1, -1, -1)), tuple(range(n, 2 * n))]
@@ -382,27 +385,6 @@ def legs(points, z, mat, tip, width=.03, tip_radius=.03):
 
 
 # ---- Modules: one cell per sprite; weapons aim up, toward the enemies ------------------
-
-def build_cryo():
-    setup(1.0)
-    base = material("Base", "#60757f", .9, .4, .3)
-    tank = material("Tank", "#7fd6ff", .25, .16, .05)
-    dark = material("Dark", "#1d2b33", .8, .45, .3)
-    steel = material("Steel", "#d0dce1", 1, .24, .15)
-    glow = glowing("Glow", "#a8ecff", 2.6)
-    box((0, -.06, .045), (.8, .66, .09), base, bevel=.03)
-    for side in (-1, 1):
-        along_y((side * .2, -.08, .16), .16, .52, tank, bevel=.03)
-        for y in (-.26, .1):
-            along_y((side * .2, y, .16), .17, .03, steel, bevel=.006)
-    box((0, -.34, .11), (.34, .05, .04), steel, bevel=.012)
-    cyl((0, .2, .24), .2, .05, dark, bevel=.012)
-    torus((0, .2, .27), .19, .018, steel)
-    for i in range(3):
-        a = i * math.pi / 3
-        box((0, .2, .275), (.3, .018, .012), glow, bevel=.003, rot=a)
-    cyl((0, .2, .285), .035, .015, glow, bevel=.004)
-
 
 def build_tesla():
     setup(1.0)
@@ -548,31 +530,6 @@ def build_reactor():
     for i in range(3):
         a = math.radians(90 + i * 120)
         cyl((math.cos(a) * .26, math.sin(a) * .26, .25), .018, .014, dark, bevel=.003, vertices=12)
-
-
-def build_relay():
-    """Arrows and power lines running outward from the center: this piece extends the network."""
-    setup(1.0)
-    arm = material("Arm", "#566e7a", .9, .38, .3)
-    dark = material("Dark", "#172228", .8, .5, .3)
-    steel = material("Steel", "#c7d2d7", 1, .26, .2)
-    line = glowing("Line", "#4fe6f5", 2.4)
-    hot = glowing_hot("Hot", "#c8fbff")
-    for angle in (0, 90, 180, 270):
-        c, s = math.cos(math.radians(angle)), math.sin(math.radians(angle))
-        rot = math.radians(angle)
-        box((c * .27, s * .27, .05), (.38, .2, .09), arm, bevel=.025, rot=rot)
-        box((c * .28, s * .28, .1), (.36, .13, .012), dark, bevel=.003, rot=rot)
-        box((c * .27, s * .27, .112), (.34, .022, .01), line, bevel=.002, rot=rot)
-        chevron(c * .2, s * .2, angle, .06, .026, .118, .01, line)
-        chevron(c * .31, s * .31, angle, .06, .026, .118, .01, line)
-        cyl((c * .41, s * .41, .08), .068, .08, steel, bevel=.012)
-        torus((c * .41, s * .41, .122), .05, .009, line)
-        cyl((c * .41, s * .41, .124), .024, .012, hot, bevel=.003, vertices=24)
-    cyl((0, 0, .11), .2, .1, arm, bevel=.016)
-    torus((0, 0, .16), .165, .02, steel)
-    torus((0, 0, .165), .115, .01, line)
-    cyl((0, 0, .17), .06, .025, hot, bevel=.006)
 
 
 def build_pulse():
@@ -968,6 +925,106 @@ def build_helicopter():
     cyl((0, 0, H + .19), .032, .014, steel, bevel=.004)
 
 
+def build_relay():
+    """Compact transmission pylon: ceramic insulator stack, three emitters and a range ring."""
+    setup(1.0)
+    frame = material("Frame", "#4f6672", .9, .4, .4)
+    dark = material("Dark", "#172228", .8, .5, .3)
+    steel = material("Steel", "#c7d2d7", 1, .28, .25)
+    ceramic = material("Ceramic", "#e6f2f4", 0, .2, .15)
+    line = glowing("Line", "#4fe6f5", 2.4)
+    hot = glowing_hot("Hot", "#c8fbff")
+    for i in range(16):  # Dashed range ring: this piece carries power two cells further.
+        a = i * 360 / 16
+        arc(0, 0, .43, .46, a + 4, a + 18, .03, .012, line, .002, n=6)
+    for a in (90, 210, 330):
+        r = math.radians(a)
+        strut((math.cos(r) * .12, math.sin(r) * .12), (math.cos(r) * .36, math.sin(r) * .36), .06, .06, frame)
+        cyl((math.cos(r) * .37, math.sin(r) * .37, .05), .055, .06, dark, bevel=.01)
+        cyl((math.cos(r) * .37, math.sin(r) * .37, .085), .028, .012, line, bevel=.003, vertices=16)
+    prism(regular(6, .2), .07, .09, frame, .016)
+    for a in (30, 150, 270):  # Emitter arms between the legs.
+        r = math.radians(a)
+        strut((math.cos(r) * .1, math.sin(r) * .1), (math.cos(r) * .27, math.sin(r) * .27), .14, .035, steel)
+        chevron(math.cos(r) * .3, math.sin(r) * .3, a, .05, .022, .14, .02, line)
+    for z, radius in ((.13, .15), (.17, .125), (.21, .1), (.25, .078)):
+        cyl((0, 0, z), radius, .03, ceramic, bevel=.01)
+    torus((0, 0, .27), .07, .012, steel)
+    cyl((0, 0, .285), .05, .025, hot, bevel=.008)
+
+
+def build_cryo():
+    """Frost cannon: frozen rim with ice shards, coolant tank and a flared nozzle."""
+    setup(1.0)
+    base = material("Base", "#4d6573", .9, .4, .4)
+    dark = material("Dark", "#172530", .8, .45, .3)
+    steel = material("Steel", "#d0dce1", 1, .26, .2)
+    frost = material("Frost", "#a9d9ec", .1, .5, .2)
+    ice = material("Ice", "#9fe6ff", .1, .08, 0, emission="#5fd2ff", strength=.35)
+    coolant = material("Coolant", "#57c8ff", .2, .1, 0, emission="#38b8ff", strength=.5)
+    glow = glowing("Glow", "#a8ecff", 2.6)
+    cyl((0, -.03, .05), .4, .1, base, bevel=.02)
+    torus((0, -.03, .1), .385, .022, frost)
+    random_angles = (8, 47, 83, 121, 160, 197, 233, 276, 312, 348)
+    for i, a in enumerate(random_angles):  # Ice shards growing on the rim.
+        r = math.radians(a)
+        x, y = math.cos(r) * .39, -.03 + math.sin(r) * .39
+        size = .065 + (i % 3) * .02
+        prism([(x + math.cos(r) * size * 1.4, y + math.sin(r) * size * 1.4), (x + math.cos(r + 1.9) * size * .6, y + math.sin(r + 1.9) * size * .6),
+               (x + math.cos(r - 1.9) * size * .6, y + math.sin(r - 1.9) * size * .6)], .13, .04, ice, .004)
+    bpy.ops.mesh.primitive_cylinder_add(vertices=48, radius=.09, depth=.46, location=(0, -.24, .16), rotation=(0, math.radians(90), 0))
+    finish(bpy.context.active_object, coolant, .03, smooth=True)
+    for x in (-.17, .17):
+        bpy.ops.mesh.primitive_cylinder_add(vertices=48, radius=.1, depth=.03, location=(x, -.24, .16), rotation=(0, math.radians(90), 0))
+        finish(bpy.context.active_object, steel, .006, smooth=True)
+    cyl((0, .02, .16), .2, .08, dark, bevel=.02)
+    torus((0, .02, .2), .19, .014, steel)
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=32, ring_count=16, radius=.14, location=(0, .02, .2))
+    dome = bpy.context.active_object
+    dome.scale = (1, 1, .6)
+    bpy.ops.object.transform_apply(scale=True, location=False, rotation=False)
+    finish(dome, ice, 0, smooth=True)
+    for i in range(3):  # Snowflake on the dome.
+        box((0, .02, .27), (.22, .022, .02), glow, bevel=.003, rot=i * math.pi / 3)
+    along_y((0, .27, .2), .065, .3, steel, bevel=.01)
+    cyl((0, .43, .2), .11, .07, steel, bevel=.014, rot=(math.radians(90), 0, 0))
+    cyl((0, .468, .2), .08, .012, glow, bevel=.003, rot=(math.radians(90), 0, 0))
+    for side in (-1, 1):
+        strut((side * .05, .16), (side * .12, .36), .19, .022, frost)
+
+
+# ---- HUD icons, rendered with the same lights and materials as the pieces -------------
+
+def build_icon_energy():
+    setup(1.0)
+    rim = material("Rim", "#8a6a2a", 1, .3, .2)
+    gold = glowing("Gold", "#ffd36a", 2.6)
+    bolt = [(.12, .46), (-.26, -.04), (-.03, -.04), (-.13, -.46), (.27, .06), (.04, .06)]
+    prism(bolt, .06, .1, rim, .02)
+    prism([(x * .78, y * .78) for x, y in bolt], .12, .04, gold, .01)
+
+
+def build_icon_base():
+    setup(1.0)
+    rim = material("Rim", "#c96a63", .9, .32, .2)
+    plate = material("Plate", "#3b2a2e", .8, .45, .2)
+    glow = glowing("Glow", "#ff8f8a", 2.4)
+    outline = [(-.38, .4), (.38, .4), (.38, -.02), (0, -.46), (-.38, -.02)]
+    prism(outline, .05, .1, rim, .02)
+    prism([(x * .8, y * .8 + .01) for x, y in outline], .11, .03, plate, .008)
+    torus((0, .04, .14), .15, .028, glow)
+    cyl((0, .04, .14), .07, .03, glow, bevel=.008)
+
+
+def build_icon_wave():
+    setup(1.0)
+    rim = material("Rim", "#3e6f7a", .9, .32, .2)
+    glow = glowing("Glow", "#86e6ee", 2.4)
+    for i, y in enumerate((.26, 0, -.26)):
+        chevron(0, y, 270, .34, .12, .06, .08, rim)
+        chevron(0, y + .02, 270, .26, .06, .11, .03, glow if i < 2 else rim)
+
+
 def build_tank_wrapper():
     build_tank()
 
@@ -978,9 +1035,10 @@ BUILDERS = {
     "scout": build_scout, "runner": build_runner, "armor": build_armor, "jammer": build_jammer, "splitter": build_splitter,
     "sapper": build_sapper, "bulwark": build_bulwark, "thermal": build_thermal, "grounder": build_grounder, "hunter": build_hunter,
     "commander": build_commander, "tank": build_tank_wrapper, "helicopter": build_helicopter, "bomber": build_bomber,
+    "icon_energy": build_icon_energy, "icon_base": build_icon_base, "icon_wave": build_icon_wave,
 }
 ONLY = sys.argv[sys.argv.index("--") + 2:]
-MODULES = ("generator", "reactor", "relay", "pulse", "cryo", "tesla", "wall", "repair")
+MODULES = ("generator", "reactor", "relay", "pulse", "cryo", "tesla", "wall", "repair", "icon_energy", "icon_base", "icon_wave")
 # Size on the board, in cells. Everything reads at about the same size; a few are slightly larger.
 ENEMY_SIZE = {"commander": 1.2, "tank": 1.1, "bomber": 1.1, "armor": 1.05, "helicopter": 1.05}
 FRAMES = {"helicopter": 1}
