@@ -261,33 +261,29 @@ def build_generator(blade_angle):
     glow = material("Glow", "#ffb765", 0, .4, 0, emission="#ff9d45", strength=2.2)
     handle = material("Handle", "#e7c592", .9, .34, .3)
 
-    octagon((0, -.01, .045), .36, .36, .09, shell, bevel=.018)
-    octagon((0, -.01, .095), .325, .325, .012, dark, bevel=.004)
-    for side in (-1, 1):  # Side battery packs break up the outline.
-        box((side * .35, -.01, .055), (.07, .34, .09), shell, bevel=.016)
+    # Same octagonal footprint as the reactor, so both read at the same size on the board.
+    prism(regular(8, .49, math.pi / 8), .05, .1, shell, .02)
+    prism(regular(8, .42, math.pi / 8), .105, .014, dark, .004)
+    for side in (-1, 1):  # Battery packs on the flanks.
+        box((side * .37, 0, .12), (.07, .3, .05), shell, bevel=.014)
         for i in range(4):
-            box((side * .355, -.12 + i * .073, .102), (.04, .04, .012), dark, bevel=.004)
-    for side in ():  # The carry handle was removed: it shrank the body inside the frame.
-        box((side * .12, .385, .055), (.03, .13, .03), handle, bevel=.01)
-
-
-    torus((0, -.01, .125), .288, .03, steel)
-    torus((0, -.01, .138), .238, .014, brass)
-    torus((0, -.01, .112), .205, .006, glow)
+            box((side * .372, -.105 + i * .07, .15), (.04, .04, .012), dark, bevel=.004)
+    torus((0, 0, .13), .315, .034, steel)
+    torus((0, 0, .145), .262, .015, brass)
+    torus((0, 0, .118), .226, .007, glow)
     global LAYER
     LAYER = "fan"
     for i in range(6):
-        blade_mesh(math.radians(blade_angle + i * 60), .15, blade)
-    cyl((0, -.01, .165), .05, .04, brass, bevel=.008)
-    cyl((0, -.01, .19), .024, .012, steel, bevel=.003)
+        blade_mesh(math.radians(blade_angle + i * 60), .17, blade)
+    cyl((0, 0, .17), .056, .04, brass, bevel=.008)
+    cyl((0, 0, .195), .026, .012, steel, bevel=.003)
     LAYER = "base"
     for i in range(6):
         a = i * math.pi / 3 + .5
-        cyl((math.cos(a) * .265, -.01 + math.sin(a) * .265, .15), .012, .012, steel, bevel=.002, vertices=6)
-
-    box((0, -.33, .045), (.2, .06, .05), handle, bevel=.012)  # Connector at the bottom, like the original.
+        cyl((math.cos(a) * .29, math.sin(a) * .29, .155), .012, .012, steel, bevel=.002, vertices=6)
+    box((0, -.4, .11), (.2, .05, .04), handle, bevel=.01)  # Power connector at the bottom.
     for x in (-.055, 0, .055):
-        cyl((x, -.345, .074), .009, .012, glow, bevel=.002, vertices=16)
+        cyl((x, -.41, .134), .009, .012, glow, bevel=.002, vertices=16)
 
 
 def build_tank():
@@ -318,18 +314,19 @@ def build_tank():
     for x in (-.15, .15):
         cyl((x, -.452, .12), .024, .016, glow, bevel=.002, vertices=24, rot=(math.radians(90), 0, 0))
 
-    # Turret: bright rings and a central sensor instead of a dark hatch.
-    cyl((0, .03, .21), .215, .06, plate, bevel=.016)
-    torus((0, .03, .243), .205, .014, trim)
-    cyl((0, .03, .26), .14, .035, dark, bevel=.01)
-    cyl((0, .03, .28), .085, .018, hull, bevel=.006)
-    cyl((0, .03, .293), .042, .012, glow, bevel=.004, vertices=32)
-    bolts([(math.cos(a) * .178, .03 + math.sin(a) * .178) for a in [i * math.pi / 4 for i in range(8)]], .243, .01, bolt)
-
-    # Cannon toward the bottom of the screen: the direction enemies advance.
-    cyl((0, -.36, .23), .044, .6, barrel, bevel=.005, rot=(math.radians(90), 0, 0))
-    cyl((0, -.17, .23), .066, .1, plate, bevel=.01, rot=(math.radians(90), 0, 0))
-    cyl((0, -.66, .23), .064, .09, trim, bevel=.012, rot=(math.radians(90), 0, 0))
+    # Turret: turns toward the module it is about to shell.
+    global LAYER
+    LAYER = "turret"
+    cyl((0, 0, .21), .215, .06, plate, bevel=.016)
+    torus((0, 0, .243), .205, .014, trim)
+    cyl((0, 0, .26), .14, .035, dark, bevel=.01)
+    cyl((0, 0, .28), .085, .018, hull, bevel=.006)
+    cyl((0, 0, .293), .042, .012, glow, bevel=.004, vertices=32)
+    bolts([(math.cos(a) * .178, math.sin(a) * .178) for a in [i * math.pi / 4 for i in range(8)]], .243, .01, bolt)
+    cyl((0, -.36, .23), .044, .5, barrel, bevel=.005, rot=(math.radians(90), 0, 0))
+    cyl((0, -.2, .23), .066, .1, plate, bevel=.01, rot=(math.radians(90), 0, 0))
+    cyl((0, -.6, .23), .064, .08, trim, bevel=.012, rot=(math.radians(90), 0, 0))
+    LAYER = "base"
 
 
 def prism(points, z, height, mat, bevel=.012):
@@ -500,31 +497,31 @@ def build_pulse():
     dark = material("Dark", "#1d272e", .8, .5, .3)
     steel = material("Steel", "#c7d2d7", 1, .26, .2)
     glow = glowing("Glow", "#ffd46e", 2.6)
-    cy = -.14
+    cy = 0
     for a, b in ((1, 1), (-1, 1), (1, -1), (-1, -1)):
-        strut((a * .16, cy + b * .16), (a * .35, cy + b * .29), .05, .07, base)
-        box((a * .37, cy + b * .3, .03), (.13, .13, .05), dark, bevel=.014)
-        cyl((a * .37, cy + b * .3, .062), .022, .015, steel, bevel=.003, vertices=6)
-    prism(regular(8, .32, math.pi / 8, cy=cy), .06, .1, base, .02)
+        strut((a * .2, cy + b * .2), (a * .36, cy + b * .36), .05, .08, base)
+        box((a * .37, cy + b * .37, .03), (.14, .14, .05), dark, bevel=.014)
+        cyl((a * .37, cy + b * .37, .062), .024, .015, steel, bevel=.003, vertices=6)
+    prism(regular(8, .36, math.pi / 8, cy=cy), .06, .1, base, .02)
     for side in (-1, 1):
         for i in range(3):
-            box((side * .24, cy - .09 + i * .09, .12), (.075, .065, .03), glow if i == 1 else dark, bevel=.006)
+            box((side * .28, cy - .09 + i * .09, .12), (.075, .065, .03), glow if i == 1 else dark, bevel=.006)
     for i in range(24):
         a = i * math.tau / 24
         box((math.cos(a) * .225, cy + math.sin(a) * .225, .125), (.032, .02, .024), gold, bevel=.003, rot=a)
     cyl((0, cy, .13), .205, .05, dark, bevel=.01)
     torus((0, cy, .155), .185, .012, steel)
     cyl((0, cy, .175), .15, .05, base, bevel=.016)
-    box((0, cy + .02, .225), (.2, .24, .05), base, bevel=.02)
     global LAYER
     LAYER = "barrel"
-    box((0, .09, .2), (.11, .3, .06), dark, bevel=.012)
-    for i in range(4):  # Cooling shroud.
-        along_y((0, .1 + i * .062, .2), .066, .036, steel, bevel=.006)
-    along_y((0, .34, .2), .045, .24, gold, bevel=.005)
-    along_y((0, .46, .2), .068, .06, steel, bevel=.012)
+    box((0, -.02, .225), (.2, .24, .05), base, bevel=.02)
+    box((0, .2, .2), (.11, .22, .06), dark, bevel=.012)
+    for i in range(3):  # Cooling shroud.
+        along_y((0, .17 + i * .062, .2), .066, .036, steel, bevel=.006)
+    along_y((0, .38, .2), .045, .16, gold, bevel=.005)
+    along_y((0, .45, .2), .068, .05, steel, bevel=.012)
+    cyl((0, -.02, .26), .03, .012, glow, bevel=.004)
     LAYER = "base"
-    cyl((0, cy + .02, .26), .03, .012, glow, bevel=.004)
 
 
 # ---- Redesigned enemies ----------------------------------------------------------------
@@ -777,12 +774,16 @@ def build_hunter():
     prism(regular(6, .23, 0, sx=.86, sy=1.18), .1, .12, body, .02)
     prism(regular(6, .15, 0, cy=.13), .17, .04, dark, .008)
     cyl((0, .13, .195), .06, .02, trim, bevel=.006)
-    along_y((0, -.32, .17), .026, .68, steel, bevel=.004)
-    along_y((0, -.62, .17), .04, .07, dark, bevel=.008)
-    along_y((.06, -.17, .2), .03, .22, dark, bevel=.006)
-    along_y((.06, -.285, .2), .022, .012, hot, bevel=.002)
-    cyl((-.06, -.13, .2), .028, .03, red, bevel=.005)
-    box((0, -.7, .17), (.008, .13, .008), red, bevel=0)
+    global LAYER
+    LAYER = "turret"
+    cyl((0, 0, .2), .07, .03, dark, bevel=.008)
+    along_y((0, -.3, .21), .026, .6, steel, bevel=.004)
+    along_y((0, -.58, .21), .04, .07, dark, bevel=.008)
+    along_y((.06, -.15, .24), .03, .22, dark, bevel=.006)
+    along_y((.06, -.265, .24), .022, .012, hot, bevel=.002)
+    cyl((-.06, -.11, .24), .028, .03, red, bevel=.005)
+    box((0, -.66, .21), (.008, .12, .008), red, bevel=0)
+    LAYER = "base"
 
 
 def build_commander():
@@ -807,11 +808,15 @@ def build_commander():
         cyl((math.cos(r) * .6, math.sin(r) * .6, .095), .03, .014, gold, bevel=.004)
     prism(regular(6, .5, math.pi / 6), .1, .16, hull, .03)
     prism(regular(6, .42, math.pi / 6), .19, .03, plate, .012)
-    for side in (-1, 1):
-        along_y((side * .17, -.42, .25), .042, .46, steel, bevel=.006)
-        along_y((side * .17, -.66, .25), .058, .06, gold, bevel=.01)
-        box((side * .17, -.12, .25), (.13, .24, .09), dark, bevel=.02)
     prism(regular(6, .3, math.pi / 6, cy=.05), .26, .07, hull, .018)
+    global LAYER
+    LAYER = "turret"
+    for side in (-1, 1):
+        along_y((side * .17, -.44, .33), .042, .36, steel, bevel=.006)
+        along_y((side * .17, -.62, .33), .058, .06, gold, bevel=.01)
+        box((side * .17, -.22, .33), (.12, .16, .08), dark, bevel=.02)
+    box((0, -.22, .32), (.3, .07, .05), dark, bevel=.015)
+    LAYER = "base"
     for a in range(0, 360, 60):  # Crown of spikes around the dome.
         r = math.radians(a + 30)
         x, y = math.cos(r) * .265, .05 + math.sin(r) * .265
@@ -872,34 +877,39 @@ def build_cryo():
     ice = material("Ice", "#9fe6ff", .1, .08, 0, emission="#5fd2ff", strength=.35)
     coolant = material("Coolant", "#57c8ff", .2, .1, 0, emission="#38b8ff", strength=.5)
     glow = glowing("Glow", "#a8ecff", 2.6)
-    cyl((0, -.03, .05), .4, .1, base, bevel=.02)
-    torus((0, -.03, .1), .385, .022, frost)
+    cyl((0, 0, .05), .4, .1, base, bevel=.02)
+    torus((0, 0, .1), .385, .022, frost)
     random_angles = (8, 47, 83, 121, 160, 197, 233, 276, 312, 348)
     for i, a in enumerate(random_angles):  # Ice shards growing on the rim.
         r = math.radians(a)
-        x, y = math.cos(r) * .39, -.03 + math.sin(r) * .39
-        size = .065 + (i % 3) * .02
+        x, y = math.cos(r) * .37, math.sin(r) * .37
+        size = .05 + (i % 3) * .015
         prism([(x + math.cos(r) * size * 1.4, y + math.sin(r) * size * 1.4), (x + math.cos(r + 1.9) * size * .6, y + math.sin(r + 1.9) * size * .6),
                (x + math.cos(r - 1.9) * size * .6, y + math.sin(r - 1.9) * size * .6)], .13, .04, ice, .004)
-    bpy.ops.mesh.primitive_cylinder_add(vertices=48, radius=.09, depth=.46, location=(0, -.24, .16), rotation=(0, math.radians(90), 0))
-    finish(bpy.context.active_object, coolant, .03, smooth=True)
-    for x in (-.17, .17):
-        bpy.ops.mesh.primitive_cylinder_add(vertices=48, radius=.1, depth=.03, location=(x, -.24, .16), rotation=(0, math.radians(90), 0))
-        finish(bpy.context.active_object, steel, .006, smooth=True)
-    cyl((0, .02, .16), .2, .08, dark, bevel=.02)
-    torus((0, .02, .2), .19, .014, steel)
-    bpy.ops.mesh.primitive_uv_sphere_add(segments=32, ring_count=16, radius=.14, location=(0, .02, .2))
+    for side in (-1, 1):  # Coolant tanks on the flanks of the mount.
+        bpy.ops.mesh.primitive_cylinder_add(vertices=48, radius=.06, depth=.34, location=(side * .27, 0, .13), rotation=(math.radians(90), 0, 0))
+        finish(bpy.context.active_object, coolant, .02, smooth=True)
+        for y in (-.13, .13):
+            bpy.ops.mesh.primitive_cylinder_add(vertices=48, radius=.068, depth=.025, location=(side * .27, y, .13), rotation=(math.radians(90), 0, 0))
+            finish(bpy.context.active_object, steel, .005, smooth=True)
+    cyl((0, 0, .12), .215, .04, steel, bevel=.01)
+    global LAYER
+    LAYER = "turret"
+    cyl((0, 0, .16), .2, .08, dark, bevel=.02)
+    torus((0, 0, .2), .19, .014, steel)
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=32, ring_count=16, radius=.14, location=(0, 0, .2))
     dome = bpy.context.active_object
     dome.scale = (1, 1, .6)
     bpy.ops.object.transform_apply(scale=True, location=False, rotation=False)
     finish(dome, ice, 0, smooth=True)
     for i in range(3):  # Snowflake on the dome.
-        box((0, .02, .27), (.22, .022, .02), glow, bevel=.003, rot=i * math.pi / 3)
-    along_y((0, .27, .2), .065, .3, steel, bevel=.01)
-    cyl((0, .43, .2), .11, .07, steel, bevel=.014, rot=(math.radians(90), 0, 0))
-    cyl((0, .468, .2), .08, .012, glow, bevel=.003, rot=(math.radians(90), 0, 0))
+        box((0, 0, .27), (.22, .022, .02), glow, bevel=.003, rot=i * math.pi / 3)
+    along_y((0, .26, .2), .06, .26, steel, bevel=.01)
+    cyl((0, .4, .2), .1, .06, steel, bevel=.014, rot=(math.radians(90), 0, 0))
+    cyl((0, .433, .2), .072, .012, glow, bevel=.003, rot=(math.radians(90), 0, 0))
     for side in (-1, 1):
-        strut((side * .05, .16), (side * .12, .36), .19, .022, frost)
+        strut((side * .05, .14), (side * .11, .33), .19, .022, frost)
+    LAYER = "base"
 
 
 # ---- HUD icons, rendered with the same lights and materials as the pieces -------------
@@ -1107,11 +1117,11 @@ MODULES = ("generator", "reactor", "relay", "pulse", "cryo", "tesla", "wall", "r
 # Size on the board, in cells. Everything reads at about the same size; a few are slightly larger.
 ENEMY_SIZE = {"commander": 1.2, "tank": 1.1, "bomber": 1.1, "armor": 1.05, "helicopter": 1.05}
 FRAMES = {"helicopter": 1}
-LAYERS = {"generator": "fan", "pulse": "barrel", "helicopter": "rotor"}
+LAYERS = {"generator": "fan", "pulse": "barrel", "cryo": "turret", "helicopter": "rotor", "tank": "turret", "hunter": "turret", "commander": "turret"}
 
 
 # Modules share one fixed scale so their bodies match; a few models are scaled to line up.
-MODULE_SCALE = {"generator": 1.2, "reactor": .93}
+MODULE_SCALE = {"generator": .93, "reactor": .93, "relay": .84, "cryo": .96}
 
 
 def fit(name):
@@ -1125,6 +1135,9 @@ def fit(name):
     min_x, max_x = min(p.x for p in points), max(p.x for p in points)
     min_y, max_y = min(p.y for p in points), max(p.y for p in points)
     largest = max(max_x - min_x, max_y - min_y)
+    if name in LAYERS:  # Turning parts pivot on the sprite center, so the model must stay centered on its origin.
+        largest = 2 * max(abs(min_x), abs(max_x), abs(min_y), abs(max_y))
+        min_x = max_x = min_y = max_y = 0
     ortho = largest / .96 if name in MODULES else largest * 1.5 / ENEMY_SIZE.get(name, .96)
     return (min_x + max_x) / 2, (min_y + max_y) / 2, ortho
 
@@ -1159,14 +1172,21 @@ if __name__ == "__main__":
             camera.location.x, camera.location.y = framing[0], framing[1]
             camera.data.ortho_scale = framing[2]
             moving = LAYERS.get(sprite_name)
-            if moving:
+            if moving and sprite_name in MODULES:
                 # Full picture for the build cards, then the static part and the moving part.
                 show_only(None)
                 render(sprite_name)
                 show_only("base")
-                render(f"{sprite_name}_0" if sprite_name not in MODULES else f"{sprite_name}_base")
+                render(f"{sprite_name}_base")
                 show_only(moving)
                 render(f"{sprite_name}_{moving}")
+            elif moving:
+                # Enemies: every animation frame of the body, and the turning part once.
+                show_only("base")
+                render(f"{sprite_name}_{frame}")
+                if frame == 0:
+                    show_only(moving)
+                    render(f"{sprite_name}_{moving}")
             else:
                 render(f"{sprite_name}_{frame}" if count > 1 else sprite_name)
     print("RENDER_DONE")

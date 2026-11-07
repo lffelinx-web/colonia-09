@@ -22,8 +22,11 @@ namespace Colonia09.Presentation
         Sprite square, circle, ring;
         readonly Dictionary<ModuleType, Sprite> moduleSprites = new Dictionary<ModuleType, Sprite>();
         readonly Dictionary<EnemyKind, Sprite[]> enemySprites = new Dictionary<EnemyKind, Sprite[]>();
-        Sprite boardSprite, generatorBase, generatorFan, pulseBase, pulseBarrel, helicopterRotor;
+        Sprite boardSprite, generatorBase, generatorFan, pulseBase, pulseBarrel, cryoBase, cryoTurret, helicopterRotor;
+        readonly Dictionary<EnemyKind, Sprite> enemyTurrets = new Dictionary<EnemyKind, Sprite>();
         readonly Dictionary<GameModule, float> fanAngle = new Dictionary<GameModule, float>();
+        readonly Dictionary<GameModule, float> moduleAim = new Dictionary<GameModule, float>();
+        readonly Dictionary<int, float> enemyAim = new Dictionary<int, float>();
         readonly Dictionary<GameModule, float> moduleLastHp = new Dictionary<GameModule, float>();
         readonly Dictionary<GameModule, float> moduleHitUntil = new Dictionary<GameModule, float>();
         readonly Dictionary<int, bool> enemyWasCharging = new Dictionary<int, bool>();
@@ -61,7 +64,98 @@ namespace Colonia09.Presentation
             generatorFan = Resources.Load<Sprite>("Sprites/Modules/generator_fan");
             pulseBase = Resources.Load<Sprite>("Sprites/Modules/pulse_base");
             pulseBarrel = Resources.Load<Sprite>("Sprites/Modules/pulse_barrel");
+            cryoBase = Resources.Load<Sprite>("Sprites/Modules/cryo_base");
+            cryoTurret = Resources.Load<Sprite>("Sprites/Modules/cryo_turret");
             helicopterRotor = Resources.Load<Sprite>("Sprites/Enemies/helicopter_rotor");
+            foreach (var k in new[] { EnemyKind.Tank, EnemyKind.Hunter, EnemyKind.Commander })
+            {
+                var turret = Resources.Load<Sprite>($"Sprites/Enemies/{k.ToString().ToLowerInvariant()}_turret");
+                if (turret != null) enemyTurrets[k] = turret;
+            }
+        }
+
+        static Vector2 Rotate(Vector2 v, float degrees) => Quaternion.Euler(0, 0, degrees) * v;
+
+        // ---- Aiming -------------------------------------------------------------------
+        // Turrets turn toward what they are about to hit. Presentation only: the rules never read these angles.
+
+        bool RecentBeamFrom(double x, double y, double tolerance, out Vector2 target)
+        {
+            target = default;
+            FxEvent best = null;
+            foreach (var fx in game.Sim.Effects)
+                if (fx.Type == "beam" && fx.HasTarget && fx.Age < .45 && System.Math.Abs(fx.X - x) < .01 && System.Math.Abs(fx.Y - y) < tolerance
+                    && (best == null || fx.Age < best.Age)) best = fx;
+            if (best == null) return false;
+            target = new Vector2((float)best.X2, -(float)best.Y2);
+            return true;
+        }
+
+        bool ModuleAimTarget(GameModule m, out Vector2 target)
+        {
+            target = default;
+            if (RecentBeamFrom(m.C, m.R, .01, out target)) return true;
+            if (!m.Powered || m.IsDeploying) return false;
+            Enemy best = null;
+            foreach (var e in game.Sim.Enemies)
+            {
+                bool inRange = m.Type == ModuleType.Pulse
+                    ? e.C == m.C && e.Y < m.R - .15 && e.Y > m.R - 5.9
+                    : System.Math.Abs(e.C - m.C) <= 1 && e.Y < m.R + .8 && e.Y > m.R - 4.3;
+                if (inRange && e.Hp > 0 && (best == null || e.Y > best.Y)) best = e;
+            }
+            if (best == null) return false;
+            target = new Vector2(best.C, -(float)best.Y);
+            return true;
+        }
+
+        float ModuleAim(GameModule m, Vector2 pos)
+        {
+            moduleAim.TryGetValue(m, out var angle);
+            float goal = 0; // Idle: facing the threat zone.
+            if (ModuleAimTarget(m, out var target))
+            {
+                var d = target - pos;
+                if (d.sqrMagnitude > .01f) goal = Mathf.Atan2(-d.x, d.y) * Mathf.Rad2Deg;
+            }
+            angle = Mathf.MoveTowardsAngle(angle, goal, Time.unscaledDeltaTime * 320);
+            moduleAim[m] = angle;
+            return angle;
+        }
+
+        bool EnemyAimTarget(Enemy e, out Vector2 target)
+        {
+            target = default;
+            int key = -1;
+            if (e.StrikeWind > 0 && e.StrikeTargets.Count > 0)
+            {
+                var sum = Vector2.zero;
+                foreach (int k in e.StrikeTargets) sum += new Vector2(k % W, -(k / W));
+                target = sum / e.StrikeTargets.Count;
+                return true;
+            }
+            if (e.Kind == EnemyKind.Hunter && e.HuntWind > 0) key = e.HuntTarget;
+            else if (e.Kind == EnemyKind.Commander && e.BossWind > 0) key = e.BossTarget;
+            if (key >= 0)
+            {
+                target = new Vector2(key % W, -(key / W));
+                return true;
+            }
+            return RecentBeamFrom(e.C, e.Y, .7, out target);
+        }
+
+        float EnemyAim(Enemy e, Vector2 pos)
+        {
+            enemyAim.TryGetValue(e.Id, out var angle);
+            float goal = 0; // Idle: cannon forward, toward the base.
+            if (EnemyAimTarget(e, out var target))
+            {
+                var d = target - pos;
+                if (d.sqrMagnitude > .01f) goal = Mathf.Atan2(d.x, -d.y) * Mathf.Rad2Deg;
+            }
+            angle = Mathf.MoveTowardsAngle(angle, goal, Time.unscaledDeltaTime * 200);
+            enemyAim[e.Id] = angle;
+            return angle;
         }
 
         public Sprite ModuleSprite(ModuleType type) => moduleSprites[type];
@@ -260,11 +354,19 @@ namespace Colonia09.Presentation
                     Draw(generatorBase, pos, Vector2.one * ModuleScale, color, OrderModules);
                     Draw(generatorFan, pos, Vector2.one * ModuleScale, color, OrderModules + 1, -angle);
                 }
-                else if (m.Type == ModuleType.Pulse && pulseBase != null && pulseBarrel != null)
+                float aim = 0;
+                if (m.Type == ModuleType.Pulse && pulseBase != null && pulseBarrel != null)
                 {
-                    // The barrel slides back into its housing when it fires, then returns.
+                    // The turret turns to its target; the barrel slides back along its line when it fires.
+                    aim = ModuleAim(m, pos);
                     Draw(pulseBase, pos, Vector2.one * ModuleScale, color, OrderModules);
-                    Draw(pulseBarrel, pos + new Vector2(0, -fire * .11f), Vector2.one * ModuleScale, color, OrderModules + 1);
+                    Draw(pulseBarrel, pos + Rotate(new Vector2(0, -fire * .1f), aim), Vector2.one * ModuleScale, color, OrderModules + 1, aim);
+                }
+                else if (m.Type == ModuleType.Cryo && cryoBase != null && cryoTurret != null)
+                {
+                    aim = ModuleAim(m, pos);
+                    Draw(cryoBase, pos, Vector2.one * ModuleScale, color, OrderModules);
+                    Draw(cryoTurret, pos + Rotate(new Vector2(0, -fire * .05f), aim), Vector2.one * ModuleScale, color, OrderModules + 1, aim);
                 }
                 else
                 {
@@ -273,7 +375,8 @@ namespace Colonia09.Presentation
                 if (fire > 0 && (m.Type == ModuleType.Pulse || m.Type == ModuleType.Cryo || m.Type == ModuleType.Tesla))
                 {
                     var bloom = m.Type == ModuleType.Tesla ? Hex("#caa4ff") : m.Type == ModuleType.Cryo ? Hex("#a9efff") : Hex("#ffe7a7");
-                    var muzzle = pos + new Vector2(0, m.Type == ModuleType.Pulse ? .39f - fire * .11f : .2f);
+                    float reach = m.Type == ModuleType.Pulse ? .38f - fire * .1f : m.Type == ModuleType.Cryo ? .36f : 0;
+                    var muzzle = pos + Rotate(new Vector2(0, reach), aim);
                     Draw(circle, muzzle, Vector2.one * (.18f + fire * .26f), Alpha(bloom, fire * .7f), OrderMarks);
                     Draw(circle, muzzle, Vector2.one * (.08f + fire * .1f), new Color(1, 1, 1, fire), OrderMarks + 1);
                 }
@@ -398,6 +501,13 @@ namespace Colonia09.Presentation
                 float rot = e.Kind == EnemyKind.Helicopter ? Mathf.Sin(t * 1.7f + e.Id) * 3 : 0;
                 var frames = enemySprites[e.Kind];
                 Draw(frames[Mathf.FloorToInt(t * fps + (float)e.Phase * 2) % frames.Length], pos, Vector2.one * EnemyScale, tint, order, rot);
+                float aim = 0;
+                if (enemyTurrets.TryGetValue(e.Kind, out var turret))
+                {
+                    // The cannon swings toward the module it is about to hit.
+                    aim = EnemyAim(e, pos);
+                    Draw(turret, pos, Vector2.one * EnemyScale, tint, order + 1, aim);
+                }
                 if (e.Kind == EnemyKind.Helicopter && helicopterRotor != null)
                 {
                     float spin = t * 600 + e.Id * 37;
@@ -408,7 +518,7 @@ namespace Colonia09.Presentation
 
                 if (charging)
                 {
-                    var muzzle = pos + new Vector2(0, -.46f);
+                    var muzzle = pos + Rotate(new Vector2(0, -.46f), aim);
                     var chargeColor = e.Kind == EnemyKind.Bomber ? Hex("#ff7a3c") : EnemyBarColor(e);
                     Draw(circle, muzzle, Vector2.one * (.08f + charge * .3f), Alpha(chargeColor, .35f + charge * .35f), order + 2);
                     Draw(circle, muzzle, Vector2.one * (.04f + charge * .14f), new Color(1, 1, 1, .5f + charge * .5f), order + 3);
@@ -528,6 +638,8 @@ namespace Colonia09.Presentation
             if (!lightning)
             {
                 // A projectile that travels from the shooter to its target, with a muzzle flash and a fading trail.
+                // It leaves from the barrel tip, which now points at the target.
+                if ((to - from).magnitude > .8f) from += (to - from).normalized * .36f;
                 float p = 1 - a;
                 float travel = Mathf.Clamp01(p * 1.7f);
                 var head = Vector2.Lerp(from, to, travel);
