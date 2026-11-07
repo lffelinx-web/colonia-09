@@ -38,6 +38,8 @@ namespace Colonia09.Simulation
         public double ArmorMax, Armor;
         public bool ArmorBreakSeen;
         public double LastCounterHintAt = -10;
+        /// <summary>Module this enemy is ramming right now. Read by the view only.</summary>
+        public GameModule ContactTarget;
         public bool HasBombArea;
         public int BombRow, BombColumn;
     }

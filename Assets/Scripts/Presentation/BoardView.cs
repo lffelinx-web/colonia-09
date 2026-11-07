@@ -19,7 +19,12 @@ namespace Colonia09.Presentation
         Material material;
         Sprite square, circle, ring;
         readonly Dictionary<ModuleType, Sprite> moduleSprites = new Dictionary<ModuleType, Sprite>();
-        readonly Dictionary<EnemyKind, Sprite> enemySprites = new Dictionary<EnemyKind, Sprite>();
+        readonly Dictionary<EnemyKind, Sprite[]> enemySprites = new Dictionary<EnemyKind, Sprite[]>();
+        Sprite[] generatorFrames;
+        readonly Dictionary<GameModule, float> moduleLastHp = new Dictionary<GameModule, float>();
+        readonly Dictionary<GameModule, float> moduleHitUntil = new Dictionary<GameModule, float>();
+        readonly Dictionary<int, bool> enemyWasCharging = new Dictionary<int, bool>();
+        readonly Dictionary<int, float> enemyKickUntil = new Dictionary<int, float>();
         readonly Dictionary<string, Color> colors = new Dictionary<string, Color>();
         readonly List<SpriteRenderer> pool = new List<SpriteRenderer>();
         int used;
@@ -38,7 +43,13 @@ namespace Colonia09.Presentation
             circle = MakeCircle(128, false);
             ring = MakeCircle(128, true);
             foreach (var t in GameData.ModuleTypes) moduleSprites[t] = Resources.Load<Sprite>("Sprites/Modules/" + t.ToString().ToLowerInvariant());
-            foreach (EnemyKind k in System.Enum.GetValues(typeof(EnemyKind))) enemySprites[k] = Resources.Load<Sprite>("Sprites/Enemies/" + k.ToString().ToLowerInvariant());
+            foreach (EnemyKind k in System.Enum.GetValues(typeof(EnemyKind)))
+            {
+                var frames = new Sprite[4];
+                for (int i = 0; i < frames.Length; i++) frames[i] = Resources.Load<Sprite>($"Sprites/Enemies/{k.ToString().ToLowerInvariant()}_{i}");
+                enemySprites[k] = frames;
+            }
+            generatorFrames = new[] { moduleSprites[ModuleType.Generator], Resources.Load<Sprite>("Sprites/Modules/generator_1"), Resources.Load<Sprite>("Sprites/Modules/generator_2") };
         }
 
         public Sprite ModuleSprite(ModuleType type) => moduleSprites[type];
@@ -167,7 +178,7 @@ namespace Colonia09.Presentation
 
             if (game.Sim.Mode != GameMode.Idle)
             {
-                game.Ui.WorldLabel("ZONA DE AMENAZA", Hex("#a7bed0"), (W - 1) / 2.0, 0, 30);
+                game.Ui.WorldLabel("ZONA DE AMENAZA", Alpha(Hex("#a7bed0"), .32f), (W - 1) / 2.0, 0, 26);
                 game.Ui.WorldLabel("BASE CENTRAL · COLONIA 09", Hex("#aef0d3"), (W - 1) / 2.0, H - 1, 30);
             }
 
@@ -216,9 +227,19 @@ namespace Colonia09.Presentation
                 else if (jam) color = new Color(.78f, .6f, 1f, 1f);
                 else if (!m.Powered && m.Type != ModuleType.Wall) color = new Color(.55f, .58f, .62f, 1f);
 
+                float hp = (float)m.Hp;
+                if (moduleLastHp.TryGetValue(m, out var lastHp) && hp < lastHp - .001f) moduleHitUntil[m] = t + .16f;
+                moduleLastHp[m] = hp;
+                bool beingHit = moduleHitUntil.TryGetValue(m, out var hitUntil) && t < hitUntil;
+                if (beingHit) pos += new Vector2(Mathf.Sin(t * 83 + m.C), Mathf.Cos(t * 97 + m.R)) * .025f;
+
                 float pop = 1 + (float)m.Fire * .35f;
-                if (m.Type == ModuleType.Generator && m.Powered && !m.IsDeploying) pop += Mathf.Sin(t * 6 + m.C) * .012f;
-                Draw(moduleSprites[m.Type], pos, Vector2.one * .96f * pop, color, OrderModules);
+                var sprite = moduleSprites[m.Type];
+                if (m.Type == ModuleType.Generator && m.Powered && !m.IsDeploying && !jam && generatorFrames[1] != null)
+                    sprite = generatorFrames[Mathf.FloorToInt(t * (8 + m.Level * 4) + m.C) % generatorFrames.Length];
+                Draw(sprite, pos, Vector2.one * pop, color, OrderModules);
+                if (beingHit) Draw(circle, pos, Vector2.one * .86f, new Color(1, .82f, .62f, .36f), OrderMarks);
+                if (!m.IsDeploying && m.Hp < m.MaxHp * .35) DrawSmoke(pos, m.C * 3 + m.R * 7, .5f, t);
 
                 if (m == game.Selected)
                     Draw(ring, pos, Vector2.one * 1.1f, Alpha(Hex("#ffd38b"), .7f + .3f * Mathf.Sin(t * 6)), OrderMarks);
@@ -250,8 +271,28 @@ namespace Colonia09.Presentation
 
         static float EnemyBarOffset(EnemyKind k)
         {
-            if (k == EnemyKind.Commander) return .60f;
-            return k == EnemyKind.Armor || k == EnemyKind.Sapper || k == EnemyKind.Bulwark || k == EnemyKind.Tank || k == EnemyKind.Bomber ? .48f : .42f;
+            if (k == EnemyKind.Commander) return .64f;
+            return k == EnemyKind.Armor || k == EnemyKind.Tank || k == EnemyKind.Bomber || k == EnemyKind.Helicopter ? .57f : .51f;
+        }
+
+        void DrawSmoke(Vector2 pos, int seed, float strength, float t)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                float life = Mathf.Repeat(t * .55f + i / 3f + seed * .13f, 1);
+                var puff = pos + new Vector2(Mathf.Sin(seed + i * 2.1f + life * 3) * .14f, life * .5f);
+                Draw(circle, puff, Vector2.one * (.1f + life * .22f), new Color(.1f, .12f, .14f, (1 - life) * strength), OrderFx - 1);
+            }
+        }
+
+        static float ChargeProgress(Enemy e)
+        {
+            // Telegraphed attacks: how close the shot is, from 0 to 1.
+            if (e.StrikeWind > 0) return 1 - (float)(e.StrikeWind / (e.Kind == EnemyKind.Bomber ? 2.6 : 2.0));
+            if (e.HuntWind > 0) return 1 - (float)(e.HuntWind / 1.95);
+            if (e.BossWind > 0) return 1 - (float)(e.BossWind / 2.0);
+            if (e.CounterWind > 0) return 1 - (float)(e.CounterWind / 1.55);
+            return -1;
         }
 
         Color EnemyBarColor(Enemy e)
@@ -273,15 +314,61 @@ namespace Colonia09.Presentation
             foreach (var e in sim.Enemies)
             {
                 if (e.Y < -.6 || e.Y > H) continue;
+                bool air = GameData.IsAir(e.Kind);
                 float ph = t * 4 + (float)e.Phase;
-                var pos = new Vector2(e.C, -(float)e.Y + Mathf.Sin(ph) * .03f);
+                var pos = new Vector2(e.C, -(float)e.Y);
+                if (air) pos.y += Mathf.Sin(ph * .6f) * .025f;
+
+                // Movement: animation speed follows what the enemy is doing.
+                float fps = e.Kind == EnemyKind.Runner ? 15 : air ? 14 : 9;
+                if (e.Slow > 0) fps *= .4f;
+                if (e.ContactTarget != null) fps *= .45f;
+
+                // Ramming: it pulls back and strikes the module in front of it, throwing sparks.
+                if (e.ContactTarget != null)
+                {
+                    float swing = Mathf.PingPong(t * 3.4f + (float)e.Phase, 1);
+                    swing *= swing;
+                    pos.y -= swing * .11f - .03f;
+                    if (swing > .55f)
+                    {
+                        var contact = new Vector2(e.C, -(float)e.Y - .42f);
+                        for (int i = 0; i < 5; i++)
+                        {
+                            float a = t * 37 + i * 1.9f + e.Id;
+                            var spark = contact + new Vector2(Mathf.Cos(a) * .22f, Mathf.Abs(Mathf.Sin(a * 1.3f)) * .16f - .06f) * swing;
+                            Draw(circle, spark, Vector2.one * (.035f + .03f * Mathf.Abs(Mathf.Sin(a))), i % 2 == 0 ? new Color(1, .86f, .5f, 1) : new Color(1, .55f, .25f, 1), OrderFx);
+                        }
+                    }
+                }
+
+                // Telegraphed shot: energy gathers at the muzzle, then the enemy kicks back when it fires.
+                float charge = ChargeProgress(e);
+                bool charging = charge >= 0;
+                enemyWasCharging.TryGetValue(e.Id, out var wasCharging);
+                if (wasCharging && !charging) enemyKickUntil[e.Id] = t + .26f;
+                enemyWasCharging[e.Id] = charging;
+                if (charging) pos.y += charge * .05f + Mathf.Sin(t * 60) * charge * .008f;
+                if (enemyKickUntil.TryGetValue(e.Id, out var kickUntil) && t < kickUntil) pos.y += (kickUntil - t) / .26f * .16f;
+                if (e.Hit > 0) pos.y += (float)(e.Hit / .2) * .035f;
+
                 DrawThreats(e, pos, t);
 
                 var tint = e.Slow > 0 ? new Color(.72f, .92f, 1f, 1f) : Color.white;
-                int order = OrderEnemies + (GameData.IsAir(e.Kind) ? 4 : 0);
-                float rot = e.Kind == EnemyKind.Helicopter ? Mathf.Sin(t * 3 + e.Id) * 3 : 0;
-                Draw(enemySprites[e.Kind], pos, Vector2.one, tint, order, rot);
-                if (e.Hit > 0) Draw(circle, pos, Vector2.one * .72f, new Color(1, 1, 1, (float)(e.Hit / .2) * .4f), order + 1);
+                int order = OrderEnemies + (air ? 4 : 0);
+                float rot = e.Kind == EnemyKind.Helicopter ? Mathf.Sin(t * 1.7f + e.Id) * 3 : 0;
+                var frames = enemySprites[e.Kind];
+                Draw(frames[Mathf.FloorToInt(t * fps + (float)e.Phase * 2) % frames.Length], pos, Vector2.one, tint, order, rot);
+                if (e.Hit > 0) Draw(circle, pos, Vector2.one * .56f, new Color(1, 1, 1, (float)(e.Hit / .2) * .3f), order + 1);
+
+                if (charging)
+                {
+                    var muzzle = pos + new Vector2(0, -.46f);
+                    var chargeColor = e.Kind == EnemyKind.Bomber ? Hex("#ff7a3c") : EnemyBarColor(e);
+                    Draw(circle, muzzle, Vector2.one * (.08f + charge * .3f), Alpha(chargeColor, .35f + charge * .35f), order + 2);
+                    Draw(circle, muzzle, Vector2.one * (.04f + charge * .14f), new Color(1, 1, 1, .5f + charge * .5f), order + 3);
+                }
+                if (e.Hp < e.MaxHp * .4f) DrawSmoke(pos, e.Id, .55f, t);
 
                 float bw = EnemyBarWidth(e.Kind);
                 float by = pos.y + EnemyBarOffset(e.Kind);
@@ -395,8 +482,14 @@ namespace Colonia09.Presentation
             bool lightning = fx.Color == "#c8adff";
             if (!lightning)
             {
-                Line(from, to, width + .02f, Alpha(col, a * .55f), OrderFx);
-                Line(from, to, width * .4f, new Color(1, 1, 1, a), OrderFx + 1);
+                // A projectile that travels from the shooter to its target, with a muzzle flash and a fading trail.
+                float p = 1 - a;
+                float travel = Mathf.Clamp01(p * 1.7f);
+                var head = Vector2.Lerp(from, to, travel);
+                Line(Vector2.Lerp(from, to, Mathf.Clamp01(travel - .4f)), head, width + .02f, Alpha(col, a * .55f), OrderFx);
+                Draw(circle, head, Vector2.one * (.14f + width), Alpha(col, Mathf.Clamp01(a * 2)), OrderFx + 1);
+                Draw(circle, head, Vector2.one * .07f, new Color(1, 1, 1, Mathf.Clamp01(a * 2)), OrderFx + 2);
+                if (p < .25f) Draw(circle, from, Vector2.one * (.3f * (1 - p * 4) + .08f), new Color(1, .95f, .8f, (1 - p * 4) * .9f), OrderFx + 1);
                 return;
             }
             var previous = from;

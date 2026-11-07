@@ -300,9 +300,10 @@ namespace Colonia09.Presentation
         void BuildToast()
         {
             var toast = Rt("Toast", safeArea);
-            toast.anchorMin = new Vector2(.05f, 1); toast.anchorMax = new Vector2(.95f, 1); toast.pivot = new Vector2(.5f, 1);
-            toast.sizeDelta = new Vector2(0, 92);
-            toast.anchoredPosition = new Vector2(0, -HudHeight - 130);
+            // Over the base row, where nothing can be built, so it never hides the enemies coming in.
+            toast.anchorMin = new Vector2(.05f, 0); toast.anchorMax = new Vector2(.95f, 0); toast.pivot = new Vector2(.5f, 0);
+            toast.sizeDelta = new Vector2(0, 88);
+            toast.anchoredPosition = new Vector2(0, DockHeight + 14);
             toastBg = toast.gameObject.AddComponent<Image>();
             toastBg.sprite = rounded; toastBg.type = Image.Type.Sliced; toastBg.color = new Color(.03f, .1f, .16f, .93f); toastBg.raycastTarget = false;
             toastText = Label(toast, "", 30, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);

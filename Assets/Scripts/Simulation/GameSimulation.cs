@@ -1199,6 +1199,7 @@ namespace Colonia09.Simulation
                         if (next >= boundary && e.Y <= boundary + .05) { encountered = m; next = boundary; break; }
                     }
                 e.Y = next;
+                e.ContactTarget = encountered;
                 if (encountered != null)
                 {
                     encountered.Hp -= e.Attack * dt * (e.Kind == EnemyKind.Armor ? 1.4 : 1) * (Wave >= 6 ? 1 + .075 * (Wave - 5) : 1);
