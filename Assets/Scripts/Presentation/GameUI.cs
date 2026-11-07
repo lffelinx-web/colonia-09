@@ -34,7 +34,12 @@ namespace Colonia09.Presentation
         Image energyFillImage;
         readonly List<Image> corePips = new List<Image>();
         Text modalKicker, modalTitle, modalLead, modalInfo, modalFooter, primaryLabel, secondaryLabel;
-        Text inspectName, inspectDetail, upgradeLabel, sellLabel;
+        Text inspectName, inspectDetail, upgradeLabel, sellLabel, inspectStatus, inspectHp, upgradeCost, sellCost;
+        Image inspectStatusBg, inspectHpFillImage;
+        RectTransform inspectHpFill;
+        GameObject upgradeChip;
+        readonly List<Image> levelPips = new List<Image>();
+        Sprite bevel;
         Image inspectIcon, toastBg;
         Button upgradeButton;
         GameObject modal, inspector, cardsRoot, secondaryButton, difficultyRow, closeInspector;
@@ -88,6 +93,7 @@ namespace Colonia09.Presentation
             game = controller;
             font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             rounded = MakeRounded();
+            bevel = MakeBevel();
 
             if (FindAnyObjectByType<EventSystem>() == null)
             {
@@ -313,7 +319,7 @@ namespace Colonia09.Presentation
                 var card = Rt("Card_" + type, content);
                 card.sizeDelta = new Vector2(204, 0);
                 var cardImage = card.gameObject.AddComponent<Image>();
-                cardImage.sprite = rounded; cardImage.type = Image.Type.Sliced; cardImage.color = Panel;
+                cardImage.sprite = bevel; cardImage.type = Image.Type.Sliced; cardImage.color = Panel;
                 var button = card.gameObject.AddComponent<Button>();
                 button.targetGraphic = cardImage;
                 var captured = type;
@@ -342,34 +348,92 @@ namespace Colonia09.Presentation
             root.offsetMin = new Vector2(16, 12); root.offsetMax = new Vector2(-16, -72);
             inspector = root.gameObject;
 
-            inspectIcon = Rt("Icon", root).gameObject.AddComponent<Image>();
+            var iconFrame = Rt("IconFrame", root).gameObject.AddComponent<Image>();
+            iconFrame.sprite = bevel; iconFrame.type = Image.Type.Sliced; iconFrame.color = PanelLight; iconFrame.raycastTarget = false;
+            var frameRt = iconFrame.rectTransform;
+            frameRt.anchorMin = new Vector2(0, .3f); frameRt.anchorMax = new Vector2(0, 1); frameRt.pivot = new Vector2(0, .5f);
+            frameRt.sizeDelta = new Vector2(168, 0); frameRt.anchoredPosition = Vector2.zero;
+            inspectIcon = Rt("Icon", frameRt).gameObject.AddComponent<Image>();
             inspectIcon.preserveAspect = true; inspectIcon.raycastTarget = false;
-            var iconRt = inspectIcon.rectTransform;
-            iconRt.anchorMin = new Vector2(0, .22f); iconRt.anchorMax = new Vector2(0, 1); iconRt.pivot = new Vector2(0, .5f);
-            iconRt.sizeDelta = new Vector2(190, 0); iconRt.anchoredPosition = Vector2.zero;
+            Stretch(inspectIcon.rectTransform);
+            inspectIcon.rectTransform.offsetMin = new Vector2(10, 10); inspectIcon.rectTransform.offsetMax = new Vector2(-10, -10);
 
-            inspectName = Label(root, "", 31, Txt, TextAnchor.UpperLeft, FontStyle.Bold);
-            inspectName.rectTransform.anchorMin = new Vector2(0, .68f); inspectName.rectTransform.anchorMax = Vector2.one;
-            inspectName.rectTransform.offsetMin = new Vector2(205, 0); inspectName.rectTransform.offsetMax = Vector2.zero;
-            inspectName.resizeTextForBestFit = true; inspectName.resizeTextMinSize = 20; inspectName.resizeTextMaxSize = 31;
-            inspectDetail = Label(root, "", 27, Muted, TextAnchor.UpperLeft);
-            inspectDetail.rectTransform.anchorMin = new Vector2(0, .3f); inspectDetail.rectTransform.anchorMax = new Vector2(1, .68f);
-            inspectDetail.rectTransform.offsetMin = new Vector2(205, 0); inspectDetail.rectTransform.offsetMax = Vector2.zero;
-            inspectDetail.resizeTextForBestFit = true; inspectDetail.resizeTextMinSize = 18; inspectDetail.resizeTextMaxSize = 27;
+            inspectName = Label(root, "", 34, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
+            TopLeft(inspectName.rectTransform, 186, 0, 360, 46);
+            for (int i = 0; i < 3; i++)  // Level marks.
+            {
+                var pip = Rt("Level", root).gameObject.AddComponent<Image>();
+                pip.sprite = rounded; pip.type = Image.Type.Sliced; pip.raycastTarget = false;
+                pip.rectTransform.anchorMin = pip.rectTransform.anchorMax = new Vector2(0, 1); pip.rectTransform.pivot = new Vector2(0, 1);
+                pip.rectTransform.sizeDelta = new Vector2(26, 14); pip.rectTransform.anchoredPosition = new Vector2(186 + i * 32, -54);
+                levelPips.Add(pip);
+            }
+            inspectStatusBg = Rt("Status", root).gameObject.AddComponent<Image>();
+            inspectStatusBg.sprite = rounded; inspectStatusBg.type = Image.Type.Sliced; inspectStatusBg.raycastTarget = false;
+            var statusRt = inspectStatusBg.rectTransform;
+            statusRt.anchorMin = statusRt.anchorMax = Vector2.one; statusRt.pivot = Vector2.one;
+            statusRt.sizeDelta = new Vector2(300, 40); statusRt.anchoredPosition = new Vector2(0, -2);
+            inspectStatus = Label(statusRt, "", 22, Bg, TextAnchor.MiddleCenter, FontStyle.Bold);
+            inspectStatus.resizeTextForBestFit = true; inspectStatus.resizeTextMinSize = 12; inspectStatus.resizeTextMaxSize = 22;
+            inspectStatus.rectTransform.offsetMin = new Vector2(10, 0); inspectStatus.rectTransform.offsetMax = new Vector2(-10, 0);
 
-            upgradeButton = TextButton(root, "MEJORAR", 30, Cyan, Bg, game.UpgradeSelected);
-            upgradeLabel = upgradeButton.GetComponentInChildren<Text>();
+            var hpTrack = Rt("Health", root).gameObject.AddComponent<Image>();
+            hpTrack.sprite = rounded; hpTrack.type = Image.Type.Sliced; hpTrack.color = Html("#071620"); hpTrack.raycastTarget = false;
+            var hpRt = hpTrack.rectTransform;
+            hpRt.anchorMin = new Vector2(0, 1); hpRt.anchorMax = Vector2.one; hpRt.pivot = new Vector2(0, 1);
+            hpRt.offsetMin = new Vector2(310, -80); hpRt.offsetMax = new Vector2(0, -52);
+            var hpFill = Rt("Fill", hpRt).gameObject.AddComponent<Image>();
+            hpFill.sprite = rounded; hpFill.type = Image.Type.Sliced; hpFill.raycastTarget = false;
+            inspectHpFillImage = hpFill;
+            inspectHpFill = hpFill.rectTransform;
+            inspectHpFill.anchorMin = Vector2.zero; inspectHpFill.offsetMin = new Vector2(3, 3); inspectHpFill.offsetMax = new Vector2(-3, -3);
+            inspectHp = Label(hpRt, "", 19, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
+            var hpOutline = inspectHp.gameObject.AddComponent<Outline>();
+            hpOutline.effectColor = new Color(.03f, .08f, .12f, .95f);
+
+            inspectDetail = Label(root, "", 24, Muted, TextAnchor.UpperLeft);
+            inspectDetail.rectTransform.anchorMin = new Vector2(0, .3f); inspectDetail.rectTransform.anchorMax = new Vector2(1, 1);
+            inspectDetail.rectTransform.offsetMin = new Vector2(186, 6); inspectDetail.rectTransform.offsetMax = new Vector2(0, -90);
+            inspectDetail.resizeTextForBestFit = true; inspectDetail.resizeTextMinSize = 16; inspectDetail.resizeTextMaxSize = 24;
+
+            upgradeButton = ActionButton(root, "MEJORAR", Cyan, Bg, "icon_upgrade", game.UpgradeSelected, out upgradeLabel, out upgradeCost, out upgradeChip);
             var upRt = (RectTransform)upgradeButton.transform;
-            upRt.anchorMin = new Vector2(0, 0); upRt.anchorMax = new Vector2(.62f, .27f);
+            upRt.anchorMin = new Vector2(0, 0); upRt.anchorMax = new Vector2(.6f, .27f);
             upRt.offsetMin = upRt.offsetMax = Vector2.zero;
-            SellButton = TextButton(root, "RECICLAR", 30, PanelLight, Txt, game.RecycleSelected);
-            sellLabel = SellButton.GetComponentInChildren<Text>();
+            SellButton = ActionButton(root, "RECICLAR", PanelLight, Txt, "icon_recycle", game.RecycleSelected, out sellLabel, out sellCost, out _);
             var sellRt = (RectTransform)SellButton.transform;
-            sellRt.anchorMin = new Vector2(.64f, 0); sellRt.anchorMax = new Vector2(1, .27f);
+            sellRt.anchorMin = new Vector2(.62f, 0); sellRt.anchorMax = new Vector2(1, .27f);
             sellRt.offsetMin = sellRt.offsetMax = Vector2.zero;
             inspector.SetActive(false);
         }
 
+        /// <summary>Raised button with an icon, a label and a cost chip with the energy bolt.</summary>
+        Button ActionButton(Transform parent, string text, Color bg, Color fg, string icon, UnityEngine.Events.UnityAction onClick,
+            out Text label, out Text cost, out GameObject chip)
+        {
+            var button = TextButton(parent, text, 30, bg, fg, onClick);
+            var rt = (RectTransform)button.transform;
+            label = button.GetComponentInChildren<Text>();
+            label.alignment = TextAnchor.MiddleLeft;
+            label.rectTransform.offsetMin = new Vector2(78, 2); label.rectTransform.offsetMax = new Vector2(-130, -2);
+            var image = Rt("Icon", rt).gameObject.AddComponent<Image>();
+            image.sprite = Resources.Load<Sprite>("Sprites/UI/" + icon); image.preserveAspect = true; image.raycastTarget = false;
+            image.rectTransform.anchorMin = new Vector2(0, .5f); image.rectTransform.anchorMax = new Vector2(0, .5f); image.rectTransform.pivot = new Vector2(0, .5f);
+            image.rectTransform.sizeDelta = new Vector2(56, 56); image.rectTransform.anchoredPosition = new Vector2(14, 0);
+            var chipImage = Rt("Chip", rt).gameObject.AddComponent<Image>();
+            chipImage.sprite = rounded; chipImage.type = Image.Type.Sliced; chipImage.color = new Color(.02f, .07f, .1f, .78f); chipImage.raycastTarget = false;
+            var chipRt = chipImage.rectTransform;
+            chipRt.anchorMin = new Vector2(1, .5f); chipRt.anchorMax = new Vector2(1, .5f); chipRt.pivot = new Vector2(1, .5f);
+            chipRt.sizeDelta = new Vector2(118, 48); chipRt.anchoredPosition = new Vector2(-12, 0);
+            var bolt = Rt("Bolt", chipRt).gameObject.AddComponent<Image>();
+            bolt.sprite = Resources.Load<Sprite>("Sprites/UI/icon_energy"); bolt.preserveAspect = true; bolt.raycastTarget = false;
+            bolt.rectTransform.anchorMin = bolt.rectTransform.anchorMax = new Vector2(0, .5f); bolt.rectTransform.pivot = new Vector2(0, .5f);
+            bolt.rectTransform.sizeDelta = new Vector2(36, 36); bolt.rectTransform.anchoredPosition = new Vector2(8, 0);
+            cost = Label(chipRt, "", 28, Gold, TextAnchor.MiddleCenter, FontStyle.Bold);
+            cost.rectTransform.offsetMin = new Vector2(40, 0); cost.rectTransform.offsetMax = new Vector2(-6, 0);
+            chip = chipImage.gameObject;
+            return button;
+        }
         void BuildToast()
         {
             var toast = Rt("Toast", safeArea);
@@ -562,11 +626,33 @@ namespace Colonia09.Presentation
             }
             if (selected != null)
             {
-                inspectName.text = Safe($"{GameData.Modules[selected.Type].Name} · NIVEL {selected.Level} · {sim.ModuleStatus(selected)}");
-                inspectDetail.text = Safe(sim.ModuleDetail(selected));
-                upgradeLabel.text = Safe(sim.UpgradeLabel(selected));
-                upgradeButton.interactable = sim.CanUpgrade(selected);
-                sellLabel.text = $"RECICLAR +{sim.RecycleValue(selected)}";
+                var def = GameData.Modules[selected.Type];
+                inspectName.text = def.Name;
+                for (int i = 0; i < levelPips.Count; i++) levelPips[i].color = i < selected.Level ? Html(def.Color) : Html("#24384a");
+
+                string status = Safe(sim.ModuleStatus(selected));
+                inspectStatus.text = status;
+                inspectStatusBg.color = status.StartsWith("OPERATIVO") || status.StartsWith("AUTÓNOMA") ? Green
+                    : status.StartsWith("EN MONTAJE") ? Cyan : status.StartsWith("EMP") ? Html("#c9a2ff") : Gold;
+                if (status.StartsWith("SIN") || status.StartsWith("MONTAJE INTERRUMPIDO") || status.StartsWith("REPARACIÓN")) inspectStatusBg.color = Red;
+
+                float hp = Mathf.Clamp01((float)(selected.Hp / selected.MaxHp));
+                inspectHpFill.anchorMax = new Vector2(Mathf.Max(.03f, hp), 1);
+                inspectHpFillImage.color = hp > .5f ? Green : hp > .25f ? Gold : Red;
+                inspectHp.text = $"{Mathf.Ceil((float)selected.Hp)} / {Mathf.Ceil((float)selected.MaxHp)} PV";
+
+                var detail = Safe(sim.ModuleDetail(selected)).Split(new[] { " · " }, System.StringSplitOptions.None);
+                inspectDetail.text = string.Join("\n", System.Array.FindAll(detail, d => !d.EndsWith(" PV")));
+
+                bool canUpgrade = sim.CanUpgrade(selected);
+                bool upgradeOpen = !selected.IsDeploying && selected.Level < 3 && sim.Wave >= sim.UpgradeUnlock(selected);
+                upgradeLabel.text = upgradeOpen ? "MEJORAR" : Safe(sim.UpgradeLabel(selected));
+                upgradeChip.SetActive(upgradeOpen);
+                upgradeCost.text = sim.UpgradeCost(selected).ToString();
+                upgradeCost.color = sim.Charge >= sim.UpgradeCost(selected) ? Gold : Red;
+                upgradeButton.interactable = canUpgrade;
+                sellLabel.text = "RECICLAR";
+                sellCost.text = $"+{sim.RecycleValue(selected)}";
             }
         }
 
@@ -630,7 +716,9 @@ namespace Colonia09.Presentation
         {
             var rt = Rt("Button", parent);
             var image = rt.gameObject.AddComponent<Image>();
-            image.sprite = rounded; image.type = Image.Type.Sliced; image.color = bg;
+            image.sprite = bevel; image.type = Image.Type.Sliced; image.color = bg;
+            var shade = rt.gameObject.AddComponent<Shadow>();  // Drop shadow gives the button depth.
+            shade.effectColor = new Color(0, 0, 0, .55f); shade.effectDistance = new Vector2(0, -5);
             var button = rt.gameObject.AddComponent<Button>();
             button.targetGraphic = image;
             button.onClick.AddListener(onClick);
@@ -641,6 +729,31 @@ namespace Colonia09.Presentation
             label.resizeTextForBestFit = true; label.resizeTextMinSize = 16; label.resizeTextMaxSize = size;
             label.rectTransform.offsetMin = new Vector2(8, 2); label.rectTransform.offsetMax = new Vector2(-8, -2);
             return button;
+        }
+
+        /// <summary>Rounded button face: light top edge, soft vertical gradient and a darker bottom lip.</summary>
+        static Sprite MakeBevel()
+        {
+            const int Size = 64, Radius = 18;
+            var tex = new Texture2D(Size, Size, TextureFormat.RGBA32, false) { filterMode = FilterMode.Bilinear };
+            var px = new Color32[Size * Size];
+            for (int y = 0; y < Size; y++)
+                for (int x = 0; x < Size; x++)
+                {
+                    float dx = Mathf.Max(Radius - x - .5f, x + .5f - (Size - Radius), 0);
+                    float dy = Mathf.Max(Radius - y - .5f, y + .5f - (Size - Radius), 0);
+                    float distance = Radius - Mathf.Sqrt(dx * dx + dy * dy);
+                    float alpha = Mathf.Clamp01(distance + .5f);
+                    float shade = Mathf.Lerp(.74f, 1f, y / (float)(Size - 1));
+                    if (y < 5) shade *= .62f;                              // Bottom lip.
+                    if (y > Size - 6 && distance > 1.5f) shade = 1.18f;   // Top highlight.
+                    if (distance < 2.5f) shade *= .8f;                     // Rim.
+                    byte v = (byte)Mathf.Clamp(shade * 216, 0, 255);
+                    px[y * Size + x] = new Color32(v, v, v, (byte)(alpha * 255));
+                }
+            tex.SetPixels32(px);
+            tex.Apply();
+            return Sprite.Create(tex, new Rect(0, 0, Size, Size), new Vector2(.5f, .5f), 100, 0, SpriteMeshType.FullRect, new Vector4(Radius, Radius, Radius, Radius));
         }
 
         static Sprite MakeRounded()

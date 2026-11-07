@@ -267,9 +267,9 @@ def build_generator(blade_angle):
         box((side * .35, -.01, .055), (.07, .34, .09), shell, bevel=.016)
         for i in range(4):
             box((side * .355, -.12 + i * .073, .102), (.04, .04, .012), dark, bevel=.004)
-    for side in (-1, 1):  # Carry handle over the top edge, like the original sprite.
+    for side in ():  # The carry handle was removed: it shrank the body inside the frame.
         box((side * .12, .385, .055), (.03, .13, .03), handle, bevel=.01)
-    box((0, .44, .055), (.27, .032, .03), handle, bevel=.012)
+
 
     torus((0, -.01, .125), .288, .03, steel)
     torus((0, -.01, .138), .238, .014, brass)
@@ -285,9 +285,9 @@ def build_generator(blade_angle):
         a = i * math.pi / 3 + .5
         cyl((math.cos(a) * .265, -.01 + math.sin(a) * .265, .15), .012, .012, steel, bevel=.002, vertices=6)
 
-    box((0, -.365, .045), (.22, .08, .05), handle, bevel=.012)  # Connector at the bottom, like the original.
+    box((0, -.33, .045), (.2, .06, .05), handle, bevel=.012)  # Connector at the bottom, like the original.
     for x in (-.055, 0, .055):
-        cyl((x, -.38, .074), .009, .012, glow, bevel=.002, vertices=16)
+        cyl((x, -.345, .074), .009, .012, glow, bevel=.002, vertices=16)
 
 
 def build_tank():
@@ -385,46 +385,6 @@ def legs(points, z, mat, tip, width=.03, tip_radius=.03):
 
 
 # ---- Modules: one cell per sprite; weapons aim up, toward the enemies ------------------
-
-def build_tesla():
-    setup(1.0)
-    base = material("Base", "#57536f", .9, .4, .3)
-    dark = material("Dark", "#1f1d2c", .8, .5, .3)
-    coil = material("Coil", "#c0a8ff", .9, .28, .2)
-    trim = material("Trim", "#8f78d8", 1, .3, .15)
-    glow = glowing("Glow", "#b98cff", 3)
-    box((0, -.3, .05), (.62, .24, .1), base, bevel=.025)
-    box((0, -.3, .105), (.42, .11, .012), glow, bevel=.003)
-    box((0, -.06, .05), (.4, .34, .08), dark, bevel=.02)
-    for side in (-1, 1):
-        box((side * .335, -.02, .05), (.14, .62, .08), base, bevel=.02)
-        for i in range(4):
-            cyl((side * .335, -.24 + i * .15, .11), .062, .05, coil, bevel=.012)
-            cyl((side * .335, -.24 + i * .15, .14), .026, .012, dark, bevel=.003)
-    prism([(0, .48), (-.11, .08), (0, -.2), (.11, .08)], .15, .06, trim, .012)
-    prism([(0, .4), (-.06, .08), (0, -.12), (.06, .08)], .19, .02, glow, .005)
-    for side in (-1, 1):
-        strut((side * .09, .05), (side * .3, .22), .1, .018, trim)
-
-
-def build_repair():
-    setup(1.0)
-    frame = material("Frame", "#86999f", .9, .36, .25)
-    dark = material("Dark", "#17242a", .75, .5, .3)
-    hood = material("Hood", "#5d7178", .85, .4, .3)
-    arm = material("Arm", "#9de6a4", .7, .36, .2)
-    glow = glowing("Glow", "#7dff9c", 2.4)
-    box((0, -.03, .05), (.82, .8, .1), frame, bevel=.03)
-    box((0, -.03, .105), (.7, .68, .012), dark, bevel=.004)
-    box((0, .33, .15), (.56, .2, .09), hood, bevel=.03)
-    box((0, .33, .198), (.4, .05, .012), frame, bevel=.004)
-    box((0, -.1, .14), (.13, .36, .05), glow, bevel=.012)
-    box((0, -.1, .14), (.36, .13, .05), glow, bevel=.012)
-    for side in (-1, 1):
-        strut((side * .3, .14), (side * .13, -.02), .13, .03, arm)
-        ball((side * .3, .14, .13), .032, frame)
-    box((0, -.36, .13), (.34, .06, .03), frame, bevel=.01)
-
 
 # ---- Enemies: 1.5 cells per sprite; they point down, the direction they advance --------
 
@@ -565,29 +525,6 @@ def build_pulse():
     along_y((0, .46, .2), .068, .06, steel, bevel=.012)
     LAYER = "base"
     cyl((0, cy + .02, .26), .03, .012, glow, bevel=.004)
-
-
-def build_wall():
-    """A shield with a force field along its top edge, the side facing the enemies."""
-    setup(1.0)
-    frame = material("Frame", "#e8a57c", .8, .36, .25)
-    plate = material("Plate", "#55666f", .85, .42, .3)
-    dark = material("Dark", "#1c252c", .8, .5, .3)
-    steel = material("Steel", "#d6dde0", 1, .28, .15)
-    field = glowing("Field", "#8fe9ff", 2.4)
-    outline = [(-.47, .36), (-.47, -.06), (0, -.5), (.47, -.06), (.47, .36)]
-    prism(outline, .055, .11, frame, .018)
-    prism([(x * .86, y * .86 + .01) for x, y in outline], .118, .016, dark, .004)
-    prism([(x * .76, y * .76 + .01) for x, y in outline], .14, .03, plate, .01)
-    chevron(0, -.18, 270, .15, .06, .165, .016, frame)
-    chevron(0, -.04, 270, .15, .06, .165, .016, frame)
-    chevron(0, .1, 270, .15, .06, .165, .016, frame)
-    bolts([(-.33, .24), (.33, .24), (-.33, -.03), (.33, -.03), (0, -.34)], .16, .014, steel)
-    for side in (-1, 1):  # Field emitters.
-        box((side * .42, .36, .12), (.1, .12, .12), steel, bevel=.02)
-        cyl((side * .42, .37, .185), .034, .014, field, bevel=.004, vertices=24)
-    box((0, .435, .08), (.72, .034, .06), field, bevel=.008)
-    box((0, .468, .06), (.66, .012, .02), transparent("FieldEdge", "#bff3ff", .45), bevel=.002)
 
 
 # ---- Redesigned enemies ----------------------------------------------------------------
@@ -925,34 +862,6 @@ def build_helicopter():
     cyl((0, 0, H + .19), .032, .014, steel, bevel=.004)
 
 
-def build_relay():
-    """Compact transmission pylon: ceramic insulator stack, three emitters and a range ring."""
-    setup(1.0)
-    frame = material("Frame", "#4f6672", .9, .4, .4)
-    dark = material("Dark", "#172228", .8, .5, .3)
-    steel = material("Steel", "#c7d2d7", 1, .28, .25)
-    ceramic = material("Ceramic", "#e6f2f4", 0, .2, .15)
-    line = glowing("Line", "#4fe6f5", 2.4)
-    hot = glowing_hot("Hot", "#c8fbff")
-    for i in range(16):  # Dashed range ring: this piece carries power two cells further.
-        a = i * 360 / 16
-        arc(0, 0, .43, .46, a + 4, a + 18, .03, .012, line, .002, n=6)
-    for a in (90, 210, 330):
-        r = math.radians(a)
-        strut((math.cos(r) * .12, math.sin(r) * .12), (math.cos(r) * .36, math.sin(r) * .36), .06, .06, frame)
-        cyl((math.cos(r) * .37, math.sin(r) * .37, .05), .055, .06, dark, bevel=.01)
-        cyl((math.cos(r) * .37, math.sin(r) * .37, .085), .028, .012, line, bevel=.003, vertices=16)
-    prism(regular(6, .2), .07, .09, frame, .016)
-    for a in (30, 150, 270):  # Emitter arms between the legs.
-        r = math.radians(a)
-        strut((math.cos(r) * .1, math.sin(r) * .1), (math.cos(r) * .27, math.sin(r) * .27), .14, .035, steel)
-        chevron(math.cos(r) * .3, math.sin(r) * .3, a, .05, .022, .14, .02, line)
-    for z, radius in ((.13, .15), (.17, .125), (.21, .1), (.25, .078)):
-        cyl((0, 0, z), radius, .03, ceramic, bevel=.01)
-    torus((0, 0, .27), .07, .012, steel)
-    cyl((0, 0, .285), .05, .025, hot, bevel=.008)
-
-
 def build_cryo():
     """Frost cannon: frozen rim with ice shards, coolant tank and a flared nozzle."""
     setup(1.0)
@@ -1025,6 +934,155 @@ def build_icon_wave():
         chevron(0, y + .02, 270, .26, .06, .11, .03, glow if i < 2 else rim)
 
 
+def build_relay():
+    """Transmission pylon on a hex platform: heavy cable conduits carry power out to three sides."""
+    setup(1.0)
+    deck = material("Deck", "#3f5560", .9, .42, .45)
+    frame = material("Frame", "#566e7a", .9, .38, .4)
+    dark = material("Dark", "#141d22", .8, .5, .3)
+    steel = material("Steel", "#c7d2d7", 1, .28, .25)
+    rubber = material("Rubber", "#1c2226", .1, .7, .3)
+    ceramic = material("Ceramic", "#e6f2f4", 0, .2, .15)
+    line = glowing("Line", "#4fe6f5", 2.4)
+    hot = glowing_hot("Hot", "#c8fbff")
+    prism(regular(6, .47, math.pi / 6), .04, .08, deck, .02)
+    prism(regular(6, .41, math.pi / 6), .085, .012, dark, .004)
+    for a in (90, 210, 330):
+        r = math.radians(a)
+        c, s = math.cos(r), math.sin(r)
+        box((c * .27, s * .27, .1), (.34, .1, .06), rubber, bevel=.02, rot=r)       # Cable conduit.
+        box((c * .27, s * .27, .134), (.3, .022, .01), line, bevel=.003, rot=r)
+        for k in (.17, .3):
+            box((c * k, s * k, .135), (.035, .12, .05), steel, bevel=.008, rot=r)  # Cable clamps.
+        box((c * .42, s * .42, .1), (.1, .16, .1), frame, bevel=.02, rot=r)       # Junction box at the edge.
+        cyl((c * .45, s * .45, .155), .03, .012, hot, bevel=.003, vertices=16)
+    for a in (30, 150, 270):
+        r = math.radians(a)
+        bolts([(math.cos(r) * .36, math.sin(r) * .36)], .095, .02, steel)
+    cyl((0, 0, .11), .17, .06, frame, bevel=.014)
+    for z, radius in ((.15, .135), (.185, .112), (.22, .09), (.255, .07)):
+        cyl((0, 0, z), radius, .028, ceramic, bevel=.01)
+    torus((0, 0, .275), .085, .014, steel)
+    cyl((0, 0, .29), .05, .025, hot, bevel=.008)
+
+
+def build_tesla():
+    """A Tesla coil from above: polished toroid, copper windings, central electrode and capacitors."""
+    setup(1.0)
+    base = material("Base", "#3d3a52", .9, .42, .45)
+    dark = material("Dark", "#17151f", .8, .5, .3)
+    chrome = material("Chrome", "#dfe3ea", 1, .16, .1)
+    copper = material("Copper", "#d98a4e", 1, .3, .25)
+    cap = material("Cap", "#5c4a8f", .7, .35, .3)
+    glow = glowing("Glow", "#b98cff", 3)
+    hot = glowing_hot("Hot", "#efdcff")
+    box((0, 0, .04), (.86, .86, .08), base, bevel=.035)
+    box((0, 0, .085), (.76, .76, .012), dark, bevel=.004)
+    for a, b in ((1, 1), (-1, 1), (1, -1), (-1, -1)):  # Capacitor bank in the corners.
+        cyl((a * .3, b * .3, .12), .085, .1, cap, bevel=.016)
+        torus((a * .3, b * .3, .17), .07, .01, chrome)
+        cyl((a * .3, b * .3, .18), .03, .014, glow, bevel=.004, vertices=20)
+        strut((a * .22, b * .22), (a * .12, b * .12), .12, .02, copper)
+    for i, radius in enumerate((.25, .22, .19, .16, .13)):  # Copper windings seen through the toroid.
+        torus((0, 0, .13 + i * .012), radius, .009, copper)
+    torus((0, 0, .21), .23, .07, chrome)
+    cyl((0, 0, .2), .1, .06, dark, bevel=.01)
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=32, ring_count=16, radius=.075, location=(0, 0, .27))
+    rs_sphere = bpy.context.active_object
+    finish(rs_sphere, hot, 0, smooth=True)
+    for a, b in ((1, 1), (-1, 1), (1, -1), (-1, -1)):  # Lightning jumping from the toroid to the capacitors.
+        points = [(a * .2, b * .2), (a * .23, b * .17), (a * .25, b * .26), (a * .29, b * .24)]
+        for p0, p1 in zip(points, points[1:]):
+            strut(p0, p1, .25 - abs(p0[0]) * .2, .022, glow)
+    for i, a in enumerate((20, 110, 200, 290)):  # Arcs crawling over the toroid.
+        arc(0, 0, .195, .235, a, a + 34 + i * 6, .285, .012, glow, .001, n=8)
+
+
+def build_wall():
+    """Armored barricade: thick sloped plates, hazard edge and a hexagonal energy curtain toward the enemies."""
+    setup(1.0)
+    concrete = material("Concrete", "#6f6a66", .1, .78, .6)
+    plate = material("Plate", "#55666f", .85, .42, .5)
+    frame = material("Frame", "#e0a27f", .8, .38, .4)
+    dark = material("Dark", "#1c252c", .8, .5, .3)
+    steel = material("Steel", "#d6dde0", 1, .28, .2)
+    yellow = material("Yellow", "#e0ac1a", .2, .5, .5)
+    black = material("Black", "#15171a", .2, .6, .3)
+    field = material("Field", "#7fe4ff", 0, .2, 0, emission="#5fd8ff", strength=.9)
+    box((0, -.05, .05), (.94, .7, .1), concrete, bevel=.04)                  # Foundation block.
+    for i, x in enumerate((-.31, 0, .31)):                                   # Thick armor plates.
+        box((x, -.04, .14), (.29, .58, .1), plate, bevel=.03)
+        box((x, -.04, .195), (.21, .48, .012), dark, bevel=.004)
+        for y in (-.24, .16):
+            box((x, y, .2), (.2, .035, .01), frame, bevel=.003)
+        bolts([(x - .1, -.3), (x + .1, -.3), (x - .1, .22), (x + .1, .22)], .2, .013, steel)
+    hazard(0, -.38, .9, .06, .11, yellow, black, blocks=12)                  # Back edge, facing the colony.
+    for side in (-1, 1):                                                     # Field emitters.
+        box((side * .43, .32, .13), (.1, .12, .18), frame, bevel=.02)
+        cyl((side * .43, .35, .23), .035, .016, field, bevel=.004, vertices=16)
+    box((0, .33, .08), (.76, .05, .06), dark, bevel=.01)
+    for i in range(7):                                                       # Hex energy curtain.
+        x = -.33 + i * .11
+        for row, y in enumerate((.37, .44)):
+            cyl((x + (row * .055), y, .1), .05, .012, field, bevel=.002, vertices=6)
+
+
+def build_repair():
+    """Field workshop: an articulated robot arm with a welding head over a repair pad."""
+    setup(1.0)
+    floor = material("Floor", "#4d5d63", .85, .42, .5)
+    dark = material("Dark", "#151e22", .8, .5, .3)
+    steel = material("Steel", "#c9d3d7", 1, .28, .2)
+    arm = material("Arm", "#e8b24a", .6, .34, .35)
+    green = glowing("Green", "#6dff9c", 2.4)
+    hot = glowing_hot("Hot", "#eaffef")
+    crate = material("Crate", "#2f6a72", .6, .48, .5)
+    box((0, 0, .04), (.88, .88, .08), floor, bevel=.035)
+    box((0, 0, .085), (.78, .78, .012), dark, bevel=.004)
+    cyl((.07, .06, .1), .25, .03, steel, bevel=.008)                         # Repair pad.
+    cyl((.07, .06, .117), .21, .012, dark, bevel=.003)
+    box((.07, .06, .126), (.2, .06, .012), green, bevel=.003)
+    box((.07, .06, .126), (.06, .2, .012), green, bevel=.003)
+    for x in (-.28, -.12):                                                   # Tool rack.
+        box((x, -.33, .1), (.12, .1, .08), crate, bevel=.015)
+        box((x, -.33, .145), (.08, .02, .01), steel, bevel=.002)
+    box((.3, -.33, .1), (.16, .1, .1), crate, bevel=.015)
+    cyl((-.3, .3, .12), .13, .1, dark, bevel=.015)                           # Arm base and joints.
+    cyl((-.3, .3, .18), .095, .04, arm, bevel=.01)
+    strut((-.3, .3), (-.06, .34), .22, .1, arm)
+    cyl((-.06, .34, .24), .075, .06, dark, bevel=.01)
+    strut((-.06, .34), (.07, .13), .26, .085, arm)
+    cyl((.06, .14, .27), .04, .05, dark, bevel=.008)
+    cyl((.06, .12, .3), .022, .03, hot, bevel=.004)                           # Welding tip.
+    for i in range(4):
+        a = i * math.pi / 2 + PHASE
+        ball((.06 + math.cos(a) * .045, .12 + math.sin(a) * .045, .3), .012, green)
+    for side in (-1, 1):
+        box((side * .4, .1, .1), (.04, .3, .06), green if side > 0 else steel, bevel=.008)
+
+
+# ---- Button icons --------------------------------------------------------------------
+
+def build_icon_upgrade():
+    setup(1.0)
+    rim = material("Rim", "#1d5a63", .9, .32, .2)
+    glow = glowing("Glow", "#9ef6ff", 2.6)
+    for i, y in enumerate((-.2, .08)):
+        chevron(0, y, 90, .36, .13, .06, .08, rim)
+        chevron(0, y - .01, 90, .28, .07, .11, .03, glow)
+
+
+def build_icon_recycle():
+    setup(1.0)
+    rim = material("Rim", "#61483a", .9, .32, .2)
+    glow = glowing("Glow", "#ffcf9e", 2.4)
+    for a in (90, 210, 330):
+        arc(0, 0, .26, .38, a + 18, a + 92, .06, .08, rim, .01, n=14)
+        arc(0, 0, .29, .35, a + 22, a + 88, .11, .03, glow, .004, n=14)
+        r = math.radians(a + 96)
+        chevron(math.cos(r) * .32, math.sin(r) * .32, a + 186, .13, .06, .08, .07, glow)
+
+
 def build_tank_wrapper():
     build_tank()
 
@@ -1036,9 +1094,10 @@ BUILDERS = {
     "sapper": build_sapper, "bulwark": build_bulwark, "thermal": build_thermal, "grounder": build_grounder, "hunter": build_hunter,
     "commander": build_commander, "tank": build_tank_wrapper, "helicopter": build_helicopter, "bomber": build_bomber,
     "icon_energy": build_icon_energy, "icon_base": build_icon_base, "icon_wave": build_icon_wave,
+    "icon_upgrade": build_icon_upgrade, "icon_recycle": build_icon_recycle,
 }
 ONLY = sys.argv[sys.argv.index("--") + 2:]
-MODULES = ("generator", "reactor", "relay", "pulse", "cryo", "tesla", "wall", "repair", "icon_energy", "icon_base", "icon_wave")
+MODULES = ("generator", "reactor", "relay", "pulse", "cryo", "tesla", "wall", "repair", "icon_energy", "icon_base", "icon_wave", "icon_upgrade", "icon_recycle")
 # Size on the board, in cells. Everything reads at about the same size; a few are slightly larger.
 ENEMY_SIZE = {"commander": 1.2, "tank": 1.1, "bomber": 1.1, "armor": 1.05, "helicopter": 1.05}
 FRAMES = {"helicopter": 1}
