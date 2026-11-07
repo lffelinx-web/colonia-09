@@ -24,3 +24,6 @@
 *.p8
 *.p12
 *.mobileprovision
+
+# Android build temp
+/.utmp/
