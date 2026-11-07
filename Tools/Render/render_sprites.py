@@ -934,111 +934,24 @@ def build_icon_wave():
         chevron(0, y + .02, 270, .26, .06, .11, .03, glow if i < 2 else rim)
 
 
-def build_relay():
-    """Transmission pylon on a hex platform: heavy cable conduits carry power out to three sides."""
-    setup(1.0)
-    deck = material("Deck", "#3f5560", .9, .42, .45)
-    frame = material("Frame", "#566e7a", .9, .38, .4)
-    dark = material("Dark", "#141d22", .8, .5, .3)
-    steel = material("Steel", "#c7d2d7", 1, .28, .25)
-    rubber = material("Rubber", "#1c2226", .1, .7, .3)
-    ceramic = material("Ceramic", "#e6f2f4", 0, .2, .15)
-    line = glowing("Line", "#4fe6f5", 2.4)
-    hot = glowing_hot("Hot", "#c8fbff")
-    prism(regular(6, .47, math.pi / 6), .04, .08, deck, .02)
-    prism(regular(6, .41, math.pi / 6), .085, .012, dark, .004)
-    for a in (90, 210, 330):
-        r = math.radians(a)
-        c, s = math.cos(r), math.sin(r)
-        box((c * .27, s * .27, .1), (.34, .1, .06), rubber, bevel=.02, rot=r)       # Cable conduit.
-        box((c * .27, s * .27, .134), (.3, .022, .01), line, bevel=.003, rot=r)
-        for k in (.17, .3):
-            box((c * k, s * k, .135), (.035, .12, .05), steel, bevel=.008, rot=r)  # Cable clamps.
-        box((c * .42, s * .42, .1), (.1, .16, .1), frame, bevel=.02, rot=r)       # Junction box at the edge.
-        cyl((c * .45, s * .45, .155), .03, .012, hot, bevel=.003, vertices=16)
-    for a in (30, 150, 270):
-        r = math.radians(a)
-        bolts([(math.cos(r) * .36, math.sin(r) * .36)], .095, .02, steel)
-    cyl((0, 0, .11), .17, .06, frame, bevel=.014)
-    for z, radius in ((.15, .135), (.185, .112), (.22, .09), (.255, .07)):
-        cyl((0, 0, z), radius, .028, ceramic, bevel=.01)
-    torus((0, 0, .275), .085, .014, steel)
-    cyl((0, 0, .29), .05, .025, hot, bevel=.008)
-
-
-def build_tesla():
-    """A Tesla coil from above: polished toroid, copper windings, central electrode and capacitors."""
-    setup(1.0)
-    base = material("Base", "#3d3a52", .9, .42, .45)
-    dark = material("Dark", "#17151f", .8, .5, .3)
-    chrome = material("Chrome", "#dfe3ea", 1, .16, .1)
-    copper = material("Copper", "#d98a4e", 1, .3, .25)
-    cap = material("Cap", "#5c4a8f", .7, .35, .3)
-    glow = glowing("Glow", "#b98cff", 3)
-    hot = glowing_hot("Hot", "#efdcff")
-    box((0, 0, .04), (.86, .86, .08), base, bevel=.035)
-    box((0, 0, .085), (.76, .76, .012), dark, bevel=.004)
-    for a, b in ((1, 1), (-1, 1), (1, -1), (-1, -1)):  # Capacitor bank in the corners.
-        cyl((a * .3, b * .3, .12), .085, .1, cap, bevel=.016)
-        torus((a * .3, b * .3, .17), .07, .01, chrome)
-        cyl((a * .3, b * .3, .18), .03, .014, glow, bevel=.004, vertices=20)
-        strut((a * .22, b * .22), (a * .12, b * .12), .12, .02, copper)
-    for i, radius in enumerate((.25, .22, .19, .16, .13)):  # Copper windings seen through the toroid.
-        torus((0, 0, .13 + i * .012), radius, .009, copper)
-    torus((0, 0, .21), .23, .07, chrome)
-    cyl((0, 0, .2), .1, .06, dark, bevel=.01)
-    bpy.ops.mesh.primitive_uv_sphere_add(segments=32, ring_count=16, radius=.075, location=(0, 0, .27))
-    rs_sphere = bpy.context.active_object
-    finish(rs_sphere, hot, 0, smooth=True)
-    for a, b in ((1, 1), (-1, 1), (1, -1), (-1, -1)):  # Lightning jumping from the toroid to the capacitors.
-        points = [(a * .2, b * .2), (a * .23, b * .17), (a * .25, b * .26), (a * .29, b * .24)]
-        for p0, p1 in zip(points, points[1:]):
-            strut(p0, p1, .25 - abs(p0[0]) * .2, .022, glow)
-    for i, a in enumerate((20, 110, 200, 290)):  # Arcs crawling over the toroid.
-        arc(0, 0, .195, .235, a, a + 34 + i * 6, .285, .012, glow, .001, n=8)
-
-
-def build_wall():
-    """Armored barricade: thick sloped plates, hazard edge and a hexagonal energy curtain toward the enemies."""
-    setup(1.0)
-    concrete = material("Concrete", "#6f6a66", .1, .78, .6)
-    plate = material("Plate", "#55666f", .85, .42, .5)
-    frame = material("Frame", "#e0a27f", .8, .38, .4)
-    dark = material("Dark", "#1c252c", .8, .5, .3)
-    steel = material("Steel", "#d6dde0", 1, .28, .2)
-    yellow = material("Yellow", "#e0ac1a", .2, .5, .5)
-    black = material("Black", "#15171a", .2, .6, .3)
-    field = material("Field", "#7fe4ff", 0, .2, 0, emission="#5fd8ff", strength=.9)
-    box((0, -.05, .05), (.94, .7, .1), concrete, bevel=.04)                  # Foundation block.
-    for i, x in enumerate((-.31, 0, .31)):                                   # Thick armor plates.
-        box((x, -.04, .14), (.29, .58, .1), plate, bevel=.03)
-        box((x, -.04, .195), (.21, .48, .012), dark, bevel=.004)
-        for y in (-.24, .16):
-            box((x, y, .2), (.2, .035, .01), frame, bevel=.003)
-        bolts([(x - .1, -.3), (x + .1, -.3), (x - .1, .22), (x + .1, .22)], .2, .013, steel)
-    hazard(0, -.38, .9, .06, .11, yellow, black, blocks=12)                  # Back edge, facing the colony.
-    for side in (-1, 1):                                                     # Field emitters.
-        box((side * .43, .32, .13), (.1, .12, .18), frame, bevel=.02)
-        cyl((side * .43, .35, .23), .035, .016, field, bevel=.004, vertices=16)
-    box((0, .33, .08), (.76, .05, .06), dark, bevel=.01)
-    for i in range(7):                                                       # Hex energy curtain.
-        x = -.33 + i * .11
-        for row, y in enumerate((.37, .44)):
-            cyl((x + (row * .055), y, .1), .05, .012, field, bevel=.002, vertices=6)
-
-
 def build_repair():
     """Field workshop: an articulated robot arm with a welding head over a repair pad."""
     setup(1.0)
-    floor = material("Floor", "#4d5d63", .85, .42, .5)
+    floor = material("Floor", "#5a6a54", .85, .42, .5)
+    yellow = material("Yellow", "#e8b52a", .3, .45, .45)
+    black = material("Black", "#15171a", .2, .6, .3)
     dark = material("Dark", "#151e22", .8, .5, .3)
     steel = material("Steel", "#c9d3d7", 1, .28, .2)
     arm = material("Arm", "#e8b24a", .6, .34, .35)
     green = glowing("Green", "#6dff9c", 2.4)
     hot = glowing_hot("Hot", "#eaffef")
     crate = material("Crate", "#2f6a72", .6, .48, .5)
-    box((0, 0, .04), (.88, .88, .08), floor, bevel=.035)
-    box((0, 0, .085), (.78, .78, .012), dark, bevel=.004)
+    box((0, 0, .04), (.9, .9, .08), yellow, bevel=.035)                      # Industrial safety frame.
+    for side in (-1, 1):
+        hazard(0, side * .42, .84, .05, .085, yellow, black, blocks=10)
+        for k in range(10):
+            box((side * .42, -.38 + k * .085, .085), (.05, .042, .012), black if k % 2 else yellow, bevel=.002)
+    box((0, 0, .085), (.76, .76, .014), floor, bevel=.006)
     cyl((.07, .06, .1), .25, .03, steel, bevel=.008)                         # Repair pad.
     cyl((.07, .06, .117), .21, .012, dark, bevel=.003)
     box((.07, .06, .126), (.2, .06, .012), green, bevel=.003)
@@ -1083,6 +996,99 @@ def build_icon_recycle():
         chevron(math.cos(r) * .32, math.sin(r) * .32, a + 186, .13, .06, .08, .07, glow)
 
 
+def build_relay():
+    """Pylon on an octagonal platform. Four conduits follow the grid, the same way the links run."""
+    setup(1.0)
+    deck = material("Deck", "#3f5560", .9, .42, .45)
+    frame = material("Frame", "#566e7a", .9, .38, .4)
+    dark = material("Dark", "#141d22", .8, .5, .3)
+    steel = material("Steel", "#c7d2d7", 1, .28, .25)
+    rubber = material("Rubber", "#1c2226", .1, .7, .3)
+    ceramic = material("Ceramic", "#e6f2f4", 0, .2, .15)
+    line = glowing("Line", "#4fe6f5", 2.4)
+    hot = glowing_hot("Hot", "#c8fbff")
+    prism(regular(8, .46, math.pi / 8), .04, .08, deck, .02)
+    prism(regular(8, .4, math.pi / 8), .085, .012, dark, .004)
+    for a in (0, 90, 180, 270):
+        r = math.radians(a)
+        c, s = math.cos(r), math.sin(r)
+        box((c * .27, s * .27, .1), (.32, .1, .06), rubber, bevel=.02, rot=r)
+        box((c * .27, s * .27, .134), (.28, .022, .01), line, bevel=.003, rot=r)
+        box((c * .2, s * .2, .135), (.035, .12, .05), steel, bevel=.008, rot=r)
+        box((c * .41, s * .41, .1), (.1, .16, .1), frame, bevel=.02, rot=r)
+        cyl((c * .44, s * .44, .155), .03, .012, hot, bevel=.003, vertices=16)
+    for a in (45, 135, 225, 315):  # Diagonal studs, for the diagonal links.
+        r = math.radians(a)
+        cyl((math.cos(r) * .34, math.sin(r) * .34, .1), .045, .04, steel, bevel=.008)
+        cyl((math.cos(r) * .34, math.sin(r) * .34, .123), .022, .01, line, bevel=.003, vertices=16)
+    cyl((0, 0, .11), .17, .06, frame, bevel=.014)
+    for z, radius in ((.15, .135), (.185, .112), (.22, .09), (.255, .07)):
+        cyl((0, 0, z), radius, .028, ceramic, bevel=.01)
+    torus((0, 0, .275), .085, .014, steel)
+    cyl((0, 0, .29), .05, .025, hot, bevel=.008)
+
+
+def build_tesla():
+    """Four copper-wound coil pillars around a spiked crown electrode, with lightning jumping between them."""
+    setup(1.0)
+    base = material("Base", "#3a3450", .9, .42, .45)
+    dark = material("Dark", "#151320", .8, .5, .3)
+    chrome = material("Chrome", "#dfe3ea", 1, .16, .1)
+    copper = material("Copper", "#d98a4e", 1, .3, .25)
+    glow = glowing("Glow", "#b98cff", 3)
+    hot = glowing_hot("Hot", "#f3e6ff")
+    prism(regular(8, .47, math.pi / 8), .04, .08, base, .025)
+    prism(regular(8, .41, math.pi / 8), .085, .012, dark, .004)
+    pillars = [(a * .27, b * .27) for a, b in ((1, 1), (-1, 1), (1, -1), (-1, -1))]
+    for x, y in pillars:
+        cyl((x, y, .12), .1, .07, chrome, bevel=.012)
+        for i in range(5):  # Copper windings stacked up the pillar.
+            torus((x, y, .16 + i * .022), .075 - i * .004, .012, copper)
+        cyl((x, y, .27), .045, .03, chrome, bevel=.01)
+        ball((x, y, .3), .035, hot)
+    cyl((0, 0, .13), .13, .09, chrome, bevel=.016)
+    for i in range(8):  # Spiked crown.
+        a = i * math.tau / 8
+        prism([(math.cos(a) * .2, math.sin(a) * .2), (math.cos(a + .26) * .1, math.sin(a + .26) * .1), (math.cos(a - .26) * .1, math.sin(a - .26) * .1)],
+              .2, .03, chrome, .004)
+    ball((0, 0, .23), .07, hot)
+    for x, y in pillars:  # Jagged lightning from the crown to each pillar.
+        points = [(0, 0), (x * .35 + y * .12, y * .35 - x * .12), (x * .62 - y * .08, y * .62 + x * .08), (x, y)]
+        for p0, p1 in zip(points, points[1:]):
+            strut(p0, p1, .27, .03, glow)
+    for (x0, y0), (x1, y1) in zip(pillars, pillars[1:] + pillars[:1]):
+        if abs(x0 - x1) < .01 or abs(y0 - y1) < .01:
+            mid = ((x0 + x1) / 2 + (y1 - y0) * .1, (y0 + y1) / 2 + (x0 - x1) * .1)
+            strut((x0, y0), mid, .3, .018, glow)
+            strut(mid, (x1, y1), .3, .018, glow)
+
+
+def build_wall():
+    """Wedge-shaped bulwark pointing at the enemies: layered armor that deflects them, with a shield edge."""
+    setup(1.0)
+    plate = material("Plate", "#5c6c75", .85, .42, .5)
+    plate_dark = material("PlateDark", "#3f4c54", .85, .46, .5)
+    frame = material("Frame", "#e0a27f", .8, .38, .4)
+    dark = material("Dark", "#1c252c", .8, .5, .3)
+    steel = material("Steel", "#d6dde0", 1, .28, .2)
+    yellow = material("Yellow", "#e0ac1a", .2, .5, .5)
+    black = material("Black", "#15171a", .2, .6, .3)
+    field = material("Field", "#7fe4ff", 0, .2, 0, emission="#5fd8ff", strength=.9)
+    wedge = [(-.46, -.36), (-.46, .02), (0, .42), (.46, .02), (.46, -.36)]
+    prism(wedge, .07, .14, frame, .03)
+    for k, mat in ((.82, plate), (.62, plate_dark), (.42, plate)):  # Layered plates, thinner toward the back.
+        prism([(x * k, y * k + .04) for x, y in wedge], .14 + (1 - k) * .1, .04, mat, .012)
+    edge = [(-.44, .05), (0, .45), (.44, .05), (.4, .02), (0, .4), (-.4, .02)]
+    prism(edge, .16, .02, field, .004)                                     # Shield edge facing the enemies.
+    for side in (-1, 1):
+        for t in (.25, .55, .8):
+            bolts([(side * .46 * t, .42 - .4 * t + .01)], .2, .016, steel)
+        box((side * .4, -.3, .17), (.06, .1, .04), dark, bevel=.01)      # Lifting lugs on the back corners.
+    hazard(0, -.33, .84, .05, .15, yellow, black, blocks=12)
+    cyl((0, .0, .25), .07, .02, steel, bevel=.005)
+    cyl((0, .0, .265), .035, .012, field, bevel=.003, vertices=16)
+
+
 def build_tank_wrapper():
     build_tank()
 
@@ -1104,8 +1110,14 @@ FRAMES = {"helicopter": 1}
 LAYERS = {"generator": "fan", "pulse": "barrel", "helicopter": "rotor"}
 
 
+# Modules share one fixed scale so their bodies match; a few models are scaled to line up.
+MODULE_SCALE = {"generator": 1.2, "reactor": .93}
+
+
 def fit(name):
-    """Frames the model so its largest dimension takes the target size, centered on the cell."""
+    """Camera framing. Modules use a fixed one-cell frame; enemies and icons fit their size target."""
+    if name in MODULES and not name.startswith("icon_"):
+        return 0, 0, 1.0
     points = []
     for obj in bpy.context.scene.objects:
         if obj.type == "MESH" and not obj.is_shadow_catcher:
@@ -1116,6 +1128,12 @@ def fit(name):
     ortho = largest / .96 if name in MODULES else largest * 1.5 / ENEMY_SIZE.get(name, .96)
     return (min_x + max_x) / 2, (min_y + max_y) / 2, ortho
 
+
+def scale_scene(factor):
+    for obj in bpy.context.scene.objects:
+        if obj.type == "MESH" and not obj.is_shadow_catcher:
+            obj.location *= factor
+            obj.scale *= factor
 
 def show_only(layer):
     for obj in bpy.context.scene.objects:
@@ -1134,6 +1152,8 @@ if __name__ == "__main__":
             LAYER = "base"
             clear()
             builder()
+            if sprite_name in MODULE_SCALE:
+                scale_scene(MODULE_SCALE[sprite_name])
             framing = framing or fit(sprite_name)  # Same framing for every frame, so nothing jitters.
             camera = bpy.context.scene.camera
             camera.location.x, camera.location.y = framing[0], framing[1]
