@@ -1,0 +1,84 @@
+name: Compilar Colonia 09 para iOS
+# Unity runs on the developer's PC (Tools/publish-ios.ps1) and publishes the generated Xcode
+# project as a release asset. This workflow only compiles it, signs it and sends it to TestFlight.
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release con el proyecto de Xcode (vacío = la última)
+        required: false
+permissions:
+  contents: read
+concurrency:
+  group: ios
+  cancel-in-progress: true
+jobs:
+  ios:
+    runs-on: macos-26-intel
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    env:
+      ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+      ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
+      APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+      BUILD_NUMBER: ${{ github.run_number }}${{ github.run_attempt }}
+      MATCH_GIT_URL: https://github.com/${{ github.repository }}.git
+      FASTLANE_SKIP_UPDATE_CHECK: '1'
+      FASTLANE_HIDE_CHANGELOG: '1'
+      FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT: '120'
+      FASTLANE_XCODEBUILD_SETTINGS_RETRIES: '6'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Descargar proyecto de Xcode
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+        run: |
+          gh release download $TAG --pattern 'colonia09-xcode.tar.gz' --output xcode.tar.gz
+          mkdir xcode
+          tar -xzf xcode.tar.gz -C xcode
+          # The archive comes from Windows, which does not keep the executable bits.
+          find xcode -type f \( -name '*.sh' -o -path '*/IL2CPP/build/deploy/*' -o -path '*/Il2CppOutputProject/*/il2cpp' \) -exec chmod +x {} +
+      - name: Ajustar Info.plist
+        shell: bash
+        run: |
+          /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $BUILD_NUMBER" xcode/Info.plist
+          /usr/libexec/PlistBuddy -c "Add :ITSAppUsesNonExemptEncryption bool false" xcode/Info.plist || true
+      - name: Comprobar credenciales de Apple
+        id: credenciales
+        shell: bash
+        run: |
+          for name in ASC_KEY_ID ASC_ISSUER_ID ASC_KEY_P8 APPLE_TEAM_ID; do
+            if [ -z "${!name}" ]; then echo "::notice::Falta el secret $name; solo se compila sin firmar."; echo "listo=no" >> "$GITHUB_OUTPUT"; exit 0; fi
+          done
+          echo "listo=si" >> "$GITHUB_OUTPUT"
+      - name: Compilar sin firmar
+        if: steps.credenciales.outputs.listo == 'no'
+        shell: bash
+        run: |
+          set -o pipefail
+          xcodebuild -project xcode/Unity-iPhone.xcodeproj -scheme Unity-iPhone -configuration Release -sdk iphoneos -destination 'generic/platform=iOS' -derivedDataPath build CODE_SIGNING_ALLOWED=NO build 2>&1 | tail -n 200
+      - name: Preparar fastlane
+        if: steps.credenciales.outputs.listo == 'si'
+        shell: bash
+        env:
+          TOKEN: ${{ github.token }}
+        run: |
+          command -v fastlane >/dev/null || brew install fastlane
+          # The certificate is encrypted with a password derived from the API key, so no extra secret is needed.
+          PASSWORD=$(printf '%s' "$ASC_KEY_P8" | shasum -a 256 | cut -d' ' -f1)
+          AUTH=$(printf 'x-access-token:%s' "$TOKEN" | base64 | tr -d '\n')
+          echo "::add-mask::$PASSWORD"; echo "::add-mask::$AUTH"
+          echo "MATCH_PASSWORD=$PASSWORD" >> "$GITHUB_ENV"
+          echo "MATCH_GIT_AUTH=$AUTH" >> "$GITHUB_ENV"
+      - name: Firmar y subir a TestFlight
+        if: steps.credenciales.outputs.listo == 'si'
+        run: fastlane beta
+      - name: Aviso
+        if: steps.credenciales.outputs.listo == 'si'
+        run: echo "::notice::Compilación $BUILD_NUMBER enviada a App Store Connect. Aparecerá en TestFlight cuando Apple termine de procesarla."

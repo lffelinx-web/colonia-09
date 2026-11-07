@@ -1,0 +1,26 @@
+# Unity
+/Library/
+/Temp/
+/Obj/
+/Logs/
+/UserSettings/
+/MemoryCaptures/
+/Builds/
+*.csproj
+*.sln
+*.slnx
+*.pidb
+*.user
+*.unityproj
+.vs/
+.idea/
+
+# Parity tool output
+/Tools/Parity/out/
+/Tools/Parity/ParityRunner/bin/
+/Tools/Parity/ParityRunner/obj/
+
+# Never commit Apple credentials
+*.p8
+*.p12
+*.mobileprovision

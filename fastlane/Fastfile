@@ -1,0 +1,51 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Firma el proyecto de Xcode generado por Unity y lo sube a TestFlight"
+  lane :beta do
+    setup_ci
+    api_key = app_store_connect_api_key(
+      key_id: ENV["ASC_KEY_ID"],
+      issuer_id: ENV["ASC_ISSUER_ID"],
+      key_content: ENV["ASC_KEY_P8"]
+    )
+    match(
+      type: "appstore",
+      app_identifier: "com.lfaz.colonia09",
+      team_id: ENV["APPLE_TEAM_ID"],
+      api_key: api_key,
+      storage_mode: "git",
+      git_url: ENV["MATCH_GIT_URL"],
+      git_branch: "certificados",
+      git_basic_authorization: ENV["MATCH_GIT_AUTH"],
+      readonly: false
+    )
+    profile = ENV["sigh_com.lfaz.colonia09_appstore_profile-name"]
+    update_code_signing_settings(
+      path: "xcode/Unity-iPhone.xcodeproj",
+      targets: ["Unity-iPhone"],
+      use_automatic_signing: false,
+      team_id: ENV["APPLE_TEAM_ID"],
+      code_sign_identity: "Apple Distribution",
+      profile_name: profile
+    )
+    # UnityFramework is embedded in the app and re-signed on export; it needs no profile of its own.
+    update_code_signing_settings(
+      path: "xcode/Unity-iPhone.xcodeproj",
+      targets: ["UnityFramework"],
+      use_automatic_signing: false,
+      team_id: ENV["APPLE_TEAM_ID"],
+      code_sign_identity: "Apple Distribution"
+    )
+    build_app(
+      project: "xcode/Unity-iPhone.xcodeproj",
+      scheme: "Unity-iPhone",
+      configuration: "Release",
+      export_method: "app-store",
+      export_options: { provisioningProfiles: { "com.lfaz.colonia09" => profile } },
+      output_directory: "entrega",
+      output_name: "Colonia09.ipa"
+    )
+    upload_to_testflight(api_key: api_key, skip_waiting_for_build_processing: true)
+  end
+end
