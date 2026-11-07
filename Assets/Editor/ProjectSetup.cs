@@ -17,11 +17,19 @@ namespace Colonia09.EditorTools
             var importer = (TextureImporter)assetImporter;
             importer.textureType = TextureImporterType.Sprite;
             importer.spriteImportMode = SpriteImportMode.Single;
-            // Modules fill one cell. Enemies were exported at 170 pixels per cell, with their size baked in.
-            importer.spritePixelsPerUnit = assetPath.Contains("/Enemies/") ? 170 : 256;
             importer.mipmapEnabled = false;
             importer.alphaIsTransparency = true;
             importer.filterMode = FilterMode.Bilinear;
+            if (assetPath.Contains("/Board/"))
+            {
+                // The battlefield background is rendered at 96 pixels per cell.
+                importer.spritePixelsPerUnit = 96;
+                importer.maxTextureSize = 2048;
+                importer.textureCompression = TextureImporterCompression.CompressedHQ;
+                return;
+            }
+            // Modules fill one cell. Enemies use 170 pixels per cell, with their size baked in.
+            importer.spritePixelsPerUnit = assetPath.Contains("/Enemies/") ? 170 : 256;
             importer.textureCompression = TextureImporterCompression.Uncompressed;
             importer.maxTextureSize = 256;
         }

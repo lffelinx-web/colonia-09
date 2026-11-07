@@ -11,8 +11,9 @@ import bpy
 from mathutils import Vector
 
 OUT = sys.argv[sys.argv.index("--") + 1]
-SIZE = 512
-SAMPLES = 40
+SIZE = 384
+SAMPLES = 96
+LAYER = "base"  # Moving parts (fan, barrel, rotor) are rendered as separate layers that Unity animates.
 PHASE = 0.0  # Animation position of the frame being rendered, from 0 to 1.
 os.makedirs(OUT, exist_ok=True)
 
@@ -43,6 +44,7 @@ def material(name, color, metallic=.9, rough=.42, wear=.35, emission=None, stren
         bsdf.inputs["Emission Color"].default_value = srgb(emission)
         bsdf.inputs["Emission Strength"].default_value = strength
     if wear <= 0:
+        bsdf.inputs["Base Color"].default_value = srgb(color)
         return mat
     coords = nodes.new("ShaderNodeTexCoord")
     noise = nodes.new("ShaderNodeTexNoise")
@@ -61,10 +63,67 @@ def material(name, color, metallic=.9, rough=.42, wear=.35, emission=None, stren
     bump.inputs["Distance"].default_value = .02
     links.new(noise.outputs[0], bump.inputs["Height"])
     links.new(bump.outputs[0], bsdf.inputs["Normal"])
+
+    # Realism: grime collects in crevices (ambient occlusion) and paint wears off the edges.
+    base = srgb(color)
+    grime = (base[0] * .18, base[1] * .17, base[2] * .16, 1)
+    worn = tuple(min(1, c * .55 + .4) for c in base[:3]) + (1,)
+    ao = nodes.new("ShaderNodeAmbientOcclusion")
+    ao.inputs["Distance"].default_value = .09
+    ao.only_local = True
+    grime_mask = nodes.new("ShaderNodeMapRange")
+    grime_mask.inputs["From Min"].default_value = 1
+    grime_mask.inputs["From Max"].default_value = .55
+    grime_mask.inputs["To Max"].default_value = 1
+    links.new(ao.outputs["AO"], grime_mask.inputs["Value"])
+    bevel = nodes.new("ShaderNodeBevel")
+    bevel.inputs["Radius"].default_value = .014
+    geometry = nodes.new("ShaderNodeNewGeometry")
+    dot = nodes.new("ShaderNodeVectorMath")
+    dot.operation = "DOT_PRODUCT"
+    links.new(bevel.outputs["Normal"], dot.inputs[0])
+    links.new(geometry.outputs["Normal"], dot.inputs[1])
+    edge = nodes.new("ShaderNodeMapRange")
+    edge.inputs["From Min"].default_value = .995
+    edge.inputs["From Max"].default_value = .9
+    edge.inputs["To Max"].default_value = min(1, wear * 3.2)
+    links.new(dot.outputs["Value"], edge.inputs["Value"])
+    chips = nodes.new("ShaderNodeMath")  # Breaks the edge wear up so it looks chipped, not outlined.
+    chips.operation = "MULTIPLY"
+    links.new(edge.outputs[0], chips.inputs[0])
+    links.new(noise.outputs[0], chips.inputs[1])
+    dirty = mix_color(nodes, links, grime_mask.outputs[0], base, grime)
+    # Large dirt patches and streaks, so surfaces do not look factory clean.
+    dirt_noise = nodes.new("ShaderNodeTexNoise")
+    dirt_noise.inputs["Scale"].default_value = 7
+    dirt_noise.inputs["Detail"].default_value = 6
+    links.new(coords.outputs["Object"], dirt_noise.inputs["Vector"])
+    dirt_mask = nodes.new("ShaderNodeMapRange")
+    dirt_mask.inputs["From Min"].default_value = .5
+    dirt_mask.inputs["From Max"].default_value = .75
+    dirt_mask.inputs["To Max"].default_value = .45 * min(1, wear * 2)
+    links.new(dirt_noise.outputs[0], dirt_mask.inputs["Value"])
+    stained = mix_color(nodes, links, dirt_mask.outputs[0], dirty, (base[0] * .45, base[1] * .4, base[2] * .34, 1))
+    final = mix_color(nodes, links, chips.outputs[0], stained, worn)
+    links.new(final, bsdf.inputs["Base Color"])
     return mat
 
 
+def mix_color(nodes, links, factor, a, b):
+    """Color mix where a and b can be colors or node sockets. Returns the result socket."""
+    mix = nodes.new("ShaderNodeMix")
+    mix.data_type = "RGBA"
+    socket = lambda name: next(s for s in mix.inputs if s.name == name and s.type == "RGBA")
+    links.new(factor, mix.inputs[0])
+    for name, value in (("A", a), ("B", b)):
+        if isinstance(value, tuple):
+            socket(name).default_value = value
+        else:
+            links.new(value, socket(name))
+    return next(s for s in mix.outputs if s.type == "RGBA")
+
 def finish(obj, mat, bevel=0, smooth=False):
+    obj["layer"] = LAYER
     obj.data.materials.append(mat)
     bpy.ops.object.select_all(action="DESELECT")
     obj.select_set(True)
@@ -116,6 +175,7 @@ def setup(ortho):
     scene.render.film_transparent = True
     scene.render.image_settings.file_format = "PNG"
     scene.render.image_settings.color_mode = "RGBA"
+    # Standard keeps the neon glows saturated; photographic tone mapping turned them grey.
     scene.view_settings.view_transform = "Standard"
     scene.view_settings.look = "None"
 
@@ -139,8 +199,18 @@ def setup(ortho):
     key.angle = math.radians(34)
     key.color = (1, .96, .9)
     key_obj = bpy.data.objects.new("Key", key)
-    key_obj.rotation_euler = (math.radians(20), math.radians(-14), 0)
+    key_obj.rotation_euler = (math.radians(30), math.radians(-22), 0)
     scene.collection.objects.link(key_obj)
+
+    # Cool fill light from the lower right, without shadows, so dark sides keep their detail.
+    fill = bpy.data.lights.new("Fill", "SUN")
+    fill.energy = .9
+    fill.angle = math.radians(40)
+    fill.color = (.78, .88, 1)
+    fill.use_shadow = False
+    fill_obj = bpy.data.objects.new("Fill", fill)
+    fill_obj.rotation_euler = (math.radians(-38), math.radians(30), 0)
+    scene.collection.objects.link(fill_obj)
 
     # Invisible floor that only receives the shadow, kept in the sprite's alpha channel.
     bpy.ops.mesh.primitive_plane_add(size=8, location=(0, 0, 0))
@@ -204,10 +274,13 @@ def build_generator(blade_angle):
     torus((0, -.01, .125), .288, .03, steel)
     torus((0, -.01, .138), .238, .014, brass)
     torus((0, -.01, .112), .205, .006, glow)
+    global LAYER
+    LAYER = "fan"
     for i in range(6):
         blade_mesh(math.radians(blade_angle + i * 60), .15, blade)
     cyl((0, -.01, .165), .05, .04, brass, bevel=.008)
     cyl((0, -.01, .19), .024, .012, steel, bevel=.003)
+    LAYER = "base"
     for i in range(6):
         a = i * math.pi / 3 + .5
         cyl((math.cos(a) * .265, -.01 + math.sin(a) * .265, .15), .012, .012, steel, bevel=.002, vertices=6)
@@ -526,11 +599,14 @@ def build_pulse():
     torus((0, cy, .155), .185, .012, steel)
     cyl((0, cy, .175), .15, .05, base, bevel=.016)
     box((0, cy + .02, .225), (.2, .24, .05), base, bevel=.02)
+    global LAYER
+    LAYER = "barrel"
     box((0, .09, .2), (.11, .3, .06), dark, bevel=.012)
     for i in range(4):  # Cooling shroud.
         along_y((0, .1 + i * .062, .2), .066, .036, steel, bevel=.006)
     along_y((0, .34, .2), .045, .24, gold, bevel=.005)
     along_y((0, .46, .2), .068, .06, steel, bevel=.012)
+    LAYER = "base"
     cyl((0, cy + .02, .26), .03, .012, glow, bevel=.004)
 
 
@@ -881,7 +957,9 @@ def build_helicopter():
             along_y((side * (.34 + i * .1), -.21, H - .01), .012, .03, red, bevel=.002, vertices=12)
         box((side * .17, .2, H + .09), (.09, .16, .03), dark, bevel=.008)
     along_y((0, -.53, H - .03), .026, .12, steel, bevel=.004)
-    for a in (35 + PHASE * 90, 125 + PHASE * 90):
+    global LAYER
+    LAYER = "rotor"
+    for a in (35, 125):
         r = math.radians(a)
         box((0, 0, H + .17), (1.02, .032, .008), blade, bevel=.002, rot=r)
         for sign in (-1, 1):
@@ -905,7 +983,8 @@ ONLY = sys.argv[sys.argv.index("--") + 2:]
 MODULES = ("generator", "reactor", "relay", "pulse", "cryo", "tesla", "wall", "repair")
 # Size on the board, in cells. Everything reads at about the same size; a few are slightly larger.
 ENEMY_SIZE = {"commander": 1.2, "tank": 1.1, "bomber": 1.1, "armor": 1.05, "helicopter": 1.05}
-FRAMES = {"generator": 3}
+FRAMES = {"helicopter": 1}
+LAYERS = {"generator": "fan", "pulse": "barrel", "helicopter": "rotor"}
 
 
 def fit(name):
@@ -921,18 +1000,36 @@ def fit(name):
     return (min_x + max_x) / 2, (min_y + max_y) / 2, ortho
 
 
-for sprite_name, builder in BUILDERS.items():
-    if ONLY and sprite_name not in ONLY:
-        continue
-    count = FRAMES.get(sprite_name, 1 if sprite_name in MODULES else 4)
-    framing = None
-    for frame in range(count):
-        PHASE = frame / count
-        clear()
-        builder()
-        framing = framing or fit(sprite_name)  # Same framing for every frame, so nothing jitters.
-        camera = bpy.context.scene.camera
-        camera.location.x, camera.location.y = framing[0], framing[1]
-        camera.data.ortho_scale = framing[2]
-        render(f"{sprite_name}_{frame}" if count > 1 else sprite_name)
-print("RENDER_DONE")
+def show_only(layer):
+    for obj in bpy.context.scene.objects:
+        if obj.type == "MESH" and not obj.is_shadow_catcher:
+            obj.hide_render = layer is not None and obj.get("layer", "base") != layer
+
+
+if __name__ == "__main__":
+    for sprite_name, builder in BUILDERS.items():
+        if ONLY and sprite_name not in ONLY:
+            continue
+        count = FRAMES.get(sprite_name, 1 if sprite_name in MODULES else 4)
+        framing = None
+        for frame in range(count):
+            PHASE = frame / count
+            LAYER = "base"
+            clear()
+            builder()
+            framing = framing or fit(sprite_name)  # Same framing for every frame, so nothing jitters.
+            camera = bpy.context.scene.camera
+            camera.location.x, camera.location.y = framing[0], framing[1]
+            camera.data.ortho_scale = framing[2]
+            moving = LAYERS.get(sprite_name)
+            if moving:
+                # Full picture for the build cards, then the static part and the moving part.
+                show_only(None)
+                render(sprite_name)
+                show_only("base")
+                render(f"{sprite_name}_0" if sprite_name not in MODULES else f"{sprite_name}_base")
+                show_only(moving)
+                render(f"{sprite_name}_{moving}")
+            else:
+                render(f"{sprite_name}_{frame}" if count > 1 else sprite_name)
+    print("RENDER_DONE")

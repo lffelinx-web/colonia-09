@@ -16,6 +16,8 @@ namespace Colonia09.Presentation
 
         public BoardView Board { get; private set; }
         public GameUI Ui { get; private set; }
+        public GameAudio Audio { get; private set; }
+        float musicClock;
 
         void Awake()
         {
@@ -25,9 +27,12 @@ namespace Colonia09.Presentation
             Sim = new GameSimulation();
             Board = gameObject.AddComponent<BoardView>();
             Ui = gameObject.AddComponent<GameUI>();
+            Audio = gameObject.AddComponent<GameAudio>();
+            Audio.Init();
             Board.Init(this);
             Ui.Init(this);
 
+            Sim.OnSfx = name => Audio.Play(name);
             Sim.OnNotify = (text, duration) => Ui.ShowToast(text, (float)duration);
             Sim.OnShake = power => Board.Shake((float)power);
             Sim.OnBoardChanged = () => Ui.MarkDeckDirty();
@@ -45,6 +50,16 @@ namespace Colonia09.Presentation
         {
             double dt = Math.Min(.06, Time.unscaledDeltaTime);
             for (int i = 0; i < StepsPerFrame; i++) Sim.Update(dt);
+            if (Sim.Mode == GameMode.Playing)
+            {
+                musicClock -= (float)dt;
+                if (musicClock <= 0)
+                {
+                    bool heavy = Sim.Enemies.Exists(e => GameData.IsVehicle(e.Kind) || e.Kind == EnemyKind.Commander);
+                    Audio.MusicStep(Sim.Wave, heavy);
+                    musicClock = 1.48f;
+                }
+            }
             if (Selected != null && Sim.ModuleAt(Selected.R, Selected.C) != Selected) Deselect();
             Board.Render(Ui.FieldPixels);
             Ui.Refresh();
@@ -90,6 +105,7 @@ namespace Colonia09.Presentation
         {
             SelectedType = type;
             Selected = null;
+            Audio.Play("select");
             var def = GameData.Modules[type];
             Ui.ShowToast($"{def.Name}: {def.BaseInfo}", 1.6f);
             Ui.MarkDeckDirty();

@@ -20,7 +20,7 @@ namespace Colonia09.Presentation
     /// <summary>Builds the whole portrait interface from code, inside the device safe area.</summary>
     public sealed class GameUI : MonoBehaviour
     {
-        const float RefWidth = 1080, HudHeight = 262, DockHeight = 392;
+        const float RefWidth = 1080, HudHeight = 226, DockHeight = 352;
 
         static readonly Color Bg = Html("#071622"), Panel = Html("#102638"), PanelLight = Html("#173449"), Line = Html("#35566a"),
             Cyan = Html("#86e6ee"), Txt = Html("#eaf9fb"), Muted = Html("#99b5c7"), Gold = Html("#ffd38b"), Red = Html("#ff8c8a"), Green = Html("#91e5bd");
@@ -62,6 +62,15 @@ namespace Colonia09.Presentation
         public Button PrimaryButton { get; private set; }
         public Button SecondaryButton { get; private set; }
         public Button MenuButton { get; private set; }
+        public Button AudioButton { get; private set; }
+        Text audioLabel;
+
+        void RefreshAudioButton()
+        {
+            bool on = game.Audio.Enabled;
+            audioLabel.text = "♪";
+            audioLabel.color = on ? Cyan : new Color(Muted.r, Muted.g, Muted.b, .35f);
+        }
         public Button UpgradeButton => upgradeButton;
         public Button SellButton { get; private set; }
         public Button CloseButton { get; private set; }
@@ -149,16 +158,22 @@ namespace Colonia09.Presentation
             statusText.resizeTextForBestFit = true; statusText.resizeTextMinSize = 16; statusText.resizeTextMaxSize = 25;
             var statusRt = statusText.rectTransform;
             statusRt.anchorMin = new Vector2(0, 1); statusRt.anchorMax = Vector2.one; statusRt.pivot = new Vector2(.5f, 1);
-            statusRt.offsetMin = new Vector2(345, -88); statusRt.offsetMax = new Vector2(-112, 0);
+            statusRt.offsetMin = new Vector2(345, -88); statusRt.offsetMax = new Vector2(-212, 0);
 
             MenuButton = TextButton(hud, "≡", 52, PanelLight, Txt, game.Pause);
             var menuRt = (RectTransform)MenuButton.transform;
             menuRt.anchorMin = menuRt.anchorMax = Vector2.one; menuRt.pivot = Vector2.one;
             menuRt.sizeDelta = new Vector2(88, 74); menuRt.anchoredPosition = new Vector2(-14, -8);
+            AudioButton = TextButton(hud, "♪", 46, PanelLight, Cyan, () => { game.Audio.Toggle(); RefreshAudioButton(); });
+            audioLabel = AudioButton.GetComponentInChildren<Text>();
+            var audioRt = (RectTransform)AudioButton.transform;
+            audioRt.anchorMin = audioRt.anchorMax = Vector2.one; audioRt.pivot = Vector2.one;
+            audioRt.sizeDelta = new Vector2(88, 74); audioRt.anchoredPosition = new Vector2(-114, -8);
+            RefreshAudioButton();
 
             var row = Rt("Stats", hud);
             row.anchorMin = Vector2.zero; row.anchorMax = new Vector2(1, 0); row.pivot = new Vector2(.5f, 0);
-            row.sizeDelta = new Vector2(-28, 160);
+            row.sizeDelta = new Vector2(-28, 128);
             row.anchoredPosition = new Vector2(0, 8);
             var layout = row.gameObject.AddComponent<HorizontalLayoutGroup>();
             layout.spacing = 12; layout.childForceExpandHeight = true; layout.childForceExpandWidth = true;
@@ -175,8 +190,8 @@ namespace Colonia09.Presentation
             var box = Rt("Stat", parent);
             var bg = box.gameObject.AddComponent<Image>();
             bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = Panel; bg.raycastTarget = false;
-            var value = Label(box, "", 62, accent, TextAnchor.MiddleCenter, FontStyle.Bold);
-            value.resizeTextForBestFit = true; value.resizeTextMinSize = 30; value.resizeTextMaxSize = 62;
+            var value = Label(box, "", 54, accent, TextAnchor.MiddleCenter, FontStyle.Bold);
+            value.resizeTextForBestFit = true; value.resizeTextMinSize = 28; value.resizeTextMaxSize = 54;
             value.rectTransform.anchorMin = new Vector2(0, .34f); value.rectTransform.anchorMax = Vector2.one;
             value.rectTransform.offsetMin = new Vector2(6, 0); value.rectTransform.offsetMax = new Vector2(-6, -4);
             captionText = Label(box, caption, 24, Muted, TextAnchor.MiddleCenter);
@@ -238,7 +253,7 @@ namespace Colonia09.Presentation
             {
                 var def = GameData.Modules[type];
                 var card = Rt("Card_" + type, content);
-                card.sizeDelta = new Vector2(218, 0);
+                card.sizeDelta = new Vector2(204, 0);
                 var cardImage = card.gameObject.AddComponent<Image>();
                 cardImage.sprite = rounded; cardImage.type = Image.Type.Sliced; cardImage.color = Panel;
                 var button = card.gameObject.AddComponent<Button>();
