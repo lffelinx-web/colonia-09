@@ -62,6 +62,8 @@ namespace Colonia09.Simulation
         public WaveSpec[] WaveSpecs;
         /// <summary>Defenses ignore enemies still above the board. Off in Quick Play, as in the prototype.</summary>
         public bool TargetOnlyOnBoard;
+        /// <summary>Enemy speed multiplier; campaign tutorial sectors slow enemies down.</summary>
+        public double EnemySpeed = 1;
 
         public bool Allows(ModuleType type) => System.Array.IndexOf(Modules, type) >= 0;
         public bool IsQuickPlay => Id == "quick";

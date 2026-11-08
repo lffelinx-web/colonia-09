@@ -198,6 +198,7 @@ namespace Colonia09.Presentation
             yield return RealTouch(ScreenCenter(ui.BriefStartButton));
             yield return Frames(3);
             Check("sector 1 starts on a 3 x 7 board with the tutorial", sim.Mode == GameMode.Playing && sim.Width == 3 && sim.Height == 7 && ui.CoachOpen && sim.HoldSpawns);
+            Check("connection reach matches the rules (2 steps from the core)", sim.WouldConnect(ModuleType.Pulse, 4, 0) && !sim.WouldConnect(ModuleType.Pulse, 3, 2) && sim.WouldConnect(ModuleType.Generator, 5, 0));
             Check("sector 1 offers only Generator and Pulse", ui.CardButtons[ModuleType.Pulse].gameObject.activeSelf && !ui.CardButtons[ModuleType.Relay].gameObject.activeSelf);
             yield return Shot("12_coach");
             yield return RealTouch(ScreenCenter(ui.CoachButton));

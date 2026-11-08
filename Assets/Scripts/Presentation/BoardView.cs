@@ -188,6 +188,7 @@ namespace Colonia09.Presentation
             used = 0;
             float t = Time.unscaledTime;
             DrawBoard(t);
+            DrawReach(t);
             DrawLinks(t);
             DrawModules(t);
             DrawEnemies(t);
@@ -286,6 +287,27 @@ namespace Colonia09.Presentation
 
         /// <summary>Cell the tutorial points at, drawn as a pulsing frame; null for none.</summary>
         public Vector2Int? HighlightCell;
+
+        /// <summary>
+        /// While a card is chosen and no piece is open, empty cells where that module would connect get a soft
+        /// green mark, so the player sees where it will work before spending energy.
+        /// </summary>
+        void DrawReach(float t)
+        {
+            var sim = game.Sim;
+            if (sim.Mode != GameMode.Playing || game.Selected != null || game.SelectedType == ModuleType.Wall) return;
+            var type = game.SelectedType;
+            float glow = .1f + .04f * Mathf.Sin(t * 3);
+            var nodes = sim.ConnectionNodes(type);  // Once per frame, then a cheap distance test per cell.
+            for (int r = 1; r < H - 1; r++)
+                for (int c = 0; c < W; c++)
+                {
+                    if (sim.ModuleAt(r, c) != null) continue;
+                    bool reach = type == ModuleType.Reactor;
+                    for (int i = 0; i < nodes.Count && !reach; i++) reach = Mathf.Abs(nodes[i].R - r) + Mathf.Abs(nodes[i].C - c) <= 2;
+                    if (reach) Draw(square, new Vector2(c, -r), Vector2.one * .9f, new Color(.45f, .95f, .7f, glow), OrderBoard + 4);
+                }
+        }
 
         void DrawHighlight(float t)
         {

@@ -40,7 +40,7 @@ namespace Colonia09.Simulation
                 Level = new LevelConfig
                 {
                     Id = "landing", Name = "Zona de aterrizaje", Width = 3, Height = 7, Waves = 2, CoreMax = 10, CoreRow = 5, CoreColumn = 1,
-                    TargetOnlyOnBoard = true, StartCharge = 150, Modules = new[] { Ge, Pu },
+                    TargetOnlyOnBoard = true, EnemySpeed = .85, StartCharge = 150, Modules = new[] { Ge, Pu },
                     WaveSpecs = new[]
                     {
                         new WaveSpec(5, 3.8, .75, Sc),
@@ -56,10 +56,10 @@ namespace Colonia09.Simulation
                 Level = new LevelConfig
                 {
                     Id = "camp", Name = "Campamento", Width = 5, Height = 8, Waves = 3, CoreMax = 10, CoreRow = 6, CoreColumn = 2,
-                    TargetOnlyOnBoard = true, StartCharge = 160, Modules = new[] { Ge, Rl, Pu },
+                    TargetOnlyOnBoard = true, EnemySpeed = .72, StartCharge = 200, Modules = new[] { Ge, Rl, Pu },
                     WaveSpecs = new[]
                     {
-                        new WaveSpec(7, 3.5, .8, Sc, Sc, Ru),
+                        new WaveSpec(7, 3.5, .8, Sc),  // Runners come from the second wave, once the line is built.
                         new WaveSpec(9, 3.2, .86, Sc, Ru),
                         new WaveSpec(11, 3.0, .93, Sc, Ru, Ru),
                     },
@@ -73,7 +73,7 @@ namespace Colonia09.Simulation
                 Level = new LevelConfig
                 {
                     Id = "well", Name = "Pozo de agua", Width = 5, Height = 9, Waves = 4, CoreMax = 12, CoreRow = 7, CoreColumn = 2,
-                    TargetOnlyOnBoard = true, StartCharge = 230, Modules = new[] { Ge, Re, Rl, Pu, Wa },
+                    TargetOnlyOnBoard = true, EnemySpeed = .8, StartCharge = 230, Modules = new[] { Ge, Re, Rl, Pu, Wa },
                     WaveSpecs = new[]
                     {
                         new WaveSpec(8, 3.3, .85, Sc, Ru, Sc),

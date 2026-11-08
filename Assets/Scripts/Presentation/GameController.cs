@@ -216,6 +216,16 @@ namespace Colonia09.Presentation
                 Ui.ShowToast(refusal, 1.6f);
                 return;
             }
+            if (Campaign.Active && r > 0 && r < Sim.Height - 1 && !Sim.WouldConnect(SelectedType, r, c))
+            {
+                // In the campaign a piece that could not connect is refused, with the reason, instead of wasting energy.
+                Audio.Play("hit", true);
+                bool relays = Sim.Level.Allows(ModuleType.Relay);
+                Ui.ShowToast(SelectedType == ModuleType.Generator
+                    ? "El Generador debe ir a 2 casillas o menos de un Núcleo"
+                    : relays ? "Aquí no llega la conexión: acércalo a un Núcleo o a un Relé" : "Aquí no llega la conexión: ponlo a 2 casillas o menos del Núcleo", 2.2f);
+                return;
+            }
             if (Sim.TryBuild(SelectedType, r, c)) Selected = null;
             Ui.MarkDeckDirty();
         }

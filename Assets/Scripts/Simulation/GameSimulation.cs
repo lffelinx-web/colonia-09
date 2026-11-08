@@ -270,6 +270,31 @@ namespace Colonia09.Simulation
         }
         static bool Nearby(GameModule a, GameModule b) => Math.Abs(a.R - b.R) + Math.Abs(a.C - b.C) <= 2;
 
+        /// <summary>
+        /// Whether a module placed here would join the network: generators need a Núcleo within two
+        /// steps; defenses and relays need a Núcleo or connected Relé within two steps. Pieces still
+        /// being assembled count, since they will connect when ready. Walls work anywhere.
+        /// </summary>
+        public bool WouldConnect(ModuleType type, int r, int c)
+        {
+            if (type == ModuleType.Wall || type == ModuleType.Reactor) return true;
+            foreach (var m in ConnectionNodes(type))
+                if (Math.Abs(m.R - r) + Math.Abs(m.C - c) <= 2) return true;
+            return false;
+        }
+
+        /// <summary>The pieces a new module of this type could connect to: Núcleos, plus linked Relés for anything but a Generator.</summary>
+        public List<GameModule> ConnectionNodes(ModuleType type)
+        {
+            var nodes = new List<GameModule>();
+            foreach (var m in modules) if (m.Hp > 0 && m.Type == ModuleType.Reactor) nodes.Add(m);
+            if (type == ModuleType.Generator) return nodes;
+            for (int q = 0; q < nodes.Count; q++)
+                foreach (var relay in modules)
+                    if (relay.Hp > 0 && relay.Type == ModuleType.Relay && !nodes.Contains(relay) && Nearby(nodes[q], relay)) nodes.Add(relay);
+            return nodes;
+        }
+
         bool SpendActionEnergy(double cost)
         {
             bool anyLive = false;
@@ -674,6 +699,7 @@ namespace Colonia09.Simulation
             double late = (wave >= 7 && kind != Sc && kind != Ru && kind != EnemyKind.Commander) ? 1 + (wave - 6) * .07 : 1;
             double hp = JsRound(a0.Hp * plan.Hp * Conf.Hp * late);
             double spd = (a0.Speed * (1 + (wave - 1) * .014)) * Conf.Speed;
+            if (Level.EnemySpeed != 1) spd *= Level.EnemySpeed;  // Quick Play keeps the exact prototype value.
             bool isVehicle = GameData.IsVehicle(kind);
             var assault = ActiveAssault();
             var e = new Enemy
