@@ -11,7 +11,9 @@ namespace Colonia09.Presentation
     /// </summary>
     public sealed class BoardView : MonoBehaviour
     {
-        const int W = GameData.Width, H = GameData.Height;
+        int W => game.Sim.Width;
+        int H => game.Sim.Height;
+        bool StandardBoard => W == GameData.Width && H == GameData.Height;
         // Pieces leave a margin inside their cell so a full board still shows the deck between them.
         const float ModuleScale = .82f, EnemyScale = .88f;
         const int OrderBoard = 0, OrderWreck = 5, OrderLinks = 10, OrderModules = 20, OrderMarks = 25, OrderEnemies = 30, OrderBars = 40, OrderFx = 50;
@@ -268,17 +270,23 @@ namespace Colonia09.Presentation
 
         void DrawBoard(float t)
         {
-            if (boardSprite != null)
+            if (boardSprite != null && StandardBoard)
             {
                 // Rendered deck and colony scenery; it is wider than the grid so it fills the sides of the screen.
                 Draw(boardSprite, new Vector2((W - 1) / 2f, -(H - 1) / 2f), Vector2.one, Color.white, OrderBoard);
             }
             else
             {
-                Rect((W - 1) / 2f, -(H - 1) / 2f, W, H, Hex("#0a2436"), OrderBoard);
-                for (int r = 1; r < H - 1; r++)
+                // Smaller campaign boards: plated tiles drawn in code until they get their own rendered deck.
+                Rect((W - 1) / 2f, -(H - 1) / 2f, W + .24f, H + .24f, Hex("#1d2a33"), OrderBoard);
+                for (int r = 0; r < H; r++)
                     for (int c = 0; c < W; c++)
-                        if ((r + c) % 2 == 0) Rect(c, -r, 1, 1, Hex("#0e2c41"), OrderBoard + 1);
+                    {
+                        var tile = r == 0 ? Hex("#3a2a2e") : r == H - 1 ? Hex("#1f3a35") : (r + c) % 2 == 0 ? Hex("#2c3d48") : Hex("#283844");
+                        Rect(c, -r, .94f, .94f, tile, OrderBoard + 1);
+                    }
+                Rect((W - 1) / 2f, -.47f, W - .1f, .05f, Hex("#e0ac1a"), OrderBoard + 2);
+                Rect((W - 1) / 2f, -(H - 1) + .47f, W - .1f, .04f, Hex("#5fd39e"), OrderBoard + 2);
             }
 
             var assault = game.Sim.Assault;

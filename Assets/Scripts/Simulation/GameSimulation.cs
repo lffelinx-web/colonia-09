@@ -11,7 +11,25 @@ namespace Colonia09.Simulation
     /// </summary>
     public sealed class GameSimulation
     {
-        const int W = GameData.Width, H = GameData.Height, MaxWave = GameData.MaxWave;
+        int W = GameData.Width, H = GameData.Height;
+
+        /// <summary>The mission being played. Quick Play keeps the prototype's exact rules.</summary>
+        public LevelConfig Level { get; private set; }
+        public int Width => W;
+        public int Height => H;
+        public int MaxWave => Level.Waves;
+
+        public GameSimulation() => Configure(LevelConfig.QuickPlay);
+
+        /// <summary>Switches to another mission's board and rules, and resets the game.</summary>
+        public void Configure(LevelConfig level)
+        {
+            level.Validate();
+            Level = level;
+            W = level.Width; H = level.Height;
+            grid = new GameModule[W * H];
+            Reset();
+        }
 
         // Callbacks for presentation. None of them affect gameplay.
         public Action<string> OnSfx;
@@ -21,7 +39,7 @@ namespace Colonia09.Simulation
         public Action<bool> OnFinished;
 
         readonly List<GameModule> modules = new List<GameModule>();
-        readonly GameModule[] grid = new GameModule[W * H];
+        GameModule[] grid;
         readonly Random visualRandom = new Random(9);
 
         public IReadOnlyList<GameModule> Modules => modules;
@@ -53,15 +71,15 @@ namespace Colonia09.Simulation
         int weakSector;
         bool armorShotNotice, gridOnline;
         AssaultPlan assaultPlan;
-        double[] breachPressure = new double[W];
-        double[] recentAssaultLanes = new double[W];
+        double[] breachPressure = new double[0];
+        double[] recentAssaultLanes = new double[0];
         readonly Dictionary<int, double> strategicTargets = new Dictionary<int, double>();
         readonly HashSet<EnemyKind> counterSeen = new HashSet<EnemyKind>();
 
         DifficultyDef Conf => GameData.Difficulties[Difficulty];
         WavePlan Plan => GameData.WavePlans[Math.Min(MaxWave, Math.Max(1, Wave))];
 
-        static int Key(int r, int c) => r * W + c;
+        int Key(int r, int c) => r * W + c;
         public GameModule ModuleAt(int r, int c) => r < 0 || r >= H || c < 0 || c >= W ? null : grid[Key(r, c)];
         GameModule ModuleByKey(int k) => k < 0 ? null : grid[k];
         static double Clamp(double v, double a, double b) => Math.Max(a, Math.Min(b, v));
@@ -92,7 +110,7 @@ namespace Colonia09.Simulation
         {
             modules.Clear(); Array.Clear(grid, 0, grid.Length);
             Enemies = new List<Enemy>(); Effects.Clear(); Links.Clear();
-            Mode = GameMode.Idle; Wave = 1; Core = GameData.CoreMax; Charge = Conf.Start;
+            Mode = GameMode.Idle; Wave = 1; Core = Level.CoreMax; Charge = Level.StartCharge ?? Conf.Start;
             TotalKills = 0; Elapsed = 0; SpawnRemaining = 0; waveGateAt = 0; secondFront = 0; FrontDelay = 0; WaveBreak = 0;
             armorShotNotice = false; lastCounterAttackAt = -20; counterSeen.Clear(); nextId = 0; networkClock = 0;
             EnergyCapacity = 0; ChargingGeneration = 0; gridOnline = false; ConsumptionRate = 0; consumptionThisFrame = 0;
@@ -101,7 +119,7 @@ namespace Colonia09.Simulation
             recentAssaultLanes = Enumerable.Repeat(-100.0, W).ToArray(); lastCoreDangerAt = -30; RandomSeed = 271;
             AddModule(new GameModule
             {
-                Type = ModuleType.Reactor, C = GameData.StartCoreColumn, R = GameData.StartCoreRow,
+                Type = ModuleType.Reactor, C = Level.CoreColumn, R = Level.CoreRow,
                 Hp = GameData.Modules[ModuleType.Reactor].Hp, Powered = true, Linked = true, Starter = true
             });
             UpdateNetwork();
@@ -186,6 +204,7 @@ namespace Colonia09.Simulation
                 return false;
             }
             if (ModuleAt(r, c) != null) return false;
+            if (!Level.Allows(type)) { Notify("Módulo no disponible en esta misión", 1.2); return false; }
             if (Charge < BuildCost(type)) { Notify("Carga eléctrica insuficiente"); return false; }
             Charge -= BuildCost(type);
             Effects.RemoveAll(fx => fx.Type == "wreck" && fx.X == c && fx.Y == r);
@@ -607,6 +626,7 @@ namespace Colonia09.Simulation
             if (wave == 8) { if (i == 3 || i == 18) { kind = Tk; c = i == 3 ? 1 : 5; } if (i == 9) { kind = He; c = 3; } if (i == 13 || i == 23) { kind = Bo; c = i == 13 ? 2 : 5; } }
             if (wave == 9) { if (i == 3 || i == 23) { kind = Tk; c = i == 3 ? 5 : 2; } if (i == 9 || i == 18) { kind = He; c = i == 9 ? 1 : 5; } if (i == 14 || i == 24) { kind = Bo; c = i == 14 ? 3 : 4; } }
 
+            c = MapColumn(c);
             if (wave == 3 && i == 5) kind = EnemyKind.Bulwark;
             if (wave == 4 && i == 9) kind = EnemyKind.Thermal;
             if (wave == 5 && i == 8) kind = EnemyKind.Grounder;
@@ -674,6 +694,9 @@ namespace Colonia09.Simulation
                 Notify($"⚠ {info.Label}: {info.Tip}", 3.1);
             if (kind == Ja) Notify($"INTERFERENCIA DETECTADA · columna {c + 1}", 1.2);
         }
+
+        /// <summary>Spawn columns are written for 7 columns; narrower boards spread them proportionally.</summary>
+        int MapColumn(int c) => W == GameData.Width ? c : (int)Math.Floor(c * (W - 1) / (double)(GameData.Width - 1) + .5);
 
         bool IsHunterPrey(GameModule m) =>
             m.Type == ModuleType.Repair || m.Type == ModuleType.Cryo || (Wave >= 5 && m.Type == ModuleType.Tesla);

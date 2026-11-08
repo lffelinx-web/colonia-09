@@ -25,7 +25,11 @@ namespace Colonia09.Presentation
         readonly Dictionary<string, AudioClip> musicClips = new Dictionary<string, AudioClip>();
         int musicStep;
 
+        /// <summary>Master switch (the ♪ button). Effects and music can also be turned off on their own in Options.</summary>
         public bool Enabled { get; private set; } = true;
+        public bool EffectsOn { get; private set; } = true;
+        public bool MusicOn { get; private set; } = true;
+        const string EffectsKey = "colonia09.effects", MusicKey = "colonia09.music";
 
         static readonly Dictionary<string, float> MinGap = new Dictionary<string, float>
         {
@@ -36,6 +40,8 @@ namespace Colonia09.Presentation
         public void Init()
         {
             Enabled = PlayerPrefs.GetInt(PrefKey, 1) == 1;
+            EffectsOn = PlayerPrefs.GetInt(EffectsKey, 1) == 1;
+            MusicOn = PlayerPrefs.GetInt(MusicKey, 1) == 1;
             if (FindAnyObjectByType<AudioListener>() == null) gameObject.AddComponent<AudioListener>();
             sfxSource = gameObject.AddComponent<AudioSource>();
             musicSource = gameObject.AddComponent<AudioSource>();
@@ -74,9 +80,22 @@ namespace Colonia09.Presentation
             if (Enabled) Play("select", true);
         }
 
+        public void SetEffects(bool on)
+        {
+            EffectsOn = on;
+            PlayerPrefs.SetInt(EffectsKey, on ? 1 : 0);
+            if (on) Play("select", true);
+        }
+
+        public void SetMusic(bool on)
+        {
+            MusicOn = on;
+            PlayerPrefs.SetInt(MusicKey, on ? 1 : 0);
+        }
+
         public void Play(string name, bool force = false)
         {
-            if (!Enabled || !clips.TryGetValue(name, out var clip)) return;
+            if (!Enabled || !EffectsOn || !clips.TryGetValue(name, out var clip)) return;
             float now = Time.unscaledTime;
             float gap = MinGap.TryGetValue(name, out var g) ? g : .24f;
             if (!force && lastPlayed.TryGetValue(name, out var last) && last + gap > now) return;
@@ -87,7 +106,7 @@ namespace Colonia09.Presentation
         /// <summary>One step of the ambient soundtrack, every 1.48 s while playing.</summary>
         public void MusicStep(int wave, bool heavyThreat)
         {
-            if (!Enabled) return;
+            if (!Enabled || !MusicOn) return;
             float tension = Mathf.Clamp01((wave - 1) / 8f + (heavyThreat ? .26f : 0));
             float root = new[] { 55f, 49f, 61.735f, 43.655f }[(musicStep / 8) % 4];
             PlayNote(root, 1.95f, .062f + tension * .018f, Wave.Sine);

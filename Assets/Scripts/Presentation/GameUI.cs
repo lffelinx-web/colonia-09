@@ -79,6 +79,19 @@ namespace Colonia09.Presentation
             audioLabel.text = "♪";
             audioLabel.color = on ? Cyan : new Color(Muted.r, Muted.g, Muted.b, .35f);
         }
+        // Main menu and options.
+        GameObject mainMenu, menuPage, optionsPage;
+        Text effectsLabel, musicLabel;
+        public bool MainMenuOpen => mainMenu.activeSelf;
+        public bool OptionsOpen => mainMenu.activeSelf && optionsPage.activeSelf;
+        public Button CampaignButton { get; private set; }
+        public Button QuickPlayButton { get; private set; }
+        public Button MultiplayerButton { get; private set; }
+        public Button OptionsButton { get; private set; }
+        public Button OptionsBackButton { get; private set; }
+        public Button EffectsButton { get; private set; }
+        public Button MusicButton { get; private set; }
+
         public Button UpgradeButton => upgradeButton;
         public Button SellButton { get; private set; }
         public Button CloseButton { get; private set; }
@@ -117,8 +130,177 @@ namespace Colonia09.Presentation
             BuildDock();
             BuildToast();
             BuildModal();
+            BuildMainMenu();
             ApplySafeArea();
         }
+
+        // ---- Main menu ----------------------------------------------------------------
+
+        void BuildMainMenu()
+        {
+            var root = Rt("MainMenu", safeArea.parent);
+            Stretch(root);
+            mainMenu = root.gameObject;
+            root.gameObject.AddComponent<Image>().color = Html("#06121f");
+            // Faint grid of deck plates behind the title, so the screen is not a flat color.
+            var plates = Rt("Plates", root);
+            Stretch(plates);
+            var grid = plates.gameObject.AddComponent<GridLayoutGroup>();
+            grid.cellSize = new Vector2(150, 150); grid.spacing = new Vector2(8, 8);
+            grid.childAlignment = TextAnchor.MiddleCenter;
+            for (int i = 0; i < 7 * 16; i++)
+            {
+                var plate = Rt("Plate", plates).gameObject.AddComponent<Image>();
+                plate.sprite = rounded; plate.type = Image.Type.Sliced; plate.raycastTarget = false;
+                plate.color = new Color(.11f, .2f, .27f, (i * 7 % 5) == 0 ? .32f : .18f);
+            }
+            plates.gameObject.AddComponent<RectMask2D>();
+
+            menuPage = Rt("Menu", root).gameObject;
+            var page = (RectTransform)menuPage.transform;
+            page.anchorMin = new Vector2(.04f, .04f); page.anchorMax = new Vector2(.96f, .96f);
+            page.offsetMin = page.offsetMax = Vector2.zero;
+
+            var kicker = Label(page, "ZEITEND INTERACTIVE PRESENTA", 28, Cyan, TextAnchor.MiddleCenter, FontStyle.Bold);
+            AnchorV(kicker.rectTransform, .915f, .955f);
+            var title = Label(page, "COLONIA 09", 140, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
+            title.resizeTextForBestFit = true; title.resizeTextMinSize = 60; title.resizeTextMaxSize = 140;
+            AnchorV(title.rectTransform, .81f, .915f);
+            var glow = title.gameObject.AddComponent<Outline>();
+            glow.effectColor = new Color(Cyan.r, Cyan.g, Cyan.b, .35f); glow.effectDistance = new Vector2(3, -3);
+            var tagline = Label(page, "Defiende la colonia. Construye su futuro.", 34, Muted, TextAnchor.MiddleCenter);
+            AnchorV(tagline.rectTransform, .765f, .81f);
+
+            // Emblem: the colony core, framed by the network relays.
+            var emblem = Rt("Emblem", page);
+            emblem.anchorMin = emblem.anchorMax = new Vector2(.5f, .655f);
+            emblem.sizeDelta = new Vector2(250, 250);
+            var core = Rt("Core", emblem).gameObject.AddComponent<Image>();
+            core.sprite = game.Board.ModuleSprite(ModuleType.Reactor); core.preserveAspect = true; core.raycastTarget = false;
+            Stretch(core.rectTransform);
+            foreach (var side in new[] { -1, 1 })
+            {
+                var relay = Rt("Relay", emblem).gameObject.AddComponent<Image>();
+                relay.sprite = game.Board.ModuleSprite(ModuleType.Relay); relay.preserveAspect = true; relay.raycastTarget = false;
+                relay.rectTransform.anchorMin = relay.rectTransform.anchorMax = new Vector2(.5f, .5f);
+                relay.rectTransform.sizeDelta = new Vector2(130, 130);
+                relay.rectTransform.anchoredPosition = new Vector2(side * 250, -20);
+                var link = Rt("Link", emblem).gameObject.AddComponent<Image>();
+                link.color = new Color(.54f, .9f, .93f, .45f); link.raycastTarget = false;
+                link.rectTransform.anchorMin = link.rectTransform.anchorMax = new Vector2(.5f, .5f);
+                link.rectTransform.sizeDelta = new Vector2(120, 6);
+                link.rectTransform.anchoredPosition = new Vector2(side * 158, -12);
+                link.transform.SetAsFirstSibling();
+            }
+
+            var stack = Rt("Buttons", page);
+            stack.anchorMin = new Vector2(.06f, .12f); stack.anchorMax = new Vector2(.94f, .52f);
+            stack.offsetMin = stack.offsetMax = Vector2.zero;
+            var layout = stack.gameObject.AddComponent<VerticalLayoutGroup>();
+            layout.spacing = 26; layout.childControlHeight = true; layout.childControlWidth = true;
+            layout.childForceExpandHeight = true; layout.childForceExpandWidth = true;
+            CampaignButton = MenuEntry(stack, "CAMPAÑA", "Próximamente · el mapa de la colonia", PanelLight, Txt, null);
+            QuickPlayButton = MenuEntry(stack, "PARTIDA RÁPIDA", "9 oleadas en el tablero completo", Cyan, Bg, () => { game.Audio.Play("select", true); HideMainMenu(); ShowModal(ModalKind.Intro); });
+            MultiplayerButton = MenuEntry(stack, "MULTIJUGADOR", "Próximamente", PanelLight, Txt, null);
+            OptionsButton = MenuEntry(stack, "OPCIONES", "Sonido, música y créditos", PanelLight, Txt, () => ShowOptions(true));
+
+            var footer = Label(page, "v0.9.1 · Zeitend Interactive", 24, Muted, TextAnchor.MiddleCenter);
+            AnchorV(footer.rectTransform, .02f, .06f);
+
+            BuildOptions(root);
+            mainMenu.SetActive(false);
+        }
+
+        /// <summary>Large menu button with a title and a one-line description. Without an action it shows as unavailable.</summary>
+        Button MenuEntry(Transform parent, string title, string subtitle, Color bg, Color fg, UnityEngine.Events.UnityAction onClick)
+        {
+            var button = TextButton(parent, title, 46, bg, fg, onClick ?? (() => { }));
+            var label = button.GetComponentInChildren<Text>();
+            label.rectTransform.anchorMin = new Vector2(0, .4f);
+            label.rectTransform.offsetMin = new Vector2(20, 0); label.rectTransform.offsetMax = new Vector2(-20, -8);
+            var sub = Label(button.transform, subtitle, 26, fg == Bg ? new Color(Bg.r, Bg.g, Bg.b, .75f) : Muted, TextAnchor.MiddleCenter);
+            sub.rectTransform.anchorMax = new Vector2(1, .44f);
+            sub.rectTransform.offsetMin = new Vector2(20, 10); sub.rectTransform.offsetMax = new Vector2(-20, 0);
+            if (onClick == null)
+            {
+                button.interactable = false;
+                label.color = new Color(fg.r, fg.g, fg.b, .45f);
+            }
+            return button;
+        }
+
+        void BuildOptions(RectTransform root)
+        {
+            optionsPage = Rt("Options", root).gameObject;
+            var page = (RectTransform)optionsPage.transform;
+            page.anchorMin = new Vector2(.06f, .06f); page.anchorMax = new Vector2(.94f, .94f);
+            page.offsetMin = page.offsetMax = Vector2.zero;
+
+            var title = Label(page, "OPCIONES", 80, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
+            AnchorV(title.rectTransform, .86f, .95f);
+            var section = Label(page, "SONIDO", 28, Cyan, TextAnchor.MiddleLeft, FontStyle.Bold);
+            AnchorV(section.rectTransform, .79f, .83f);
+            EffectsButton = OptionRow(page, "Efectos de sonido", .69f, () => { game.Audio.SetEffects(!game.Audio.EffectsOn); RefreshOptions(); }, out effectsLabel);
+            MusicButton = OptionRow(page, "Música", .59f, () => { game.Audio.SetMusic(!game.Audio.MusicOn); game.Audio.Play("select", true); RefreshOptions(); }, out musicLabel);
+
+            var creditsTitle = Label(page, "CRÉDITOS", 28, Cyan, TextAnchor.MiddleLeft, FontStyle.Bold);
+            AnchorV(creditsTitle.rectTransform, .48f, .52f);
+            var credits = Label(page,
+                "<b>Colonia 09</b> · versión 0.9.1\nUn juego de <b>Zeitend Interactive</b>\n\nModelos 3D renderizados en Blender.\nSonido sintetizado en tiempo real.\nHecho con Unity.",
+                30, Txt, TextAnchor.UpperLeft);
+            AnchorV(credits.rectTransform, .2f, .47f);
+
+            OptionsBackButton = TextButton(page, "VOLVER", 40, Cyan, Bg, () => { game.Audio.Play("select", true); ShowOptions(false); });
+            AnchorV((RectTransform)OptionsBackButton.transform, .04f, .12f);
+            optionsPage.SetActive(false);
+        }
+
+        Button OptionRow(RectTransform page, string text, float y, UnityEngine.Events.UnityAction onClick, out Text state)
+        {
+            var row = Rt("Row", page);
+            row.anchorMin = new Vector2(0, y); row.anchorMax = new Vector2(1, y + .085f);
+            row.offsetMin = row.offsetMax = Vector2.zero;
+            var bg = row.gameObject.AddComponent<Image>();
+            bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = Panel; bg.raycastTarget = false;
+            var label = Label(row, text, 36, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
+            label.rectTransform.offsetMin = new Vector2(30, 0);
+            var button = TextButton(row, "", 32, Cyan, Bg, onClick);
+            var rt = (RectTransform)button.transform;
+            rt.anchorMin = new Vector2(1, .5f); rt.anchorMax = new Vector2(1, .5f); rt.pivot = new Vector2(1, .5f);
+            rt.sizeDelta = new Vector2(260, 92); rt.anchoredPosition = new Vector2(-16, 0);
+            state = button.GetComponentInChildren<Text>();
+            return button;
+        }
+
+        void RefreshOptions()
+        {
+            SetToggle(EffectsButton, effectsLabel, game.Audio.EffectsOn);
+            SetToggle(MusicButton, musicLabel, game.Audio.MusicOn);
+        }
+
+        void SetToggle(Button button, Text label, bool on)
+        {
+            label.text = on ? "ACTIVADO" : "APAGADO";
+            label.color = on ? Bg : Muted;
+            button.GetComponent<Image>().color = on ? Cyan : PanelLight;
+        }
+
+        void ShowOptions(bool show)
+        {
+            if (show) game.Audio.Play("select", true);
+            menuPage.SetActive(!show);
+            optionsPage.SetActive(show);
+            RefreshOptions();
+        }
+
+        public void ShowMainMenu()
+        {
+            mainMenu.SetActive(true);
+            mainMenu.transform.SetAsLastSibling();
+            ShowOptions(false);
+        }
+
+        public void HideMainMenu() => mainMenu.SetActive(false);
 
         // ---- Layout -------------------------------------------------------------------
 
@@ -491,7 +673,7 @@ namespace Colonia09.Presentation
             PrimaryButton = TextButton(panel, "", 40, Cyan, Bg, OnPrimary);
             primaryLabel = PrimaryButton.GetComponentInChildren<Text>();
             AnchorV((RectTransform)PrimaryButton.transform, .105f, .185f);
-            SecondaryButton = TextButton(panel, "", 32, PanelLight, Txt, game.ReturnToMenu);
+            SecondaryButton = TextButton(panel, "", 32, PanelLight, Txt, OnSecondary);
             secondaryLabel = SecondaryButton.GetComponentInChildren<Text>();
             secondaryButton = SecondaryButton.gameObject;
             AnchorV((RectTransform)SecondaryButton.transform, .04f, .095f);
@@ -528,6 +710,13 @@ namespace Colonia09.Presentation
             }
         }
 
+        void OnSecondary()
+        {
+            // Pause restarts Quick Play from its setup screen; every other screen goes back to the main menu.
+            if (modalKind == ModalKind.Pause) game.ReturnToMenu();
+            else game.ShowMainMenu();
+        }
+
         // ---- Modal content ------------------------------------------------------------
 
         const string RulesIntro =
@@ -557,10 +746,10 @@ namespace Colonia09.Presentation
             difficultyRow.SetActive(intro);
             modalInfo.alignment = intro || pause ? TextAnchor.UpperLeft : TextAnchor.UpperCenter;
             modalInfo.text = intro ? RulesIntro : pause ? RulesPause
-                : $"Enemigos detenidos: <b>{sim.TotalKills}</b>\nOleada: <b>{sim.Wave}/{GameData.MaxWave}</b>\nDificultad: <b>{GameData.Difficulties[sim.Difficulty].Label}</b>";
+                : $"Enemigos detenidos: <b>{sim.TotalKills}</b>\nOleada: <b>{sim.Wave}/{sim.MaxWave}</b>\nDificultad: <b>{GameData.Difficulties[sim.Difficulty].Label}</b>";
             primaryLabel.text = intro ? "INICIAR DEFENSA" : pause ? "CONTINUAR PARTIDA" : "VOLVER A JUGAR";
-            secondaryButton.SetActive(pause);
-            secondaryLabel.text = "REINICIAR SIMULACIÓN";
+            secondaryButton.SetActive(true);
+            secondaryLabel.text = pause ? "REINICIAR SIMULACIÓN" : intro ? "VOLVER AL MENÚ" : "MENÚ PRINCIPAL";
             modalFooter.text = intro ? "7 × 11 · 9 oleadas · economía gradual" : pause ? "Partida en pausa" : "Puedes seleccionar otra dificultad en la siguiente partida";
             RefreshDifficulty();
         }
@@ -587,14 +776,18 @@ namespace Colonia09.Presentation
             labelsUsed = 0;
 
             var sim = game.Sim;
-            waveText.text = $"OLA {sim.Wave}<size=26><color=#99b5c7>/{GameData.MaxWave}</color></size>";
+            waveText.text = $"OLA {sim.Wave}<size=26><color=#99b5c7>/{sim.MaxWave}</color></size>";
             float waveDone = sim.WaveTotal > 0 && sim.WaveBreak <= 0 ? 1 - (sim.SpawnRemaining + sim.Enemies.Count) / (float)sim.WaveTotal : 1;
             waveFill.anchorMax = new Vector2(Mathf.Clamp01(waveDone), 1);
 
             int core = Mathf.CeilToInt((float)sim.Core);
             coreText.text = core.ToString();
             for (int i = 0; i < corePips.Count; i++)
+            {
+                bool shown = i < sim.Level.CoreMax;
+                if (corePips[i].enabled != shown) corePips[i].enabled = shown;
                 corePips[i].color = i < core ? (core <= 5 ? Color.Lerp(Red, Color.white, Mathf.PingPong(Time.unscaledTime * 2, .35f)) : Red) : Html("#2a1d22");
+            }
 
             float capacity = Mathf.Max(1, (float)sim.EnergyCapacity);
             float fraction = Mathf.Clamp01((float)sim.Charge / capacity);
@@ -615,7 +808,12 @@ namespace Colonia09.Presentation
                 inspector.SetActive(selected != null);
                 cardsRoot.SetActive(selected == null);
                 closeInspector.SetActive(selected != null);
-                dockTitle.text = selected != null ? "MÓDULO SELECCIONADO" : "SISTEMAS · 8 MÓDULOS";
+                dockTitle.text = selected != null ? "MÓDULO SELECCIONADO" : $"SISTEMAS · {sim.Level.Modules.Length} MÓDULOS";
+                foreach (var type in GameData.ModuleTypes)
+                {
+                    bool available = sim.Level.Allows(type);  // Campaign missions unlock modules a few at a time.
+                    if (CardButtons[type].gameObject.activeSelf != available) CardButtons[type].gameObject.SetActive(available);
+                }
                 dockHint.text = selected != null ? "Mejora o recicla el módulo" : "Elige módulo y toca una casilla";
                 if (selected != null) inspectIcon.sprite = game.Board.ModuleSprite(selected.Type);
             }

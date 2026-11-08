@@ -46,6 +46,35 @@ namespace Colonia09.Simulation
         public string Color, Label, Tip;
     }
 
+    /// <summary>
+    /// Board and rules for one mission. The defaults are exactly the prototype's game, which
+    /// Quick Play uses unchanged; campaign sectors use smaller boards and fewer modules.
+    /// </summary>
+    public sealed class LevelConfig
+    {
+        public string Id = "quick", Name = "Partida rápida";
+        public int Width = GameData.Width, Height = GameData.Height, Waves = GameData.MaxWave, CoreMax = GameData.CoreMax;
+        public int CoreRow = GameData.StartCoreRow, CoreColumn = GameData.StartCoreColumn;
+        /// <summary>Starting energy; null keeps the difficulty's value.</summary>
+        public int? StartCharge;
+        public ModuleType[] Modules = GameData.ModuleTypes;
+
+        public bool Allows(ModuleType type) => System.Array.IndexOf(Modules, type) >= 0;
+        public bool IsQuickPlay => Id == "quick";
+        public static LevelConfig QuickPlay => new LevelConfig();
+
+        /// <summary>Throws if the board cannot be played: too small, or the core outside the buildable rows.</summary>
+        public void Validate()
+        {
+            if (Width < 3 || Width > GameData.Width || Height < 5 || Height > GameData.Height)
+                throw new System.ArgumentException($"Board {Width}x{Height} is outside 3x5 to {GameData.Width}x{GameData.Height}");
+            if (CoreRow < 1 || CoreRow > Height - 2 || CoreColumn < 0 || CoreColumn >= Width)
+                throw new System.ArgumentException($"Core at row {CoreRow}, column {CoreColumn} is outside the buildable area");
+            if (Waves < 1 || Waves > GameData.MaxWave || CoreMax < 1 || Modules.Length == 0)
+                throw new System.ArgumentException("Level needs at least one wave, one core point and one module");
+        }
+    }
+
     /// <summary>All balance data, ported as-is from the Colonia 09 v0.9.1 prototype.</summary>
     public static class GameData
     {

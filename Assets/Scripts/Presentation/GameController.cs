@@ -38,8 +38,7 @@ namespace Colonia09.Presentation
             Sim.OnBoardChanged = () => Ui.MarkDeckDirty();
             Sim.OnFinished = win => Ui.ShowModal(win ? ModalKind.Win : ModalKind.Lost);
 
-            Sim.Reset();
-            Ui.ShowModal(ModalKind.Intro);
+            ShowMainMenu();
 
 #if DEVELOPMENT_BUILD || UNITY_EDITOR
             DevAutotest.StartIfRequested(this);
@@ -50,13 +49,14 @@ namespace Colonia09.Presentation
         {
             double dt = Math.Min(.06, Time.unscaledDeltaTime);
             for (int i = 0; i < StepsPerFrame; i++) Sim.Update(dt);
-            if (Sim.Mode == GameMode.Playing)
+            if (Sim.Mode == GameMode.Playing || Ui.MainMenuOpen)
             {
                 musicClock -= (float)dt;
                 if (musicClock <= 0)
                 {
-                    bool heavy = Sim.Enemies.Exists(e => GameData.IsVehicle(e.Kind) || e.Kind == EnemyKind.Commander);
-                    Audio.MusicStep(Sim.Wave, heavy);
+                    // The menu plays the calm opening theme.
+                    bool heavy = !Ui.MainMenuOpen && Sim.Enemies.Exists(e => GameData.IsVehicle(e.Kind) || e.Kind == EnemyKind.Commander);
+                    Audio.MusicStep(Ui.MainMenuOpen ? 1 : Sim.Wave, heavy);
                     musicClock = 1.48f;
                 }
             }
@@ -70,21 +70,40 @@ namespace Colonia09.Presentation
 
         // ---- Player actions -----------------------------------------------------------
 
-        public void StartGame(Difficulty difficulty)
+        /// <summary>Starts Quick Play: the prototype's full game on the 7 x 11 board.</summary>
+        public void StartGame(Difficulty difficulty) => StartLevel(LevelConfig.QuickPlay, difficulty);
+
+        /// <summary>Starts any mission: Quick Play or a campaign sector with its own board and modules.</summary>
+        public void StartLevel(LevelConfig level, Difficulty difficulty)
         {
             Sim.Difficulty = difficulty;
-            SelectedType = ModuleType.Generator;
+            Sim.Configure(level);
+            SelectedType = level.Allows(ModuleType.Generator) ? ModuleType.Generator : level.Modules[0];
             Selected = null;
             Sim.Start();
+            Ui.HideMainMenu();
             Ui.HideModal();
             Ui.MarkDeckDirty();
         }
 
+        /// <summary>Back to the Quick Play setup screen (difficulty and rules).</summary>
         public void ReturnToMenu()
         {
             Selected = null;
+            if (!Sim.Level.IsQuickPlay) Sim.Configure(LevelConfig.QuickPlay);
             Sim.Reset();
             Ui.ShowModal(ModalKind.Intro);
+            Ui.MarkDeckDirty();
+        }
+
+        /// <summary>Leaves any game and shows the main menu.</summary>
+        public void ShowMainMenu()
+        {
+            Selected = null;
+            if (!Sim.Level.IsQuickPlay) Sim.Configure(LevelConfig.QuickPlay);
+            Sim.Reset();
+            Ui.HideModal();
+            Ui.ShowMainMenu();
             Ui.MarkDeckDirty();
         }
 

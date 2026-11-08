@@ -119,6 +119,43 @@ namespace Colonia09.Presentation
             }
         }
 
+        /// <summary>A campaign-style mission: 5 x 7 board, two modules, three waves. Then back to the main menu.</summary>
+        IEnumerator SmallBoard()
+        {
+            var sim = game.Sim;
+            var ui = game.Ui;
+            game.StepsPerFrame = 1;
+            var level = new LevelConfig
+            {
+                Id = "test-5x7", Name = "Prueba", Width = 5, Height = 7, Waves = 3, CoreMax = 10, CoreRow = 5, CoreColumn = 2,
+                StartCharge = 220, Modules = new[] { ModuleType.Generator, ModuleType.Pulse },
+            };
+            game.StartLevel(level, Difficulty.Explore);
+            yield return Frames(3);
+            Check("small board starts", sim.Mode == GameMode.Playing && sim.Width == 5 && sim.Height == 7 && sim.ModuleAt(5, 2)?.Type == ModuleType.Reactor);
+            Check("only the level's modules are offered", ui.CardButtons[ModuleType.Pulse].gameObject.activeSelf && !ui.CardButtons[ModuleType.Tesla].gameObject.activeSelf);
+            Check("modules outside the level cannot be built", !sim.TryBuild(ModuleType.Tesla, 3, 2) && sim.ModuleAt(3, 2) == null);
+            yield return Tap(4, 2);
+            Check("tap builds on the small board", sim.ModuleAt(4, 2)?.Type == ModuleType.Generator);
+            game.SelectType(ModuleType.Pulse);
+            yield return Tap(3, 1);
+            yield return Tap(3, 3);
+            game.StepsPerFrame = 4;
+            bool inside = true;
+            for (int f = 0; f < 600 && sim.Mode == GameMode.Playing; f++)
+            {
+                foreach (var e in sim.Enemies) inside &= e.C >= 0 && e.C < 5;
+                if (f == 300) { game.StepsPerFrame = 1; yield return Shot("09_small_board"); game.StepsPerFrame = 4; }
+                yield return null;
+            }
+            game.StepsPerFrame = 1;
+            Check("enemies stay inside the small board", inside);
+            report.Add($"Small board: mode {sim.Mode}, wave {sim.Wave}/{sim.MaxWave}, kills {sim.TotalKills}");
+            game.ShowMainMenu();
+            yield return null;
+            Check("main menu restores the full board", ui.MainMenuOpen && sim.Width == 7 && sim.Height == 11);
+        }
+
         IEnumerator Run()
         {
             var sim = game.Sim;
@@ -132,6 +169,28 @@ namespace Colonia09.Presentation
             yield return Frames(5);
             report.Add($"Screen {Screen.width}x{Screen.height}, safe area {Screen.safeArea}, insets {ui.DebugSafeInsetTop}/{ui.DebugSafeInsetBottom}");
             Check("sprites load", game.Board.ModuleSprite(ModuleType.Pulse) != null);
+            Check("main menu opens first", ui.MainMenuOpen && !ui.ModalOpen);
+            Check("campaign and multiplayer are marked unavailable", !ui.CampaignButton.interactable && !ui.MultiplayerButton.interactable);
+            yield return Shot("00_menu");
+
+            yield return RealTouch(ScreenCenter(ui.OptionsButton));
+            Check("options open from the menu", ui.OptionsOpen);
+            bool musicBefore = game.Audio.MusicOn;
+            yield return RealTouch(ScreenCenter(ui.MusicButton));
+            Check("music toggle switches", game.Audio.MusicOn != musicBefore);
+            yield return Shot("00_options");
+            yield return RealTouch(ScreenCenter(ui.MusicButton));
+            Check("music toggle switches back", game.Audio.MusicOn == musicBefore);
+            yield return RealTouch(ScreenCenter(ui.OptionsBackButton));
+            Check("options close back to the menu", ui.MainMenuOpen && !ui.OptionsOpen);
+
+            yield return RealTouch(ScreenCenter(ui.QuickPlayButton));
+            Check("quick play opens its setup screen", !ui.MainMenuOpen && ui.ModalOpen && ui.CurrentModal == ModalKind.Intro);
+            ui.SecondaryButton.onClick.Invoke();
+            yield return null;
+            Check("setup screen goes back to the menu", ui.MainMenuOpen && !ui.ModalOpen);
+            ui.QuickPlayButton.onClick.Invoke();
+            yield return null;
             Check("intro modal open", ui.ModalOpen && ui.CurrentModal == ModalKind.Intro);
             yield return Shot("01_intro");
 
@@ -189,6 +248,7 @@ namespace Colonia09.Presentation
             if (quick)
             {
                 yield return Shot("05_touch");
+                yield return SmallBoard();
                 Check("no errors logged", loggedErrors == 0);
                 report.Add(failures == 0 && loggedErrors == 0 ? "AUTOTEST PASS" : $"AUTOTEST FAIL ({failures} checks, {loggedErrors} log errors)");
                 File.WriteAllLines(Path.Combine(dir, "report.txt"), report);
@@ -219,6 +279,7 @@ namespace Colonia09.Presentation
             Check("run reached at least wave 3", sim.Wave >= 3);
             Check("end modal appears", sim.Mode == GameMode.Playing || ui.ModalOpen);
             yield return Shot("08_end");
+            yield return SmallBoard();
             Check("no errors logged", loggedErrors == 0);
 
             report.Add(failures == 0 && loggedErrors == 0 ? "AUTOTEST PASS" : $"AUTOTEST FAIL ({failures} checks, {loggedErrors} log errors)");
