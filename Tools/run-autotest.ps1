@@ -12,7 +12,8 @@ $runs = @(
   @{ Name = 'phone-tall'; W = 540; H = 1170; Extra = @() },
   @{ Name = 'phone-notch'; W = 540; H = 1170; Extra = @('-colonia-quick', '-colonia-inset-top', '66', '-colonia-inset-bottom', '40') },
   @{ Name = 'phone-16x9'; W = 540; H = 960; Extra = @('-colonia-quick') },
-  @{ Name = 'tablet-4x3'; W = 768; H = 1024; Extra = @('-colonia-quick') }
+  @{ Name = 'tablet-4x3'; W = 768; H = 1024; Extra = @('-colonia-quick') },
+  @{ Name = 'campaign'; W = 540; H = 1170; Extra = @('-colonia-campaign') }
 )
 $failed = 0
 foreach ($run in $runs) {
@@ -24,7 +25,7 @@ foreach ($run in $runs) {
   if (-not (Test-Path "$out\report.txt")) { Write-Output "$($run.Name): no report"; $failed++; continue }
   $report = Get-Content "$out\report.txt" -Encoding UTF8
   Write-Output "--- $($run.Name): $($report[-1])"
-  $report | Where-Object { $_ -like 'FAIL*' -or $_ -like 'LOG ERROR*' -or $_ -like 'Screen*' -or $_ -like 'Run ended*' -or $_ -like '*real touch*' }
+  $report | Where-Object { $_ -like 'FAIL*' -or $_ -like 'LOG ERROR*' -or $_ -like 'Screen*' -or $_ -like 'Run ended*' -or $_ -like 'Sector *' }
   if ($report[-1] -ne 'AUTOTEST PASS') { $failed++ }
 }
 if ($failed -gt 0) { throw "$failed run(s) failed" }

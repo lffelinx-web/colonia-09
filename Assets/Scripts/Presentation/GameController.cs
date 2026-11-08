@@ -17,6 +17,9 @@ namespace Colonia09.Presentation
         public BoardView Board { get; private set; }
         public GameUI Ui { get; private set; }
         public GameAudio Audio { get; private set; }
+        public CampaignDirector Campaign { get; private set; }
+        /// <summary>Counts taps on the module cards; the tutorial waits for the player's own choice.</summary>
+        public int CardPicks { get; private set; }
         float musicClock;
 
         void Awake()
@@ -25,6 +28,7 @@ namespace Colonia09.Presentation
             Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
             Sim = new GameSimulation();
+            Campaign = new CampaignDirector(this);
             Board = gameObject.AddComponent<BoardView>();
             Ui = gameObject.AddComponent<GameUI>();
             Audio = gameObject.AddComponent<GameAudio>();
@@ -36,7 +40,11 @@ namespace Colonia09.Presentation
             Sim.OnNotify = (text, duration) => Ui.ShowToast(text, (float)duration);
             Sim.OnShake = power => Board.Shake((float)power);
             Sim.OnBoardChanged = () => Ui.MarkDeckDirty();
-            Sim.OnFinished = win => Ui.ShowModal(win ? ModalKind.Win : ModalKind.Lost);
+            Sim.OnFinished = win =>
+            {
+                if (Campaign.Active) Campaign.Finish(win);
+                Ui.ShowModal(win ? ModalKind.Win : ModalKind.Lost);
+            };
 
             ShowMainMenu();
 
@@ -49,14 +57,16 @@ namespace Colonia09.Presentation
         {
             double dt = Math.Min(.06, Time.unscaledDeltaTime);
             for (int i = 0; i < StepsPerFrame; i++) Sim.Update(dt);
-            if (Sim.Mode == GameMode.Playing || Ui.MainMenuOpen)
+            Campaign.Update();
+            if (Sim.Mode == GameMode.Playing || Ui.MainMenuOpen || Ui.MapOpen)
             {
                 musicClock -= (float)dt;
                 if (musicClock <= 0)
                 {
                     // The menu plays the calm opening theme.
-                    bool heavy = !Ui.MainMenuOpen && Sim.Enemies.Exists(e => GameData.IsVehicle(e.Kind) || e.Kind == EnemyKind.Commander);
-                    Audio.MusicStep(Ui.MainMenuOpen ? 1 : Sim.Wave, heavy);
+                    bool calm = Ui.MainMenuOpen || Ui.MapOpen;
+                    bool heavy = !calm && Sim.Enemies.Exists(e => GameData.IsVehicle(e.Kind) || e.Kind == EnemyKind.Commander);
+                    Audio.MusicStep(calm ? 1 : Sim.Wave, heavy);
                     musicClock = 1.48f;
                 }
             }
@@ -89,6 +99,7 @@ namespace Colonia09.Presentation
         /// <summary>Back to the Quick Play setup screen (difficulty and rules).</summary>
         public void ReturnToMenu()
         {
+            Campaign.End();
             Selected = null;
             if (!Sim.Level.IsQuickPlay) Sim.Configure(LevelConfig.QuickPlay);
             Sim.Reset();
@@ -99,6 +110,8 @@ namespace Colonia09.Presentation
         /// <summary>Leaves any game and shows the main menu.</summary>
         public void ShowMainMenu()
         {
+            Campaign.End();
+            Ui.HideCampaignMap();
             Selected = null;
             if (!Sim.Level.IsQuickPlay) Sim.Configure(LevelConfig.QuickPlay);
             Sim.Reset();
@@ -120,8 +133,42 @@ namespace Colonia09.Presentation
             Ui.HideModal();
         }
 
+        // ---- Campaign -----------------------------------------------------------------
+
+        /// <summary>Leaves any game and shows the colony map.</summary>
+        public void ShowCampaignMap()
+        {
+            Campaign.End();
+            Selected = null;
+            if (!Sim.Level.IsQuickPlay) Sim.Configure(LevelConfig.QuickPlay);
+            Sim.Reset();
+            Ui.HideModal();
+            Ui.HideMainMenu();
+            Ui.ShowCampaignMap();
+            Ui.MarkDeckDirty();
+        }
+
+        public void StartSector(CampaignSector sector)
+        {
+            if (!CampaignDirector.Unlocked(sector)) return;
+            Audio.Play("wave", true);
+            Ui.HideCampaignMap();
+            StartLevel(sector.Level, sector.Difficulty);
+            Campaign.Begin(sector);
+        }
+
+        /// <summary>Pauses the mission and presents an enemy the player has not met yet.</summary>
+        public void ShowEnemyIntro(EnemyKind kind)
+        {
+            if (Sim.Mode != GameMode.Playing) return;
+            Sim.Mode = GameMode.Paused;
+            Audio.Play("alert", true);
+            Ui.ShowEnemyIntro(kind);
+        }
+
         public void SelectType(ModuleType type)
         {
+            CardPicks++;
             SelectedType = type;
             Selected = null;
             Audio.Play("select");

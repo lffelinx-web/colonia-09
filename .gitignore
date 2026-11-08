@@ -30,3 +30,5 @@
 
 # Sprite render test output
 /Tools/Render/out/
+
+Tools/Render/__pycache__/

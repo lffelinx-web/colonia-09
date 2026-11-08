@@ -1,7 +1,9 @@
 """Renders the battlefield background: the 7 x 11 deck plus colony scenery on both sides.
 
 Usage:
-  blender --background --factory-startup --python Tools/Render/render_board.py -- OUTPUT_DIR [preview]
+  blender --background --factory-startup --python Tools/Render/render_board.py -- OUTPUT_DIR [WxH] [preview]
+
+Without WxH it renders the 7 x 11 Quick Play deck as board.png; with it, a campaign deck as board_WxH.png.
 
 One cell is one Blender unit, centered on (column, -row), exactly as in Unity. The image is
 17 x 11.6 units at 96 pixels per unit, wider than any phone so the sides are always covered.
@@ -18,9 +20,12 @@ import render_sprites as rs  # noqa: E402  Shared materials and shapes; its rend
 from render_sprites import along_y, box, cyl, glowing, material, prism, regular, srgb, torus, transparent  # noqa: E402
 
 OUT = sys.argv[sys.argv.index("--") + 1]
-PREVIEW = "preview" in sys.argv[sys.argv.index("--") + 2:]
-W, H = 7, 11
-WIDTH, HEIGHT, PPU = 17.0, 11.6, 96
+EXTRA = sys.argv[sys.argv.index("--") + 2:]
+PREVIEW = "preview" in EXTRA
+SIZE_ARG = next((a for a in EXTRA if "x" in a and a.replace("x", "").isdigit()), None)
+W, H = (int(v) for v in SIZE_ARG.split("x")) if SIZE_ARG else (7, 11)
+WIDTH, HEIGHT, PPU = 17.0, H + .6, 96
+SY = (H - 1) / 10  # Scenery positions were laid out for 11 rows; shorter decks pull them in.
 CENTER = ((W - 1) / 2, -(H - 1) / 2)
 random.seed(9)
 
@@ -120,13 +125,13 @@ def build():
         x0 = CENTER[0] + side * (W / 2 + .55)
         for i, (offset, radius) in enumerate(((0, .09), (.24, .12), (.5, .08))):
             along_y((x0 + side * offset, (top + bottom) / 2, .16), radius, length, pipe if i != 1 else rust, bevel=.01)
-        for k in range(8):
+        for k in range(max(2, int(length / 1.55))):
             box((x0 + side * .25, top - .6 - k * 1.55, .2), (.68, .09, .07), dark, bevel=.015)
         walk = CENTER[0] + side * (W / 2 + 1.55)
         box((walk, (top + bottom) / 2, .04), (.8, length, .04), grate, bevel=.01)
         for k in range(int(length / .2)):
             box((walk, top - .1 - k * .2, .07), (.76, .03, .01), dark, bevel=.002)
-        for y in (-1.5, -5.5, -9.2):  # Floodlights.
+        for y in (-1.5 * SY, -5.5 * SY, -9.2 * SY):  # Floodlights.
             cyl((walk + side * .52, y, .3), .05, .6, steel, bevel=.01)
             box((walk + side * .38, y, .62), (.3, .16, .08), dark, bevel=.02)
             box((walk + side * .3, y, .57), (.16, .12, .02), warm, bevel=.005)
@@ -137,21 +142,22 @@ def build():
         torus((left - .35, y, .9), .5, .04, steel)
         torus((left - .35, y, .55), .63, .03, rust)
         cyl((left - .35, y, .92), .15, .04, dark, bevel=.01)
-    for i, (y, mat) in enumerate(((-4.4, rust), (-5.2, teal), (-4.8, white))):  # Container stack.
+    for i, (y, mat) in enumerate(((-4.4 * SY, rust), (-4.4 * SY - .8, teal), (-4.4 * SY - .4, white))):  # Container stack.
         box((left - .2 - (i == 2) * .9, y, .3 + (i == 2) * .0), (1.3, .7, .6), mat, bevel=.03)
         for k in range(6):
             box((left - .2 - (i == 2) * .9 - .55 + k * .22, y, .61), (.05, .66, .015), dark, bevel=.003)
-    cyl((left - .1, -8.2, .35), .7, .1, steel, bevel=.02)   # Communications dish.
-    cyl((left - .1, -8.2, .45), .55, .08, white, bevel=.03)
-    cyl((left - .1, -8.2, .5), .07, .2, dark, bevel=.01)
-    cyl((left - .1, -8.2, .62), .04, .02, warm, bevel=.004)
-    for y in (-6.6, -7.1):
+    dish = -8.2 * SY
+    cyl((left - .1, dish, .35), .7, .1, steel, bevel=.02)   # Communications dish.
+    cyl((left - .1, dish, .45), .55, .08, white, bevel=.03)
+    cyl((left - .1, dish, .5), .07, .2, dark, bevel=.01)
+    cyl((left - .1, dish, .62), .04, .02, warm, bevel=.004)
+    for y in (-6.6 * SY, -6.6 * SY - .5):
         box((left + .7, y, .2), (.45, .4, .4), rust, bevel=.03)
 
     right = CENTER[0] + W / 2 + 2.9
-    for row in range(5):  # Solar panel array.
+    for row in range(max(2, round(5 * SY))):  # Solar panel array.
         for col in range(2):
-            x, y = right - .1 + col * 1.05, -5.6 - row * .95
+            x, y = right - .1 + col * 1.05, -5.6 * SY - row * .95
             box((x, y, .12), (.12, .12, .24), steel, bevel=.02)
             box((x, y, .27), (.95, .82, .03), panel, bevel=.012)
             for k in range(3):
@@ -164,15 +170,17 @@ def build():
         r = math.radians(a)
         box((right + .55 + math.cos(r) * .95, -1.3 + math.sin(r) * .95, .25), (.18, .1, .2), dark, bevel=.02)
         box((right + .55 + math.cos(r) * 1.0, -1.3 + math.sin(r) * 1.0, .3), (.12, .06, .06), warm, bevel=.01)
-    cyl((right - .5, -3.6, .6), .06, 1.2, steel, bevel=.01)  # Antenna mast.
+    mast = -3.6 * SY
+    cyl((right - .5, mast, .6), .06, 1.2, steel, bevel=.01)  # Antenna mast.
     for z in (.5, .8, 1.1):
-        box((right - .5, -3.6, z), (.4, .03, .03), steel, bevel=.005)
-    cyl((right - .5, -3.6, 1.22), .05, .03, warm, bevel=.005)
-    for y in (-3.0, -4.3):
+        box((right - .5, mast, z), (.4, .03, .03), steel, bevel=.005)
+    cyl((right - .5, mast, 1.22), .05, .03, warm, bevel=.005)
+    for y in (-3.0 * SY, -3.0 * SY - 1.3):
         box((right + .5, y, .2), (.55, .45, .4), teal, bevel=.03)
 
 
 build()
-bpy.context.scene.render.filepath = os.path.join(OUT, "board_preview.png" if PREVIEW else "board.png")
+name = f"board_{W}x{H}" if SIZE_ARG else "board"
+bpy.context.scene.render.filepath = os.path.join(OUT, name + ("_preview.png" if PREVIEW else ".png"))
 bpy.ops.render.render(write_still=True)
 print("RENDER_DONE")

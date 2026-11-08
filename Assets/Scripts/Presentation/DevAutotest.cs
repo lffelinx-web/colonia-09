@@ -156,6 +156,153 @@ namespace Colonia09.Presentation
             Check("main menu restores the full board", ui.MainMenuOpen && sim.Width == 7 && sim.Height == 11);
         }
 
+        void Finish()
+        {
+            Check("no errors logged", loggedErrors == 0);
+            report.Add(failures == 0 && loggedErrors == 0 ? "AUTOTEST PASS" : $"AUTOTEST FAIL ({failures} checks, {loggedErrors} log errors)");
+            File.WriteAllLines(Path.Combine(dir, "report.txt"), report);
+            Application.Quit(failures == 0 && loggedErrors == 0 ? 0 : 1);
+        }
+
+        /// <summary>Map, locked sector, briefing and the first tutorial steps, with real touches. Then back to the menu.</summary>
+        IEnumerator CampaignIntro()
+        {
+            var sim = game.Sim;
+            var ui = game.Ui;
+            SaveGame.ResetForTests();
+            yield return RealTouch(ScreenCenter(ui.CampaignButton));
+            yield return Frames(3);
+            Check("campaign map opens", ui.MapOpen && !ui.MainMenuOpen);
+            yield return Shot("10_map");
+            ui.SectorButton(2).onClick.Invoke();
+            yield return null;
+            Check("sector 2 starts locked", ui.BriefingOpen && !ui.BriefStartButton.interactable);
+            ui.BriefCloseButton.onClick.Invoke();
+            yield return RealTouch(ScreenCenter(ui.SectorButton(1)));
+            Check("sector 1 briefing opens by touch", ui.BriefingOpen && ui.BriefStartButton.interactable);
+            yield return Shot("11_briefing");
+            yield return RealTouch(ScreenCenter(ui.BriefStartButton));
+            yield return Frames(3);
+            Check("sector 1 starts on a 3 x 7 board with the tutorial", sim.Mode == GameMode.Playing && sim.Width == 3 && sim.Height == 7 && ui.CoachOpen && sim.HoldSpawns);
+            Check("sector 1 offers only Generator and Pulse", ui.CardButtons[ModuleType.Pulse].gameObject.activeSelf && !ui.CardButtons[ModuleType.Relay].gameObject.activeSelf);
+            yield return Shot("12_coach");
+            yield return RealTouch(ScreenCenter(ui.CoachButton));
+            yield return RealTouch(ScreenCenter(ui.CardButtons[ModuleType.Generator]));
+            yield return Frames(2);
+            Check("tutorial points at the cell next to the core", game.Board.HighlightCell == new Vector2Int(5, 0));
+            yield return RealTouch(game.Board.CellToScreen(5, 0));
+            yield return Frames(2);
+            Check("tutorial advances when the player builds", sim.ModuleAt(5, 0)?.Type == ModuleType.Generator && game.Campaign.Step != null && game.Campaign.Step.Card == ModuleType.Pulse);
+            Check("enemies wait during the tutorial", sim.Enemies.Count == 0);
+            yield return Shot("13_tutorial");
+            ui.MenuButton.onClick.Invoke();
+            yield return Frames(2);
+            Check("pause in a mission offers to leave", ui.ModalOpen && ui.CurrentModal == ModalKind.Pause);
+            ui.SecondaryButton.onClick.Invoke();
+            yield return Frames(2);
+            Check("leaving the mission returns to the map", ui.MapOpen && !game.Campaign.Active && !ui.CoachOpen && sim.Width == 7);
+            ui.MapBackButton.onClick.Invoke();
+            yield return Frames(2);
+            Check("map goes back to the main menu", ui.MainMenuOpen && !ui.MapOpen);
+            SaveGame.ResetForTests();
+        }
+
+        static readonly Dictionary<string, (ModuleType type, int r, int c, int lvl)[]> SectorBots = new Dictionary<string, (ModuleType, int, int, int)[]>
+        {
+            { "landing", new[] { (ModuleType.Generator, 5, 0, 1), (ModuleType.Pulse, 4, 1, 1), (ModuleType.Pulse, 4, 0, 1), (ModuleType.Pulse, 4, 2, 1), (ModuleType.Generator, 5, 2, 1),
+                (ModuleType.Pulse, 4, 1, 2), (ModuleType.Pulse, 4, 0, 2), (ModuleType.Pulse, 4, 2, 2) } },
+            { "camp", new[] { (ModuleType.Generator, 6, 1, 1), (ModuleType.Pulse, 5, 2, 1), (ModuleType.Generator, 6, 3, 1), (ModuleType.Relay, 5, 1, 1), (ModuleType.Pulse, 5, 0, 1),
+                (ModuleType.Relay, 5, 3, 1), (ModuleType.Pulse, 5, 4, 1), (ModuleType.Pulse, 4, 1, 1), (ModuleType.Pulse, 4, 3, 1), (ModuleType.Pulse, 5, 2, 2), (ModuleType.Pulse, 5, 0, 2),
+                (ModuleType.Pulse, 5, 4, 2), (ModuleType.Pulse, 4, 1, 2), (ModuleType.Pulse, 4, 3, 2) } },
+            { "well", new[] { (ModuleType.Generator, 7, 1, 1), (ModuleType.Pulse, 6, 2, 1), (ModuleType.Generator, 7, 4, 1), (ModuleType.Relay, 6, 1, 1), (ModuleType.Pulse, 6, 0, 1),
+                (ModuleType.Relay, 6, 3, 1), (ModuleType.Pulse, 6, 4, 1), (ModuleType.Reactor, 5, 2, 1), (ModuleType.Pulse, 5, 1, 1), (ModuleType.Pulse, 5, 3, 1), (ModuleType.Wall, 3, 2, 1),
+                (ModuleType.Wall, 3, 0, 1), (ModuleType.Wall, 3, 4, 1), (ModuleType.Pulse, 6, 2, 2), (ModuleType.Pulse, 6, 0, 2), (ModuleType.Pulse, 6, 4, 2), (ModuleType.Pulse, 5, 1, 2),
+                (ModuleType.Pulse, 5, 3, 2), (ModuleType.Generator, 7, 1, 2), (ModuleType.Generator, 7, 4, 2) } },
+        };
+
+        void SectorBotStep(string id)
+        {
+            var sim = game.Sim;
+            foreach (var it in SectorBots[id])
+            {
+                var m = sim.ModuleAt(it.r, it.c);
+                if (m == null)
+                {
+                    if (sim.Charge >= GameSimulation.BuildCost(it.type)) sim.TryBuild(it.type, it.r, it.c);
+                    return;
+                }
+                if (m.IsDeploying || m.Type != it.type) continue;
+                if (m.Level < it.lvl && sim.Wave >= sim.UpgradeUnlock(m))
+                {
+                    if (sim.Charge >= sim.UpgradeCost(m)) sim.TryUpgrade(m);
+                    return;
+                }
+            }
+        }
+
+        /// <summary>Plays the three tutorial sectors in order: tutorial, enemy cards, victory, stars, unlocking and saving.</summary>
+        IEnumerator FullCampaign()
+        {
+            var sim = game.Sim;
+            var ui = game.Ui;
+            SaveGame.ResetForTests();
+            int shot = 20;
+            foreach (var sector in CampaignData.Sectors)
+            {
+                if (!sector.Playable) continue;
+                game.ShowCampaignMap();
+                yield return Frames(3);
+                Check($"sector {sector.Number} is unlocked", CampaignDirector.Unlocked(sector) && ui.SectorButton(sector.Number).interactable);
+                ui.SectorButton(sector.Number).onClick.Invoke();
+                yield return null;
+                ui.BriefStartButton.onClick.Invoke();
+                yield return Frames(3);
+                Check($"sector {sector.Number} starts", game.Campaign.Active && sim.Width == sector.Level.Width && sim.Height == sector.Level.Height);
+
+                // The tutorial: confirm the notes and let the bot satisfy the goals.
+                int guard = 0;
+                while (game.Campaign.Step != null && guard++ < 2000)
+                {
+                    var step = game.Campaign.Step;
+                    if (step.Done == null) ui.CoachButton.onClick.Invoke();
+                    else if (step.Card.HasValue && game.SelectedType != step.Card.Value) ui.CardButtons[step.Card.Value].onClick.Invoke();
+                    else if (step.Card.HasValue && step.Cell == null) ui.CardButtons[step.Card.Value].onClick.Invoke();
+                    else if (step.Cell.HasValue) yield return Tap(step.Cell.Value.x, step.Cell.Value.y);
+                    else if (Time.frameCount % 5 == 0) SectorBotStep(sector.Id);  // A goal without a marked cell: build like a player.
+                    yield return null;
+                }
+                Check($"sector {sector.Number} tutorial completes and releases the enemies", game.Campaign.Step == null && !sim.HoldSpawns);
+
+                game.StepsPerFrame = 6;
+                float started = Time.unscaledTime;
+                int lastBot = 0;
+                while (Time.unscaledTime - started < 150 && (sim.Mode == GameMode.Playing || ui.CurrentModal == ModalKind.EnemyIntro && ui.ModalOpen))
+                {
+                    if (ui.ModalOpen && ui.CurrentModal == ModalKind.EnemyIntro)
+                    {
+                        game.StepsPerFrame = 1;
+                        yield return Shot($"{shot++:00}_enemy_card");
+                        ui.PrimaryButton.onClick.Invoke();
+                        game.StepsPerFrame = 6;
+                    }
+                    if (Time.frameCount - lastBot >= 5) { lastBot = Time.frameCount; SectorBotStep(sector.Id); }
+                    yield return null;
+                }
+                game.StepsPerFrame = 1;
+                yield return Frames(3);
+                int stars = SaveGame.Stars(sector.Id);
+                report.Add($"Sector {sector.Number}: {sim.Mode}, wave {sim.Wave}/{sim.MaxWave}, core {sim.Core:0}/{sector.Level.CoreMax}, stars {stars}, {Time.unscaledTime - started:0}s");
+                Check($"sector {sector.Number} is won with stars", sim.Mode == GameMode.Won && stars > 0 && ui.ModalOpen && ui.CurrentModal == ModalKind.Win);
+                yield return Shot($"{shot++:00}_sector{sector.Number}_result");
+                ui.PrimaryButton.onClick.Invoke();
+                yield return Frames(3);
+                Check($"sector {sector.Number} result returns to the map", ui.MapOpen && !game.Campaign.Active);
+            }
+            yield return Shot($"{shot:00}_map_after");
+            Check("progress is saved", SaveGame.Data.sectors.Count >= 3 && SaveGame.Data.seenEnemies.Contains("Armor") && SaveGame.Data.tutorials.Count == 3);
+            SaveGame.ResetForTests();
+        }
+
         IEnumerator Run()
         {
             var sim = game.Sim;
@@ -170,7 +317,14 @@ namespace Colonia09.Presentation
             report.Add($"Screen {Screen.width}x{Screen.height}, safe area {Screen.safeArea}, insets {ui.DebugSafeInsetTop}/{ui.DebugSafeInsetBottom}");
             Check("sprites load", game.Board.ModuleSprite(ModuleType.Pulse) != null);
             Check("main menu opens first", ui.MainMenuOpen && !ui.ModalOpen);
-            Check("campaign and multiplayer are marked unavailable", !ui.CampaignButton.interactable && !ui.MultiplayerButton.interactable);
+            Check("campaign is open and multiplayer is marked unavailable", ui.CampaignButton.interactable && !ui.MultiplayerButton.interactable);
+            if (Array.IndexOf(Environment.GetCommandLineArgs(), "-colonia-campaign") >= 0)
+            {
+                yield return FullCampaign();
+                Finish();
+                yield break;
+            }
+            yield return CampaignIntro();
             yield return Shot("00_menu");
 
             yield return RealTouch(ScreenCenter(ui.OptionsButton));

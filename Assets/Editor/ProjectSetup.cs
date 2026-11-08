@@ -28,6 +28,14 @@ namespace Colonia09.EditorTools
                 importer.textureCompression = TextureImporterCompression.CompressedHQ;
                 return;
             }
+            if (assetPath.Contains("/Map/"))
+            {
+                // The campaign map is a full-screen picture shown in the UI.
+                importer.spritePixelsPerUnit = 100;
+                importer.maxTextureSize = 2048;
+                importer.textureCompression = TextureImporterCompression.CompressedHQ;
+                return;
+            }
             // Modules fill one cell. Enemies use 170 pixels per cell, with their size baked in.
             importer.spritePixelsPerUnit = assetPath.Contains("/Enemies/") ? 170 : 256;
             importer.textureCompression = TextureImporterCompression.Uncompressed;

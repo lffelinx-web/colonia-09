@@ -161,6 +161,7 @@ namespace Colonia09.Presentation
         }
 
         public Sprite ModuleSprite(ModuleType type) => moduleSprites[type];
+        public Sprite EnemySprite(EnemyKind kind) => enemySprites[kind].Length > 0 ? enemySprites[kind][0] : null;
 
         public void Shake(float power)
         {
@@ -191,6 +192,7 @@ namespace Colonia09.Presentation
             DrawModules(t);
             DrawEnemies(t);
             DrawEffects();
+            DrawHighlight(t);
             for (int i = used; i < pool.Count; i++)
                 if (pool[i].enabled) pool[i].enabled = false;
         }
@@ -268,16 +270,41 @@ namespace Colonia09.Presentation
 
         // ---- Board --------------------------------------------------------------------
 
+        readonly Dictionary<string, Sprite> campaignBoards = new Dictionary<string, Sprite>();
+
+        /// <summary>Rendered deck for a campaign board size (Tools/Render/render_board.py WxH), or null.</summary>
+        Sprite CampaignBoard()
+        {
+            string key = $"board_{W}x{H}";
+            if (!campaignBoards.TryGetValue(key, out var sprite))
+                campaignBoards[key] = sprite = Resources.Load<Sprite>("Sprites/Board/" + key);
+            return sprite;
+        }
+
+        /// <summary>Cell the tutorial points at, drawn as a pulsing frame; null for none.</summary>
+        public Vector2Int? HighlightCell;
+
+        void DrawHighlight(float t)
+        {
+            if (HighlightCell == null) return;
+            var cell = HighlightCell.Value;
+            var pos = new Vector2(cell.y, -cell.x);
+            float pulse = Mathf.PingPong(t * 1.6f, 1);
+            Draw(square, pos, Vector2.one * .96f, new Color(1, .83f, .55f, .12f + pulse * .12f), OrderMarks);
+            Draw(ring, pos, Vector2.one * (1.02f + pulse * .16f), new Color(1, .83f, .55f, .95f - pulse * .5f), OrderMarks + 1);
+        }
+
         void DrawBoard(float t)
         {
-            if (boardSprite != null && StandardBoard)
+            var deck = StandardBoard ? boardSprite : CampaignBoard();
+            if (deck != null)
             {
                 // Rendered deck and colony scenery; it is wider than the grid so it fills the sides of the screen.
-                Draw(boardSprite, new Vector2((W - 1) / 2f, -(H - 1) / 2f), Vector2.one, Color.white, OrderBoard);
+                Draw(deck, new Vector2((W - 1) / 2f, -(H - 1) / 2f), Vector2.one, Color.white, OrderBoard);
             }
             else
             {
-                // Smaller campaign boards: plated tiles drawn in code until they get their own rendered deck.
+                // A board size without a rendered deck: plated tiles drawn in code.
                 Rect((W - 1) / 2f, -(H - 1) / 2f, W + .24f, H + .24f, Hex("#1d2a33"), OrderBoard);
                 for (int r = 0; r < H; r++)
                     for (int c = 0; c < W; c++)

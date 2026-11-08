@@ -58,6 +58,8 @@ namespace Colonia09.Simulation
         /// <summary>Starting energy; null keeps the difficulty's value.</summary>
         public int? StartCharge;
         public ModuleType[] Modules = GameData.ModuleTypes;
+        /// <summary>Campaign waves. Null keeps the prototype's scripted waves (Quick Play).</summary>
+        public WaveSpec[] WaveSpecs;
 
         public bool Allows(ModuleType type) => System.Array.IndexOf(Modules, type) >= 0;
         public bool IsQuickPlay => Id == "quick";
@@ -72,6 +74,22 @@ namespace Colonia09.Simulation
                 throw new System.ArgumentException($"Core at row {CoreRow}, column {CoreColumn} is outside the buildable area");
             if (Waves < 1 || Waves > GameData.MaxWave || CoreMax < 1 || Modules.Length == 0)
                 throw new System.ArgumentException("Level needs at least one wave, one core point and one module");
+            if (WaveSpecs != null && WaveSpecs.Length != Waves)
+                throw new System.ArgumentException($"Level has {Waves} waves but {WaveSpecs.Length} wave specs");
+        }
+    }
+
+    /// <summary>One campaign wave: how many enemies, how fast they come, their strength, and the order of kinds.</summary>
+    public sealed class WaveSpec
+    {
+        public int Count;
+        public double Gap, Hp;
+        /// <summary>Kinds cycle in this order: { Scout, Scout, Runner } gives every third enemy as a Runner.</summary>
+        public EnemyKind[] Pattern;
+
+        public WaveSpec(int count, double gap, double hp, params EnemyKind[] pattern)
+        {
+            Count = count; Gap = gap; Hp = hp; Pattern = pattern;
         }
     }
 

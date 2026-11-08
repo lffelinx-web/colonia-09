@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace Colonia09.Presentation
 {
-    public enum ModalKind { Intro, Pause, Win, Lost }
+    public enum ModalKind { Intro, Pause, Win, Lost, EnemyIntro }
 
     /// <summary>Forwards taps on the battlefield area. Modals block it through normal UI raycasts.</summary>
     public sealed class BoardTouchArea : Graphic, IPointerDownHandler
@@ -18,7 +18,7 @@ namespace Colonia09.Presentation
     }
 
     /// <summary>Builds the whole portrait interface from code, inside the device safe area.</summary>
-    public sealed class GameUI : MonoBehaviour
+    public sealed partial class GameUI : MonoBehaviour
     {
         const float RefWidth = 1080, HudHeight = 218, DockHeight = 352;
 
@@ -131,6 +131,7 @@ namespace Colonia09.Presentation
             BuildToast();
             BuildModal();
             BuildMainMenu();
+            BuildCampaign();
             ApplySafeArea();
         }
 
@@ -316,7 +317,15 @@ namespace Colonia09.Presentation
             safeArea.anchorMin = new Vector2(s.xMin / Screen.width, s.yMin / Screen.height);
             safeArea.anchorMax = new Vector2(s.xMax / Screen.width, s.yMax / Screen.height);
             safeArea.offsetMin = safeArea.offsetMax = Vector2.zero;
+            foreach (var rt in safeCopies)
+            {
+                rt.anchorMin = safeArea.anchorMin; rt.anchorMax = safeArea.anchorMax;
+                rt.offsetMin = rt.offsetMax = Vector2.zero;
+            }
         }
+
+        /// <summary>Full-screen layers whose content must also stay inside the safe area.</summary>
+        readonly List<RectTransform> safeCopies = new List<RectTransform>();
 
         void UpdateFieldPixels()
         {
@@ -679,6 +688,7 @@ namespace Colonia09.Presentation
             AnchorV((RectTransform)SecondaryButton.transform, .04f, .095f);
             modalFooter = Label(panel, "", 24, Muted, TextAnchor.MiddleCenter);
             AnchorV(modalFooter.rectTransform, 0, .04f);
+            BuildModalExtras(panel);
         }
 
         static void AnchorV(RectTransform rt, float min, float max)
@@ -702,6 +712,7 @@ namespace Colonia09.Presentation
 
         void OnPrimary()
         {
+            if (CampaignPrimary()) return;
             switch (modalKind)
             {
                 case ModalKind.Intro: game.StartGame(chosenDifficulty); break;
@@ -712,6 +723,7 @@ namespace Colonia09.Presentation
 
         void OnSecondary()
         {
+            if (CampaignSecondary()) return;
             // Pause restarts Quick Play from its setup screen; every other screen goes back to the main menu.
             if (modalKind == ModalKind.Pause) game.ReturnToMenu();
             else game.ShowMainMenu();
@@ -752,6 +764,7 @@ namespace Colonia09.Presentation
             secondaryLabel.text = pause ? "REINICIAR SIMULACIÓN" : intro ? "VOLVER AL MENÚ" : "MENÚ PRINCIPAL";
             modalFooter.text = intro ? "7 × 11 · 9 oleadas · economía gradual" : pause ? "Partida en pausa" : "Puedes seleccionar otra dificultad en la siguiente partida";
             RefreshDifficulty();
+            ApplyCampaignModal(kind);  // Campaign missions and enemy cards replace the texts above.
         }
 
         public void HideModal() => modal.SetActive(false);
@@ -852,6 +865,7 @@ namespace Colonia09.Presentation
                 sellLabel.text = "RECICLAR";
                 sellCost.text = $"+{sim.RecycleValue(selected)}";
             }
+            RefreshCampaign();
         }
 
         /// <summary>Draws a one-frame label at a board position. The board calls this while rendering.</summary>

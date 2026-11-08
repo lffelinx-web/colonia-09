@@ -28,6 +28,8 @@ namespace Colonia09.Simulation
             Level = level;
             W = level.Width; H = level.Height;
             grid = new GameModule[W * H];
+            customPlans = level.WaveSpecs == null ? null
+                : level.WaveSpecs.Select(s => new WavePlan { Count = s.Count, Gap = s.Gap, Hp = s.Hp }).ToArray();
             Reset();
         }
 
@@ -64,6 +66,9 @@ namespace Colonia09.Simulation
         public double FrontDelay { get; private set; }
         public uint RandomSeed { get; private set; } = 271;
         public AssaultPlan Assault => ActiveAssault();
+        /// <summary>While true no new enemies arrive. The campaign tutorial holds them until the player has built.</summary>
+        public bool HoldSpawns;
+        WavePlan[] customPlans;
 
         int nextId, spawnIndex, waveGateAt, secondFront, assaultCount;
         double spawnClock, networkClock, lastCounterAttackAt, assaultCooldownUntil, nextEliteStrikeAt;
@@ -77,7 +82,7 @@ namespace Colonia09.Simulation
         readonly HashSet<EnemyKind> counterSeen = new HashSet<EnemyKind>();
 
         DifficultyDef Conf => GameData.Difficulties[Difficulty];
-        WavePlan Plan => GameData.WavePlans[Math.Min(MaxWave, Math.Max(1, Wave))];
+        WavePlan Plan => customPlans != null ? customPlans[Math.Min(MaxWave, Math.Max(1, Wave)) - 1] : GameData.WavePlans[Math.Min(MaxWave, Math.Max(1, Wave))];
 
         int Key(int r, int c) => r * W + c;
         public GameModule ModuleAt(int r, int c) => r < 0 || r >= H || c < 0 || c >= W ? null : grid[Key(r, c)];
@@ -607,7 +612,12 @@ namespace Colonia09.Simulation
             EnemyKind kind;
             var plan = Plan;
             const EnemyKind Sc = EnemyKind.Scout, Ru = EnemyKind.Runner, Ar = EnemyKind.Armor, Ja = EnemyKind.Jammer, Sp = EnemyKind.Splitter, Sa = EnemyKind.Sapper;
-            if (wave == 1) kind = Sc;
+            if (Level.WaveSpecs != null)
+            {
+                var pattern = Level.WaveSpecs[wave - 1].Pattern;
+                kind = pattern[i % pattern.Length];
+            }
+            else if (wave == 1) kind = Sc;
             else if (wave == 2) kind = i % 5 == 3 ? Ru : Sc;
             else if (wave == 3) kind = i % 4 == 2 ? Ru : Sc;
             else if (wave == 4) kind = i == 7 ? Ja : i % 6 == 5 ? Ar : i % 3 == 1 ? Ru : Sc;
@@ -617,26 +627,33 @@ namespace Colonia09.Simulation
             else if (wave == 8) kind = i == 5 || i == 14 ? Sa : i % 6 == 1 ? Ar : i % 7 == 4 ? Ja : i % 5 == 2 ? Sp : Ru;
             else kind = i == 5 || i == 16 ? Sa : i % 6 == 1 ? Ar : i % 7 == 4 ? Ja : i % 4 == 2 ? Sp : Ru;
 
-            if (wave == 9 && i == 21) { kind = EnemyKind.Commander; c = 3; }
+            bool scripted = Level.WaveSpecs == null;  // Campaign waves use only their own pattern.
+            if (scripted && wave == 9 && i == 21) { kind = EnemyKind.Commander; c = 3; }
             const EnemyKind Tk = EnemyKind.Tank, He = EnemyKind.Helicopter, Bo = EnemyKind.Bomber;
-            if (wave == 4) { if (i == 8) { kind = Tk; c = 3; } }
-            if (wave == 5) { if (i == 2) { kind = Tk; c = 2; } if (i == 15) { kind = He; c = 4; } }
-            if (wave == 6) { if (i == 3) { kind = He; c = 4; } if (i == 10) { kind = Tk; c = 5; } if (i == 17) { kind = Bo; c = 3; } }
-            if (wave == 7) { if (i == 4) { kind = Bo; c = 3; } if (i == 11 || i == 20) { kind = He; c = i == 11 ? 1 : 4; } if (i == 15) { kind = Tk; c = 2; } }
-            if (wave == 8) { if (i == 3 || i == 18) { kind = Tk; c = i == 3 ? 1 : 5; } if (i == 9) { kind = He; c = 3; } if (i == 13 || i == 23) { kind = Bo; c = i == 13 ? 2 : 5; } }
-            if (wave == 9) { if (i == 3 || i == 23) { kind = Tk; c = i == 3 ? 5 : 2; } if (i == 9 || i == 18) { kind = He; c = i == 9 ? 1 : 5; } if (i == 14 || i == 24) { kind = Bo; c = i == 14 ? 3 : 4; } }
+            if (scripted)
+            {
+                if (wave == 4) { if (i == 8) { kind = Tk; c = 3; } }
+                if (wave == 5) { if (i == 2) { kind = Tk; c = 2; } if (i == 15) { kind = He; c = 4; } }
+                if (wave == 6) { if (i == 3) { kind = He; c = 4; } if (i == 10) { kind = Tk; c = 5; } if (i == 17) { kind = Bo; c = 3; } }
+                if (wave == 7) { if (i == 4) { kind = Bo; c = 3; } if (i == 11 || i == 20) { kind = He; c = i == 11 ? 1 : 4; } if (i == 15) { kind = Tk; c = 2; } }
+                if (wave == 8) { if (i == 3 || i == 18) { kind = Tk; c = i == 3 ? 1 : 5; } if (i == 9) { kind = He; c = 3; } if (i == 13 || i == 23) { kind = Bo; c = i == 13 ? 2 : 5; } }
+                if (wave == 9) { if (i == 3 || i == 23) { kind = Tk; c = i == 3 ? 5 : 2; } if (i == 9 || i == 18) { kind = He; c = i == 9 ? 1 : 5; } if (i == 14 || i == 24) { kind = Bo; c = i == 14 ? 3 : 4; } }
+            }
 
             c = MapColumn(c);
-            if (wave == 3 && i == 5) kind = EnemyKind.Bulwark;
-            if (wave == 4 && i == 9) kind = EnemyKind.Thermal;
-            if (wave == 5 && i == 8) kind = EnemyKind.Grounder;
-            if (wave >= 6 && !(kind == Sa || kind == Ja || kind == EnemyKind.Commander || GameData.IsVehicle(kind)))
+            if (scripted)
             {
-                if (i % 9 == 0) kind = EnemyKind.Bulwark;
-                else if (i % 9 == 3) kind = EnemyKind.Thermal;
-                else if (i % 9 == 6) kind = EnemyKind.Grounder;
+                if (wave == 3 && i == 5) kind = EnemyKind.Bulwark;
+                if (wave == 4 && i == 9) kind = EnemyKind.Thermal;
+                if (wave == 5 && i == 8) kind = EnemyKind.Grounder;
+                if (wave >= 6 && !(kind == Sa || kind == Ja || kind == EnemyKind.Commander || GameData.IsVehicle(kind)))
+                {
+                    if (i % 9 == 0) kind = EnemyKind.Bulwark;
+                    else if (i % 9 == 3) kind = EnemyKind.Thermal;
+                    else if (i % 9 == 6) kind = EnemyKind.Grounder;
+                }
+                if (GameData.HunterIndices.TryGetValue(wave, out var hunters) && Array.IndexOf(hunters, i) >= 0) kind = EnemyKind.Hunter;
             }
-            if (GameData.HunterIndices.TryGetValue(wave, out var hunters) && Array.IndexOf(hunters, i) >= 0) kind = EnemyKind.Hunter;
             if (kind == EnemyKind.Hunter)
             {
                 var exposed = Sorted(modules.Where(m => m.Hp > 0 && IsHunterPrey(m)), (a, b) =>
@@ -866,7 +883,7 @@ namespace Colonia09.Simulation
 
         void UpdateSpawning(double dt)
         {
-            if (SpawnRemaining <= 0) return;
+            if (SpawnRemaining <= 0 || HoldSpawns) return;
             if (secondFront < 2 && spawnIndex >= waveGateAt * (secondFront + 1))
             {
                 secondFront++;
