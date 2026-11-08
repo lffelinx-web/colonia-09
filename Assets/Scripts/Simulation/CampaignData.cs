@@ -40,7 +40,7 @@ namespace Colonia09.Simulation
                 Level = new LevelConfig
                 {
                     Id = "landing", Name = "Zona de aterrizaje", Width = 3, Height = 7, Waves = 2, CoreMax = 10, CoreRow = 5, CoreColumn = 1,
-                    StartCharge = 150, Modules = new[] { Ge, Pu },
+                    TargetOnlyOnBoard = true, StartCharge = 150, Modules = new[] { Ge, Pu },
                     WaveSpecs = new[]
                     {
                         new WaveSpec(5, 3.8, .75, Sc),
@@ -56,7 +56,7 @@ namespace Colonia09.Simulation
                 Level = new LevelConfig
                 {
                     Id = "camp", Name = "Campamento", Width = 5, Height = 8, Waves = 3, CoreMax = 10, CoreRow = 6, CoreColumn = 2,
-                    StartCharge = 160, Modules = new[] { Ge, Rl, Pu },
+                    TargetOnlyOnBoard = true, StartCharge = 160, Modules = new[] { Ge, Rl, Pu },
                     WaveSpecs = new[]
                     {
                         new WaveSpec(7, 3.5, .8, Sc, Sc, Ru),
@@ -73,7 +73,7 @@ namespace Colonia09.Simulation
                 Level = new LevelConfig
                 {
                     Id = "well", Name = "Pozo de agua", Width = 5, Height = 9, Waves = 4, CoreMax = 12, CoreRow = 7, CoreColumn = 2,
-                    StartCharge = 230, Modules = new[] { Ge, Re, Rl, Pu, Wa },
+                    TargetOnlyOnBoard = true, StartCharge = 230, Modules = new[] { Ge, Re, Rl, Pu, Wa },
                     WaveSpecs = new[]
                     {
                         new WaveSpec(8, 3.3, .85, Sc, Ru, Sc),
@@ -96,6 +96,47 @@ namespace Colonia09.Simulation
         };
 
         public static CampaignSector Find(string id) => System.Array.Find(Sectors, s => s.Id == id);
+
+        // ---- Isometric colony layout (must match Tools/Render/render_colony.py) ----------
+
+        public const int ColonySize = 26;
+        /// <summary>Each zone is 5 x 5 tiles around its center.</summary>
+        public const int ZoneRadius = 2;
+        static readonly int[,] ZoneCenters = { { 22, 22 }, { 23, 15 }, { 13, 21 }, { 17, 11 }, { 8, 15 }, { 11, 7 }, { 4, 9 }, { 4, 3 } };
+
+        public static (int x, int y) ZoneCenter(CampaignSector sector) => (ZoneCenters[sector.Number - 1, 0], ZoneCenters[sector.Number - 1, 1]);
+
+        /// <summary>The sector whose zone holds this tile, or null for open ground.</summary>
+        public static CampaignSector ZoneAt(int x, int y)
+        {
+            foreach (var s in Sectors)
+            {
+                var (cx, cy) = ZoneCenter(s);
+                if (System.Math.Abs(x - cx) <= ZoneRadius && System.Math.Abs(y - cy) <= ZoneRadius) return s;
+            }
+            return null;
+        }
+
+        /// <summary>Tiles kept for decoration: lamps on the zone corners and the colony ship in the first zone.</summary>
+        public static bool Reserved(int x, int y)
+        {
+            var zone = ZoneAt(x, y);
+            if (zone == null) return false;
+            var (cx, cy) = ZoneCenter(zone);
+            bool corner = System.Math.Abs(x - cx) == ZoneRadius && System.Math.Abs(y - cy) == ZoneRadius;
+            return corner || (zone.Number == 1 && x == cx && y == cy);
+        }
+
+        /// <summary>Road tiles from one zone to the next: along x, then along y, outside both zones.</summary>
+        public static List<(int x, int y)> Road(CampaignSector from, CampaignSector to)
+        {
+            var road = new List<(int, int)>();
+            var (x, y) = ZoneCenter(from);
+            var (tx, ty) = ZoneCenter(to);
+            while (x != tx) { x += System.Math.Sign(tx - x); if (ZoneAt(x, y) == null) road.Add((x, y)); }
+            while (y != ty) { y += System.Math.Sign(ty - y); if (ZoneAt(x, y) == null) road.Add((x, y)); }
+            return road;
+        }
 
         /// <summary>Stars for a won mission, from the base integrity left: 3 above 80 %, 2 above 45 %, otherwise 1.</summary>
         public static int Stars(double core, int coreMax)

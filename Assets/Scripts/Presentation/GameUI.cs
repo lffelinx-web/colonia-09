@@ -853,7 +853,8 @@ namespace Colonia09.Presentation
                 inspectHp.text = $"{Mathf.Ceil((float)selected.Hp)} / {Mathf.Ceil((float)selected.MaxHp)} PV";
 
                 var detail = Safe(sim.ModuleDetail(selected)).Split(new[] { " · " }, System.StringSplitOptions.None);
-                inspectDetail.text = string.Join("\n", System.Array.FindAll(detail, d => !d.EndsWith(" PV")));
+                inspectDetail.text = string.Join("\n", System.Array.FindAll(detail, d => !d.EndsWith(" PV")))
+                    + (selected.Level < 3 ? $"\n<color=#ffd38b>Al mejorar: {def.UpgradeInfo.ToLowerInvariant()}</color>" : "");
 
                 bool canUpgrade = sim.CanUpgrade(selected);
                 bool upgradeOpen = !selected.IsDeploying && selected.Level < 3 && sim.Wave >= sim.UpgradeUnlock(selected);

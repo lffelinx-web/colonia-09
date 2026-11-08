@@ -60,6 +60,8 @@ namespace Colonia09.Simulation
         public ModuleType[] Modules = GameData.ModuleTypes;
         /// <summary>Campaign waves. Null keeps the prototype's scripted waves (Quick Play).</summary>
         public WaveSpec[] WaveSpecs;
+        /// <summary>Defenses ignore enemies still above the board. Off in Quick Play, as in the prototype.</summary>
+        public bool TargetOnlyOnBoard;
 
         public bool Allows(ModuleType type) => System.Array.IndexOf(Modules, type) >= 0;
         public bool IsQuickPlay => Id == "quick";

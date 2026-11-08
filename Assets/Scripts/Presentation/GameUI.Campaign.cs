@@ -9,8 +9,6 @@ namespace Colonia09.Presentation
     public sealed partial class GameUI
     {
         GameObject campaignMap, briefing, coach, coachButtonGo, modalStarsRoot;
-        RectTransform mapContent, mapViewport;
-        ScrollRect mapScroll;
         Text mapStarsText, briefKicker, briefTitle, briefText, briefFacts, coachText;
         RectTransform briefNewRow;
         readonly List<Image> briefStars = new List<Image>();
@@ -26,7 +24,8 @@ namespace Colonia09.Presentation
         {
             public CampaignSector Sector;
             public Button Button;
-            public Image Lock, Ring;
+            public RectTransform Tag;
+            public Image Ring;
             public Text Caption, State;
             public readonly List<Image> Stars = new List<Image>();
         }
@@ -58,7 +57,6 @@ namespace Colonia09.Presentation
 
             BuildMap();
             BuildBriefing();
-            BuildColony();
             BuildCoach();
             foreach (var pair in CardButtons)  // Gold frame that points at a card during the tutorial.
             {
@@ -72,15 +70,21 @@ namespace Colonia09.Presentation
         }
 
         // ---- Colony map ---------------------------------------------------------------
+        // The game camera draws the isometric colony (ColonyView); this layer adds the bars,
+        // a floating tag over each zone and the touch area that pans, zooms and picks tiles.
 
         void BuildMap()
         {
             var root = Rt("CampaignMap", safeArea.parent);
             Stretch(root);
             campaignMap = root.gameObject;
-            root.gameObject.AddComponent<Image>().color = Html("#140e0c");
+            var touch = root.gameObject.AddComponent<MapTouchArea>();
+            touch.Game = game;
+            touch.raycastTarget = true;
             var safe = Rt("Safe", root);
             safeCopies.Add(safe);
+            mapTags = Rt("Tags", safe);
+            Stretch(mapTags);
 
             var bar = Rt("TopBar", safe);
             bar.anchorMin = new Vector2(0, 1); bar.anchorMax = Vector2.one; bar.pivot = new Vector2(.5f, 1);
@@ -91,7 +95,7 @@ namespace Colonia09.Presentation
             var backRt = (RectTransform)MapBackButton.transform;
             backRt.anchorMin = backRt.anchorMax = new Vector2(0, .5f); backRt.pivot = new Vector2(0, .5f);
             backRt.sizeDelta = new Vector2(190, 80); backRt.anchoredPosition = new Vector2(18, 0);
-            var title = Label(bar, "CAMPAÑA", 44, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
+            var title = Label(bar, "COLONIA", 44, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
             title.rectTransform.offsetMin = new Vector2(220, 0); title.rectTransform.offsetMax = new Vector2(-220, 0);
             var chip = Rt("Stars", bar);
             chip.anchorMin = chip.anchorMax = new Vector2(1, .5f); chip.pivot = new Vector2(1, .5f);
@@ -105,70 +109,53 @@ namespace Colonia09.Presentation
             mapStarsText = Label(chip, "", 32, Gold, TextAnchor.MiddleCenter, FontStyle.Bold);
             mapStarsText.rectTransform.offsetMin = new Vector2(62, 0);
 
-            mapViewport = Rt("Viewport", safe);
-            mapViewport.anchorMin = Vector2.zero; mapViewport.anchorMax = Vector2.one;
-            mapViewport.offsetMin = Vector2.zero; mapViewport.offsetMax = new Vector2(0, -200);
-            mapViewport.gameObject.AddComponent<RectMask2D>();
-            mapViewport.gameObject.AddComponent<Image>().color = new Color(0, 0, 0, 0);
-            mapScroll = mapViewport.gameObject.AddComponent<ScrollRect>();
-            mapScroll.horizontal = false; mapScroll.vertical = true;
-            mapScroll.movementType = ScrollRect.MovementType.Clamped;
-            mapScroll.decelerationRate = .12f;
-
-            mapContent = Rt("Content", mapViewport);
-            mapContent.anchorMin = new Vector2(0, 1); mapContent.anchorMax = Vector2.one; mapContent.pivot = new Vector2(.5f, 1);
-            mapContent.offsetMin = mapContent.offsetMax = Vector2.zero;
-            var fitter = mapContent.gameObject.AddComponent<AspectRatioFitter>();
-            fitter.aspectMode = AspectRatioFitter.AspectMode.WidthControlsHeight;
-            fitter.aspectRatio = .5f;  // The rendered map is 1 : 2.
-            mapScroll.viewport = mapViewport;
-            mapScroll.content = mapContent;
-            var map = mapContent.gameObject.AddComponent<Image>();
-            map.sprite = Resources.Load<Sprite>("Sprites/Map/map");
-            map.color = map.sprite != null ? Color.white : Html("#4a3426");
-            map.raycastTarget = true;
-
             foreach (var sector in CampaignData.Sectors) mapNodes.Add(BuildNode(sector));
             BuildResourceBar(safe);
+            BuildMapHint(safe);
             campaignMap.SetActive(false);
+        }
+
+        RectTransform mapTags;
+        Text mapHint;
+
+        void BuildMapHint(RectTransform safe)
+        {
+            var hint = Rt("Hint", safe);
+            hint.anchorMin = new Vector2(.05f, 0); hint.anchorMax = new Vector2(.95f, 0); hint.pivot = new Vector2(.5f, 0);
+            hint.sizeDelta = new Vector2(0, 70); hint.anchoredPosition = new Vector2(0, 130);
+            var bg = hint.gameObject.AddComponent<Image>();
+            bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = new Color(.02f, .06f, .09f, .8f); bg.raycastTarget = false;
+            mapHint = Label(hint, "", 26, Muted, TextAnchor.MiddleCenter);
+            mapHint.resizeTextForBestFit = true; mapHint.resizeTextMinSize = 16; mapHint.resizeTextMaxSize = 26;
+            mapHint.rectTransform.offsetMin = new Vector2(14, 0); mapHint.rectTransform.offsetMax = new Vector2(-14, 0);
         }
 
         MapNode BuildNode(CampaignSector sector)
         {
             var node = new MapNode { Sector = sector };
-            var rt = Rt("Sector" + sector.Number, mapContent);
-            rt.anchorMin = rt.anchorMax = new Vector2(sector.MapX, sector.MapY);
-            rt.sizeDelta = new Vector2(232, 232);
-            BuildNodeBuildings(rt, sector);
-
-            node.Ring = Rt("Ring", rt).gameObject.AddComponent<Image>();
-            node.Ring.sprite = ringSprite; node.Ring.color = Cyan; node.Ring.raycastTarget = false;
-            Stretch(node.Ring.rectTransform);
-            node.Lock = Rt("Lock", rt).gameObject.AddComponent<Image>();
-            node.Lock.sprite = discSprite; node.Lock.color = new Color(.02f, .04f, .06f, .72f); node.Lock.raycastTarget = false;
-            Stretch(node.Lock.rectTransform);
-            node.State = Label(node.Lock.transform, "", 26, Muted, TextAnchor.MiddleCenter, FontStyle.Bold);
-
-            var hit = rt.gameObject.AddComponent<Image>();
-            hit.sprite = discSprite; hit.color = new Color(1, 1, 1, 0);
-            node.Button = rt.gameObject.AddComponent<Button>();
-            node.Button.targetGraphic = hit;
-            node.Button.onClick.AddListener(() => OpenBriefing(sector));
-
-            var tag = Rt("Tag", rt);
-            tag.anchorMin = tag.anchorMax = new Vector2(.5f, 0); tag.pivot = new Vector2(.5f, 1);
-            tag.sizeDelta = new Vector2(300, 88); tag.anchoredPosition = new Vector2(0, 6);
+            var tag = Rt("Zone" + sector.Number, mapTags);
+            tag.anchorMin = tag.anchorMax = Vector2.zero; tag.pivot = new Vector2(.5f, 0);
+            tag.sizeDelta = new Vector2(300, 96);
+            node.Tag = tag;
             var tagBg = tag.gameObject.AddComponent<Image>();
-            tagBg.sprite = rounded; tagBg.type = Image.Type.Sliced; tagBg.color = new Color(.04f, .1f, .15f, .9f); tagBg.raycastTarget = false;
+            tagBg.sprite = rounded; tagBg.type = Image.Type.Sliced; tagBg.color = new Color(.04f, .1f, .15f, .9f);
+            node.Button = tag.gameObject.AddComponent<Button>();
+            node.Button.targetGraphic = tagBg;
+            node.Button.onClick.AddListener(() => OpenBriefing(sector));
+            node.Ring = Rt("Edge", tag).gameObject.AddComponent<Image>();
+            node.Ring.sprite = frameSprite; node.Ring.type = Image.Type.Sliced; node.Ring.raycastTarget = false;
+            Stretch(node.Ring.rectTransform);
             node.Caption = Label(tag, $"{sector.Number} · {sector.Name}", 28, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
             node.Caption.rectTransform.anchorMin = new Vector2(0, .45f);
             node.Caption.resizeTextForBestFit = true; node.Caption.resizeTextMinSize = 18; node.Caption.resizeTextMaxSize = 28;
             node.Caption.rectTransform.offsetMin = new Vector2(10, 0); node.Caption.rectTransform.offsetMax = new Vector2(-10, -2);
+            node.State = Label(tag, "", 22, Muted, TextAnchor.MiddleCenter, FontStyle.Bold);
+            node.State.rectTransform.anchorMax = new Vector2(1, .45f);
             for (int i = 0; i < 3; i++)
             {
                 var s = Rt("Star", tag).gameObject.AddComponent<Image>();
                 s.sprite = starSprite; s.raycastTarget = false;
-                s.rectTransform.anchorMin = s.rectTransform.anchorMax = new Vector2(.5f, .25f);
+                s.rectTransform.anchorMin = s.rectTransform.anchorMax = new Vector2(.5f, .24f);
                 s.rectTransform.sizeDelta = new Vector2(34, 34); s.rectTransform.anchoredPosition = new Vector2((i - 1) * 40, 0);
                 node.Stars.Add(s);
             }
@@ -179,26 +166,25 @@ namespace Colonia09.Presentation
         {
             campaignMap.SetActive(true);
             campaignMap.transform.SetAsLastSibling();
+            safeArea.gameObject.SetActive(false);  // The battle HUD and dock stay hidden behind the colony.
             briefing.SetActive(false);
-            colonySheet.SetActive(false);
-            pickerSheet.SetActive(false);
+            CloseColonySheets();
+            game.ColonyMap.Show();
             RefreshMap();
-            RefreshNodeBuildings();
             CollectOnArrival();
-            // Scroll so the next sector to play is in view.
-            Canvas.ForceUpdateCanvases();
+            // Center the view on the zone to liberate next, or the latest one.
             var next = System.Array.Find(CampaignData.Sectors, s => CampaignDirector.Unlocked(s) && !SaveGame.Completed(s.Id))
                 ?? System.Array.FindLast(CampaignData.Sectors, s => CampaignDirector.Unlocked(s));
-            float viewShare = mapViewport.rect.height / Mathf.Max(1, mapContent.rect.height);
-            float target = next != null ? (next.MapY - viewShare * .35f) / Mathf.Max(.01f, 1 - viewShare) : 0;
-            mapScroll.verticalNormalizedPosition = Mathf.Clamp01(target);
+            if (next != null) game.ColonyMap.Focus(next);
         }
 
         public void HideCampaignMap()
         {
             if (campaignMap.activeSelf) SaveGame.Save();
             campaignMap.SetActive(false);
+            safeArea.gameObject.SetActive(true);
             briefing.SetActive(false);
+            game.ColonyMap.Hide();
         }
 
         void RefreshMap()
@@ -211,14 +197,32 @@ namespace Colonia09.Presentation
                 bool unlocked = CampaignDirector.Unlocked(sector);
                 total += stars;
                 if (sector.Playable) playable++;
-                node.Lock.gameObject.SetActive(!unlocked);
-                node.State.text = sector.Playable ? "BLOQUEADO" : "PRÓXIMAMENTE";
-                node.Ring.gameObject.SetActive(unlocked);
-                node.Ring.color = stars > 0 ? Green : Cyan;
+                node.State.text = stars > 0 ? "" : !sector.Playable ? "PRÓXIMAMENTE" : unlocked ? "LIBERAR ZONA" : "ZONA HOSTIL";
+                node.State.color = unlocked ? Gold : Muted;
                 node.Caption.color = unlocked ? Txt : Muted;
+                for (int i = 0; i < 3; i++) node.Stars[i].gameObject.SetActive(stars > 0);
                 for (int i = 0; i < 3; i++) node.Stars[i].color = i < stars ? StarOn : StarOff;
             }
             mapStarsText.text = $"{total}/{playable * 3}";
+            game.ColonyMap.Rebuild();
+        }
+
+        /// <summary>Keeps each zone's tag floating over its zone, and the hint line up to date.</summary>
+        void PlaceMapTags()
+        {
+            if (!campaignMap.activeSelf) return;
+            float scale = mapTags.lossyScale.x;
+            foreach (var node in mapNodes)
+            {
+                var screen = game.ColonyMap.ZoneTagScreen(node.Sector);
+                var local = (screen - (Vector2)mapTags.position) / scale + mapTags.rect.size * mapTags.pivot;
+                node.Tag.anchoredPosition = local;
+                bool next = CampaignDirector.Unlocked(node.Sector) && SaveGame.Stars(node.Sector.Id) == 0;
+                float pulse = Mathf.PingPong(Time.unscaledTime * 1.4f, 1);
+                node.Ring.color = next ? new Color(Gold.r, Gold.g, Gold.b, .4f + .6f * pulse) : SaveGame.Stars(node.Sector.Id) > 0 ? new Color(Green.r, Green.g, Green.b, .6f) : new Color(1, 1, 1, .08f);
+                node.Tag.localScale = Vector3.one * Mathf.Clamp(game.ColonyMap.TagScale, .7f, 1.1f);
+            }
+            mapHint.text = game.ColonyMap.Hint;
         }
 
         // ---- Mission briefing ---------------------------------------------------------
@@ -273,7 +277,6 @@ namespace Colonia09.Presentation
             }
 
             BriefStartButton = TextButton(sheet, "DEFENDER SECTOR", 38, Cyan, Bg, () => { if (briefed != null) game.StartSector(briefed); });
-            ColonyButton = TextButton(sheet, "COLONIA", 34, Gold, Bg, () => { if (briefed != null) OpenColony(briefed); });
             BriefCloseButton = TextButton(sheet, "CERRAR", 32, PanelLight, Txt, () => { game.Audio.Play("select", true); briefing.SetActive(false); });
             briefing.SetActive(false);
         }
@@ -284,7 +287,7 @@ namespace Colonia09.Presentation
             rt.offsetMin = rt.offsetMax = Vector2.zero;
         }
 
-        void OpenBriefing(CampaignSector sector)
+        public void OpenBriefing(CampaignSector sector)
         {
             game.Audio.Play("select", true);
             briefed = sector;
@@ -301,12 +304,9 @@ namespace Colonia09.Presentation
             int stars = SaveGame.Stars(sector.Id);
             for (int i = 0; i < 3; i++) briefStars[i].color = i < stars ? StarOn : StarOff;
             // Secured sectors also open their colony lots.
-            bool secured = SaveGame.Completed(sector.Id);
-            ColonyButton.gameObject.SetActive(secured);
-            Span(BriefStartButton, .04f, secured ? .46f : .64f);
-            if (secured) Span(ColonyButton, .48f, .76f);
-            Span(BriefCloseButton, secured ? .78f : .67f, .96f);
-            BriefCloseButton.GetComponentInChildren<Text>().text = secured ? "×" : "CERRAR";
+            // Buildings go straight on the map: tap a free tile of a liberated zone.
+            Span(BriefStartButton, .04f, .64f);
+            Span(BriefCloseButton, .67f, .96f);
             BriefStartButton.interactable = unlocked;
             BriefStartButton.GetComponentInChildren<Text>().text = !sector.Playable ? "PRÓXIMAMENTE" : !unlocked ? "COMPLETA EL ANTERIOR" : stars > 0 ? "JUGAR DE NUEVO" : "DEFENDER SECTOR";
             briefing.SetActive(true);
@@ -378,25 +378,15 @@ namespace Colonia09.Presentation
         void RefreshCampaign()
         {
             RefreshResources();
+            PlaceMapTags();
             foreach (var pair in cardHighlights)
             {
                 bool on = coachStep != null && coachStep.Card == pair.Key && coach.activeSelf;
                 // While the guide asks for one card, the others fade back.
-                if (coachStep != null && coach.activeSelf && (coachStep.Card.HasValue || coachStep.Done == null) && !on)
+                if (coachStep != null && !coachStep.IsTip && coach.activeSelf && (coachStep.Card.HasValue || coachStep.Done == null) && !on)
                     cardGroup[pair.Key].alpha = .3f;
                 if (pair.Value.gameObject.activeSelf != on) pair.Value.gameObject.SetActive(on);
                 if (on) pair.Value.color = new Color(Gold.r, Gold.g, Gold.b, .55f + .45f * Mathf.PingPong(Time.unscaledTime * 2, 1));
-            }
-            if (campaignMap.activeSelf)
-            {
-                float pulse = Mathf.PingPong(Time.unscaledTime * 1.4f, 1);
-                foreach (var node in mapNodes)
-                {
-                    if (!node.Ring.gameObject.activeSelf) continue;
-                    bool next = SaveGame.Stars(node.Sector.Id) == 0;
-                    node.Ring.rectTransform.localScale = Vector3.one * (next ? 1 + pulse * .08f : 1);
-                    node.Ring.color = next ? new Color(Cyan.r, Cyan.g, Cyan.b, .5f + .5f * pulse) : Green;
-                }
             }
         }
 

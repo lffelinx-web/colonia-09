@@ -18,6 +18,8 @@ namespace Colonia09.Presentation
         public GameUI Ui { get; private set; }
         public GameAudio Audio { get; private set; }
         public CampaignDirector Campaign { get; private set; }
+        /// <summary>The isometric colony map, drawn instead of the battle board while it is open.</summary>
+        public ColonyView ColonyMap { get; private set; }
         /// <summary>Counts taps on the module cards; the tutorial waits for the player's own choice.</summary>
         public int CardPicks { get; private set; }
         float musicClock;
@@ -34,6 +36,8 @@ namespace Colonia09.Presentation
             Audio = gameObject.AddComponent<GameAudio>();
             Audio.Init();
             Board.Init(this);
+            ColonyMap = gameObject.AddComponent<ColonyView>();
+            ColonyMap.Init(this);
             Ui.Init(this);
 
             Sim.OnSfx = name => Audio.Play(name);
@@ -71,7 +75,8 @@ namespace Colonia09.Presentation
                 }
             }
             if (Selected != null && Sim.ModuleAt(Selected.R, Selected.C) != Selected) Deselect();
-            Board.Render(Ui.FieldPixels);
+            if (ColonyMap.Active) ColonyMap.Render();
+            else Board.Render(Ui.FieldPixels);
             Ui.Refresh();
         }
 

@@ -23,6 +23,8 @@ namespace Colonia09.Presentation
         public List<string> seenEnemies = new List<string>();
         /// <summary>Sectors whose guided tutorial was completed.</summary>
         public List<string> tutorials = new List<string>();
+        /// <summary>One-time tips already shown.</summary>
+        public List<string> tips = new List<string>();
 
         // Colony.
         public double materials, data;
@@ -35,7 +37,8 @@ namespace Colonia09.Presentation
     public sealed class BuildingSave
     {
         public string sector, type;
-        public int slot, level;
+        /// <summary>Tile on the isometric colony grid. Older saves used a lot number in slot instead.</summary>
+        public int slot, level, x, y;
     }
 
     public static class SaveGame
@@ -105,6 +108,7 @@ namespace Colonia09.Presentation
         public static void ResetForTests()
         {
             data = new SaveData();
+            Colony.ResetForTests();
             try { if (File.Exists(PathOnDisk)) File.Delete(PathOnDisk); } catch (Exception) { }
         }
 #endif

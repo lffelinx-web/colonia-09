@@ -17,8 +17,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import render_sprites as rs  # noqa: E402
 from render_sprites import ball, box, cyl, glowing, material, prism, regular, srgb, torus, transparent  # noqa: E402
 
-OUT = sys.argv[sys.argv.index("--") + 1]
-PREVIEW = "preview" in sys.argv[sys.argv.index("--") + 2:]
+OUT = sys.argv[sys.argv.index("--") + 1] if "--" in sys.argv else "."
+PREVIEW = "--" in sys.argv and "preview" in sys.argv[sys.argv.index("--") + 2:]
 MAP_W, MAP_H = 9.0, 18.0
 random.seed(17)
 
@@ -238,7 +238,8 @@ def build():
                 box((bx + c * .42, by - r * .36, .1), (.38, .3, .02), panel, bevel=.006)
 
 
-build()
-bpy.context.scene.render.filepath = os.path.join(OUT, "map_preview.png" if PREVIEW else "map.png")
-bpy.ops.render.render(write_still=True)
-print("RENDER_DONE")
+if __name__ == "__main__":
+    build()
+    bpy.context.scene.render.filepath = os.path.join(OUT, "map_preview.png" if PREVIEW else "map.png")
+    bpy.ops.render.render(write_still=True)
+    print("RENDER_DONE")

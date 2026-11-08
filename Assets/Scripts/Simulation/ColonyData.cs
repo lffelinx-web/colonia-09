@@ -52,15 +52,14 @@ namespace Colonia09.Simulation
                 MaterialCost = new[] { 50, 110, 200 }, DataCost = new[] { 0, 10, 30 }, SectorBoost = new[] { .2, .4, .7 } } },
         };
 
-        /// <summary>Building lots each sector offers once it is secured.</summary>
+        /// <summary>How many buildings a liberated zone can hold. Later zones are larger colonies.</summary>
         public static int LotsFor(string sectorId)
         {
             switch (sectorId)
             {
-                case "landing": return 3;
-                case "camp": return 4;
-                case "well": return 4;
-                default: return 4;
+                case "landing": return 4;
+                case "camp": return 5;
+                default: return 6;
             }
         }
 

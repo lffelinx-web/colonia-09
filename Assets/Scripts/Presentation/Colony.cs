@@ -4,10 +4,42 @@ using Colonia09.Simulation;
 
 namespace Colonia09.Presentation
 {
-    /// <summary>Colony actions on the saved progress: collect production, build, upgrade, and mission rewards.</summary>
+    /// <summary>Colony actions on the saved progress: collect production, build on a tile, upgrade, and mission rewards.</summary>
     public static class Colony
     {
-        static SaveData Data => SaveGame.Data;
+        static SaveData Data
+        {
+            get
+            {
+                var data = SaveGame.Data;
+                if (!migrated) { migrated = true; Migrate(data); }
+                return data;
+            }
+        }
+        static bool migrated;
+
+        /// <summary>Buildings saved before the isometric map used numbered lots; give them a tile in their zone.</summary>
+        static void Migrate(SaveData data)
+        {
+            foreach (var b in data.buildings)
+            {
+                if (CampaignData.ZoneAt(b.x, b.y)?.Id == b.sector) continue;
+                var sector = CampaignData.Find(b.sector);
+                if (sector == null) continue;
+                var free = FreeTiles(data, sector);
+                if (free.Count > 0) (b.x, b.y) = free[0];
+            }
+        }
+
+        static List<(int x, int y)> FreeTiles(SaveData data, CampaignSector sector)
+        {
+            var (cx, cy) = CampaignData.ZoneCenter(sector);
+            var free = new List<(int, int)>();
+            for (int y = cy - CampaignData.ZoneRadius; y <= cy + CampaignData.ZoneRadius; y++)
+                for (int x = cx - CampaignData.ZoneRadius; x <= cx + CampaignData.ZoneRadius; x++)
+                    if (!CampaignData.Reserved(x, y) && data.buildings.Find(b => b.x == x && b.y == y && b.sector == sector.Id) == null) free.Add((x, y));
+            return free;
+        }
 
         public static IEnumerable<PlacedBuilding> Buildings()
         {
@@ -16,12 +48,9 @@ namespace Colonia09.Presentation
                     yield return new PlacedBuilding(b.sector, type, b.level);
         }
 
-        public static IEnumerable<PlacedBuilding> BuildingsIn(string sector)
-        {
-            foreach (var b in Buildings()) if (b.Sector == sector) yield return b;
-        }
-
-        public static BuildingSave At(string sector, int slot) => Data.buildings.Find(b => b.sector == sector && b.slot == slot);
+        public static IReadOnlyList<BuildingSave> Saved => Data.buildings;
+        public static BuildingSave At(int x, int y) => Data.buildings.Find(b => b.x == x && b.y == y);
+        public static int CountIn(string sector) => Data.buildings.FindAll(b => b.sector == sector).Count;
 
         /// <summary>Optional clock for tests; real time otherwise.</summary>
         public static Func<DateTime> Now = () => DateTime.UtcNow;
@@ -46,19 +75,31 @@ namespace Colonia09.Presentation
         public static bool CanAfford(BuildingType type, int toLevel) =>
             Data.materials >= ColonyData.UpgradeMaterials(type, toLevel) && Data.data >= ColonyData.UpgradeData(type, toLevel);
 
-        public static bool Build(string sector, int slot, BuildingType type)
+        /// <summary>Why this tile cannot take a building, or null when it can.</summary>
+        public static string RefuseTile(int x, int y)
         {
-            if (At(sector, slot) != null || slot >= ColonyData.LotsFor(sector) || !SaveGame.Completed(sector) || !CanAfford(type, 1)) return false;
+            var zone = CampaignData.ZoneAt(x, y);
+            if (zone == null) return "Solo se construye dentro de las zonas liberadas";
+            if (!SaveGame.Completed(zone.Id)) return $"Primero libera {zone.Name}";
+            if (CampaignData.Reserved(x, y)) return "Esa casilla está ocupada";
+            if (At(x, y) != null) return "Esa casilla está ocupada";
+            if (CountIn(zone.Id) >= ColonyData.LotsFor(zone.Id)) return $"{zone.Name} ya no tiene espacio";
+            return null;
+        }
+
+        public static bool Build(string sector, int x, int y, BuildingType type)
+        {
+            if (RefuseTile(x, y) != null || CampaignData.ZoneAt(x, y)?.Id != sector || !CanAfford(type, 1)) return false;
             Collect(out _, out _);  // Production up to now is counted at the old rate.
             Pay(type, 1);
-            Data.buildings.Add(new BuildingSave { sector = sector, slot = slot, type = type.ToString(), level = 1 });
+            Data.buildings.Add(new BuildingSave { sector = sector, x = x, y = y, type = type.ToString(), level = 1 });
             SaveGame.Save();
             return true;
         }
 
-        public static bool Upgrade(string sector, int slot)
+        public static bool Upgrade(int x, int y)
         {
-            var b = At(sector, slot);
+            var b = At(x, y);
             if (b == null || b.level >= ColonyData.MaxLevel || !Enum.TryParse(b.type, out BuildingType type) || !CanAfford(type, b.level + 1)) return false;
             Collect(out _, out _);
             Pay(type, b.level + 1);
@@ -79,5 +120,9 @@ namespace Colonia09.Presentation
             Data.data += data;
             SaveGame.Save();
         }
+
+#if DEVELOPMENT_BUILD || UNITY_EDITOR
+        public static void ResetForTests() => migrated = false;
+#endif
     }
 }

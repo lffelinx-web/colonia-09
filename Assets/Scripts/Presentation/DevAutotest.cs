@@ -69,6 +69,19 @@ namespace Colonia09.Presentation
             yield return Frames(3);
         }
 
+        IEnumerator RealDrag(Vector2 from, Vector2 delta)
+        {
+            InputSystem.QueueStateEvent(touchscreen, new TouchState { touchId = 2, phase = UnityEngine.InputSystem.TouchPhase.Began, position = from });
+            yield return Frames(2);
+            for (int i = 1; i <= 8; i++)
+            {
+                InputSystem.QueueStateEvent(touchscreen, new TouchState { touchId = 2, phase = UnityEngine.InputSystem.TouchPhase.Moved, position = from + delta * (i / 8f) });
+                yield return null;
+            }
+            InputSystem.QueueStateEvent(touchscreen, new TouchState { touchId = 2, phase = UnityEngine.InputSystem.TouchPhase.Ended, position = from + delta });
+            yield return Frames(3);
+        }
+
         static Vector2 ScreenCenter(Component c)
         {
             var corners = new Vector3[4];
@@ -307,23 +320,29 @@ namespace Colonia09.Presentation
             var save = SaveGame.Data;
             report.Add($"Rewards after three sectors: {save.materials:0} materials, {save.data:0} data");
             Check("winning sectors pays resources", save.materials >= 300 && save.data >= 50);
-            ui.SectorButton(1).onClick.Invoke();
-            yield return null;
-            Check("secured sector offers its colony", ui.ColonyButton.gameObject.activeSelf);
-            ui.ColonyButton.onClick.Invoke();
-            yield return null;
-            Check("colony shows the sector's lots", ui.ColonyOpen && ui.LotButtons.Count == ColonyData.LotsFor("landing"));
-            ui.LotButtons[0].onClick.Invoke();
-            yield return null;
-            Check("empty lot opens the building picker", ui.PickerOpen);
+            var map = game.ColonyMap;
+            Check("colony map is drawn while the map is open", map.Active);
+            map.Focus(CampaignData.Sectors[0]);
+            yield return Frames(2);
+            var before0 = map.TileScreen(21, 22);
+            yield return RealDrag(new Vector2(Screen.width * .5f, Screen.height * .55f), new Vector2(-Screen.width * .2f, 0));
+            Check("dragging moves the colony map", Vector2.Distance(map.TileScreen(21, 22), before0) > 20);
+            map.Focus(CampaignData.Sectors[0]);
+            yield return Frames(2);
+            yield return RealTouch(map.TileScreen(21, 22));
+            Check("tapping a free tile of a liberated zone opens the picker", ui.PickerOpen);
             ui.PickerButtons[BuildingType.Extractor].onClick.Invoke();
             yield return Frames(2);
-            Check("extractor is built on the lot", Colony.At("landing", 0)?.type == "Extractor" && !ui.PickerOpen);
-            ui.LotButtons[1].onClick.Invoke();
-            yield return null;
+            Check("extractor is built on the tapped tile", Colony.At(21, 22)?.type == "Extractor" && !ui.PickerOpen);
+            yield return RealTouch(map.TileScreen(23, 22));
             ui.PickerButtons[BuildingType.Fortification].onClick.Invoke();
             yield return Frames(2);
+            yield return RealTouch(map.TileScreen(22, 22));
+            Check("the ship's tile cannot be built on", !ui.PickerOpen && Colony.At(22, 22) == null);
+            yield return RealTouch(map.TileScreen(21, 22));
+            Check("tapping a building opens its card", ui.BuildingInfoOpen);
             yield return Shot($"{shot + 1:00}_colony");
+            ui.CloseColonySheets();
             double before = save.materials;
             Colony.Now = () => DateTime.UtcNow.AddHours(3);
             Colony.Collect(out var made, out _);
@@ -333,8 +352,13 @@ namespace Colonia09.Presentation
             Check("buildings produce while away (12 per hour for 3 hours)", Math.Abs(made - 36) < .5 && Math.Abs(save.materials - before - made - capped) < .01);
             Check("production while away stops at 8 hours", capped <= 12 * 8 + .5);
             game.ShowCampaignMap();
+            map.Focus(CampaignData.Sectors[1]);
             yield return Frames(3);
             yield return Shot($"{shot + 2:00}_map_colony");
+            map.Zoom(1.6f);
+            map.Focus(CampaignData.Sectors[3]);
+            yield return Frames(3);
+            yield return Shot($"{shot + 3:00}_map_hostile");
             game.StartSector(CampaignData.Sectors[0]);
             yield return Frames(2);
             Check("fortification adds base integrity in missions", sim.Level.CoreMax == CampaignData.Sectors[0].Level.CoreMax + 1);

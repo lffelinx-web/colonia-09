@@ -28,6 +28,15 @@ namespace Colonia09.EditorTools
                 importer.textureCompression = TextureImporterCompression.CompressedHQ;
                 return;
             }
+            if (assetPath.Contains("/Colony/"))
+            {
+                // Isometric colony: the terrain at 72 pixels per tile width, the tile sprites at 128 (two tiles across).
+                bool ground = assetPath.Contains("terrain");
+                importer.spritePixelsPerUnit = ground ? 72 : 128;
+                importer.maxTextureSize = ground ? 2048 : 256;
+                importer.textureCompression = ground ? TextureImporterCompression.CompressedHQ : TextureImporterCompression.Uncompressed;
+                return;
+            }
             if (assetPath.Contains("/Map/"))
             {
                 // The campaign map is a full-screen picture shown in the UI.

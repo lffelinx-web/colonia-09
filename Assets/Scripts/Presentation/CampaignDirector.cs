@@ -17,6 +17,8 @@ namespace Colonia09.Presentation
         public Func<CampaignDirector, bool> Done;
         /// <summary>Keeps enemies from arriving until this step is completed.</summary>
         public bool Hold = true;
+        /// <summary>A one-time tip shown during play: it never blocks building and never holds enemies.</summary>
+        public bool IsTip;
     }
 
     /// <summary>
@@ -33,6 +35,10 @@ namespace Colonia09.Presentation
         public CampaignSector Current { get; private set; }
         public bool Active => Current != null;
         public TutorialStep Step => Active && stepIndex < steps.Count ? steps[stepIndex] : null;
+        /// <summary>The tip on screen, if any.</summary>
+        public TutorialStep Tip { get; private set; }
+        string tipId;
+        float tipUntil;
         public int LastStars { get; private set; }
         public int LastMaterials { get; private set; }
         public int LastData { get; private set; }
@@ -64,6 +70,7 @@ namespace Colonia09.Presentation
         {
             Current = null;
             steps.Clear();
+            Tip = null;
             game.Sim.HoldSpawns = false;
             game.Board.HighlightCell = null;
             game.Ui.ShowCoach(null);
@@ -100,7 +107,11 @@ namespace Colonia09.Presentation
         }
 
         /// <summary>The coach's "Entendido" button.</summary>
-        public void Confirm() => confirmed = true;
+        public void Confirm()
+        {
+            if (Tip != null && Step == null) CloseTip();
+            else confirmed = true;
+        }
 
         // Conditions used by the tutorial steps.
         public bool Picked(ModuleType type) => game.CardPicks > picksAtStepStart && game.SelectedType == type;
@@ -123,7 +134,60 @@ namespace Colonia09.Presentation
                 game.Audio.Play("upgrade", true);
                 StartStep();
             }
+            if (Step == null) UpdateTips();
             IntroduceNewEnemies();
+        }
+
+        // ---- One-time tips ---------------------------------------------------------------
+        // Each explains something the moment it first matters, then never shows again.
+
+        void UpdateTips()
+        {
+            if (Tip != null)
+            {
+                if (Time.unscaledTime > tipUntil) CloseTip();
+                return;
+            }
+            var sim = game.Sim;
+            foreach (var (id, text, cell) in TipCandidates(sim))
+            {
+                if (SaveGame.Data.tips.Contains(id)) continue;
+                tipId = id;
+                Tip = new TutorialStep { Text = text, Cell = cell, Hold = false, IsTip = true };
+                tipUntil = Time.unscaledTime + 14;
+                game.Board.HighlightCell = cell;
+                game.Ui.ShowCoach(Tip);
+                game.Audio.Play("select", true);
+                return;
+            }
+        }
+
+        void CloseTip()
+        {
+            if (tipId != null && !SaveGame.Data.tips.Contains(tipId)) SaveGame.Data.tips.Add(tipId);
+            SaveGame.Save();
+            Tip = null;
+            tipId = null;
+            game.Board.HighlightCell = null;
+            game.Ui.ShowCoach(null);
+        }
+
+        IEnumerable<(string id, string text, Vector2Int? cell)> TipCandidates(GameSimulation sim)
+        {
+            if (sim.WaveBreak > 0)
+                yield return ("wave", "¡Oleada superada! Recibes <b>+70 de energía</b>. Aprovecha la pausa para reforzar tu defensa.", null);
+            foreach (var m in sim.Modules)
+            {
+                if (m.IsDeploying || m.Starter) continue;
+                if (sim.ModuleStatus(m).StartsWith("SIN CONEXIÓN"))
+                    yield return ("connection", "El módulo marcado está <b>SIN CONEXIÓN</b> y no funciona: necesita un Núcleo al lado o un Relé cerca.", new Vector2Int(m.R, m.C));
+                if (m.Type == ModuleType.Pulse && m.Level < 3 && sim.Wave >= sim.UpgradeUnlock(m) && sim.Charge >= sim.UpgradeCost(m) + 15)
+                    yield return ("upgrade", "Tienes energía para <b>MEJORAR</b>. Toca el Pulso marcado y pulsa MEJORAR: disparará más fuerte y aguantará más.", new Vector2Int(m.R, m.C));
+                if (m.Hp < m.MaxHp * .5)
+                    yield return ("damage", "El módulo marcado está dañado (mira su barra). Si lo destruyen, tendrás que construirlo de nuevo.", new Vector2Int(m.R, m.C));
+            }
+            if (sim.Elapsed > 20 && sim.Charge < 15 && sim.ChargingGeneration < 3)
+                yield return ("energy", "Te quedas sin <b>energía</b>. Pon otro Generador junto al Núcleo para producir más.", null);
         }
 
         void IntroduceNewEnemies()

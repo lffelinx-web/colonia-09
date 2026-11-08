@@ -812,9 +812,12 @@ namespace Colonia09.Simulation
             Sfx("destroy");
         }
 
+        /// <summary>Campaign defenses only fire at enemies that have entered the board, so none die unseen.</summary>
+        bool OnBoard(Enemy e) => !Level.TargetOnlyOnBoard || e.Y >= -.3;
+
         List<Enemy> ClosestEnemies(GameModule m, double range)
         {
-            var near = Enemies.Where(e => e.Hp > 0 && e.Y < m.R + .25 && Math.Abs(e.C - m.C) <= range && Hypot((e.C - m.C) * .9, e.Y - m.R) <= range);
+            var near = Enemies.Where(e => e.Hp > 0 && OnBoard(e) && e.Y < m.R + .25 && Math.Abs(e.C - m.C) <= range && Hypot((e.C - m.C) * .9, e.Y - m.R) <= range);
             return Sorted(near, (a, b) => Sign(Hypot(a.C - m.C, a.Y - m.R) - Hypot(b.C - m.C, b.Y - m.R)));
         }
 
@@ -1286,7 +1289,7 @@ namespace Colonia09.Simulation
                 {
                     case ModuleType.Pulse:
                     {
-                        var candidates = Sorted(Enemies.Where(e => e.C == m.C && e.Y < m.R - .15 && e.Y > m.R - 5.9), (a, b) => Sign(b.Y - a.Y));
+                        var candidates = Sorted(Enemies.Where(e => e.C == m.C && OnBoard(e) && e.Y < m.R - .15 && e.Y > m.R - 5.9), (a, b) => Sign(b.Y - a.Y));
                         if (candidates.Count > 0 && SpendActionEnergy(DrawRate(m)))
                         {
                             Shoot(m, candidates[0], "#ffe29d", 28 + lv * 9);
@@ -1296,7 +1299,7 @@ namespace Colonia09.Simulation
                     }
                     case ModuleType.Cryo:
                     {
-                        var targets = Sorted(Enemies.Where(e => Math.Abs(e.C - m.C) <= 1 && e.Y < m.R + .8 && e.Y > m.R - 4.3), (a, b) => Sign(b.Y - a.Y));
+                        var targets = Sorted(Enemies.Where(e => Math.Abs(e.C - m.C) <= 1 && OnBoard(e) && e.Y < m.R + .8 && e.Y > m.R - 4.3), (a, b) => Sign(b.Y - a.Y));
                         if (targets.Count > 0 && SpendActionEnergy(DrawRate(m)))
                         {
                             var e = targets[0];

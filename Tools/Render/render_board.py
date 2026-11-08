@@ -24,7 +24,9 @@ EXTRA = sys.argv[sys.argv.index("--") + 2:]
 PREVIEW = "preview" in EXTRA
 SIZE_ARG = next((a for a in EXTRA if "x" in a and a.replace("x", "").isdigit()), None)
 W, H = (int(v) for v in SIZE_ARG.split("x")) if SIZE_ARG else (7, 11)
-WIDTH, HEIGHT, PPU = 17.0, H + .6, 96
+# Campaign decks stand out in the open on the planet, framed by its ground on every side.
+CAMPAIGN = SIZE_ARG is not None
+WIDTH, HEIGHT, PPU = (12.0, H + 8.0, 96) if CAMPAIGN else (17.0, H + .6, 96)
 SY = (H - 1) / 10  # Scenery positions were laid out for 11 rows; shorter decks pull them in.
 # Narrow decks show less ground on screen, so the colony buildings move in toward the deck.
 G = 1.0 if W >= 7 else .55 if W <= 3 else .72
@@ -56,6 +58,42 @@ def soil():
     return mat
 
 
+def outpost(frame, steel, dark, warm, cyan):
+    """A field defense platform outside the colony: rocks, cargo and floodlights on open ground."""
+    rock = material("Rock", "#4f3a2e", .1, .85, .6)
+    crate = material("Crate", "#2f6a72", .6, .48, .5)
+    rust = material("Rust", "#8a4b2f", .5, .6, .6)
+    sand = material("Sand", "#7a6247", .1, .9, .6)
+    left, right = CENTER[0] - W / 2 - .3, CENTER[0] + W / 2 + .3
+    rng = random.Random(W * 31 + H)
+    for _ in range(int(WIDTH * HEIGHT * .9)):  # Scattered rocks away from the deck.
+        x = rng.uniform(CENTER[0] - WIDTH / 2, CENTER[0] + WIDTH / 2)
+        y = rng.uniform(CENTER[1] - HEIGHT / 2, CENTER[1] + HEIGHT / 2)
+        if left - .5 < x < right + .5 and -(H - 1) - 1.3 < y < 1.3:
+            continue
+        r = rng.uniform(.05, .2)
+        bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2, radius=r, location=(x, y, r * .25))
+        stone = bpy.context.active_object
+        stone.scale = (1, rng.uniform(.6, 1.3), rng.uniform(.35, .7))
+        rs.finish(stone, rock, 0)
+    for side in (-1, 1):
+        x = CENTER[0] + side * (W / 2 + .95)
+        for k in range(max(2, H // 3)):  # Sandbag walls along the flanks.
+            y = -1.2 - k * 2.4
+            for j in range(4):
+                box((x, y - j * .32, .1), (.36, .3, .18), sand, bevel=.08)
+        for y in (-.4, -(H - 1) * .55, -(H - 1) + .4):  # Floodlights on poles.
+            cyl((x + side * .45, y, .4), .04, .8, steel, bevel=.008)
+            box((x + side * .32, y, .8), (.26, .14, .06), dark, bevel=.015)
+            box((x + side * .26, y, .77), (.14, .1, .02), warm, bevel=.004)
+    for i, (dx, dy, mat) in enumerate(((-1.6, -(H - 1) - 1.1, crate), (-2.3, -(H - 1) - .8, rust), (1.8, -(H - 1) - 1.0, crate), (2.4, -(H - 1) - 1.6, rust))):
+        box((CENTER[0] + dx * (W / 5 + .6), dy, .2), (.6, .45, .4), mat, bevel=.03)
+        box((CENTER[0] + dx * (W / 5 + .6), dy, .41), (.5, .05, .01), dark, bevel=.003)
+    for x in (left - .1, right + .1):  # Beacons at the enemy side.
+        cyl((x, .8, .2), .08, .4, frame, bevel=.01)
+        ball_light = cyl((x, .8, .42), .06, .04, cyan, bevel=.008)
+
+
 def build():
     rs.clear()
     rs.SCENE_SIZE = (int(WIDTH * PPU), int(round(HEIGHT * PPU)))
@@ -73,7 +111,11 @@ def build():
     bpy.ops.mesh.primitive_plane_add(size=1, location=(CENTER[0], CENTER[1], -.02))
     ground = bpy.context.active_object
     ground.scale = (WIDTH + 2, HEIGHT + 2, 1)
-    ground.data.materials.append(soil())
+    if CAMPAIGN:
+        import render_map
+        ground.data.materials.append(render_map.terrain())
+    else:
+        ground.data.materials.append(soil())
 
     deck = material("Deck", "#30404a", .85, .5, .55)
     deck_alt = material("DeckAlt", "#2b3842", .85, .52, .55)
@@ -113,6 +155,10 @@ def build():
         for r in range(H):
             box((x, -r, .1), (.16, .16, .16), frame, bevel=.02)
             cyl((x, -r, .19), .035, .012, cyan if r % 2 else warm, bevel=.003, vertices=16)
+
+    if CAMPAIGN:
+        outpost(frame, steel, dark, warm, cyan)
+        return
 
     # ---- Colony scenery on both sides ---------------------------------------------------
     pipe = material("Pipe", "#6f7d84", .9, .38, .5)
