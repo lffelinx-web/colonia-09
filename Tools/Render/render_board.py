@@ -99,7 +99,7 @@ def build():
     rs.SCENE_SIZE = (int(WIDTH * PPU), int(round(HEIGHT * PPU)))
     if PREVIEW:
         rs.SCENE_SIZE = (rs.SCENE_SIZE[0] // 2, rs.SCENE_SIZE[1] // 2)
-    rs.setup(WIDTH)
+    rs.setup(max(WIDTH, HEIGHT))  # Blender's ortho scale spans the longer side of the image.
     scene = bpy.context.scene
     scene.render.film_transparent = False
     scene.cycles.samples = 24 if PREVIEW else 80

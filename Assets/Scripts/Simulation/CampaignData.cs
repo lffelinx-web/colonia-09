@@ -124,7 +124,9 @@ namespace Colonia09.Simulation
             if (zone == null) return false;
             var (cx, cy) = ZoneCenter(zone);
             bool corner = System.Math.Abs(x - cx) == ZoneRadius && System.Math.Abs(y - cy) == ZoneRadius;
-            return corner || (zone.Number == 1 && x == cx && y == cy);
+            // The ship needs its tile and the four next to it.
+            bool ship = zone.Number == 1 && System.Math.Abs(x - cx) + System.Math.Abs(y - cy) <= 1;
+            return corner || ship;
         }
 
         /// <summary>Road tiles from one zone to the next: along x, then along y, outside both zones.</summary>

@@ -29,7 +29,10 @@ N = 26
 ZONES = [(22, 22), (23, 15), (13, 21), (17, 11), (8, 15), (11, 7), (4, 9), (4, 3)]
 K = math.sqrt(2)
 ISO_ROT = (math.radians(60), 0, math.radians(45))
-TERRAIN_W, TERRAIN_H, TERRAIN_PPU = 28.0, 15.0, 72
+TERRAIN_W, TERRAIN_H = 28.0, 15.0
+# The terrain is rendered in 3 x 3 pieces so it stays sharp when the player zooms in.
+CHUNKS = 3
+CHUNK_PX = 2048
 
 
 def camera_forward():
@@ -65,9 +68,10 @@ def beam(p0, p1, radius, mat):
 
 def build_terrain():
     rs.clear()
-    rs.SCENE_SIZE = (int(TERRAIN_W * TERRAIN_PPU), int(TERRAIN_H * TERRAIN_PPU))
+    chunk_w, chunk_h = TERRAIN_W / CHUNKS, TERRAIN_H / CHUNKS
+    rs.SCENE_SIZE = (CHUNK_PX, round(CHUNK_PX * chunk_h / chunk_w))
     if PREVIEW:
-        rs.SCENE_SIZE = (rs.SCENE_SIZE[0] // 2, rs.SCENE_SIZE[1] // 2)
+        rs.SCENE_SIZE = (rs.SCENE_SIZE[0] // 4, rs.SCENE_SIZE[1] // 4)
     rs.setup(10)
     scene = bpy.context.scene
     scene.render.film_transparent = False
@@ -76,7 +80,7 @@ def build_terrain():
         if obj.type == "MESH":
             bpy.data.objects.remove(obj)
     center = ((N - 1) / 2, -(N - 1) / 2, 0)
-    iso_camera(center, TERRAIN_W * K)
+    iso_camera(center, chunk_w * K)
 
     bpy.ops.mesh.primitive_plane_add(size=1, location=(center[0], center[1], -.05))
     ground = bpy.context.active_object
@@ -111,7 +115,7 @@ def build_terrain():
 
 def sprite_scene():
     rs.clear()
-    rs.SCENE_SIZE = (256, 256)
+    rs.SCENE_SIZE = (512, 512)  # 256 pixels per Unity unit: sharp when zoomed in.
     rs.setup(2 * K)  # 2 Unity units across: a tile is the middle half.
     iso_camera((0, 0, .35), 2 * K)  # Aimed a little above the ground so tall buildings fit.
 
@@ -288,8 +292,18 @@ if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     if not ONLY or "terrain" in ONLY:
         build_terrain()
-        bpy.context.scene.render.filepath = os.path.join(OUT, "colony_terrain_preview.png" if PREVIEW else "colony_terrain.png")
-        bpy.ops.render.render(write_still=True)
+        cam = bpy.context.scene.camera
+        base = cam.location.copy()
+        right = cam.matrix_world.to_3x3() @ Vector((1, 0, 0))
+        up = cam.matrix_world.to_3x3() @ Vector((0, 1, 0))
+        for j in range(CHUNKS):  # j counts rows from the top, i columns from the left.
+            for i in range(CHUNKS):
+                dx = (i - (CHUNKS - 1) / 2) * TERRAIN_W / CHUNKS
+                dy = ((CHUNKS - 1) / 2 - j) * TERRAIN_H / CHUNKS
+                cam.location = base + right * dx * K + up * dy * K
+                name = f"colony_terrain_{i}_{j}" + ("_preview" if PREVIEW else "")
+                bpy.context.scene.render.filepath = os.path.join(OUT, name + ".png")
+                bpy.ops.render.render(write_still=True)
     for name, builder in SPRITES.items():
         if ONLY and name not in ONLY:
             continue

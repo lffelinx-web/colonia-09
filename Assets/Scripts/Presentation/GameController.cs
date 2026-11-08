@@ -80,8 +80,11 @@ namespace Colonia09.Presentation
             Ui.Refresh();
         }
 
-        void OnApplicationPause(bool paused) { if (paused) Pause(); }
-        void OnApplicationFocus(bool focused) { if (!focused) Pause(); }
+        /// <summary>Automated tests run in a desktop window that can lose focus; they must not pause the game.</summary>
+        public bool IgnoreFocusLoss;
+
+        void OnApplicationPause(bool paused) { if (paused && !IgnoreFocusLoss) Pause(); }
+        void OnApplicationFocus(bool focused) { if (!focused && !IgnoreFocusLoss) Pause(); }
 
         // ---- Player actions -----------------------------------------------------------
 
@@ -195,6 +198,13 @@ namespace Colonia09.Presentation
             var existing = Sim.ModuleAt(r, c);
             if (existing != null)
             {
+                if (Campaign.Guiding)
+                {
+                    // During the guide, pieces cannot be opened: upgrading or recycling would spend the energy the next steps need.
+                    Audio.Play("hit", true);
+                    Ui.ShowToast("Primero sigue la guía", 1.4f);
+                    return;
+                }
                 Selected = existing;
                 Ui.MarkDeckDirty();
                 return;
@@ -212,12 +222,14 @@ namespace Colonia09.Presentation
 
         public void UpgradeSelected()
         {
+            if (Campaign.Guiding) return;
             Sim.TryUpgrade(Selected);
             Ui.MarkDeckDirty();
         }
 
         public void RecycleSelected()
         {
+            if (Campaign.Guiding) return;
             if (Sim.TryRecycle(Selected)) Selected = null;
             Ui.MarkDeckDirty();
         }

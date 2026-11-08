@@ -60,13 +60,14 @@ namespace Colonia09.Presentation
         static readonly Vector3 Origin = new Vector3(300, 0, 0);
         /// <summary>The sprites were rendered aimed 0.35 above the ground; this lifts them back onto their tile.</summary>
         const float SpriteLift = .2143f;
-        const float MinZoom = 2.6f, MaxZoom = 8.5f;
+        const float MinZoom = 4f, MaxZoom = 8.5f;  // Closer than this the art would blur.
 
         GameController game;
         Camera cam;
         Material material;
         Transform root;
-        Sprite terrain, pave, road, lamp, ship, barricade, diamond, outline;
+        Sprite pave, road, lamp, ship, barricade, diamond, outline;
+        readonly Sprite[,] terrain = new Sprite[3, 3];
         readonly Dictionary<BuildingType, Sprite> buildings = new Dictionary<BuildingType, Sprite>();
         readonly Dictionary<Vector2Int, Transform> placed = new Dictionary<Vector2Int, Transform>();
         SpriteRenderer selection;
@@ -84,7 +85,9 @@ namespace Colonia09.Presentation
             game = controller;
             cam = Camera.main;
             material = Resources.Load<Material>("Materials/SpriteUnlit");
-            terrain = Load("colony_terrain");
+            for (int j = 0; j < 3; j++)
+                for (int i = 0; i < 3; i++)
+                    terrain[i, j] = Load($"colony_terrain_{i}_{j}");
             pave = Load("tile_pave");
             road = Load("tile_road");
             lamp = Load("deco_lamp");
@@ -152,7 +155,11 @@ namespace Colonia09.Presentation
             for (int i = root.childCount - 1; i >= 0; i--) Destroy(root.GetChild(i).gameObject);
             placed.Clear();
             float half = (CampaignData.ColonySize - 1) / 2f;
-            if (terrain != null) Put(terrain, TileWorld(half, half), -5000, Color.white);
+            // The ground comes in 3 x 3 pieces of 28/3 x 5 units around the map center.
+            for (int j = 0; j < 3; j++)
+                for (int i = 0; i < 3; i++)
+                    if (terrain[i, j] != null)
+                        Put(terrain[i, j], TileWorld(half, half) + new Vector3((i - 1) * 28f / 3, (1 - j) * 5f, 0), -5000, Color.white);
             var lift = new Vector3(0, SpriteLift, 0);
 
             // Roads from each liberated zone to the next one.
@@ -189,7 +196,7 @@ namespace Colonia09.Presentation
                 if (!free && barricade != null)
                     foreach (var (dx, dy) in new[] { (-1, 1), (1, -1), (0, 2), (-2, 0) })
                         Put(barricade, TileWorld(cx + dx, cy + dy) + lift, Depth(cx + dx, cy + dy), Color.white);
-                if (sector.Number == 1 && ship != null) Put(ship, TileWorld(cx, cy) + lift, Depth(cx, cy) + 1, Color.white, 1.5f);
+                if (sector.Number == 1 && ship != null) Put(ship, TileWorld(cx, cy) + lift, Depth(cx + 1, cy + 1) + 1, Color.white, 1.35f);
             }
 
             foreach (var b in Colony.Saved)

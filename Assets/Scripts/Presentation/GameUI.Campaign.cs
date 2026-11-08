@@ -334,51 +334,179 @@ namespace Colonia09.Presentation
             label.rectTransform.anchorMax = new Vector2(1, .3f);
         }
 
-        // ---- Tutorial coach -----------------------------------------------------------
+        // ---- Tutorial guide: a spotlight on what to touch ------------------------------
+        // The screen darkens except for the card or cell the step asks for. An arrow bobs toward
+        // it and the instruction sits in a large bubble right next to it. Touches outside the
+        // hole are blocked; the hole itself lets them through to the board or the card.
+
+        RectTransform coachRoot, coachBubble, coachArrow, coachFrame;
+        readonly Image[] coachDims = new Image[4];
+        Sprite arrowSprite;
 
         void BuildCoach()
         {
-            var panel = Rt("Coach", safeArea);
-            panel.anchorMin = new Vector2(0, 1); panel.anchorMax = Vector2.one; panel.pivot = new Vector2(.5f, 1);
-            panel.sizeDelta = new Vector2(-28, 178); panel.anchoredPosition = new Vector2(0, -HudHeight - 10);
-            coach = panel.gameObject;
-            var bg = panel.gameObject.AddComponent<Image>();
-            bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = new Color(.03f, .1f, .15f, .96f); bg.raycastTarget = false;
-            var edge = Rt("Edge", panel).gameObject.AddComponent<Image>();
-            edge.sprite = frameSprite; edge.type = Image.Type.Sliced; edge.color = new Color(Gold.r, Gold.g, Gold.b, .85f); edge.raycastTarget = false;
+            coachRoot = Rt("Guide", safeArea.parent);
+            Stretch(coachRoot);
+            coachRoot.SetSiblingIndex(safeArea.GetSiblingIndex() + 1);  // Above the game, below menus and modals.
+            coach = coachRoot.gameObject;
+            for (int i = 0; i < 4; i++)
+            {
+                coachDims[i] = Rt("Dim", coachRoot).gameObject.AddComponent<Image>();
+                coachDims[i].color = new Color(0, .02f, .04f, .72f);
+                coachDims[i].raycastTarget = true;
+                coachDims[i].rectTransform.anchorMin = coachDims[i].rectTransform.anchorMax = new Vector2(.5f, .5f);
+            }
+            coachFrame = Rt("Hole", coachRoot);
+            coachFrame.anchorMin = coachFrame.anchorMax = new Vector2(.5f, .5f);
+            var frame = coachFrame.gameObject.AddComponent<Image>();
+            frame.sprite = frameSprite; frame.type = Image.Type.Sliced; frame.color = Gold; frame.raycastTarget = false;
+
+            arrowSprite = MakeArrow();
+            coachArrow = Rt("Arrow", coachRoot);
+            coachArrow.anchorMin = coachArrow.anchorMax = new Vector2(.5f, .5f);
+            coachArrow.sizeDelta = new Vector2(110, 110);
+            var arrow = coachArrow.gameObject.AddComponent<Image>();
+            arrow.sprite = arrowSprite; arrow.color = Gold; arrow.raycastTarget = false;
+            var arrowShadow = coachArrow.gameObject.AddComponent<Shadow>();
+            arrowShadow.effectColor = new Color(0, 0, 0, .6f); arrowShadow.effectDistance = new Vector2(0, -6);
+
+            coachBubble = Rt("Bubble", coachRoot);
+            coachBubble.anchorMin = coachBubble.anchorMax = new Vector2(.5f, .5f);
+            var bg = coachBubble.gameObject.AddComponent<Image>();
+            bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = new Color(.04f, .12f, .18f, .98f); bg.raycastTarget = true;
+            var edge = Rt("Edge", coachBubble).gameObject.AddComponent<Image>();
+            edge.sprite = frameSprite; edge.type = Image.Type.Sliced; edge.color = Gold; edge.raycastTarget = false;
             Stretch(edge.rectTransform);
-            var icon = Rt("Icon", panel).gameObject.AddComponent<Image>();
-            icon.sprite = Resources.Load<Sprite>("Sprites/UI/icon_wave"); icon.preserveAspect = true; icon.raycastTarget = false;
-            icon.rectTransform.anchorMin = icon.rectTransform.anchorMax = new Vector2(0, .5f); icon.rectTransform.pivot = new Vector2(0, .5f);
-            icon.rectTransform.sizeDelta = new Vector2(84, 84); icon.rectTransform.anchoredPosition = new Vector2(16, 0);
-            coachText = Label(panel, "", 30, Txt, TextAnchor.MiddleLeft);
-            coachText.resizeTextForBestFit = true; coachText.resizeTextMinSize = 20; coachText.resizeTextMaxSize = 30;
-            coachText.rectTransform.offsetMin = new Vector2(112, 10); coachText.rectTransform.offsetMax = new Vector2(-24, -10);
-            CoachButton = TextButton(panel, "ENTENDIDO", 28, Gold, Bg, () => game.Campaign.Confirm());
+            coachText = Label(coachBubble, "", 38, Txt, TextAnchor.MiddleCenter);
+            coachText.resizeTextForBestFit = true; coachText.resizeTextMinSize = 24; coachText.resizeTextMaxSize = 38;
+            CoachButton = TextButton(coachBubble, "ENTENDIDO", 34, Gold, Bg, () => game.Campaign.Confirm());
             coachButtonGo = CoachButton.gameObject;
             var buttonRt = (RectTransform)CoachButton.transform;
-            buttonRt.anchorMin = buttonRt.anchorMax = new Vector2(1, .5f); buttonRt.pivot = new Vector2(1, .5f);
-            buttonRt.sizeDelta = new Vector2(230, 84); buttonRt.anchoredPosition = new Vector2(-18, 0);
+            buttonRt.anchorMin = buttonRt.anchorMax = new Vector2(.5f, 0); buttonRt.pivot = new Vector2(.5f, 0);
+            buttonRt.sizeDelta = new Vector2(340, 92); buttonRt.anchoredPosition = new Vector2(0, 22);
             coach.SetActive(false);
         }
 
-        /// <summary>Shows a tutorial step, or hides the coach with null.</summary>
+        /// <summary>Shows a tutorial step or a tip, or hides the guide with null.</summary>
         public void ShowCoach(TutorialStep step)
         {
             coachStep = step;
             coach.SetActive(step != null);
             if (step == null) return;
-            coach.transform.SetAsLastSibling();
             coachText.text = step.Text;
-            bool needsButton = step.Done == null;
-            coachButtonGo.SetActive(needsButton);
-            coachText.rectTransform.offsetMax = new Vector2(needsButton ? -262 : -24, -10);
+            coachButtonGo.SetActive(step.Done == null);
+            UpdateSpotlight();
+        }
+
+        /// <summary>Screen rectangle of what the current step points at, if anything.</summary>
+        bool CoachTarget(out Rect screen)
+        {
+            screen = default;
+            var step = coachStep;
+            bool wantCard = step.Card.HasValue && (game.SelectedType != step.Card.Value || !step.Cell.HasValue);
+            if (wantCard && CardButtons.TryGetValue(step.Card.Value, out var card) && card.gameObject.activeInHierarchy)
+            {
+                var corners = new Vector3[4];
+                ((RectTransform)card.transform).GetWorldCorners(corners);
+                screen = Rect.MinMaxRect(corners[0].x, corners[0].y, corners[2].x, corners[2].y);
+                return true;
+            }
+            if (step.Cell.HasValue)
+            {
+                var c = game.Board.CellToScreen(step.Cell.Value.x, step.Cell.Value.y);
+                float half = game.Board.CellPixels * .55f;
+                screen = Rect.MinMaxRect(c.x - half, c.y - half, c.x + half, c.y + half);
+                return true;
+            }
+            return false;
+        }
+
+        void UpdateSpotlight()
+        {
+            if (!coach.activeSelf || coachStep == null) return;
+            var size = coachRoot.rect.size;
+            bool tip = coachStep.IsTip;
+            bool hasTarget = CoachTarget(out var screen);
+            Rect hole = default;
+            if (hasTarget)
+            {
+                RectTransformUtility.ScreenPointToLocalPointInRectangle(coachRoot, screen.min, null, out var min);
+                RectTransformUtility.ScreenPointToLocalPointInRectangle(coachRoot, screen.max, null, out var max);
+                hole = Rect.MinMaxRect(min.x - 8, min.y - 8, max.x + 8, max.y + 8);
+            }
+
+            // Dark frame around the hole; a tip leaves the game uncovered.
+            float left = -size.x / 2, right = size.x / 2, bottom = -size.y / 2, top = size.y / 2;
+            if (!hasTarget) hole = new Rect(0, 0, 0, 0);
+            SetDim(0, tip ? default : Rect.MinMaxRect(left, hasTarget ? hole.yMax : bottom, right, top));
+            SetDim(1, tip || !hasTarget ? default : Rect.MinMaxRect(left, bottom, right, hole.yMin));
+            SetDim(2, tip || !hasTarget ? default : Rect.MinMaxRect(left, hole.yMin, hole.xMin, hole.yMax));
+            SetDim(3, tip || !hasTarget ? default : Rect.MinMaxRect(hole.xMax, hole.yMin, right, hole.yMax));
+
+            coachFrame.gameObject.SetActive(hasTarget);
+            coachArrow.gameObject.SetActive(hasTarget);
+            float pulse = Mathf.PingPong(Time.unscaledTime * 2, 1);
+            float bubbleHeight = coachButtonGo.activeSelf ? 330 : 230;
+            var bubbleSize = new Vector2(size.x - 60, bubbleHeight);
+            coachBubble.sizeDelta = bubbleSize;
+            coachText.rectTransform.offsetMin = new Vector2(30, coachButtonGo.activeSelf ? 120 : 18);
+            coachText.rectTransform.offsetMax = new Vector2(-30, -18);
+            if (hasTarget)
+            {
+                coachFrame.anchoredPosition = hole.center;
+                coachFrame.sizeDelta = hole.size + Vector2.one * (8 + pulse * 10);
+                // Bubble on the roomier side of the target, the arrow between them pointing at it.
+                bool above = hole.center.y < 0;
+                float arrowY = above ? hole.yMax + 70 + pulse * 18 : hole.yMin - 70 - pulse * 18;
+                coachArrow.anchoredPosition = new Vector2(Mathf.Clamp(hole.center.x, left + 70, right - 70), arrowY);
+                coachArrow.localRotation = Quaternion.Euler(0, 0, above ? 0 : 180);
+                float bubbleY = above ? hole.yMax + 130 + bubbleHeight / 2 : hole.yMin - 130 - bubbleHeight / 2;
+                bubbleY = Mathf.Clamp(bubbleY, bottom + bubbleHeight / 2 + 20, top - bubbleHeight / 2 - 20);
+                coachBubble.anchoredPosition = new Vector2(0, bubbleY);
+            }
+            else coachBubble.anchoredPosition = tip ? new Vector2(0, bottom + DockHeight + bubbleHeight / 2 + 30) : Vector2.zero;
+        }
+
+        void SetDim(int i, Rect r)
+        {
+            var dim = coachDims[i];
+            bool on = r.width > 0 && r.height > 0;
+            if (dim.gameObject.activeSelf != on) dim.gameObject.SetActive(on);
+            if (!on) return;
+            dim.rectTransform.anchoredPosition = r.center;
+            dim.rectTransform.sizeDelta = r.size;
+        }
+
+        /// <summary>A thick arrow pointing down, used to point at the target.</summary>
+        static Sprite MakeArrow()
+        {
+            const int Size = 96;
+            var tex = new Texture2D(Size, Size, TextureFormat.RGBA32, false) { filterMode = FilterMode.Bilinear };
+            var px = new Color32[Size * Size];
+            var head = new[] { new Vector2(8, 52), new Vector2(88, 52), new Vector2(48, 4) };
+            for (int y = 0; y < Size; y++)
+                for (int x = 0; x < Size; x++)
+                {
+                    int inside = 0;
+                    for (int sy = 0; sy < 4; sy++)
+                        for (int sx = 0; sx < 4; sx++)
+                        {
+                            var p = new Vector2(x + (sx + .5f) / 4, y + (sy + .5f) / 4);
+                            bool shaft = p.x > 32 && p.x < 64 && p.y >= 50 && p.y < 92;
+                            if (shaft || InPolygon(head, p)) inside++;
+                        }
+                    px[y * Size + x] = new Color32(255, 255, 255, (byte)(inside * 255 / 16));
+                }
+            tex.SetPixels32(px);
+            tex.Apply();
+            return Sprite.Create(tex, new Rect(0, 0, Size, Size), new Vector2(.5f, .5f), 100);
         }
 
         void RefreshCampaign()
         {
             RefreshResources();
             PlaceMapTags();
+            UpdateSpotlight();
             foreach (var pair in cardHighlights)
             {
                 bool on = coachStep != null && coachStep.Card == pair.Key && coach.activeSelf;

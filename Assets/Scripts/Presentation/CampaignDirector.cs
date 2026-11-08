@@ -122,12 +122,21 @@ namespace Colonia09.Presentation
             return n >= atLeast + (type == ModuleType.Reactor ? 1 : 0);  // The starting core does not count.
         }
         public bool Confirmed => confirmed;
+        /// <summary>True while a tutorial step is on screen (tips do not count).</summary>
+        public bool Guiding => Step != null;
 
         /// <summary>Called every frame while a campaign mission is on screen.</summary>
         public void Update()
         {
             if (!Active || game.Sim.Mode != GameMode.Playing) return;
             var step = Step;
+            // A guided step must never be impossible: if it asks for a module the battery cannot pay for
+            // and nothing is charging it, top the battery up.
+            if (step != null && step.Card.HasValue && game.Sim.ChargingGeneration < .1)
+            {
+                int cost = GameSimulation.BuildCost(step.Card.Value);
+                if (game.Sim.Charge < cost) game.Sim.DebugAddCharge(cost - game.Sim.Charge + 1);
+            }
             if (step != null && (step.Done != null ? step.Done(this) : confirmed))
             {
                 stepIndex++;

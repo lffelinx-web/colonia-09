@@ -30,10 +30,10 @@ namespace Colonia09.EditorTools
             }
             if (assetPath.Contains("/Colony/"))
             {
-                // Isometric colony: the terrain at 72 pixels per tile width, the tile sprites at 128 (two tiles across).
+                // Isometric colony: terrain pieces are 2048 pixels for 28/3 units; tile sprites are 512 pixels for 2 units.
                 bool ground = assetPath.Contains("terrain");
-                importer.spritePixelsPerUnit = ground ? 72 : 128;
-                importer.maxTextureSize = ground ? 2048 : 256;
+                importer.spritePixelsPerUnit = ground ? 2048f / (28f / 3f) : 256;
+                importer.maxTextureSize = ground ? 2048 : 512;
                 importer.textureCompression = ground ? TextureImporterCompression.CompressedHQ : TextureImporterCompression.Uncompressed;
                 return;
             }
