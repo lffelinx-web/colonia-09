@@ -64,6 +64,7 @@ namespace Colonia09.Simulation
         public bool Allows(ModuleType type) => System.Array.IndexOf(Modules, type) >= 0;
         public bool IsQuickPlay => Id == "quick";
         public static LevelConfig QuickPlay => new LevelConfig();
+        public LevelConfig Clone() => (LevelConfig)MemberwiseClone();  // Arrays are shared; they are never modified.
 
         /// <summary>Throws if the board cannot be played: too small, or the core outside the buildable rows.</summary>
         public void Validate()

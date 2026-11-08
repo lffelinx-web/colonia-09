@@ -26,6 +26,8 @@ SIZE_ARG = next((a for a in EXTRA if "x" in a and a.replace("x", "").isdigit()),
 W, H = (int(v) for v in SIZE_ARG.split("x")) if SIZE_ARG else (7, 11)
 WIDTH, HEIGHT, PPU = 17.0, H + .6, 96
 SY = (H - 1) / 10  # Scenery positions were laid out for 11 rows; shorter decks pull them in.
+# Narrow decks show less ground on screen, so the colony buildings move in toward the deck.
+G = 1.0 if W >= 7 else .55 if W <= 3 else .72
 CENTER = ((W - 1) / 2, -(H - 1) / 2)
 random.seed(9)
 
@@ -128,15 +130,18 @@ def build():
         for k in range(max(2, int(length / 1.55))):
             box((x0 + side * .25, top - .6 - k * 1.55, .2), (.68, .09, .07), dark, bevel=.015)
         walk = CENTER[0] + side * (W / 2 + 1.55)
-        box((walk, (top + bottom) / 2, .04), (.8, length, .04), grate, bevel=.01)
-        for k in range(int(length / .2)):
-            box((walk, top - .1 - k * .2, .07), (.76, .03, .01), dark, bevel=.002)
+        if G == 1.0:  # The service walkway only fits beside the full-width deck.
+            box((walk, (top + bottom) / 2, .04), (.8, length, .04), grate, bevel=.01)
+            for k in range(int(length / .2)):
+                box((walk, top - .1 - k * .2, .07), (.76, .03, .01), dark, bevel=.002)
+        else:
+            walk = CENTER[0] + side * (W / 2 + 1.25)
         for y in (-1.5 * SY, -5.5 * SY, -9.2 * SY):  # Floodlights.
             cyl((walk + side * .52, y, .3), .05, .6, steel, bevel=.01)
             box((walk + side * .38, y, .62), (.3, .16, .08), dark, bevel=.02)
             box((walk + side * .3, y, .57), (.16, .12, .02), warm, bevel=.005)
 
-    left = CENTER[0] - W / 2 - 2.9
+    left = CENTER[0] - W / 2 - 2.9 * G - (.35 if G < 1 else 0)
     for y in (-.8, -2.2):  # Fuel tanks.
         cyl((left - .35, y, .45), .62, .9, white, bevel=.04)
         torus((left - .35, y, .9), .5, .04, steel)
@@ -154,7 +159,7 @@ def build():
     for y in (-6.6 * SY, -6.6 * SY - .5):
         box((left + .7, y, .2), (.45, .4, .4), rust, bevel=.03)
 
-    right = CENTER[0] + W / 2 + 2.9
+    right = CENTER[0] + W / 2 + 2.9 * G + (.2 if G < 1 else 0)
     for row in range(max(2, round(5 * SY))):  # Solar panel array.
         for col in range(2):
             x, y = right - .1 + col * 1.05, -5.6 * SY - row * .95

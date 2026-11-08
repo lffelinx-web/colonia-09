@@ -39,13 +39,12 @@ namespace Colonia09.Simulation
                 NewModules = new[] { Ge, Pu }, NewEnemies = new[] { Sc },
                 Level = new LevelConfig
                 {
-                    Id = "landing", Name = "Zona de aterrizaje", Width = 3, Height = 7, Waves = 3, CoreMax = 10, CoreRow = 5, CoreColumn = 1,
+                    Id = "landing", Name = "Zona de aterrizaje", Width = 3, Height = 7, Waves = 2, CoreMax = 10, CoreRow = 5, CoreColumn = 1,
                     StartCharge = 150, Modules = new[] { Ge, Pu },
                     WaveSpecs = new[]
                     {
                         new WaveSpec(5, 3.8, .75, Sc),
-                        new WaveSpec(7, 3.4, .85, Sc),
-                        new WaveSpec(9, 3.1, .95, Sc),
+                        new WaveSpec(8, 3.3, .85, Sc),
                     },
                 },
             },

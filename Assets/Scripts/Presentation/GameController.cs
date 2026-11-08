@@ -153,7 +153,7 @@ namespace Colonia09.Presentation
             if (!CampaignDirector.Unlocked(sector)) return;
             Audio.Play("wave", true);
             Ui.HideCampaignMap();
-            StartLevel(sector.Level, sector.Difficulty);
+            StartLevel(ColonyData.Boosted(sector.Level, Colony.Buildings()), sector.Difficulty);  // Colony buildings help every mission.
             Campaign.Begin(sector);
         }
 
@@ -192,6 +192,13 @@ namespace Colonia09.Presentation
             {
                 Selected = existing;
                 Ui.MarkDeckDirty();
+                return;
+            }
+            var refusal = Campaign.Active ? Campaign.RefuseBuild(SelectedType, r, c) : null;
+            if (refusal != null)
+            {
+                Audio.Play("hit", true);
+                Ui.ShowToast(refusal, 1.6f);
                 return;
             }
             if (Sim.TryBuild(SelectedType, r, c)) Selected = null;

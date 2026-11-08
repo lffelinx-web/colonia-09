@@ -201,6 +201,9 @@ namespace Colonia09.Presentation
         {
             if (field.width <= 1 || field.height <= 1) return;
             cellPixels = Mathf.Min(field.width / W, field.height / H);
+            // Small campaign boards stay close to the normal piece size instead of filling the screen.
+            float standard = Mathf.Min(field.width / GameData.Width, field.height / GameData.Height);
+            cellPixels = Mathf.Min(cellPixels, standard * 1.3f);
             cam.orthographicSize = Screen.height / (2f * cellPixels);
             float x = (W - 1) / 2f - (field.center.x - Screen.width / 2f) / cellPixels;
             float y = -(H - 1) / 2f - (field.center.y - Screen.height / 2f) / cellPixels;

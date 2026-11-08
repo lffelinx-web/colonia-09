@@ -23,6 +23,19 @@ namespace Colonia09.Presentation
         public List<string> seenEnemies = new List<string>();
         /// <summary>Sectors whose guided tutorial was completed.</summary>
         public List<string> tutorials = new List<string>();
+
+        // Colony.
+        public double materials, data;
+        public List<BuildingSave> buildings = new List<BuildingSave>();
+        /// <summary>UTC ticks of the last time production was added; 0 before the first building.</summary>
+        public long productionTicks;
+    }
+
+    [Serializable]
+    public sealed class BuildingSave
+    {
+        public string sector, type;
+        public int slot, level;
     }
 
     public static class SaveGame

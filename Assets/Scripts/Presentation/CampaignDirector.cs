@@ -34,6 +34,8 @@ namespace Colonia09.Presentation
         public bool Active => Current != null;
         public TutorialStep Step => Active && stepIndex < steps.Count ? steps[stepIndex] : null;
         public int LastStars { get; private set; }
+        public int LastMaterials { get; private set; }
+        public int LastData { get; private set; }
         public bool LastWasBest { get; private set; }
 
         public CampaignDirector(GameController controller) => game = controller;
@@ -49,7 +51,8 @@ namespace Colonia09.Presentation
         public void Begin(CampaignSector sector)
         {
             Current = sector;
-            steps = SaveGame.Data.tutorials.Contains(sector.Id) ? new List<TutorialStep>() : Tutorials.For(sector);
+            // The guide repeats until the sector has been won once.
+            steps = SaveGame.Completed(sector.Id) ? new List<TutorialStep>() : Tutorials.For(sector);
             stepIndex = 0;
             StartStep();
             var progress = SaveGame.Sector(sector.Id);
@@ -76,10 +79,24 @@ namespace Colonia09.Presentation
             game.Ui.ShowCoach(step);
             if (step == null && steps.Count > 0)
             {
-                SaveGame.Data.tutorials.Add(Current.Id);
+                if (!SaveGame.Data.tutorials.Contains(Current.Id)) SaveGame.Data.tutorials.Add(Current.Id);
                 SaveGame.Save();
                 steps.Clear();
             }
+        }
+
+        /// <summary>
+        /// While a step asks for something specific, only that can be built: the marked module on the
+        /// marked cell. Returns the reason to show the player when a tap is refused, or null.
+        /// </summary>
+        public string RefuseBuild(ModuleType type, int r, int c)
+        {
+            var step = Step;
+            if (step == null) return null;
+            if (step.Done == null) return "Lee la indicación y pulsa ENTENDIDO";
+            if (step.Card.HasValue && type != step.Card.Value) return $"Ahora toca: {GameData.Modules[step.Card.Value].Name}";
+            if (step.Cell.HasValue && (step.Cell.Value.x != r || step.Cell.Value.y != c)) return "Construye en la casilla marcada";
+            return null;
         }
 
         /// <summary>The coach's "Entendido" button.</summary>
@@ -127,9 +144,13 @@ namespace Colonia09.Presentation
         public int Finish(bool win)
         {
             var sector = Current;
-            LastStars = win ? CampaignData.Stars(game.Sim.Core, sector.Level.CoreMax) : 0;
+            // Stars count against the base the mission actually had, Fortification bonus included.
+            LastStars = win ? CampaignData.Stars(game.Sim.Core, game.Sim.Level.CoreMax) : 0;
             var progress = SaveGame.Sector(sector.Id);
             LastWasBest = LastStars > progress.stars;
+            ColonyData.MissionReward(LastStars, win && progress.wins == 0, out int materials, out int data);
+            LastMaterials = materials; LastData = data;
+            if (win) Colony.AddReward(materials, data);
             if (win) progress.wins++;
             progress.stars = Math.Max(progress.stars, LastStars);
             SaveGame.Save();
@@ -151,19 +172,22 @@ namespace Colonia09.Presentation
                 case "landing":
                     return new List<TutorialStep>
                     {
-                        new TutorialStep { Text = "Este es tu <b>Núcleo</b>. Guarda la energía con la que construyes y disparas. Si cae, pierdes.", Cell = new Vector2Int(cr, cc) },
-                        new TutorialStep { Text = "Toca el <b>Generador</b> en la barra de abajo.", Card = ModuleType.Generator, Done = d => d.Picked(ModuleType.Generator) },
-                        new TutorialStep { Text = "Ahora toca la casilla marcada, junto al Núcleo. El Generador lo recarga.", Cell = new Vector2Int(cr, cc - 1), Done = d => d.Built(ModuleType.Generator) },
-                        new TutorialStep { Text = "Elige el <b>Pulso</b>: es tu primera arma.", Card = ModuleType.Pulse, Done = d => d.Picked(ModuleType.Pulse) },
-                        new TutorialStep { Text = "Colócalo en la casilla marcada. Dispara hacia arriba, a lo largo de su columna.", Cell = new Vector2Int(cr - 1, cc), Done = d => d.Built(ModuleType.Pulse) },
-                        new TutorialStep { Text = "Los enemigos bajan desde la <b>zona roja</b>. Pon un Pulso en cada columna. ¡Llegan 3 oleadas!", Hold = true },
+                        new TutorialStep { Text = "Este es tu <b>Núcleo</b> (casilla marcada). Guarda la energía de la barra amarilla. Si lo destruyen, pierdes.", Cell = new Vector2Int(cr, cc) },
+                        new TutorialStep { Text = "Paso 1 de 4 · Toca la tarjeta <b>Generador</b> en la barra de abajo.", Card = ModuleType.Generator, Done = d => d.Picked(ModuleType.Generator) },
+                        new TutorialStep { Text = "Paso 1 de 4 · Ahora toca la <b>casilla marcada</b>, junto al Núcleo.", Card = ModuleType.Generator, Cell = new Vector2Int(cr, cc - 1), Done = d => d.Built(ModuleType.Generator) },
+                        new TutorialStep { Text = "El Generador recarga la batería. <b>Uno basta por ahora</b>: guarda la energía para tus armas." },
+                        new TutorialStep { Text = "Paso 2 de 4 · Toca la tarjeta <b>Pulso</b>: es tu arma.", Card = ModuleType.Pulse, Done = d => d.Picked(ModuleType.Pulse) },
+                        new TutorialStep { Text = "Paso 2 de 4 · Colócalo en la <b>casilla marcada</b>. Dispara hacia arriba, solo en su columna.", Card = ModuleType.Pulse, Cell = new Vector2Int(cr - 1, cc), Done = d => d.Built(ModuleType.Pulse) },
+                        new TutorialStep { Text = "Paso 3 de 4 · Cada columna necesita su Pulso. Pon otro en la <b>columna izquierda</b>.", Card = ModuleType.Pulse, Cell = new Vector2Int(cr - 1, cc - 1), Done = d => d.Built(ModuleType.Pulse, 2) },
+                        new TutorialStep { Text = "Paso 4 de 4 · Y uno más en la <b>columna derecha</b>.", Card = ModuleType.Pulse, Cell = new Vector2Int(cr - 1, cc + 1), Done = d => d.Built(ModuleType.Pulse, 3) },
+                        new TutorialStep { Text = "¡Defensa lista! Los enemigos bajan desde la <b>zona roja</b>. Resiste <b>2 oleadas</b>." },
                     };
                 case "camp":
                     return new List<TutorialStep>
                     {
                         new TutorialStep { Text = "El Núcleo solo conecta las defensas que tiene <b>al lado</b>. Este tablero es más ancho." },
-                        new TutorialStep { Text = "El <b>Relé</b> extiende la conexión dos casillas. Elígelo.", Card = ModuleType.Relay, Done = d => d.Picked(ModuleType.Relay) },
-                        new TutorialStep { Text = "Colócalo en la casilla marcada.", Cell = new Vector2Int(cr - 1, cc - 1), Done = d => d.Built(ModuleType.Relay) },
+                        new TutorialStep { Text = "El <b>Relé</b> extiende la conexión dos casillas. Toca su tarjeta.", Card = ModuleType.Relay, Done = d => d.Picked(ModuleType.Relay) },
+                        new TutorialStep { Text = "Colócalo en la <b>casilla marcada</b>.", Card = ModuleType.Relay, Cell = new Vector2Int(cr - 1, cc - 1), Done = d => d.Built(ModuleType.Relay) },
                         new TutorialStep { Text = "Ahora un <b>Pulso</b> en la columna del borde: el Relé lo conecta.", Card = ModuleType.Pulse, Cell = new Vector2Int(cr - 1, 0), Done = d => d.Built(ModuleType.Pulse) },
                         new TutorialStep { Text = "Ojo: los <b>Generadores</b> no se conectan con Relés. Ponlos siempre junto al Núcleo." },
                     };
@@ -172,7 +196,7 @@ namespace Colonia09.Presentation
                     {
                         new TutorialStep { Text = "Primero arma tu defensa: un <b>Generador</b> junto al Núcleo y al menos <b>dos Pulsos</b>.", Done = d => d.Built(ModuleType.Generator) && d.Built(ModuleType.Pulse, 2) },
                         new TutorialStep { Text = "Un segundo <b>Núcleo</b> amplía la batería y da otro punto de conexión. Elígelo.", Card = ModuleType.Reactor, Done = d => d.Picked(ModuleType.Reactor) },
-                        new TutorialStep { Text = "Colócalo en la casilla marcada, en la fila de la base.", Cell = new Vector2Int(cr, cc + 1), Done = d => d.Built(ModuleType.Reactor) },
+                        new TutorialStep { Text = "Colócalo en la <b>casilla marcada</b>, junto al primero.", Card = ModuleType.Reactor, Cell = new Vector2Int(cr, cc + 1), Done = d => d.Built(ModuleType.Reactor) },
                         new TutorialStep { Text = "La <b>Barrera</b> frena a los enemigos y no gasta energía. Ponla al frente.", Card = ModuleType.Wall, Cell = new Vector2Int(2, cc), Done = d => d.Built(ModuleType.Wall) },
                         new TutorialStep { Text = "Se acerca el <b>Blindado</b>: lento, resistente y dispara. Junta varios Pulsos en su camino." },
                     };

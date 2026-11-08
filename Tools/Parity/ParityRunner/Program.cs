@@ -83,7 +83,7 @@ static class Program
 
     static readonly Dictionary<string, string> TutorialBuilds = new Dictionary<string, string>
     {
-        { "landing", "generator 5 0 1; pulse 4 1 1" },
+        { "landing", "generator 5 0 1; pulse 4 1 1; pulse 4 0 1; pulse 4 2 1" },
         { "camp", "relay 5 1 1; pulse 5 0 1" },
         { "well", "generator 7 1 1; pulse 6 2 1; pulse 6 0 1; reactor 7 3 1; wall 2 2 1" },
     };
@@ -117,7 +117,9 @@ static class Program
                 }
                 bool won = s.Mode == GameMode.Won;
                 int stars = won ? CampaignData.Stars(s.Core, sector.Level.CoreMax) : 0;
-                bool ok = mustWin ? won : !won || stars < 3;
+                // With the guide followed, sector 1 is meant to be won by anyone.
+                bool guided = args.Contains("--tutorial") && sector.Number == 1;
+                bool ok = mustWin || guided ? won : !won || stars < 3;
                 if (!ok) problems++;
                 Console.WriteLine($"{(ok ? "OK  " : "BAD ")} {sector.Number} {sector.Id,-9} {label,-5} {(won ? "won" : "lost")} wave {s.Wave}/{s.MaxWave} core {s.Core:0.0}/{sector.Level.CoreMax} stars {stars} kills {s.TotalKills} time {tick / 60}s");
             }

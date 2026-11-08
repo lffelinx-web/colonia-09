@@ -192,7 +192,9 @@ namespace Colonia09.Presentation
             Check("tutorial points at the cell next to the core", game.Board.HighlightCell == new Vector2Int(5, 0));
             yield return RealTouch(game.Board.CellToScreen(5, 0));
             yield return Frames(2);
-            Check("tutorial advances when the player builds", sim.ModuleAt(5, 0)?.Type == ModuleType.Generator && game.Campaign.Step != null && game.Campaign.Step.Card == ModuleType.Pulse);
+            Check("tutorial advances when the player builds", sim.ModuleAt(5, 0)?.Type == ModuleType.Generator && game.Campaign.Step != null && game.Campaign.Step.Done == null);
+            yield return RealTouch(game.Board.CellToScreen(4, 0));
+            Check("tutorial refuses builds it did not ask for", sim.ModuleAt(4, 0) == null);
             Check("enemies wait during the tutorial", sim.Enemies.Count == 0);
             yield return Shot("13_tutorial");
             ui.MenuButton.onClick.Invoke();
@@ -300,6 +302,43 @@ namespace Colonia09.Presentation
             }
             yield return Shot($"{shot:00}_map_after");
             Check("progress is saved", SaveGame.Data.sectors.Count >= 3 && SaveGame.Data.seenEnemies.Contains("Armor") && SaveGame.Data.tutorials.Count == 3);
+
+            // Colony: rewards, building on a lot, production while away, and the mission bonus.
+            var save = SaveGame.Data;
+            report.Add($"Rewards after three sectors: {save.materials:0} materials, {save.data:0} data");
+            Check("winning sectors pays resources", save.materials >= 300 && save.data >= 50);
+            ui.SectorButton(1).onClick.Invoke();
+            yield return null;
+            Check("secured sector offers its colony", ui.ColonyButton.gameObject.activeSelf);
+            ui.ColonyButton.onClick.Invoke();
+            yield return null;
+            Check("colony shows the sector's lots", ui.ColonyOpen && ui.LotButtons.Count == ColonyData.LotsFor("landing"));
+            ui.LotButtons[0].onClick.Invoke();
+            yield return null;
+            Check("empty lot opens the building picker", ui.PickerOpen);
+            ui.PickerButtons[BuildingType.Extractor].onClick.Invoke();
+            yield return Frames(2);
+            Check("extractor is built on the lot", Colony.At("landing", 0)?.type == "Extractor" && !ui.PickerOpen);
+            ui.LotButtons[1].onClick.Invoke();
+            yield return null;
+            ui.PickerButtons[BuildingType.Fortification].onClick.Invoke();
+            yield return Frames(2);
+            yield return Shot($"{shot + 1:00}_colony");
+            double before = save.materials;
+            Colony.Now = () => DateTime.UtcNow.AddHours(3);
+            Colony.Collect(out var made, out _);
+            Colony.Now = () => DateTime.UtcNow.AddHours(30);
+            Colony.Collect(out var capped, out _);
+            Colony.Now = () => DateTime.UtcNow;
+            Check("buildings produce while away (12 per hour for 3 hours)", Math.Abs(made - 36) < .5 && Math.Abs(save.materials - before - made - capped) < .01);
+            Check("production while away stops at 8 hours", capped <= 12 * 8 + .5);
+            game.ShowCampaignMap();
+            yield return Frames(3);
+            yield return Shot($"{shot + 2:00}_map_colony");
+            game.StartSector(CampaignData.Sectors[0]);
+            yield return Frames(2);
+            Check("fortification adds base integrity in missions", sim.Level.CoreMax == CampaignData.Sectors[0].Level.CoreMax + 1);
+            game.ShowCampaignMap();
             SaveGame.ResetForTests();
         }
 

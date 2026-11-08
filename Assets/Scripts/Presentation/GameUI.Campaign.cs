@@ -58,6 +58,7 @@ namespace Colonia09.Presentation
 
             BuildMap();
             BuildBriefing();
+            BuildColony();
             BuildCoach();
             foreach (var pair in CardButtons)  // Gold frame that points at a card during the tutorial.
             {
@@ -106,7 +107,7 @@ namespace Colonia09.Presentation
 
             mapViewport = Rt("Viewport", safe);
             mapViewport.anchorMin = Vector2.zero; mapViewport.anchorMax = Vector2.one;
-            mapViewport.offsetMin = Vector2.zero; mapViewport.offsetMax = new Vector2(0, -116);
+            mapViewport.offsetMin = Vector2.zero; mapViewport.offsetMax = new Vector2(0, -200);
             mapViewport.gameObject.AddComponent<RectMask2D>();
             mapViewport.gameObject.AddComponent<Image>().color = new Color(0, 0, 0, 0);
             mapScroll = mapViewport.gameObject.AddComponent<ScrollRect>();
@@ -128,6 +129,7 @@ namespace Colonia09.Presentation
             map.raycastTarget = true;
 
             foreach (var sector in CampaignData.Sectors) mapNodes.Add(BuildNode(sector));
+            BuildResourceBar(safe);
             campaignMap.SetActive(false);
         }
 
@@ -137,6 +139,7 @@ namespace Colonia09.Presentation
             var rt = Rt("Sector" + sector.Number, mapContent);
             rt.anchorMin = rt.anchorMax = new Vector2(sector.MapX, sector.MapY);
             rt.sizeDelta = new Vector2(232, 232);
+            BuildNodeBuildings(rt, sector);
 
             node.Ring = Rt("Ring", rt).gameObject.AddComponent<Image>();
             node.Ring.sprite = ringSprite; node.Ring.color = Cyan; node.Ring.raycastTarget = false;
@@ -177,7 +180,11 @@ namespace Colonia09.Presentation
             campaignMap.SetActive(true);
             campaignMap.transform.SetAsLastSibling();
             briefing.SetActive(false);
+            colonySheet.SetActive(false);
+            pickerSheet.SetActive(false);
             RefreshMap();
+            RefreshNodeBuildings();
+            CollectOnArrival();
             // Scroll so the next sector to play is in view.
             Canvas.ForceUpdateCanvases();
             var next = System.Array.Find(CampaignData.Sectors, s => CampaignDirector.Unlocked(s) && !SaveGame.Completed(s.Id))
@@ -189,6 +196,7 @@ namespace Colonia09.Presentation
 
         public void HideCampaignMap()
         {
+            if (campaignMap.activeSelf) SaveGame.Save();
             campaignMap.SetActive(false);
             briefing.SetActive(false);
         }
@@ -265,13 +273,8 @@ namespace Colonia09.Presentation
             }
 
             BriefStartButton = TextButton(sheet, "DEFENDER SECTOR", 38, Cyan, Bg, () => { if (briefed != null) game.StartSector(briefed); });
-            var startRt = (RectTransform)BriefStartButton.transform;
-            startRt.anchorMin = new Vector2(.04f, .04f); startRt.anchorMax = new Vector2(.64f, .16f);
-            startRt.offsetMin = startRt.offsetMax = Vector2.zero;
+            ColonyButton = TextButton(sheet, "COLONIA", 34, Gold, Bg, () => { if (briefed != null) OpenColony(briefed); });
             BriefCloseButton = TextButton(sheet, "CERRAR", 32, PanelLight, Txt, () => { game.Audio.Play("select", true); briefing.SetActive(false); });
-            var closeRt = (RectTransform)BriefCloseButton.transform;
-            closeRt.anchorMin = new Vector2(.67f, .04f); closeRt.anchorMax = new Vector2(.96f, .16f);
-            closeRt.offsetMin = closeRt.offsetMax = Vector2.zero;
             briefing.SetActive(false);
         }
 
@@ -297,9 +300,23 @@ namespace Colonia09.Presentation
             foreach (var e in sector.NewEnemies) NewItem(game.Board.EnemySprite(e), CampaignData.Enemies[e].Name);
             int stars = SaveGame.Stars(sector.Id);
             for (int i = 0; i < 3; i++) briefStars[i].color = i < stars ? StarOn : StarOff;
+            // Secured sectors also open their colony lots.
+            bool secured = SaveGame.Completed(sector.Id);
+            ColonyButton.gameObject.SetActive(secured);
+            Span(BriefStartButton, .04f, secured ? .46f : .64f);
+            if (secured) Span(ColonyButton, .48f, .76f);
+            Span(BriefCloseButton, secured ? .78f : .67f, .96f);
+            BriefCloseButton.GetComponentInChildren<Text>().text = secured ? "×" : "CERRAR";
             BriefStartButton.interactable = unlocked;
             BriefStartButton.GetComponentInChildren<Text>().text = !sector.Playable ? "PRÓXIMAMENTE" : !unlocked ? "COMPLETA EL ANTERIOR" : stars > 0 ? "JUGAR DE NUEVO" : "DEFENDER SECTOR";
             briefing.SetActive(true);
+        }
+
+        static void Span(Button button, float from, float to)
+        {
+            var rt = (RectTransform)button.transform;
+            rt.anchorMin = new Vector2(from, .04f); rt.anchorMax = new Vector2(to, .16f);
+            rt.offsetMin = rt.offsetMax = Vector2.zero;
         }
 
         void NewItem(Sprite sprite, string caption)
@@ -360,9 +377,13 @@ namespace Colonia09.Presentation
 
         void RefreshCampaign()
         {
+            RefreshResources();
             foreach (var pair in cardHighlights)
             {
                 bool on = coachStep != null && coachStep.Card == pair.Key && coach.activeSelf;
+                // While the guide asks for one card, the others fade back.
+                if (coachStep != null && coach.activeSelf && (coachStep.Card.HasValue || coachStep.Done == null) && !on)
+                    cardGroup[pair.Key].alpha = .3f;
                 if (pair.Value.gameObject.activeSelf != on) pair.Value.gameObject.SetActive(on);
                 if (on) pair.Value.color = new Color(Gold.r, Gold.g, Gold.b, .55f + .45f * Mathf.PingPong(Time.unscaledTime * 2, 1));
             }
@@ -451,7 +472,8 @@ namespace Colonia09.Presentation
                     for (int i = 0; i < 3; i++) modalStars[i].color = i < campaign.LastStars ? StarOn : StarOff;
                     modalInfo.alignment = TextAnchor.UpperCenter;
                     modalInfo.text = $"Enemigos detenidos: <b>{sim.TotalKills}</b>\nIntegridad de la base: <b>{Mathf.CeilToInt((float)sim.Core)}/{sim.Level.CoreMax}</b>"
-                        + (win ? "\n\n<color=#99b5c7>3 estrellas: termina con más del 80 % de la base.</color>" : "");
+                        + (win ? $"\n\n<color=#ffd38b><b>Recompensa: +{campaign.LastMaterials} materiales · +{campaign.LastData} datos</b></color>" : "")
+                        + (win ? "\n<color=#99b5c7>3 estrellas: termina con más del 80 % de la base.</color>" : "");
                     if (win) AnchorV(modalInfo.rectTransform, .2f, .54f);
                     primaryLabel.text = win ? "CONTINUAR" : "REINTENTAR";
                     secondaryLabel.text = win ? "REPETIR SECTOR" : "VOLVER AL MAPA";

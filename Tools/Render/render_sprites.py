@@ -1103,6 +1103,149 @@ def build_tank_wrapper():
     build_tank()
 
 
+# ---- Colony buildings and resources (campaign) ----------------------------------------
+
+def colony_base(radius=.46):
+    deck = material("ColonyDeck", "#3a4850", .85, .48, .5)
+    rim = material("ColonyRim", "#26323a", .8, .55, .4)
+    prism(regular(8, radius, math.pi / 8), .03, .06, deck, .02)
+    prism(regular(8, radius * .9, math.pi / 8), .065, .01, rim, .004)
+
+
+def build_icon_extractor():
+    """Drilling rig over a borehole, with an ore hopper."""
+    setup(1.0)
+    colony_base()
+    steel = material("Steel", "#c7d2d7", 1, .28, .25)
+    rust = material("Rust", "#a85a34", .5, .55, .5)
+    dark = material("Dark", "#151c21", .8, .5, .3)
+    hot = glowing("Hot", "#ffa040", 2.6)
+    ore = material("Ore", "#7a6a5a", .2, .85, .3)
+    cyl((0, .02, .08), .17, .03, dark, bevel=.008)
+    cyl((0, .02, .1), .1, .02, hot, bevel=.004)
+    corners = [(-.17, -.15), (.17, -.15), (.17, .19), (-.17, .19)]
+    for x, y in corners:  # Derrick legs leaning in to the crown.
+        strut((x, y), (x * .35, .02 + (y - .02) * .35), .22, .035, rust)
+    for (x0, y0), (x1, y1) in zip(corners, corners[1:] + corners[:1]):
+        strut((x0, y0), (x1, y1), .16, .028, steel)
+    box((0, .02, .34), (.14, .14, .05), dark, bevel=.015)
+    cyl((0, .02, .37), .035, .02, hot, bevel=.004)
+    box((.3, -.25, .1), (.22, .18, .1), steel, bevel=.02)
+    for i in range(5):
+        ball((.26 + (i % 3) * .05, -.27 + (i // 3) * .06, .17), .03, ore)
+
+
+def build_icon_laboratory():
+    """Research dome with a glowing analysis ring and a sensor dish."""
+    setup(1.0)
+    colony_base()
+    white = material("White", "#dde5e8", .3, .3, .35)
+    steel = material("Steel", "#c7d2d7", 1, .28, .25)
+    glow = glowing("Glow", "#5ee8ff", 2.6)
+    dark = material("Dark", "#151c21", .8, .5, .3)
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=48, ring_count=24, radius=.3, location=(-.04, -.03, .06))
+    dome = bpy.context.active_object
+    dome.scale = (1, 1, .75)
+    finish(dome, white, 0, smooth=True)
+    torus((-.04, -.03, .1), .3, .025, glow)
+    for i in range(6):
+        a = i * math.tau / 6
+        box((-.04 + math.cos(a) * .2, -.03 + math.sin(a) * .2, .25), (.08, .03, .01), glow, bevel=.003, rot=a)
+    cyl((.3, .3, .15), .02, .22, steel, bevel=.004)
+    cyl((.3, .3, .28), .11, .02, steel, bevel=.008)
+    cyl((.3, .3, .3), .03, .03, dark, bevel=.006)
+    ball((.3, .3, .33), .02, glow)
+
+
+def build_icon_refinery():
+    """Fuel tanks, a cracking column and a flare stack."""
+    setup(1.0)
+    colony_base()
+    white = material("White", "#d4dcde", .4, .35, .4)
+    steel = material("Steel", "#c7d2d7", 1, .28, .25)
+    rust = material("Rust", "#8a4b2f", .5, .6, .6)
+    flame = glowing("Flame", "#ff8a2a", 2.8)
+    for x, y in ((-.2, .15), (-.2, -.17)):
+        cyl((x, y, .14), .15, .2, white, bevel=.03)
+        torus((x, y, .24), .12, .015, steel)
+        cyl((x, y, .25), .04, .02, rust, bevel=.006)
+    cyl((.15, .05, .22), .08, .36, steel, bevel=.015)
+    for z in (.1, .2, .3):
+        torus((.15, .05, z), .085, .012, rust)
+    strut((-.05, .15), (.08, .07), .2, .035, rust)
+    strut((-.05, -.17), (.08, .02), .2, .035, rust)
+    cyl((.32, -.25, .2), .025, .32, steel, bevel=.005)
+    ball((.32, -.25, .38), .05, flame)
+
+
+def build_icon_fortification():
+    """Armored bunker ring with crenels around a central gun turret."""
+    setup(1.0)
+    concrete = material("Concrete", "#6c7378", .3, .7, .6)
+    plate = material("Plate", "#4f5b62", .85, .45, .5)
+    dark = material("Dark", "#151c21", .8, .5, .3)
+    steel = material("Steel", "#d0d8dc", 1, .28, .2)
+    red = glowing("Red", "#ff6a52", 2.4)
+    prism(regular(6, .47, math.pi / 6), .08, .16, concrete, .03)
+    prism(regular(6, .33, math.pi / 6), .12, .16, dark, .02)
+    for i in range(6):
+        a = i * math.tau / 6
+        box((math.cos(a) * .42, math.sin(a) * .42, .2), (.12, .16, .08), plate, bevel=.02, rot=a)
+    cyl((0, 0, .18), .17, .1, plate, bevel=.02)
+    along_y((0, .2, .24), .03, .26, steel, bevel=.005)
+    cyl((0, 0, .245), .05, .02, red, bevel=.005)
+
+
+def build_icon_housing():
+    """Three habitat modules joined by corridors, with warm windows."""
+    setup(1.0)
+    colony_base()
+    white = material("White", "#dfe6e8", .3, .35, .35)
+    teal = material("Teal", "#2f6a72", .6, .48, .5)
+    warm = glowing("Warm", "#ffc77a", 2.2)
+    spots = [(-.2, .16), (.2, .16), (0, -.2)]
+    for (x0, y0), (x1, y1) in zip(spots, spots[1:] + spots[:1]):
+        strut((x0, y0), (x1, y1), .1, .07, teal)
+    for x, y in spots:
+        cyl((x, y, .14), .16, .16, white, bevel=.05)
+        cyl((x, y, .225), .09, .02, teal, bevel=.006)
+        for i in range(4):
+            a = i * math.tau / 4 + .4
+            box((x + math.cos(a) * .155, y + math.sin(a) * .155, .15), (.02, .05, .04), warm, bevel=.004, rot=a)
+
+
+def build_icon_materials():
+    """A stack of refined metal ingots."""
+    setup(1.0)
+    steel = material("Steel", "#c3ccd1", 1, .25, .3)
+    copper = material("Copper", "#d98a4e", 1, .3, .3)
+    for x, y, z, mat in ((-.14, -.12, .07, steel), (.16, -.12, .07, copper), (0, .14, .07, steel), (.02, -.01, .2, copper)):
+        bpy.ops.mesh.primitive_cube_add(size=1, location=(x, y, z))
+        ingot = bpy.context.active_object
+        ingot.scale = (.36, .2, .12)
+        bpy.ops.object.transform_apply(scale=True)
+        taper = ingot.modifiers.new("Taper", "SIMPLE_DEFORM")
+        taper.deform_method = "TAPER"
+        taper.factor = -.35
+        taper.deform_axis = "Z"
+        finish(ingot, mat, .02)
+
+
+def build_icon_data():
+    """A data chip with gold pins and a glowing core."""
+    setup(1.0)
+    board = material("Board", "#1d2b36", .5, .4, .3)
+    gold = material("Gold", "#f2c46e", 1, .25, .2)
+    glow = glowing("Glow", "#5ee8ff", 2.8)
+    box((0, 0, .05), (.56, .56, .06), board, bevel=.04)
+    for i in range(5):
+        for side in (-1, 1):
+            box((side * .34, -.2 + i * .1, .04), (.1, .04, .02), gold, bevel=.005)
+            box((-.2 + i * .1, side * .34, .04), (.04, .1, .02), gold, bevel=.005)
+    box((0, 0, .09), (.3, .3, .03), gold, bevel=.01)
+    box((0, 0, .11), (.2, .2, .02), glow, bevel=.006)
+
+
 BUILDERS = {
     "generator": lambda: build_generator(20 + PHASE * 60), "reactor": build_reactor, "relay": build_relay, "pulse": build_pulse,
     "cryo": build_cryo, "tesla": build_tesla, "wall": build_wall, "repair": build_repair,
@@ -1111,9 +1254,13 @@ BUILDERS = {
     "commander": build_commander, "tank": build_tank_wrapper, "helicopter": build_helicopter, "bomber": build_bomber,
     "icon_energy": build_icon_energy, "icon_base": build_icon_base, "icon_wave": build_icon_wave,
     "icon_upgrade": build_icon_upgrade, "icon_recycle": build_icon_recycle,
+    "icon_extractor": build_icon_extractor, "icon_laboratory": build_icon_laboratory, "icon_refinery": build_icon_refinery,
+    "icon_fortification": build_icon_fortification, "icon_housing": build_icon_housing,
+    "icon_materials": build_icon_materials, "icon_data": build_icon_data,
 }
 ONLY = sys.argv[sys.argv.index("--") + 2:]
-MODULES = ("generator", "reactor", "relay", "pulse", "cryo", "tesla", "wall", "repair", "icon_energy", "icon_base", "icon_wave", "icon_upgrade", "icon_recycle")
+MODULES = ("generator", "reactor", "relay", "pulse", "cryo", "tesla", "wall", "repair", "icon_energy", "icon_base", "icon_wave", "icon_upgrade", "icon_recycle",
+           "icon_extractor", "icon_laboratory", "icon_refinery", "icon_fortification", "icon_housing", "icon_materials", "icon_data")
 # Size on the board, in cells. Everything reads at about the same size; a few are slightly larger.
 ENEMY_SIZE = {"commander": 1.2, "tank": 1.1, "bomber": 1.1, "armor": 1.05, "helicopter": 1.05}
 FRAMES = {"helicopter": 1}
