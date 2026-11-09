@@ -1,0 +1,2633 @@
+fileFormatVersion: 2
+guid: 7711bbf95f34e7644a29eab7283d21dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5991907134084219484
+    second: lm_workshop_night_0
+  - first:
+      213: -4005049584953908266
+    second: lm_workshop_night_1
+  - first:
+      213: 1539727397896026699
+    second: lm_workshop_night_2
+  - first:
+      213: 3645515168091661903
+    second: lm_workshop_night_3
+  - first:
+      213: 2780431221093124105
+    second: lm_workshop_night_4
+  - first:
+      213: -722852153920414671
+    second: lm_workshop_night_5
+  - first:
+      213: 5557636049830226488
+    second: lm_workshop_night_6
+  - first:
+      213: -4999355396485443465
+    second: lm_workshop_night_7
+  - first:
+      213: 4364367684102943089
+    second: lm_workshop_night_8
+  - first:
+      213: -8621480875577430547
+    second: lm_workshop_night_9
+  - first:
+      213: -9041903629593931841
+    second: lm_workshop_night_10
+  - first:
+      213: 416997280471831214
+    second: lm_workshop_night_11
+  - first:
+      213: -2495936569716350948
+    second: lm_workshop_night_12
+  - first:
+      213: -6439377367043574990
+    second: lm_workshop_night_13
+  - first:
+      213: -7215749601278633619
+    second: lm_workshop_night_14
+  - first:
+      213: -7442774458973426423
+    second: lm_workshop_night_15
+  - first:
+      213: 8955066992627959634
+    second: lm_workshop_night_16
+  - first:
+      213: 1046420480457853528
+    second: lm_workshop_night_17
+  - first:
+      213: 3647022235930962025
+    second: lm_workshop_night_18
+  - first:
+      213: 2509828895386860812
+    second: lm_workshop_night_19
+  - first:
+      213: -7361946613485115001
+    second: lm_workshop_night_20
+  - first:
+      213: -6918752816466294979
+    second: lm_workshop_night_21
+  - first:
+      213: -3459523590078097463
+    second: lm_workshop_night_22
+  - first:
+      213: 9129132299747193680
+    second: lm_workshop_night_23
+  - first:
+      213: -240048477035745512
+    second: lm_workshop_night_24
+  - first:
+      213: 4530811425342262325
+    second: lm_workshop_night_25
+  - first:
+      213: -2584305641927094740
+    second: lm_workshop_night_26
+  - first:
+      213: -5063762725969830190
+    second: lm_workshop_night_27
+  - first:
+      213: 7902093280966641562
+    second: lm_workshop_night_28
+  - first:
+      213: 5973296471106899159
+    second: lm_workshop_night_29
+  - first:
+      213: -779461481503052912
+    second: lm_workshop_night_30
+  - first:
+      213: 1320813544938206028
+    second: lm_workshop_night_31
+  - first:
+      213: 6279291495194999767
+    second: lm_workshop_night_32
+  - first:
+      213: 4089488737377027043
+    second: lm_workshop_night_33
+  - first:
+      213: 3556369063471659995
+    second: lm_workshop_night_34
+  - first:
+      213: -1848948296156119210
+    second: lm_workshop_night_35
+  - first:
+      213: 985204745480244949
+    second: lm_workshop_night_36
+  - first:
+      213: -98624166325911466
+    second: lm_workshop_night_37
+  - first:
+      213: 543859322086311782
+    second: lm_workshop_night_38
+  - first:
+      213: -5544543578545344951
+    second: lm_workshop_night_39
+  - first:
+      213: -4347065239455698911
+    second: lm_workshop_night_40
+  - first:
+      213: -6895560808180300909
+    second: lm_workshop_night_41
+  - first:
+      213: 5012979615969126519
+    second: lm_workshop_night_42
+  - first:
+      213: 2631470056100036391
+    second: lm_workshop_night_43
+  - first:
+      213: -6795592675054300635
+    second: lm_workshop_night_44
+  - first:
+      213: -8959371587128714831
+    second: lm_workshop_night_45
+  - first:
+      213: 1151574809730621972
+    second: lm_workshop_night_46
+  - first:
+      213: -7323025250610615183
+    second: lm_workshop_night_47
+  - first:
+      213: -8905264220795228293
+    second: lm_workshop_night_48
+  - first:
+      213: -1497465719426652375
+    second: lm_workshop_night_49
+  - first:
+      213: 4254053562923219974
+    second: lm_workshop_night_50
+  - first:
+      213: 6726959647722876734
+    second: lm_workshop_night_51
+  - first:
+      213: 3399284811262313457
+    second: lm_workshop_night_52
+  - first:
+      213: 8052816491439711173
+    second: lm_workshop_night_53
+  - first:
+      213: -8243842252190367425
+    second: lm_workshop_night_54
+  - first:
+      213: 4234706357052859033
+    second: lm_workshop_night_55
+  - first:
+      213: -6809967047662225644
+    second: lm_workshop_night_56
+  - first:
+      213: 9183748845805683141
+    second: lm_workshop_night_57
+  - first:
+      213: 720590080918059057
+    second: lm_workshop_night_58
+  - first:
+      213: -5191483588307215983
+    second: lm_workshop_night_59
+  - first:
+      213: -5823966497500467429
+    second: lm_workshop_night_60
+  - first:
+      213: 3150254148642467179
+    second: lm_workshop_night_61
+  - first:
+      213: -7864191297528697290
+    second: lm_workshop_night_62
+  - first:
+      213: 3259242115637036492
+    second: lm_workshop_night_63
+  - first:
+      213: 8268056579747530309
+    second: lm_workshop_night_64
+  - first:
+      213: 6359855142172983990
+    second: lm_workshop_night_65
+  - first:
+      213: 5960752652468920613
+    second: lm_workshop_night_66
+  - first:
+      213: -7709890108771753492
+    second: lm_workshop_night_67
+  - first:
+      213: -213998353582959785
+    second: lm_workshop_night_68
+  - first:
+      213: -4738791078235367304
+    second: lm_workshop_night_69
+  - first:
+      213: -7721422384376990444
+    second: lm_workshop_night_70
+  - first:
+      213: -837811098596981757
+    second: lm_workshop_night_71
+  - first:
+      213: -5710882156102370499
+    second: lm_workshop_night_72
+  - first:
+      213: -913309464901615929
+    second: lm_workshop_night_73
+  - first:
+      213: 7244626216020195013
+    second: lm_workshop_night_74
+  - first:
+      213: 3357833822441053487
+    second: lm_workshop_night_75
+  - first:
+      213: 8886823168443464969
+    second: lm_workshop_night_76
+  - first:
+      213: -6013537748152140054
+    second: lm_workshop_night_77
+  - first:
+      213: 383794121173719103
+    second: lm_workshop_night_78
+  - first:
+      213: -6404476822202854830
+    second: lm_workshop_night_79
+  - first:
+      213: 8773320125533907863
+    second: lm_workshop_night_80
+  - first:
+      213: -7347382852664071260
+    second: lm_workshop_night_81
+  - first:
+      213: 1889922944059350180
+    second: lm_workshop_night_82
+  - first:
+      213: 2773993720658834303
+    second: lm_workshop_night_83
+  - first:
+      213: 8687621584868041084
+    second: lm_workshop_night_84
+  - first:
+      213: 1243761079612774389
+    second: lm_workshop_night_85
+  - first:
+      213: -7170904884897900112
+    second: lm_workshop_night_86
+  - first:
+      213: 5538449435079436082
+    second: lm_workshop_night_87
+  - first:
+      213: 8991009488419320350
+    second: lm_workshop_night_88
+  - first:
+      213: 926743570778878722
+    second: lm_workshop_night_89
+  - first:
+      213: 7256690645990957758
+    second: lm_workshop_night_90
+  - first:
+      213: 4961498958119748244
+    second: lm_workshop_night_91
+  - first:
+      213: 9212929915740443877
+    second: lm_workshop_night_92
+  - first:
+      213: -2606891844256906700
+    second: lm_workshop_night_93
+  - first:
+      213: 6292505427932044761
+    second: lm_workshop_night_94
+  - first:
+      213: 1831923894133746371
+    second: lm_workshop_night_95
+  - first:
+      213: 2506968081681601902
+    second: lm_workshop_night_96
+  - first:
+      213: 2869818225094959848
+    second: lm_workshop_night_97
+  - first:
+      213: -6489950651732492025
+    second: lm_workshop_night_98
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 192
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lm_workshop_night_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 691
+        width: 11
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52083ebac7872350800000000000000
+      internalID: 5991907134084219484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_1
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 760
+        width: 46
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d32ff44f943b68c0800000000000000
+      internalID: -4005049584953908266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_2
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 575
+        width: 69
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a778a19e53e5510800000000000000
+      internalID: 1539727397896026699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_3
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 674
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46e6690bb8779230800000000000000
+      internalID: 3645515168091661903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_4
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 574
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90849a7d673169620800000000000000
+      internalID: 2780431221093124105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_5
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 644
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c927cbbc9e7f5f0800000000000000
+      internalID: -722852153920414671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_6
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 658
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a290daa80b02d40800000000000000
+      internalID: 5557636049830226488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 652
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7709d8e21c8be9ab0800000000000000
+      internalID: -4999355396485443465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_8
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 636
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17176280949519c30800000000000000
+      internalID: 4364367684102943089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 487
+        width: 9
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded226d72d85a5880800000000000000
+      internalID: -8621480875577430547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_10
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 606
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf0db01e84b48280800000000000000
+      internalID: -9041903629593931841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_11
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 574
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2d3d631d879c500800000000000000
+      internalID: 416997280471831214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_12
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 610
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c106624f9e6ac5dd0800000000000000
+      internalID: -2495936569716350948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 614
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2337da6e66cb2a6a0800000000000000
+      internalID: -6439377367043574990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_14
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 622
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69de93e7f18cdb90800000000000000
+      internalID: -7215749601278633619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_15
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 624
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90de9852014f5b890800000000000000
+      internalID: -7442774458973426423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_16
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 629
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2574a6bdbf9c64c70800000000000000
+      internalID: 8955066992627959634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_17
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 614
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a426ff1e1a58e00800000000000000
+      internalID: 1046420480457853528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_18
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 634
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968ad9c9663dc9230800000000000000
+      internalID: 3647022235930962025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_19
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 574
+        width: 82
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d7b8c2514b4d220800000000000000
+      internalID: 2509828895386860812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_20
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 620
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78964df6f8c15d990800000000000000
+      internalID: -7361946613485115001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_21
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 629
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d370bc578f6abff90800000000000000
+      internalID: -6918752816466294979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_22
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 620
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c79f49cf9d4dffc0800000000000000
+      internalID: -3459523590078097463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_23
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 614
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053f9f9557131be70800000000000000
+      internalID: 9129132299747193680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_24
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 620
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f29659e2d2bacf0800000000000000
+      internalID: -240048477035745512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_25
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 612
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c8ecf6cfca0ee30800000000000000
+      internalID: 4530811425342262325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_26
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 587
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ec5edf5b3b22cd0800000000000000
+      internalID: -2584305641927094740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_27
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 607
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de54b331a6e9b9b0800000000000000
+      internalID: -5063762725969830190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_28
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 582
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a978402d8ffd9ad60800000000000000
+      internalID: 7902093280966641562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_29
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 600
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dccb6a1e7965e250800000000000000
+      internalID: 5973296471106899159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_30
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 574
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b29ee89ebce25f0800000000000000
+      internalID: -779461481503052912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_31
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 605
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43f090dbe8745210800000000000000
+      internalID: 1320813544938206028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_32
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 601
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbba348856842750800000000000000
+      internalID: 6279291495194999767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_33
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 597
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e38150f658c0c830800000000000000
+      internalID: 4089488737377027043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_34
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 588
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbba6e12d2ca5130800000000000000
+      internalID: 3556369063471659995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_35
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 593
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ffc8f12573756e0800000000000000
+      internalID: -1848948296156119210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_36
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 597
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de01650f762cad00800000000000000
+      internalID: 985204745480244949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_37
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 574
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65000efd7dd91aef0800000000000000
+      internalID: -98624166325911466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_38
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 592
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6674db40c2d2c8700800000000000000
+      internalID: 543859322086311782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_39
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 576
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ea127ddf2dd03b0800000000000000
+      internalID: -5544543578545344951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_40
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 584
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1207bca423f1ca3c0800000000000000
+      internalID: -4347065239455698911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_41
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 585
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393ce4daafb0e40a0800000000000000
+      internalID: -6895560808180300909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_42
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 590
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7782d1c966ea19540800000000000000
+      internalID: 5012979615969126519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_43
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 585
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72f7beae21cd48420800000000000000
+      internalID: 2631470056100036391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_44
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 580
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5225425777431b1a0800000000000000
+      internalID: -6795592675054300635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_45
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 575
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b91772a20be9a380800000000000000
+      internalID: -8959371587128714831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_46
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 567
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412284a20373bff00800000000000000
+      internalID: 1151574809730621972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_47
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 574
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c632865536f5a90800000000000000
+      internalID: -7323025250610615183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_48
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 574
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f21809f552a6480800000000000000
+      internalID: -8905264220795228293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_49
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 579
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927ef32bcdee73be0800000000000000
+      internalID: -1497465719426652375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_50
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 578
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60cf5813d2f690b30800000000000000
+      internalID: 4254053562923219974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_51
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 578
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3fa8ec9826fa5d50800000000000000
+      internalID: 6726959647722876734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_52
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 577
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3cba1968fac2f20800000000000000
+      internalID: 3399284811262313457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_53
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 583
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3ebadeee951cf60800000000000000
+      internalID: 8052816491439711173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_54
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 574
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3146dd362df79d80800000000000000
+      internalID: -8243842252190367425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_55
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 580
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992693ccef2b4ca30800000000000000
+      internalID: 4234706357052859033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_56
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 577
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4173af70d032e71a0800000000000000
+      internalID: -6809967047662225644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_57
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 577
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1c6aceaea337f70800000000000000
+      internalID: 9183748845805683141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 768
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1387ac95cdc000a00800000000000000
+      internalID: 720590080918059057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_59
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 567
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1999dad9e2524f7b0800000000000000
+      internalID: -5191483588307215983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_60
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 569
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f65b4c35d1d2fa0800000000000000
+      internalID: -5823966497500467429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_61
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 570
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6de80a1573f7bb20800000000000000
+      internalID: 3150254148642467179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_62
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 563
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e65116ea7ccd290800000000000000
+      internalID: -7864191297528697290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_63
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 575
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5c98b9f672b3d20800000000000000
+      internalID: 3259242115637036492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_64
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 568
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546ceaa37a90eb270800000000000000
+      internalID: 8268056579747530309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_65
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 574
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2892c4e8eb24850800000000000000
+      internalID: 6359855142172983990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_66
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 574
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521a06cb4f8d8b250800000000000000
+      internalID: 5960752652468920613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_67
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 568
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1ac597bc7f00590800000000000000
+      internalID: -7709890108771753492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_68
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 566
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7535b2891a9b70df0800000000000000
+      internalID: -213998353582959785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_69
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 574
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8789dfc1f9e6c3eb0800000000000000
+      internalID: -4738791078235367304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_70
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 570
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 415b572504ff7d490800000000000000
+      internalID: -7721422384376990444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_71
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 560
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3044f37ae3f7f54f0800000000000000
+      internalID: -837811098596981757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_72
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 562
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3bb663cfeedeb0b0800000000000000
+      internalID: -5710882156102370499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_73
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 564
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce798e61e54353f0800000000000000
+      internalID: -913309464901615929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_74
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 566
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6bd58e8251a8460800000000000000
+      internalID: 7244626216020195013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_75
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 565
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d1469221c699e20800000000000000
+      internalID: 3357833822441053487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_76
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 559
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90db8c85696545b70800000000000000
+      internalID: 8886823168443464969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_77
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 565
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee3df5774f9b8ca0800000000000000
+      internalID: -6013537748152140054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_78
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 568
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38517348b2835500800000000000000
+      internalID: 383794121173719103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_79
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 566
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2525068334abe17a0800000000000000
+      internalID: -6404476822202854830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 314
+        width: 6
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79beb3fcb2811c970800000000000000
+      internalID: 8773320125533907863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 251
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab692e393ad80a90800000000000000
+      internalID: -7347382852664071260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_82
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 144
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac948587ea5a3a10800000000000000
+      internalID: 1889922944059350180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 222
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73b80977943f7620800000000000000
+      internalID: 2773993720658834303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_84
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 111
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71631d6dc1a09870800000000000000
+      internalID: 8687621584868041084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_85
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 103
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f796c7bc1ab24110800000000000000
+      internalID: 1243761079612774389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_86
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 110
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b91c811004db7c90800000000000000
+      internalID: -7170904884897900112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_87
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 99
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2376f50da668cdc40800000000000000
+      internalID: 5538449435079436082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_88
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 89
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1276694e7b76cc70800000000000000
+      internalID: 8991009488419320350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_89
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 78
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203f6261e547cdc00800000000000000
+      internalID: 926743570778878722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_90
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 64
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2e037e1b1f4b460800000000000000
+      internalID: 7256690645990957758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_91
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 43
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492c238e309cad440800000000000000
+      internalID: 4961498958119748244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_92
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 48
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4574832f6eadf70800000000000000
+      internalID: 9212929915740443877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_93
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 33
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4324437fda572dbd0800000000000000
+      internalID: -2606891844256906700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_94
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 38
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd5b1bf858735750800000000000000
+      internalID: 6292505427932044761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_95
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca6465631d4c6910800000000000000
+      internalID: 1831923894133746371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_96
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 27
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65dfd3103a8ac220800000000000000
+      internalID: 2506968081681601902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_97
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 19
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e22ab48874a3d720800000000000000
+      internalID: 2869818225094959848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_workshop_night_98
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 2
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7018ba974401fe5a0800000000000000
+      internalID: -6489950651732492025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

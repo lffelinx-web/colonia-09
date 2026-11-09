@@ -1,0 +1,1408 @@
+fileFormatVersion: 2
+guid: 20aa0557d68938041afe1d0e58c92f44
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 410126493361080107
+    second: lm_camp_night_0
+  - first:
+      213: -8780228118278654439
+    second: lm_camp_night_1
+  - first:
+      213: 4377458730471195471
+    second: lm_camp_night_2
+  - first:
+      213: -7101013339866826278
+    second: lm_camp_night_3
+  - first:
+      213: 1225764249023529808
+    second: lm_camp_night_4
+  - first:
+      213: 736389999723643025
+    second: lm_camp_night_5
+  - first:
+      213: -2319101587499161630
+    second: lm_camp_night_6
+  - first:
+      213: 54378835630811357
+    second: lm_camp_night_7
+  - first:
+      213: 820237359425027464
+    second: lm_camp_night_8
+  - first:
+      213: 8163992342499469805
+    second: lm_camp_night_9
+  - first:
+      213: -3516211719973070223
+    second: lm_camp_night_10
+  - first:
+      213: 8810150801549930052
+    second: lm_camp_night_11
+  - first:
+      213: -3446316362306697992
+    second: lm_camp_night_12
+  - first:
+      213: 6698432906852690575
+    second: lm_camp_night_13
+  - first:
+      213: 1331085029942333263
+    second: lm_camp_night_14
+  - first:
+      213: 6775793957097026463
+    second: lm_camp_night_15
+  - first:
+      213: 4669490922980355715
+    second: lm_camp_night_16
+  - first:
+      213: -8801282482725356775
+    second: lm_camp_night_17
+  - first:
+      213: -2070180969050890965
+    second: lm_camp_night_18
+  - first:
+      213: -5554908701666518836
+    second: lm_camp_night_19
+  - first:
+      213: -543518675866445870
+    second: lm_camp_night_20
+  - first:
+      213: 1259809270053758679
+    second: lm_camp_night_21
+  - first:
+      213: 3163853912739236837
+    second: lm_camp_night_22
+  - first:
+      213: -3060472529357902631
+    second: lm_camp_night_23
+  - first:
+      213: -2560936712313866444
+    second: lm_camp_night_24
+  - first:
+      213: 6789453312702068815
+    second: lm_camp_night_25
+  - first:
+      213: -3538714599943303512
+    second: lm_camp_night_26
+  - first:
+      213: -446880396335500792
+    second: lm_camp_night_27
+  - first:
+      213: -7565112567725901524
+    second: lm_camp_night_28
+  - first:
+      213: 8463188297215079307
+    second: lm_camp_night_29
+  - first:
+      213: 7163509682067453038
+    second: lm_camp_night_30
+  - first:
+      213: 6850476724607341434
+    second: lm_camp_night_31
+  - first:
+      213: 5648282474430253728
+    second: lm_camp_night_32
+  - first:
+      213: -4531758843511124820
+    second: lm_camp_night_33
+  - first:
+      213: -3216207362000465043
+    second: lm_camp_night_34
+  - first:
+      213: -9054912473129824112
+    second: lm_camp_night_35
+  - first:
+      213: 8888001839146279547
+    second: lm_camp_night_36
+  - first:
+      213: 2098191342118586641
+    second: lm_camp_night_37
+  - first:
+      213: 4151895826271588179
+    second: lm_camp_night_38
+  - first:
+      213: 7451262060508981508
+    second: lm_camp_night_39
+  - first:
+      213: 2985653526424769796
+    second: lm_camp_night_40
+  - first:
+      213: -1458334860236074323
+    second: lm_camp_night_41
+  - first:
+      213: -3932638774946345284
+    second: lm_camp_night_42
+  - first:
+      213: -3572352148728757766
+    second: lm_camp_night_43
+  - first:
+      213: -1463379678427272110
+    second: lm_camp_night_44
+  - first:
+      213: -2072967570521149345
+    second: lm_camp_night_45
+  - first:
+      213: 1431963509749277127
+    second: lm_camp_night_46
+  - first:
+      213: -6462831737603773552
+    second: lm_camp_night_47
+  - first:
+      213: -3305971130100773649
+    second: lm_camp_night_48
+  - first:
+      213: 7218102853769936568
+    second: lm_camp_night_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 192
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lm_camp_night_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 692
+        width: 11
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2783cd6fdf01b500800000000000000
+      internalID: 410126493361080107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_1
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 760
+        width: 52
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 916ba1bcb0d562680800000000000000
+      internalID: -8780228118278654439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_2
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 677
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f430ba8c58bdfbc30800000000000000
+      internalID: 4377458730471195471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_3
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 682
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad97deb7df1247d90800000000000000
+      internalID: -7101013339866826278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_4
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 686
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053cb61171ac20110800000000000000
+      internalID: 1225764249023529808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_5
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 680
+        width: 39
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1908dad9dce283a00800000000000000
+      internalID: 736389999723643025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 616
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7611fa465e0dfd0800000000000000
+      internalID: -2319101587499161630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 618
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8e21d434131c000800000000000000
+      internalID: 54378835630811357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 634
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d78085881126b00800000000000000
+      internalID: 820237359425027464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_9
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 642
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9a0b3e7c35c4170800000000000000
+      internalID: 8163992342499469805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_10
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 648
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a90f30218e33fc0800000000000000
+      internalID: -3516211719973070223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_11
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 650
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ea100d971f34a70800000000000000
+      internalID: 8810150801549930052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_12
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 654
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4c71127893c20d0800000000000000
+      internalID: -3446316362306697992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_13
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 662
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8aedbc2d3d95fc50800000000000000
+      internalID: 6698432906852690575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_14
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 662
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f8d8748c6f87210800000000000000
+      internalID: 1331085029942333263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_15
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 666
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93b10c44b4780e50800000000000000
+      internalID: 6775793957097026463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_16
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 670
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ea722214d5dc040800000000000000
+      internalID: 4669490922980355715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_17
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 623
+        width: 121
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b794196309bd580800000000000000
+      internalID: -8801282482725356775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_18
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 649
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d92fe706d3543e0800000000000000
+      internalID: -2070180969050890965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_19
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 614
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8d07d87fff8e2b0800000000000000
+      internalID: -5554908701666518836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_20
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 623
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7903cd4a80578f0800000000000000
+      internalID: -543518675866445870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 501
+        width: 10
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d66c4a3bddbb7110800000000000000
+      internalID: 1259809270053758679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_22
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 586
+        width: 64
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb4d0eee5448eb20800000000000000
+      internalID: 3163853912739236837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_23
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 610
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dce7ca13740785d0800000000000000
+      internalID: -3060472529357902631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_24
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 602
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 437764ae0a9b57cd0800000000000000
+      internalID: -2560936712313866444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_25
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 594
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f48b4bad0dbf83e50800000000000000
+      internalID: 6789453312702068815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_26
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 587
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae04ecf1d5f3eec0800000000000000
+      internalID: -3538714599943303512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_27
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 581
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802365fa5ac5cc9f0800000000000000
+      internalID: -446880396335500792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_28
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 564
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29bada8332530790800000000000000
+      internalID: -7565112567725901524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_29
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 574
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b837fba9ae8437570800000000000000
+      internalID: 8463188297215079307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_30
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 562
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64b3b81a16e96360800000000000000
+      internalID: 7163509682067453038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_31
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 550
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a735d402948c11f50800000000000000
+      internalID: 6850476724607341434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_32
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 558
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aaca7f0cfab26e40800000000000000
+      internalID: 5648282474430253728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_33
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 552
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cacc8c49755fb11c0800000000000000
+      internalID: -4531758843511124820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_34
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 538
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6357f7c17cbd53d0800000000000000
+      internalID: -3216207362000465043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_35
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 534
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 090d7d6a41d765280800000000000000
+      internalID: -9054912473129824112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_36
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 542
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7225510596885b70800000000000000
+      internalID: 8888001839146279547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_37
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 546
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11947c1b8e54e1d10800000000000000
+      internalID: 2098191342118586641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_38
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 528
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f485d914f7e9930800000000000000
+      internalID: 4151895826271588179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_39
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 533
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409abf49d53386760800000000000000
+      internalID: 7451262060508981508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_40
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 524
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405d0f8401c2f6920800000000000000
+      internalID: 2985653526424769796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_41
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 513
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da25f04db24f2cbe0800000000000000
+      internalID: -1458334860236074323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_42
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 518
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe4565ced57c69c0800000000000000
+      internalID: -3932638774946345284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_43
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 668
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af14b6ad5a47c6ec0800000000000000
+      internalID: -3572352148728757766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_44
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 519
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c21df8fe701bbe0800000000000000
+      internalID: -1463379678427272110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_45
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 513
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50be284af65b33e0800000000000000
+      internalID: -2072967570521149345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_46
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 449
+        width: 30
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c16de9a93b5fd310800000000000000
+      internalID: 1431963509749277127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_47
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 506
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ba105b6c86f46a0800000000000000
+      internalID: -6462831737603773552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 100
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec85a0e5c4de12d0800000000000000
+      internalID: -3305971130100773649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_camp_night_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 157
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8beb0376d4adb2460800000000000000
+      internalID: 7218102853769936568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

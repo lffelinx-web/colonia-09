@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: 499c02169986c494f9c2356db264537d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -270874034736975043
+    second: lm_greenhouse_night_0
+  - first:
+      213: -4162313369823396166
+    second: lm_greenhouse_night_1
+  - first:
+      213: 8078952200941023602
+    second: lm_greenhouse_night_2
+  - first:
+      213: -1833953324180046706
+    second: lm_greenhouse_night_3
+  - first:
+      213: -577666162018412835
+    second: lm_greenhouse_night_4
+  - first:
+      213: 6015128305990203490
+    second: lm_greenhouse_night_5
+  - first:
+      213: -3903829614877916530
+    second: lm_greenhouse_night_6
+  - first:
+      213: 5606514884583133340
+    second: lm_greenhouse_night_7
+  - first:
+      213: -2532529894005038914
+    second: lm_greenhouse_night_8
+  - first:
+      213: -4208663319084163538
+    second: lm_greenhouse_night_9
+  - first:
+      213: 2628339706327657904
+    second: lm_greenhouse_night_10
+  - first:
+      213: -5359745805018238893
+    second: lm_greenhouse_night_11
+  - first:
+      213: 797685505586413852
+    second: lm_greenhouse_night_12
+  - first:
+      213: -2533773288966525958
+    second: lm_greenhouse_night_13
+  - first:
+      213: 6236065299740799944
+    second: lm_greenhouse_night_14
+  - first:
+      213: -6746566328315181505
+    second: lm_greenhouse_night_15
+  - first:
+      213: -4268159246124159574
+    second: lm_greenhouse_night_16
+  - first:
+      213: -2610155605145981981
+    second: lm_greenhouse_night_17
+  - first:
+      213: -1168562580931094888
+    second: lm_greenhouse_night_18
+  - first:
+      213: -4124102778245693483
+    second: lm_greenhouse_night_19
+  - first:
+      213: 7443304030152424729
+    second: lm_greenhouse_night_20
+  - first:
+      213: -9006482346471470922
+    second: lm_greenhouse_night_21
+  - first:
+      213: -2137805721998565453
+    second: lm_greenhouse_night_22
+  - first:
+      213: -1897688705998247555
+    second: lm_greenhouse_night_23
+  - first:
+      213: -782200005695189110
+    second: lm_greenhouse_night_24
+  - first:
+      213: -5565202314147302652
+    second: lm_greenhouse_night_25
+  - first:
+      213: -622354223995233262
+    second: lm_greenhouse_night_26
+  - first:
+      213: -1425062320418538313
+    second: lm_greenhouse_night_27
+  - first:
+      213: -998520434668130552
+    second: lm_greenhouse_night_28
+  - first:
+      213: -167045303844090520
+    second: lm_greenhouse_night_29
+  - first:
+      213: -4612860667076983447
+    second: lm_greenhouse_night_30
+  - first:
+      213: -721277612263630274
+    second: lm_greenhouse_night_31
+  - first:
+      213: 8707665008121368653
+    second: lm_greenhouse_night_32
+  - first:
+      213: 3318162742029594222
+    second: lm_greenhouse_night_33
+  - first:
+      213: -7282593533061237433
+    second: lm_greenhouse_night_34
+  - first:
+      213: 17742695811489207
+    second: lm_greenhouse_night_35
+  - first:
+      213: -6601624342744131715
+    second: lm_greenhouse_night_36
+  - first:
+      213: 6278159052557696679
+    second: lm_greenhouse_night_37
+  - first:
+      213: -7784587963198151618
+    second: lm_greenhouse_night_38
+  - first:
+      213: -4921071839217334734
+    second: lm_greenhouse_night_39
+  - first:
+      213: -3011142022543015557
+    second: lm_greenhouse_night_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 192
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lm_greenhouse_night_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 519
+        width: 11
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3330a42089ad3cf0800000000000000
+      internalID: -270874034736975043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_1
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 760
+        width: 52
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe31d30b0e7c36c0800000000000000
+      internalID: -4162313369823396166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_2
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 634
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271337ef8343e1070800000000000000
+      internalID: 8078952200941023602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_3
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 642
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cf9991b2d7c86e0800000000000000
+      internalID: -1833953324180046706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_4
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 652
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6112eafa7bbf7f0800000000000000
+      internalID: -577666162018412835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_5
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 658
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26871f423570a7350800000000000000
+      internalID: 6015128305990203490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_6
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 662
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e824d8d06afc2d9c0800000000000000
+      internalID: -3903829614877916530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_7
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 670
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90948b35975ecd40800000000000000
+      internalID: 5606514884583133340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_8
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 672
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0a5c4ba75aadcd0800000000000000
+      internalID: -2532529894005038914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_9
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 678
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e95ce7203d795c0800000000000000
+      internalID: -4208663319084163538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_10
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 678
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bde6b0990db97420800000000000000
+      internalID: 2628339706327657904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_11
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 687
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3507f75669b5e95b0800000000000000
+      internalID: -5359745805018238893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_12
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 641
+        width: 120
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11c4f2bdb2f11b00800000000000000
+      internalID: 797685505586413852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_13
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 618
+        width: 52
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbe6c14e9a36dcd0800000000000000
+      internalID: -2533773288966525958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_14
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 618
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c3b03b9954fa8650800000000000000
+      internalID: 6236065299740799944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_15
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 626
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3689235ba16f52a0800000000000000
+      internalID: -6746566328315181505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 630
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad68f187c374c4c0800000000000000
+      internalID: -4268159246124159574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_17
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 606
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb67ca6e4dd6cbd0800000000000000
+      internalID: -2610155605145981981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_18
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 622
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 896d9c1268e68cfe0800000000000000
+      internalID: -1168562580931094888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_19
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 433
+        width: 236
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfb675af5e34c6c0800000000000000
+      internalID: -4124102778245693483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_20
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 584
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91df770449deb4760800000000000000
+      internalID: 7443304030152424729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_21
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 590
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8cdb6360c820380800000000000000
+      internalID: -9006482346471470922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_22
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 594
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf5a7db50df452e0800000000000000
+      internalID: -2137805721998565453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_23
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 550
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7924b02d2e0aa5e0800000000000000
+      internalID: -1897688705998247555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_24
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 566
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8fca353d311525f0800000000000000
+      internalID: -782200005695189110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_25
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 568
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40371122bfd64c2b0800000000000000
+      internalID: -5565202314147302652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_26
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 570
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21cdc427124fc57f0800000000000000
+      internalID: -622354223995233262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_27
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 530
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bcb8a0be59293ce0800000000000000
+      internalID: -1425062320418538313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_28
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 540
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80f23ae74fa8422f0800000000000000
+      internalID: -998520434668130552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_29
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 544
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86dc9f26e298eadf0800000000000000
+      internalID: -167045303844090520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_30
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 510
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 965418cc9a3dbffb0800000000000000
+      internalID: -4612860667076983447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_31
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 514
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a959845d18df5f0800000000000000
+      internalID: -721277612263630274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 520
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d405c209037d7d870800000000000000
+      internalID: 8707665008121368653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 501
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e2c99fe6b7c0e20800000000000000
+      internalID: 3318162742029594222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 85
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 745f35a34c70fea90800000000000000
+      internalID: -7282593533061237433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 165
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd933943e80f3000800000000000000
+      internalID: 17742695811489207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_36
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 90
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d771a2e13a15264a0800000000000000
+      internalID: -6601624342744131715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_37
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 78
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aeba1b2560802750800000000000000
+      internalID: 6278159052557696679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_38
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 71
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e34eac2fd7697f390800000000000000
+      internalID: -7784587963198151618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_39
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 680
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236c5453c37d4bbb0800000000000000
+      internalID: -4921071839217334734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_greenhouse_night_40
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 0
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b718212c8464636d0800000000000000
+      internalID: -3011142022543015557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
