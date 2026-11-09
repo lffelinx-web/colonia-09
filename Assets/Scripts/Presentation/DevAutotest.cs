@@ -1,4 +1,4 @@
-#if DEVELOPMENT_BUILD || UNITY_EDITOR
+﻿#if DEVELOPMENT_BUILD || UNITY_EDITOR
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -224,40 +224,16 @@ namespace Colonia09.Presentation
             SaveGame.ResetForTests();
         }
 
-        static readonly Dictionary<string, (ModuleType type, int r, int c, int lvl)[]> SectorBots = new Dictionary<string, (ModuleType, int, int, int)[]>
-        {
-            { "landing", new[] { (ModuleType.Generator, 5, 0, 1), (ModuleType.Pulse, 4, 1, 1), (ModuleType.Pulse, 4, 0, 1), (ModuleType.Pulse, 4, 2, 1), (ModuleType.Generator, 5, 2, 1),
-                (ModuleType.Pulse, 4, 1, 2), (ModuleType.Pulse, 4, 0, 2), (ModuleType.Pulse, 4, 2, 2) } },
-            { "camp", new[] { (ModuleType.Generator, 6, 1, 1), (ModuleType.Pulse, 5, 2, 1), (ModuleType.Generator, 6, 3, 1), (ModuleType.Relay, 5, 1, 1), (ModuleType.Pulse, 5, 0, 1),
-                (ModuleType.Relay, 5, 3, 1), (ModuleType.Pulse, 5, 4, 1), (ModuleType.Pulse, 4, 1, 1), (ModuleType.Pulse, 4, 3, 1), (ModuleType.Pulse, 5, 2, 2), (ModuleType.Pulse, 5, 0, 2),
-                (ModuleType.Pulse, 5, 4, 2), (ModuleType.Pulse, 4, 1, 2), (ModuleType.Pulse, 4, 3, 2) } },
-            { "well", new[] { (ModuleType.Generator, 7, 1, 1), (ModuleType.Pulse, 6, 2, 1), (ModuleType.Generator, 7, 4, 1), (ModuleType.Relay, 6, 1, 1), (ModuleType.Pulse, 6, 0, 1),
-                (ModuleType.Relay, 6, 3, 1), (ModuleType.Pulse, 6, 4, 1), (ModuleType.Reactor, 5, 2, 1), (ModuleType.Pulse, 5, 1, 1), (ModuleType.Pulse, 5, 3, 1), (ModuleType.Wall, 3, 2, 1),
-                (ModuleType.Wall, 3, 0, 1), (ModuleType.Wall, 3, 4, 1), (ModuleType.Pulse, 6, 2, 2), (ModuleType.Pulse, 6, 0, 2), (ModuleType.Pulse, 6, 4, 2), (ModuleType.Pulse, 5, 1, 2),
-                (ModuleType.Pulse, 5, 3, 2), (ModuleType.Generator, 7, 1, 2), (ModuleType.Generator, 7, 4, 2) } },
-        };
+        readonly Dictionary<string, List<BotItem>> sectorBots = new Dictionary<string, List<BotItem>>();
 
+        /// <summary>One move of the sector's sensible bot (the same plan Tools/Parity checks for balance).</summary>
         void SectorBotStep(string id)
         {
-            var sim = game.Sim;
-            foreach (var it in SectorBots[id])
-            {
-                var m = sim.ModuleAt(it.r, it.c);
-                if (m == null)
-                {
-                    if (sim.Charge >= GameSimulation.BuildCost(it.type)) sim.TryBuild(it.type, it.r, it.c);
-                    return;
-                }
-                if (m.IsDeploying || m.Type != it.type) continue;
-                if (m.Level < it.lvl && sim.Wave >= sim.UpgradeUnlock(m))
-                {
-                    if (sim.Charge >= sim.UpgradeCost(m)) sim.TryUpgrade(m);
-                    return;
-                }
-            }
+            if (!sectorBots.TryGetValue(id, out var plan)) sectorBots[id] = plan = CampaignBots.Parse(CampaignBots.Plans[id].good);
+            CampaignBots.Step(game.Sim, plan);
         }
 
-        /// <summary>Plays the three tutorial sectors in order: tutorial, enemy cards, victory, stars, unlocking and saving.</summary>
+        /// <summary>Plays every playable sector in order: tutorial, enemy cards, victory, stars, unlocking and saving.</summary>
         IEnumerator FullCampaign()
         {
             var sim = game.Sim;
@@ -279,11 +255,27 @@ namespace Colonia09.Presentation
                 // The tutorial: confirm the notes and let the bot satisfy the goals.
                 int guard = 0;
                 bool checkedFreeGoal = false;
-                while (game.Campaign.Step != null && guard++ < 2000)
+                while (game.Campaign.Step != null && guard++ < 6000)
                 {
                     var step = game.Campaign.Step;
-                    if (step.Done == null) ui.CoachButton.onClick.Invoke();
-                    else if (step.Card.HasValue && game.SelectedType != step.Card.Value) ui.CardButtons[step.Card.Value].onClick.Invoke();
+                    if (ui.CoachAwaitsRead)
+                    {
+                        yield return Frames(2);
+                        Check($"sector {sector.Number}: a free goal is first read in the middle, over a dimmed game", ui.GuideBlocksTouches);
+                        yield return Shot($"60_read_sector{sector.Number}");
+                        yield return RealTouch(ScreenCenter(ui.CoachButton));
+                        yield return Frames(2);
+                        Check($"sector {sector.Number}: after ENTENDIDO the free goal leaves the game", !ui.CoachAwaitsRead);
+                    }
+                    else if (step.Done == null) ui.CoachButton.onClick.Invoke();
+                    else if (step.Card.HasValue && game.SelectedType != step.Card.Value)
+                    {
+                        // A real touch: the card the guide points at must be on screen, even at the end of the row.
+                        yield return Frames(2);
+                        var at = ScreenCenter(ui.CardButtons[step.Card.Value]);
+                        Check($"sector {sector.Number}: the guide's card {step.Card.Value} is on screen", at.x > 0 && at.x < Screen.width);
+                        yield return RealTouch(at);
+                    }
                     else if (step.Card.HasValue && step.Cell == null) ui.CardButtons[step.Card.Value].onClick.Invoke();
                     else if (step.Cell.HasValue) yield return Tap(step.Cell.Value.x, step.Cell.Value.y);
                     else
@@ -302,6 +294,7 @@ namespace Colonia09.Presentation
                                 report.Add("Built a Generator on the cell the guide marks later");
                             }
                         }
+                        game.StepsPerFrame = 4;  // Enemies are held: only the charging speeds up.
                         if (Time.frameCount % 5 == 0) SectorBotStep(sector.Id);  // A goal without a marked cell: build like a player.
                     }
                     yield return null;
@@ -311,7 +304,7 @@ namespace Colonia09.Presentation
                 game.StepsPerFrame = 6;
                 float started = Time.unscaledTime;
                 int lastBot = 0;
-                while (Time.unscaledTime - started < 150 && (sim.Mode == GameMode.Playing || ui.CurrentModal == ModalKind.EnemyIntro && ui.ModalOpen))
+                while (Time.unscaledTime - started < 400 && (sim.Mode == GameMode.Playing || ui.CurrentModal == ModalKind.EnemyIntro && ui.ModalOpen))
                 {
                     if (ui.ModalOpen && ui.CurrentModal == ModalKind.EnemyIntro)
                     {
@@ -334,11 +327,11 @@ namespace Colonia09.Presentation
                 Check($"sector {sector.Number} result returns to the map", ui.MapOpen && !game.Campaign.Active);
             }
             yield return Shot($"{shot:00}_map_after");
-            Check("progress is saved", SaveGame.Data.sectors.Count >= 3 && SaveGame.Data.seenEnemies.Contains("Armor") && SaveGame.Data.tutorials.Count == 3);
+            Check("progress is saved", SaveGame.Data.sectors.Count >= 8 && SaveGame.Data.seenEnemies.Contains("Commander") && SaveGame.Data.tutorials.Count == 8);
 
             // Colony: rewards, building on a lot, production while away, and the mission bonus.
             var save = SaveGame.Data;
-            report.Add($"Rewards after three sectors: {save.materials:0} materials, {save.data:0} data");
+            report.Add($"Rewards after the campaign: {save.materials:0} materials, {save.data:0} data");
             Check("winning sectors pays resources", save.materials >= 300 && save.data >= 50);
             var map = game.ColonyMap;
             Check("colony map is drawn while the map is open", map.Active);
@@ -397,6 +390,16 @@ namespace Colonia09.Presentation
             yield return Frames(3);
             yield return Shot($"{shot + 3:00}_map_night");
             Check("night at 23:00", map.Nightness == 1);
+            // The far zoom shows most of the island; past the art the sea color carries on.
+            map.Zoom(10f);
+            yield return Frames(3);
+            yield return Shot("50_map_far_night");
+            map.ForceHour = 13;
+            map.Rebuild();
+            yield return Frames(3);
+            yield return Shot("51_map_far_day");
+            map.Zoom(.1f);
+            map.Focus(CampaignData.Sectors[1]);
             map.ForceHour = null;
             map.Zoom(1.6f);
             map.Focus(CampaignData.Sectors[3]);

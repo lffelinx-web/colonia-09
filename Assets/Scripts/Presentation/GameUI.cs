@@ -464,6 +464,25 @@ namespace Colonia09.Presentation
             rt.anchoredPosition = new Vector2(x, y);
             rt.sizeDelta = new Vector2(width, height);
         }
+        ScrollRect dockScroll;
+
+        /// <summary>Scrolls the card row, if needed, so the card is fully on screen (the guide points at it).</summary>
+        public void RevealCard(ModuleType type)
+        {
+            if (dockScroll == null || !CardButtons.TryGetValue(type, out var button)) return;
+            var viewport = dockScroll.viewport;
+            var content = dockScroll.content;
+            var card = (RectTransform)button.transform;
+            var corners = new Vector3[4];
+            card.GetWorldCorners(corners);
+            Vector2 min = viewport.InverseTransformPoint(corners[0]), max = viewport.InverseTransformPoint(corners[2]);
+            var view = viewport.rect;
+            float shift = min.x < view.xMin + 8 ? view.xMin + 8 - min.x : max.x > view.xMax - 8 ? view.xMax - 8 - max.x : 0;
+            if (Mathf.Abs(shift) < .5f) return;
+            dockScroll.StopMovement();
+            content.anchoredPosition += new Vector2(shift, 0);
+        }
+
         void BuildDock()
         {
             var dock = Rt("Dock", safeArea);
@@ -513,6 +532,7 @@ namespace Colonia09.Presentation
             content.gameObject.AddComponent<ContentSizeFitter>().horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
             scroll.content = content;
             scroll.viewport = scrollRt;
+            dockScroll = scroll;
 
             foreach (var type in GameData.ModuleTypes)
             {

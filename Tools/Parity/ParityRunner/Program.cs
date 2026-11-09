@@ -65,54 +65,34 @@ static class Program
     // Each playable sector is played by a sensible build and by a lazy one. The sensible one
     // must win; the lazy one should struggle, so the sector still asks something of the player.
 
-    static List<Item> Layout(string spec) => spec.Split(';').Select(s =>
-    {
-        var t = s.Trim().Split(' ');
-        return new Item { Type = (ModuleType)Enum.Parse(typeof(ModuleType), t[0], true), R = int.Parse(t[1]), C = int.Parse(t[2]), Lvl = int.Parse(t[3]) };
-    }).ToList();
-
-    static readonly Dictionary<string, (string good, string lazy)> CampaignBots = new Dictionary<string, (string, string)>
-    {
-        { "landing", ("generator 5 0 1; pulse 4 1 1; pulse 4 0 1; pulse 4 2 1; generator 5 2 1; pulse 4 1 2; pulse 4 0 2; pulse 4 2 2",
-                      "generator 5 0 1; pulse 4 1 1") },
-        { "camp", ("generator 6 1 1; pulse 5 2 1; generator 6 3 1; relay 5 1 1; pulse 5 0 1; relay 5 3 1; pulse 5 4 1; pulse 4 1 1; pulse 4 3 1; pulse 5 2 2; pulse 5 0 2; pulse 5 4 2; pulse 4 1 2; pulse 4 3 2",
-                   "generator 6 1 1; pulse 5 2 1; pulse 5 0 1") },
-        { "well", ("generator 7 1 1; pulse 6 2 1; generator 7 4 1; relay 6 1 1; pulse 6 0 1; relay 6 3 1; pulse 6 4 1; reactor 5 2 1; pulse 5 1 1; pulse 5 3 1; wall 3 2 1; wall 3 0 1; wall 3 4 1; pulse 6 2 2; pulse 6 0 2; pulse 6 4 2; pulse 5 1 2; pulse 5 3 2; generator 7 1 2; generator 7 4 2",
-                   "generator 7 1 1; pulse 6 2 1; pulse 6 0 1; pulse 6 4 1") },
-    };
-
-    static readonly Dictionary<string, string> TutorialBuilds = new Dictionary<string, string>
-    {
-        { "landing", "generator 5 0 1; pulse 4 1 1; pulse 4 0 1; pulse 4 2 1" },
-        { "camp", "relay 5 1 1; pulse 5 0 1" },
-        { "well", "generator 7 1 1; pulse 6 2 1; pulse 6 0 1; reactor 7 3 1; wall 2 2 1" },
-    };
-
     static int Campaign(string[] args)
     {
         int problems = 0;
         foreach (var sector in CampaignData.Sectors.Where(s => s.Playable))
         {
-            var bots = CampaignBots[sector.Id];
+            // A sector id among the arguments plays only that sector.
+            if (CampaignData.Sectors.Any(o => args.Contains(o.Id)) && !args.Contains(sector.Id)) continue;
+            var bots = CampaignBots.Plans[sector.Id];
             foreach (var (label, spec, mustWin) in new[] { ("good", bots.good, true), ("lazy", bots.lazy, false) })
             {
                 var s = new GameSimulation { Difficulty = sector.Difficulty };
                 s.Configure(sector.Level);
                 s.Start();
-                var items = Layout(spec);
+                var items = CampaignBots.Parse(spec);
                 // The tutorial builds first, as a new player would, before the bot takes over.
-                if (args.Contains("--tutorial") && TutorialBuilds.TryGetValue(sector.Id, out var first))
-                    foreach (var it in Layout(first)) s.TryBuild(it.Type, it.R, it.C);
+                if (args.Contains("--tutorial") && CampaignBots.Tutorial.TryGetValue(sector.Id, out var first))
+                    foreach (var it in CampaignBots.Parse(first)) s.TryBuild(it.Type, it.R, it.C);
                 const double dt = 1.0 / 60;
                 int tick;
                 for (tick = 1; tick < 60 * 60 * 20 && s.Mode == GameMode.Playing; tick++)
                 {
-                    if (tick % 30 == 0) BotStep(s, items);
+                    if (tick % 30 == 0) CampaignBots.Step(s, items);
                     s.Update(dt);
                     if (args.Contains("--verbose") && label == "good" && tick % (60 * 20) == 0)
                     {
                         Console.WriteLine($"  t={tick / 60}s wave {s.Wave} charge {s.Charge:0}/{s.EnergyCapacity:0} gen {s.ChargingGeneration:0.0} use {s.ConsumptionRate:0.0} core {s.Core:0.0} enemies {s.Enemies.Count}");
-                        foreach (var m in s.Modules) Console.WriteLine($"    {m.Type} ({m.R},{m.C}) L{m.Level} powered {m.Powered} linked {m.Linked} hp {m.Hp:0} Â· {s.ModuleStatus(m)}");
+                        foreach (var m in s.Modules) Console.WriteLine($"    {m.Type} ({m.R},{m.C}) L{m.Level} powered {m.Powered} linked {m.Linked} hp {m.Hp:0} - {s.ModuleStatus(m)}");
+                        foreach (var e in s.Enemies) Console.WriteLine($"    enemy {e.Kind} col {e.C} y {e.Y:0.00} hp {e.Hp:0}/{e.MaxHp:0} slow {e.Slow:0.0}");
                     }
                 }
                 bool won = s.Mode == GameMode.Won;

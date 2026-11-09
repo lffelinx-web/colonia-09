@@ -1,4 +1,4 @@
-# Builds the Windows development player and runs the automated UI test on several screen shapes.
+﻿# Builds the Windows development player and runs the automated UI test on several screen shapes.
 # Close the Unity Editor first: batch builds cannot run while this project is open.
 param([switch]$SkipBuild)
 $root = (Resolve-Path "$PSScriptRoot\..").Path
@@ -21,7 +21,8 @@ foreach ($run in $runs) {
   if (Test-Path $out) { Remove-Item -Recurse -Force $out }
   $args = @('-screen-fullscreen', '0', '-screen-width', $run.W, '-screen-height', $run.H, '-logFile', "`"$root\Logs\colonia-$($run.Name).log`"", '-colonia-autotest', "`"$out`"") + $run.Extra
   $p = Start-Process "$root\Builds\WindowsDev\Colonia09.exe" -ArgumentList $args -PassThru
-  if (-not $p.WaitForExit(330000)) { $p.Kill(); Write-Output "$($run.Name): TIMEOUT"; $failed++; continue }
+  $limit = if ($run.Name -eq 'campaign') { 1500000 } else { 330000 }  # The campaign plays all eight sectors.
+  if (-not $p.WaitForExit($limit)) { $p.Kill(); Write-Output "$($run.Name): TIMEOUT"; $failed++; continue }
   if (-not (Test-Path "$out\report.txt")) { Write-Output "$($run.Name): no report"; $failed++; continue }
   $report = Get-Content "$out\report.txt" -Encoding UTF8
   Write-Output "--- $($run.Name): $($report[-1])"

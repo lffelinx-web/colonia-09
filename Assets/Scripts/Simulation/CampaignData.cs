@@ -28,7 +28,10 @@ namespace Colonia09.Simulation
     public static class CampaignData
     {
         const EnemyKind Sc = EnemyKind.Scout, Ru = EnemyKind.Runner, Ar = EnemyKind.Armor;
-        const ModuleType Ge = ModuleType.Generator, Re = ModuleType.Reactor, Rl = ModuleType.Relay, Pu = ModuleType.Pulse, Wa = ModuleType.Wall;
+        const EnemyKind Ja = EnemyKind.Jammer, Sp = EnemyKind.Splitter, Sa = EnemyKind.Sapper, Bu = EnemyKind.Bulwark, Th = EnemyKind.Thermal,
+            Gr = EnemyKind.Grounder, Hu = EnemyKind.Hunter, Tk = EnemyKind.Tank, He = EnemyKind.Helicopter, Bo = EnemyKind.Bomber;
+        const ModuleType Ge = ModuleType.Generator, Re = ModuleType.Reactor, Rl = ModuleType.Relay, Pu = ModuleType.Pulse, Wa = ModuleType.Wall,
+            Cr = ModuleType.Cryo, Te = ModuleType.Tesla, Rp = ModuleType.Repair;
 
         public static readonly CampaignSector[] Sectors =
         {
@@ -83,17 +86,113 @@ namespace Colonia09.Simulation
                     },
                 },
             },
-            new CampaignSector { Number = 4, Id = "greenhouse", Name = "Invernaderos", MapX = .68f, MapY = .5f,
-                Brief = "Criogénico y enemigos que resisten ciertas armas.", NewModules = new[] { ModuleType.Cryo }, NewEnemies = new[] { EnemyKind.Bulwark, EnemyKind.Splitter } },
-            new CampaignSector { Number = 5, Id = "mines", Name = "Minas", MapX = .3f, MapY = .62f,
-                Brief = "La Tesla y los enemigos que bloquean tu red.", NewModules = new[] { ModuleType.Tesla }, NewEnemies = new[] { EnemyKind.Thermal, EnemyKind.Jammer } },
-            new CampaignSector { Number = 6, Id = "workshop", Name = "Taller central", MapX = .64f, MapY = .72f,
-                Brief = "Repara tus módulos y protégelos del Cazador.", NewModules = new[] { ModuleType.Repair }, NewEnemies = new[] { EnemyKind.Sapper, EnemyKind.Grounder, EnemyKind.Hunter } },
-            new CampaignSector { Number = 7, Id = "port", Name = "Puerto", MapX = .34f, MapY = .82f,
-                Brief = "Todo el arsenal contra tanques y aeronaves.", NewEnemies = new[] { EnemyKind.Tank, EnemyKind.Helicopter, EnemyKind.Bomber } },
-            new CampaignSector { Number = 8, Id = "core", Name = "Núcleo de la colonia", MapX = .6f, MapY = .91f,
-                Brief = "La defensa final contra el Centinela.", NewEnemies = new[] { EnemyKind.Commander } },
+            new CampaignSector
+            {
+                Number = 4, Id = "greenhouse", Name = "Invernaderos", MapX = .68f, MapY = .5f,
+                Brief = "Los invernaderos alimentan a la colonia. El Criogénico frena a la Coraza, que resiste los disparos del Pulso.",
+                NewModules = new[] { Cr }, NewEnemies = new[] { Bu, Sp },
+                Level = new LevelConfig
+                {
+                    Id = "greenhouse", Name = "Invernaderos", Width = 6, Height = 9, Waves = 4, CoreMax = 12, CoreRow = 7, CoreColumn = 2,
+                    TargetOnlyOnBoard = true, EnemySpeed = .85, StartCharge = 250, Modules = new[] { Ge, Re, Rl, Pu, Cr, Wa },
+                    WaveSpecs = new[]
+                    {
+                        new WaveSpec(9, 3.2, .9, Sc, Ru, Sc, Sp),
+                        new WaveSpec(11, 3.0, .95, Sc, Bu, Ru, Sp),
+                        new WaveSpec(13, 2.9, 1.0, Ru, Bu, Sc, Sp, Ar),
+                        new WaveSpec(15, 2.7, 1.05, Bu, Sp, Ru, Ar, Bu, Sc),
+                    },
+                },
+            },
+            new CampaignSector
+            {
+                Number = 5, Id = "mines", Name = "Minas", MapX = .3f, MapY = .62f,
+                Brief = "Las minas dan materiales. La Tesla salta entre enemigos y vence al Térmico; el Interferente apaga tus módulos.",
+                NewModules = new[] { Te }, NewEnemies = new[] { Th, Ja },
+                Level = new LevelConfig
+                {
+                    Id = "mines", Name = "Minas", Width = 6, Height = 10, Waves = 5, CoreMax = 12, CoreRow = 8, CoreColumn = 2,
+                    TargetOnlyOnBoard = true, EnemySpeed = .88, StartCharge = 270, Modules = new[] { Ge, Re, Rl, Pu, Cr, Te, Wa },
+                    WaveSpecs = new[]
+                    {
+                        new WaveSpec(9, 3.1, .92, Sc, Ru, Th, Sc),
+                        new WaveSpec(11, 2.9, .97, Sc, Th, Ru, Ja, Sp),
+                        new WaveSpec(13, 2.8, 1.02, Th, Ru, Bu, Ja, Sc),
+                        new WaveSpec(15, 2.6, 1.08, Th, Sp, Ja, Bu, Ru, Ar),
+                        new WaveSpec(17, 2.5, 1.14, Th, Ja, Bu, Ru, Ar, Sp, Th),
+                    },
+                },
+            },
+            new CampaignSector
+            {
+                Number = 6, Id = "workshop", Name = "Taller central", MapX = .64f, MapY = .72f,
+                Brief = "Aquí se reparan las máquinas de la colonia. El Taller cura tus módulos; el Cazador viene por él.",
+                NewModules = new[] { Rp }, NewEnemies = new[] { Gr, Sa, Hu },
+                Level = new LevelConfig
+                {
+                    Id = "workshop", Name = "Taller central", Width = 7, Height = 10, Waves = 5, CoreMax = 13, CoreRow = 8, CoreColumn = 3,
+                    TargetOnlyOnBoard = true, EnemySpeed = .9, StartCharge = 290, Modules = new[] { Ge, Re, Rl, Pu, Cr, Te, Wa, Rp },
+                    WaveSpecs = new[]
+                    {
+                        new WaveSpec(10, 3.0, .95, Sc, Gr, Ru, Sc),
+                        new WaveSpec(12, 2.85, 1.0, Gr, Ru, Sa, Th, Sc, Ru),
+                        new WaveSpec(14, 2.7, 1.06, Gr, Ru, Th, Bu, Sa, Sc, Hu),
+                        new WaveSpec(16, 2.55, 1.12, Gr, Sa, Th, Bu, Ru, Ja, Ar, Ru),
+                        new WaveSpec(18, 2.45, 1.2, Gr, Hu, Sa, Th, Bu, Ja, Ar, Ru, Sp),
+                    },
+                },
+            },
+            new CampaignSector
+            {
+                Number = 7, Id = "port", Name = "Puerto", MapX = .34f, MapY = .82f,
+                Brief = "Por el puerto llegan vehículos: Tanques, Helicópteros y Bombarderos. Usa todo tu arsenal.",
+                NewEnemies = new[] { Tk, He, Bo },
+                Level = new LevelConfig
+                {
+                    Id = "port", Name = "Puerto", Width = 7, Height = 11, Waves = 6, CoreMax = 14, CoreRow = 9, CoreColumn = 3,
+                    TargetOnlyOnBoard = true, EnemySpeed = .92, StartCharge = 300, Modules = new[] { Ge, Re, Rl, Pu, Cr, Te, Wa, Rp },
+                    WaveSpecs = new[]
+                    {
+                        Wave(10, 3.0, .95, new[] { Sc, Ru, Th }, (6, Tk)),
+                        Wave(12, 2.85, 1.0, new[] { Sc, Gr, Ru, Bu }, (7, He)),
+                        Wave(14, 2.7, 1.05, new[] { Ru, Th, Sc, Gr, Ja }, (5, Tk), (11, He)),
+                        Wave(16, 2.55, 1.1, new[] { Bu, Ru, Th, Sa, Gr, Sc }, (8, Bo)),
+                        Wave(18, 2.45, 1.16, new[] { Ru, Th, Bu, Gr, Ja, Sc, Ar }, (4, Tk), (10, He), (15, Bo)),
+                        Wave(20, 2.3, 1.24, new[] { Gr, Ru, Th, Sa, Bu, Ja, Ru, Ar }, (3, He), (9, Tk), (14, Bo), (18, Tk)),
+                    },
+                },
+            },
+            new CampaignSector
+            {
+                Number = 8, Id = "core", Name = "Núcleo de la colonia", MapX = .6f, MapY = .91f,
+                Brief = "El corazón de la colonia. Resiste todas las oleadas y al Centinela, la fortaleza que protege a su escolta.",
+                NewEnemies = new[] { EnemyKind.Commander },
+                Level = new LevelConfig
+                {
+                    Id = "core", Name = "Núcleo de la colonia", Width = 7, Height = 11, Waves = 7, CoreMax = 15, CoreRow = 9, CoreColumn = 3,
+                    TargetOnlyOnBoard = true, EnemySpeed = .95, StartCharge = 320, Modules = new[] { Ge, Re, Rl, Pu, Cr, Te, Wa, Rp },
+                    WaveSpecs = new[]
+                    {
+                        Wave(11, 3.0, .95, new[] { Sc, Ru, Gr, Th }),
+                        Wave(13, 2.85, 1.0, new[] { Ru, Bu, Sc, Gr, Ja }, (8, Tk)),
+                        Wave(15, 2.7, 1.06, new[] { Th, Ru, Sa, Gr, Bu, Sc }, (5, He), (11, Tk)),
+                        Wave(17, 2.55, 1.12, new[] { Gr, Ru, Th, Ja, Bu, Ar, Sp }, (4, Bo), (9, Hu), (13, He)),
+                        Wave(19, 2.45, 1.2, new[] { Bu, Sa, Ru, Th, Gr, Ja, Ar }, (3, Tk), (8, He), (12, Hu), (16, Bo)),
+                        Wave(21, 2.35, 1.26, new[] { Ru, Th, Gr, Bu, Sa, Ja, Ar, Sp }, (3, He), (7, Tk), (12, Bo), (17, Hu), (19, Tk)),
+                        Wave(22, 2.25, 1.34, new[] { Gr, Th, Bu, Ru, Sa, Ja, Ar, Sp }, (4, Tk), (9, He), (13, EnemyKind.Commander), (17, Bo)),
+                    },
+                },
+            },
         };
+
+        /// <summary>A wave that cycles a base pattern, with single special enemies (vehicles, the boss) at fixed places.</summary>
+        static WaveSpec Wave(int count, double gap, double hp, EnemyKind[] pattern, params (int index, EnemyKind kind)[] specials)
+        {
+            var kinds = new EnemyKind[count];
+            for (int i = 0; i < count; i++) kinds[i] = pattern[i % pattern.Length];
+            foreach (var (index, kind) in specials) kinds[index] = kind;
+            return new WaveSpec(count, gap, hp, kinds);
+        }
 
         public static CampaignSector Find(string id) => System.Array.Find(Sectors, s => s.Id == id);
 

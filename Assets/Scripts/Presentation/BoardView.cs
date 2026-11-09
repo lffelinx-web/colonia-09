@@ -331,7 +331,8 @@ namespace Colonia09.Presentation
 
         void DrawBoard(float t)
         {
-            var deck = StandardBoard ? boardSprite : CampaignBoard();
+            // Campaign missions on the full 7 x 11 size still stand on their outpost deck.
+            var deck = StandardBoard && game.Sim.Level.IsQuickPlay ? boardSprite : CampaignBoard() ?? (StandardBoard ? boardSprite : null);
             if (deck != null)
             {
                 // Rendered deck and colony scenery; it is wider than the grid so it fills the sides of the screen.

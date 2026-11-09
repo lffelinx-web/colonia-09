@@ -24,7 +24,8 @@ from render_sprites import ball, box, cyl, glowing, glowing_hot, material, prism
 OUT = sys.argv[sys.argv.index("--") + 1]
 EXTRA = sys.argv[sys.argv.index("--") + 2:]
 PREVIEW = "preview" in EXTRA
-ONLY = [a for a in EXTRA if a not in ("preview", "night")]
+OVERVIEW = "overview" in EXTRA
+ONLY = [a for a in EXTRA if a not in ("preview", "night", "overview")]
 N = 26
 ZONES = [(22, 22), (23, 15), (13, 21), (17, 11), (8, 15), (11, 7), (4, 9), (4, 3)]
 K = math.sqrt(2)
@@ -33,6 +34,9 @@ TERRAIN_W, TERRAIN_H = 28.0, 15.0
 # The terrain is rendered in 3 x 3 pieces so it stays sharp when the player zooms in.
 CHUNKS = 3
 CHUNK_PX = 2048
+# A wide, softer picture of the whole island and the sea around it, drawn behind the sharp pieces so the
+# player can zoom out past their edges. Every edge of it is open sea, which Unity continues as a flat color.
+OVERVIEW_W, OVERVIEW_H, OVERVIEW_PX = 44.0, 30.0, 3072
 
 
 def camera_forward():
@@ -227,7 +231,7 @@ def build_terrain():
     build_island_ground(roads)
     bpy.ops.mesh.primitive_plane_add(size=1, location=(12.5, -12.5, -1.9))
     sea = bpy.context.active_object
-    sea.scale = (90, 90, 1)
+    sea.scale = (300, 300, 1)  # Reaches past every corner of the wide overview too.
     sea.data.materials.append(water_material())
 
     # River with a waterfall where it leaves the island.
@@ -633,6 +637,20 @@ def build_tile_road_glow():
 
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
+    if OVERVIEW:
+        build_terrain()
+        rs.SCENE_SIZE = (OVERVIEW_PX, round(OVERVIEW_PX * OVERVIEW_H / OVERVIEW_W))
+        if PREVIEW:
+            rs.SCENE_SIZE = (rs.SCENE_SIZE[0] // 4, rs.SCENE_SIZE[1] // 4)
+        scene = bpy.context.scene
+        scene.render.resolution_x, scene.render.resolution_y = rs.SCENE_SIZE
+        scene.camera.data.ortho_scale = OVERVIEW_W * K
+        scene.camera.data.clip_end = 600
+        scene.cycles.samples = 16 if PREVIEW else 48  # Seen small and from far away.
+        scene.render.filepath = os.path.join(OUT, "colony_overview" + suffix() + ("_preview" if PREVIEW else "") + ".png")
+        bpy.ops.render.render(write_still=True)
+        print("RENDER_DONE")
+        sys.exit(0)
     if not ONLY or "terrain" in ONLY:
         build_terrain()
         cam = bpy.context.scene.camera

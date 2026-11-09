@@ -264,6 +264,13 @@ namespace Colonia09.Presentation
     /// <summary>The guided steps of the first sectors. Each one shows a single new idea.</summary>
     public static class Tutorials
     {
+        /// <summary>The opening of every later sector: the player sets up the basics alone, the guide only checks.</summary>
+        static TutorialStep BaseDefense() => new TutorialStep
+        {
+            Text = "Primero arma tu defensa: un <b>Generador</b> junto al Núcleo y al menos <b>dos Pulsos</b>.",
+            Done = d => d.Built(ModuleType.Generator) && d.Built(ModuleType.Pulse, 2),
+        };
+
         public static List<TutorialStep> For(CampaignSector sector)
         {
             var level = sector.Level;
@@ -301,6 +308,43 @@ namespace Colonia09.Presentation
                         new TutorialStep { Text = "Colócalo en la <b>casilla marcada</b>, junto al primero.", Card = ModuleType.Reactor, Cell = new Vector2Int(cr, cc + 1), Done = d => d.Built(ModuleType.Reactor) },
                         new TutorialStep { Text = "La <b>Barrera</b> frena a los enemigos y no gasta energía. Ponla al frente.", Card = ModuleType.Wall, Cell = new Vector2Int(2, cc), Done = d => d.Built(ModuleType.Wall) },
                         new TutorialStep { Text = "Se acerca el <b>Blindado</b>: lento, resistente y dispara. Junta varios Pulsos en su camino." },
+                    };
+                case "greenhouse":
+                    return new List<TutorialStep>
+                    {
+                        BaseDefense(),
+                        new TutorialStep { Text = "Nuevo: el <b>Criogénico</b> congela a los enemigos de su columna y de las dos de al lado, y los frena. Elígelo.", Card = ModuleType.Cryo, Done = d => d.Picked(ModuleType.Cryo) },
+                        new TutorialStep { Text = "Colócalo en la <b>casilla marcada</b>, delante de tus Pulsos.", Card = ModuleType.Cryo, Cell = new Vector2Int(cr - 2, cc), Done = d => d.Built(ModuleType.Cryo) },
+                        new TutorialStep { Text = "La <b>Coraza</b> aguanta los disparos del Pulso, pero el frío la detiene. El <b>Divisor</b> se parte en dos Corredores al caer: deja defensas detrás." },
+                    };
+                case "mines":
+                    return new List<TutorialStep>
+                    {
+                        BaseDefense(),
+                        new TutorialStep { Text = "Nuevo: la <b>Tesla</b> lanza descargas que saltan entre varios enemigos cercanos, en cualquier columna. Elígela.", Card = ModuleType.Tesla, Done = d => d.Picked(ModuleType.Tesla) },
+                        new TutorialStep { Text = "Colócala en la <b>casilla marcada</b>.", Card = ModuleType.Tesla, Cell = new Vector2Int(cr - 2, cc), Done = d => d.Built(ModuleType.Tesla) },
+                        new TutorialStep { Text = "El <b>Térmico</b> resiste el frío: usa la Tesla. El <b>Interferente</b> apaga los módulos de su columna mientras avanza: elimínalo primero." },
+                    };
+                case "workshop":
+                    return new List<TutorialStep>
+                    {
+                        BaseDefense(),
+                        new TutorialStep { Text = "Nuevo: el <b>Taller</b> repara los módulos dañados a dos casillas o menos. Elígelo.", Card = ModuleType.Repair, Done = d => d.Picked(ModuleType.Repair) },
+                        new TutorialStep { Text = "Colócalo en la <b>casilla marcada</b>, en medio de tu defensa.", Card = ModuleType.Repair, Cell = new Vector2Int(cr - 2, cc), Done = d => d.Built(ModuleType.Repair) },
+                        new TutorialStep { Text = "El <b>Cazador</b> va por tus Talleres y Criogénicos: protégelos. El <b>Aislante</b> resiste la Tesla y el <b>Saboteador</b> golpea tus módulos de cerca." },
+                    };
+                case "port":
+                    return new List<TutorialStep>
+                    {
+                        new TutorialStep { Text = "Por el puerto llegan <b>vehículos</b>: Tanques, Helicópteros y Bombarderos. Tienen blindaje y atacan varias casillas a la vez." },
+                        new TutorialStep { Text = "Prepara una defensa amplia: al menos <b>cuatro Pulsos</b> y una <b>Tesla</b>.", Done = d => d.Built(ModuleType.Pulse, 4) && d.Built(ModuleType.Tesla) },
+                        new TutorialStep { Text = "Cuando un vehículo marca casillas, ahí caerá su ataque. El <b>Taller</b> repara lo dañado y el <b>Criogénico</b> frena al Tanque." },
+                    };
+                case "core":
+                    return new List<TutorialStep>
+                    {
+                        new TutorialStep { Text = "La batalla final. En la última oleada llega el <b>Centinela</b>: una fortaleza con escudo que protege a su escolta." },
+                        new TutorialStep { Text = "Usa todo lo aprendido: al menos <b>dos Generadores</b> y <b>cuatro Pulsos</b> antes de empezar.", Done = d => d.Built(ModuleType.Generator, 2) && d.Built(ModuleType.Pulse, 4) },
                     };
                 default:
                     return new List<TutorialStep>();

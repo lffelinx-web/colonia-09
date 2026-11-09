@@ -679,7 +679,11 @@ namespace Colonia09.Presentation
             Stretch(edge.rectTransform);
             coachText = Label(coachBubble, "", 38, Txt, TextAnchor.MiddleCenter);
             coachText.resizeTextForBestFit = true; coachText.resizeTextMinSize = 24; coachText.resizeTextMaxSize = 38;
-            CoachButton = TextButton(coachBubble, "ENTENDIDO", 34, Gold, Bg, () => game.Campaign.Confirm());
+            CoachButton = TextButton(coachBubble, "ENTENDIDO", 34, Gold, Bg, () =>
+            {
+                if (CoachAwaitsRead) { coachRead = true; coachButtonGo.SetActive(false); UpdateSpotlight(); }
+                else game.Campaign.Confirm();
+            });
             coachButtonGo = CoachButton.gameObject;
             var buttonRt = (RectTransform)CoachButton.transform;
             buttonRt.anchorMin = buttonRt.anchorMax = new Vector2(.5f, 0); buttonRt.pivot = new Vector2(.5f, 0);
@@ -691,12 +695,21 @@ namespace Colonia09.Presentation
         public void ShowCoach(TutorialStep step)
         {
             coachStep = step;
+            coachRead = false;
             coach.SetActive(step != null);
             if (step == null) return;
             coachText.text = step.Text;
-            coachButtonGo.SetActive(step.Done == null);
+            coachButtonGo.SetActive(step.Done == null || CoachAwaitsRead);
             UpdateSpotlight();
         }
+
+        bool coachRead;
+        /// <summary>
+        /// A goal the player reaches freely (build two Pulses, say) is read first in the middle of the screen,
+        /// where it gets noticed; after ENTENDIDO it moves to the top as a reminder and the game is touchable.
+        /// </summary>
+        public bool CoachAwaitsRead => coach.activeSelf && coachStep != null && !coachStep.IsTip && coachStep.Done != null
+            && !coachStep.Card.HasValue && !coachStep.Cell.HasValue && !coachRead;
 
         /// <summary>Screen rectangle of what the current step points at, if anything.</summary>
         bool CoachTarget(out Rect screen)
@@ -706,6 +719,7 @@ namespace Colonia09.Presentation
             bool wantCard = step.Card.HasValue && (game.SelectedType != step.Card.Value || !step.Cell.HasValue);
             if (wantCard && CardButtons.TryGetValue(step.Card.Value, out var card) && card.gameObject.activeInHierarchy)
             {
+                RevealCard(step.Card.Value);
                 var corners = new Vector3[4];
                 ((RectTransform)card.transform).GetWorldCorners(corners);
                 screen = Rect.MinMaxRect(corners[0].x, corners[0].y, corners[2].x, corners[2].y);
@@ -729,7 +743,8 @@ namespace Colonia09.Presentation
             // A step with a goal but nothing to point at (build freely, like "two Pulses") must leave the game playable:
             // no dimming, and the bubble waits at the top, over the enemy row.
             // A step that explains the green cells must leave the board visible too.
-            bool freeGoal = (coachStep.Done != null || coachStep.ShowReach) && !hasTargetNow;
+            bool reading = CoachAwaitsRead;
+            bool freeGoal = (coachStep.Done != null || coachStep.ShowReach) && !hasTargetNow && !reading;
             bool tip = coachStep.IsTip || freeGoal;
             bool hasTarget = CoachTarget(out var screen);
             Rect hole = default;
@@ -769,6 +784,8 @@ namespace Colonia09.Presentation
                 bubbleY = Mathf.Clamp(bubbleY, bottom + bubbleHeight / 2 + 20, top - bubbleHeight / 2 - 20);
                 coachBubble.anchoredPosition = new Vector2(0, bubbleY);
             }
+            // The green cells sit around the core near the bottom, so this note rests just above the middle.
+            else if (coachStep.ShowReach) coachBubble.anchoredPosition = new Vector2(0, bubbleHeight / 2 + 20);
             else if (freeGoal) coachBubble.anchoredPosition = new Vector2(0, HudBottomIn(coachRoot) - bubbleHeight / 2 - 14);
             else coachBubble.anchoredPosition = tip ? new Vector2(0, bottom + DockHeight + bubbleHeight / 2 + 30) : Vector2.zero;
         }

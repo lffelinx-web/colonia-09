@@ -62,7 +62,7 @@ namespace Colonia09.Presentation
         const float SpriteLift = .2143f;
         /// <summary>Landmarks were aimed 0.6 above the ground.</summary>
         const float LandmarkLift = .3674f;
-        const float MinZoom = 4f, MaxZoom = 8.5f;  // Closer than this the art would blur.
+        const float MinZoom = 4f, MaxZoom = 13f;  // Closer than MinZoom the art would blur.
 
         GameController game;
         Camera cam;
@@ -207,6 +207,8 @@ namespace Colonia09.Presentation
             placed.Clear();
             nightLayers.Clear();
             float half = (CampaignData.ColonySize - 1) / 2f;
+            // A wide, softer picture of the whole island and its sea lies behind, for zooming out.
+            Put("colony_overview", TileWorld(half, half), -5100);
             // The island comes in 3 x 3 pieces of 28/3 x 5 units around the map center.
             for (int j = 0; j < 3; j++)
                 for (int i = 0; i < 3; i++)
@@ -303,7 +305,8 @@ namespace Colonia09.Presentation
                 n.color = c;
             }
             // Sea-blue edges by day, deep night blue after dark, in case an edge ever shows.
-            cam.backgroundColor = Color.Lerp(new Color(.07f, .24f, .32f), new Color(.02f, .05f, .1f), Nightness);
+            // The open sea of the rendered art, which the background continues past the overview's edges.
+            cam.backgroundColor = Color.Lerp(new Color32(55, 91, 113, 255), new Color32(15, 70, 96, 255), Nightness);
         }
 
         void UpdateHint()
@@ -372,12 +375,15 @@ namespace Colonia09.Presentation
             Clamp();
         }
 
-        /// <summary>Keeps the view inside the rendered terrain (28 x 15 units around the map center) at any zoom.</summary>
+        /// <summary>
+        /// Keeps the view on the island overview (44 x 30 units around the map center); past its edges the camera's
+        /// sea color carries on, so the far zoom can show the whole island on a wide screen.
+        /// </summary>
         void Clamp()
         {
-            const float HalfW = 14, HalfH = 7.5f;
+            const float HalfW = 22, HalfH = 15;
             float aspect = Screen.width / (float)Mathf.Max(1, Screen.height);
-            zoom = Mathf.Min(zoom, HalfH, HalfW / aspect);
+            zoom = Mathf.Min(zoom, MaxZoom);
             float mapY = -(CampaignData.ColonySize - 1) * .25f;
             float spanX = Mathf.Max(0, HalfW - zoom * aspect), spanY = Mathf.Max(0, HalfH - zoom);
             center.x = Mathf.Clamp(center.x, -spanX, spanX);
