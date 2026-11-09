@@ -121,6 +121,14 @@ namespace Colonia09.Presentation
             scaler.referenceResolution = new Vector2(RefWidth, 1920);
             scaler.matchWidthOrHeight = 0;
 
+            // Solid bands from the screen edges to the HUD and the dock: nothing of the battlefield peeks out
+            // behind the notch or the home bar.
+            battleTopFill = Rt("TopFill", canvasGo.transform).gameObject.AddComponent<Image>();
+            battleTopFill.color = Html("#071622"); battleTopFill.raycastTarget = false;
+            battleTopFill.rectTransform.anchorMin = new Vector2(0, 1); battleTopFill.rectTransform.anchorMax = Vector2.one; battleTopFill.rectTransform.pivot = new Vector2(.5f, 1);
+            battleBottomFill = Rt("BottomFill", canvasGo.transform).gameObject.AddComponent<Image>();
+            battleBottomFill.color = Html("#0b1e2d"); battleBottomFill.raycastTarget = false;
+            battleBottomFill.rectTransform.anchorMin = Vector2.zero; battleBottomFill.rectTransform.anchorMax = new Vector2(1, 0); battleBottomFill.rectTransform.pivot = new Vector2(.5f, 0);
             safeArea = Rt("SafeArea", canvasGo.transform);
             Stretch(safeArea);
             BuildField();
@@ -348,6 +356,7 @@ namespace Colonia09.Presentation
         void BuildHud()
         {
             var hud = Rt("Hud", safeArea);
+            hudRect = hud;
             hud.anchorMin = new Vector2(0, 1); hud.anchorMax = Vector2.one; hud.pivot = new Vector2(.5f, 1);
             hud.sizeDelta = new Vector2(0, HudHeight);
             hud.anchoredPosition = Vector2.zero;
@@ -458,6 +467,7 @@ namespace Colonia09.Presentation
         void BuildDock()
         {
             var dock = Rt("Dock", safeArea);
+            dockRect = dock;
             dock.anchorMin = Vector2.zero; dock.anchorMax = new Vector2(1, 0); dock.pivot = new Vector2(.5f, 0);
             dock.sizeDelta = new Vector2(0, DockHeight);
             dock.anchoredPosition = Vector2.zero;
@@ -780,9 +790,36 @@ namespace Colonia09.Presentation
             toastBg.gameObject.SetActive(true);
         }
 
+        RectTransform hudRect, dockRect;
+        Image battleTopFill, battleBottomFill;
+
+        void FitBattleBands()
+        {
+            var canvas = (RectTransform)safeArea.parent;
+            var corners = new Vector3[4];
+            // The top band reaches down to the vitals panel; the bottom band up to the dock.
+            hudRect.GetWorldCorners(corners);
+            float hudBottom = canvas.InverseTransformPoint(corners[0]).y;
+            battleTopFill.rectTransform.sizeDelta = new Vector2(0, canvas.rect.yMax - hudBottom - 4);
+            dockRect.GetWorldCorners(corners);
+            float dockTop = canvas.InverseTransformPoint(corners[1]).y;
+            battleBottomFill.rectTransform.sizeDelta = new Vector2(0, dockTop - canvas.rect.yMin);
+            bool battle = safeArea.gameObject.activeInHierarchy;
+            if (battleTopFill.enabled != battle) { battleTopFill.enabled = battle; battleBottomFill.enabled = battle; }
+        }
+
+        /// <summary>Canvas-space y of the HUD's lower edge, for placing guide bubbles below it.</summary>
+        public float HudBottomIn(RectTransform space)
+        {
+            var corners = new Vector3[4];
+            hudRect.GetWorldCorners(corners);
+            return space.InverseTransformPoint(corners[0]).y;
+        }
+
         public void Refresh()
         {
             if (Screen.safeArea != lastSafe) ApplySafeArea();
+            FitBattleBands();
             UpdateFieldPixels();
             for (int i = labelsUsed; i < labels.Count; i++)
                 if (labels[i].enabled) labels[i].enabled = false;

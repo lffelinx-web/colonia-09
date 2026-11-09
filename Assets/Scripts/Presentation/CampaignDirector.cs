@@ -110,6 +110,29 @@ namespace Colonia09.Presentation
             return null;
         }
 
+        /// <summary>
+        /// The player may build anywhere during a free step, even on a cell a later step marks. A build step
+        /// then moves its mark to the nearest free cell where the piece would connect, so the guide never stalls.
+        /// </summary>
+        void KeepCellFree(TutorialStep step)
+        {
+            if (!step.Cell.HasValue || step.Done == null) return;
+            var sim = game.Sim;
+            var cell = step.Cell.Value;
+            if (sim.ModuleAt(cell.x, cell.y) == null) return;
+            var type = step.Card ?? game.SelectedType;
+            Vector2Int? best = null;
+            int bestDistance = int.MaxValue;
+            for (int r = 1; r < sim.Height - 1; r++)
+                for (int c = 0; c < sim.Width; c++)
+                {
+                    int d = Math.Abs(r - cell.x) + Math.Abs(c - cell.y);
+                    if (d < bestDistance && sim.ModuleAt(r, c) == null && sim.WouldConnect(type, r, c)) { best = new Vector2Int(r, c); bestDistance = d; }
+                }
+            step.Cell = best;  // With no free cell left, the step accepts any cell.
+            game.Board.HighlightCell = best;
+        }
+
         /// <summary>The coach's "Entendido" button.</summary>
         public void Confirm()
         {
@@ -141,6 +164,7 @@ namespace Colonia09.Presentation
                 int cost = GameSimulation.BuildCost(step.Card.Value);
                 if (game.Sim.Charge < cost) game.Sim.DebugAddCharge(cost - game.Sim.Charge + 1);
             }
+            if (step != null) KeepCellFree(step);
             if (step != null && (step.Done != null ? step.Done(this) : confirmed))
             {
                 stepIndex++;

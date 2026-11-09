@@ -148,11 +148,20 @@ namespace Colonia09.Presentation
             root.gameObject.SetActive(false);
         }
 
+        float insetTop, insetBottom;
+
+        /// <summary>Screen pixels covered by the interface at the top and bottom; focused zones are centered in between.</summary>
+        public void SetViewInsets(float top, float bottom)
+        {
+            insetTop = top;
+            insetBottom = bottom;
+        }
+
         public void Focus(CampaignSector sector)
         {
             var (cx, cy) = CampaignData.ZoneCenter(sector);
             var p = TileWorld(cx, cy) - Origin;
-            center = new Vector2(p.x, p.y);
+            center = new Vector2(p.x, p.y - (insetBottom - insetTop) / 2 * UnitsPerPixel);
             Clamp();
         }
 

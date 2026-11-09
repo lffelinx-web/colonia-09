@@ -293,6 +293,14 @@ namespace Colonia09.Presentation
                             checkedFreeGoal = true;
                             yield return Frames(2);
                             Check($"sector {sector.Number}: a goal step without a marked cell leaves the screen touchable", !ui.GuideBlocksTouches);
+                            if (sector.Id == "well")
+                            {
+                                // A player found this: building on the cell a later step marks used to stall the guide.
+                                var core = sector.Level;
+                                sim.DebugAddCharge(60);
+                                sim.TryBuild(ModuleType.Generator, core.CoreRow, core.CoreColumn + 1);
+                                report.Add("Built a Generator on the cell the guide marks later");
+                            }
                         }
                         if (Time.frameCount % 5 == 0) SectorBotStep(sector.Id);  // A goal without a marked cell: build like a player.
                     }

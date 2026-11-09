@@ -82,6 +82,9 @@ namespace Colonia09.Presentation
             var touch = root.gameObject.AddComponent<MapTouchArea>();
             touch.Game = game;
             touch.raycastTarget = true;
+            // Zone tags float over the map but under the bars, so they slide behind the header and cards.
+            mapTags = Rt("Tags", root);
+            Stretch(mapTags);
             // Solid bands behind the header and the access cards reach the screen edges (notch and home bar),
             // so no strip of map peeks out above or below the interface.
             mapTopFill = Rt("TopFill", root).gameObject.AddComponent<Image>();
@@ -92,8 +95,6 @@ namespace Colonia09.Presentation
             mapBottomFill.rectTransform.anchorMin = Vector2.zero; mapBottomFill.rectTransform.anchorMax = new Vector2(1, 0); mapBottomFill.rectTransform.pivot = new Vector2(.5f, 0);
             var safe = Rt("Safe", root);
             safeCopies.Add(safe);
-            mapTags = Rt("Tags", safe);
-            Stretch(mapTags);
 
             // Header: menu, title, stars and the stages guide.
             var bar = Rt("Header", safe);
@@ -197,6 +198,9 @@ namespace Colonia09.Presentation
             mapCards.GetWorldCorners(corners);
             float cardsTop = canvas.InverseTransformPoint(corners[1]).y;
             mapBottomFill.rectTransform.sizeDelta = new Vector2(0, cardsTop - canvas.rect.yMin + 8);
+            // The camera centers zones in the free space between the bands.
+            float scale = canvas.lossyScale.y;
+            game.ColonyMap.SetViewInsets(mapTopFill.rectTransform.sizeDelta.y * scale, mapBottomFill.rectTransform.sizeDelta.y * scale);
         }
 
         void BuildMapHint(RectTransform safe)
@@ -222,7 +226,7 @@ namespace Colonia09.Presentation
         {
             var row = Rt("Access", safe);
             row.anchorMin = Vector2.zero; row.anchorMax = new Vector2(1, 0); row.pivot = new Vector2(.5f, 0);
-            row.sizeDelta = new Vector2(-16, 168); row.anchoredPosition = new Vector2(0, 8);
+            row.sizeDelta = new Vector2(-16, 112); row.anchoredPosition = new Vector2(0, 8);
             mapCards = row;
             DefenseCard = AccessCard(row, 0, "icon_board", "TABLERO\nDE DEFENSA", "Conquista la zona superando su tablero", OpenNextDefense);
             BuildCard = AccessCard(row, 1, "icon_crane", "MODO\nCONSTRUCCIÓN", "Levanta y mejora edificios", ToggleBuildMode);
@@ -238,18 +242,14 @@ namespace Colonia09.Presentation
             var edge = Rt("Edge", rt).gameObject.AddComponent<Image>();
             edge.sprite = frameSprite; edge.type = Image.Type.Sliced; edge.color = new Color(Cyan.r, Cyan.g, Cyan.b, .45f); edge.raycastTarget = false;
             Stretch(edge.rectTransform);
+            // Compact: icon on the left, title beside it, so the cards take little of the map.
             var image = Rt("Icon", rt).gameObject.AddComponent<Image>();
             image.sprite = Resources.Load<Sprite>("Sprites/UI/" + icon); image.preserveAspect = true; image.raycastTarget = false;
-            image.rectTransform.anchorMin = new Vector2(.06f, .52f); image.rectTransform.anchorMax = new Vector2(.94f, .96f);
-            image.rectTransform.offsetMin = image.rectTransform.offsetMax = Vector2.zero;
-            var heading = Label(rt, title, 22, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
-            heading.rectTransform.anchorMin = new Vector2(0, .2f); heading.rectTransform.anchorMax = new Vector2(1, .52f);
-            heading.resizeTextForBestFit = true; heading.resizeTextMinSize = 14; heading.resizeTextMaxSize = 22;
-            heading.rectTransform.offsetMin = new Vector2(6, 0); heading.rectTransform.offsetMax = new Vector2(-6, 0);
-            var body = Label(rt, text, 17, Muted, TextAnchor.UpperCenter);
-            body.resizeTextForBestFit = true; body.resizeTextMinSize = 12; body.resizeTextMaxSize = 17;
-            body.rectTransform.anchorMax = new Vector2(1, .2f);
-            body.rectTransform.offsetMin = new Vector2(8, 6); body.rectTransform.offsetMax = new Vector2(-8, 0);
+            image.rectTransform.anchorMin = new Vector2(0, .1f); image.rectTransform.anchorMax = new Vector2(0, .9f); image.rectTransform.pivot = new Vector2(0, .5f);
+            image.rectTransform.sizeDelta = new Vector2(84, 0); image.rectTransform.anchoredPosition = new Vector2(8, 0);
+            var heading = Label(rt, title, 22, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
+            heading.resizeTextForBestFit = true; heading.resizeTextMinSize = 13; heading.resizeTextMaxSize = 22;
+            heading.rectTransform.offsetMin = new Vector2(96, 6); heading.rectTransform.offsetMax = new Vector2(-6, -6);
             return button;
         }
 
@@ -442,6 +442,8 @@ namespace Colonia09.Presentation
             briefing.SetActive(false);
             CloseColonySheets();
             game.ColonyMap.Show();
+            Canvas.ForceUpdateCanvases();
+            FitMapBands();  // So the first focus already knows how much of the screen the bars cover.
             RefreshMap();
             CollectOnArrival();
             if (BuildMode) ToggleBuildMode();
@@ -767,7 +769,7 @@ namespace Colonia09.Presentation
                 bubbleY = Mathf.Clamp(bubbleY, bottom + bubbleHeight / 2 + 20, top - bubbleHeight / 2 - 20);
                 coachBubble.anchoredPosition = new Vector2(0, bubbleY);
             }
-            else if (freeGoal) coachBubble.anchoredPosition = new Vector2(0, top - HudHeight - bubbleHeight / 2 - 40);
+            else if (freeGoal) coachBubble.anchoredPosition = new Vector2(0, HudBottomIn(coachRoot) - bubbleHeight / 2 - 14);
             else coachBubble.anchoredPosition = tip ? new Vector2(0, bottom + DockHeight + bubbleHeight / 2 + 30) : Vector2.zero;
         }
 
