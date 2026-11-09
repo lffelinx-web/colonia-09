@@ -60,16 +60,18 @@ namespace Colonia09.Presentation
         static readonly Vector3 Origin = new Vector3(300, 0, 0);
         /// <summary>The sprites were rendered aimed 0.35 above the ground; this lifts them back onto their tile.</summary>
         const float SpriteLift = .2143f;
+        /// <summary>Landmarks were aimed 0.6 above the ground.</summary>
+        const float LandmarkLift = .3674f;
         const float MinZoom = 4f, MaxZoom = 8.5f;  // Closer than this the art would blur.
 
         GameController game;
         Camera cam;
         Material material;
         Transform root;
-        Sprite pave, road, lamp, ship, barricade, diamond, outline;
-        readonly Sprite[,] terrain = new Sprite[3, 3];
-        readonly Dictionary<BuildingType, Sprite> buildings = new Dictionary<BuildingType, Sprite>();
+        Sprite diamond, outline;
+        readonly Dictionary<string, (Sprite day, Sprite night)> art = new Dictionary<string, (Sprite, Sprite)>();
         readonly Dictionary<Vector2Int, Transform> placed = new Dictionary<Vector2Int, Transform>();
+        readonly List<SpriteRenderer> nightLayers = new List<SpriteRenderer>();
         SpriteRenderer selection;
         float zoom = 5.2f;
         Vector2 center;
@@ -79,21 +81,31 @@ namespace Colonia09.Presentation
         public bool Active { get; private set; }
         public string Hint { get; private set; } = "";
         public float TagScale => 5.2f / zoom;
+        /// <summary>Hour of the day used for lighting; null follows the phone's clock. Tests set it.</summary>
+        public float? ForceHour;
+        /// <summary>0 in full daylight, 1 at night, in between at dawn and dusk.</summary>
+        public float Nightness { get; private set; }
+
+        public static string LandmarkFor(CampaignSector sector)
+        {
+            switch (sector.Id)
+            {
+                case "landing": return "lm_landing";
+                case "camp": return "lm_camp";
+                case "well": return "lm_well";
+                case "greenhouse": return "lm_greenhouse";
+                case "mines": return "lm_mines";
+                case "workshop": return "lm_workshop";
+                case "port": return "lm_port";
+                default: return "lm_core";
+            }
+        }
 
         public void Init(GameController controller)
         {
             game = controller;
             cam = Camera.main;
             material = Resources.Load<Material>("Materials/SpriteUnlit");
-            for (int j = 0; j < 3; j++)
-                for (int i = 0; i < 3; i++)
-                    terrain[i, j] = Load($"colony_terrain_{i}_{j}");
-            pave = Load("tile_pave");
-            road = Load("tile_road");
-            lamp = Load("deco_lamp");
-            ship = Load("deco_ship");
-            barricade = Load("deco_barricade");
-            foreach (var type in ColonyData.Types) buildings[type] = Load("bld_" + type.ToString().ToLowerInvariant());
             diamond = MakeDiamond(false);
             outline = MakeDiamond(true);
             root = new GameObject("Colony").transform;
@@ -101,16 +113,29 @@ namespace Colonia09.Presentation
             root.gameObject.SetActive(false);
         }
 
-        static Sprite Load(string name) => Resources.Load<Sprite>("Sprites/Colony/" + name);
+        /// <summary>Day and night versions of a colony sprite; the night one may be missing.</summary>
+        (Sprite day, Sprite night) Art(string name)
+        {
+            if (!art.TryGetValue(name, out var pair))
+                art[name] = pair = (Resources.Load<Sprite>("Sprites/Colony/" + name), Resources.Load<Sprite>("Sprites/Colony/" + name + "_night"));
+            return pair;
+        }
 
         public static Vector3 TileWorld(float x, float y) => Origin + new Vector3((x - y) * .5f, -(x + y) * .25f, 0);
+
+        static float NightFor(float hour)
+        {
+            // Full night 20:00 to 05:00, full day 07:00 to 18:00, smooth in between.
+            if (hour >= 7 && hour <= 18) return 0;
+            if (hour >= 20 || hour <= 5) return 1;
+            return hour < 12 ? 1 - (hour - 5) / 2 : (hour - 18) / 2;
+        }
 
         Color boardBackground;
 
         public void Show()
         {
             if (!Active) boardBackground = cam.backgroundColor;
-            cam.backgroundColor = new Color(.29f, .2f, .15f);  // Ground color, in case an edge ever shows.
             Active = true;
             root.gameObject.SetActive(true);
             Rebuild();
@@ -133,7 +158,7 @@ namespace Colonia09.Presentation
 
         // ---- Building the scene -------------------------------------------------------
 
-        SpriteRenderer Put(Sprite sprite, Vector3 position, int order, Color color, float scale = 1)
+        SpriteRenderer Put(Sprite sprite, Vector3 position, int order, Color color, float scale = 1, Sprite night = null)
         {
             var go = new GameObject("Sprite");
             go.transform.SetParent(root, false);
@@ -142,9 +167,26 @@ namespace Colonia09.Presentation
             var r = go.AddComponent<SpriteRenderer>();
             r.sprite = sprite;
             r.color = color;
-            r.sortingOrder = order;
+            r.sortingOrder = order * 2;
             if (material != null) r.sharedMaterial = material;
+            if (night != null)
+            {
+                // The night version sits on top and fades in with the hour.
+                var n = new GameObject("Night").AddComponent<SpriteRenderer>();
+                n.transform.SetParent(go.transform, false);
+                n.sprite = night;
+                n.color = new Color(color.r, color.g, color.b, 0);
+                n.sortingOrder = order * 2 + 1;
+                if (material != null) n.sharedMaterial = material;
+                nightLayers.Add(n);
+            }
             return r;
+        }
+
+        SpriteRenderer Put(string name, Vector3 position, int order, float scale = 1)
+        {
+            var (day, night) = Art(name);
+            return day == null ? null : Put(day, position, order, Color.white, scale, night);
         }
 
         static int Depth(int x, int y) => (x + y) * 4;
@@ -154,21 +196,22 @@ namespace Colonia09.Presentation
             if (root == null) return;
             for (int i = root.childCount - 1; i >= 0; i--) Destroy(root.GetChild(i).gameObject);
             placed.Clear();
+            nightLayers.Clear();
             float half = (CampaignData.ColonySize - 1) / 2f;
-            // The ground comes in 3 x 3 pieces of 28/3 x 5 units around the map center.
+            // The island comes in 3 x 3 pieces of 28/3 x 5 units around the map center.
             for (int j = 0; j < 3; j++)
                 for (int i = 0; i < 3; i++)
-                    if (terrain[i, j] != null)
-                        Put(terrain[i, j], TileWorld(half, half) + new Vector3((i - 1) * 28f / 3, (1 - j) * 5f, 0), -5000, Color.white);
+                    Put($"colony_terrain_{i}_{j}", TileWorld(half, half) + new Vector3((i - 1) * 28f / 3, (1 - j) * 5f, 0), -5000);
             var lift = new Vector3(0, SpriteLift, 0);
 
-            // Roads from each liberated zone to the next one.
+            // Glowing roads are the energy links: they join each connected zone to the one before it.
             var sectors = CampaignData.Sectors;
+            var state = Colony.State();
             for (int i = 0; i + 1 < sectors.Length; i++)
             {
-                if (!SaveGame.Completed(sectors[i].Id) || !CampaignDirector.Unlocked(sectors[i + 1]) && !SaveGame.Completed(sectors[i + 1].Id)) continue;
+                if (!state.Connected.Contains(sectors[i].Id) || !state.Connected.Contains(sectors[i + 1].Id)) continue;
                 foreach (var (x, y) in CampaignData.Road(sectors[i], sectors[i + 1]))
-                    if (road != null) Put(road, TileWorld(x, y) + lift, -3000 + x + y, Color.white);
+                    Put("tile_road", TileWorld(x, y) + lift, -3000 + x + y);
             }
 
             foreach (var sector in sectors)
@@ -182,9 +225,9 @@ namespace Colonia09.Presentation
                         var pos = TileWorld(x, y);
                         if (free)
                         {
-                            if (pave != null) Put(pave, pos + lift, -3000 + x + y, Color.white);
+                            Put("tile_pave", pos + lift, -3000 + x + y);
                             bool corner = System.Math.Abs(x - cx) == CampaignData.ZoneRadius && System.Math.Abs(y - cy) == CampaignData.ZoneRadius;
-                            if (corner && lamp != null) Put(lamp, pos + lift, Depth(x, y), Color.white);
+                            if (corner) Put("deco_lamp", pos + lift, Depth(x, y));
                         }
                         else
                         {
@@ -193,21 +236,65 @@ namespace Colonia09.Presentation
                             Put(diamond, pos, -2500 + x + y, tint, .96f);
                         }
                     }
-                if (!free && barricade != null)
+                if (free)
+                {
+                    // The zone's landmark stands on its 3 x 3 center: what this place is for.
+                    var landmark = Put(LandmarkFor(sector), TileWorld(cx, cy) + new Vector3(0, LandmarkLift, 0), Depth(cx + 1, cy + 1) + 1);
+                    // Until the zone is connected its landmark stands dark and idle.
+                    if (landmark != null && !state.Connected.Contains(sector.Id))
+                    {
+                        landmark.color = new Color(.55f, .55f, .6f);
+                        if (landmark.transform.childCount > 0)
+                        {
+                            var night = landmark.transform.GetChild(0).GetComponent<SpriteRenderer>();
+                            nightLayers.Remove(night);
+                            Destroy(night.gameObject);
+                        }
+                    }
+                }
+                else
                     foreach (var (dx, dy) in new[] { (-1, 1), (1, -1), (0, 2), (-2, 0) })
-                        Put(barricade, TileWorld(cx + dx, cy + dy) + lift, Depth(cx + dx, cy + dy), Color.white);
-                if (sector.Number == 1 && ship != null) Put(ship, TileWorld(cx, cy) + lift, Depth(cx + 1, cy + 1) + 1, Color.white, 1.35f);
+                        Put("deco_barricade", TileWorld(cx + dx, cy + dy) + lift, Depth(cx + dx, cy + dy));
+                if (sector.Number == 1) Put("deco_ship", TileWorld(cx, cy) + lift, Depth(cx + 1, cy + 1) + 2, 1.35f);
             }
 
             foreach (var b in Colony.Saved)
             {
-                if (!System.Enum.TryParse(b.type, out BuildingType type) || !buildings.TryGetValue(type, out var sprite) || sprite == null) continue;
-                var r = Put(sprite, TileWorld(b.x, b.y) + lift, Depth(b.x, b.y) + 2, Color.white, .92f + b.level * .06f);
-                placed[new Vector2Int(b.x, b.y)] = r.transform;
+                if (!System.Enum.TryParse(b.type, out BuildingType type)) continue;
+                var r = Put("bld_" + type.ToString().ToLowerInvariant(), TileWorld(b.x, b.y) + lift, Depth(b.x, b.y) + 2, .92f + b.level * .06f);
+                if (r != null) placed[new Vector2Int(b.x, b.y)] = r.transform;
+            }
+            if (showFree)
+            {
+                // Construction mode: every free tile of a liberated zone gets a green outline.
+                foreach (var sector in sectors)
+                {
+                    if (!SaveGame.Completed(sector.Id)) continue;
+                    var (cx, cy) = CampaignData.ZoneCenter(sector);
+                    for (int y = cy - CampaignData.ZoneRadius; y <= cy + CampaignData.ZoneRadius; y++)
+                        for (int x = cx - CampaignData.ZoneRadius; x <= cx + CampaignData.ZoneRadius; x++)
+                            if (!CampaignData.Reserved(x, y) && Colony.At(x, y) == null)
+                                Put(outline, TileWorld(x, y), -2100, new Color(.5f, 1f, .7f, .9f), .92f);
+                }
             }
             selection = Put(outline, Vector3.zero, -2000, new Color(1, .83f, .55f, 1));
             selection.gameObject.SetActive(false);
             UpdateHint();
+            ApplyLight();
+        }
+
+        void ApplyLight()
+        {
+            var now = System.DateTime.Now;
+            Nightness = NightFor(ForceHour ?? now.Hour + now.Minute / 60f);
+            foreach (var n in nightLayers)
+            {
+                var c = n.color;
+                c.a = Nightness;
+                n.color = c;
+            }
+            // Sea-blue edges by day, deep night blue after dark, in case an edge ever shows.
+            cam.backgroundColor = Color.Lerp(new Color(.07f, .24f, .32f), new Color(.02f, .05f, .1f), Nightness);
         }
 
         void UpdateHint()
@@ -219,6 +306,15 @@ namespace Colonia09.Presentation
         }
 
         /// <summary>Highlights a tile, or nothing with null.</summary>
+        bool showFree;
+
+        /// <summary>Outlines the free tiles of every liberated zone (construction mode).</summary>
+        public void ShowFreeTiles(bool show)
+        {
+            showFree = show;
+            Rebuild();
+        }
+
         public void Select(Vector2Int? tile)
         {
             if (selection == null) return;
@@ -239,6 +335,7 @@ namespace Colonia09.Presentation
         public void Render()
         {
             if (!Active) return;
+            if (Time.frameCount % 120 == 0) ApplyLight();  // The hour changes slowly.
             cam.orthographicSize = zoom;
             cam.transform.position = Origin + new Vector3(center.x, center.y, -10);
             float t = Time.unscaledTime - popAt;

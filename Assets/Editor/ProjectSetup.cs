@@ -31,10 +31,12 @@ namespace Colonia09.EditorTools
             if (assetPath.Contains("/Colony/"))
             {
                 // Isometric colony: terrain pieces are 2048 pixels for 28/3 units; tile sprites are 512 pixels for 2 units.
+                // Landmarks are 768 pixels for 4 units. Everything is compressed: there are day and night sets.
                 bool ground = assetPath.Contains("terrain");
-                importer.spritePixelsPerUnit = ground ? 2048f / (28f / 3f) : 256;
-                importer.maxTextureSize = ground ? 2048 : 512;
-                importer.textureCompression = ground ? TextureImporterCompression.CompressedHQ : TextureImporterCompression.Uncompressed;
+                bool landmark = assetPath.Contains("/lm_");
+                importer.spritePixelsPerUnit = ground ? 2048f / (28f / 3f) : landmark ? 192 : 256;
+                importer.maxTextureSize = ground ? 2048 : landmark ? 1024 : 512;
+                importer.textureCompression = TextureImporterCompression.CompressedHQ;
                 return;
             }
             if (assetPath.Contains("/Map/"))

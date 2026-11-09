@@ -1,0 +1,2658 @@
+fileFormatVersion: 2
+guid: cfcd6e53319cf3a4fab6664b50ff3a3b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -689410802457915429
+    second: lm_well_0
+  - first:
+      213: 4737100856032816352
+    second: lm_well_1
+  - first:
+      213: -3671702657656438270
+    second: lm_well_2
+  - first:
+      213: -7115868543723220574
+    second: lm_well_3
+  - first:
+      213: -7470911705151154550
+    second: lm_well_4
+  - first:
+      213: 8833612349505483574
+    second: lm_well_5
+  - first:
+      213: 6987655128652533548
+    second: lm_well_6
+  - first:
+      213: -4601572855917943088
+    second: lm_well_7
+  - first:
+      213: 9055375519137490617
+    second: lm_well_8
+  - first:
+      213: -5995229365495178905
+    second: lm_well_9
+  - first:
+      213: 3525498713332418069
+    second: lm_well_10
+  - first:
+      213: 8293693799731082558
+    second: lm_well_11
+  - first:
+      213: -6628483731455570727
+    second: lm_well_12
+  - first:
+      213: 3015006953058708159
+    second: lm_well_13
+  - first:
+      213: -8680845026587109603
+    second: lm_well_14
+  - first:
+      213: -6900594705826273980
+    second: lm_well_15
+  - first:
+      213: 8370857544937219603
+    second: lm_well_16
+  - first:
+      213: 5600415321653595123
+    second: lm_well_17
+  - first:
+      213: -6115364931912877859
+    second: lm_well_18
+  - first:
+      213: -6891881248237947454
+    second: lm_well_19
+  - first:
+      213: 5871887281582243743
+    second: lm_well_20
+  - first:
+      213: 3657589130593417419
+    second: lm_well_21
+  - first:
+      213: 4899494819643964159
+    second: lm_well_22
+  - first:
+      213: -8485563160196246565
+    second: lm_well_23
+  - first:
+      213: 3572033111660559945
+    second: lm_well_24
+  - first:
+      213: 2135777641759760893
+    second: lm_well_25
+  - first:
+      213: -7042479334678363616
+    second: lm_well_26
+  - first:
+      213: 1321055568296276236
+    second: lm_well_27
+  - first:
+      213: -1825866837978301049
+    second: lm_well_28
+  - first:
+      213: -5352920729366287813
+    second: lm_well_29
+  - first:
+      213: -2849691084226311330
+    second: lm_well_30
+  - first:
+      213: 2124888624850109680
+    second: lm_well_31
+  - first:
+      213: -4403355222185691939
+    second: lm_well_32
+  - first:
+      213: -9137775100091672185
+    second: lm_well_33
+  - first:
+      213: -2233693781742324797
+    second: lm_well_34
+  - first:
+      213: -342423031093913938
+    second: lm_well_35
+  - first:
+      213: 9109046435394547256
+    second: lm_well_36
+  - first:
+      213: -1582367121902179576
+    second: lm_well_37
+  - first:
+      213: -7516511395305968583
+    second: lm_well_38
+  - first:
+      213: -989437462617732681
+    second: lm_well_39
+  - first:
+      213: 5592840775880573175
+    second: lm_well_40
+  - first:
+      213: 4654997775098609686
+    second: lm_well_41
+  - first:
+      213: -164474369336460219
+    second: lm_well_42
+  - first:
+      213: 340976335959720435
+    second: lm_well_43
+  - first:
+      213: 7173435525726289793
+    second: lm_well_44
+  - first:
+      213: -3120262751236172639
+    second: lm_well_45
+  - first:
+      213: 8236764525884780179
+    second: lm_well_46
+  - first:
+      213: 1497901290969572655
+    second: lm_well_47
+  - first:
+      213: -7604254507410362327
+    second: lm_well_48
+  - first:
+      213: -3327225780263835463
+    second: lm_well_49
+  - first:
+      213: -3069544745099576727
+    second: lm_well_50
+  - first:
+      213: -162258774848348429
+    second: lm_well_51
+  - first:
+      213: -237333083120259701
+    second: lm_well_52
+  - first:
+      213: 7016616652615645759
+    second: lm_well_53
+  - first:
+      213: -3145162218012922694
+    second: lm_well_54
+  - first:
+      213: -940648409556817502
+    second: lm_well_55
+  - first:
+      213: -7038577513037868277
+    second: lm_well_56
+  - first:
+      213: -7740757850891556002
+    second: lm_well_57
+  - first:
+      213: 5504721158680303703
+    second: lm_well_58
+  - first:
+      213: 2186617042417406399
+    second: lm_well_59
+  - first:
+      213: -2195254068289469743
+    second: lm_well_60
+  - first:
+      213: -3713073423571193985
+    second: lm_well_61
+  - first:
+      213: 4910633160586611053
+    second: lm_well_62
+  - first:
+      213: -6863127301137624291
+    second: lm_well_63
+  - first:
+      213: -692613629085808069
+    second: lm_well_64
+  - first:
+      213: 3920199390343287991
+    second: lm_well_65
+  - first:
+      213: 6022308540841718099
+    second: lm_well_66
+  - first:
+      213: 899502828955997626
+    second: lm_well_67
+  - first:
+      213: 4052588135169329018
+    second: lm_well_68
+  - first:
+      213: -8554854676215491103
+    second: lm_well_69
+  - first:
+      213: -6592768613714428221
+    second: lm_well_70
+  - first:
+      213: -7845278774968357474
+    second: lm_well_71
+  - first:
+      213: -5804965218861746687
+    second: lm_well_72
+  - first:
+      213: -4293175218865243268
+    second: lm_well_73
+  - first:
+      213: 5700701288407345037
+    second: lm_well_74
+  - first:
+      213: -6830535542898199352
+    second: lm_well_75
+  - first:
+      213: -484920037249213012
+    second: lm_well_76
+  - first:
+      213: -8035579423402473184
+    second: lm_well_77
+  - first:
+      213: 6843716207600804051
+    second: lm_well_78
+  - first:
+      213: 3930960288421519797
+    second: lm_well_79
+  - first:
+      213: 6895138829919299770
+    second: lm_well_80
+  - first:
+      213: -6085357839832877757
+    second: lm_well_81
+  - first:
+      213: -1379124147387812882
+    second: lm_well_82
+  - first:
+      213: -2315991661527054498
+    second: lm_well_83
+  - first:
+      213: -3578231758032941634
+    second: lm_well_84
+  - first:
+      213: 1618948477824190414
+    second: lm_well_85
+  - first:
+      213: 662285704744332649
+    second: lm_well_86
+  - first:
+      213: -8479840871750944815
+    second: lm_well_87
+  - first:
+      213: -8572460496301372115
+    second: lm_well_88
+  - first:
+      213: 5897988440395230416
+    second: lm_well_89
+  - first:
+      213: -5256186860921551368
+    second: lm_well_90
+  - first:
+      213: 4805010540106681676
+    second: lm_well_91
+  - first:
+      213: 2543214894940728485
+    second: lm_well_92
+  - first:
+      213: -7547838543118427264
+    second: lm_well_93
+  - first:
+      213: -3911143309569745169
+    second: lm_well_94
+  - first:
+      213: -5658676887742195067
+    second: lm_well_95
+  - first:
+      213: 6761667035708582466
+    second: lm_well_96
+  - first:
+      213: 5830425563740494469
+    second: lm_well_97
+  - first:
+      213: -2307449741036346829
+    second: lm_well_98
+  - first:
+      213: 2403217360549054887
+    second: lm_well_99
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 192
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lm_well_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 691
+        width: 11
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdfcd2f1788be66f0800000000000000
+      internalID: -689410802457915429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_1
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 760
+        width: 52
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ece80d51209db140800000000000000
+      internalID: 4737100856032816352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 443
+        width: 10
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202c789e2ed7b0dc0800000000000000
+      internalID: -3671702657656438270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 768
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1500fc24b5f3d90800000000000000
+      internalID: -7115868543723220574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_4
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 530
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a865822036df15890800000000000000
+      internalID: -7470911705151154550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 538
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63337cf11ab479a70800000000000000
+      internalID: 8833612349505483574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_6
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 542
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f454c315329f060800000000000000
+      internalID: 6987655128652533548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_7
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 542
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d66ee22edde320c0800000000000000
+      internalID: -4601572855917943088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 547
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b665f5ae082bad70800000000000000
+      internalID: 9055375519137490617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_9
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 556
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7695baaf7aaaccca0800000000000000
+      internalID: -5995229365495178905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_10
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 552
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5168640a6661de030800000000000000
+      internalID: 3525498713332418069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_11
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 562
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e35b4d8a19e191370800000000000000
+      internalID: 8293693799731082558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_12
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 572
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc822b5a25e204a0800000000000000
+      internalID: -6628483731455570727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_13
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 580
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbaa56089d477d920800000000000000
+      internalID: 3015006953058708159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_14
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 586
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d171f000171778780800000000000000
+      internalID: -8680845026587109603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_15
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 573
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445a84c0da92c30a0800000000000000
+      internalID: -6900594705826273980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_16
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 600
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316a16f16924b2470800000000000000
+      internalID: 8370857544937219603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_17
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 600
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb41d1101ca8bd40800000000000000
+      internalID: 5600415321653595123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_18
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 608
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8b379befbd12ba0800000000000000
+      internalID: -6115364931912877859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_19
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 611
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5f99cf48e1b50a0800000000000000
+      internalID: -6891881248237947454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_20
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 608
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ff7db3f522d7150800000000000000
+      internalID: 5871887281582243743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_21
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 566
+        width: 33
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8b95f7fed52c230800000000000000
+      internalID: 3657589130593417419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_22
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 626
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffabebf64908ef340800000000000000
+      internalID: 4899494819643964159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_23
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 630
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd39c55a3493d3a80800000000000000
+      internalID: -8485563160196246565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_24
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 630
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ef57a8039629130800000000000000
+      internalID: 3572033111660559945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_25
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 641
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df1ef48037ec3ad10800000000000000
+      internalID: 2135777641759760893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_26
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 649
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02287769b56144e90800000000000000
+      internalID: -7042479334678363616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_27
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 657
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01f9d44a05555210800000000000000
+      internalID: 1321055568296276236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_28
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 633
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d3323e8c739a6e0800000000000000
+      internalID: -1825866837978301049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_29
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 664
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a2c4725fa96b5b0800000000000000
+      internalID: -5352920729366287813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_30
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 538
+        width: 114
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5bc715ae0dd378d0800000000000000
+      internalID: -2849691084226311330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_31
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 673
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4857732fe1d7d10800000000000000
+      internalID: 2124888624850109680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_32
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 654
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4b2c161c324e2c0800000000000000
+      internalID: -4403355222185691939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_33
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 641
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78950a1e5f9103180800000000000000
+      internalID: -9137775100091672185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_34
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 538
+        width: 50
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3ff3217535001e0800000000000000
+      internalID: -2233693781742324797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_35
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 608
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea61cb441187f3bf0800000000000000
+      internalID: -342423031093913938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_36
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 618
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83eea30a875d96e70800000000000000
+      internalID: 9109046435394547256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_37
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 539
+        width: 84
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b63c28c7d4a0ae0800000000000000
+      internalID: -1582367121902179576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_38
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 607
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93cac9cc5bcffa790800000000000000
+      internalID: -7516511395305968583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_39
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 603
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9c439bedfc442f0800000000000000
+      internalID: -989437462617732681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_40
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 576
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f08ea3bd03cd9d40800000000000000
+      internalID: 5592840775880573175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_41
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 561
+        width: 40
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6108cfe20dfd99040800000000000000
+      internalID: 4654997775098609686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_42
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 568
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c3b09be6ba7bdf0800000000000000
+      internalID: -164474369336460219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_43
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 539
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f181b5cb246bb400800000000000000
+      internalID: 340976335959720435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_44
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 550
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f351aaa992d8360800000000000000
+      internalID: 7173435525726289793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_45
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 545
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a45fa24f8992b4d0800000000000000
+      internalID: -3120262751236172639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_46
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 540
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ea6ef22bdde4270800000000000000
+      internalID: 8236764525884780179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_47
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 539
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2527d4b94d99c410800000000000000
+      internalID: 1497901290969572655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_48
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 536
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920742880d2487690800000000000000
+      internalID: -7604254507410362327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_49
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 532
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b82adff7c153d1d0800000000000000
+      internalID: -3327225780263835463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_50
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 512
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a3c264159c665d0800000000000000
+      internalID: -3069544745099576727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_51
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 528
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe5973018a8fbdf0800000000000000
+      internalID: -162258774848348429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_52
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 525
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d2b2f71d2d4bcf0800000000000000
+      internalID: -237333083120259701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_53
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 524
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3afe308ba7006160800000000000000
+      internalID: 7016616652615645759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_54
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 506
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc2c5260a32a54d0800000000000000
+      internalID: -3145162218012922694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_55
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 501
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a964d9514522f2f0800000000000000
+      internalID: -940648409556817502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_56
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 488
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03535b3b03f15e90800000000000000
+      internalID: -7038577513037868277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_57
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 282
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5bea453fbd439490800000000000000
+      internalID: -7740757850891556002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_58
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 278
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75857b28ab2b46c40800000000000000
+      internalID: 5504721158680303703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 115
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb1da196d9c685e10800000000000000
+      internalID: 2186617042417406399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_60
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 112
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d200eb4e04e881e0800000000000000
+      internalID: -2195254068289469743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_61
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 121
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f681bd463887cc0800000000000000
+      internalID: -3713073423571193985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_62
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 119
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69c40787d2162440800000000000000
+      internalID: 4910633160586611053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_63
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 121
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13186ff41641c0a0800000000000000
+      internalID: -6863127301137624291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 225
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a0fbfe2975366f0800000000000000
+      internalID: -692613629085808069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_65
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 109
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b45d1e4398576630800000000000000
+      internalID: 3920199390343287991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_66
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 108
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351fba8d5b9839350800000000000000
+      internalID: 6022308540841718099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_67
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 102
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab59162ae0dab7c00800000000000000
+      internalID: 899502828955997626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_68
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 97
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a770bb9ff6fad3830800000000000000
+      internalID: 4052588135169329018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_69
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 97
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5161f5ffc074980800000000000000
+      internalID: -8554854676215491103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_70
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 97
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cef43530e7c184a0800000000000000
+      internalID: -6592768613714428221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_71
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 97
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d691e2588ff1390800000000000000
+      internalID: -7845278774968357474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_72
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 84
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1067f34b3ee907fa0800000000000000
+      internalID: -5804965218861746687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_73
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 81
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bf60972e39b64c0800000000000000
+      internalID: -4293175218865243268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_74
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 85
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d87a1224e95fc1f40800000000000000
+      internalID: 5700701288407345037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_75
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 71
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c47fdb0d101531a0800000000000000
+      internalID: -6830535542898199352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_76
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 75
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad9a4b9bc73549f0800000000000000
+      internalID: -484920037249213012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_77
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 63
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02948a7b613eb7090800000000000000
+      internalID: -8035579423402473184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_78
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 42
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d021a991a3c9fe50800000000000000
+      internalID: 6843716207600804051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_79
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 44
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b128812e839d8630800000000000000
+      internalID: 3930960288421519797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_80
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 48
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8a75adb3470bf50800000000000000
+      internalID: 6895138829919299770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_81
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 50
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3457f9949477c8ba0800000000000000
+      internalID: -6085357839832877757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_82
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 33
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee339c515ed5cdce0800000000000000
+      internalID: -1379124147387812882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_83
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 33
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57c9efbad1fbdfd0800000000000000
+      internalID: -2315991661527054498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_84
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 25
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebdcc62ac21975ec0800000000000000
+      internalID: -3578231758032941634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_85
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 31
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7ce522019a77610800000000000000
+      internalID: 1618948477824190414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_86
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 21
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96dea1be659e03900800000000000000
+      internalID: 662285704744332649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_87
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 14
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7327fb7ad815a80800000000000000
+      internalID: -8479840871750944815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_88
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 10
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d43e2f890880980800000000000000
+      internalID: -8572460496301372115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_89
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 17
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dc2e17dc3dd9d150800000000000000
+      internalID: 5897988440395230416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_90
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 8
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f502b106e54e07b0800000000000000
+      internalID: -5256186860921551368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_91
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 9
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d0111d0a3dea240800000000000000
+      internalID: 4805010540106681676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_92
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 9
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5acac60f8705b4320800000000000000
+      internalID: 2543214894940728485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_93
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 9
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b9c6fc5d0b04790800000000000000
+      internalID: -7547838543118427264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_94
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 9
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee137fc1e3d8b9c0800000000000000
+      internalID: -3911143309569745169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_95
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 9
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ad96ff9575871b0800000000000000
+      internalID: -5658676887742195067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_96
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 10
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ae0e8185446dd50800000000000000
+      internalID: 6761667035708582466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_97
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 9
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58adb18c825d9e050800000000000000
+      internalID: 5830425563740494469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_98
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 9
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33226789faa4affd0800000000000000
+      internalID: -2307449741036346829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lm_well_99
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 0
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a90495e471f95120800000000000000
+      internalID: 2403217360549054887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

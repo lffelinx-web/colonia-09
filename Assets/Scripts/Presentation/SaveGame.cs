@@ -27,8 +27,10 @@ namespace Colonia09.Presentation
         public List<string> tips = new List<string>();
 
         // Colony.
-        public double materials, data;
+        public double materials, data, water, food, energy, population;
         public List<BuildingSave> buildings = new List<BuildingSave>();
+        /// <summary>Zones whose energy link to the colony has been built.</summary>
+        public List<string> connected = new List<string>();
         /// <summary>UTC ticks of the last time production was added; 0 before the first building.</summary>
         public long productionTicks;
     }

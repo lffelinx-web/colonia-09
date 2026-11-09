@@ -24,7 +24,8 @@ namespace Colonia09.Presentation
         {
             public CampaignSector Sector;
             public Button Button;
-            public RectTransform Tag;
+            public RectTransform Tag, DevFill;
+            public GameObject DevBar;
             public Image Ring;
             public Text Caption, State;
             public readonly List<Image> Stars = new List<Image>();
@@ -86,33 +87,90 @@ namespace Colonia09.Presentation
             mapTags = Rt("Tags", safe);
             Stretch(mapTags);
 
-            var bar = Rt("TopBar", safe);
+            // Header: menu, title, stars and the stages guide.
+            var bar = Rt("Header", safe);
             bar.anchorMin = new Vector2(0, 1); bar.anchorMax = Vector2.one; bar.pivot = new Vector2(.5f, 1);
-            bar.sizeDelta = new Vector2(0, 116); bar.anchoredPosition = Vector2.zero;
+            bar.sizeDelta = new Vector2(0, 140); bar.anchoredPosition = Vector2.zero;
             var barBg = bar.gameObject.AddComponent<Image>();
-            barBg.color = new Color(.03f, .08f, .12f, .94f);
-            MapBackButton = TextButton(bar, "‹ MENÚ", 32, PanelLight, Txt, () => { game.Audio.Play("select", true); game.ShowMainMenu(); });
+            barBg.color = new Color(.02f, .07f, .11f, .92f);
+            MapBackButton = TextButton(bar, "≡", 52, PanelLight, Txt, () => { game.Audio.Play("select", true); game.ShowMainMenu(); });
             var backRt = (RectTransform)MapBackButton.transform;
             backRt.anchorMin = backRt.anchorMax = new Vector2(0, .5f); backRt.pivot = new Vector2(0, .5f);
-            backRt.sizeDelta = new Vector2(190, 80); backRt.anchoredPosition = new Vector2(18, 0);
-            var title = Label(bar, "COLONIA", 44, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
-            title.rectTransform.offsetMin = new Vector2(220, 0); title.rectTransform.offsetMax = new Vector2(-220, 0);
+            backRt.sizeDelta = new Vector2(100, 90); backRt.anchoredPosition = new Vector2(18, 0);
+            var title = Label(bar, "COLONIA 09", 54, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
+            title.rectTransform.anchorMin = new Vector2(0, .4f);
+            title.rectTransform.offsetMin = new Vector2(130, 0); title.rectTransform.offsetMax = new Vector2(-300, -8);
+            var glow = title.gameObject.AddComponent<Outline>();
+            glow.effectColor = new Color(Cyan.r, Cyan.g, Cyan.b, .35f); glow.effectDistance = new Vector2(2, -2);
+            var subtitle = Label(bar, "CAMPAÑA · EXPANSIÓN DE LA COLONIA", 21, Cyan, TextAnchor.MiddleCenter);
+            subtitle.rectTransform.anchorMax = new Vector2(1, .4f);
+            subtitle.rectTransform.offsetMin = new Vector2(130, 8); subtitle.rectTransform.offsetMax = new Vector2(-300, 0);
             var chip = Rt("Stars", bar);
             chip.anchorMin = chip.anchorMax = new Vector2(1, .5f); chip.pivot = new Vector2(1, .5f);
-            chip.sizeDelta = new Vector2(190, 76); chip.anchoredPosition = new Vector2(-18, 0);
+            chip.sizeDelta = new Vector2(170, 76); chip.anchoredPosition = new Vector2(-118, 0);
             var chipBg = chip.gameObject.AddComponent<Image>();
             chipBg.sprite = rounded; chipBg.type = Image.Type.Sliced; chipBg.color = Panel; chipBg.raycastTarget = false;
             var star = Rt("Star", chip).gameObject.AddComponent<Image>();
             star.sprite = starSprite; star.color = StarOn; star.raycastTarget = false;
             star.rectTransform.anchorMin = star.rectTransform.anchorMax = new Vector2(0, .5f); star.rectTransform.pivot = new Vector2(0, .5f);
-            star.rectTransform.sizeDelta = new Vector2(48, 48); star.rectTransform.anchoredPosition = new Vector2(14, 0);
-            mapStarsText = Label(chip, "", 32, Gold, TextAnchor.MiddleCenter, FontStyle.Bold);
-            mapStarsText.rectTransform.offsetMin = new Vector2(62, 0);
+            star.rectTransform.sizeDelta = new Vector2(46, 46); star.rectTransform.anchoredPosition = new Vector2(12, 0);
+            mapStarsText = Label(chip, "", 30, Gold, TextAnchor.MiddleCenter, FontStyle.Bold);
+            mapStarsText.rectTransform.offsetMin = new Vector2(58, 0);
+            StagesButton = TextButton(bar, "i", 40, PanelLight, Cyan, () => ToggleStages(!stagesPanel.activeSelf));
+            var infoRt = (RectTransform)StagesButton.transform;
+            infoRt.anchorMin = infoRt.anchorMax = new Vector2(1, .5f); infoRt.pivot = new Vector2(1, .5f);
+            infoRt.sizeDelta = new Vector2(84, 84); infoRt.anchoredPosition = new Vector2(-18, 0);
+
+            // The six colony resources with their hourly production.
+            var strip = Rt("Resources", safe);
+            strip.anchorMin = new Vector2(0, 1); strip.anchorMax = Vector2.one; strip.pivot = new Vector2(.5f, 1);
+            strip.sizeDelta = new Vector2(-20, 112); strip.anchoredPosition = new Vector2(0, -146);
+            var stripBg = strip.gameObject.AddComponent<Image>();
+            stripBg.sprite = rounded; stripBg.type = Image.Type.Sliced; stripBg.color = new Color(.03f, .1f, .15f, .92f); stripBg.raycastTarget = false;
+            var stripEdge = Rt("Edge", strip).gameObject.AddComponent<Image>();
+            stripEdge.sprite = frameSprite; stripEdge.type = Image.Type.Sliced; stripEdge.color = new Color(Cyan.r, Cyan.g, Cyan.b, .35f); stripEdge.raycastTarget = false;
+            Stretch(stripEdge.rectTransform);
+            for (int i = 0; i < Resources6.Length; i++)
+            {
+                var (key, label, icon) = Resources6[i];
+                var cell = Rt(key, strip);
+                cell.anchorMin = new Vector2(i / 6f, 0); cell.anchorMax = new Vector2((i + 1) / 6f, 1);
+                cell.offsetMin = cell.offsetMax = Vector2.zero;
+                var image = Rt("Icon", cell).gameObject.AddComponent<Image>();
+                image.sprite = Resources.Load<Sprite>("Sprites/UI/" + icon); image.preserveAspect = true; image.raycastTarget = false;
+                image.rectTransform.anchorMin = image.rectTransform.anchorMax = new Vector2(0, .5f); image.rectTransform.pivot = new Vector2(0, .5f);
+                image.rectTransform.sizeDelta = new Vector2(48, 48); image.rectTransform.anchoredPosition = new Vector2(6, 0);
+                var text = Label(cell, "", 26, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
+                text.resizeTextForBestFit = true; text.resizeTextMinSize = 12; text.resizeTextMaxSize = 26;
+                text.rectTransform.offsetMin = new Vector2(56, 6); text.rectTransform.offsetMax = new Vector2(-2, -6);
+                resourceTexts[key] = text;
+                resourceLabels[key] = label;
+            }
 
             foreach (var sector in CampaignData.Sectors) mapNodes.Add(BuildNode(sector));
             BuildResourceBar(safe);
             BuildMapHint(safe);
+            BuildAccessCards(safe);
+            BuildStages(safe);
             campaignMap.SetActive(false);
+        }
+
+        static readonly (string key, string label, string icon)[] Resources6 =
+        {
+            ("materials", "Materiales", "icon_materials"), ("data", "Datos", "icon_data"), ("water", "Agua", "icon_water"),
+            ("food", "Comida", "icon_food"), ("energy", "Energía", "icon_energy"), ("population", "Población", "icon_population"),
+        };
+        readonly Dictionary<string, Text> resourceTexts = new Dictionary<string, Text>();
+        readonly Dictionary<string, string> resourceLabels = new Dictionary<string, string>();
+
+        /// <summary>One cell of the resource strip: name, amount and hourly change.</summary>
+        void SetResource(string key, double amount, double perHour)
+        {
+            if (!resourceTexts.TryGetValue(key, out var text)) return;
+            string rate = "<color=#5d7486>-</color>";
+            if (perHour > .05) rate = "<color=#91e5bd>+" + perHour.ToString("0") + "/h</color>";
+            else if (perHour < -.05) rate = "<color=#ff8c8a>" + perHour.ToString("0") + "/h</color>";
+            text.text = $"<size=17><color=#99b5c7>{resourceLabels[key]}</color></size>\n{Mathf.FloorToInt((float)amount)}  <size=17>{rate}</size>";
         }
 
         RectTransform mapTags;
@@ -122,12 +180,186 @@ namespace Colonia09.Presentation
         {
             var hint = Rt("Hint", safe);
             hint.anchorMin = new Vector2(.05f, 0); hint.anchorMax = new Vector2(.95f, 0); hint.pivot = new Vector2(.5f, 0);
-            hint.sizeDelta = new Vector2(0, 70); hint.anchoredPosition = new Vector2(0, 130);
+            hint.sizeDelta = new Vector2(0, 60); hint.anchoredPosition = new Vector2(0, 236);
             var bg = hint.gameObject.AddComponent<Image>();
-            bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = new Color(.02f, .06f, .09f, .8f); bg.raycastTarget = false;
-            mapHint = Label(hint, "", 26, Muted, TextAnchor.MiddleCenter);
-            mapHint.resizeTextForBestFit = true; mapHint.resizeTextMinSize = 16; mapHint.resizeTextMaxSize = 26;
+            bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = new Color(.02f, .06f, .09f, .78f); bg.raycastTarget = false;
+            mapHint = Label(hint, "", 24, Muted, TextAnchor.MiddleCenter);
+            mapHint.resizeTextForBestFit = true; mapHint.resizeTextMinSize = 15; mapHint.resizeTextMaxSize = 24;
             mapHint.rectTransform.offsetMin = new Vector2(14, 0); mapHint.rectTransform.offsetMax = new Vector2(-14, 0);
+        }
+
+        // ---- The three access cards ---------------------------------------------------
+
+        public Button DefenseCard { get; private set; }
+        public Button BuildCard { get; private set; }
+        public Button LinkCard { get; private set; }
+        public bool BuildMode { get; private set; }
+
+        void BuildAccessCards(RectTransform safe)
+        {
+            var row = Rt("Access", safe);
+            row.anchorMin = Vector2.zero; row.anchorMax = new Vector2(1, 0); row.pivot = new Vector2(.5f, 0);
+            row.sizeDelta = new Vector2(-20, 214); row.anchoredPosition = new Vector2(0, 12);
+            DefenseCard = AccessCard(row, 0, "icon_board", "TABLERO\nDE DEFENSA", "Conquista la zona superando su tablero", OpenNextDefense);
+            BuildCard = AccessCard(row, 1, "icon_crane", "MODO\nCONSTRUCCIÓN", "Levanta y mejora edificios", ToggleBuildMode);
+            LinkCard = AccessCard(row, 2, "icon_link", "CONEXIÓN\nDE ZONAS", "Enlaza las zonas con la colonia", ShowLinkInfo);
+        }
+
+        Button AccessCard(RectTransform row, int index, string icon, string title, string text, UnityEngine.Events.UnityAction onClick)
+        {
+            var button = TextButton(row, "", 20, new Color(.05f, .13f, .2f, .96f), Txt, onClick);
+            var rt = (RectTransform)button.transform;
+            rt.anchorMin = new Vector2(index / 3f, 0); rt.anchorMax = new Vector2((index + 1) / 3f, 1);
+            rt.offsetMin = new Vector2(6, 0); rt.offsetMax = new Vector2(-6, 0);
+            var edge = Rt("Edge", rt).gameObject.AddComponent<Image>();
+            edge.sprite = frameSprite; edge.type = Image.Type.Sliced; edge.color = new Color(Cyan.r, Cyan.g, Cyan.b, .45f); edge.raycastTarget = false;
+            Stretch(edge.rectTransform);
+            var image = Rt("Icon", rt).gameObject.AddComponent<Image>();
+            image.sprite = Resources.Load<Sprite>("Sprites/UI/" + icon); image.preserveAspect = true; image.raycastTarget = false;
+            image.rectTransform.anchorMin = new Vector2(.06f, .5f); image.rectTransform.anchorMax = new Vector2(.94f, .97f);
+            image.rectTransform.offsetMin = image.rectTransform.offsetMax = Vector2.zero;
+            var heading = Label(rt, title, 22, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
+            heading.rectTransform.anchorMin = new Vector2(0, .22f); heading.rectTransform.anchorMax = new Vector2(1, .52f);
+            heading.rectTransform.offsetMin = new Vector2(6, 0); heading.rectTransform.offsetMax = new Vector2(-6, 0);
+            var body = Label(rt, text, 17, Muted, TextAnchor.UpperCenter);
+            body.resizeTextForBestFit = true; body.resizeTextMinSize = 12; body.resizeTextMaxSize = 17;
+            body.rectTransform.anchorMax = new Vector2(1, .22f);
+            body.rectTransform.offsetMin = new Vector2(8, 6); body.rectTransform.offsetMax = new Vector2(-8, 0);
+            return button;
+        }
+
+        void OpenNextDefense()
+        {
+            var next = System.Array.Find(CampaignData.Sectors, s => CampaignDirector.Unlocked(s) && !SaveGame.Completed(s.Id))
+                ?? System.Array.FindLast(CampaignData.Sectors, s => CampaignDirector.Unlocked(s));
+            if (next == null) return;
+            game.ColonyMap.Focus(next);
+            OpenBriefing(next);
+        }
+
+        void ToggleBuildMode()
+        {
+            game.Audio.Play("select", true);
+            BuildMode = !BuildMode;
+            var zone = System.Array.FindLast(CampaignData.Sectors, s => SaveGame.Completed(s.Id) && Colony.CountIn(s.Id) < ColonyData.LotsFor(s.Id))
+                ?? System.Array.FindLast(CampaignData.Sectors, s => SaveGame.Completed(s.Id));
+            if (BuildMode && zone == null)
+            {
+                BuildMode = false;
+                ShowMapNotice("Libera una zona en su tablero de defensa para empezar a construir", 3);
+                return;
+            }
+            game.ColonyMap.ShowFreeTiles(BuildMode);
+            if (BuildMode)
+            {
+                game.ColonyMap.Focus(zone);
+                ShowMapNotice("Modo construcción: toca una casilla marcada para levantar un edificio", 3);
+            }
+            BuildCard.GetComponent<Image>().color = BuildMode ? new Color(.15f, .35f, .3f, .98f) : new Color(.05f, .13f, .2f, .96f);
+        }
+
+        void ShowLinkInfo()
+        {
+            game.Audio.Play("select", true);
+            var pending = System.Array.Find(CampaignData.Sectors, s => SaveGame.Completed(s.Id) && !Colony.IsConnected(s.Id));
+            if (pending == null)
+            {
+                ShowMapNotice("Todas las zonas liberadas ya están conectadas a la colonia", 3);
+                return;
+            }
+            game.ColonyMap.Focus(pending);
+            OpenBriefing(pending);
+        }
+
+        public Button ConnectButton { get; private set; }
+
+        void ConnectBriefed()
+        {
+            var sector = briefed;
+            var refusal = Colony.RefuseConnection(sector);
+            if (refusal != null) { game.Audio.Play("hit", true); ShowMapNotice(refusal, 3); return; }
+            Colony.Connect(sector);
+            game.Audio.Play("upgrade", true);
+            briefing.SetActive(false);
+            RefreshMap();
+            ShowMapNotice($"{sector.Name} conectada · {ColonyData.Zones[sector.Id].Summary}", 3.5f);
+        }
+
+        // ---- The five stages of a zone ------------------------------------------------
+
+        GameObject stagesPanel;
+        public Button StagesButton { get; private set; }
+        public bool StagesOpen => stagesPanel.activeSelf;
+
+        void BuildStages(RectTransform safe)
+        {
+            var panel = Rt("Stages", safe);
+            panel.anchorMin = panel.anchorMax = new Vector2(1, 1); panel.pivot = new Vector2(1, 1);
+            panel.sizeDelta = new Vector2(430, 640); panel.anchoredPosition = new Vector2(-14, -272);
+            stagesPanel = panel.gameObject;
+            var bg = panel.gameObject.AddComponent<Image>();
+            bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = new Color(.03f, .1f, .15f, .95f);
+            var edge = Rt("Edge", panel).gameObject.AddComponent<Image>();
+            edge.sprite = frameSprite; edge.type = Image.Type.Sliced; edge.color = new Color(Cyan.r, Cyan.g, Cyan.b, .55f); edge.raycastTarget = false;
+            Stretch(edge.rectTransform);
+            var heading = Label(panel, "PROGRESO\nDE CAMPAÑA", 30, Txt, TextAnchor.UpperLeft, FontStyle.Bold);
+            heading.rectTransform.offsetMin = new Vector2(26, 0); heading.rectTransform.offsetMax = new Vector2(-80, -20);
+            var close = TextButton(panel, "×", 40, PanelLight, Txt, () => ToggleStages(false));
+            var closeRt = (RectTransform)close.transform;
+            closeRt.anchorMin = closeRt.anchorMax = Vector2.one; closeRt.pivot = Vector2.one;
+            closeRt.sizeDelta = new Vector2(70, 64); closeRt.anchoredPosition = new Vector2(-12, -12);
+            var stages = new[]
+            {
+                ("icon_wave", "Zona hostil", "El enemigo ocupa la zona."),
+                ("icon_board", "Defensa", "Supera su tablero de defensa."),
+                ("icon_base", "Liberación", "La zona queda segura y aparece su edificio principal."),
+                ("icon_link", "Conexión", "Tiende el enlace de energía con la colonia."),
+                ("icon_crane", "Desarrollo", "Construye y mejora sus edificios."),
+            };
+            for (int i = 0; i < stages.Length; i++)
+            {
+                var (icon, name, text) = stages[i];
+                var row = Rt("Stage", panel);
+                row.anchorMin = new Vector2(0, 1); row.anchorMax = Vector2.one; row.pivot = new Vector2(.5f, 1);
+                row.sizeDelta = new Vector2(-30, 100); row.anchoredPosition = new Vector2(0, -112 - i * 104);
+                var image = Rt("Icon", row).gameObject.AddComponent<Image>();
+                image.sprite = Resources.Load<Sprite>("Sprites/UI/" + icon); image.preserveAspect = true; image.raycastTarget = false;
+                image.rectTransform.anchorMin = image.rectTransform.anchorMax = new Vector2(0, .5f); image.rectTransform.pivot = new Vector2(0, .5f);
+                image.rectTransform.sizeDelta = new Vector2(70, 70); image.rectTransform.anchoredPosition = new Vector2(8, 0);
+                var label = Label(row, $"<b>{name}</b>\n<size=20><color=#99b5c7>{text}</color></size>", 26, Txt, TextAnchor.MiddleLeft);
+                label.resizeTextForBestFit = true; label.resizeTextMinSize = 14; label.resizeTextMaxSize = 26;
+                label.rectTransform.offsetMin = new Vector2(92, 0);
+                if (i < stages.Length - 1)
+                {
+                    var line = Rt("Line", row).gameObject.AddComponent<Image>();
+                    line.color = new Color(Cyan.r, Cyan.g, Cyan.b, .4f); line.raycastTarget = false;
+                    line.rectTransform.anchorMin = line.rectTransform.anchorMax = new Vector2(0, 0); line.rectTransform.pivot = new Vector2(.5f, 1);
+                    line.rectTransform.sizeDelta = new Vector2(4, 20); line.rectTransform.anchoredPosition = new Vector2(43, 12);
+                }
+            }
+            stagesPanel.SetActive(false);
+        }
+
+        void ToggleStages(bool show)
+        {
+            game.Audio.Play("select", true);
+            stagesPanel.SetActive(show);
+            if (show) stagesPanel.transform.SetAsLastSibling();
+        }
+
+        static string ZoneIcon(CampaignSector sector)
+        {
+            switch (sector.Id)
+            {
+                case "landing": return "icon_ship";
+                case "camp": return "icon_population";
+                case "well": return "icon_water";
+                case "greenhouse": return "icon_food";
+                case "mines": return "icon_materials";
+                case "workshop": return "icon_gear";
+                case "port": return "icon_anchor";
+                default: return "icon_base";
+            }
         }
 
         MapNode BuildNode(CampaignSector sector)
@@ -135,28 +367,43 @@ namespace Colonia09.Presentation
             var node = new MapNode { Sector = sector };
             var tag = Rt("Zone" + sector.Number, mapTags);
             tag.anchorMin = tag.anchorMax = Vector2.zero; tag.pivot = new Vector2(.5f, 0);
-            tag.sizeDelta = new Vector2(300, 96);
+            tag.sizeDelta = new Vector2(340, 100);
             node.Tag = tag;
             var tagBg = tag.gameObject.AddComponent<Image>();
-            tagBg.sprite = rounded; tagBg.type = Image.Type.Sliced; tagBg.color = new Color(.04f, .1f, .15f, .9f);
+            tagBg.sprite = rounded; tagBg.type = Image.Type.Sliced; tagBg.color = new Color(.03f, .09f, .14f, .93f);
             node.Button = tag.gameObject.AddComponent<Button>();
             node.Button.targetGraphic = tagBg;
             node.Button.onClick.AddListener(() => OpenBriefing(sector));
             node.Ring = Rt("Edge", tag).gameObject.AddComponent<Image>();
             node.Ring.sprite = frameSprite; node.Ring.type = Image.Type.Sliced; node.Ring.raycastTarget = false;
             Stretch(node.Ring.rectTransform);
-            node.Caption = Label(tag, $"{sector.Number} · {sector.Name}", 28, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
+            var icon = Rt("Icon", tag).gameObject.AddComponent<Image>();
+            icon.sprite = Resources.Load<Sprite>("Sprites/UI/" + ZoneIcon(sector)); icon.preserveAspect = true; icon.raycastTarget = false;
+            icon.rectTransform.anchorMin = icon.rectTransform.anchorMax = new Vector2(0, .5f); icon.rectTransform.pivot = new Vector2(0, .5f);
+            icon.rectTransform.sizeDelta = new Vector2(70, 70); icon.rectTransform.anchoredPosition = new Vector2(10, 0);
+            node.Caption = Label(tag, $"{sector.Number} · {sector.Name}", 27, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
             node.Caption.rectTransform.anchorMin = new Vector2(0, .45f);
-            node.Caption.resizeTextForBestFit = true; node.Caption.resizeTextMinSize = 18; node.Caption.resizeTextMaxSize = 28;
-            node.Caption.rectTransform.offsetMin = new Vector2(10, 0); node.Caption.rectTransform.offsetMax = new Vector2(-10, -2);
-            node.State = Label(tag, "", 22, Muted, TextAnchor.MiddleCenter, FontStyle.Bold);
+            node.Caption.resizeTextForBestFit = true; node.Caption.resizeTextMinSize = 16; node.Caption.resizeTextMaxSize = 27;
+            node.Caption.rectTransform.offsetMin = new Vector2(88, 0); node.Caption.rectTransform.offsetMax = new Vector2(-10, -4);
+            node.State = Label(tag, "", 20, Muted, TextAnchor.MiddleLeft, FontStyle.Bold);
             node.State.rectTransform.anchorMax = new Vector2(1, .45f);
+            node.State.rectTransform.offsetMin = new Vector2(88, 6); node.State.rectTransform.offsetMax = new Vector2(-10, 0);
+            // Development bar along the bottom edge of the tag.
+            var dev = Rt("Development", tag).gameObject.AddComponent<Image>();
+            dev.sprite = rounded; dev.type = Image.Type.Sliced; dev.color = new Color(.1f, .2f, .26f, 1); dev.raycastTarget = false;
+            dev.rectTransform.anchorMin = new Vector2(0, 0); dev.rectTransform.anchorMax = new Vector2(1, 0); dev.rectTransform.pivot = new Vector2(.5f, 0);
+            dev.rectTransform.sizeDelta = new Vector2(-24, 9); dev.rectTransform.anchoredPosition = new Vector2(0, 5);
+            node.DevBar = dev.gameObject;
+            var fill = Rt("Fill", dev.transform).gameObject.AddComponent<Image>();
+            fill.sprite = rounded; fill.type = Image.Type.Sliced; fill.color = Cyan; fill.raycastTarget = false;
+            node.DevFill = fill.rectTransform;
+            node.DevFill.anchorMin = Vector2.zero; node.DevFill.anchorMax = new Vector2(0, 1); node.DevFill.offsetMin = node.DevFill.offsetMax = Vector2.zero;
             for (int i = 0; i < 3; i++)
             {
                 var s = Rt("Star", tag).gameObject.AddComponent<Image>();
                 s.sprite = starSprite; s.raycastTarget = false;
-                s.rectTransform.anchorMin = s.rectTransform.anchorMax = new Vector2(.5f, .24f);
-                s.rectTransform.sizeDelta = new Vector2(34, 34); s.rectTransform.anchoredPosition = new Vector2((i - 1) * 40, 0);
+                s.rectTransform.anchorMin = s.rectTransform.anchorMax = new Vector2(1, .25f);
+                s.rectTransform.sizeDelta = new Vector2(30, 30); s.rectTransform.anchoredPosition = new Vector2(-110 + i * 34, 0);
                 node.Stars.Add(s);
             }
             return node;
@@ -172,6 +419,13 @@ namespace Colonia09.Presentation
             game.ColonyMap.Show();
             RefreshMap();
             CollectOnArrival();
+            if (BuildMode) ToggleBuildMode();
+            if (!SaveGame.Data.tips.Contains("stages"))
+            {
+                // The first visit explains how a zone goes from hostile to developed.
+                SaveGame.Data.tips.Add("stages");
+                stagesPanel.SetActive(true);
+            }
             // Center the view on the zone to liberate next, or the latest one.
             var next = System.Array.Find(CampaignData.Sectors, s => CampaignDirector.Unlocked(s) && !SaveGame.Completed(s.Id))
                 ?? System.Array.FindLast(CampaignData.Sectors, s => CampaignDirector.Unlocked(s));
@@ -197,8 +451,11 @@ namespace Colonia09.Presentation
                 bool unlocked = CampaignDirector.Unlocked(sector);
                 total += stars;
                 if (sector.Playable) playable++;
-                node.State.text = stars > 0 ? "" : !sector.Playable ? "PRÓXIMAMENTE" : unlocked ? "LIBERAR ZONA" : "ZONA HOSTIL";
-                node.State.color = unlocked ? Gold : Muted;
+                bool connected = stars > 0 && Colony.IsConnected(sector.Id);
+                node.State.text = connected ? "CONECTADA" : stars > 0 ? "CONECTAR ZONA" : !sector.Playable ? "PRÓXIMAMENTE" : unlocked ? "LIBERAR ZONA" : "ZONA HOSTIL";
+                node.State.color = connected ? Green : stars > 0 || unlocked ? Gold : !sector.Playable ? Muted : Red;
+                node.DevBar.SetActive(connected);
+                if (connected) node.DevFill.anchorMax = new Vector2(Mathf.Max(.04f, (float)Colony.Development(sector.Id)), 1);
                 node.Caption.color = unlocked ? Txt : Muted;
                 for (int i = 0; i < 3; i++) node.Stars[i].gameObject.SetActive(stars > 0);
                 for (int i = 0; i < 3; i++) node.Stars[i].color = i < stars ? StarOn : StarOff;
@@ -217,7 +474,8 @@ namespace Colonia09.Presentation
                 var screen = game.ColonyMap.ZoneTagScreen(node.Sector);
                 var local = (screen - (Vector2)mapTags.position) / scale + mapTags.rect.size * mapTags.pivot;
                 node.Tag.anchoredPosition = local;
-                bool next = CampaignDirector.Unlocked(node.Sector) && SaveGame.Stars(node.Sector.Id) == 0;
+                bool next = CampaignDirector.Unlocked(node.Sector) && SaveGame.Stars(node.Sector.Id) == 0
+                    || SaveGame.Completed(node.Sector.Id) && !Colony.IsConnected(node.Sector.Id);
                 float pulse = Mathf.PingPong(Time.unscaledTime * 1.4f, 1);
                 node.Ring.color = next ? new Color(Gold.r, Gold.g, Gold.b, .4f + .6f * pulse) : SaveGame.Stars(node.Sector.Id) > 0 ? new Color(Green.r, Green.g, Green.b, .6f) : new Color(1, 1, 1, .08f);
                 node.Tag.localScale = Vector3.one * Mathf.Clamp(game.ColonyMap.TagScale, .7f, 1.1f);
@@ -277,6 +535,7 @@ namespace Colonia09.Presentation
             }
 
             BriefStartButton = TextButton(sheet, "DEFENDER SECTOR", 38, Cyan, Bg, () => { if (briefed != null) game.StartSector(briefed); });
+            ConnectButton = TextButton(sheet, "CONECTAR", 34, Gold, Bg, ConnectBriefed);
             BriefCloseButton = TextButton(sheet, "CERRAR", 32, PanelLight, Txt, () => { game.Audio.Play("select", true); briefing.SetActive(false); });
             briefing.SetActive(false);
         }
@@ -304,9 +563,20 @@ namespace Colonia09.Presentation
             int stars = SaveGame.Stars(sector.Id);
             for (int i = 0; i < 3; i++) briefStars[i].color = i < stars ? StarOn : StarOff;
             // Secured sectors also open their colony lots.
-            // Buildings go straight on the map: tap a free tile of a liberated zone.
-            Span(BriefStartButton, .04f, .64f);
-            Span(BriefCloseButton, .67f, .96f);
+            // A liberated zone also shows what it gives and, until it is linked, the button to connect it.
+            bool liberated = SaveGame.Completed(sector.Id);
+            bool linked = liberated && Colony.IsConnected(sector.Id);
+            if (liberated && ColonyData.Zones.TryGetValue(sector.Id, out var output))
+            {
+                ColonyData.ConnectionCost(sector, out int cm, out int cd);
+                briefFacts.text = linked ? $"<color=#91e5bd>Conectada</color> · {output.Summary}"
+                    : $"<color=#ffd38b>Sin conexión</color> · conectar cuesta {cm} materiales y {cd} datos";
+            }
+            ConnectButton.gameObject.SetActive(liberated && !linked);
+            Span(BriefStartButton, .04f, liberated && !linked ? .46f : .64f);
+            if (liberated && !linked) Span(ConnectButton, .48f, .76f);
+            Span(BriefCloseButton, liberated && !linked ? .78f : .67f, .96f);
+            BriefCloseButton.GetComponentInChildren<Text>().text = liberated && !linked ? "×" : "CERRAR";
             BriefStartButton.interactable = unlocked;
             BriefStartButton.GetComponentInChildren<Text>().text = !sector.Playable ? "PRÓXIMAMENTE" : !unlocked ? "COMPLETA EL ANTERIOR" : stars > 0 ? "JUGAR DE NUEVO" : "DEFENDER SECTOR";
             briefing.SetActive(true);

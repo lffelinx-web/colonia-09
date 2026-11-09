@@ -9,7 +9,7 @@ namespace Colonia09.Presentation
     public sealed partial class GameUI
     {
         GameObject pickerSheet, infoSheet, mapNoticeGo;
-        Text materialsText, dataText, pickerTitle, mapNotice, infoTitle, infoText;
+        Text pickerTitle, mapNotice, infoTitle, infoText;
         Image infoIcon;
         RectTransform pickerList;
         Button infoUpgrade;
@@ -18,6 +18,7 @@ namespace Colonia09.Presentation
         int pickX, pickY;
         BuildingSave shownBuilding;
         float nextCollect, noticeUntil, nextSave;
+        ResourceSet rates;
         readonly Dictionary<BuildingType, Sprite> buildingIcons = new Dictionary<BuildingType, Sprite>();
 
         public bool PickerOpen => pickerSheet.activeSelf;
@@ -43,7 +44,8 @@ namespace Colonia09.Presentation
                 case BuildingType.Laboratory: return $"+{def.DataPerHour[i]:0} datos por hora";
                 case BuildingType.Refinery: return $"+{def.StartCharge[i]} de energía inicial en misiones";
                 case BuildingType.Fortification: return $"+{def.CoreBonus[i]} de integridad de base en misiones";
-                default: return $"+{def.SectorBoost[i] * 100:0} % de producción en esta zona";
+                case BuildingType.Solar: return $"+{def.EnergyPerHour[i]:0} de energía por hora";
+                default: return $"Espacio para {def.Housing[i]} colonos";
             }
         }
 
@@ -57,17 +59,11 @@ namespace Colonia09.Presentation
 
         void BuildResourceBar(RectTransform safe)
         {
-            var bar = Rt("Resources", safe);
-            bar.anchorMin = new Vector2(0, 1); bar.anchorMax = Vector2.one; bar.pivot = new Vector2(.5f, 1);
-            bar.sizeDelta = new Vector2(0, 84); bar.anchoredPosition = new Vector2(0, -116);
-            bar.gameObject.AddComponent<Image>().color = new Color(.02f, .06f, .09f, .9f);
-            materialsText = ResourceChip(bar, "icon_materials", 0, .5f);
-            dataText = ResourceChip(bar, "icon_data", .5f, 1);
 
             mapNoticeGo = Rt("Notice", safe).gameObject;
             var notice = (RectTransform)mapNoticeGo.transform;
-            notice.anchorMin = new Vector2(.05f, 1); notice.anchorMax = new Vector2(.95f, 1); notice.pivot = new Vector2(.5f, 1);
-            notice.sizeDelta = new Vector2(0, 96); notice.anchoredPosition = new Vector2(0, -214);
+            notice.anchorMin = new Vector2(.05f, 0); notice.anchorMax = new Vector2(.95f, 0); notice.pivot = new Vector2(.5f, 0);
+            notice.sizeDelta = new Vector2(0, 96); notice.anchoredPosition = new Vector2(0, 306);  // Above the access cards.
             var bg = mapNoticeGo.AddComponent<Image>();
             bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = new Color(.03f, .1f, .15f, .95f); bg.raycastTarget = false;
             mapNotice = Label(notice, "", 30, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
@@ -77,23 +73,6 @@ namespace Colonia09.Presentation
 
             BuildPicker();
             BuildInfo();
-        }
-
-        Text ResourceChip(RectTransform bar, string icon, float from, float to)
-        {
-            var chip = Rt("Chip", bar);
-            chip.anchorMin = new Vector2(from, 0); chip.anchorMax = new Vector2(to, 1);
-            chip.offsetMin = new Vector2(18, 10); chip.offsetMax = new Vector2(-18, -10);
-            var bg = chip.gameObject.AddComponent<Image>();
-            bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = Panel; bg.raycastTarget = false;
-            var image = Rt("Icon", chip).gameObject.AddComponent<Image>();
-            image.sprite = Resources.Load<Sprite>("Sprites/UI/" + icon); image.preserveAspect = true; image.raycastTarget = false;
-            image.rectTransform.anchorMin = image.rectTransform.anchorMax = new Vector2(0, .5f); image.rectTransform.pivot = new Vector2(0, .5f);
-            image.rectTransform.sizeDelta = new Vector2(58, 58); image.rectTransform.anchoredPosition = new Vector2(8, 0);
-            var text = Label(chip, "", 28, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
-            text.resizeTextForBestFit = true; text.resizeTextMinSize = 16; text.resizeTextMaxSize = 28;
-            text.rectTransform.offsetMin = new Vector2(74, 0); text.rectTransform.offsetMax = new Vector2(-10, 0);
-            return text;
         }
 
         public void ShowMapNotice(string text, float seconds)
@@ -107,10 +86,17 @@ namespace Colonia09.Presentation
         /// <summary>Adds the production since the last visit and tells the player what arrived.</summary>
         void CollectOnArrival()
         {
-            Colony.Collect(out var m, out var d);
+            Colony.Collect(out var change);
             SaveGame.Save();
-            if (m >= 1 || d >= 1)
-                ShowMapNotice($"Mientras no estabas la colonia produjo +{m:0} materiales y +{d:0} datos", 4.5f);
+            var parts = new List<string>();
+            if (change.Materials >= 1) parts.Add($"+{change.Materials:0} materiales");
+            if (change.Data >= 1) parts.Add($"+{change.Data:0} datos");
+            if (change.Water >= 1) parts.Add($"+{change.Water:0} agua");
+            if (change.Food >= 1) parts.Add($"+{change.Food:0} comida");
+            if (change.Energy >= 1) parts.Add($"+{change.Energy:0} energía");
+            if (change.Population >= 1) parts.Add($"+{change.Population:0} colonos");
+            if (parts.Count > 0) ShowMapNotice("Mientras no estabas: " + string.Join(", ", parts), 4.5f);
+            rates = Colony.Rates();
             nextCollect = Time.unscaledTime + 1;
         }
 
@@ -119,14 +105,18 @@ namespace Colonia09.Presentation
             if (!campaignMap.activeSelf) return;
             if (Time.unscaledTime >= nextCollect)
             {
-                Colony.Collect(out _, out _);  // Production also runs while the map is open.
+                Colony.Collect(out _);  // Production also runs while the map is open.
+                rates = Colony.Rates();
                 nextCollect = Time.unscaledTime + 1;
                 if (Time.unscaledTime >= nextSave) { SaveGame.Save(); nextSave = Time.unscaledTime + 15; }
             }
-            ColonyData.RatePerHour(Colony.Buildings(), out var mph, out var dph);
             var data = SaveGame.Data;
-            materialsText.text = $"{Mathf.FloorToInt((float)data.materials)} <size=20><color=#99b5c7>materiales{(mph > 0 ? $"  +{mph:0}/h" : "")}</color></size>";
-            dataText.text = $"{Mathf.FloorToInt((float)data.data)} <size=20><color=#99b5c7>datos{(dph > 0 ? $"  +{dph:0}/h" : "")}</color></size>";
+            SetResource("materials", data.materials, rates.Materials);
+            SetResource("data", data.data, rates.Data);
+            SetResource("water", data.water, rates.Water);
+            SetResource("food", data.food, rates.Food);
+            SetResource("energy", data.energy, rates.Energy);
+            SetResource("population", data.population, rates.Population);
             if (mapNoticeGo.activeSelf && Time.unscaledTime > noticeUntil) mapNoticeGo.SetActive(false);
             if (infoSheet.activeSelf && shownBuilding != null) RefreshInfo();
         }
@@ -266,7 +256,9 @@ namespace Colonia09.Presentation
             bool max = b.level >= ColonyData.MaxLevel;
             infoIcon.sprite = BuildingIcon(type);
             infoTitle.text = $"{def.Name}  <size=26><color=#ffd38b>NIVEL {b.level}</color></size>";
-            infoText.text = $"<color=#91e5bd>{EffectText(type, b.level)}</color>\n{def.Description}" +
+            bool working = Colony.IsConnected(b.sector);
+            infoText.text = (working ? "" : "<color=#ff8c8a><b>Zona sin conexión: este edificio no funciona todavía.</b></color>\n") +
+                $"<color=#91e5bd>{EffectText(type, b.level)}</color>\n{def.Description}" +
                 (max ? "\nNivel máximo alcanzado." : $"\n<color=#eaf9fb>Nivel {b.level + 1}: {EffectText(type, b.level + 1)}</color>");
             infoUpgradeLabel.text = max ? "NIVEL MÁXIMO" : $"MEJORAR · {CostText(type, b.level + 1)}";
             infoUpgrade.interactable = !max && Colony.CanAfford(type, b.level + 1);

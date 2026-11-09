@@ -117,16 +117,15 @@ namespace Colonia09.Simulation
             return null;
         }
 
-        /// <summary>Tiles kept for decoration: lamps on the zone corners and the colony ship in the first zone.</summary>
+        /// <summary>Tiles kept for decoration: lamps on the zone corners and the zone's landmark on the 3 x 3 center.</summary>
         public static bool Reserved(int x, int y)
         {
             var zone = ZoneAt(x, y);
             if (zone == null) return false;
             var (cx, cy) = ZoneCenter(zone);
             bool corner = System.Math.Abs(x - cx) == ZoneRadius && System.Math.Abs(y - cy) == ZoneRadius;
-            // The ship needs its tile and the four next to it.
-            bool ship = zone.Number == 1 && System.Math.Abs(x - cx) + System.Math.Abs(y - cy) <= 1;
-            return corner || ship;
+            bool landmark = System.Math.Abs(x - cx) <= 1 && System.Math.Abs(y - cy) <= 1;
+            return corner || landmark;
         }
 
         /// <summary>Road tiles from one zone to the next: along x, then along y, outside both zones.</summary>

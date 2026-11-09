@@ -1231,6 +1231,122 @@ def build_icon_materials():
         finish(ingot, mat, .02)
 
 
+def build_icon_water():
+    setup(1.0)
+    glass = material("Water", "#3fb4ea", .1, .08, 0, emission="#2a9fd8", strength=.6)
+    rim = material("Rim", "#1b5f80", .6, .3, .3)
+    pts = [(0, .46)] + [(math.cos(math.radians(a)) * .3, -.1 + math.sin(math.radians(a)) * .3) for a in range(-200, 21, 10)]
+    prism(pts, .06, .1, rim, .02)
+    prism([(x * .8, y * .8 - .01) for x, y in pts], .13, .06, glass, .02)
+    ball((-.1, -.05, .18), .05, glowing_hot("Shine", "#e8fbff"))
+
+
+def build_icon_food():
+    setup(1.0)
+    leaf = material("Leaf", "#5fcf63", .2, .35, .2, emission="#3fa548", strength=.3)
+    vein = material("Vein", "#2c7a33", .2, .4, .2)
+    pts = [(math.cos(math.radians(a)) * .42 * (1 if a < 180 else 1), math.sin(math.radians(a)) * .24) for a in range(0, 360, 12)]
+    pts = [(x * .9 + y * .55, y * .9 - x * .55) for x, y in pts]  # Leaf tilted 30 degrees.
+    prism(pts, .06, .08, leaf, .02)
+    strut((-.33, -.2), (.3, .2), .11, .03, vein)
+    for k in (-.12, .05, .2):
+        strut((k, k * .65), (k - .1, k * .65 + .15), .11, .02, vein)
+        strut((k, k * .65), (k + .1, k * .65 - .13), .11, .02, vein)
+
+
+def build_icon_population():
+    setup(1.0)
+    body = material("Body", "#86e6ee", .3, .35, .2, emission="#4fc6d2", strength=.3)
+    back = material("Back", "#3f8f99", .4, .4, .2)
+    for x, y, s, mat in ((-.2, .06, .8, back), (.2, .06, .8, back), (0, -.04, 1, body)):
+        ball((x, y + .2 * s, .2), .11 * s, mat)
+        bpy.ops.mesh.primitive_uv_sphere_add(segments=32, ring_count=16, radius=.2 * s, location=(x, y - .1 * s, .1))
+        torso = bpy.context.active_object
+        torso.scale = (1, .75, .5)
+        finish(torso, mat, 0, smooth=True)
+
+
+def build_icon_anchor():
+    setup(1.0)
+    steel = material("Steel", "#c3ced3", 1, .28, .25)
+    torus((0, .3, .08), .08, .03, steel)
+    strut((0, .22), (0, -.32), .08, .06, steel)
+    strut((-.16, .12), (.16, .12), .08, .05, steel)
+    for side in (-1, 1):
+        strut((0, -.34), (side * .26, -.12), .08, .05, steel)
+        prism([(side * .26, -.04), (side * .32, -.16), (side * .2, -.15)], .08, .05, steel, .01)
+
+
+def build_icon_gear():
+    setup(1.0)
+    steel = material("Steel", "#c3ced3", 1, .28, .25)
+    dark = material("Dark", "#1d2a33", .6, .4, .3)
+    pts = []
+    for i in range(16):
+        a = i * math.tau / 16
+        r = .4 if i % 2 == 0 else .3
+        pts += [(math.cos(a - .12) * r, math.sin(a - .12) * r), (math.cos(a + .12) * r, math.sin(a + .12) * r)]
+    prism(pts, .06, .1, steel, .015)
+    cyl((0, 0, .12), .13, .04, dark, bevel=.01)
+
+
+def build_icon_ship():
+    setup(1.0)
+    white = material("White", "#dde5e8", .3, .3, .35)
+    glow = glowing("Glow", "#ffb86a", 2.4)
+    prism([(0, .46), (.14, .05), (.38, -.3), (.1, -.24), (0, -.34), (-.1, -.24), (-.38, -.3), (-.14, .05)], .08, .12, white, .02)
+    for side in (-1, 1):
+        cyl((side * .1, -.34, .08), .05, .04, glow, bevel=.01)
+
+
+def build_icon_link():
+    setup(1.0)
+    glow = glowing("Glow", "#5ee8ff", 2.6)
+    steel = material("Steel", "#c3ced3", 1, .28, .25)
+    for x, y in ((-.18, -.12), (.18, .12)):
+        bpy.ops.mesh.primitive_torus_add(major_radius=.18, minor_radius=.05, location=(x, y, .1))
+        ring = bpy.context.active_object
+        ring.scale = (1.3, .8, 1)
+        ring.rotation_euler = (0, 0, math.radians(35))
+        finish(ring, steel, 0, smooth=True)
+    ball((0, 0, .14), .07, glow)
+
+
+def build_icon_crane():
+    setup(1.0)
+    yellow = material("Yellow", "#e0ac1a", .3, .45, .45)
+    dark = material("Dark", "#1d2a33", .6, .4, .3)
+    box((-.15, -.3, .05), (.3, .18, .1), dark, bevel=.02)
+    strut((-.15, -.25), (-.15, .3), .12, .06, yellow)
+    strut((-.32, .3), (.38, .3), .14, .05, yellow)
+    strut((.3, .3), (.3, .02), .14, .015, dark)
+    box((.3, -.02, .14), (.1, .08, .06), dark, bevel=.01)
+
+
+def build_icon_board():
+    setup(1.0)
+    frame = material("Frame", "#1d2a33", .6, .4, .3)
+    cell = material("Cell", "#2e4a5c", .6, .4, .3)
+    glow = glowing("Glow", "#7dff9e", 2.4)
+    box((0, 0, .04), (.86, .86, .08), frame, bevel=.03)
+    for r in range(3):
+        for c in range(3):
+            box((-.27 + c * .27, -.27 + r * .27, .1), (.23, .23, .03), cell, bevel=.01)
+    ball((0, 0, .14), .08, glow)
+
+
+def build_icon_solar():
+    setup(1.0)
+    panel = material("Panel", "#1a2c4a", .4, .12, .2)
+    steel = material("Steel", "#c3ced3", 1, .28, .25)
+    sun = glowing("Sun", "#ffd36a", 2.6)
+    ball((.22, .24, .1), .12, sun)
+    box((-.06, -.08, .06), (.62, .46, .06), steel, bevel=.02, rot=.15)
+    box((-.06, -.08, .1), (.56, .4, .02), panel, bevel=.01, rot=.15)
+    for k in range(3):
+        box((-.06 + (k - 1) * .18, -.08, .115), (.012, .4, .004), steel, bevel=0, rot=.15)
+
+
 def build_icon_data():
     """A data chip with gold pins and a glowing core."""
     setup(1.0)
@@ -1257,10 +1373,13 @@ BUILDERS = {
     "icon_extractor": build_icon_extractor, "icon_laboratory": build_icon_laboratory, "icon_refinery": build_icon_refinery,
     "icon_fortification": build_icon_fortification, "icon_housing": build_icon_housing,
     "icon_materials": build_icon_materials, "icon_data": build_icon_data,
+    "icon_solar": build_icon_solar, "icon_water": build_icon_water, "icon_food": build_icon_food, "icon_population": build_icon_population, "icon_anchor": build_icon_anchor,
+    "icon_gear": build_icon_gear, "icon_ship": build_icon_ship, "icon_link": build_icon_link, "icon_crane": build_icon_crane, "icon_board": build_icon_board,
 }
 ONLY = sys.argv[sys.argv.index("--") + 2:]
 MODULES = ("generator", "reactor", "relay", "pulse", "cryo", "tesla", "wall", "repair", "icon_energy", "icon_base", "icon_wave", "icon_upgrade", "icon_recycle",
-           "icon_extractor", "icon_laboratory", "icon_refinery", "icon_fortification", "icon_housing", "icon_materials", "icon_data")
+           "icon_extractor", "icon_laboratory", "icon_refinery", "icon_fortification", "icon_housing", "icon_materials", "icon_data",
+           "icon_solar", "icon_water", "icon_food", "icon_population", "icon_anchor", "icon_gear", "icon_ship", "icon_link", "icon_crane", "icon_board")
 # Size on the board, in cells. Everything reads at about the same size; a few are slightly larger.
 ENEMY_SIZE = {"commander": 1.2, "tank": 1.1, "bomber": 1.1, "armor": 1.05, "helicopter": 1.05}
 FRAMES = {"helicopter": 1}

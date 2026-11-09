@@ -161,7 +161,7 @@ namespace Colonia09.Presentation
             if (!CampaignDirector.Unlocked(sector)) return;
             Audio.Play("wave", true);
             Ui.HideCampaignMap();
-            StartLevel(ColonyData.Boosted(sector.Level, Colony.Buildings()), sector.Difficulty);  // Colony buildings help every mission.
+            StartLevel(ColonyData.Boosted(sector.Level, Colony.Working()), sector.Difficulty);  // Colony buildings help every mission.
             Campaign.Begin(sector);
         }
 

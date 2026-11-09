@@ -23,7 +23,7 @@ namespace Colonia09.Presentation
         {
             foreach (var b in data.buildings)
             {
-                if (CampaignData.ZoneAt(b.x, b.y)?.Id == b.sector) continue;
+                if (CampaignData.ZoneAt(b.x, b.y)?.Id == b.sector && !CampaignData.Reserved(b.x, b.y)) continue;
                 var sector = CampaignData.Find(b.sector);
                 if (sector == null) continue;
                 var free = FreeTiles(data, sector);
@@ -48,6 +48,58 @@ namespace Colonia09.Presentation
                     yield return new PlacedBuilding(b.sector, type, b.level);
         }
 
+        /// <summary>The economy state built from the save. The landing zone, once liberated, is always connected.</summary>
+        public static ColonyState State()
+        {
+            var d = Data;
+            var state = new ColonyState
+            {
+                Stock = new ResourceSet { Materials = d.materials, Data = d.data, Water = d.water, Food = d.food, Energy = d.energy, Population = d.population },
+            };
+            foreach (var id in d.connected) state.Connected.Add(id);
+            if (SaveGame.Completed("landing")) state.Connected.Add("landing");
+            state.Buildings.AddRange(Buildings());
+            return state;
+        }
+
+        static void Store(ColonyState state)
+        {
+            var d = Data;
+            d.materials = state.Stock.Materials; d.data = state.Stock.Data; d.water = state.Stock.Water;
+            d.food = state.Stock.Food; d.energy = state.Stock.Energy; d.population = state.Stock.Population;
+        }
+
+        public static ResourceSet Rates() => State().Rates();
+        public static bool IsConnected(string sector) => State().Connected.Contains(sector);
+        public static double Development(string sector) => State().Development(sector);
+
+        /// <summary>Buildings that work: those in connected zones. Only they help in missions.</summary>
+        public static IEnumerable<PlacedBuilding> Working() => State().Working();
+
+        /// <summary>Why a liberated zone cannot be connected yet, or null when it can.</summary>
+        public static string RefuseConnection(CampaignSector sector)
+        {
+            if (!SaveGame.Completed(sector.Id)) return "Primero libera la zona en su tablero de defensa";
+            if (IsConnected(sector.Id)) return "Ya está conectada";
+            var previous = Array.Find(CampaignData.Sectors, s => s.Number == sector.Number - 1);
+            if (previous != null && !IsConnected(previous.Id)) return $"Primero conecta {previous.Name}";
+            ColonyData.ConnectionCost(sector, out int m, out int dt);
+            if (Data.materials < m || Data.data < dt) return $"Faltan recursos: {m} materiales y {dt} datos";
+            return null;
+        }
+
+        public static bool Connect(CampaignSector sector)
+        {
+            if (RefuseConnection(sector) != null) return false;
+            Collect(out _);  // Production up to now is counted before the zone joins.
+            ColonyData.ConnectionCost(sector, out int m, out int dt);
+            Data.materials -= m;
+            Data.data -= dt;
+            Data.connected.Add(sector.Id);
+            SaveGame.Save();
+            return true;
+        }
+
         public static IReadOnlyList<BuildingSave> Saved => Data.buildings;
         public static BuildingSave At(int x, int y) => Data.buildings.Find(b => b.x == x && b.y == y);
         public static int CountIn(string sector) => Data.buildings.FindAll(b => b.sector == sector).Count;
@@ -55,21 +107,22 @@ namespace Colonia09.Presentation
         /// <summary>Optional clock for tests; real time otherwise.</summary>
         public static Func<DateTime> Now = () => DateTime.UtcNow;
 
-        /// <summary>Adds what the buildings produced since the last call (up to 8 hours). Returns the amounts added.</summary>
-        public static void Collect(out double materials, out double data)
+        /// <summary>Runs the colony forward by the real time since the last call (up to 8 hours). Returns what changed.</summary>
+        public static void Collect(out ResourceSet change)
         {
             long now = Now().Ticks;
-            materials = data = 0;
-            if (Data.productionTicks == 0 || Data.buildings.Count == 0)
+            change = default;
+            if (Data.productionTicks == 0)
             {
                 Data.productionTicks = now;
                 return;
             }
-            double seconds = (now - Data.productionTicks) / (double)TimeSpan.TicksPerSecond;
-            ColonyData.Produced(Buildings(), seconds, out materials, out data);
-            Data.materials += materials;
-            Data.data += data;
+            double hours = (now - Data.productionTicks) / (double)TimeSpan.TicksPerHour;
             Data.productionTicks = now;  // A clock moved backward simply restarts from now.
+            if (hours <= 0) return;
+            var state = State();
+            change = state.Advance(hours);
+            Store(state);
         }
 
         public static bool CanAfford(BuildingType type, int toLevel) =>
@@ -90,7 +143,7 @@ namespace Colonia09.Presentation
         public static bool Build(string sector, int x, int y, BuildingType type)
         {
             if (RefuseTile(x, y) != null || CampaignData.ZoneAt(x, y)?.Id != sector || !CanAfford(type, 1)) return false;
-            Collect(out _, out _);  // Production up to now is counted at the old rate.
+            Collect(out _);  // Production up to now is counted at the old rate.
             Pay(type, 1);
             Data.buildings.Add(new BuildingSave { sector = sector, x = x, y = y, type = type.ToString(), level = 1 });
             SaveGame.Save();
@@ -101,7 +154,7 @@ namespace Colonia09.Presentation
         {
             var b = At(x, y);
             if (b == null || b.level >= ColonyData.MaxLevel || !Enum.TryParse(b.type, out BuildingType type) || !CanAfford(type, b.level + 1)) return false;
-            Collect(out _, out _);
+            Collect(out _);
             Pay(type, b.level + 1);
             b.level++;
             SaveGame.Save();

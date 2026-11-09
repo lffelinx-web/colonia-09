@@ -24,7 +24,7 @@ from render_sprites import ball, box, cyl, glowing, glowing_hot, material, prism
 OUT = sys.argv[sys.argv.index("--") + 1]
 EXTRA = sys.argv[sys.argv.index("--") + 2:]
 PREVIEW = "preview" in EXTRA
-ONLY = [a for a in EXTRA if a != "preview"]
+ONLY = [a for a in EXTRA if a not in ("preview", "night")]
 N = 26
 ZONES = [(22, 22), (23, 15), (13, 21), (17, 11), (8, 15), (11, 7), (4, 9), (4, 3)]
 K = math.sqrt(2)
@@ -64,7 +64,146 @@ def beam(p0, p1, radius, mat):
     return rs.finish(obj, mat, 0, smooth=True)
 
 
-# ---- Terrain ------------------------------------------------------------------------
+# ---- Lighting: day and night --------------------------------------------------------
+
+NIGHT = "night" in EXTRA
+
+
+def apply_night():
+    """Moonlit night: dark blue sky light and a pale moon; glowing materials keep their light."""
+    scene = bpy.context.scene
+    bg = scene.world.node_tree.nodes["Background"]
+    bg.inputs[0].default_value = (.06, .1, .2, 1)
+    bg.inputs[1].default_value = .55
+    for obj in scene.objects:
+        if obj.type == "LIGHT":
+            if obj.name.startswith("Key"):
+                obj.data.energy = .85
+                obj.data.color = (.62, .74, 1)
+            else:
+                obj.data.energy = .18
+                obj.data.color = (.5, .6, 1)
+
+
+def suffix():
+    return "_night" if NIGHT else ""
+
+
+# ---- Island terrain -------------------------------------------------------------------
+
+COAST = 16.3  # Chebyshev distance from the map center (in tiles) where the land drops into the sea.
+RIVER = [(8.6, 6.0), (6.5, 6.2), (4.0, 5.9), (1.0, 6.1), (-2.5, 6.0), (-6.0, 6.2)]  # Tile coordinates.
+
+
+def road_tiles():
+    tiles = set()
+    for (x, y), (tx, ty) in zip(ZONES, ZONES[1:]):
+        while x != tx:
+            x += 1 if tx > x else -1
+            tiles.add((x, y))
+        while y != ty:
+            y += 1 if ty > y else -1
+            tiles.add((x, y))
+    return tiles
+
+
+def distance_to_segment(px, py, a, b):
+    ax, ay = a
+    bx, by = b
+    dx, dy = bx - ax, by - ay
+    t = max(0, min(1, ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy)))
+    return math.hypot(px - ax - t * dx, py - ay - t * dy)
+
+
+def river_distance(gx, gy):
+    return min(distance_to_segment(gx, gy, a, b) for a, b in zip(RIVER, RIVER[1:]))
+
+
+def zone_distance(gx, gy):
+    """Chebyshev distance from a tile position to the nearest zone edge (0 inside)."""
+    return min(max(0, max(abs(gx - cx), abs(gy - cy)) - 2.5) for cx, cy in ZONES)
+
+
+def coast_metric(gx, gy):
+    from mathutils import noise
+    wobble = noise.noise(Vector((gx * .18, gy * .18, 3.1))) * 2.2 + noise.noise(Vector((gx * .6, gy * .6, 7))) * .5
+    return max(abs(gx - 12.5), abs(gy - 12.5)) + wobble
+
+
+def island_material():
+    """Rocky soil with patches of moss, bare rock on steep faces."""
+    mat = bpy.data.materials.new("Island")
+    mat.use_nodes = True
+    nodes, links = mat.node_tree.nodes, mat.node_tree.links
+    bsdf = next(n for n in nodes if n.type == "BSDF_PRINCIPLED")
+    bsdf.inputs["Roughness"].default_value = .93
+    coords = nodes.new("ShaderNodeTexCoord")
+    broad = nodes.new("ShaderNodeTexNoise")
+    broad.inputs["Scale"].default_value = .22
+    broad.inputs["Detail"].default_value = 8
+    links.new(coords.outputs["Object"], broad.inputs["Vector"])
+    soil = rs.mix_color(nodes, links, broad.outputs[0], rs.srgb("#4f3d30"), rs.srgb("#6b5139"))
+    moss_mask = nodes.new("ShaderNodeMapRange")
+    moss_mask.inputs["From Min"].default_value = .48
+    moss_mask.inputs["From Max"].default_value = .62
+    moss_noise = nodes.new("ShaderNodeTexNoise")
+    moss_noise.inputs["Scale"].default_value = .45
+    moss_noise.inputs["Detail"].default_value = 10
+    links.new(coords.outputs["Object"], moss_noise.inputs["Vector"])
+    links.new(moss_noise.outputs[0], moss_mask.inputs["Value"])
+    color = rs.mix_color(nodes, links, moss_mask.outputs[0], soil, rs.srgb("#3d5232"))
+    geometry = nodes.new("ShaderNodeNewGeometry")
+    split = nodes.new("ShaderNodeSeparateXYZ")
+    links.new(geometry.outputs["Normal"], split.inputs[0])
+    steep = nodes.new("ShaderNodeMapRange")
+    steep.inputs["From Min"].default_value = .85
+    steep.inputs["From Max"].default_value = .6
+    links.new(split.outputs["Z"], steep.inputs["Value"])
+    color = rs.mix_color(nodes, links, steep.outputs[0], color, rs.srgb("#4a4440"))
+    links.new(color, bsdf.inputs["Base Color"])
+    grain = nodes.new("ShaderNodeTexVoronoi")
+    grain.inputs["Scale"].default_value = 12
+    links.new(coords.outputs["Object"], grain.inputs["Vector"])
+    bump = nodes.new("ShaderNodeBump")
+    bump.inputs["Strength"].default_value = .45
+    links.new(grain.outputs["Distance"], bump.inputs["Height"])
+    links.new(bump.outputs[0], bsdf.inputs["Normal"])
+    return mat
+
+
+def water_material():
+    return material("Water", "#123e52", .1, .06, 0, emission="#0f6f8f", strength=.12 if not NIGHT else .3)
+
+
+def build_island_ground(roads):
+    from mathutils import noise
+    bpy.ops.mesh.primitive_grid_add(x_subdivisions=300, y_subdivisions=300, size=64, location=(12.5, -12.5, 0))
+    ground = bpy.context.active_object
+    for v in ground.data.vertices:
+        gx, gy = v.co.x + 12.5, -(v.co.y - 12.5)
+        m = coast_metric(gx, gy)
+        # Hills only away from the zones, roads and river; the playable ground stays flat.
+        dz = zone_distance(gx, gy)
+        dr = min((max(abs(gx - x), abs(gy - y)) for x, y in roads), default=9)
+        dw = river_distance(gx, gy)
+        open_ground = min(1, max(0, dz - .8) / 2.5) * min(1, max(0, dr - .8) / 1.5) * min(1, max(0, dw - .9) / 1.5)
+        hill = (noise.noise(Vector((gx * .16, gy * .16, 1.7))) + .35) * .8 * open_ground
+        z = max(0, hill)
+        if dw < .55:
+            z = -.18  # River bed.
+        cliff = max(0, min(1, (m - COAST) / .7))
+        z = z * (1 - cliff) + (-2.6) * (cliff * cliff * (3 - 2 * cliff))
+        v.co.z = z
+    bpy.ops.object.shade_smooth()
+    ground.data.materials.append(island_material())
+
+
+def pine(x, y, scale, leaf, trunk):
+    cyl((x, y, .12 * scale), .05 * scale, .24 * scale, trunk, bevel=0, vertices=8)
+    for k, (r, z) in enumerate(((.32, .38), (.25, .62), (.16, .84))):
+        bpy.ops.mesh.primitive_cone_add(vertices=9, radius1=r * scale, depth=.42 * scale, location=(x, y, z * scale))
+        rs.finish(bpy.context.active_object, leaf, 0)
+
 
 def build_terrain():
     rs.clear()
@@ -73,42 +212,68 @@ def build_terrain():
     if PREVIEW:
         rs.SCENE_SIZE = (rs.SCENE_SIZE[0] // 4, rs.SCENE_SIZE[1] // 4)
     rs.setup(10)
+    if NIGHT:
+        apply_night()
     scene = bpy.context.scene
     scene.render.film_transparent = False
-    scene.cycles.samples = 24 if PREVIEW else 96
+    scene.cycles.samples = 24 if PREVIEW else 80
     for obj in list(scene.objects):
         if obj.type == "MESH":
             bpy.data.objects.remove(obj)
     center = ((N - 1) / 2, -(N - 1) / 2, 0)
     iso_camera(center, chunk_w * K)
 
-    bpy.ops.mesh.primitive_plane_add(size=1, location=(center[0], center[1], -.05))
-    ground = bpy.context.active_object
-    ground.scale = (N + 70, N + 70, 1)
-    bpy.ops.object.transform_apply(scale=True)
-    ground.data.materials.append(render_map.terrain())
+    roads = road_tiles()
+    build_island_ground(roads)
+    bpy.ops.mesh.primitive_plane_add(size=1, location=(12.5, -12.5, -1.9))
+    sea = bpy.context.active_object
+    sea.scale = (90, 90, 1)
+    sea.data.materials.append(water_material())
+
+    # River with a waterfall where it leaves the island.
+    water = water_material()
+    foam = material("Foam", "#d8eef2", 0, .3, 0, emission="#bfe8f2", strength=.25)
+    for a, b in zip(RIVER, RIVER[1:]):
+        (ax, ay), (bx, by) = a, b
+        length = math.hypot(bx - ax, by - ay)
+        box(((ax + bx) / 2, -(ay + by) / 2, -.11), (length + .2, .7, .01), water, bevel=0, rot=math.atan2(-(by - ay), bx - ax))
+    for gx in [g / 10 for g in range(90, -90, -1)]:  # Walk the river west until it reaches the cliff.
+        if coast_metric(gx, 6.1) > COAST:
+            # The water pours down the cliff face as a steep sheet, with foam where it meets the sea.
+            drop = Vector((gx - 1.1, -6.1, -1.9)) - Vector((gx + .2, -6.1, -.1))
+            bpy.ops.mesh.primitive_plane_add(size=1, location=(gx - .45, -6.1, -1.0))
+            sheet = bpy.context.active_object
+            sheet.scale = (drop.length, .7, 1)
+            sheet.rotation_euler = (0, math.atan2(-drop.z, -drop.x), 0)
+            rs.finish(sheet, foam, 0)
+            for k in range(7):
+                ball((gx - 1.15 - (k % 3) * .15, -6.1 + (k % 3 - 1) * .25, -1.88), .14 + (k % 2) * .05, foam)
+            break
 
     rng = random.Random(5)
-    rock = material("Rock", "#4f3a2e", .1, .85, .6)
-    cliff = material("Cliff", "#5b4232", .1, .9, .6)
-    for x, y, r in ((6, -20, 1.4), (19, -4, 1.1), (1, -15, .9), (25, -9, .8), (15, -17, .7), (2, 2, 1.6), (27, -27, 1.5), (-3, -8, 1.2)):
-        if not in_zone(x, y, .5):
-            render_map.crater(x, y, r, rock)
-    for _ in range(420):  # Loose rocks, kept off the zones so their tiles stay clear.
-        x, y = rng.uniform(-8, N + 8), rng.uniform(-N - 8, 8)
-        if in_zone(x, y, .6):
+    rock = material("Rock", "#4f453e", .1, .85, .6)
+    leaf = material("Pine", "#2e4630", .05, .8, .4)
+    leaf_light = material("PineLight", "#3b5a37", .05, .8, .4)
+    trunk = material("Trunk", "#3a2a22", .1, .9, .3)
+    for _ in range(950):  # Pine woods on open ground, in clumps.
+        gx, gy = rng.uniform(-6, 31), rng.uniform(-6, 31)
+        if coast_metric(gx, gy) > COAST - .6 or zone_distance(gx, gy) < .7 or river_distance(gx, gy) < 1:
             continue
-        r = rng.uniform(.06, .22)
-        bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2, radius=r, location=(x, y, r * .3))
+        if any(max(abs(gx - x), abs(gy - y)) < .9 for x, y in roads):
+            continue
+        from mathutils import noise
+        if noise.noise(Vector((gx * .2, gy * .2, 9))) < -.05:
+            continue
+        pine(gx, -gy, rng.uniform(.7, 1.25), leaf if rng.random() < .6 else leaf_light, trunk)
+    for _ in range(320):  # Loose rocks.
+        gx, gy = rng.uniform(-6, 31), rng.uniform(-6, 31)
+        if coast_metric(gx, gy) > COAST - .3 or zone_distance(gx, gy) < .6:
+            continue
+        r = rng.uniform(.06, .24)
+        bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2, radius=r, location=(gx, -gy, r * .3))
         stone = bpy.context.active_object
         stone.scale = (1, rng.uniform(.6, 1.3), rng.uniform(.4, .8))
         rs.finish(stone, rock, 0)
-    for _ in range(26):  # Mesas around the edge of the valley give the map depth.
-        a = rng.uniform(0, math.tau)
-        dist = rng.uniform(19, 24)
-        x, y = center[0] + math.cos(a) * dist, center[1] + math.sin(a) * dist
-        h = rng.uniform(.6, 1.8)
-        prism(regular(7, rng.uniform(1, 2.2), rng.uniform(0, 1), x, y, 1, rng.uniform(.7, 1.2)), h / 2, h, cliff, .15)
 
 
 # ---- Sprites (one tile, isometric) --------------------------------------------------
@@ -282,11 +447,189 @@ def build_bld_housing():
     beam((-.18, .18, .3), (.2, .16, .3), .04, teal)
 
 
+def build_bld_solar():
+    concrete = material("Concrete", "#5a646b", .3, .6, .6)
+    panel = material("Panel", "#1a2c4a", .4, .12, .2)
+    steel = material("Steel", "#c7d2d7", 1, .28, .25)
+    glow = glowing("Glow", "#ffd36a", 2.2)
+    pad(concrete)
+    for x in (-.2, .2):
+        for y in (-.2, .2):
+            cyl((x, y, .18), .02, .2, steel, bevel=.004)
+            box((x, y, .3), (.34, .3, .02), panel, bevel=.008, rot=0)
+            obj = bpy.context.active_object
+            obj.rotation_euler = (math.radians(-25), 0, 0)
+            for k in range(3):
+                box((x, y - .1 + k * .1, .315), (.32, .008, .004), steel, bevel=0)
+    cyl((0, 0, .14), .05, .1, steel, bevel=.01)
+    ball((0, 0, .21), .03, glow)
+
+
 SPRITES = {
     "tile_pave": build_tile_pave, "tile_road": build_tile_road, "deco_lamp": build_deco_lamp, "deco_ship": build_deco_ship,
     "deco_barricade": build_deco_barricade, "bld_extractor": build_bld_extractor, "bld_laboratory": build_bld_laboratory,
     "bld_refinery": build_bld_refinery, "bld_fortification": build_bld_fortification, "bld_housing": build_bld_housing,
+    "bld_solar": build_bld_solar,
 }
+
+# ---- Zone landmarks: one per zone, on the 3 x 3 tiles around its center -------------------
+
+def landmark_scene():
+    rs.clear()
+    rs.SCENE_SIZE = (768, 768)  # 4 Unity units across at 192 pixels per unit.
+    rs.setup(4 * K)
+    if NIGHT:
+        apply_night()
+    iso_camera((0, 0, .6), 4 * K)
+
+
+def lm_mats():
+    return {
+        "concrete": material("Concrete", "#5a646b", .3, .6, .6),
+        "white": material("White", "#dde5e8", .3, .32, .35),
+        "steel": material("Steel", "#c3ced3", 1, .28, .25),
+        "dark": material("Dark", "#151c21", .8, .5, .3),
+        "teal": material("Teal", "#2f6a72", .6, .48, .5),
+        "rust": material("Rust", "#8a4b2f", .5, .6, .6),
+        "yellow": material("Yellow", "#e0ac1a", .3, .45, .45),
+        "warm": glowing("Warm", "#ffc77a", 2.4),
+        "cyan": glowing("Cyan", "#5ee8ff", 2.4),
+        "green": glowing("Green", "#7dff9e", 2.2),
+    }
+
+
+def windows(x, y, z0, w, d, h, warm, floors_gap=.16):
+    """Lit window bands on the two faces the camera sees."""
+    for f in range(int((h - .1) / floors_gap)):
+        z = z0 + .12 + f * floors_gap
+        box((x + w / 2 + .005, y, z), (.01, d * .8, .05), warm, bevel=0)
+        box((x, y - d / 2 - .005, z), (w * .8, .01, .05), warm, bevel=0)
+
+
+def build_lm_landing():
+    m = lm_mats()
+    box((0, 0, .05), (2.8, 2.8, .1), m["concrete"], bevel=.04)
+    torus((0, 0, .11), 1.0, .03, m["yellow"])
+    for i in range(12):
+        a = i * math.tau / 12
+        cyl((math.cos(a) * 1.25, math.sin(a) * 1.25, .12), .04, .03, m["cyan"], bevel=.005, vertices=12)
+    box((1.05, -1.05, .7), (.42, .42, 1.3), m["white"], bevel=.05)  # Control tower.
+    cyl((1.05, -1.05, 1.45), .32, .2, m["dark"], bevel=.03)
+    torus((1.05, -1.05, 1.45), .32, .03, m["cyan"])
+    windows(1.05, -1.05, .1, .42, .42, 1.2, m["warm"])
+    cyl((1.05, -1.05, 1.75), .02, .4, m["steel"], bevel=0)
+
+
+def build_lm_camp():
+    m = lm_mats()
+    box((0, 0, .05), (2.8, 2.8, .1), m["concrete"], bevel=.04)
+    for x, y, h in ((-.7, .7, .9), (.6, .75, .7), (-.75, -.55, .6), (.65, -.6, 1.1), (0, 0, .5)):
+        box((x, y, .1 + h / 2), (.7, .55, h), m["white"], bevel=.05)
+        box((x, y, .12 + h), (.6, .45, .04), m["teal"], bevel=.01)
+        windows(x, y, .1, .7, .55, h, m["warm"])
+
+
+def build_lm_well():
+    m = lm_mats()
+    box((0, 0, .05), (2.8, 2.8, .1), m["concrete"], bevel=.04)
+    for x, y, r in ((-.7, .6, .45), (.6, .65, .4), (-.6, -.65, .38)):
+        cyl((x, y, .55), r, .9, m["white"], bevel=.05)
+        torus((x, y, 1.0), r - .03, .03, m["steel"])
+        torus((x, y, .5), r + .01, .03, m["cyan"])
+    cyl((.65, -.6, .14), .5, .06, material("Pool", "#1b6f8f", .1, .05, 0, emission="#1aa8d8", strength=.5), bevel=.01)
+    box((.1, 0, .3), (.4, .3, .4), m["teal"], bevel=.04)
+    windows(.1, 0, .1, .4, .3, .4, m["warm"])
+
+
+def build_lm_greenhouse():
+    m = lm_mats()
+    box((0, 0, .05), (2.8, 2.8, .1), m["concrete"], bevel=.04)
+    glass = transparent("Glass", "#b8f0cf", .4)
+    for x in (-.75, 0, .75):
+        bpy.ops.mesh.primitive_cylinder_add(vertices=24, radius=.32, depth=2.2, location=(x, 0, .1), rotation=(math.radians(90), 0, 0))
+        hall = bpy.context.active_object
+        rs.finish(hall, glass, 0, smooth=True)
+        box((x, 0, .14), (.5, 2.1, .06), m["green"], bevel=.01)
+        for y in (-.8, -.4, 0, .4, .8):
+            torus((x, y, .1), .32, .015, m["steel"])
+
+
+def build_lm_mines():
+    m = lm_mats()
+    pit = material("Pit", "#3a2d26", .1, .9, .5)
+    box((0, 0, .03), (2.8, 2.8, .06), pit, bevel=.04)
+    for i, r in enumerate((1.0, .75, .5)):
+        torus((-.2, .2, .06 - i * .02), r, .07, material("Terrace", "#5b4636", .1, .9, .5))
+    box((.75, -.7, .3), (.6, .35, .3), m["yellow"], bevel=.04)  # Excavator body.
+    box((.75, -.7, .52), (.25, .25, .15), m["dark"], bevel=.03)
+    beam((.55, -.6, .5), (.1, -.2, .9), .05, m["yellow"])
+    beam((.1, -.2, .9), (-.15, .05, .35), .04, m["yellow"])
+    box((-.15, .05, .3), (.2, .15, .12), m["steel"], bevel=.02)
+    for x, y in ((.8, .7), (1.05, .35)):
+        bpy.ops.mesh.primitive_cone_add(radius1=.3, depth=.35, location=(x, y, .17))
+        rs.finish(bpy.context.active_object, material("Ore", "#7a6a5a", .2, .85, .3), 0)
+    beam((-1.0, -1.0, .1), (-.4, -.4, .6), .05, m["steel"])
+    cyl((-.4, -.4, .62), .06, .06, m["warm"], bevel=.01)
+
+
+def build_lm_workshop():
+    m = lm_mats()
+    box((0, 0, .05), (2.8, 2.8, .1), m["concrete"], bevel=.04)
+    box((-.35, .2, .45), (1.6, 1.2, .7), material("Shed", "#56636b", .8, .45, .5), bevel=.05)
+    for k in range(6):
+        box((-.35, -.35 + k * .22, .82), (1.55, .1, .04), m["yellow"] if k % 2 else m["dark"], bevel=.01)
+    windows(-.35, .2, .1, 1.6, 1.2, .7, m["warm"], .22)
+    cyl((.75, .75, .9), .12, 1.6, m["steel"], bevel=.02)
+    torus((.75, .75, 1.6), .13, .02, m["rust"])
+    box((.8, -.8, .9), (.08, .08, 1.6), m["yellow"], bevel=.01)  # Crane.
+    beam((.8, -.8, 1.7), (-.4, -.6, 1.7), .04, m["yellow"])
+    box((-.4, -.6, 1.2), (.03, .03, .9), m["steel"], bevel=0)
+
+
+def build_lm_port():
+    m = lm_mats()
+    box((0, 0, .05), (2.8, 2.8, .1), m["concrete"], bevel=.04)
+    box((-1.0, 0, .02), (.9, 2.8, .04), material("Harbor", "#123e52", .1, .06, 0, emission="#0f6f8f", strength=.2), bevel=.01)
+    for k, (x, y, color) in enumerate(((.2, .7, "#8a4b2f"), (.2, .35, "#2f6a72"), (.65, .7, "#c9a23a"), (.2, 0, "#2f6a72"), (.65, .35, "#8a4b2f"))):
+        box((x, y, .25), (.4, .3, .28), material(f"Box{k}", color, .6, .5, .5), bevel=.02)
+    box((-.35, -.7, 1.0), (.1, .1, 1.8), m["yellow"], bevel=.01)
+    beam((-.35, -.7, 1.85), (-1.2, -.2, 1.85), .05, m["yellow"])
+    beam((-.35, -.7, 1.85), (.4, -.9, 1.85), .05, m["yellow"])
+    for y in (-1.1, 1.1):
+        cyl((-.5, y, .4), .03, .6, m["steel"], bevel=0)
+        ball((-.5, y, .72), .05, m["warm"])
+
+
+def build_lm_core():
+    m = lm_mats()
+    box((0, 0, .05), (2.8, 2.8, .1), m["concrete"], bevel=.04)
+    cyl((0, 0, .2), 1.15, .2, m["steel"], bevel=.04)
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=48, ring_count=24, radius=.95, location=(0, 0, .3))
+    dome = bpy.context.active_object
+    dome.scale = (1, 1, .75)
+    rs.finish(dome, m["white"], 0, smooth=True)
+    for z, r in ((.45, .98), (.75, .85)):
+        torus((0, 0, z), r, .03, m["green"])
+    cyl((0, 0, 1.05), .22, .1, m["green"], bevel=.02)
+    for i in range(6):
+        a = i * math.tau / 6
+        box((math.cos(a) * 1.25, math.sin(a) * 1.25, .2), (.35, .12, .2), m["dark"], bevel=.02, rot=a)
+
+
+LANDMARKS = {
+    "lm_landing": build_lm_landing, "lm_camp": build_lm_camp, "lm_well": build_lm_well, "lm_greenhouse": build_lm_greenhouse,
+    "lm_mines": build_lm_mines, "lm_workshop": build_lm_workshop, "lm_port": build_lm_port, "lm_core": build_lm_core,
+}
+
+
+def build_tile_road_glow():
+    gravel = material("Gravel", "#2f2b29", .1, .9, .5)
+    line = glowing("Line", "#5ee8ff", 1.6)
+    box((0, 0, .015), (.98, .98, .03), gravel, bevel=.01)
+    for side in (-1, 1):
+        box((side * .38, 0, .033), (.04, .98, .004), line, bevel=0)
+        box((0, side * .38, .033), (.98, .04, .004), line, bevel=0)
+
 
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
@@ -301,14 +644,24 @@ if __name__ == "__main__":
                 dx = (i - (CHUNKS - 1) / 2) * TERRAIN_W / CHUNKS
                 dy = ((CHUNKS - 1) / 2 - j) * TERRAIN_H / CHUNKS
                 cam.location = base + right * dx * K + up * dy * K
-                name = f"colony_terrain_{i}_{j}" + ("_preview" if PREVIEW else "")
+                name = f"colony_terrain_{i}_{j}" + suffix() + ("_preview" if PREVIEW else "")
                 bpy.context.scene.render.filepath = os.path.join(OUT, name + ".png")
                 bpy.ops.render.render(write_still=True)
+    SPRITES["tile_road"] = build_tile_road_glow
     for name, builder in SPRITES.items():
         if ONLY and name not in ONLY:
             continue
         sprite_scene()
+        if NIGHT:
+            apply_night()
         builder()
-        bpy.context.scene.render.filepath = os.path.join(OUT, name + ".png")
+        bpy.context.scene.render.filepath = os.path.join(OUT, name + suffix() + ".png")
+        bpy.ops.render.render(write_still=True)
+    for name, builder in LANDMARKS.items():
+        if ONLY and name not in ONLY:
+            continue
+        landmark_scene()
+        builder()
+        bpy.context.scene.render.filepath = os.path.join(OUT, name + suffix() + ".png")
         bpy.ops.render.render(write_still=True)
     print("RENDER_DONE")
