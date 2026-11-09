@@ -59,39 +59,81 @@ def soil():
 
 
 def outpost(frame, steel, dark, warm, cyan):
-    """A field defense platform outside the colony: rocks, cargo and floodlights on open ground."""
-    rock = material("Rock", "#4f3a2e", .1, .85, .6)
-    crate = material("Crate", "#2f6a72", .6, .48, .5)
-    rust = material("Rust", "#8a4b2f", .5, .6, .6)
-    sand = material("Sand", "#7a6247", .1, .9, .6)
-    left, right = CENTER[0] - W / 2 - .3, CENTER[0] + W / 2 + .3
-    rng = random.Random(W * 31 + H)
-    for _ in range(int(WIDTH * HEIGHT * .9)):  # Scattered rocks away from the deck.
-        x = rng.uniform(CENTER[0] - WIDTH / 2, CENTER[0] + WIDTH / 2)
-        y = rng.uniform(CENTER[1] - HEIGHT / 2, CENTER[1] + HEIGHT / 2)
-        if left - .5 < x < right + .5 and -(H - 1) - 1.3 < y < 1.3:
-            continue
-        r = rng.uniform(.05, .2)
-        bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2, radius=r, location=(x, y, r * .25))
-        stone = bpy.context.active_object
-        stone.scale = (1, rng.uniform(.6, 1.3), rng.uniform(.35, .7))
-        rs.finish(stone, rock, 0)
+    """A tidy field base: the deck sits on a concrete apron with railings, lights and consoles; pine woods beyond."""
+    concrete = material("Apron", "#4c565d", .3, .62, .35)
+    seam = material("ApronSeam", "#2b3338", .5, .7, .2)
+    yellow = material("Yellow", "#e0ac1a", .2, .5, .4)
+    black = material("Black", "#15171a", .2, .6, .3)
+    teal = material("Teal", "#2f6a72", .6, .45, .4)
+    leaf = material("Pine", "#2e4630", .05, .8, .4)
+    leaf_light = material("PineLight", "#3b5a37", .05, .8, .4)
+    trunk = material("Trunk", "#3a2a22", .1, .9, .3)
+    rock = material("Rock", "#4f453e", .1, .85, .6)
+    screen = glowing("Screen", "#5ee8ff", 1.8)
+
+    half_w, top, bottom = W / 2 + 2.8, 2.0, -(H - 1) - 2.2
+    cx, cy = CENTER[0], (top + bottom) / 2
+    box((cx, cy, .02), (half_w * 2, top - bottom, .06), concrete, bevel=.03)
+    # Panel seams on the apron, a slab every unit, never over the deck itself.
+    x0, x1 = cx - half_w, cx + half_w
+    for k in range(int(half_w * 2) + 1):
+        x = x0 + k
+        box((x, cy, .052), (.03, top - bottom - .1, .004), seam, bevel=0)
+    for k in range(int(top - bottom) + 1):
+        y = bottom + k
+        box((cx, y, .052), (half_w * 2 - .1, .03, .004), seam, bevel=0)
+    # Hazard band and railing around the apron's edge.
+    for (ax, ay), (bx, by) in (((x0, top), (x1, top)), ((x1, top), (x1, bottom)), ((x1, bottom), (x0, bottom)), ((x0, bottom), (x0, top))):
+        length = math.hypot(bx - ax, by - ay)
+        steps = int(length / .3)
+        for i in range(steps):
+            t = (i + .5) / steps
+            px, py = ax + (bx - ax) * t, ay + (by - ay) * t
+            vertical = abs(bx - ax) < .01
+            box((px, py, .06), (.12 if vertical else length / steps * .9, length / steps * .9 if vertical else .12, .012),
+                yellow if i % 2 else black, bevel=.002)
+        for i in range(steps // 3 + 1):  # Railing posts.
+            t = i / max(1, steps // 3)
+            px, py = ax + (bx - ax) * t, ay + (by - ay) * t
+            cyl((px, py, .2), .025, .32, steel, bevel=.004, vertices=10)
+        box(((ax + bx) / 2, (ay + by) / 2, .34), (length if abs(by - ay) < .01 else .04, length if abs(bx - ax) < .01 else .04, .03), steel, bevel=.008)
+    # Floodlight towers at the corners.
+    for x, y in ((x0 + .35, top - .35), (x1 - .35, top - .35), (x0 + .35, bottom + .35), (x1 - .35, bottom + .35)):
+        cyl((x, y, .7), .05, 1.4, steel, bevel=.01)
+        box((x, y, 1.42), (.3, .2, .08), dark, bevel=.02)
+        box((x, y - .02, 1.38), (.22, .14, .02), warm, bevel=.004)
+    # Conduits and consoles along each side of the deck.
     for side in (-1, 1):
-        x = CENTER[0] + side * (W / 2 + .95)
-        for k in range(max(2, H // 3)):  # Sandbag walls along the flanks.
-            y = -1.2 - k * 2.4
-            for j in range(4):
-                box((x, y - j * .32, .1), (.36, .3, .18), sand, bevel=.08)
-        for y in (-.4, -(H - 1) * .55, -(H - 1) + .4):  # Floodlights on poles.
-            cyl((x + side * .45, y, .4), .04, .8, steel, bevel=.008)
-            box((x + side * .32, y, .8), (.26, .14, .06), dark, bevel=.015)
-            box((x + side * .26, y, .77), (.14, .1, .02), warm, bevel=.004)
-    for i, (dx, dy, mat) in enumerate(((-1.6, -(H - 1) - 1.1, crate), (-2.3, -(H - 1) - .8, rust), (1.8, -(H - 1) - 1.0, crate), (2.4, -(H - 1) - 1.6, rust))):
-        box((CENTER[0] + dx * (W / 5 + .6), dy, .2), (.6, .45, .4), mat, bevel=.03)
-        box((CENTER[0] + dx * (W / 5 + .6), dy, .41), (.5, .05, .01), dark, bevel=.003)
-    for x in (left - .1, right + .1):  # Beacons at the enemy side.
-        cyl((x, .8, .2), .08, .4, frame, bevel=.01)
-        ball_light = cyl((x, .8, .42), .06, .04, cyan, bevel=.008)
+        px = cx + side * (W / 2 + .75)
+        bpy.ops.mesh.primitive_cylinder_add(vertices=16, radius=.07, depth=H + 1.2, location=(px, CENTER[1], .12), rotation=(math.radians(90), 0, 0))
+        rs.finish(bpy.context.active_object, teal, 0, smooth=True)
+        for k in range(H):
+            box((px, -k, .12), (.2, .06, .18), steel, bevel=.01)
+        for y in (CENTER[1] + 1.2, CENTER[1] - 1.2):
+            kx = cx + side * (W / 2 + 1.7)
+            box((kx, y, .25), (.55, .4, .45), dark, bevel=.04)
+            box((kx - side * .2, y, .36), (.02, .3, .2), screen, bevel=0)
+            cyl((kx + side * .15, y + .12, .7), .015, .5, steel, bevel=0, vertices=8)
+            cyl((kx + side * .15, y + .12, .96), .03, .02, cyan, bevel=.003, vertices=12)
+    # Pine woods beyond the apron, kept clear of it.
+    rng = random.Random(W * 31 + H)
+    for _ in range(int(WIDTH * HEIGHT * .55)):
+        x = rng.uniform(CENTER[0] - WIDTH / 2 - 1, CENTER[0] + WIDTH / 2 + 1)
+        y = rng.uniform(CENTER[1] - HEIGHT / 2 - 1, CENTER[1] + HEIGHT / 2 + 1)
+        if x0 - .5 < x < x1 + .5 and bottom - .5 < y < top + .5:
+            continue
+        if rng.random() < .25:
+            r = rng.uniform(.06, .2)
+            bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2, radius=r, location=(x, y, r * .3))
+            stone = bpy.context.active_object
+            stone.scale = (1, rng.uniform(.6, 1.3), rng.uniform(.4, .8))
+            rs.finish(stone, rock, 0)
+            continue
+        s = rng.uniform(.7, 1.2)
+        cyl((x, y, .12 * s), .05 * s, .24 * s, trunk, bevel=0, vertices=8)
+        for r, z in ((.32, .38), (.25, .62), (.16, .84)):
+            bpy.ops.mesh.primitive_cone_add(vertices=9, radius1=r * s, depth=.42 * s, location=(x, y, z * s))
+            rs.finish(bpy.context.active_object, leaf if rng.random() < .6 else leaf_light, 0)
 
 
 def build():
@@ -112,8 +154,8 @@ def build():
     ground = bpy.context.active_object
     ground.scale = (WIDTH + 2, HEIGHT + 2, 1)
     if CAMPAIGN:
-        import render_map
-        ground.data.materials.append(render_map.terrain())
+        import render_colony  # The island's mossy ground, so missions match the colony map.
+        ground.data.materials.append(render_colony.island_material())
     else:
         ground.data.materials.append(soil())
 

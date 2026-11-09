@@ -278,6 +278,7 @@ namespace Colonia09.Presentation
 
                 // The tutorial: confirm the notes and let the bot satisfy the goals.
                 int guard = 0;
+                bool checkedFreeGoal = false;
                 while (game.Campaign.Step != null && guard++ < 2000)
                 {
                     var step = game.Campaign.Step;
@@ -285,7 +286,16 @@ namespace Colonia09.Presentation
                     else if (step.Card.HasValue && game.SelectedType != step.Card.Value) ui.CardButtons[step.Card.Value].onClick.Invoke();
                     else if (step.Card.HasValue && step.Cell == null) ui.CardButtons[step.Card.Value].onClick.Invoke();
                     else if (step.Cell.HasValue) yield return Tap(step.Cell.Value.x, step.Cell.Value.y);
-                    else if (Time.frameCount % 5 == 0) SectorBotStep(sector.Id);  // A goal without a marked cell: build like a player.
+                    else
+                    {
+                        if (!checkedFreeGoal)
+                        {
+                            checkedFreeGoal = true;
+                            yield return Frames(2);
+                            Check($"sector {sector.Number}: a goal step without a marked cell leaves the screen touchable", !ui.GuideBlocksTouches);
+                        }
+                        if (Time.frameCount % 5 == 0) SectorBotStep(sector.Id);  // A goal without a marked cell: build like a player.
+                    }
                     yield return null;
                 }
                 Check($"sector {sector.Number} tutorial completes and releases the enemies", game.Campaign.Step == null && !sim.HoldSpawns);

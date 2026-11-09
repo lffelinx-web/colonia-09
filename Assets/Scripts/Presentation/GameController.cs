@@ -177,6 +177,7 @@ namespace Colonia09.Presentation
         public void SelectType(ModuleType type)
         {
             CardPicks++;
+            Board.FlashReach(4);  // Green cells show where this piece would connect, for a moment.
             SelectedType = type;
             Selected = null;
             Audio.Play("select");
@@ -220,6 +221,7 @@ namespace Colonia09.Presentation
             {
                 // In the campaign a piece that could not connect is refused, with the reason, instead of wasting energy.
                 Audio.Play("hit", true);
+                Board.FlashReach(3);
                 bool relays = Sim.Level.Allows(ModuleType.Relay);
                 Ui.ShowToast(SelectedType == ModuleType.Generator
                     ? "El Generador debe ir a 2 casillas o menos de un Núcleo"

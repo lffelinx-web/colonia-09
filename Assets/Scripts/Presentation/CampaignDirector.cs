@@ -19,6 +19,8 @@ namespace Colonia09.Presentation
         public bool Hold = true;
         /// <summary>A one-time tip shown during play: it never blocks building and never holds enemies.</summary>
         public bool IsTip;
+        /// <summary>Shows the green cells where pieces connect while this step is on screen.</summary>
+        public bool ShowReach;
     }
 
     /// <summary>
@@ -73,6 +75,7 @@ namespace Colonia09.Presentation
             Tip = null;
             game.Sim.HoldSpawns = false;
             game.Board.HighlightCell = null;
+            game.Board.ForceReach = false;
             game.Ui.ShowCoach(null);
         }
 
@@ -83,6 +86,7 @@ namespace Colonia09.Presentation
             var step = Step;
             game.Sim.HoldSpawns = step != null && step.Hold;
             game.Board.HighlightCell = step?.Cell;
+            game.Board.ForceReach = step != null && step.ShowReach;
             game.Ui.ShowCoach(step);
             if (step == null && steps.Count > 0)
             {
@@ -248,8 +252,9 @@ namespace Colonia09.Presentation
                         new TutorialStep { Text = "Este es tu <b>Núcleo</b> (casilla marcada). Guarda la energía de la barra amarilla. Si lo destruyen, pierdes.", Cell = new Vector2Int(cr, cc) },
                         new TutorialStep { Text = "Paso 1 de 4 · Toca la tarjeta <b>Generador</b> en la barra de abajo.", Card = ModuleType.Generator, Done = d => d.Picked(ModuleType.Generator) },
                         new TutorialStep { Text = "Paso 1 de 4 · Ahora toca la <b>casilla marcada</b>, junto al Núcleo.", Card = ModuleType.Generator, Cell = new Vector2Int(cr, cc - 1), Done = d => d.Built(ModuleType.Generator) },
-                        new TutorialStep { Text = "El Generador recarga la batería. <b>Uno basta por ahora</b>: guarda la energía para tus armas." },
+                        new TutorialStep { Text = "El <b>Generador</b> produce energía y la entrega al Núcleo si está a 2 casillas o menos. En misiones largas podrás <b>mejorarlo</b> (desde la oleada 3) para que produzca más. <b>Uno basta por ahora</b>." },
                         new TutorialStep { Text = "Paso 2 de 4 · Toca la tarjeta <b>Pulso</b>: es tu arma.", Card = ModuleType.Pulse, Done = d => d.Picked(ModuleType.Pulse) },
+                        new TutorialStep { Text = "Las <b>casillas verdes</b> son las que tienen conexión con el Núcleo: solo ahí funcionan tus piezas. Aparecen cada vez que eliges una.", ShowReach = true },
                         new TutorialStep { Text = "Paso 2 de 4 · Colócalo en la <b>casilla marcada</b>. Dispara hacia arriba, solo en su columna.", Card = ModuleType.Pulse, Cell = new Vector2Int(cr - 1, cc), Done = d => d.Built(ModuleType.Pulse) },
                         new TutorialStep { Text = "Paso 3 de 4 · Cada columna necesita su Pulso. Pon otro en la <b>columna izquierda</b>.", Card = ModuleType.Pulse, Cell = new Vector2Int(cr - 1, cc - 1), Done = d => d.Built(ModuleType.Pulse, 2) },
                         new TutorialStep { Text = "Paso 4 de 4 · Y uno más en la <b>columna derecha</b>.", Card = ModuleType.Pulse, Cell = new Vector2Int(cr - 1, cc + 1), Done = d => d.Built(ModuleType.Pulse, 3) },

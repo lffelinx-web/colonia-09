@@ -63,7 +63,7 @@ namespace Colonia09.Presentation
             mapNoticeGo = Rt("Notice", safe).gameObject;
             var notice = (RectTransform)mapNoticeGo.transform;
             notice.anchorMin = new Vector2(.05f, 0); notice.anchorMax = new Vector2(.95f, 0); notice.pivot = new Vector2(.5f, 0);
-            notice.sizeDelta = new Vector2(0, 96); notice.anchoredPosition = new Vector2(0, 306);  // Above the access cards.
+            notice.sizeDelta = new Vector2(0, 90); notice.anchoredPosition = new Vector2(0, 188);  // Just above the access cards.
             var bg = mapNoticeGo.AddComponent<Image>();
             bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = new Color(.03f, .1f, .15f, .95f); bg.raycastTarget = false;
             mapNotice = Label(notice, "", 30, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);

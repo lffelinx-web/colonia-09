@@ -292,12 +292,22 @@ namespace Colonia09.Presentation
         /// While a card is chosen and no piece is open, empty cells where that module would connect get a soft
         /// green mark, so the player sees where it will work before spending energy.
         /// </summary>
+        float reachUntil;
+        /// <summary>Keeps the green reach marks on while a tutorial step explains them.</summary>
+        public bool ForceReach;
+
+        /// <summary>Shows the green reach marks for a few seconds, fading out at the end.</summary>
+        public void FlashReach(float seconds) => reachUntil = Time.unscaledTime + seconds;
+
         void DrawReach(float t)
         {
             var sim = game.Sim;
             if (sim.Mode != GameMode.Playing || game.Selected != null || game.SelectedType == ModuleType.Wall) return;
+            float left = reachUntil - Time.unscaledTime;
+            if (!ForceReach && left <= 0) return;
             var type = game.SelectedType;
-            float glow = .1f + .04f * Mathf.Sin(t * 3);
+            float fade = ForceReach ? 1 : Mathf.Clamp01(left / .8f);
+            float glow = (.12f + .05f * Mathf.Sin(t * 3)) * fade;
             var nodes = sim.ConnectionNodes(type);  // Once per frame, then a cheap distance test per cell.
             for (int r = 1; r < H - 1; r++)
                 for (int c = 0; c < W; c++)
