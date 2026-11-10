@@ -26,7 +26,8 @@ namespace Colonia09.Presentation
             public Button Button;
             public RectTransform Tag, DevFill;
             public GameObject DevBar;
-            public Image Ring;
+            public Image Ring, Icon, StatusIcon;
+            public Sprite ZoneSprite;
             public Text Caption, State;
             public readonly List<Image> Stars = new List<Image>();
         }
@@ -49,6 +50,9 @@ namespace Colonia09.Presentation
             discSprite = MakeDisc(false);
             ringSprite = MakeDisc(true);
             frameSprite = MakeFrame();
+            checkSprite = MakeSymbol(Check);
+            lockSprite = MakeSymbol(Padlock);
+            targetSprite = MakeSymbol(Crosshair);
             CampaignButton.interactable = true;  // Campaign is playable from now on.
             CampaignButton.onClick.AddListener(() => { game.Audio.Play("select", true); game.ShowCampaignMap(); });
             var campaignLabels = CampaignButton.GetComponentsInChildren<Text>();
@@ -132,7 +136,7 @@ namespace Colonia09.Presentation
             // The six colony resources with their hourly production.
             var strip = Rt("Resources", safe);
             strip.anchorMin = new Vector2(0, 1); strip.anchorMax = Vector2.one; strip.pivot = new Vector2(.5f, 1);
-            strip.sizeDelta = new Vector2(-16, 96); strip.anchoredPosition = new Vector2(0, -114);
+            strip.sizeDelta = new Vector2(-16, 116); strip.anchoredPosition = new Vector2(0, -114);
             mapStrip = strip;
             var stripBg = strip.gameObject.AddComponent<Image>();
             stripBg.sprite = rounded; stripBg.type = Image.Type.Sliced; stripBg.color = new Color(.03f, .1f, .15f, .92f); stripBg.raycastTarget = false;
@@ -148,10 +152,18 @@ namespace Colonia09.Presentation
                 var image = Rt("Icon", cell).gameObject.AddComponent<Image>();
                 image.sprite = Resources.Load<Sprite>("Sprites/UI/" + icon); image.preserveAspect = true; image.raycastTarget = false;
                 image.rectTransform.anchorMin = image.rectTransform.anchorMax = new Vector2(0, .5f); image.rectTransform.pivot = new Vector2(0, .5f);
-                image.rectTransform.sizeDelta = new Vector2(48, 48); image.rectTransform.anchoredPosition = new Vector2(6, 0);
-                var text = Label(cell, "", 26, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
-                text.resizeTextForBestFit = true; text.resizeTextMinSize = 12; text.resizeTextMaxSize = 26;
-                text.rectTransform.offsetMin = new Vector2(56, 6); text.rectTransform.offsetMax = new Vector2(-2, -6);
+                image.rectTransform.sizeDelta = new Vector2(50, 50); image.rectTransform.anchoredPosition = new Vector2(6, 0);
+                var text = Label(cell, "", 30, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
+                text.resizeTextForBestFit = true; text.resizeTextMinSize = 12; text.resizeTextMaxSize = 30;
+                text.lineSpacing = .9f;
+                text.rectTransform.offsetMin = new Vector2(58, 6); text.rectTransform.offsetMax = new Vector2(-2, -6);
+                if (i > 0)
+                {
+                    var divider = Rt("Divider", cell).gameObject.AddComponent<Image>();
+                    divider.color = new Color(Cyan.r, Cyan.g, Cyan.b, .18f); divider.raycastTarget = false;
+                    divider.rectTransform.anchorMin = new Vector2(0, .18f); divider.rectTransform.anchorMax = new Vector2(0, .82f);
+                    divider.rectTransform.sizeDelta = new Vector2(2, 0);
+                }
                 resourceTexts[key] = text;
                 resourceLabels[key] = label;
             }
@@ -180,7 +192,8 @@ namespace Colonia09.Presentation
             string rate = "<color=#5d7486>-</color>";
             if (perHour > .05) rate = "<color=#91e5bd>+" + perHour.ToString("0") + "/h</color>";
             else if (perHour < -.05) rate = "<color=#ff8c8a>" + perHour.ToString("0") + "/h</color>";
-            text.text = $"<size=17><color=#99b5c7>{resourceLabels[key]}</color></size>\n{Mathf.FloorToInt((float)amount)}  <size=17>{rate}</size>";
+            // Name, then the amount large, then the hourly change, as three short lines.
+            text.text = $"<size=16><color=#99b5c7>{resourceLabels[key]}</color></size>\n{Mathf.FloorToInt((float)amount)}\n<size=17>{rate}</size>";
         }
 
         RectTransform mapTags, mapHeader, mapStrip, mapCards;
@@ -226,7 +239,7 @@ namespace Colonia09.Presentation
         {
             var row = Rt("Access", safe);
             row.anchorMin = Vector2.zero; row.anchorMax = new Vector2(1, 0); row.pivot = new Vector2(.5f, 0);
-            row.sizeDelta = new Vector2(-16, 112); row.anchoredPosition = new Vector2(0, 8);
+            row.sizeDelta = new Vector2(-16, 150); row.anchoredPosition = new Vector2(0, 8);
             mapCards = row;
             DefenseCard = AccessCard(row, 0, "icon_board", "TABLERO\nDE DEFENSA", "Conquista la zona superando su tablero", OpenNextDefense);
             BuildCard = AccessCard(row, 1, "icon_crane", "MODO\nCONSTRUCCIÓN", "Levanta y mejora edificios", ToggleBuildMode);
@@ -242,14 +255,27 @@ namespace Colonia09.Presentation
             var edge = Rt("Edge", rt).gameObject.AddComponent<Image>();
             edge.sprite = frameSprite; edge.type = Image.Type.Sliced; edge.color = new Color(Cyan.r, Cyan.g, Cyan.b, .45f); edge.raycastTarget = false;
             Stretch(edge.rectTransform);
-            // Compact: icon on the left, title beside it, so the cards take little of the map.
-            var image = Rt("Icon", rt).gameObject.AddComponent<Image>();
+            // Icon in a dark frame on the left; title, a short line of what it does and an arrow beside it.
+            var frame = Rt("IconFrame", rt).gameObject.AddComponent<Image>();
+            frame.sprite = rounded; frame.type = Image.Type.Sliced; frame.color = new Color(.02f, .06f, .1f, 1); frame.raycastTarget = false;
+            frame.rectTransform.anchorMin = new Vector2(0, .1f); frame.rectTransform.anchorMax = new Vector2(0, .9f); frame.rectTransform.pivot = new Vector2(0, .5f);
+            frame.rectTransform.sizeDelta = new Vector2(92, 0); frame.rectTransform.anchoredPosition = new Vector2(8, 0);
+            var image = Rt("Icon", frame.transform).gameObject.AddComponent<Image>();
             image.sprite = Resources.Load<Sprite>("Sprites/UI/" + icon); image.preserveAspect = true; image.raycastTarget = false;
-            image.rectTransform.anchorMin = new Vector2(0, .1f); image.rectTransform.anchorMax = new Vector2(0, .9f); image.rectTransform.pivot = new Vector2(0, .5f);
-            image.rectTransform.sizeDelta = new Vector2(84, 0); image.rectTransform.anchoredPosition = new Vector2(8, 0);
-            var heading = Label(rt, title, 22, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
+            Stretch(image.rectTransform);
+            image.rectTransform.offsetMin = new Vector2(6, 6); image.rectTransform.offsetMax = new Vector2(-6, -6);
+            var heading = Label(rt, title, 22, Txt, TextAnchor.LowerLeft, FontStyle.Bold);
             heading.resizeTextForBestFit = true; heading.resizeTextMinSize = 13; heading.resizeTextMaxSize = 22;
-            heading.rectTransform.offsetMin = new Vector2(96, 6); heading.rectTransform.offsetMax = new Vector2(-6, -6);
+            heading.rectTransform.anchorMin = new Vector2(0, .48f);
+            heading.rectTransform.offsetMin = new Vector2(108, 0); heading.rectTransform.offsetMax = new Vector2(-6, -10);
+            var line = Label(rt, text, 16, Muted, TextAnchor.UpperLeft);
+            line.resizeTextForBestFit = true; line.resizeTextMinSize = 11; line.resizeTextMaxSize = 16;
+            line.rectTransform.anchorMax = new Vector2(1, .46f);
+            line.rectTransform.offsetMin = new Vector2(108, 10); line.rectTransform.offsetMax = new Vector2(-28, -2);
+            line.raycastTarget = false;
+            var arrow = Label(rt, "›", 40, Cyan, TextAnchor.LowerRight, FontStyle.Bold);
+            arrow.rectTransform.offsetMin = new Vector2(0, 2); arrow.rectTransform.offsetMax = new Vector2(-10, 0);
+            arrow.raycastTarget = false;
             return button;
         }
 
@@ -304,10 +330,10 @@ namespace Colonia09.Presentation
             var refusal = Colony.RefuseConnection(sector);
             if (refusal != null) { game.Audio.Play("hit", true); ShowMapNotice(refusal, 3); return; }
             Colony.Connect(sector);
-            game.Audio.Play("upgrade", true);
+            game.Audio.Play("build", true);
             briefing.SetActive(false);
             RefreshMap();
-            ShowMapNotice($"{sector.Name} conectada · {ColonyData.Zones[sector.Id].Summary}", 3.5f);
+            ShowMapNotice($"Tendiendo el enlace a {sector.Name} · listo en {Colony.TimeText(ColonyData.ConnectSeconds(sector))}", 3.5f);
         }
 
         // ---- The five stages of a zone ------------------------------------------------
@@ -320,7 +346,7 @@ namespace Colonia09.Presentation
         {
             var panel = Rt("Stages", safe);
             panel.anchorMin = panel.anchorMax = new Vector2(1, 1); panel.pivot = new Vector2(1, 1);
-            panel.sizeDelta = new Vector2(430, 640); panel.anchoredPosition = new Vector2(-14, -220);
+            panel.sizeDelta = new Vector2(430, 640); panel.anchoredPosition = new Vector2(-14, -242);
             stagesPanel = panel.gameObject;
             var bg = panel.gameObject.AddComponent<Image>();
             bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = new Color(.03f, .1f, .15f, .95f);
@@ -392,7 +418,7 @@ namespace Colonia09.Presentation
             var node = new MapNode { Sector = sector };
             var tag = Rt("Zone" + sector.Number, mapTags);
             tag.anchorMin = tag.anchorMax = Vector2.zero; tag.pivot = new Vector2(.5f, 0);
-            tag.sizeDelta = new Vector2(340, 100);
+            tag.sizeDelta = new Vector2(400, 100);
             node.Tag = tag;
             var tagBg = tag.gameObject.AddComponent<Image>();
             tagBg.sprite = rounded; tagBg.type = Image.Type.Sliced; tagBg.color = new Color(.03f, .09f, .14f, .93f);
@@ -403,16 +429,24 @@ namespace Colonia09.Presentation
             node.Ring.sprite = frameSprite; node.Ring.type = Image.Type.Sliced; node.Ring.raycastTarget = false;
             Stretch(node.Ring.rectTransform);
             var icon = Rt("Icon", tag).gameObject.AddComponent<Image>();
-            icon.sprite = Resources.Load<Sprite>("Sprites/UI/" + ZoneIcon(sector)); icon.preserveAspect = true; icon.raycastTarget = false;
+            node.ZoneSprite = Resources.Load<Sprite>("Sprites/UI/" + ZoneIcon(sector));
+            icon.sprite = node.ZoneSprite; icon.preserveAspect = true; icon.raycastTarget = false;
             icon.rectTransform.anchorMin = icon.rectTransform.anchorMax = new Vector2(0, .5f); icon.rectTransform.pivot = new Vector2(0, .5f);
             icon.rectTransform.sizeDelta = new Vector2(70, 70); icon.rectTransform.anchoredPosition = new Vector2(10, 0);
+            node.Icon = icon;
             node.Caption = Label(tag, $"{sector.Number} · {sector.Name}", 27, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
             node.Caption.rectTransform.anchorMin = new Vector2(0, .45f);
             node.Caption.resizeTextForBestFit = true; node.Caption.resizeTextMinSize = 16; node.Caption.resizeTextMaxSize = 27;
             node.Caption.rectTransform.offsetMin = new Vector2(88, 0); node.Caption.rectTransform.offsetMax = new Vector2(-10, -4);
+            // Bottom row: stars, a check or padlock, then the zone's state. RefreshMap lays it out.
+            node.StatusIcon = Rt("Status", tag).gameObject.AddComponent<Image>();
+            node.StatusIcon.preserveAspect = true; node.StatusIcon.raycastTarget = false;
+            node.StatusIcon.rectTransform.anchorMin = node.StatusIcon.rectTransform.anchorMax = new Vector2(0, .25f);
+            node.StatusIcon.rectTransform.pivot = new Vector2(0, .5f); node.StatusIcon.rectTransform.sizeDelta = new Vector2(26, 26);
             node.State = Label(tag, "", 20, Muted, TextAnchor.MiddleLeft, FontStyle.Bold);
             node.State.rectTransform.anchorMax = new Vector2(1, .45f);
             node.State.rectTransform.offsetMin = new Vector2(88, 6); node.State.rectTransform.offsetMax = new Vector2(-10, 0);
+            node.State.resizeTextForBestFit = true; node.State.resizeTextMinSize = 13; node.State.resizeTextMaxSize = 20;
             // Development bar along the bottom edge of the tag.
             var dev = Rt("Development", tag).gameObject.AddComponent<Image>();
             dev.sprite = rounded; dev.type = Image.Type.Sliced; dev.color = new Color(.1f, .2f, .26f, 1); dev.raycastTarget = false;
@@ -427,8 +461,8 @@ namespace Colonia09.Presentation
             {
                 var s = Rt("Star", tag).gameObject.AddComponent<Image>();
                 s.sprite = starSprite; s.raycastTarget = false;
-                s.rectTransform.anchorMin = s.rectTransform.anchorMax = new Vector2(1, .25f);
-                s.rectTransform.sizeDelta = new Vector2(30, 30); s.rectTransform.anchoredPosition = new Vector2(-110 + i * 34, 0);
+                s.rectTransform.anchorMin = s.rectTransform.anchorMax = new Vector2(0, .25f); s.rectTransform.pivot = new Vector2(0, .5f);
+                s.rectTransform.sizeDelta = new Vector2(26, 26); s.rectTransform.anchoredPosition = new Vector2(88 + i * 27, 0);
                 node.Stars.Add(s);
             }
             return node;
@@ -479,13 +513,29 @@ namespace Colonia09.Presentation
                 total += stars;
                 if (sector.Playable) playable++;
                 bool connected = stars > 0 && Colony.IsConnected(sector.Id);
-                node.State.text = connected ? "CONECTADA" : stars > 0 ? "CONECTAR ZONA" : !sector.Playable ? "PRÓXIMAMENTE" : unlocked ? "LIBERAR ZONA" : "ZONA HOSTIL";
-                node.State.color = connected ? Green : stars > 0 || unlocked ? Gold : !sector.Playable ? Muted : Red;
-                node.DevBar.SetActive(connected);
+                bool connecting = stars > 0 && !connected && Colony.IsConnecting(sector.Id);
+                bool developed = connected && Colony.Development(sector.Id) >= .5;
+                node.State.text = developed ? "DESARROLLADA" : connected ? "CONECTADA" : connecting ? "CONECTANDO" : stars > 0 ? "POR CONECTAR"
+                    : !sector.Playable ? "PRÓXIMAMENTE" : unlocked ? "ZONA HOSTIL" : "BLOQUEADO";
+                node.State.color = connected ? Green : stars > 0 ? Gold : !sector.Playable ? Muted : Red;
+                node.DevBar.SetActive(connected || connecting);
                 if (connected) node.DevFill.anchorMax = new Vector2(Mathf.Max(.04f, (float)Colony.Development(sector.Id)), 1);
+                node.DevFill.GetComponent<Image>().color = connecting ? Gold : Cyan;
                 node.Caption.color = unlocked ? Txt : Muted;
+                // Locked zones show a padlock instead of their icon; the tag's edge turns red on hostile ground.
+                bool locked = sector.Playable && !unlocked;
+                node.Icon.sprite = locked && lockSprite != null ? lockSprite : node.ZoneSprite;
+                node.Icon.color = locked ? Red : Color.white;
                 for (int i = 0; i < 3; i++) node.Stars[i].gameObject.SetActive(stars > 0);
                 for (int i = 0; i < 3; i++) node.Stars[i].color = i < stars ? StarOn : StarOff;
+                float x = 88 + (stars > 0 ? 3 * 27 + 6 : 0);
+                var status = connected || stars > 0 ? checkSprite : unlocked ? targetSprite : locked ? lockSprite : null;
+                node.StatusIcon.gameObject.SetActive(status != null && !(locked && node.Icon.sprite == lockSprite));
+                node.StatusIcon.sprite = status;
+                node.StatusIcon.color = node.State.color;
+                node.StatusIcon.rectTransform.anchoredPosition = new Vector2(x, 0);
+                if (node.StatusIcon.gameObject.activeSelf) x += 32;
+                node.State.rectTransform.offsetMin = new Vector2(x, 6);
             }
             mapStarsText.text = $"{total}/{playable * 3}";
             game.ColonyMap.Rebuild();
@@ -507,7 +557,19 @@ namespace Colonia09.Presentation
                 float pulse = Mathf.PingPong(Time.unscaledTime * 1.4f, 1);
                 node.Ring.color = next ? new Color(Gold.r, Gold.g, Gold.b, .4f + .6f * pulse) : SaveGame.Stars(node.Sector.Id) > 0 ? new Color(Green.r, Green.g, Green.b, .6f) : new Color(1, 1, 1, .08f);
                 node.Tag.localScale = Vector3.one * Mathf.Clamp(game.ColonyMap.TagScale, .7f, 1.1f);
+                var link = Colony.LinkWork(node.Sector.Id);
+                if (link != null)
+                {
+                    // The link's progress runs along the tag's bottom bar, with the time left.
+                    node.DevFill.anchorMax = new Vector2(Mathf.Max(.04f, Colony.Progress(link.startTicks, link.readyTicks)), 1);
+                    node.State.text = "CONECTANDO · " + Colony.TimeText(Colony.SecondsLeft(link.readyTicks));
+                }
+                else if (node.Sector.Playable && !CampaignDirector.Unlocked(node.Sector))
+                    node.Ring.color = new Color(Red.r, Red.g, Red.b, .45f);
+                else if (next && SaveGame.Stars(node.Sector.Id) == 0)
+                    node.Ring.color = new Color(Red.r, Red.g, Red.b, .45f + .55f * pulse);
             }
+            PlaceWorkTags();
             mapHint.text = game.ColonyMap.Hint;
         }
 
@@ -597,8 +659,11 @@ namespace Colonia09.Presentation
             if (liberated && ColonyData.Zones.TryGetValue(sector.Id, out var output))
             {
                 ColonyData.ConnectionCost(sector, out int cm, out int cd);
+                var work = Colony.LinkWork(sector.Id);
                 briefFacts.text = linked ? $"<color=#91e5bd>Conectada</color> · {output.Summary}"
-                    : $"<color=#ffd38b>Sin conexión</color> · conectar cuesta {cm} materiales y {cd} datos";
+                    : work != null ? $"<color=#ffd38b>Tendiendo el enlace</color> · listo en {Colony.TimeText(Colony.SecondsLeft(work.readyTicks))}"
+                    : $"<color=#ffd38b>Sin conexión</color> · {cm} materiales, {cd} datos y {Colony.TimeText(ColonyData.ConnectSeconds(sector))} de obra";
+                linked |= work != null;  // While the link is laid there is nothing to connect.
             }
             ConnectButton.gameObject.SetActive(liberated && !linked);
             Span(BriefStartButton, .04f, liberated && !linked ? .46f : .64f);
@@ -996,6 +1061,59 @@ namespace Colonia09.Presentation
                     float outer = Mathf.Clamp01(Size / 2f - 1 - d);
                     float alpha = ringOnly ? outer * Mathf.Clamp01(d - (Size / 2f - 8)) : outer;
                     px[y * Size + x] = new Color32(255, 255, 255, (byte)(alpha * 255));
+                }
+            tex.SetPixels32(px);
+            tex.Apply();
+            return Sprite.Create(tex, new Rect(0, 0, Size, Size), new Vector2(.5f, .5f), 100);
+        }
+
+        Sprite checkSprite, lockSprite, targetSprite;
+
+        static float Segment(Vector2 p, Vector2 a, Vector2 b)
+        {
+            var ab = b - a;
+            float t = Mathf.Clamp01(Vector2.Dot(p - a, ab) / ab.sqrMagnitude);
+            return Vector2.Distance(p, a + ab * t);
+        }
+
+        /// <summary>A check inside a ring, for liberated zones. Coverage from 0 to 1 at a point of the unit square.</summary>
+        static float Check(Vector2 p)
+        {
+            float d = Vector2.Distance(p, new Vector2(.5f, .5f));
+            float ring = Mathf.Abs(d - .42f) < .055f ? 1 : 0;
+            float tick = Mathf.Min(Segment(p, new Vector2(.28f, .52f), new Vector2(.44f, .34f)), Segment(p, new Vector2(.44f, .34f), new Vector2(.74f, .68f))) < .07f ? 1 : 0;
+            return Mathf.Max(ring, tick);
+        }
+
+        static float Padlock(Vector2 p)
+        {
+            bool body = p.x > .2f && p.x < .8f && p.y > .08f && p.y < .55f;
+            bool hole = Vector2.Distance(p, new Vector2(.5f, .34f)) < .07f;
+            float shackle = Mathf.Abs(Vector2.Distance(p, new Vector2(.5f, .6f)) - .2f) < .06f && p.y > .5f ? 1 : 0;
+            return Mathf.Max(body && !hole ? 1 : 0, shackle);
+        }
+
+        static float Crosshair(Vector2 p)
+        {
+            float d = Vector2.Distance(p, new Vector2(.5f, .5f));
+            bool ring = Mathf.Abs(d - .32f) < .05f;
+            bool arms = (Mathf.Abs(p.x - .5f) < .045f || Mathf.Abs(p.y - .5f) < .045f) && d > .12f && d < .48f;
+            return ring || arms || d < .06f ? 1 : 0;
+        }
+
+        static Sprite MakeSymbol(System.Func<Vector2, float> shape)
+        {
+            const int Size = 64;
+            var tex = new Texture2D(Size, Size, TextureFormat.RGBA32, false) { filterMode = FilterMode.Bilinear };
+            var px = new Color32[Size * Size];
+            for (int y = 0; y < Size; y++)
+                for (int x = 0; x < Size; x++)
+                {
+                    float sum = 0;
+                    for (int sy = 0; sy < 4; sy++)
+                        for (int sx = 0; sx < 4; sx++)
+                            sum += shape(new Vector2((x + (sx + .5f) / 4) / Size, (y + (sy + .5f) / 4) / Size));
+                    px[y * Size + x] = new Color32(255, 255, 255, (byte)(sum / 16 * 255));
                 }
             tex.SetPixels32(px);
             tex.Apply();

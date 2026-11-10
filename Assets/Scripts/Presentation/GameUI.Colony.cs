@@ -63,7 +63,7 @@ namespace Colonia09.Presentation
             mapNoticeGo = Rt("Notice", safe).gameObject;
             var notice = (RectTransform)mapNoticeGo.transform;
             notice.anchorMin = new Vector2(.05f, 0); notice.anchorMax = new Vector2(.95f, 0); notice.pivot = new Vector2(.5f, 0);
-            notice.sizeDelta = new Vector2(0, 90); notice.anchoredPosition = new Vector2(0, 188);  // Just above the access cards.
+            notice.sizeDelta = new Vector2(0, 90); notice.anchoredPosition = new Vector2(0, 176);  // Just above the access cards.
             var bg = mapNoticeGo.AddComponent<Image>();
             bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = new Color(.03f, .1f, .15f, .95f); bg.raycastTarget = false;
             mapNotice = Label(notice, "", 30, Txt, TextAnchor.MiddleCenter, FontStyle.Bold);
@@ -119,6 +119,87 @@ namespace Colonia09.Presentation
             SetResource("population", data.population, rates.Population);
             if (mapNoticeGo.activeSelf && Time.unscaledTime > noticeUntil) mapNoticeGo.SetActive(false);
             if (infoSheet.activeSelf && shownBuilding != null) RefreshInfo();
+            ShowFinishedWorks();
+        }
+
+        /// <summary>Celebrates the works that ended: the building springs up, the link lights up.</summary>
+        void ShowFinishedWorks()
+        {
+            if (Colony.Finished.Count == 0) return;
+            var done = new List<Colony.Completion>(Colony.Finished);
+            Colony.Finished.Clear();
+            SaveGame.Save();
+            RefreshMap();
+            var lines = new List<string>();
+            foreach (var c in done)
+            {
+                var sector = CampaignData.Find(c.Sector);
+                if (c.Link)
+                {
+                    game.ColonyMap.CelebrateLink(c.Sector);
+                    lines.Add($"{sector?.Name} conectada · {(ColonyData.Zones.TryGetValue(c.Sector, out var z) ? z.Summary : "")}");
+                }
+                else
+                {
+                    game.ColonyMap.Pop(c.X, c.Y, true);
+                    string name = System.Enum.TryParse(c.Type, out BuildingType t) ? ColonyData.Buildings[t].Name : c.Type;
+                    lines.Add(c.Level <= 1 ? $"{name} terminado" : $"{name} mejorado a nivel {c.Level}");
+                }
+            }
+            game.Audio.Play("upgrade", true);
+            ShowMapNotice(string.Join("\n", lines), 3.5f);
+        }
+
+        // ---- Floating timers over the works in progress -------------------------------
+
+        sealed class WorkTag
+        {
+            public RectTransform Root, Fill;
+            public Text Time;
+        }
+        readonly List<WorkTag> workTags = new List<WorkTag>();
+
+        WorkTag MakeWorkTag()
+        {
+            var root = Rt("Work", mapTags);
+            root.anchorMin = root.anchorMax = Vector2.zero; root.pivot = new Vector2(.5f, 0);
+            root.sizeDelta = new Vector2(150, 58);
+            var bg = root.gameObject.AddComponent<Image>();
+            bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = new Color(.03f, .09f, .14f, .92f); bg.raycastTarget = false;
+            var edge = Rt("Edge", root).gameObject.AddComponent<Image>();
+            edge.sprite = frameSprite; edge.type = Image.Type.Sliced; edge.color = new Color(Gold.r, Gold.g, Gold.b, .6f); edge.raycastTarget = false;
+            Stretch(edge.rectTransform);
+            var time = Label(root, "", 24, Gold, TextAnchor.MiddleCenter, FontStyle.Bold);
+            time.raycastTarget = false;
+            time.rectTransform.offsetMin = new Vector2(6, 16); time.rectTransform.offsetMax = new Vector2(-6, -2);
+            var bar = Rt("Bar", root).gameObject.AddComponent<Image>();
+            bar.sprite = rounded; bar.type = Image.Type.Sliced; bar.color = new Color(.1f, .2f, .26f, 1); bar.raycastTarget = false;
+            bar.rectTransform.anchorMin = Vector2.zero; bar.rectTransform.anchorMax = new Vector2(1, 0); bar.rectTransform.pivot = new Vector2(.5f, 0);
+            bar.rectTransform.sizeDelta = new Vector2(-20, 10); bar.rectTransform.anchoredPosition = new Vector2(0, 8);
+            var fill = Rt("Fill", bar.transform).gameObject.AddComponent<Image>();
+            fill.sprite = rounded; fill.type = Image.Type.Sliced; fill.color = Gold; fill.raycastTarget = false;
+            fill.rectTransform.anchorMin = Vector2.zero; fill.rectTransform.anchorMax = new Vector2(0, 1); fill.rectTransform.offsetMin = fill.rectTransform.offsetMax = Vector2.zero;
+            return new WorkTag { Root = root, Fill = fill.rectTransform, Time = time };
+        }
+
+        /// <summary>A small timer with a progress bar floats over every building under construction.</summary>
+        void PlaceWorkTags()
+        {
+            float scale = mapTags.lossyScale.x;
+            int used = 0;
+            foreach (var b in Colony.Saved)
+            {
+                if (!b.UnderWork) continue;
+                if (used == workTags.Count) workTags.Add(MakeWorkTag());
+                var tag = workTags[used++];
+                tag.Root.gameObject.SetActive(true);
+                var screen = game.ColonyMap.TileTagScreen(b.x, b.y);
+                tag.Root.anchoredPosition = (screen - (Vector2)mapTags.position) / scale + mapTags.rect.size * mapTags.pivot;
+                tag.Root.localScale = Vector3.one * Mathf.Clamp(game.ColonyMap.TagScale, .6f, 1f);
+                tag.Fill.anchorMax = new Vector2(Mathf.Max(.04f, Colony.Progress(b.startTicks, b.readyTicks)), 1);
+                tag.Time.text = Colony.TimeText(Colony.SecondsLeft(b.readyTicks));
+            }
+            for (int i = used; i < workTags.Count; i++) workTags[i].Root.gameObject.SetActive(false);
         }
 
         public void CloseColonySheets()
@@ -190,8 +271,10 @@ namespace Colonia09.Presentation
             game.Audio.Play("select", true);
             pickSector = sector; pickX = x; pickY = y;
             int built = Colony.CountIn(sector.Id), capacity = ColonyData.LotsFor(sector.Id);
-            pickerTitle.text = $"Construir · {sector.Name} <size=26><color=#99b5c7>{built}/{capacity} edificios</color></size>";
-            foreach (var pair in PickerButtons) pair.Value.interactable = Colony.CanAfford(pair.Key, 1) && built < capacity;
+            bool free = Colony.WorkersFree;
+            pickerTitle.text = $"Construir · {sector.Name} <size=26><color=#99b5c7>{built}/{capacity} edificios · obras {Colony.WorkCount()}/{ColonyData.MaxWorks}</color></size>";
+            foreach (var pair in PickerButtons) pair.Value.interactable = Colony.CanAfford(pair.Key, 1) && built < capacity && free;
+            if (!free) ShowMapNotice(Colony.RefuseWork(), 2.6f);
             infoSheet.SetActive(false);
             pickerSheet.SetActive(true);
             pickerSheet.transform.SetAsLastSibling();
@@ -203,8 +286,8 @@ namespace Colonia09.Presentation
             game.Audio.Play("build", true);
             CloseColonySheets();
             game.ColonyMap.Rebuild();
-            game.ColonyMap.Pop(pickX, pickY);
-            ShowMapNotice($"{ColonyData.Buildings[type].Name} construido · {EffectText(type, 1)}", 3);
+            game.ColonyMap.Pop(pickX, pickY, false);
+            ShowMapNotice($"Construyendo {ColonyData.Buildings[type].Name} · listo en {Colony.TimeText(ColonyData.BuildSeconds(1))}", 3);
         }
 
         // ---- Building card ------------------------------------------------------------
@@ -255,23 +338,40 @@ namespace Colonia09.Presentation
             var def = ColonyData.Buildings[type];
             bool max = b.level >= ColonyData.MaxLevel;
             infoIcon.sprite = BuildingIcon(type);
-            infoTitle.text = $"{def.Name}  <size=26><color=#ffd38b>NIVEL {b.level}</color></size>";
             bool working = Colony.IsConnected(b.sector);
+            string left = Colony.TimeText(Colony.SecondsLeft(b.readyTicks));
+            if (b.UnderWork && b.level == 0)
+            {
+                // Still rising: it works once its first level is done.
+                infoTitle.text = $"{def.Name}  <size=26><color=#ffd38b>EN CONSTRUCCIÓN</color></size>";
+                infoText.text = $"<color=#91e5bd>{EffectText(type, 1)}</color> en cuanto esté listo.\n{def.Description}";
+                infoUpgradeLabel.text = $"CONSTRUYENDO · {left}";
+                infoUpgrade.interactable = false;
+                return;
+            }
+            infoTitle.text = $"{def.Name}  <size=26><color=#ffd38b>NIVEL {b.level}</color></size>";
             infoText.text = (working ? "" : "<color=#ff8c8a><b>Zona sin conexión: este edificio no funciona todavía.</b></color>\n") +
                 $"<color=#91e5bd>{EffectText(type, b.level)}</color>\n{def.Description}" +
-                (max ? "\nNivel máximo alcanzado." : $"\n<color=#eaf9fb>Nivel {b.level + 1}: {EffectText(type, b.level + 1)}</color>");
-            infoUpgradeLabel.text = max ? "NIVEL MÁXIMO" : $"MEJORAR · {CostText(type, b.level + 1)}";
-            infoUpgrade.interactable = !max && Colony.CanAfford(type, b.level + 1);
+                (max ? "\nNivel máximo alcanzado." : $"\n<color=#eaf9fb>Nivel {b.level + 1}: {EffectText(type, b.level + 1)} · tarda {Colony.TimeText(ColonyData.BuildSeconds(b.level + 1))}</color>");
+            if (b.UnderWork)
+            {
+                infoUpgradeLabel.text = $"MEJORANDO A NIVEL {b.pending} · {left}";
+                infoUpgrade.interactable = false;
+                return;
+            }
+            infoUpgradeLabel.text = max ? "NIVEL MÁXIMO" : Colony.WorkersFree ? $"MEJORAR · {CostText(type, b.level + 1)}" : $"OBRAS OCUPADAS ({ColonyData.MaxWorks}/{ColonyData.MaxWorks})";
+            infoUpgrade.interactable = !max && Colony.CanAfford(type, b.level + 1) && Colony.WorkersFree;
         }
 
         void UpgradeShown()
         {
             var b = shownBuilding;
             if (b == null || !Colony.Upgrade(b.x, b.y)) { game.Audio.Play("hit", true); return; }
-            game.Audio.Play("upgrade", true);
+            game.Audio.Play("build", true);
             game.ColonyMap.Rebuild();
-            game.ColonyMap.Pop(b.x, b.y);
+            game.ColonyMap.Pop(b.x, b.y, false);
             RefreshInfo();
+            ShowMapNotice($"Mejorando a nivel {b.pending} · listo en {Colony.TimeText(ColonyData.BuildSeconds(b.pending))}", 3);
         }
     }
 }

@@ -25,7 +25,8 @@ OUT = sys.argv[sys.argv.index("--") + 1]
 EXTRA = sys.argv[sys.argv.index("--") + 2:]
 PREVIEW = "preview" in EXTRA
 OVERVIEW = "overview" in EXTRA
-ONLY = [a for a in EXTRA if a not in ("preview", "night", "overview")]
+CENTER = "center" in EXTRA
+ONLY = [a for a in EXTRA if a not in ("preview", "night", "overview", "center")]
 N = 26
 ZONES = [(22, 22), (23, 15), (13, 21), (17, 11), (8, 15), (11, 7), (4, 9), (4, 3)]
 K = math.sqrt(2)
@@ -179,27 +180,88 @@ def water_material():
     return material("Water", "#123e52", .1, .06, 0, emission="#0f6f8f", strength=.12 if not NIGHT else .3)
 
 
-def build_island_ground(roads):
+# The zones stand on raised platforms and the roads on walkways at the playable level (z = 0, where the
+# sprites sit); the land around them lies this much lower.
+GROUND = -.5
+
+
+def ground_z(gx, gy, roads):
+    """Height of the bare land at a tile position, below the platforms."""
     from mathutils import noise
+    m = coast_metric(gx, gy)
+    dz = zone_distance(gx, gy)
+    dr = min((max(abs(gx - x), abs(gy - y)) for x, y in roads), default=9)
+    dw = river_distance(gx, gy)
+    # Rocky hills rise away from the platforms, walkways and river.
+    open_ground = min(1, max(0, dz - .5) / 2.5) * min(1, max(0, dr - .6) / 1.5) * min(1, max(0, dw - .9) / 1.5)
+    hill = (noise.noise(Vector((gx * .16, gy * .16, 1.7))) + .35) * .95 * open_ground
+    rough = noise.noise(Vector((gx * .9, gy * .9, 4.2))) * .12 * open_ground
+    z = GROUND + max(0, hill) + rough
+    if dw < .55:
+        z = GROUND - .18  # River bed.
+    cliff = max(0, min(1, (m - COAST) / .7))
+    return z * (1 - cliff) + (-2.6) * (cliff * cliff * (3 - 2 * cliff))
+
+
+def build_island_ground(roads):
     bpy.ops.mesh.primitive_grid_add(x_subdivisions=300, y_subdivisions=300, size=64, location=(12.5, -12.5, 0))
     ground = bpy.context.active_object
     for v in ground.data.vertices:
-        gx, gy = v.co.x + 12.5, -(v.co.y - 12.5)
-        m = coast_metric(gx, gy)
-        # Hills only away from the zones, roads and river; the playable ground stays flat.
-        dz = zone_distance(gx, gy)
-        dr = min((max(abs(gx - x), abs(gy - y)) for x, y in roads), default=9)
-        dw = river_distance(gx, gy)
-        open_ground = min(1, max(0, dz - .8) / 2.5) * min(1, max(0, dr - .8) / 1.5) * min(1, max(0, dw - .9) / 1.5)
-        hill = (noise.noise(Vector((gx * .16, gy * .16, 1.7))) + .35) * .8 * open_ground
-        z = max(0, hill)
-        if dw < .55:
-            z = -.18  # River bed.
-        cliff = max(0, min(1, (m - COAST) / .7))
-        z = z * (1 - cliff) + (-2.6) * (cliff * cliff * (3 - 2 * cliff))
-        v.co.z = z
+        v.co.z = ground_z(v.co.x + 12.5, -(v.co.y - 12.5), roads)
     bpy.ops.object.shade_smooth()
     ground.data.materials.append(island_material())
+
+
+def platform_mats():
+    return {
+        "deck": material("Deck", "#7a858c", 0, .7, .3),
+        "wall": material("Wall", "#505a61", 0, .75, .7),
+        "trim": material("Trim", "#2e363c", .2, .55, .4),
+        "amber": glowing("Amber", "#ffb648", 2.6),
+        "line": material("Line", "#1d3c48", .3, .4, .2, emission="#1d6c80", strength=.35),
+        "pillar": material("Pillar", "#40484e", .1, .6, .6),
+    }
+
+
+def build_platforms(roads):
+    """A raised concrete platform under every zone, with walls, a dark trim and amber lights on its edge."""
+    m = platform_mats()
+    for cx, cy in ZONES:
+        x, y = cx, -cy
+        box((x, y, -.32), (5.08, 5.08, .64), m["wall"], bevel=.03)
+        box((x, y, -.01), (5.0, 5.0, .04), m["deck"], bevel=.01)
+        for side in (-1, 1):
+            box((x + side * 2.53, y, -.06), (.05, 5.1, .1), m["trim"], bevel=.01)
+            box((x, y + side * 2.53, -.06), (5.1, .05, .1), m["trim"], bevel=.01)
+            for k in range(11):
+                t = -2.5 + k * .5
+                box((x + side * 2.56, y + t, -.09), (.02, .1, .04), m["amber"], bevel=0)
+                box((x + t, y + side * 2.56, -.09), (.1, .02, .04), m["amber"], bevel=0)
+        # Buttresses down the walls.
+        for t in (-2.2, 0, 2.2):
+            for side in (-1, 1):
+                box((x + side * 2.58, y + t, -.4), (.12, .28, .6), m["trim"], bevel=.02)
+                box((x + t, y + side * 2.58, -.4), (.28, .12, .6), m["trim"], bevel=.02)
+
+
+def build_walkways(roads):
+    """Raised walkways along the road tiles, with a dim line on each side that Unity lights once linked."""
+    m = platform_mats()
+    for gx, gy in roads:
+        x, y = gx, -gy
+        dirs = [(dx, dy) for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)) if (gx + dx, gy + dy) in roads or in_zone(gx + dx, -(gy + dy), -.01)]
+        box((x, y, -.1), (.74, .74, .2), m["deck"], bevel=.02)
+        for dx, dy in dirs:
+            ox, oy = dx * .37, -dy * .37
+            size = (.26, .74, .2) if dx else (.74, .26, .2)
+            box((x + ox * 1.0, y + oy * 1.0, -.1), size, m["deck"], bevel=.01)
+            for side in (-1, 1):
+                if dx:
+                    box((x + ox, y + side * .3, .002), (.5, .03, .004), m["line"], bevel=0)
+                else:
+                    box((x + side * .3, y + oy, .002), (.03, .5, .004), m["line"], bevel=0)
+        cyl((x, y, (GROUND - .2) / 2 - .1), .09, abs(GROUND) + .2, m["pillar"], bevel=.01, vertices=10)
+        box((x, y, -.22), (.8, .8, .04), m["trim"], bevel=.01)
 
 
 def pine(x, y, scale, leaf, trunk):
@@ -207,6 +269,15 @@ def pine(x, y, scale, leaf, trunk):
     for k, (r, z) in enumerate(((.32, .38), (.25, .62), (.16, .84))):
         bpy.ops.mesh.primitive_cone_add(vertices=9, radius1=r * scale, depth=.42 * scale, location=(x, y, z * scale))
         rs.finish(bpy.context.active_object, leaf, 0)
+
+
+def pine_at(gx, gy, scale, leaf, trunk, roads):
+    """A pine standing on the land at this tile position."""
+    z = ground_z(gx, gy, roads)
+    before = set(bpy.data.objects)
+    pine(gx, -gy, scale, leaf, trunk)
+    for obj in set(bpy.data.objects) - before:
+        obj.location.z += z
 
 
 def build_terrain():
@@ -227,8 +298,10 @@ def build_terrain():
     center = ((N - 1) / 2, -(N - 1) / 2, 0)
     iso_camera(center, chunk_w * K)
 
-    roads = road_tiles()
+    roads = {t for t in road_tiles() if zone_distance(*t) > 0}
     build_island_ground(roads)
+    build_platforms(roads)
+    build_walkways(roads)
     bpy.ops.mesh.primitive_plane_add(size=1, location=(12.5, -12.5, -1.9))
     sea = bpy.context.active_object
     sea.scale = (300, 300, 1)  # Reaches past every corner of the wide overview too.
@@ -240,12 +313,12 @@ def build_terrain():
     for a, b in zip(RIVER, RIVER[1:]):
         (ax, ay), (bx, by) = a, b
         length = math.hypot(bx - ax, by - ay)
-        box(((ax + bx) / 2, -(ay + by) / 2, -.11), (length + .2, .7, .01), water, bevel=0, rot=math.atan2(-(by - ay), bx - ax))
+        box(((ax + bx) / 2, -(ay + by) / 2, GROUND - .11), (length + .2, .7, .01), water, bevel=0, rot=math.atan2(-(by - ay), bx - ax))
     for gx in [g / 10 for g in range(90, -90, -1)]:  # Walk the river west until it reaches the cliff.
         if coast_metric(gx, 6.1) > COAST:
             # The water pours down the cliff face as a steep sheet, with foam where it meets the sea.
-            drop = Vector((gx - 1.1, -6.1, -1.9)) - Vector((gx + .2, -6.1, -.1))
-            bpy.ops.mesh.primitive_plane_add(size=1, location=(gx - .45, -6.1, -1.0))
+            drop = Vector((gx - 1.1, -6.1, -1.9)) - Vector((gx + .2, -6.1, GROUND - .1))
+            bpy.ops.mesh.primitive_plane_add(size=1, location=(gx - .45, -6.1, (GROUND - 2) / 2))
             sheet = bpy.context.active_object
             sheet.scale = (drop.length, .7, 1)
             sheet.rotation_euler = (0, math.atan2(-drop.z, -drop.x), 0)
@@ -268,16 +341,37 @@ def build_terrain():
         from mathutils import noise
         if noise.noise(Vector((gx * .2, gy * .2, 9))) < -.05:
             continue
-        pine(gx, -gy, rng.uniform(.7, 1.25), leaf if rng.random() < .6 else leaf_light, trunk)
-    for _ in range(320):  # Loose rocks.
+        pine_at(gx, gy, rng.uniform(.7, 1.25), leaf if rng.random() < .6 else leaf_light, trunk, roads)
+    for _ in range(520):  # Loose rocks.
         gx, gy = rng.uniform(-6, 31), rng.uniform(-6, 31)
-        if coast_metric(gx, gy) > COAST - .3 or zone_distance(gx, gy) < .6:
+        if coast_metric(gx, gy) > COAST - .3 or zone_distance(gx, gy) < .35:
+            continue
+        if any(max(abs(gx - x), abs(gy - y)) < .5 for x, y in roads):
             continue
         r = rng.uniform(.06, .24)
-        bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2, radius=r, location=(gx, -gy, r * .3))
+        z = ground_z(gx, gy, roads)
+        bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2, radius=r, location=(gx, -gy, z + r * .3))
         stone = bpy.context.active_object
         stone.scale = (1, rng.uniform(.6, 1.3), rng.uniform(.4, .8))
         rs.finish(stone, rock, 0)
+    # Big jagged boulders and crags between the platforms, as in a rocky highland.
+    from mathutils import noise
+    crag = material("Crag", "#5a524b", .1, .88, .7)
+    for _ in range(260):
+        gx, gy = rng.uniform(-4, 29), rng.uniform(-4, 29)
+        if coast_metric(gx, gy) > COAST - .8 or zone_distance(gx, gy) < .6 or river_distance(gx, gy) < 1.1:
+            continue
+        if any(max(abs(gx - x), abs(gy - y)) < 1.0 for x, y in roads):
+            continue
+        if noise.noise(Vector((gx * .25, gy * .25, 2.2))) < .05:
+            continue
+        r = rng.uniform(.25, .6)
+        z = ground_z(gx, gy, roads)
+        bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=1, radius=r, location=(gx, -gy, z + r * .25))
+        stone = bpy.context.active_object
+        stone.scale = (rng.uniform(.8, 1.3), rng.uniform(.8, 1.3), rng.uniform(.6, 1.2))
+        stone.rotation_euler = (rng.uniform(0, 1), rng.uniform(0, 1), rng.uniform(0, 6.3))
+        rs.finish(stone, crag, 0)
 
 
 # ---- Sprites (one tile, isometric) --------------------------------------------------
@@ -469,7 +563,96 @@ def build_bld_solar():
     ball((0, 0, .21), .03, glow)
 
 
+def build_road_half(sign):
+    """The lit edge lines of a walkway from the tile center to its +x (or -x) edge; Unity mirrors it for y."""
+    line = glowing("Line", "#5ee8ff", 3.0)
+    for side in (-1, 1):
+        box((sign * .25, side * .3, .004), (.52, .035, .006), line, bevel=0)
+    box((sign * .47, 0, .004), (.03, .64, .006), glowing("Seam", "#2fb8d8", 1.6), bevel=0)
+
+
+def build_road_node():
+    """Round glowing pad where a walkway meets a platform."""
+    ring = glowing("Ring", "#5ee8ff", 3.2)
+    soft = glowing("Soft", "#2b9ec0", 1.2)
+    dark = material("Dark", "#151c21", .8, .5, .3)
+    cyl((0, 0, .01), .3, .02, dark, bevel=.005, vertices=40)
+    torus((0, 0, .025), .25, .025, ring)
+    cyl((0, 0, .024), .17, .006, soft, bevel=0, vertices=40)
+
+
+def build_deco_site():
+    """Foundation of a building under construction: a slab with rebar and a pile of materials."""
+    concrete = material("Concrete", "#6a7378", .1, .7, .6)
+    rebar = material("Rebar", "#8a4b2f", .7, .5, .5)
+    crate = material("Crate", "#c49a5a", .1, .7, .4)
+    box((0, 0, .03), (.84, .84, .06), concrete, bevel=.02)
+    for k in range(5):
+        t = -.32 + k * .16
+        beam((t, -.36, .08), (t, .36, .08), .008, rebar)
+        beam((-.36, t, .09), (.36, t, .09), .008, rebar)
+    for x, y in ((-.3, -.3), (.3, -.3), (.3, .3), (-.3, .3)):
+        cyl((x, y, .2), .012, .3, rebar, bevel=0, vertices=6)
+    box((.24, -.26, .12), (.18, .16, .12), crate, bevel=.015)
+    box((.3, -.1, .1), (.12, .14, .08), crate, bevel=.015)
+
+
+def build_deco_scaffold():
+    """Open scaffold with a striped safety rail and a small crane, light enough to see the building through."""
+    pole = material("Pole", "#e0ac1a", .4, .45, .4)
+    steel = material("Steel", "#b9c5ca", 1, .3, .3)
+    dark = material("Dark", "#151c21", .8, .5, .3)
+    warn = glowing("Warn", "#ff9a2a", 2.4)
+    s = .42
+    for x, y in ((-s, -s), (s, -s), (s, s), (-s, s)):
+        cyl((x, y, .5), .014, 1.0, pole, bevel=0, vertices=8)
+    for z in (.3, .62, .94):
+        for (x0, y0), (x1, y1) in (((-s, -s), (s, -s)), ((s, -s), (s, s)), ((s, s), (-s, s)), ((-s, s), (-s, -s))):
+            beam((x0, y0, z), (x1, y1, z), .009, steel)
+    for (x0, y0), (x1, y1) in (((-s, -s), (s, -s)), ((s, -s), (s, s))):
+        beam((x0, y0, .32), (x1, y1, .62), .007, steel)  # Diagonal braces on the two faces in view.
+    # Crane on the back corner.
+    cyl((-s, s, .62), .025, 1.24, pole, bevel=0, vertices=8)
+    beam((-s - .1, s + .1, 1.2), (s * .6, -s * .4, 1.2), .02, pole)
+    box((s * .6, -s * .4, 1.0), (.004, .004, .4), steel, bevel=0)
+    box((s * .6, -s * .4, .8), (.06, .06, .04), dark, bevel=.005)
+    ball((-s, s, 1.26), .03, warn)
+
+
+def build_deco_beacon():
+    """Enemy pylon: a dark lattice mast with a red light on top."""
+    iron = material("Iron", "#2c2427", .8, .5, .5)
+    red = glowing("Red", "#ff2a1a", 3.4)
+    for x, y in ((-.1, -.1), (.1, -.1), (.1, .1), (-.1, .1)):
+        beam((x * 1.8, y * 1.8, 0), (x * .4, y * .4, .95), .014, iron)
+    for z in (.25, .5, .75):
+        r = .18 * (1 - z / 1.1)
+        for (x0, y0), (x1, y1) in (((-r, -r), (r, -r)), ((r, -r), (r, r)), ((r, r), (-r, r)), ((-r, r), (-r, -r))):
+            beam((x0, y0, z), (x1, y1, z), .008, iron)
+    cyl((0, 0, .98), .05, .06, iron, bevel=.01)
+    ball((0, 0, 1.05), .05, red)
+    cyl((0, 0, .03), .2, .06, iron, bevel=.02)
+
+
+def build_deco_drone():
+    """Cargo drone with four rotors carrying a crate."""
+    white = material("White", "#dde5e8", .3, .32, .35)
+    dark = material("Dark", "#151c21", .8, .5, .3)
+    crate = material("Crate", "#c49a5a", .1, .7, .4)
+    cyan = glowing("Cyan", "#5ee8ff", 3)
+    box((0, 0, .42), (.2, .2, .07), white, bevel=.02)
+    for x, y in ((-.16, -.16), (.16, -.16), (.16, .16), (-.16, .16)):
+        beam((0, 0, .44), (x, y, .46), .012, dark)
+        cyl((x, y, .47), .08, .006, transparent("Rotor", "#c8d8e0", .35), bevel=0, vertices=24)
+        cyl((x, y, .46), .015, .03, dark, bevel=0, vertices=8)
+    box((0, 0, .28), (.15, .15, .12), crate, bevel=.015)
+    beam((0, 0, .38), (0, 0, .34), .006, dark)
+    ball((0, -.1, .42), .02, cyan)
+
+
 SPRITES = {
+    "road_half_pos": lambda: build_road_half(1), "road_half_neg": lambda: build_road_half(-1), "road_node": build_road_node,
+    "deco_site": build_deco_site, "deco_scaffold": build_deco_scaffold, "deco_beacon": build_deco_beacon, "deco_drone": build_deco_drone,
     "tile_pave": build_tile_pave, "tile_road": build_tile_road, "deco_lamp": build_deco_lamp, "deco_ship": build_deco_ship,
     "deco_barricade": build_deco_barricade, "bld_extractor": build_bld_extractor, "bld_laboratory": build_bld_laboratory,
     "bld_refinery": build_bld_refinery, "bld_fortification": build_bld_fortification, "bld_housing": build_bld_housing,
@@ -499,6 +682,9 @@ def lm_mats():
         "warm": glowing("Warm", "#ffc77a", 2.4),
         "cyan": glowing("Cyan", "#5ee8ff", 2.4),
         "green": glowing("Green", "#7dff9e", 2.2),
+        "red": glowing("RedLight", "#ff3a2a", 3.0),
+        "crate": material("Crate", "#c49a5a", .1, .7, .4),
+        "blue": material("Pipe", "#2c7fc0", .5, .35, .4),
     }
 
 
@@ -510,10 +696,45 @@ def windows(x, y, z0, w, d, h, warm, floors_gap=.16):
         box((x, y - d / 2 - .005, z), (w * .8, .01, .05), warm, bevel=0)
 
 
+def lattice_mast(x, y, base, top, height, mat, levels=4):
+    """Tapered four-legged lattice tower."""
+    for sx, sy in ((-1, -1), (1, -1), (1, 1), (-1, 1)):
+        beam((x + sx * base, y + sy * base, .1), (x + sx * top, y + sy * top, height), .018, mat)
+    for k in range(1, levels + 1):
+        z = .1 + (height - .1) * k / (levels + 1)
+        r = base + (top - base) * k / (levels + 1)
+        for (x0, y0), (x1, y1) in (((-r, -r), (r, -r)), ((r, -r), (r, r)), ((r, r), (-r, r)), ((-r, r), (-r, -r))):
+            beam((x + x0, y + y0, z), (x + x1, y + y1, z), .01, mat)
+
+
+# Moving parts of landmarks: rendered alone, frame by frame, in the landmark's own framing, so Unity plays
+# them over the still picture. name -> (part, frames, builder(materials, phase from 0 to 1)).
+PARTS = {}
+
+RADAR_AT = (-1.05, -1.0, 1.62)
+
+
+def part_radar(m, phase):
+    x, y, z = RADAR_AT
+    a = phase * math.tau
+    cyl((x, y, z - .04), .05, .08, m["dark"], bevel=.01)
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=32, ring_count=16, radius=.24, location=(x, y, z + .1))
+    dish = bpy.context.active_object
+    dish.scale = (1, 1, .32)
+    dish.rotation_euler = (math.radians(70), 0, a)
+    rs.finish(dish, m["white"], 0, smooth=True)
+    beam((x, y, z + .1), (x + math.sin(a) * -.25, y + math.cos(a) * .25, z + .22), .012, m["steel"])
+    ball((x + math.sin(a) * -.25, y + math.cos(a) * .25, z + .22), .025, m["red"])
+
+
 def build_lm_landing():
     m = lm_mats()
     box((0, 0, .05), (2.8, 2.8, .1), m["concrete"], bevel=.04)
     torus((0, 0, .11), 1.0, .03, m["yellow"])
+    for side in (-1, 1):  # Approach chevrons.
+        for k in range(3):
+            prism([(side * (1.15 + k * .12), -.12), (side * (1.25 + k * .12), 0), (side * (1.15 + k * .12), .12),
+                   (side * (1.1 + k * .12), .12), (side * (1.2 + k * .12), 0), (side * (1.1 + k * .12), -.12)], .1, .012, m["yellow"], .002)
     for i in range(12):
         a = i * math.tau / 12
         cyl((math.cos(a) * 1.25, math.sin(a) * 1.25, .12), .04, .03, m["cyan"], bevel=.005, vertices=12)
@@ -522,6 +743,18 @@ def build_lm_landing():
     torus((1.05, -1.05, 1.45), .32, .03, m["cyan"])
     windows(1.05, -1.05, .1, .42, .42, 1.2, m["warm"])
     cyl((1.05, -1.05, 1.75), .02, .4, m["steel"], bevel=0)
+    ball((1.05, -1.05, 1.96), .035, m["red"])
+    # Radar mast; its dish turns (a moving part).
+    lattice_mast(RADAR_AT[0], RADAR_AT[1], .22, .07, RADAR_AT[2] - .08, m["steel"])
+    # Sensor dome and supply crates.
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=40, ring_count=20, radius=.32, location=(1.0, .95, .1))
+    rs.finish(bpy.context.active_object, m["white"], 0, smooth=True)
+    torus((1.0, .95, .14), .32, .03, m["cyan"])
+    for k, (x, y, s) in enumerate(((-1.05, .75, .26), (-.8, .95, .22), (-1.05, 1.05, .2))):
+        box((x, y, .1 + s / 2), (s, s, s), m["crate"] if k % 2 == 0 else m["teal"], bevel=.02)
+
+
+PARTS["lm_landing"] = ("radar", 12, part_radar)
 
 
 def build_lm_camp():
@@ -536,44 +769,109 @@ def build_lm_camp():
 def build_lm_well():
     m = lm_mats()
     box((0, 0, .05), (2.8, 2.8, .1), m["concrete"], bevel=.04)
-    for x, y, r in ((-.7, .6, .45), (.6, .65, .4), (-.6, -.65, .38)):
-        cyl((x, y, .55), r, .9, m["white"], bevel=.05)
-        torus((x, y, 1.0), r - .03, .03, m["steel"])
-        torus((x, y, .5), r + .01, .03, m["cyan"])
-    cyl((.65, -.6, .14), .5, .06, material("Pool", "#1b6f8f", .1, .05, 0, emission="#1aa8d8", strength=.5), bevel=.01)
-    box((.1, 0, .3), (.4, .3, .4), m["teal"], bevel=.04)
-    windows(.1, 0, .1, .4, .3, .4, m["warm"])
+    tanks = ((-.7, .6, .45), (.55, .7, .42), (-.6, -.6, .38))
+    for x, y, r in tanks:
+        cyl((x, y, .6), r, 1.0, m["white"], bevel=.05)
+        bpy.ops.mesh.primitive_uv_sphere_add(segments=40, ring_count=20, radius=r, location=(x, y, 1.1))
+        cap = bpy.context.active_object
+        cap.scale = (1, 1, .3)
+        rs.finish(cap, m["white"], 0, smooth=True)
+        torus((x, y, 1.05), r + .005, .025, m["steel"])
+        torus((x, y, .55), r + .01, .035, m["cyan"])
+        for k in range(4):  # Legs and a ladder.
+            a = k * math.tau / 4 + .4
+            cyl((x + math.cos(a) * r * .9, y + math.sin(a) * r * .9, .12), .03, .1, m["steel"], bevel=0, vertices=8)
+        box((x + r + .02, y, .6), (.03, .08, .95), m["steel"], bevel=0)
+        # A water drop painted on the side in view.
+        prism([(0, .1), (.06, -.02), (0, -.08), (-.06, -.02)], .0, .01, m["cyan"], .002)
+        drop = bpy.context.active_object
+        drop.rotation_euler = (math.radians(90), 0, math.radians(-45))
+        drop.location = (x + r * .72, y - r * .72, .78)
+    # Blue pipes between the tanks and the pump house, and down into the pool.
+    for (x0, y0), (x1, y1) in (((-.7, .6), (.1, 0)), ((.55, .7), (.1, 0)), ((-.6, -.6), (.1, 0)), ((.1, 0), (.7, -.65))):
+        beam((x0, y0, .3), (x1, y1, .3), .05, m["blue"])
+        for t in (.25, .75):
+            cyl((x0 + (x1 - x0) * t, y0 + (y1 - y0) * t, .18), .02, .2, m["steel"], bevel=0, vertices=8)
+    cyl((.75, -.7, .14), .5, .06, material("Pool", "#1b6f8f", .1, .05, 0, emission="#1aa8d8", strength=.6), bevel=.01)
+    torus((.75, -.7, .17), .5, .03, m["steel"])
+    box((.1, 0, .32), (.44, .34, .44), m["teal"], bevel=.04)
+    windows(.1, 0, .1, .44, .34, .44, m["warm"])
+    cyl((.1, 0, .62), .08, .16, m["steel"], bevel=.02)
 
 
 def build_lm_greenhouse():
     m = lm_mats()
     box((0, 0, .05), (2.8, 2.8, .1), m["concrete"], bevel=.04)
-    glass = transparent("Glass", "#b8f0cf", .4)
-    for x in (-.75, 0, .75):
-        bpy.ops.mesh.primitive_cylinder_add(vertices=24, radius=.32, depth=2.2, location=(x, 0, .1), rotation=(math.radians(90), 0, 0))
+    glass = transparent("Glass", "#c8f5dc", .3)
+    plant = material("Plant", "#3f9a4a", 0, .7, .2, emission="#5bd46a", strength=.5)
+    for x in (-.78, 0, .78):
+        box((x, 0, .13), (.66, 2.3, .06), m["dark"], bevel=.015)
+        bpy.ops.mesh.primitive_cylinder_add(vertices=32, radius=.33, depth=2.2, location=(x, 0, .14), rotation=(math.radians(90), 0, 0))
         hall = bpy.context.active_object
         rs.finish(hall, glass, 0, smooth=True)
-        box((x, 0, .14), (.5, 2.1, .06), m["green"], bevel=.01)
-        for y in (-.8, -.4, 0, .4, .8):
-            torus((x, y, .1), .32, .015, m["steel"])
+        for y in (-1.1, -.73, -.37, 0, .37, .73, 1.1):
+            torus((x, y, .14), .33, .016, m["steel"])
+        beam((x, -1.1, .47), (x, 1.1, .47), .014, m["steel"])
+        # Rows of lit plants inside.
+        for row in (-.14, .14):
+            box((x + row, 0, .2), (.12, 2.0, .06), m["green"], bevel=.01)
+            for k in range(9):
+                bpy.ops.mesh.primitive_cone_add(vertices=7, radius1=.06, depth=.16, location=(x + row, -.95 + k * .24, .3))
+                rs.finish(bpy.context.active_object, plant, 0)
+    for k, (x, y) in enumerate(((1.2, -1.2), (-1.2, -1.2))):
+        box((x, y, .2), (.2, .2, .2), m["crate"], bevel=.02)
+
+
+MINE_ARM = (.68, -.62, .55)  # The boom's pivot on the excavator.
+
+
+def part_mine_arm(m, phase):
+    """Excavator boom, stick and bucket digging back and forth."""
+    swing = math.sin(phase * math.tau)
+    x, y, z = MINE_ARM
+    ax, ay = -.62, .5  # Direction toward the pit.
+    lift = .35 + .2 * swing
+    elbow = (x + ax * .5, y + ay * .5, z + lift)
+    reach = .78 + .12 * swing
+    tip = (x + ax * reach, y + ay * reach, .32 + .18 * swing)
+    beam((x, y, z), elbow, .045, m["yellow"])
+    beam(elbow, tip, .035, m["yellow"])
+    beam((x + ax * .12, y + ay * .12, z - .05), (elbow[0] - ax * .1, elbow[1] - ay * .1, elbow[2] - .05), .02, m["steel"])  # Hydraulic ram.
+    box((tip[0], tip[1], tip[2] - .06), (.2, .16, .12), m["steel"], bevel=.02)
+    for k in range(3):
+        box((tip[0] - .07 + k * .07, tip[1] + .06, tip[2] - .13), (.03, .03, .05), m["dark"], bevel=0)
 
 
 def build_lm_mines():
     m = lm_mats()
     pit = material("Pit", "#3a2d26", .1, .9, .5)
+    ore = material("Ore", "#7a6a5a", .2, .85, .3)
     box((0, 0, .03), (2.8, 2.8, .06), pit, bevel=.04)
     for i, r in enumerate((1.0, .75, .5)):
         torus((-.2, .2, .06 - i * .02), r, .07, material("Terrace", "#5b4636", .1, .9, .5))
-    box((.75, -.7, .3), (.6, .35, .3), m["yellow"], bevel=.04)  # Excavator body.
-    box((.75, -.7, .52), (.25, .25, .15), m["dark"], bevel=.03)
-    beam((.55, -.6, .5), (.1, -.2, .9), .05, m["yellow"])
-    beam((.1, -.2, .9), (-.15, .05, .35), .04, m["yellow"])
-    box((-.15, .05, .3), (.2, .15, .12), m["steel"], bevel=.02)
-    for x, y in ((.8, .7), (1.05, .35)):
-        bpy.ops.mesh.primitive_cone_add(radius1=.3, depth=.35, location=(x, y, .17))
-        rs.finish(bpy.context.active_object, material("Ore", "#7a6a5a", .2, .85, .3), 0)
-    beam((-1.0, -1.0, .1), (-.4, -.4, .6), .05, m["steel"])
-    cyl((-.4, -.4, .62), .06, .06, m["warm"], bevel=.01)
+    # Excavator: tracks, turning body and cab; the boom is a moving part.
+    for side in (-1, 1):
+        box((.8 + side * .02, -.68 + side * .17, .1), (.62, .1, .1), m["dark"], bevel=.03)
+    box((.78, -.68, .3), (.5, .4, .24), m["yellow"], bevel=.04)
+    box((.92, -.82, .5), (.2, .18, .2), m["dark"], bevel=.03)
+    box((.93, -.92, .5), (.16, .01, .12), m["cyan"], bevel=0)
+    box((.62, -.55, .45), (.18, .18, .1), m["yellow"], bevel=.02)
+    # Ore heaps, a conveyor and crates.
+    for x, y, r in ((.8, .7, .3), (1.05, .3, .22), (.45, .95, .18)):
+        bpy.ops.mesh.primitive_cone_add(vertices=12, radius1=r, depth=r * 1.1, location=(x, y, .06 + r * .55))
+        rs.finish(bpy.context.active_object, ore, 0)
+    beam((-.1, .2, .1), (.75, .65, .55), .05, m["dark"])
+    for t in (.3, .7):
+        cyl((-.1 + .85 * t, .2 + .45 * t, .16 + .3 * t), .02, .3 * t + .1, m["steel"], bevel=0, vertices=8)
+    for x, y in ((-1.1, -.9), (-.88, -1.1), (-1.1, -1.1)):
+        box((x, y, .16), (.18, .18, .18), m["crate"], bevel=.02)
+    # Headframe over the shaft, with its lamp.
+    lattice_mast(-1.0, 1.0, .2, .12, 1.0, m["steel"], 3)
+    cyl((-1.0, 1.0, 1.05), .14, .05, m["dark"], bevel=.01, rot=(math.radians(90), 0, math.radians(45)))
+    ball((-1.0, 1.0, 1.12), .035, m["warm"])
+
+
+PARTS["lm_mines"] = ("arm", 8, part_mine_arm)
 
 
 def build_lm_workshop():
@@ -590,18 +888,51 @@ def build_lm_workshop():
     box((-.4, -.6, 1.2), (.03, .03, .9), m["steel"], bevel=0)
 
 
+GANTRY_Z = 1.55  # Height of the gantry crane's top beam.
+
+
+def part_port_crane(m, phase):
+    """The gantry's trolley runs along the beam, lowering a container over the harbor and lifting it to the quay."""
+    t = .5 - .5 * math.cos(phase * math.tau)
+    x = -1.0 + 1.45 * t
+    y = -.15
+    drop = .55 + .35 * math.sin(phase * math.tau * 2) ** 2
+    box((x, y, GANTRY_Z + .02), (.22, .5, .1), m["dark"], bevel=.02)
+    for dy in (-.12, .12):
+        box((x, y + dy, GANTRY_Z - drop / 2), (.008, .008, drop), m["steel"], bevel=0)
+    box((x, y, GANTRY_Z - drop - .02), (.3, .5, .04), m["yellow"], bevel=.01)
+    box((x, y, GANTRY_Z - drop - .16), (.28, .52, .24), material("Hoisted", "#c14a32", .6, .5, .5), bevel=.02)
+
+
 def build_lm_port():
     m = lm_mats()
-    box((0, 0, .05), (2.8, 2.8, .1), m["concrete"], bevel=.04)
-    box((-1.0, 0, .02), (.9, 2.8, .04), material("Harbor", "#123e52", .1, .06, 0, emission="#0f6f8f", strength=.2), bevel=.01)
-    for k, (x, y, color) in enumerate(((.2, .7, "#8a4b2f"), (.2, .35, "#2f6a72"), (.65, .7, "#c9a23a"), (.2, 0, "#2f6a72"), (.65, .35, "#8a4b2f"))):
-        box((x, y, .25), (.4, .3, .28), material(f"Box{k}", color, .6, .5, .5), bevel=.02)
-    box((-.35, -.7, 1.0), (.1, .1, 1.8), m["yellow"], bevel=.01)
-    beam((-.35, -.7, 1.85), (-1.2, -.2, 1.85), .05, m["yellow"])
-    beam((-.35, -.7, 1.85), (.4, -.9, 1.85), .05, m["yellow"])
-    for y in (-1.1, 1.1):
-        cyl((-.5, y, .4), .03, .6, m["steel"], bevel=0)
-        ball((-.5, y, .72), .05, m["warm"])
+    box((.25, 0, .05), (2.3, 2.8, .1), m["concrete"], bevel=.04)
+    box((-1.15, 0, .0), (.55, 2.8, .04), material("Harbor", "#123e52", .1, .06, 0, emission="#0f6f8f", strength=.25), bevel=.01)
+    box((-.88, 0, .08), (.06, 2.8, .1), m["dark"], bevel=.01)  # Quay edge.
+    colors = ("#8a4b2f", "#2f6a72", "#c9a23a", "#3d5f8a", "#c14a32", "#5d7a3a")
+    rng = random.Random(4)
+    for row, y in enumerate((.55, .95)):
+        for col, x in enumerate((.25, .62, 1.0)):
+            for level in range(1 + (row + col) % 2):
+                box((x, y, .25 + level * .28), (.34, .52, .26), material(f"Box{row}{col}{level}", colors[rng.randrange(6)], .6, .5, .5), bevel=.02)
+    # Gantry crane: two A-frames over the quay and the harbor, joined by the beam the trolley runs on.
+    for y in (-.55, .25):
+        beam((-1.25, y, .0), (-1.15, y, GANTRY_Z), .04, m["yellow"])
+        beam((.55, y, .1), (.45, y, GANTRY_Z), .04, m["yellow"])
+        beam((-1.15, y, GANTRY_Z * .6), (.45, y, GANTRY_Z * .6), .02, m["yellow"])
+    for y in (-.4, .1):
+        beam((-1.3, y, GANTRY_Z + .05), (.6, y, GANTRY_Z + .05), .04, m["yellow"])
+    box((.55, -.15, GANTRY_Z + .2), (.3, .6, .25), m["white"], bevel=.03)  # Machine house.
+    box((.4, -.15, GANTRY_Z + .2), (.01, .4, .1), m["warm"], bevel=0)
+    ball((-1.3, -.15, GANTRY_Z + .1), .04, m["red"])
+    for y in (-1.15, 1.15):
+        cyl((-.82, y, .35), .03, .5, m["steel"], bevel=0)
+        ball((-.82, y, .62), .05, m["warm"])
+    for y in (-.9, -.3, .3, .9):
+        cyl((-.84, y, .13), .04, .06, m["dark"], bevel=.01)  # Bollards.
+
+
+PARTS["lm_port"] = ("crane", 12, part_port_crane)
 
 
 def build_lm_core():
@@ -659,6 +990,8 @@ if __name__ == "__main__":
         up = cam.matrix_world.to_3x3() @ Vector((0, 1, 0))
         for j in range(CHUNKS):  # j counts rows from the top, i columns from the left.
             for i in range(CHUNKS):
+                if CENTER and (i, j) != (1, 1):
+                    continue
                 dx = (i - (CHUNKS - 1) / 2) * TERRAIN_W / CHUNKS
                 dy = ((CHUNKS - 1) / 2 - j) * TERRAIN_H / CHUNKS
                 cam.location = base + right * dx * K + up * dy * K
@@ -682,4 +1015,18 @@ if __name__ == "__main__":
         builder()
         bpy.context.scene.render.filepath = os.path.join(OUT, name + suffix() + ".png")
         bpy.ops.render.render(write_still=True)
+        if name in PARTS:
+            # The moving part alone, frame by frame; the still scene is hidden but still lights it.
+            part, frames, make = PARTS[name]
+            still = [o for o in bpy.context.scene.objects if o.type == "MESH"]
+            for o in still:
+                o.hide_render = True
+            m = lm_mats()
+            for f in range(frames):
+                before = set(bpy.context.scene.objects)
+                make(m, f / frames)
+                bpy.context.scene.render.filepath = os.path.join(OUT, f"{name}_{part}_{f}" + suffix() + ".png")
+                bpy.ops.render.render(write_still=True)
+                for o in set(bpy.context.scene.objects) - before:
+                    bpy.data.objects.remove(o)
     print("RENDER_DONE")

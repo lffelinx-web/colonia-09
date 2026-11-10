@@ -350,26 +350,51 @@ namespace Colonia09.Presentation
             if (!ui.PickerOpen) { Finish(); yield break; }
             ui.PickerButtons[BuildingType.Extractor].onClick.Invoke();
             yield return Frames(2);
-            Check("extractor is built on the tapped tile", Colony.At(20, 21)?.type == "Extractor" && !ui.PickerOpen);
+            var extractor = Colony.At(20, 21);
+            Check("extractor is started on the tapped tile", extractor?.type == "Extractor" && !ui.PickerOpen);
+            Check("a new building rises for a minute before it works", extractor != null && extractor.level == 0 && extractor.pending == 1
+                && System.Math.Abs(Colony.SecondsLeft(extractor.readyTicks) - ColonyData.BuildSeconds(1)) < 5);
             yield return RealTouch(map.TileScreen(24, 22));
             ui.PickerButtons[BuildingType.Fortification].onClick.Invoke();
             yield return Frames(2);
+            Check("two works can run at the same time", Colony.WorkCount() == 2);
+            yield return RealTouch(map.TileScreen(20, 23));
+            Check("a third work is refused while two are running", ui.PickerOpen && !ui.PickerButtons[BuildingType.Solar].interactable);
+            ui.CloseColonySheets();
             yield return RealTouch(map.TileScreen(22, 22));
             Check("the ship's tile cannot be built on", !ui.PickerOpen && Colony.At(22, 22) == null);
             yield return RealTouch(map.TileScreen(20, 21));
-            Check("tapping a building opens its card", ui.BuildingInfoOpen);
-            yield return Shot($"{shot + 1:00}_colony");
+            Check("tapping a building under construction opens its card", ui.BuildingInfoOpen && !ui.UpgradeBuildingButton.interactable);
+            yield return Frames(30);  // Let the scaffold sparks and timers run.
+            yield return Shot($"{shot + 1:00}_colony_works");
             ui.CloseColonySheets();
             // Economy: the landing zone is connected on its own; the camp must be linked by the player.
             Check("the landing zone is connected on its own, the camp is not", Colony.IsConnected("landing") && !Colony.IsConnected("camp"));
             ui.SectorButton(2).onClick.Invoke();
             yield return null;
-            Check("a liberated zone without link offers to connect it", ui.BriefingOpen && ui.ConnectButton.gameObject.activeSelf);
+            Check("linking waits for a free work crew", ui.BriefingOpen && ui.ConnectButton.gameObject.activeSelf && Colony.RefuseConnection(CampaignData.Sectors[1]) != null);
+            ui.BriefCloseButton.onClick.Invoke();
+            // Two minutes later both buildings are done; the map celebrates them.
+            Colony.Now = () => DateTime.UtcNow.AddMinutes(2);
+            yield return new WaitForSecondsRealtime(1.4f);
+            Check("finished works become level 1 buildings", Colony.At(20, 21)?.level == 1 && Colony.At(24, 22)?.level == 1 && Colony.WorkCount() == 0);
+            yield return Shot($"{shot + 1:00}_colony_done");
+            ui.SectorButton(2).onClick.Invoke();
+            yield return null;
             ui.ConnectButton.onClick.Invoke();
             yield return Frames(2);
-            Check("connecting the camp works and costs resources", Colony.IsConnected("camp") && !ui.BriefingOpen);
+            Check("connecting the camp starts laying the link", Colony.IsConnecting("camp") && !Colony.IsConnected("camp") && !ui.BriefingOpen);
+            Colony.Now = () => DateTime.UtcNow.AddMinutes(3);
+            map.Focus(CampaignData.Sectors[1]);
+            yield return Frames(8);
+            yield return Shot($"{shot + 1:00}_link_building");
+            Colony.Now = () => DateTime.UtcNow.AddMinutes(5);
+            yield return new WaitForSecondsRealtime(1.4f);
+            Check("the link is done after its time and the camp joins the colony", Colony.IsConnected("camp") && !Colony.IsConnecting("camp"));
+            yield return Frames(20);
+            yield return Shot($"{shot + 1:00}_link_done");
             double before = save.materials;
-            Colony.Now = () => DateTime.UtcNow.AddHours(3);
+            Colony.Now = () => DateTime.UtcNow.AddMinutes(5).AddHours(3);
             Colony.Collect(out var made);
             Colony.Now = () => DateTime.UtcNow.AddHours(30);
             Colony.Collect(out var capped);

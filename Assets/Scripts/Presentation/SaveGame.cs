@@ -33,6 +33,8 @@ namespace Colonia09.Presentation
         public List<string> connected = new List<string>();
         /// <summary>UTC ticks of the last time production was added; 0 before the first building.</summary>
         public long productionTicks;
+        /// <summary>Energy links still being laid.</summary>
+        public List<LinkSave> links = new List<LinkSave>();
     }
 
     [Serializable]
@@ -41,6 +43,18 @@ namespace Colonia09.Presentation
         public string sector, type;
         /// <summary>Tile on the isometric colony grid. Older saves used a lot number in slot instead.</summary>
         public int slot, level, x, y;
+        /// <summary>Level under construction (0 when none). A new building has level 0 until its first level is done.</summary>
+        public int pending;
+        /// <summary>UTC ticks when the work started and when it is done.</summary>
+        public long startTicks, readyTicks;
+        public bool UnderWork => pending > 0;
+    }
+
+    [Serializable]
+    public sealed class LinkSave
+    {
+        public string sector;
+        public long startTicks, readyTicks;
     }
 
     public static class SaveGame

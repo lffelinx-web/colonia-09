@@ -143,6 +143,14 @@ namespace Colonia09.Simulation
         public const int MaxLevel = 3;
         /// <summary>Production keeps running while the game is closed, up to this many hours.</summary>
         public const double OfflineCapHours = 8;
+        /// <summary>At most this many works (buildings, upgrades and links) run at the same time.</summary>
+        public const int MaxWorks = 2;
+
+        /// <summary>Real seconds to raise a building to this level: 1 minute, 5 minutes, 20 minutes.</summary>
+        public static int BuildSeconds(int level) => level <= 1 ? 60 : level == 2 ? 300 : 1200;
+
+        /// <summary>Real seconds to lay a zone's energy link: 2 minutes for the camp, up to 10 for the colony core.</summary>
+        public static int ConnectSeconds(CampaignSector sector) => sector.Number <= 1 ? 0 : 120 + (sector.Number - 2) * 80;
 
         public static readonly BuildingType[] Types =
             { BuildingType.Extractor, BuildingType.Laboratory, BuildingType.Solar, BuildingType.Housing, BuildingType.Refinery, BuildingType.Fortification };
