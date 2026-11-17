@@ -1,0 +1,2033 @@
+fileFormatVersion: 2
+guid: 9e62b8e96630b0d49beb2018c6d5713d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6183224216068144377
+    second: bld_watertower_0_1_0
+  - first:
+      213: -2271471811324140384
+    second: bld_watertower_0_1_1
+  - first:
+      213: -1263665828348683995
+    second: bld_watertower_0_1_2
+  - first:
+      213: -2369314876306556625
+    second: bld_watertower_0_1_3
+  - first:
+      213: 7423763409839443950
+    second: bld_watertower_0_1_4
+  - first:
+      213: -9001766151313305962
+    second: bld_watertower_0_1_5
+  - first:
+      213: 4572258430445895935
+    second: bld_watertower_0_1_6
+  - first:
+      213: 1310111996964196187
+    second: bld_watertower_0_1_7
+  - first:
+      213: -2596739763906231873
+    second: bld_watertower_0_1_8
+  - first:
+      213: -7992070643577859437
+    second: bld_watertower_0_1_9
+  - first:
+      213: -4706943621938009911
+    second: bld_watertower_0_1_10
+  - first:
+      213: 6923006241654089574
+    second: bld_watertower_0_1_11
+  - first:
+      213: 7073331872419246787
+    second: bld_watertower_0_1_12
+  - first:
+      213: 3170322891950895347
+    second: bld_watertower_0_1_13
+  - first:
+      213: -777895794366992431
+    second: bld_watertower_0_1_14
+  - first:
+      213: 7913509834721026133
+    second: bld_watertower_0_1_15
+  - first:
+      213: 2971809429477350055
+    second: bld_watertower_0_1_16
+  - first:
+      213: -3572033408598739729
+    second: bld_watertower_0_1_17
+  - first:
+      213: 3741202366688214674
+    second: bld_watertower_0_1_18
+  - first:
+      213: 7841949904886222055
+    second: bld_watertower_0_1_19
+  - first:
+      213: -1295813091728418971
+    second: bld_watertower_0_1_20
+  - first:
+      213: -90015927629351385
+    second: bld_watertower_0_1_21
+  - first:
+      213: 8044210930146314355
+    second: bld_watertower_0_1_22
+  - first:
+      213: 4197170784154775397
+    second: bld_watertower_0_1_23
+  - first:
+      213: 6197267172390384521
+    second: bld_watertower_0_1_24
+  - first:
+      213: 193211862895339286
+    second: bld_watertower_0_1_25
+  - first:
+      213: -2156551323659235711
+    second: bld_watertower_0_1_26
+  - first:
+      213: -6955293559650605151
+    second: bld_watertower_0_1_27
+  - first:
+      213: 4974336298869523004
+    second: bld_watertower_0_1_28
+  - first:
+      213: 6131853818622924192
+    second: bld_watertower_0_1_29
+  - first:
+      213: 1452720876667911534
+    second: bld_watertower_0_1_30
+  - first:
+      213: -4210068516010823345
+    second: bld_watertower_0_1_31
+  - first:
+      213: -5242007170376827779
+    second: bld_watertower_0_1_32
+  - first:
+      213: -658012319044854622
+    second: bld_watertower_0_1_33
+  - first:
+      213: -7820683396429681285
+    second: bld_watertower_0_1_34
+  - first:
+      213: -3428982660590746574
+    second: bld_watertower_0_1_35
+  - first:
+      213: 4777464586908908191
+    second: bld_watertower_0_1_36
+  - first:
+      213: 1517086924505413284
+    second: bld_watertower_0_1_37
+  - first:
+      213: -1353821409549586410
+    second: bld_watertower_0_1_38
+  - first:
+      213: 5747769563388755570
+    second: bld_watertower_0_1_39
+  - first:
+      213: -5906629212718502597
+    second: bld_watertower_0_1_40
+  - first:
+      213: 1637372271535761222
+    second: bld_watertower_0_1_41
+  - first:
+      213: 6460583524125768675
+    second: bld_watertower_0_1_42
+  - first:
+      213: -8337992001932779969
+    second: bld_watertower_0_1_43
+  - first:
+      213: 2792133003248298171
+    second: bld_watertower_0_1_44
+  - first:
+      213: 8946015479763503938
+    second: bld_watertower_0_1_45
+  - first:
+      213: -2886608579836301577
+    second: bld_watertower_0_1_46
+  - first:
+      213: -7037398407919583697
+    second: bld_watertower_0_1_47
+  - first:
+      213: -1970873793209542563
+    second: bld_watertower_0_1_48
+  - first:
+      213: -4586915290338845423
+    second: bld_watertower_0_1_49
+  - first:
+      213: -4044556987700515139
+    second: bld_watertower_0_1_50
+  - first:
+      213: 7649389178604926328
+    second: bld_watertower_0_1_51
+  - first:
+      213: 7270285331377146394
+    second: bld_watertower_0_1_52
+  - first:
+      213: 4944828429647531639
+    second: bld_watertower_0_1_53
+  - first:
+      213: 7537933690729812396
+    second: bld_watertower_0_1_54
+  - first:
+      213: 3818424275264522879
+    second: bld_watertower_0_1_55
+  - first:
+      213: 4603313958296338393
+    second: bld_watertower_0_1_56
+  - first:
+      213: 946992759543022576
+    second: bld_watertower_0_1_57
+  - first:
+      213: -8129574164488911592
+    second: bld_watertower_0_1_58
+  - first:
+      213: -4478073238141112131
+    second: bld_watertower_0_1_59
+  - first:
+      213: 4739416106280340510
+    second: bld_watertower_0_1_60
+  - first:
+      213: 7860160671182037007
+    second: bld_watertower_0_1_61
+  - first:
+      213: -7718136539063682729
+    second: bld_watertower_0_1_62
+  - first:
+      213: -7610213380582028050
+    second: bld_watertower_0_1_63
+  - first:
+      213: -8755666814805902439
+    second: bld_watertower_0_1_64
+  - first:
+      213: 5736727375431611913
+    second: bld_watertower_0_1_65
+  - first:
+      213: -5559089973856481493
+    second: bld_watertower_0_1_66
+  - first:
+      213: -422648920771178526
+    second: bld_watertower_0_1_67
+  - first:
+      213: 1883632633056220143
+    second: bld_watertower_0_1_68
+  - first:
+      213: 7940698171124979367
+    second: bld_watertower_0_1_69
+  - first:
+      213: -2363224916326647649
+    second: bld_watertower_0_1_70
+  - first:
+      213: -3306847825636381289
+    second: bld_watertower_0_1_71
+  - first:
+      213: -6725603578665872139
+    second: bld_watertower_0_1_72
+  - first:
+      213: 9123158408660720688
+    second: bld_watertower_0_1_73
+  - first:
+      213: -3109968540870234016
+    second: bld_watertower_0_1_74
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bld_watertower_0_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 209
+        width: 512
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7034aaae556c03aa0800000000000000
+      internalID: -6183224216068144377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a426b02c6c1a70e0800000000000000
+      internalID: -2271471811324140384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5291a72df9e867ee0800000000000000
+      internalID: -1263665828348683995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_3
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 208
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29f2b45ca08e1fd0800000000000000
+      internalID: -2369314876306556625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_4
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 200
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eefc50c0d71860760800000000000000
+      internalID: 7423763409839443950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 247
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ec5d7f06d431380800000000000000
+      internalID: -9001766151313305962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 202
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0430051dce37f30800000000000000
+      internalID: 4572258430445895935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 331
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f47038be37e2210800000000000000
+      internalID: 1310111996964196187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_8
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 332
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb1cc3e51f686fbd0800000000000000
+      internalID: -2596739763906231873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_9
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 333
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 392d6bde716761190800000000000000
+      internalID: -7992070643577859437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_10
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 339
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8289cd6b39daeb0800000000000000
+      internalID: -4706943621938009911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_11
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 337
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667aa934f75731060800000000000000
+      internalID: 6923006241654089574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_12
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 337
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c27ff1acd5892260800000000000000
+      internalID: 7073331872419246787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_13
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 250
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0b5068fdf3ffb20800000000000000
+      internalID: 3170322891950895347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_14
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 235
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df2c7085eb5435f0800000000000000
+      internalID: -777895794366992431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_15
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 262
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5506b11644f62dd60800000000000000
+      internalID: 7913509834721026133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_16
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 195
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa57284eecfd3920800000000000000
+      internalID: 2971809429477350055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_17
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 227
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4f4a25a869d6ec0800000000000000
+      internalID: -3572033408598739729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_18
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 175
+        width: 6
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e3d431bbb6be330800000000000000
+      internalID: 3741202366688214674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_19
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 194
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ecc62bd3e334dc60800000000000000
+      internalID: 7841949904886222055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_20
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 182
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5671a3ccbd8540ee0800000000000000
+      internalID: -1295813091728418971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7267681adf230cef0800000000000000
+      internalID: -90015927629351385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_22
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 186
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3788fad8837c2af60800000000000000
+      internalID: 8044210930146314355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_23
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 182
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f613337985f3a30800000000000000
+      internalID: 4197170784154775397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_24
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 177
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983b484a8ad110650800000000000000
+      internalID: 6197267172390384521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_25
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 169
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617a4466a2d6ea200800000000000000
+      internalID: 193211862895339286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_26
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 168
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e846d3ff36212e0800000000000000
+      internalID: -2156551323659235711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_27
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 166
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7a674bb55d97f90800000000000000
+      internalID: -6955293559650605151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_28
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 160
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3203773284680540800000000000000
+      internalID: 4974336298869523004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_29
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 163
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a554a16f88b81550800000000000000
+      internalID: 6131853818622924192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_30
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 154
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6db593c0f9192410800000000000000
+      internalID: 1452720876667911534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_31
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 144
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f417e179df4d295c0800000000000000
+      internalID: -4210068516010823345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_32
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 154
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c73ab7046a047b0800000000000000
+      internalID: -5242007170376827779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_33
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 141
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac108938454ed6f0800000000000000
+      internalID: -658012319044854622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_34
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 128
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d630ff2e9577390800000000000000
+      internalID: -7820683396429681285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_35
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 142
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234c38e007ec960d0800000000000000
+      internalID: -3428982660590746574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_36
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 133
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ab6bdcab6fc4240800000000000000
+      internalID: 4777464586908908191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_37
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 124
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6f88c1586cd0510800000000000000
+      internalID: 1517086924505413284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_38
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 70
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6107a72d992463de0800000000000000
+      internalID: -1353821409549586410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_39
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 70
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27eb69407fd24cf40800000000000000
+      internalID: 5747769563388755570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_40
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 58
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3de7f39600770ea0800000000000000
+      internalID: -5906629212718502597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_41
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 73
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647a6f1e76d19b610800000000000000
+      internalID: 1637372271535761222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 71
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ebf14d4c7a98a950800000000000000
+      internalID: 6460583524125768675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_43
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 63
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e9fb86370894c80800000000000000
+      internalID: -8337992001932779969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_44
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb862405c26afb620800000000000000
+      internalID: 2792133003248298171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_45
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 55
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b037a4ea1a62c70800000000000000
+      internalID: 8946015479763503938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_46
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 47
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe23416ac4b0f7d0800000000000000
+      internalID: -2886608579836301577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_47
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 46
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ebd090f63265e90800000000000000
+      internalID: -7037398407919583697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_48
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 44
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d585e9a2abc06a4e0800000000000000
+      internalID: -1970873793209542563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_49
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 27
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d9b8098d00850c0800000000000000
+      internalID: -4586915290338845423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_50
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 36
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe694249d8ded7c0800000000000000
+      internalID: -4044556987700515139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_51
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 37
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 875b6730ee6182a60800000000000000
+      internalID: 7649389178604926328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_52
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 28
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ac7704dfd35e460800000000000000
+      internalID: 7270285331377146394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_53
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 27
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ec468024f8f9440800000000000000
+      internalID: 4944828429647531639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_54
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 25
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1566801ce1c9860800000000000000
+      internalID: 7537933690729812396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_55
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 26
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7aced0c5a4cdf430800000000000000
+      internalID: 3818424275264522879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_56
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 14
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dfb9d9d7a142ef30800000000000000
+      internalID: 4603313958296338393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_57
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 9
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3cd6db5e4642d00800000000000000
+      internalID: 946992759543022576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_58
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 13
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8150276ae53fd2f80800000000000000
+      internalID: -8129574164488911592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_59
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 9
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db07a62ad10bad1c0800000000000000
+      internalID: -4478073238141112131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_60
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 9
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1cca9196d9c5c140800000000000000
+      internalID: 4739416106280340510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_61
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 9
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f002d4b4c76e41d60800000000000000
+      internalID: 7860160671182037007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_62
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 9
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759752dc5bba3e490800000000000000
+      internalID: -7718136539063682729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_63
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 9
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeccb714047136690800000000000000
+      internalID: -7610213380582028050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_64
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 4
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b71d3eb6f9d7680800000000000000
+      internalID: -8755666814805902439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_65
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 14
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9063cd94723fc9f40800000000000000
+      internalID: 5736727375431611913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_66
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f49d14f152ad2b0800000000000000
+      internalID: -5559089973856481493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_67
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 13
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ef4bbcbb03722af0800000000000000
+      internalID: -422648920771178526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_68
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 15
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe356ac56e1042a10800000000000000
+      internalID: 1883632633056220143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_69
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 9
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a69f7e3ae6033e60800000000000000
+      internalID: 7940698171124979367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_70
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 8
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f987ff1a573243fd0800000000000000
+      internalID: -2363224916326647649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_71
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 10
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79dabaa4c67bb12d0800000000000000
+      internalID: -3306847825636381289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f45681dd2bd9a2a0800000000000000
+      internalID: -6725603578665872139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_73
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 8
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c17d17c38fb9e70800000000000000
+      internalID: 9123158408660720688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bld_watertower_0_1_74
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 0
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0603ac2e61c27d4d0800000000000000
+      internalID: -3109968540870234016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

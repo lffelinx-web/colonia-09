@@ -3,14 +3,20 @@ using System.Collections.Generic;
 
 namespace Colonia09.Simulation
 {
-    public enum BuildingType { Extractor, Laboratory, Refinery, Fortification, Housing, Solar }
+    public enum BuildingType { Extractor, Laboratory, Refinery, Fortification, Housing, Solar, Farm, WaterTower, Works }
 
     public sealed class BuildingDef
     {
         public string Name, Description;
         /// <summary>Indexed by level - 1. Level 1 is the construction cost.</summary>
         public int[] MaterialCost, DataCost;
-        public double[] MaterialsPerHour = { 0, 0, 0 }, DataPerHour = { 0, 0, 0 }, EnergyPerHour = { 0, 0, 0 };
+        public double[] MaterialsPerHour = { 0, 0, 0 }, DataPerHour = { 0, 0, 0 }, EnergyPerHour = { 0, 0, 0 }, WaterPerHour = { 0, 0, 0 }, FoodPerHour = { 0, 0, 0 };
+        /// <summary>Share of the time taken off every work, by level (0.15 is 15 % faster).</summary>
+        public double[] WorkSpeed = { 0, 0, 0 };
+        /// <summary>Only one of these may stand in the whole colony.</summary>
+        public bool Unique;
+        /// <summary>How many different looks the building has; each new one takes the next.</summary>
+        public int Styles = 1;
         /// <summary>Colonists the building can house, by level.</summary>
         public int[] Housing = { 0, 0, 0 };
         /// <summary>Mission bonuses by level: starting energy and base integrity.</summary>
@@ -88,6 +94,8 @@ namespace Colonia09.Simulation
                 var def = ColonyData.Buildings[b.Type];
                 r.Materials += def.MaterialsPerHour[b.Level - 1] * crew * power;
                 r.Data += def.DataPerHour[b.Level - 1] * crew * power;
+                r.Water += def.WaterPerHour[b.Level - 1] * crew * power;
+                r.Food += def.FoodPerHour[b.Level - 1] * crew * power;
                 energyIn += def.EnergyPerHour[b.Level - 1];
                 upkeep += def.Upkeep;
             }
@@ -152,23 +160,38 @@ namespace Colonia09.Simulation
         /// <summary>Real seconds to lay a zone's energy link: 2 minutes for the camp, up to 10 for the colony core.</summary>
         public static int ConnectSeconds(CampaignSector sector) => sector.Number <= 1 ? 0 : 120 + (sector.Number - 2) * 80;
 
+        /// <summary>Share of the time the colony's works yard takes off every work (0 without one).</summary>
+        public static double WorkSpeed(IEnumerable<PlacedBuilding> working)
+        {
+            double best = 0;
+            foreach (var b in working) best = Math.Max(best, Buildings[b.Type].WorkSpeed[b.Level - 1]);
+            return best;
+        }
+
         public static readonly BuildingType[] Types =
-            { BuildingType.Extractor, BuildingType.Laboratory, BuildingType.Solar, BuildingType.Housing, BuildingType.Refinery, BuildingType.Fortification };
+            { BuildingType.Extractor, BuildingType.Laboratory, BuildingType.Solar, BuildingType.Housing, BuildingType.Farm, BuildingType.WaterTower,
+              BuildingType.Refinery, BuildingType.Fortification, BuildingType.Works };
 
         public static readonly Dictionary<BuildingType, BuildingDef> Buildings = new Dictionary<BuildingType, BuildingDef>
         {
             { BuildingType.Extractor, new BuildingDef { Name = "Extractor", Description = "Extrae materiales del subsuelo, también con el juego cerrado.",
-                MaterialCost = new[] { 40, 90, 180 }, DataCost = new[] { 0, 10, 30 }, MaterialsPerHour = new double[] { 12, 24, 40 }, Upkeep = 2 } },
+                MaterialCost = new[] { 40, 90, 180 }, DataCost = new[] { 0, 10, 30 }, MaterialsPerHour = new double[] { 12, 24, 40 }, Upkeep = 2, Styles = 2 } },
             { BuildingType.Laboratory, new BuildingDef { Name = "Laboratorio", Description = "Analiza muestras y genera datos de investigación.",
-                MaterialCost = new[] { 60, 120, 220 }, DataCost = new[] { 0, 15, 35 }, DataPerHour = new double[] { 4, 8, 14 }, Upkeep = 2 } },
+                MaterialCost = new[] { 60, 120, 220 }, DataCost = new[] { 0, 15, 35 }, DataPerHour = new double[] { 4, 8, 14 }, Upkeep = 2, Styles = 2 } },
             { BuildingType.Solar, new BuildingDef { Name = "Planta solar", Description = "Paneles que dan la energía que gastan los demás edificios.",
-                MaterialCost = new[] { 50, 100, 180 }, DataCost = new[] { 0, 10, 25 }, EnergyPerHour = new double[] { 8, 16, 26 } } },
+                MaterialCost = new[] { 50, 100, 180 }, DataCost = new[] { 0, 10, 25 }, EnergyPerHour = new double[] { 8, 16, 26 }, Styles = 2 } },
             { BuildingType.Housing, new BuildingDef { Name = "Vivienda", Description = "Más espacio para colonos: cada uno suma producción a toda la colonia.",
-                MaterialCost = new[] { 50, 110, 200 }, DataCost = new[] { 0, 10, 30 }, Housing = new[] { 8, 16, 28 }, Upkeep = 1 } },
+                MaterialCost = new[] { 50, 110, 200 }, DataCost = new[] { 0, 10, 30 }, Housing = new[] { 8, 16, 28 }, Upkeep = 1, Styles = 3 } },
             { BuildingType.Refinery, new BuildingDef { Name = "Refinería", Description = "Prepara combustible: empiezas cada misión con más energía.",
                 MaterialCost = new[] { 80, 150, 260 }, DataCost = new[] { 0, 20, 45 }, StartCharge = new[] { 15, 30, 50 }, Upkeep = 1 } },
             { BuildingType.Fortification, new BuildingDef { Name = "Fortificación", Description = "Refuerza la base: más integridad en cada misión.",
                 MaterialCost = new[] { 70, 140, 240 }, DataCost = new[] { 0, 20, 40 }, CoreBonus = new[] { 1, 2, 4 }, Upkeep = 1 } },
+            { BuildingType.Farm, new BuildingDef { Name = "Granja hidropónica", Description = "Cultiva comida para los colonos, además de la que dan los Invernaderos.",
+                MaterialCost = new[] { 50, 110, 200 }, DataCost = new[] { 0, 10, 30 }, FoodPerHour = new double[] { 6, 12, 20 }, Upkeep = 1 } },
+            { BuildingType.WaterTower, new BuildingDef { Name = "Torre de agua", Description = "Bombea y guarda agua, además de la que da el Pozo.",
+                MaterialCost = new[] { 50, 110, 200 }, DataCost = new[] { 0, 10, 30 }, WaterPerHour = new double[] { 6, 12, 20 }, Upkeep = 1 } },
+            { BuildingType.Works, new BuildingDef { Name = "Taller de obras", Description = "Cuadrilla y maquinaria: todas las construcciones y conexiones tardan menos. Solo puede haber uno.",
+                MaterialCost = new[] { 80, 160, 260 }, DataCost = new[] { 5, 20, 45 }, WorkSpeed = new double[] { .15, .3, .45 }, Upkeep = 2, Unique = true } },
         };
 
         /// <summary>Each zone's landmark: its own resource, once the zone is connected.</summary>

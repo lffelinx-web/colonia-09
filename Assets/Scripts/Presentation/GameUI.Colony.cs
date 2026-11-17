@@ -30,6 +30,7 @@ namespace Colonia09.Presentation
         {
             if (!buildingIcons.TryGetValue(type, out var sprite))
                 buildingIcons[type] = sprite = Resources.Load<Sprite>("Sprites/UI/icon_" + type.ToString().ToLowerInvariant())
+                    ?? Resources.Load<Sprite>("Sprites/Colony/" + ColonyView.BuildingArt(type, 0, 1))
                     ?? Resources.Load<Sprite>("Sprites/Colony/bld_" + type.ToString().ToLowerInvariant());
             return sprite;
         }
@@ -45,6 +46,9 @@ namespace Colonia09.Presentation
                 case BuildingType.Refinery: return $"+{def.StartCharge[i]} de energía inicial en misiones";
                 case BuildingType.Fortification: return $"+{def.CoreBonus[i]} de integridad de base en misiones";
                 case BuildingType.Solar: return $"+{def.EnergyPerHour[i]:0} de energía por hora";
+                case BuildingType.Farm: return $"+{def.FoodPerHour[i]:0} de comida por hora";
+                case BuildingType.WaterTower: return $"+{def.WaterPerHour[i]:0} de agua por hora";
+                case BuildingType.Works: return $"Obras {def.WorkSpeed[i] * 100:0} % más rápidas";
                 default: return $"Espacio para {def.Housing[i]} colonos";
             }
         }
@@ -227,19 +231,19 @@ namespace Colonia09.Presentation
 
         void BuildPicker()
         {
-            pickerSheet = Sheet("Picker", out var sheet, .58f);
+            pickerSheet = Sheet("Picker", out var sheet, .8f);
             pickerTitle = Label(sheet, "", 40, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
-            pickerTitle.rectTransform.anchorMin = new Vector2(.04f, .88f); pickerTitle.rectTransform.anchorMax = new Vector2(.8f, .98f);
+            pickerTitle.rectTransform.anchorMin = new Vector2(.04f, .925f); pickerTitle.rectTransform.anchorMax = new Vector2(.8f, .99f);
             pickerTitle.rectTransform.offsetMin = pickerTitle.rectTransform.offsetMax = Vector2.zero;
             var close = TextButton(sheet, "×", 44, PanelLight, Txt, CloseColonySheets);
             var closeRt = (RectTransform)close.transform;
             closeRt.anchorMin = closeRt.anchorMax = Vector2.one; closeRt.pivot = Vector2.one;
             closeRt.sizeDelta = new Vector2(90, 74); closeRt.anchoredPosition = new Vector2(-14, -12);
             pickerList = Rt("List", sheet);
-            pickerList.anchorMin = new Vector2(.03f, .03f); pickerList.anchorMax = new Vector2(.97f, .86f);
+            pickerList.anchorMin = new Vector2(.03f, .02f); pickerList.anchorMax = new Vector2(.97f, .915f);
             pickerList.offsetMin = pickerList.offsetMax = Vector2.zero;
             var list = pickerList.gameObject.AddComponent<VerticalLayoutGroup>();
-            list.spacing = 10; list.childControlHeight = true; list.childControlWidth = true;
+            list.spacing = 7; list.childControlHeight = true; list.childControlWidth = true;
             list.childForceExpandHeight = true; list.childForceExpandWidth = true;
             foreach (var type in ColonyData.Types) PickerButtons[type] = PickerRow(type);
             pickerSheet.SetActive(false);
@@ -273,7 +277,7 @@ namespace Colonia09.Presentation
             int built = Colony.CountIn(sector.Id), capacity = ColonyData.LotsFor(sector.Id);
             bool free = Colony.WorkersFree;
             pickerTitle.text = $"Construir · {sector.Name} <size=26><color=#99b5c7>{built}/{capacity} edificios · obras {Colony.WorkCount()}/{ColonyData.MaxWorks}</color></size>";
-            foreach (var pair in PickerButtons) pair.Value.interactable = Colony.CanAfford(pair.Key, 1) && built < capacity && free;
+            foreach (var pair in PickerButtons) pair.Value.interactable = Colony.CanAfford(pair.Key, 1) && built < capacity && free && Colony.RefuseType(pair.Key) == null;
             if (!free) ShowMapNotice(Colony.RefuseWork(), 2.6f);
             infoSheet.SetActive(false);
             pickerSheet.SetActive(true);
@@ -287,7 +291,7 @@ namespace Colonia09.Presentation
             CloseColonySheets();
             game.ColonyMap.Rebuild();
             game.ColonyMap.Pop(pickX, pickY, false);
-            ShowMapNotice($"Construyendo {ColonyData.Buildings[type].Name} · listo en {Colony.TimeText(ColonyData.BuildSeconds(1))}", 3);
+            ShowMapNotice($"Construyendo {ColonyData.Buildings[type].Name} · listo en {Colony.TimeText(Colony.BuildTime(1))}", 3);
         }
 
         // ---- Building card ------------------------------------------------------------
@@ -337,7 +341,8 @@ namespace Colonia09.Presentation
             if (!System.Enum.TryParse(b.type, out BuildingType type)) return;
             var def = ColonyData.Buildings[type];
             bool max = b.level >= ColonyData.MaxLevel;
-            infoIcon.sprite = BuildingIcon(type);
+            // The card shows this very building: its look, at its level (or the one it is rising to).
+            infoIcon.sprite = Resources.Load<Sprite>("Sprites/Colony/" + ColonyView.BuildingArt(type, b.style, Mathf.Max(1, b.level))) ?? BuildingIcon(type);
             bool working = Colony.IsConnected(b.sector);
             string left = Colony.TimeText(Colony.SecondsLeft(b.readyTicks));
             if (b.UnderWork && b.level == 0)
@@ -352,7 +357,7 @@ namespace Colonia09.Presentation
             infoTitle.text = $"{def.Name}  <size=26><color=#ffd38b>NIVEL {b.level}</color></size>";
             infoText.text = (working ? "" : "<color=#ff8c8a><b>Zona sin conexión: este edificio no funciona todavía.</b></color>\n") +
                 $"<color=#91e5bd>{EffectText(type, b.level)}</color>\n{def.Description}" +
-                (max ? "\nNivel máximo alcanzado." : $"\n<color=#eaf9fb>Nivel {b.level + 1}: {EffectText(type, b.level + 1)} · tarda {Colony.TimeText(ColonyData.BuildSeconds(b.level + 1))}</color>");
+                (max ? "\nNivel máximo alcanzado." : $"\n<color=#eaf9fb>Nivel {b.level + 1}: {EffectText(type, b.level + 1)} · tarda {Colony.TimeText(Colony.BuildTime(b.level + 1))}</color>");
             if (b.UnderWork)
             {
                 infoUpgradeLabel.text = $"MEJORANDO A NIVEL {b.pending} · {left}";
@@ -371,7 +376,7 @@ namespace Colonia09.Presentation
             game.ColonyMap.Rebuild();
             game.ColonyMap.Pop(b.x, b.y, false);
             RefreshInfo();
-            ShowMapNotice($"Mejorando a nivel {b.pending} · listo en {Colony.TimeText(ColonyData.BuildSeconds(b.pending))}", 3);
+            ShowMapNotice($"Mejorando a nivel {b.pending} · listo en {Colony.TimeText(Colony.BuildTime(b.pending))}", 3);
         }
     }
 }

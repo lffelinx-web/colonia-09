@@ -333,7 +333,7 @@ namespace Colonia09.Presentation
             game.Audio.Play("build", true);
             briefing.SetActive(false);
             RefreshMap();
-            ShowMapNotice($"Tendiendo el enlace a {sector.Name} · listo en {Colony.TimeText(ColonyData.ConnectSeconds(sector))}", 3.5f);
+            ShowMapNotice($"Tendiendo el enlace a {sector.Name} · listo en {Colony.TimeText(Colony.LinkTime(sector))}", 3.5f);
         }
 
         // ---- The five stages of a zone ------------------------------------------------
@@ -662,7 +662,7 @@ namespace Colonia09.Presentation
                 var work = Colony.LinkWork(sector.Id);
                 briefFacts.text = linked ? $"<color=#91e5bd>Conectada</color> · {output.Summary}"
                     : work != null ? $"<color=#ffd38b>Tendiendo el enlace</color> · listo en {Colony.TimeText(Colony.SecondsLeft(work.readyTicks))}"
-                    : $"<color=#ffd38b>Sin conexión</color> · {cm} materiales, {cd} datos y {Colony.TimeText(ColonyData.ConnectSeconds(sector))} de obra";
+                    : $"<color=#ffd38b>Sin conexión</color> · {cm} materiales, {cd} datos y {Colony.TimeText(Colony.LinkTime(sector))} de obra";
                 linked |= work != null;  // While the link is laid there is nothing to connect.
             }
             ConnectButton.gameObject.SetActive(liberated && !linked);

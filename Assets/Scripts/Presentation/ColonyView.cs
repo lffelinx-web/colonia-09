@@ -246,6 +246,8 @@ namespace Colonia09.Presentation
         sealed class Puff { public Vector3 From; public SpriteRenderer R; public float Phase, Rate; }
         sealed class LinkBuild { public LinkSave Work; public List<GameObject> Tiles = new List<GameObject>(); public Path Path; public SpriteRenderer Tip; }
         sealed class Spark { public SpriteRenderer R; public Vector3 Center; }
+        sealed class Rising { public BuildingSave Work; public SpriteRenderer Day, Night; public Sprite FullDay, FullNight; public int Step; }
+        readonly List<Rising> rises = new List<Rising>();
 
         readonly List<Pulse> pulses = new List<Pulse>();
         readonly List<Drone> drones = new List<Drone>();
@@ -328,7 +330,7 @@ namespace Colonia09.Presentation
             for (int i = root.childCount - 1; i >= 0; i--) Destroy(root.GetChild(i).gameObject);
             placed.Clear();
             nightLayers.Clear();
-            pulses.Clear(); drones.Clear(); blinks.Clear(); frames.Clear(); puffs.Clear(); linkBuilds.Clear(); sparks.Clear(); roadPaths.Clear();
+            pulses.Clear(); drones.Clear(); blinks.Clear(); frames.Clear(); puffs.Clear(); linkBuilds.Clear(); sparks.Clear(); roadPaths.Clear(); rises.Clear();
             float half = (CampaignData.ColonySize - 1) / 2f;
             // A wide, softer picture of the whole island and its sea lies behind, for zooming out.
             Put("colony_overview", TileWorld(half, half), -5100);
@@ -427,14 +429,18 @@ namespace Colonia09.Presentation
                 if (!System.Enum.TryParse(b.type, out BuildingType type)) continue;
                 int order = Depth(b.x, b.y) + 2;
                 var at = TileWorld(b.x, b.y) + lift;
-                SpriteRenderer r;
-                if (b.level == 0)
-                    r = Put("deco_site", at, order) ?? Put("bld_" + type.ToString().ToLowerInvariant(), at, order, .7f);
-                else
-                    r = Put("bld_" + type.ToString().ToLowerInvariant(), at, order, .92f + b.level * .06f);
+                // What stands now: the foundation of a new building, or the building at its level.
+                var r = b.level == 0 ? Put("deco_site", at, order - 1) : PutBuilding(type, b.style, b.level, at, order - 1);
                 if (r != null) placed[new Vector2Int(b.x, b.y)] = r.transform;
                 if (b.UnderWork)
                 {
+                    // The level being built rises from the ground inside the scaffold as the work advances.
+                    var target = PutBuilding(type, b.style, b.pending, at, order);
+                    if (target != null)
+                    {
+                        var night = target.transform.childCount > 0 ? target.transform.GetChild(0).GetComponent<SpriteRenderer>() : null;
+                        rises.Add(new Rising { Work = b, Day = target, Night = night, FullDay = target.sprite, FullNight = night != null ? night.sprite : null, Step = -1 });
+                    }
                     // Scaffold, a hazard light and welding sparks while the work runs.
                     Put("deco_scaffold", at, order + 1);
                     var tileCenter = TileWorld(b.x, b.y);
@@ -463,6 +469,32 @@ namespace Colonia09.Presentation
             flash.gameObject.SetActive(false);
             UpdateHint();
             ApplyLight();
+        }
+
+        /// <summary>The picture of a building kind in one of its looks and levels; older art has a single picture per kind.</summary>
+        public static string BuildingArt(BuildingType type, int style, int level) => $"bld_{type.ToString().ToLowerInvariant()}_{style}_{Mathf.Clamp(level, 1, ColonyData.MaxLevel)}";
+
+        SpriteRenderer PutBuilding(BuildingType type, int style, int level, Vector3 at, int order)
+        {
+            int looks = ColonyData.Buildings[type].Styles;
+            return Put(BuildingArt(type, ((style % looks) + looks) % looks, level), at, order)
+                ?? Put("bld_" + type.ToString().ToLowerInvariant(), at, order, .92f + level * .06f);
+        }
+
+        const int RiseSteps = 24;
+        readonly Dictionary<(Sprite, int), Sprite> risen = new Dictionary<(Sprite, int), Sprite>();
+
+        /// <summary>The lower part of a building's picture, up to a share of its height: how far it has risen.</summary>
+        Sprite Risen(Sprite full, int step)
+        {
+            if (full == null || step >= RiseSteps) return full;
+            if (risen.TryGetValue((full, step), out var cut)) return cut;
+            var rect = full.rect;
+            // The ground of the tile lies a little over a quarter up the picture; the building grows from there to the top.
+            float height = Mathf.Max(2, rect.height * (.28f + .72f * step / RiseSteps));
+            cut = Sprite.Create(full.texture, new Rect(rect.x, rect.y, rect.width, height), new Vector2(.5f, rect.height * .5f / height), full.pixelsPerUnit, 0, SpriteMeshType.FullRect);
+            risen[(full, step)] = cut;
+            return cut;
         }
 
         void Darken(SpriteRenderer r)
@@ -635,7 +667,7 @@ namespace Colonia09.Presentation
             if (t < popTime && placed.TryGetValue(popTile, out var tr) && tr != null)
             {
                 var b = Colony.At(popTile.x, popTile.y);
-                float baseScale = b != null && b.level == 0 ? 1 : .92f + (b?.level ?? 1) * .06f;
+                float baseScale = 1;
                 tr.localScale = Vector3.one * baseScale * (1 + Mathf.Sin(t / popTime * Mathf.PI) * (popBig ? .3f : .18f));
             }
             if (selection != null && selection.gameObject.activeSelf)
@@ -686,6 +718,14 @@ namespace Colonia09.Presentation
                 bool on = Mathf.PerlinNoise(now * 7, s.Center.x * 3) > .62f;
                 s.R.gameObject.SetActive(on);
                 if (on) s.R.transform.position = s.Center + new Vector3((Mathf.PerlinNoise(now * 2, 1) - .5f) * .5f, (Mathf.PerlinNoise(1, now * 2) - .5f) * .4f, 0);
+            }
+            foreach (var rise in rises)
+            {
+                int step = Mathf.Clamp(Mathf.FloorToInt(Colony.Progress(rise.Work.startTicks, rise.Work.readyTicks) * RiseSteps), 0, RiseSteps - 1);
+                if (step == rise.Step) continue;
+                rise.Step = step;
+                rise.Day.sprite = Risen(rise.FullDay, step);
+                if (rise.Night != null) rise.Night.sprite = Risen(rise.FullNight, step);
             }
             foreach (var lb in linkBuilds)
             {

@@ -45,6 +45,8 @@ namespace Colonia09.Presentation
         public int slot, level, x, y;
         /// <summary>Level under construction (0 when none). A new building has level 0 until its first level is done.</summary>
         public int pending;
+        /// <summary>Which of the building's looks this one has.</summary>
+        public int style;
         /// <summary>UTC ticks when the work started and when it is done.</summary>
         public long startTicks, readyTicks;
         public bool UnderWork => pending > 0;

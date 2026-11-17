@@ -177,7 +177,7 @@ namespace Colonia09.Presentation
             ColonyData.ConnectionCost(sector, out int m, out int dt);
             Data.materials -= m;
             Data.data -= dt;
-            long start = Start(ColonyData.ConnectSeconds(sector), out long ready);
+            long start = Start(LinkTime(sector), out long ready);
             Data.links.Add(new LinkSave { sector = sector.Id, startTicks = start, readyTicks = ready });
             SaveGame.Save();
             return true;
@@ -241,17 +241,27 @@ namespace Colonia09.Presentation
             return null;
         }
 
+        /// <summary>Seconds a building level takes now, with the works yard's help.</summary>
+        public static int BuildTime(int level) => (int)Math.Round(ColonyData.BuildSeconds(level) * (1 - ColonyData.WorkSpeed(Working())));
+        public static int LinkTime(CampaignSector sector) => (int)Math.Round(ColonyData.ConnectSeconds(sector) * (1 - ColonyData.WorkSpeed(Working())));
+
+        /// <summary>Why this kind of building cannot be started, or null: some may stand only once.</summary>
+        public static string RefuseType(BuildingType type) =>
+            ColonyData.Buildings[type].Unique && Data.buildings.Exists(b => b.type == type.ToString()) ? $"Solo puede haber un {ColonyData.Buildings[type].Name}" : null;
+
         /// <summary>Why no new work can start now, or null.</summary>
         public static string RefuseWork() => WorkersFree ? null : BusyText;
 
         /// <summary>Pays and starts the building; it works once its first level is done.</summary>
         public static bool Build(string sector, int x, int y, BuildingType type)
         {
-            if (RefuseTile(x, y) != null || CampaignData.ZoneAt(x, y)?.Id != sector || !CanAfford(type, 1) || !WorkersFree) return false;
+            if (RefuseTile(x, y) != null || CampaignData.ZoneAt(x, y)?.Id != sector || !CanAfford(type, 1) || !WorkersFree || RefuseType(type) != null) return false;
             Collect(out _);  // Production up to now is counted at the old rate.
             Pay(type, 1);
-            long start = Start(ColonyData.BuildSeconds(1), out long ready);
-            Data.buildings.Add(new BuildingSave { sector = sector, x = x, y = y, type = type.ToString(), level = 0, pending = 1, startTicks = start, readyTicks = ready });
+            long start = Start(BuildTime(1), out long ready);
+            // Each new building of a kind takes the next look, so a street of houses is not all the same.
+            int style = Data.buildings.FindAll(b => b.type == type.ToString()).Count % ColonyData.Buildings[type].Styles;
+            Data.buildings.Add(new BuildingSave { sector = sector, x = x, y = y, type = type.ToString(), level = 0, pending = 1, style = style, startTicks = start, readyTicks = ready });
             SaveGame.Save();
             return true;
         }
@@ -264,7 +274,7 @@ namespace Colonia09.Presentation
             Collect(out _);
             Pay(type, b.level + 1);
             b.pending = b.level + 1;
-            b.startTicks = Start(ColonyData.BuildSeconds(b.pending), out b.readyTicks);
+            b.startTicks = Start(BuildTime(b.pending), out b.readyTicks);
             SaveGame.Save();
             return true;
         }
