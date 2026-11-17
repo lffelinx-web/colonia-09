@@ -198,10 +198,22 @@ namespace Colonia09.Simulation
 
         // ---- Isometric colony layout (must match Tools/Render/render_colony.py) ----------
 
-        public const int ColonySize = 26;
-        /// <summary>Each zone is 5 x 5 tiles around its center.</summary>
-        public const int ZoneRadius = 2;
-        static readonly int[,] ZoneCenters = { { 22, 22 }, { 23, 15 }, { 13, 21 }, { 17, 11 }, { 8, 15 }, { 11, 7 }, { 4, 9 }, { 4, 3 } };
+        public const int ColonySize = 63;
+        /// <summary>Each zone is a 9 x 9 quarter around its center, far from the others.</summary>
+        public const int ZoneRadius = 4;
+        static readonly int[,] ZoneCenters = { { 51, 51 }, { 53, 35 }, { 30, 48 }, { 39, 25 }, { 18, 35 }, { 25, 16 }, { 9, 21 }, { 9, 7 } };
+
+        /// <summary>The zone's landmark stands on 3 x 3 tiles of its far quarter, beside the two streets.</summary>
+        public static (int x, int y) LandmarkCenter(CampaignSector sector) => (ZoneCenters[sector.Number - 1, 0] - 2, ZoneCenters[sector.Number - 1, 1] - 2);
+
+        /// <summary>Two streets cross each zone through its center; the walkways between zones arrive along them.</summary>
+        public static bool Street(int x, int y)
+        {
+            var zone = ZoneAt(x, y);
+            if (zone == null) return false;
+            var (cx, cy) = ZoneCenter(zone);
+            return x == cx || y == cy;
+        }
 
         public static (int x, int y) ZoneCenter(CampaignSector sector) => (ZoneCenters[sector.Number - 1, 0], ZoneCenters[sector.Number - 1, 1]);
 
@@ -216,15 +228,15 @@ namespace Colonia09.Simulation
             return null;
         }
 
-        /// <summary>Tiles kept for decoration: lamps on the zone corners and the zone's landmark on the 3 x 3 center.</summary>
+        /// <summary>Tiles that take no building: the streets, the lamps on the corners and the far quarter, kept for the landmark and its yard.</summary>
         public static bool Reserved(int x, int y)
         {
             var zone = ZoneAt(x, y);
             if (zone == null) return false;
             var (cx, cy) = ZoneCenter(zone);
             bool corner = System.Math.Abs(x - cx) == ZoneRadius && System.Math.Abs(y - cy) == ZoneRadius;
-            bool landmark = System.Math.Abs(x - cx) <= 1 && System.Math.Abs(y - cy) <= 1;
-            return corner || landmark;
+            bool landmark = x < cx && y < cy;
+            return corner || landmark || x == cx || y == cy;
         }
 
         /// <summary>Road tiles from one zone to the next: along x, then along y, outside both zones.</summary>

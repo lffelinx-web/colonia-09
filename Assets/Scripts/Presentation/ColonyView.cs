@@ -66,7 +66,9 @@ namespace Colonia09.Presentation
         const float LandmarkLift = .3674f;
         /// <summary>Screen height of one Blender unit of height (cos 30° / sqrt 2).</summary>
         const float Rise = .6124f;
-        const float MinZoom = 4f, MaxZoom = 13f;  // Closer than MinZoom the art would blur.
+        const float MinZoom = 4f, MaxZoom = 24f;  // Closer than MinZoom the art would blur.
+        /// <summary>Size in units of each of the 2 x 2 pictures of the island.</summary>
+        const float BgPieceW = 44, BgPieceH = 24;
         const float StartZoom = 6.2f;
 
         GameController game;
@@ -317,8 +319,8 @@ namespace Colonia09.Presentation
             if (path.Points.Count > 0)
             {
                 var first = steps[0]; var last = steps[steps.Count - 1];
-                path.Points.Insert(0, Vector3.Lerp(TileWorld(first.x, first.y), path.Points[0], .75f));
-                path.Points.Add(Vector3.Lerp(TileWorld(last.x, last.y), path.Points[path.Points.Count - 1], .75f));
+                path.Points.Insert(0, TileWorld(first.x, first.y));  // Along the zone's street, from its center.
+                path.Points.Add(TileWorld(last.x, last.y));
             }
             for (int i = 1; i < path.Points.Count; i++) path.Length += Vector3.Distance(path.Points[i - 1], path.Points[i]);
             return made;
@@ -332,12 +334,16 @@ namespace Colonia09.Presentation
             nightLayers.Clear();
             pulses.Clear(); drones.Clear(); blinks.Clear(); frames.Clear(); puffs.Clear(); linkBuilds.Clear(); sparks.Clear(); roadPaths.Clear(); rises.Clear();
             float half = (CampaignData.ColonySize - 1) / 2f;
-            // A wide, softer picture of the whole island and its sea lies behind, for zooming out.
-            Put("colony_overview", TileWorld(half, half), -5100);
-            // The island comes in 3 x 3 pieces of 28/3 x 5 units around the map center.
-            for (int j = 0; j < 3; j++)
-                for (int i = 0; i < 3; i++)
-                    Put($"colony_terrain_{i}_{j}", TileWorld(half, half) + new Vector3((i - 1) * 28f / 3, (1 - j) * 5f, 0), -5000);
+            // The whole island and its sea come in 2 x 2 pieces of 44 x 24 units around the map center.
+            for (int j = 0; j < 2; j++)
+                for (int i = 0; i < 2; i++)
+                    Put($"colony_bg_{i}_{j}", TileWorld(half, half) + new Vector3((i - .5f) * BgPieceW, (.5f - j) * BgPieceH, 0), -5100);
+            // A sharper close-up of every zone's platform, with its paving and streets, lies over it.
+            foreach (var sector in CampaignData.Sectors)
+            {
+                var (zx, zy) = CampaignData.ZoneCenter(sector);
+                Put($"colony_zone_{sector.Number}", TileWorld(zx, zy), -5000);
+            }
             var lift = new Vector3(0, SpriteLift, 0);
 
             // Lit walkways are the energy links: they join each connected zone to the one before it.
@@ -377,30 +383,18 @@ namespace Colonia09.Presentation
                 bool free = SaveGame.Completed(sector.Id);
                 bool next = !free && CampaignDirector.Unlocked(sector);
                 bool connected = state.Connected.Contains(sector.Id);
-                for (int y = cy - CampaignData.ZoneRadius; y <= cy + CampaignData.ZoneRadius; y++)
-                    for (int x = cx - CampaignData.ZoneRadius; x <= cx + CampaignData.ZoneRadius; x++)
-                    {
-                        var pos = TileWorld(x, y);
-                        if (free)
-                        {
-                            Put("tile_pave", pos + lift, -3000 + x + y);
-                            bool corner = System.Math.Abs(x - cx) == CampaignData.ZoneRadius && System.Math.Abs(y - cy) == CampaignData.ZoneRadius;
-                            if (corner) Put("deco_lamp", pos + lift, Depth(x, y));
-                        }
-                        else
-                        {
-                            // Enemy ground: a red deck with a red grid; the next battle glows amber.
-                            var tint = next ? new Color(1f, .45f, .2f, .32f) : new Color(.6f, .06f, .05f, .5f);
-                            Put(diamond, pos, -2500 + x + y, tint, .96f);
-                            Put(outline, pos, -2490 + x + y, new Color(1f, .25f, .2f, next ? .55f : .35f), .94f);
-                        }
-                    }
+                int rad = CampaignData.ZoneRadius;
+                float side = rad * 2 + 1;
+                var (lx, ly) = CampaignData.LandmarkCenter(sector);
                 if (free)
                 {
-                    // The zone's landmark stands on its 3 x 3 center: what this place is for.
+                    // Lamps on the corners and where the streets leave the zone.
+                    foreach (var (dx, dy) in new[] { (-rad, -rad), (rad, -rad), (rad, rad), (-rad, rad), (1, -rad), (-rad, 1), (1, rad), (rad, 1) })
+                        Put("deco_lamp", TileWorld(cx + dx, cy + dy) + lift, Depth(cx + dx, cy + dy));
+                    // The zone's landmark stands in its far quarter: what this place is for.
                     var lmName = LandmarkFor(sector);
-                    int lmOrder = Depth(cx + 1, cy + 1) + 1;
-                    var landmark = Put(lmName, TileWorld(cx, cy) + new Vector3(0, LandmarkLift, 0), lmOrder);
+                    int lmOrder = Depth(lx + 1, ly + 1) + 1;
+                    var landmark = Put(lmName, TileWorld(lx, ly) + new Vector3(0, LandmarkLift, 0), lmOrder);
                     // Until the zone is connected its landmark stands dark and idle.
                     if (landmark != null && !connected) Darken(landmark);
                     AddMovingPart(sector, lmName, lmOrder, connected);
@@ -408,11 +402,15 @@ namespace Colonia09.Presentation
                 }
                 else
                 {
-                    foreach (var (dx, dy) in new[] { (-1, 1), (1, -1), (0, 2), (-2, 0) })
+                    // Enemy ground: the whole platform glows red; the next battle glows amber.
+                    var tint = next ? new Color(1f, .45f, .2f, .3f) : new Color(.6f, .06f, .05f, .48f);
+                    Put(diamond, TileWorld(cx, cy), -2500, tint, side * .99f);
+                    Put(outline, TileWorld(cx, cy), -2490, new Color(1f, .25f, .2f, next ? .8f : .5f), side * .985f);
+                    foreach (var (dx, dy) in new[] { (-3, 0), (3, 0), (0, 3), (0, -3), (-2, 2), (2, -2), (2, 2), (1, 0), (0, 1) })
                         Put("deco_barricade", TileWorld(cx + dx, cy + dy) + lift, Depth(cx + dx, cy + dy));
-                    // Enemy pylons on the corners, their red lights blinking out of step.
+                    // Enemy pylons on the corners and the middle of each side, their red lights blinking out of step.
                     int k = 0;
-                    foreach (var (dx, dy) in new[] { (-2, -2), (2, -2), (2, 2), (-2, 2) })
+                    foreach (var (dx, dy) in new[] { (-rad, -rad), (rad, -rad), (rad, rad), (-rad, rad), (-rad, 0), (rad, 0), (0, rad), (0, -rad) })
                     {
                         int px = cx + dx, py = cy + dy;
                         var beacon = Put("deco_beacon", TileWorld(px, py) + lift, Depth(px, py) + 1);
@@ -421,7 +419,7 @@ namespace Colonia09.Presentation
                         blinks.Add(new Blink { R = Light(top, Color.red, .55f, Depth(px, py) * 2 + 4), Color = new Color(1f, .2f, .12f, 1), Rate = 1.1f, Phase = k++ * .37f + sector.Number * .21f, Base = 0 });
                     }
                 }
-                if (sector.Number == 1) Put("deco_ship", TileWorld(cx, cy) + lift, Depth(cx + 1, cy + 1) + 2, 1.35f);
+                if (sector.Number == 1) Put("deco_ship", TileWorld(lx, ly) + lift, Depth(lx + 1, ly + 1) + 2, 1.35f);
             }
 
             foreach (var b in Colony.Saved)
@@ -523,7 +521,7 @@ namespace Colonia09.Presentation
                 night.Add(n ?? d);
             }
             if (day.Count == 0) return;
-            var (cx, cy) = CampaignData.ZoneCenter(sector);
+            var (cx, cy) = CampaignData.LandmarkCenter(sector);
             var r = Put(day[0], TileWorld(cx, cy) + new Vector3(0, LandmarkLift, 0), order, Color.white, 1, night[0]);
             r.sortingOrder += 1;  // Just over the landmark's own night layer.
             if (r.transform.childCount > 0) r.transform.GetChild(0).GetComponent<SpriteRenderer>().sortingOrder += 1;
@@ -535,7 +533,7 @@ namespace Colonia09.Presentation
         /// <summary>Lights and smoke that show a connected zone at work.</summary>
         void AddZoneLife(CampaignSector sector)
         {
-            var (cx, cy) = CampaignData.ZoneCenter(sector);
+            var (cx, cy) = CampaignData.LandmarkCenter(sector);
             int top = Depth(cx + 2, cy + 2) * 2 + 8;
             switch (sector.Id)
             {
@@ -773,7 +771,7 @@ namespace Colonia09.Presentation
         /// </summary>
         void Clamp()
         {
-            const float HalfW = 22, HalfH = 15;
+            const float HalfW = BgPieceW, HalfH = BgPieceH;
             float aspect = Screen.width / (float)Mathf.Max(1, Screen.height);
             zoom = Mathf.Min(zoom, MaxZoom);
             float mapY = -(CampaignData.ColonySize - 1) * .25f;

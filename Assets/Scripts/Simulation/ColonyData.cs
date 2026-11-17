@@ -212,11 +212,14 @@ namespace Colonia09.Simulation
         {
             switch (sectorId)
             {
-                case "landing": return 4;
-                case "camp": return 5;
-                default: return 6;
+                case "landing": case "camp": return 12;
+                case "port": case "core": return 16;
+                default: return 14;
             }
         }
+
+        /// <summary>Each building of a kind already standing makes the next one of that kind a fifth dearer.</summary>
+        public static int FirstCost(int baseCost, int alreadyBuilt) => (int)Math.Round(baseCost * (1 + .2 * alreadyBuilt) / 5.0) * 5;
 
         public static int UpgradeMaterials(BuildingType type, int toLevel) => Buildings[type].MaterialCost[toLevel - 1];
         public static int UpgradeData(BuildingType type, int toLevel) => Buildings[type].DataCost[toLevel - 1];

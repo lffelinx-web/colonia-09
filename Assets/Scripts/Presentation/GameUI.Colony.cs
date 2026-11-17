@@ -55,7 +55,7 @@ namespace Colonia09.Presentation
 
         static string CostText(BuildingType type, int level)
         {
-            int m = ColonyData.UpgradeMaterials(type, level), d = ColonyData.UpgradeData(type, level);
+            int m = Colony.Materials(type, level), d = ColonyData.UpgradeData(type, level);
             return d > 0 ? $"{m} materiales · {d} datos" : $"{m} materiales";
         }
 
@@ -277,6 +277,8 @@ namespace Colonia09.Presentation
             int built = Colony.CountIn(sector.Id), capacity = ColonyData.LotsFor(sector.Id);
             bool free = Colony.WorkersFree;
             pickerTitle.text = $"Construir · {sector.Name} <size=26><color=#99b5c7>{built}/{capacity} edificios · obras {Colony.WorkCount()}/{ColonyData.MaxWorks}</color></size>";
+            // The price of each kind grows with how many already stand, so it is read again every time.
+            foreach (var pair in PickerButtons) pair.Value.GetComponentInChildren<Text>().text = $"CONSTRUIR\n<size=20>{CostText(pair.Key, 1)}</size>";
             foreach (var pair in PickerButtons) pair.Value.interactable = Colony.CanAfford(pair.Key, 1) && built < capacity && free && Colony.RefuseType(pair.Key) == null;
             if (!free) ShowMapNotice(Colony.RefuseWork(), 2.6f);
             infoSheet.SetActive(false);

@@ -227,7 +227,14 @@ namespace Colonia09.Presentation
         }
 
         public static bool CanAfford(BuildingType type, int toLevel) =>
-            Data.materials >= ColonyData.UpgradeMaterials(type, toLevel) && Data.data >= ColonyData.UpgradeData(type, toLevel);
+            Data.materials >= Materials(type, toLevel) && Data.data >= ColonyData.UpgradeData(type, toLevel);
+
+        /// <summary>Materials for a level. A new building costs more for each one of its kind already in the colony.</summary>
+        public static int Materials(BuildingType type, int toLevel)
+        {
+            int cost = ColonyData.UpgradeMaterials(type, toLevel);
+            return toLevel > 1 ? cost : ColonyData.FirstCost(cost, Data.buildings.FindAll(b => b.type == type.ToString()).Count);
+        }
 
         /// <summary>Why this tile cannot take a building, or null when it can.</summary>
         public static string RefuseTile(int x, int y)
@@ -281,7 +288,7 @@ namespace Colonia09.Presentation
 
         static void Pay(BuildingType type, int level)
         {
-            Data.materials -= ColonyData.UpgradeMaterials(type, level);
+            Data.materials -= Materials(type, level);
             Data.data -= ColonyData.UpgradeData(type, level);
         }
 
