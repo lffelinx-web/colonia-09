@@ -1,0 +1,1208 @@
+fileFormatVersion: 2
+guid: e0ebfa935e63c684ab3a674a3b61ff5e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3783278577713227146
+    second: cryo_3_turret_18_0
+  - first:
+      213: -7481313457658461083
+    second: cryo_3_turret_18_1
+  - first:
+      213: -5182772564119481088
+    second: cryo_3_turret_18_2
+  - first:
+      213: 5017506775395215555
+    second: cryo_3_turret_18_3
+  - first:
+      213: 2793708795018639552
+    second: cryo_3_turret_18_4
+  - first:
+      213: 5306197556823200443
+    second: cryo_3_turret_18_5
+  - first:
+      213: 4068536765662364480
+    second: cryo_3_turret_18_6
+  - first:
+      213: -5097009523605271502
+    second: cryo_3_turret_18_7
+  - first:
+      213: 5412875507768570903
+    second: cryo_3_turret_18_8
+  - first:
+      213: 8733824750116570583
+    second: cryo_3_turret_18_9
+  - first:
+      213: 2785356333854215600
+    second: cryo_3_turret_18_10
+  - first:
+      213: -4545166740170810494
+    second: cryo_3_turret_18_11
+  - first:
+      213: 4394581965790044474
+    second: cryo_3_turret_18_12
+  - first:
+      213: -8205247725527142246
+    second: cryo_3_turret_18_13
+  - first:
+      213: -3164546019219759026
+    second: cryo_3_turret_18_14
+  - first:
+      213: 388370691902996237
+    second: cryo_3_turret_18_15
+  - first:
+      213: 6504702303652551579
+    second: cryo_3_turret_18_16
+  - first:
+      213: 2168905585643363117
+    second: cryo_3_turret_18_17
+  - first:
+      213: -7795124795670191550
+    second: cryo_3_turret_18_18
+  - first:
+      213: -3714387219115886064
+    second: cryo_3_turret_18_19
+  - first:
+      213: 7281316310280325875
+    second: cryo_3_turret_18_20
+  - first:
+      213: 1594534679001464247
+    second: cryo_3_turret_18_21
+  - first:
+      213: -5030748370385085845
+    second: cryo_3_turret_18_22
+  - first:
+      213: 3261578801873081817
+    second: cryo_3_turret_18_23
+  - first:
+      213: -6177534350544214649
+    second: cryo_3_turret_18_24
+  - first:
+      213: 4522004705362683011
+    second: cryo_3_turret_18_25
+  - first:
+      213: 2321441324781993183
+    second: cryo_3_turret_18_26
+  - first:
+      213: 360032748540903305
+    second: cryo_3_turret_18_27
+  - first:
+      213: -7442659019430236374
+    second: cryo_3_turret_18_28
+  - first:
+      213: -9113550039692058107
+    second: cryo_3_turret_18_29
+  - first:
+      213: -4788176686415373120
+    second: cryo_3_turret_18_30
+  - first:
+      213: 3298645892257516428
+    second: cryo_3_turret_18_31
+  - first:
+      213: 3205215659766042457
+    second: cryo_3_turret_18_32
+  - first:
+      213: -6323765904487176236
+    second: cryo_3_turret_18_33
+  - first:
+      213: 7321093770443585417
+    second: cryo_3_turret_18_34
+  - first:
+      213: 1661488309262780051
+    second: cryo_3_turret_18_35
+  - first:
+      213: -6299296994316655784
+    second: cryo_3_turret_18_36
+  - first:
+      213: 2655315879360087399
+    second: cryo_3_turret_18_37
+  - first:
+      213: 3863282020798876189
+    second: cryo_3_turret_18_38
+  - first:
+      213: -8474485682967936743
+    second: cryo_3_turret_18_39
+  - first:
+      213: 5785005910113326811
+    second: cryo_3_turret_18_40
+  - first:
+      213: 4866409859182582133
+    second: cryo_3_turret_18_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.3}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cryo_3_turret_18_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 384
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8521fe52d7e08430800000000000000
+      internalID: 3783278577713227146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 524
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5640be64c090d2890800000000000000
+      internalID: -7481313457658461083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 501
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005940cffc71318b0800000000000000
+      internalID: -5182772564119481088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_3
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 497
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c82c8d04d3c1a540800000000000000
+      internalID: 5017506775395215555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_4
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 508
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c878fce85f35c620800000000000000
+      internalID: 2793708795018639552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_5
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 502
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb21e72809663a940800000000000000
+      internalID: 5306197556823200443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_6
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 498
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0430ce0e1a8567830800000000000000
+      internalID: 4068536765662364480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_7
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 492
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c89b8e7d8c349b0800000000000000
+      internalID: -5097009523605271502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_8
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 497
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71435fd78956e1b40800000000000000
+      internalID: 5412875507768570903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 491
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d586312657c43970800000000000000
+      internalID: 8733824750116570583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_10
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 481
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bdc34404d297a620800000000000000
+      internalID: 2785356333854215600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_11
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 487
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28bd23f5ee25ce0c0800000000000000
+      internalID: -4545166740170810494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_12
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 485
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31e04fa301bcfc30800000000000000
+      internalID: 4394581965790044474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_13
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 486
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a907fd9baaa112e80800000000000000
+      internalID: -8205247725527142246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_14
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 486
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40a70979264514d0800000000000000
+      internalID: -3164546019219759026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_15
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 480
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ffc0c2615c36500800000000000000
+      internalID: 388370691902996237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 384
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b10e22848554a50800000000000000
+      internalID: 6504702303652551579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_17
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 467
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b12a78320891e10800000000000000
+      internalID: 2168905585643363117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_18
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 474
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2422d367c4722d390800000000000000
+      internalID: -7795124795670191550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_19
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 470
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ab85ef088d37cc0800000000000000
+      internalID: -3714387219115886064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_20
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 474
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa448b2b9e6c0560800000000000000
+      internalID: 7281316310280325875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_21
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 468
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd7ce3a7dce02610800000000000000
+      internalID: 1594534679001464247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_22
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 469
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a52dcd2013f2ab0800000000000000
+      internalID: -5030748370385085845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_23
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 472
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5d694c3a4734d20800000000000000
+      internalID: 3261578801873081817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_24
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 461
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785e908fc3df44aa0800000000000000
+      internalID: -6177534350544214649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_25
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 460
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384a9c7225361ce30800000000000000
+      internalID: 4522004705362683011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_26
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 477
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdcfa8ad59a673020800000000000000
+      internalID: 2321441324781993183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_27
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 474
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98fb94490e71ff400800000000000000
+      internalID: 360032748540903305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_28
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 473
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2fe0820e0d56b890800000000000000
+      internalID: -7442659019430236374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_29
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 474
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5026869468a268180800000000000000
+      internalID: -9113550039692058107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_30
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 473
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc976c2caafc8db0800000000000000
+      internalID: -4788176686415373120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_31
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 471
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b8fc746f427cd20800000000000000
+      internalID: 3298645892257516428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_32
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 468
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95fcfdc19a63b7c20800000000000000
+      internalID: 3205215659766042457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_33
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 464
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7a0542a687d38a0800000000000000
+      internalID: -6323765904487176236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_34
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 454
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9877d92deffb99560800000000000000
+      internalID: 7321093770443585417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_35
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 466
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396821870dace0710800000000000000
+      internalID: 1661488309262780051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_36
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 466
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853e11f32c66498a0800000000000000
+      internalID: -6299296994316655784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_37
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 468
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76546bb49b399d420800000000000000
+      internalID: 2655315879360087399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_38
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 467
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1aced487822d9530800000000000000
+      internalID: 3863282020798876189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_39
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 467
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911009ccb24946a80800000000000000
+      internalID: -8474485682967936743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_40
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 460
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd617d79938784050800000000000000
+      internalID: 5785005910113326811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cryo_3_turret_18_41
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 469
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579590ccbf5f88340800000000000000
+      internalID: 4866409859182582133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

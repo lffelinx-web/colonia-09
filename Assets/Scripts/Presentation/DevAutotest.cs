@@ -468,6 +468,7 @@ namespace Colonia09.Presentation
             yield return Frames(5);
             report.Add($"Screen {Screen.width}x{Screen.height}, safe area {Screen.safeArea}, insets {ui.DebugSafeInsetTop}/{ui.DebugSafeInsetBottom}");
             Check("sprites load", game.Board.ModuleSprite(ModuleType.Pulse) != null);
+            Check("tilted pieces load (every level, aim directions, enemies)", game.Board.TiltedPiecesLoaded);
             Check("main menu opens first", ui.MainMenuOpen && !ui.ModalOpen);
             Check("campaign is open and multiplayer is marked unavailable", ui.CampaignButton.interactable && !ui.MultiplayerButton.interactable);
             if (Array.IndexOf(Environment.GetCommandLineArgs(), "-colonia-campaign") >= 0)

@@ -16,7 +16,16 @@ namespace Colonia09.Presentation
         bool StandardBoard => W == GameData.Width && H == GameData.Height;
         // Pieces leave a margin inside their cell so a full board still shows the deck between them.
         const float ModuleScale = .82f, EnemyScale = .88f;
-        const int OrderBoard = 0, OrderWreck = 5, OrderLinks = 10, OrderModules = 20, OrderMarks = 25, OrderEnemies = 30, OrderBars = 40, OrderFx = 50;
+        // Ground marks sit under the pieces; pieces sort by row so the nearer ones (lower on screen) cover the ones behind.
+        const int OrderBoard = 0, OrderWreck = 5, OrderLinks = 10, OrderMarks = 15, OrderObjects = 100, OrderAir = 1000,
+            OrderBars = 1100, OrderGlow = 1150, OrderFx = 1200;
+        // Tilted view (Tools/Render/tilt.py): heights rise up the screen, so shots and bars sit at the pieces' height.
+        const float ShotLift = .22f, ModuleBarLift = .3f, EnemyBarLift = .24f;
+        // Height of the spinning hubs, as a fraction of their sprite's width (Tools/Render/out/units/meta_*.txt).
+        const float FanHub = .223f, RotorHub = .458f;
+        const int AimDirections = 24;
+        static int Depth(float row) => OrderObjects + Mathf.RoundToInt(row * 10) * 4;
+        static int Direction(float aim) => Mathf.RoundToInt(Mathf.Repeat(aim, 360f) / (360f / AimDirections)) % AimDirections;
 
         GameController game;
         Camera cam;
@@ -24,8 +33,15 @@ namespace Colonia09.Presentation
         Sprite square, circle, ring;
         readonly Dictionary<ModuleType, Sprite> moduleSprites = new Dictionary<ModuleType, Sprite>();
         readonly Dictionary<EnemyKind, Sprite[]> enemySprites = new Dictionary<EnemyKind, Sprite[]>();
-        Sprite boardSprite, generatorBase, generatorFan, pulseBase, pulseBarrel, cryoBase, cryoTurret, helicopterRotor;
-        readonly Dictionary<EnemyKind, Sprite> enemyTurrets = new Dictionary<EnemyKind, Sprite>();
+        Sprite boardSprite, helicopterRotor;
+        // Tilted board pieces, by module and level (index 0-2): whole piece, base under an aiming part, the aiming part
+        // in AimDirections directions, and the generator fan.
+        readonly Dictionary<ModuleType, Sprite[]> unitFull = new Dictionary<ModuleType, Sprite[]>();
+        readonly Dictionary<ModuleType, Sprite[]> unitBase = new Dictionary<ModuleType, Sprite[]>();
+        readonly Dictionary<ModuleType, Sprite[][]> unitAim = new Dictionary<ModuleType, Sprite[][]>();
+        readonly Sprite[] unitFan = new Sprite[3];
+        readonly Dictionary<EnemyKind, Sprite[]> unitEnemy = new Dictionary<EnemyKind, Sprite[]>();
+        readonly Dictionary<EnemyKind, Sprite[]> enemyTurrets = new Dictionary<EnemyKind, Sprite[]>();
         readonly Dictionary<GameModule, float> fanAngle = new Dictionary<GameModule, float>();
         readonly Dictionary<GameModule, float> moduleAim = new Dictionary<GameModule, float>();
         readonly Dictionary<int, float> enemyAim = new Dictionary<int, float>();
@@ -62,18 +78,50 @@ namespace Colonia09.Presentation
                 enemySprites[k] = frames.ToArray();
             }
             boardSprite = Resources.Load<Sprite>("Sprites/Board/board");
-            generatorBase = Resources.Load<Sprite>("Sprites/Modules/generator_base");
-            generatorFan = Resources.Load<Sprite>("Sprites/Modules/generator_fan");
-            pulseBase = Resources.Load<Sprite>("Sprites/Modules/pulse_base");
-            pulseBarrel = Resources.Load<Sprite>("Sprites/Modules/pulse_barrel");
-            cryoBase = Resources.Load<Sprite>("Sprites/Modules/cryo_base");
-            cryoTurret = Resources.Load<Sprite>("Sprites/Modules/cryo_turret");
-            helicopterRotor = Resources.Load<Sprite>("Sprites/Enemies/helicopter_rotor");
-            foreach (var k in new[] { EnemyKind.Tank, EnemyKind.Hunter, EnemyKind.Commander })
+            const string Units = "Sprites/Units/";
+            foreach (var t in GameData.ModuleTypes)
             {
-                var turret = Resources.Load<Sprite>($"Sprites/Enemies/{k.ToString().ToLowerInvariant()}_turret");
+                string n = t.ToString().ToLowerInvariant();
+                string part = t == ModuleType.Pulse ? "barrel" : t == ModuleType.Cryo ? "turret" : null;
+                var full = new Sprite[3];
+                var bases = new Sprite[3];
+                var aims = new Sprite[3][];
+                for (int l = 0; l < 3; l++)
+                {
+                    full[l] = Resources.Load<Sprite>($"{Units}Modules/{n}_{l + 1}");
+                    bases[l] = Resources.Load<Sprite>($"{Units}Modules/{n}_{l + 1}_base");
+                    if (part != null) aims[l] = LoadDirections($"{Units}Modules/{n}_{l + 1}_{part}_");
+                }
+                unitFull[t] = full;
+                unitBase[t] = bases;
+                unitAim[t] = aims;
+            }
+            for (int l = 0; l < 3; l++) unitFan[l] = Resources.Load<Sprite>($"{Units}Modules/generator_{l + 1}_fan");
+            foreach (EnemyKind k in System.Enum.GetValues(typeof(EnemyKind)))
+            {
+                string n = k.ToString().ToLowerInvariant();
+                var frames = new List<Sprite>();
+                for (int i = 0; i < 4; i++)
+                {
+                    var frame = Resources.Load<Sprite>($"{Units}Enemies/{n}_{i}");
+                    if (frame != null) frames.Add(frame);
+                }
+                unitEnemy[k] = frames.Count > 0 ? frames.ToArray() : enemySprites[k];
+                var turret = LoadDirections($"{Units}Enemies/{n}_turret_");
                 if (turret != null) enemyTurrets[k] = turret;
             }
+            helicopterRotor = Resources.Load<Sprite>($"{Units}Enemies/helicopter_rotor");
+        }
+
+        static Sprite[] LoadDirections(string prefix)
+        {
+            var frames = new Sprite[AimDirections];
+            for (int d = 0; d < AimDirections; d++)
+            {
+                frames[d] = Resources.Load<Sprite>($"{prefix}{d:00}");
+                if (frames[d] == null) return null;
+            }
+            return frames;
         }
 
         static Vector2 Rotate(Vector2 v, float degrees) => Quaternion.Euler(0, 0, degrees) * v;
@@ -161,6 +209,18 @@ namespace Colonia09.Presentation
         }
 
         public Sprite ModuleSprite(ModuleType type) => moduleSprites[type];
+
+        public bool TiltedPiecesLoaded
+        {
+            get
+            {
+                foreach (var t in GameData.ModuleTypes)
+                    for (int l = 0; l < 3; l++)
+                        if (unitFull[t][l] == null) return false;
+                return unitAim[ModuleType.Pulse][2] != null && unitAim[ModuleType.Cryo][2] != null && unitFan[2] != null
+                    && enemyTurrets.ContainsKey(EnemyKind.Tank) && helicopterRotor != null && unitEnemy[EnemyKind.Scout] != enemySprites[EnemyKind.Scout];
+            }
+        }
         public Sprite EnemySprite(EnemyKind kind) => enemySprites[kind].Length > 0 ? enemySprites[kind][0] : null;
 
         public void Shake(float power)
@@ -326,7 +386,7 @@ namespace Colonia09.Presentation
             var pos = new Vector2(cell.y, -cell.x);
             float pulse = Mathf.PingPong(t * 1.6f, 1);
             Draw(square, pos, Vector2.one * .96f, new Color(1, .83f, .55f, .12f + pulse * .12f), OrderMarks);
-            Draw(ring, pos, Vector2.one * (1.02f + pulse * .16f), new Color(1, .83f, .55f, .95f - pulse * .5f), OrderMarks + 1);
+            Draw(ring, pos, Vector2.one * (1.02f + pulse * .16f), new Color(1, .83f, .55f, .95f - pulse * .5f), OrderGlow);
         }
 
         void DrawBoard(float t)
@@ -416,49 +476,52 @@ namespace Colonia09.Presentation
                 // Firing: the whole module dips slightly, as in the prototype.
                 float fire = Mathf.Clamp01((float)m.Fire / .18f);
                 pos.y -= fire * .05f;
-                if (m.Type == ModuleType.Generator && generatorBase != null && generatorFan != null)
+                // The piece's look follows its level (Tools/Render/render_units.py adds parts at levels 2 and 3).
+                int level = Mathf.Clamp(m.Level, 1, 3) - 1;
+                int depth = Depth(m.R);
+                var size = Vector2.one * ModuleScale;
+                var aimFrames = unitAim[m.Type][level];
+                float aim = 0;
+                if (m.Type == ModuleType.Generator && unitFan[level] != null)
                 {
                     // Fan turns slowly and continuously; speed rises with level. Stops without power.
+                    // It is flat, so in the tilted view it still turns as a 2D rotation, about its raised hub.
                     fanAngle.TryGetValue(m, out var angle);
                     if (m.Powered && !m.IsDeploying && !jam) angle += Time.unscaledDeltaTime * (38 + m.Level * 16);
                     fanAngle[m] = angle;
-                    Draw(generatorBase, pos, Vector2.one * ModuleScale, color, OrderModules);
-                    Draw(generatorFan, pos, Vector2.one * ModuleScale, color, OrderModules + 1, -angle);
+                    var fan = unitFan[level];
+                    var hub = new Vector2(0, FanHub * fan.bounds.size.x * ModuleScale);
+                    Draw(unitBase[m.Type][level], pos, size, color, depth);
+                    Draw(fan, pos + hub + Rotate(-hub, -angle), size, color, depth + 1, -angle);
                 }
-                float aim = 0;
-                if (m.Type == ModuleType.Pulse && pulseBase != null && pulseBarrel != null)
+                else if (aimFrames != null)
                 {
                     // The turret turns to its target; the barrel slides back along its line when it fires.
                     aim = ModuleAim(m, pos);
-                    Draw(pulseBase, pos, Vector2.one * ModuleScale, color, OrderModules);
-                    Draw(pulseBarrel, pos + Rotate(new Vector2(0, -fire * .1f), aim), Vector2.one * ModuleScale, color, OrderModules + 1, aim);
-                }
-                else if (m.Type == ModuleType.Cryo && cryoBase != null && cryoTurret != null)
-                {
-                    aim = ModuleAim(m, pos);
-                    Draw(cryoBase, pos, Vector2.one * ModuleScale, color, OrderModules);
-                    Draw(cryoTurret, pos + Rotate(new Vector2(0, -fire * .05f), aim), Vector2.one * ModuleScale, color, OrderModules + 1, aim);
+                    float recoil = m.Type == ModuleType.Pulse ? .1f : .05f;
+                    Draw(unitBase[m.Type][level], pos, size, color, depth);
+                    Draw(aimFrames[Direction(aim)], pos + Rotate(new Vector2(0, -fire * recoil), aim), size, color, depth + 1);
                 }
                 else
                 {
-                    Draw(moduleSprites[m.Type], pos, Vector2.one * ModuleScale, color, OrderModules);
+                    Draw(unitFull[m.Type][level] ?? moduleSprites[m.Type], pos, size, color, depth);
                 }
                 if (fire > 0 && (m.Type == ModuleType.Pulse || m.Type == ModuleType.Cryo || m.Type == ModuleType.Tesla))
                 {
                     var bloom = m.Type == ModuleType.Tesla ? Hex("#caa4ff") : m.Type == ModuleType.Cryo ? Hex("#a9efff") : Hex("#ffe7a7");
                     float reach = m.Type == ModuleType.Pulse ? .38f - fire * .1f : m.Type == ModuleType.Cryo ? .36f : 0;
-                    var muzzle = pos + Rotate(new Vector2(0, reach), aim);
-                    Draw(circle, muzzle, Vector2.one * (.18f + fire * .26f), Alpha(bloom, fire * .7f), OrderMarks);
-                    Draw(circle, muzzle, Vector2.one * (.08f + fire * .1f), new Color(1, 1, 1, fire), OrderMarks + 1);
+                    var muzzle = pos + Rotate(new Vector2(0, reach), aim) + new Vector2(0, ShotLift);
+                    Draw(circle, muzzle, Vector2.one * (.18f + fire * .26f), Alpha(bloom, fire * .7f), OrderGlow);
+                    Draw(circle, muzzle, Vector2.one * (.08f + fire * .1f), new Color(1, 1, 1, fire), OrderGlow + 1);
                 }
-                if (beingHit) Draw(circle, pos, Vector2.one * .86f, new Color(1, .82f, .62f, .36f), OrderMarks);
-                if (!m.IsDeploying && m.Hp < m.MaxHp * .35) DrawSmoke(pos, m.C * 3 + m.R * 7, .5f, t);
+                if (beingHit) Draw(circle, pos + new Vector2(0, ShotLift * .6f), Vector2.one * .86f, new Color(1, .82f, .62f, .36f), depth + 2);
+                if (!m.IsDeploying && m.Hp < m.MaxHp * .35) DrawSmoke(pos + new Vector2(0, ShotLift), m.C * 3 + m.R * 7, .5f, t);
 
                 if (m == game.Selected)
                     Draw(ring, pos, Vector2.one * .98f, Alpha(Hex("#ffd38b"), .7f + .3f * Mathf.Sin(t * 6)), OrderMarks);
 
                 for (int i = 0; i < m.Level - 1; i++)
-                    Draw(circle, pos + new Vector2(-.36f + i * .13f, -.38f), Vector2.one * .1f, Hex(def.Color), OrderMarks);
+                    Draw(circle, pos + new Vector2(-.36f + i * .13f, -.38f), Vector2.one * .1f, Hex(def.Color), OrderGlow);
 
                 if (m.IsDeploying)
                 {
@@ -468,9 +531,9 @@ namespace Colonia09.Presentation
                 else if (m.Hp < m.MaxHp - .5)
                 {
                     float ratio = (float)(m.Hp / m.MaxHp);
-                    Bar(pos.x, pos.y + .42f, .74f, ratio, ratio > .5f ? Hex("#91e5bd") : ratio > .25f ? Hex("#ffd38b") : Hex("#ff8c8a"));
+                    Bar(pos.x, pos.y + .42f + ModuleBarLift, .74f, ratio, ratio > .5f ? Hex("#91e5bd") : ratio > .25f ? Hex("#ffd38b") : Hex("#ff8c8a"));
                 }
-                if (jam) Draw(ring, pos, Vector2.one * (.82f + .1f * Mathf.Sin(t * 9)), new Color(.87f, .65f, 1f, .75f), OrderMarks);
+                if (jam) Draw(ring, pos + new Vector2(0, ShotLift * .5f), Vector2.one * (.82f + .1f * Mathf.Sin(t * 9)), new Color(.87f, .65f, 1f, .75f), depth + 3);
             }
         }
 
@@ -568,28 +631,31 @@ namespace Colonia09.Presentation
                 DrawThreats(e, pos, t);
 
                 var tint = e.Slow > 0 ? new Color(.72f, .92f, 1f, 1f) : Color.white;
-                int order = OrderEnemies + (air ? 4 : 0);
+                // Ground units sort with the modules by row, a little in front of a module on the same row.
+                int order = air ? OrderAir + Mathf.RoundToInt((float)e.Y * 10) * 4 : Depth((float)e.Y) + 2;
                 float rot = e.Kind == EnemyKind.Helicopter ? Mathf.Sin(t * 1.7f + e.Id) * 3 : 0;
-                var frames = enemySprites[e.Kind];
+                var frames = unitEnemy[e.Kind];
                 Draw(frames[Mathf.FloorToInt(t * fps + (float)e.Phase * 2) % frames.Length], pos, Vector2.one * EnemyScale, tint, order, rot);
                 float aim = 0;
                 if (enemyTurrets.TryGetValue(e.Kind, out var turret))
                 {
-                    // The cannon swings toward the module it is about to hit.
+                    // The cannon swings toward the module it is about to hit, one rendered direction at a time.
                     aim = EnemyAim(e, pos);
-                    Draw(turret, pos, Vector2.one * EnemyScale, tint, order + 1, aim);
+                    Draw(turret[Direction(aim)], pos, Vector2.one * EnemyScale, tint, order + 1);
                 }
                 if (e.Kind == EnemyKind.Helicopter && helicopterRotor != null)
                 {
+                    // Flat blades: a 2D spin about the raised hub.
                     float spin = t * 600 + e.Id * 37;
-                    Draw(helicopterRotor, pos, Vector2.one * EnemyScale, new Color(tint.r, tint.g, tint.b, .35f), order + 1, rot - spin + 14);
-                    Draw(helicopterRotor, pos, Vector2.one * EnemyScale, tint, order + 2, rot - spin);
+                    var hub = new Vector2(0, RotorHub * helicopterRotor.bounds.size.x * EnemyScale);
+                    Draw(helicopterRotor, pos + hub + Rotate(-hub, rot - spin + 14), Vector2.one * EnemyScale, new Color(tint.r, tint.g, tint.b, .35f), order + 1, rot - spin + 14);
+                    Draw(helicopterRotor, pos + hub + Rotate(-hub, rot - spin), Vector2.one * EnemyScale, tint, order + 2, rot - spin);
                 }
-                if (e.Hit > 0) Draw(circle, pos, Vector2.one * .56f, new Color(1, 1, 1, (float)(e.Hit / .2) * .3f), order + 1);
+                if (e.Hit > 0) Draw(circle, pos + new Vector2(0, ShotLift * .6f), Vector2.one * .56f, new Color(1, 1, 1, (float)(e.Hit / .2) * .3f), order + 1);
 
                 if (charging)
                 {
-                    var muzzle = pos + Rotate(new Vector2(0, -.46f), aim);
+                    var muzzle = pos + Rotate(new Vector2(0, -.46f), aim) + new Vector2(0, ShotLift);
                     var chargeColor = e.Kind == EnemyKind.Bomber ? Hex("#ff7a3c") : EnemyBarColor(e);
                     Draw(circle, muzzle, Vector2.one * (.08f + charge * .3f), Alpha(chargeColor, .35f + charge * .35f), order + 2);
                     Draw(circle, muzzle, Vector2.one * (.04f + charge * .14f), new Color(1, 1, 1, .5f + charge * .5f), order + 3);
@@ -597,14 +663,14 @@ namespace Colonia09.Presentation
                 if (e.Hp < e.MaxHp * .4f) DrawSmoke(pos, e.Id, .55f, t);
 
                 float bw = EnemyBarWidth(e.Kind);
-                float by = pos.y + EnemyBarOffset(e.Kind);
+                float by = pos.y + EnemyBarOffset(e.Kind) + EnemyBarLift;
                 Bar(pos.x, by, bw, (float)(e.Hp / e.MaxHp), EnemyBarColor(e));
                 if (e.ArmorMax > 0 && e.Armor > 0) Bar(pos.x, by + .08f, bw, (float)(e.Armor / e.ArmorMax), Hex("#9adaff"));
                 if (e.ArrivalShieldUntil > sim.Elapsed)
                     Draw(ring, pos, Vector2.one * .96f, new Color(.7f, .91f, 1f, .4f + .25f * Mathf.Sin(t * 6) * Mathf.Sin(t * 6)), order + 1);
 
                 string tag = EnemyTag(e.Kind);
-                if (tag != null) game.Ui.WorldLabel(tag, EnemyBarColor(e), e.C, e.Y - EnemyBarOffset(e.Kind) - .17, 20);
+                if (tag != null) game.Ui.WorldLabel(tag, EnemyBarColor(e), e.C, e.Y - EnemyBarOffset(e.Kind) - EnemyBarLift - .17, 20);
             }
         }
 
@@ -673,6 +739,7 @@ namespace Colonia09.Presentation
                         Draw(ring, pos, Vector2.one * (.45f + p * .85f) * power, Alpha(col, a * .9f), OrderFx);
                         break;
                     case "impact":
+                        pos.y += ShotLift * .6f;
                         Draw(circle, pos, Vector2.one * (.18f + p * .5f) * power, Alpha(col, a * .75f), OrderFx);
                         Draw(circle, pos, Vector2.one * (.08f + p * .16f) * power, new Color(1, 1, 1, a * .8f), OrderFx + 1);
                         break;
@@ -703,7 +770,9 @@ namespace Colonia09.Presentation
         void DrawBeam(FxEvent fx, Vector2 from, Color col, float a)
         {
             if (!fx.HasTarget) return;
-            var to = new Vector2((float)fx.X2, -(float)fx.Y2);
+            // Shots leave the guns and strike the bodies, both above the ground in the tilted view.
+            from += new Vector2(0, ShotLift);
+            var to = new Vector2((float)fx.X2, -(float)fx.Y2 + ShotLift * .6f);
             float width = .07f * (float)fx.Power * a;
             bool lightning = fx.Color == "#c8adff";
             if (!lightning)

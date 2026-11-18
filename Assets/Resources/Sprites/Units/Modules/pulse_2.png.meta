@@ -1,0 +1,1733 @@
+fileFormatVersion: 2
+guid: 23d0256d811f4e04dbb2760ff45af4ef
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8583433038816132907
+    second: pulse_2_0
+  - first:
+      213: -5344278378887611001
+    second: pulse_2_1
+  - first:
+      213: 3212856040873442667
+    second: pulse_2_2
+  - first:
+      213: -8157424967652337832
+    second: pulse_2_3
+  - first:
+      213: -5136978490336500854
+    second: pulse_2_4
+  - first:
+      213: -525603787208498078
+    second: pulse_2_5
+  - first:
+      213: 2975728632887504263
+    second: pulse_2_6
+  - first:
+      213: 6044517846484525624
+    second: pulse_2_7
+  - first:
+      213: -3532503635157645702
+    second: pulse_2_8
+  - first:
+      213: 8603756169085278678
+    second: pulse_2_9
+  - first:
+      213: -6999479126254425810
+    second: pulse_2_10
+  - first:
+      213: -3371533537157019258
+    second: pulse_2_11
+  - first:
+      213: 8123763776567277102
+    second: pulse_2_12
+  - first:
+      213: -1441543163414473201
+    second: pulse_2_13
+  - first:
+      213: 4991834072017896371
+    second: pulse_2_14
+  - first:
+      213: 5789553603510400691
+    second: pulse_2_15
+  - first:
+      213: 6106333172616307164
+    second: pulse_2_16
+  - first:
+      213: 6832403707951108493
+    second: pulse_2_17
+  - first:
+      213: 6063326531163482661
+    second: pulse_2_18
+  - first:
+      213: -162208215792156625
+    second: pulse_2_19
+  - first:
+      213: -5296649027934045432
+    second: pulse_2_20
+  - first:
+      213: 24997388587758773
+    second: pulse_2_21
+  - first:
+      213: -5454922082451965270
+    second: pulse_2_22
+  - first:
+      213: -1729901802529525454
+    second: pulse_2_23
+  - first:
+      213: -8529970523991577765
+    second: pulse_2_24
+  - first:
+      213: -96715537602176445
+    second: pulse_2_25
+  - first:
+      213: 1389880836216138449
+    second: pulse_2_26
+  - first:
+      213: -5104582556601837809
+    second: pulse_2_27
+  - first:
+      213: 3000552675253015539
+    second: pulse_2_28
+  - first:
+      213: 9194492134778436601
+    second: pulse_2_29
+  - first:
+      213: 210013998995255086
+    second: pulse_2_30
+  - first:
+      213: -7291059613838374148
+    second: pulse_2_31
+  - first:
+      213: -1987203220384574170
+    second: pulse_2_32
+  - first:
+      213: 6316769729540224923
+    second: pulse_2_33
+  - first:
+      213: -6570161614414738286
+    second: pulse_2_34
+  - first:
+      213: -4153531508866383572
+    second: pulse_2_35
+  - first:
+      213: 4918736076363584295
+    second: pulse_2_36
+  - first:
+      213: 1742654510321827214
+    second: pulse_2_37
+  - first:
+      213: 1738690797122535794
+    second: pulse_2_38
+  - first:
+      213: 5734257953982361637
+    second: pulse_2_39
+  - first:
+      213: 3750049994347594817
+    second: pulse_2_40
+  - first:
+      213: 7385053339149836478
+    second: pulse_2_41
+  - first:
+      213: -7777831277177954956
+    second: pulse_2_42
+  - first:
+      213: 2955288874376524573
+    second: pulse_2_43
+  - first:
+      213: 5554915612065377372
+    second: pulse_2_44
+  - first:
+      213: -1381758693570518301
+    second: pulse_2_45
+  - first:
+      213: 7655729487153808322
+    second: pulse_2_46
+  - first:
+      213: 5977973931818136829
+    second: pulse_2_47
+  - first:
+      213: -8290129050309158270
+    second: pulse_2_48
+  - first:
+      213: 7560770043398413575
+    second: pulse_2_49
+  - first:
+      213: -3937903576180030089
+    second: pulse_2_50
+  - first:
+      213: 5617995189457714341
+    second: pulse_2_51
+  - first:
+      213: 8726698185223017801
+    second: pulse_2_52
+  - first:
+      213: 1758617053826173184
+    second: pulse_2_53
+  - first:
+      213: 555918203898314916
+    second: pulse_2_54
+  - first:
+      213: 6326865949537179389
+    second: pulse_2_55
+  - first:
+      213: 6463601957220098204
+    second: pulse_2_56
+  - first:
+      213: -2580708705154238182
+    second: pulse_2_57
+  - first:
+      213: -6571971982069811994
+    second: pulse_2_58
+  - first:
+      213: -8039118669546147028
+    second: pulse_2_59
+  - first:
+      213: -1503009621141323525
+    second: pulse_2_60
+  - first:
+      213: 962273034413298154
+    second: pulse_2_61
+  - first:
+      213: -7340403039088468234
+    second: pulse_2_62
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.3}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pulse_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 69
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2fbcff2fda7e1770800000000000000
+      internalID: 8583433038816132907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 618
+        width: 51
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d7a9d212f45d5b0800000000000000
+      internalID: -5344278378887611001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 613
+        width: 47
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6dbab6fb8b569c20800000000000000
+      internalID: 3212856040873442667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 627
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8571e2936310bce80800000000000000
+      internalID: -8157424967652337832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_4
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 622
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83aba8a749c5b8b0800000000000000
+      internalID: -5136978490336500854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_5
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 590
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26466dae32ea4b8f0800000000000000
+      internalID: -525603787208498078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 625
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78de73fec69eb4920800000000000000
+      internalID: 2975728632887504263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_7
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 602
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8322836c4f072e350800000000000000
+      internalID: 6044517846484525624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_8
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 624
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7607aae8a60afec0800000000000000
+      internalID: -3532503635157645702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_9
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 589
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d95760b6aea66770800000000000000
+      internalID: 8603756169085278678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_10
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 632
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29e7dac1dadcde90800000000000000
+      internalID: -6999479126254425810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_11
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 562
+        width: 87
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68980717c18e531d0800000000000000
+      internalID: -3371533537157019258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_12
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 621
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e267a7dfc186db070800000000000000
+      internalID: 8123763776567277102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_13
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 620
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f069948612c9efbe0800000000000000
+      internalID: -1441543163414473201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 611
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b3815004ae864540800000000000000
+      internalID: 4991834072017896371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_15
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 620
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6f159f350a85050800000000000000
+      internalID: 5789553603510400691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_16
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 621
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1aaf1faad0eb450800000000000000
+      internalID: 6106333172616307164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_17
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 624
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81dc7609f291de50800000000000000
+      internalID: 6832403707951108493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_18
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 618
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a633fea53452450800000000000000
+      internalID: 6063326531163482661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_19
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 588
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f200f06bc78bfbdf0800000000000000
+      internalID: -162208215792156625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_20
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 619
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80bb21e95c58e76b0800000000000000
+      internalID: -5296649027934045432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_21
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 619
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b4f5131efec85000800000000000000
+      internalID: 24997388587758773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_22
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 610
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa340674493c44b0800000000000000
+      internalID: -5454922082451965270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_23
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 618
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2317bebd9772ef7e0800000000000000
+      internalID: -1729901802529525454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_24
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 611
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bedec80057f9980800000000000000
+      internalID: -8529970523991577765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_25
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 620
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a16f02bb568aef0800000000000000
+      internalID: -96715537602176445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_26
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 618
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da29c2b149d94310800000000000000
+      internalID: 1389880836216138449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_27
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 612
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f079713c531e829b0800000000000000
+      internalID: -5104582556601837809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_28
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 613
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f3dd42b2ca14a920800000000000000
+      internalID: 3000552675253015539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_29
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 614
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb779fc1e5699f70800000000000000
+      internalID: 9194492134778436601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_30
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 609
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2fa8ff8e9e1ae200800000000000000
+      internalID: 210013998995255086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_31
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 605
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa87f039e3f0da90800000000000000
+      internalID: -7291059613838374148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_32
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 590
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625177023390c64e0800000000000000
+      internalID: -1987203220384574170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_33
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 585
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b977f21f99ca9a750800000000000000
+      internalID: 6316769729540224923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_34
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 598
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c07e762d812d4a0800000000000000
+      internalID: -6570161614414738286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_35
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 594
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2180aa5911bb56c0800000000000000
+      internalID: -4153531508866383572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_36
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 596
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723dc8f966cd24440800000000000000
+      internalID: 4918736076363584295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_37
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 590
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8df6fd4b072f2810800000000000000
+      internalID: 1742654510321827214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_38
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 591
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271cab86112112810800000000000000
+      internalID: 1738690797122535794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_39
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 589
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520b39d4a3d249f40800000000000000
+      internalID: 5734257953982361637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_40
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 579
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1444b0be99ada0430800000000000000
+      internalID: 3750049994347594817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_41
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 590
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0a65f52eafc7660800000000000000
+      internalID: 7385053339149836478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_42
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 590
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d92e089a79f0490800000000000000
+      internalID: -7777831277177954956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_43
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 590
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1370edc29b430920800000000000000
+      internalID: 2955288874376524573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_44
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 592
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cad666156071d40800000000000000
+      internalID: 5554915612065377372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_45
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 588
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2eb600ac103dce0800000000000000
+      internalID: -1381758693570518301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_46
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 587
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c34942286d9e3a60800000000000000
+      internalID: 7655729487153808322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_47
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 588
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4b09a4e9706f250800000000000000
+      internalID: 5977973931818136829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_48
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 590
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a1d2e3d8b83fc80800000000000000
+      internalID: -8290129050309158270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 384
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d5d29bb404de860800000000000000
+      internalID: 7560770043398413575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_50
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 584
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7758c06bf81c959c0800000000000000
+      internalID: -3937903576180030089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_51
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 584
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5acfa710cd027fd40800000000000000
+      internalID: 5617995189457714341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_52
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 581
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945934073c57b1970800000000000000
+      internalID: 8726698185223017801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_53
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 576
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 009c04594ecd76810800000000000000
+      internalID: 1758617053826173184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_54
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 584
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0488b39a407b700800000000000000
+      internalID: 555918203898314916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_55
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 566
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df69da75f0b8dc750800000000000000
+      internalID: 6326865949537179389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_56
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 586
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90af950cb353b950800000000000000
+      internalID: 6463601957220098204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_57
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 581
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19f5881b1b7f2cd0800000000000000
+      internalID: -2580708705154238182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_58
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 582
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4b8e65d4aabc4a0800000000000000
+      internalID: -6571971982069811994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_59
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 572
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23bd72c9205f6090800000000000000
+      internalID: -8039118669546147028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_60
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 579
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf080ed76bc342be0800000000000000
+      internalID: -1503009621141323525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_61
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 588
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae15429f93eaa5d00800000000000000
+      internalID: 962273034413298154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_2_62
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 579
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe1feab356a12a90800000000000000
+      internalID: -7340403039088468234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

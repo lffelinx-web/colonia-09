@@ -41,6 +41,20 @@ namespace Colonia09.EditorTools
                 importer.textureCompression = TextureImporterCompression.CompressedHQ;
                 return;
             }
+            if (assetPath.Contains("/Units/"))
+            {
+                // Tilted board pieces (Tools/Render/render_units.py): 384 x 640, pivot on the ground point 30 % up.
+                // Modules keep 256 pixels per unit of width and enemies 170, like the straight-down sprites.
+                importer.spritePixelsPerUnit = assetPath.Contains("/Units/Enemies/") ? 170 : 256;
+                importer.maxTextureSize = 512;
+                importer.textureCompression = TextureImporterCompression.CompressedHQ;
+                var settings = new TextureImporterSettings();
+                importer.ReadTextureSettings(settings);
+                settings.spriteAlignment = (int)SpriteAlignment.Custom;
+                settings.spritePivot = new Vector2(.5f, .3f);
+                importer.SetTextureSettings(settings);
+                return;
+            }
             if (assetPath.Contains("/Map/"))
             {
                 // The campaign map is a full-screen picture shown in the UI.

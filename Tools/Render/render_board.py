@@ -273,6 +273,8 @@ def build():
 
 
 build()
+import tilt  # noqa: E402  Same leaning camera as the pieces; the cells stay where they were.
+tilt.apply(CENTER)
 name = f"board_{W}x{H}" if SIZE_ARG else "board"
 bpy.context.scene.render.filepath = os.path.join(OUT, name + ("_preview.png" if PREVIEW else ".png"))
 bpy.ops.render.render(write_still=True)

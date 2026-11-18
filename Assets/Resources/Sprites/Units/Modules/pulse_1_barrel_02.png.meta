@@ -1,0 +1,1258 @@
+fileFormatVersion: 2
+guid: aadea09c96b96ae4692103596c9d91e9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6848625504169246703
+    second: pulse_1_barrel_02_0
+  - first:
+      213: 7727625438083903537
+    second: pulse_1_barrel_02_1
+  - first:
+      213: 4184505829811230497
+    second: pulse_1_barrel_02_2
+  - first:
+      213: 6937707184794683942
+    second: pulse_1_barrel_02_3
+  - first:
+      213: 8735186855226493888
+    second: pulse_1_barrel_02_4
+  - first:
+      213: -1417415630332669029
+    second: pulse_1_barrel_02_5
+  - first:
+      213: -5431078829121323846
+    second: pulse_1_barrel_02_6
+  - first:
+      213: 6444795078309566967
+    second: pulse_1_barrel_02_7
+  - first:
+      213: 7621604542403418237
+    second: pulse_1_barrel_02_8
+  - first:
+      213: -8932757814505119771
+    second: pulse_1_barrel_02_9
+  - first:
+      213: -5732359523138346052
+    second: pulse_1_barrel_02_10
+  - first:
+      213: 8917543398674619402
+    second: pulse_1_barrel_02_11
+  - first:
+      213: -1900053377293015511
+    second: pulse_1_barrel_02_12
+  - first:
+      213: -2937761021793160835
+    second: pulse_1_barrel_02_13
+  - first:
+      213: 296079959628304325
+    second: pulse_1_barrel_02_14
+  - first:
+      213: -1514734327954767689
+    second: pulse_1_barrel_02_15
+  - first:
+      213: 7051089919004773425
+    second: pulse_1_barrel_02_16
+  - first:
+      213: -7935720513330691849
+    second: pulse_1_barrel_02_17
+  - first:
+      213: -3693261623878201978
+    second: pulse_1_barrel_02_18
+  - first:
+      213: -4950099479183973018
+    second: pulse_1_barrel_02_19
+  - first:
+      213: 3288946262430073331
+    second: pulse_1_barrel_02_20
+  - first:
+      213: 1225480291428150318
+    second: pulse_1_barrel_02_21
+  - first:
+      213: -8485591155749407596
+    second: pulse_1_barrel_02_22
+  - first:
+      213: 1783380036478657952
+    second: pulse_1_barrel_02_23
+  - first:
+      213: -441469154409367159
+    second: pulse_1_barrel_02_24
+  - first:
+      213: -1138022835212509535
+    second: pulse_1_barrel_02_25
+  - first:
+      213: 265546042404074748
+    second: pulse_1_barrel_02_26
+  - first:
+      213: 4670337675832430134
+    second: pulse_1_barrel_02_27
+  - first:
+      213: -1115304232132484388
+    second: pulse_1_barrel_02_28
+  - first:
+      213: 6419823835463972769
+    second: pulse_1_barrel_02_29
+  - first:
+      213: 894823380858042428
+    second: pulse_1_barrel_02_30
+  - first:
+      213: 1624356923288049261
+    second: pulse_1_barrel_02_31
+  - first:
+      213: -501976364351498
+    second: pulse_1_barrel_02_32
+  - first:
+      213: 8074699518723472482
+    second: pulse_1_barrel_02_33
+  - first:
+      213: 8808037562522123653
+    second: pulse_1_barrel_02_34
+  - first:
+      213: -7289674902490449098
+    second: pulse_1_barrel_02_35
+  - first:
+      213: -6298615789806559004
+    second: pulse_1_barrel_02_36
+  - first:
+      213: 7942878106113195395
+    second: pulse_1_barrel_02_37
+  - first:
+      213: -454662417097371916
+    second: pulse_1_barrel_02_38
+  - first:
+      213: -1383430810637046906
+    second: pulse_1_barrel_02_39
+  - first:
+      213: -1775078478062673704
+    second: pulse_1_barrel_02_40
+  - first:
+      213: -4704891946734343946
+    second: pulse_1_barrel_02_41
+  - first:
+      213: -2712853436938278992
+    second: pulse_1_barrel_02_42
+  - first:
+      213: 3511415966714896732
+    second: pulse_1_barrel_02_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.3}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 580
+        width: 16
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef30b74c943b0f50800000000000000
+      internalID: 6848625504169246703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 499
+        width: 384
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130734aa46a0e3b60800000000000000
+      internalID: 7727625438083903537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 384
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127137ab1e9521a30800000000000000
+      internalID: 4184505829811230497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_3
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 505
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62acc515defa74060800000000000000
+      internalID: 6937707184794683942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 503
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cbcf60f92e993970800000000000000
+      internalID: 8735186855226493888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 503
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b935fe67ef3545ce0800000000000000
+      internalID: -1417415630332669029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 478
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc341b749ee0a4b0800000000000000
+      internalID: -5431078829121323846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_7
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 497
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9d3dc4af2807950800000000000000
+      internalID: 6444795078309566967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_8
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 497
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78957843f065c960800000000000000
+      internalID: 7621604542403418237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_9
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 512
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5efd3d17818780480800000000000000
+      internalID: -8932757814505119771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_10
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 494
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3e28292619270b0800000000000000
+      internalID: -5732359523138346052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_11
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 494
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c5123597a71cb70800000000000000
+      internalID: 8917543398674619402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_12
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 493
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9262b203587a1a5e0800000000000000
+      internalID: -1900053377293015511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_13
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 494
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71b7056ae9fa37d0800000000000000
+      internalID: -2937761021793160835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_14
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 508
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfc1c29723eb1400800000000000000
+      internalID: 296079959628304325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_15
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 506
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b08a2577259afae0800000000000000
+      internalID: -1514734327954767689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_16
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 512
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c0e9d4ce08ad160800000000000000
+      internalID: 7051089919004773425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_17
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 508
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0c4260d38aed190800000000000000
+      internalID: -7935720513330691849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_18
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 517
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d482eee16eebcc0800000000000000
+      internalID: -3693261623878201978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 501
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665a46c10c6bd4bb0800000000000000
+      internalID: -4950099479183973018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_20
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 503
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f14e79333fa4ad20800000000000000
+      internalID: 3288946262430073331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_21
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 515
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c21d905d7c10110800000000000000
+      internalID: 1225480291428150318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_22
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 520
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4943c5c6dcf1d3a80800000000000000
+      internalID: -8485591155749407596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_23
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 502
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a565d5c1b6dfb810800000000000000
+      internalID: 1783380036478657952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_24
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 499
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9893320a4269fd9f0800000000000000
+      internalID: -441469154409367159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_25
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 507
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae10e8c24ee430f0800000000000000
+      internalID: -1138022835212509535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_26
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 491
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf47109f7b86fa300800000000000000
+      internalID: 265546042404074748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_27
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 502
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e8d152f5f50d040800000000000000
+      internalID: 4670337675832430134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_28
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 509
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2e043c5b4a580f0800000000000000
+      internalID: -1115304232132484388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_29
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 524
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a77a61c3cbc71950800000000000000
+      internalID: 6419823835463972769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_30
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 506
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38f1c8bf1d0b6c00800000000000000
+      internalID: 894823380858042428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_31
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 522
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d66d709f300ea8610800000000000000
+      internalID: 1624356923288049261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_32
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 506
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fffd1584773efff0800000000000000
+      internalID: -501976364351498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_33
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 514
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26cb7814e681f0070800000000000000
+      internalID: 8074699518723472482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_34
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 502
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58dbd620f7f6c3a70800000000000000
+      internalID: 8808037562522123653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_35
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 499
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63bf9fc6c4fd5da90800000000000000
+      internalID: -7289674902490449098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_36
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 512
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0e9e78f42d698a0800000000000000
+      internalID: -6298615789806559004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_37
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 505
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38dba19ed85ca3e60800000000000000
+      internalID: 7942878106113195395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_38
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 499
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fec038c0f6b0b9f0800000000000000
+      internalID: -454662417097371916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_39
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 506
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68be5a8e1011dcce0800000000000000
+      internalID: -1383430810637046906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_40
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 496
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d022aa6787ad57e0800000000000000
+      internalID: -1775078478062673704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_41
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 523
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8ad48b3bdd4beb0800000000000000
+      internalID: -4704891946734343946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_42
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 552
+        width: 11
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7a8932c220a5ad0800000000000000
+      internalID: -2712853436938278992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pulse_1_barrel_02_43
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 478
+        width: 6
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c512daaa73e0bb030800000000000000
+      internalID: 3511415966714896732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
