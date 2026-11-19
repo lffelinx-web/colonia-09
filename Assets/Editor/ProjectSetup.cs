@@ -44,8 +44,9 @@ namespace Colonia09.EditorTools
             if (assetPath.Contains("/Units/"))
             {
                 // Tilted board pieces (Tools/Render/render_units.py): 384 x 640, pivot on the ground point 30 % up.
-                // Modules keep 256 pixels per unit of width and enemies 170, like the straight-down sprites.
-                importer.spritePixelsPerUnit = assetPath.Contains("/Units/Enemies/") ? 170 : 256;
+                // The 384-pixel canvas holds the same framing the 256-pixel straight-down sprites did, so the
+                // pixels per unit grow by 1.5: modules 384, enemies 255.
+                importer.spritePixelsPerUnit = assetPath.Contains("/Units/Enemies/") ? 255 : 384;
                 importer.maxTextureSize = 512;
                 importer.textureCompression = TextureImporterCompression.CompressedHQ;
                 var settings = new TextureImporterSettings();

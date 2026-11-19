@@ -20,7 +20,7 @@ namespace Colonia09.Presentation
         const int OrderBoard = 0, OrderWreck = 5, OrderLinks = 10, OrderMarks = 15, OrderObjects = 100, OrderAir = 1000,
             OrderBars = 1100, OrderGlow = 1150, OrderFx = 1200;
         // Tilted view (Tools/Render/tilt.py): heights rise up the screen, so shots and bars sit at the pieces' height.
-        const float ShotLift = .22f, ModuleBarLift = .3f, EnemyBarLift = .24f;
+        const float ShotLift = .15f, ModuleBarLift = .2f, EnemyBarLift = .16f;
         // Height of the spinning hubs, as a fraction of their sprite's width (Tools/Render/out/units/meta_*.txt).
         const float FanHub = .223f, RotorHub = .458f;
         const int AimDirections = 24;
