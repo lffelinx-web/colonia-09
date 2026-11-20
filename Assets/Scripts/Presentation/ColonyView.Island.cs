@@ -127,7 +127,8 @@ namespace Colonia09.Presentation
         const float IslandReach = 52f;
 
         public bool Distant => zoom > Mathf.Max(15f, FocusZoom * 1.5f);
-        float OverviewZoom => Mathf.Max(44f / Mathf.Max(.3f, cam.aspect), 34f) * Screen.height / Mathf.Max(1, Screen.height - insetTop - insetBottom);
+        /// <summary>The whole island across the screen: it spans about 60 tiles from side to side.</summary>
+        float OverviewZoom => Mathf.Max(31f / Mathf.Max(.3f, cam.aspect), 24f) * Screen.height / Mathf.Max(1, Screen.height - insetTop - insetBottom);
 
         /// <summary>World units per screen pixel at the point the camera looks at.</summary>
         float UnitsPerPixel => 2 * zoom / Mathf.Max(1, Screen.height);
@@ -152,6 +153,9 @@ namespace Colonia09.Presentation
             var data = cam.GetUniversalAdditionalCameraData();
             if (data != null) data.SetRenderer(1);
             float distance = zoom / Mathf.Tan(Fov * .5f * Mathf.Deg2Rad);
+            // Shadows must reach past everything in view, or their edge shows as a dark wedge that follows the camera.
+            if (GraphicsSettings.currentRenderPipeline is UniversalRenderPipelineAsset pipeline)
+                pipeline.shadowDistance = distance + zoom * 3f;
             cam.transform.SetPositionAndRotation(World(center.x, center.y, 0) - CamRotation * Vector3.forward * distance, CamRotation);
         }
 

@@ -11,6 +11,19 @@ namespace Colonia09.EditorTools
     /// <summary>Applies sprite import rules to everything under Resources/Sprites.</summary>
     public sealed class SpriteImportRules : AssetPostprocessor
     {
+        /// <summary>Soundtracks stream from disk (they are minutes long) as compressed Vorbis.</summary>
+        void OnPreprocessAudio()
+        {
+            if (!assetPath.Contains("/Resources/Music/")) return;
+            var importer = (AudioImporter)assetImporter;
+            importer.loadInBackground = true;
+            var settings = importer.defaultSampleSettings;
+            settings.loadType = AudioClipLoadType.Streaming;
+            settings.compressionFormat = AudioCompressionFormat.Vorbis;
+            settings.quality = .7f;
+            importer.defaultSampleSettings = settings;
+        }
+
         void OnPreprocessTexture()
         {
             if (!assetPath.Contains("/Resources/Sprites/")) return;

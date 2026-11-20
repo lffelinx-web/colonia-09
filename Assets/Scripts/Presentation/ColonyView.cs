@@ -355,7 +355,7 @@ namespace Colonia09.Presentation
                 // What stands now: the foundation of a new building, or the building at its level.
                 var raised = at + Vector3.up * (SpriteLift * (size - 1));
                 var r = b.level == 0 ? WorksSite(LotWorld(b.x, b.y), size) : PutBuilding(type, b.style, b.level, at, order - 1, size);
-                if (r != null) placed[new Vector2Int(b.x, b.y)] = (r, r.localScale.x);
+                if (r != null) placed[new Vector2Int(b.x, b.y)] = (r, r.localScale.y);
                 if (!b.UnderWork && b.level >= 1 && Colony.IsConnected(b.sector)) AddBuildingLife(type, LotWorld(b.x, b.y), size, order, b.x * .37f + b.y * .23f);
                 if (b.UnderWork)
                 {
@@ -644,7 +644,8 @@ namespace Colonia09.Presentation
             if (popAt >= 0 && placed.TryGetValue(popTile, out var entry) && entry.node != null)
             {
                 float bounce = t < popTime ? Mathf.Sin(t / popTime * Mathf.PI) * (popBig ? .3f : .18f) : 0;
-                entry.node.localScale = Vector3.one * entry.scale * (1 + bounce);
+                float grown = entry.scale * (1 + bounce);
+                entry.node.localScale = new Vector3(Mathf.Sign(entry.node.localScale.x) * grown, grown, grown);  // Mirrored models stay mirrored.
                 if (t >= popTime) popAt = -10;
             }
             if (selection != null && selection.gameObject.activeSelf)

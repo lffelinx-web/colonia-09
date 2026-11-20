@@ -62,7 +62,9 @@ namespace Colonia09.Presentation
             double dt = Math.Min(.06, Time.unscaledDeltaTime);
             for (int i = 0; i < StepsPerFrame; i++) Sim.Update(dt);
             Campaign.Update();
-            if (Sim.Mode == GameMode.Playing || Ui.MainMenuOpen || Ui.MapOpen)
+            // Soundtracks: the theme on the menu, the colony's on the map, each sector's own on its board.
+            Audio.Track(Ui.MainMenuOpen ? "main" : Ui.MapOpen ? "colony" : Campaign.Active ? SectorTrack(Campaign.Current) : "defense");
+            if (!Audio.TrackPlaying && (Sim.Mode == GameMode.Playing || Ui.MainMenuOpen || Ui.MapOpen))
             {
                 musicClock -= (float)dt;
                 if (musicClock <= 0)
@@ -79,6 +81,9 @@ namespace Colonia09.Presentation
             else Board.Render(Ui.FieldPixels);
             Ui.Refresh();
         }
+
+        /// <summary>Sectors with their own board music; the others play the general defense theme.</summary>
+        static string SectorTrack(CampaignSector sector) => sector.Number == 1 || sector.Number == 2 || sector.Number == 5 ? "board" + sector.Number : "defense";
 
         /// <summary>Automated tests run in a desktop window that can lose focus; they must not pause the game.</summary>
         public bool IgnoreFocusLoss;

@@ -19,6 +19,11 @@ namespace Colonia09.Presentation
         const string PrefKey = "colonia09.audio";
 
         AudioSource sfxSource, musicSource;
+        // Two players for the soundtracks, so one fades out while the next fades in.
+        AudioSource trackA, trackB;
+        string track;
+        float fadeStart = -10;
+        const float FadeTime = 1.4f, TrackVolume = .62f;
         float[] noiseBuffer;
         readonly Dictionary<string, AudioClip> clips = new Dictionary<string, AudioClip>();
         readonly Dictionary<string, float> lastPlayed = new Dictionary<string, float>();
@@ -46,6 +51,9 @@ namespace Colonia09.Presentation
             sfxSource = gameObject.AddComponent<AudioSource>();
             musicSource = gameObject.AddComponent<AudioSource>();
             sfxSource.playOnAwake = musicSource.playOnAwake = false;
+            trackA = gameObject.AddComponent<AudioSource>();
+            trackB = gameObject.AddComponent<AudioSource>();
+            foreach (var t in new[] { trackA, trackB }) { t.playOnAwake = false; t.loop = true; t.volume = 0; }
 
             // Decaying white noise, 0.22 s, like the prototype's shared noise buffer.
             var random = new System.Random(5);
@@ -101,6 +109,37 @@ namespace Colonia09.Presentation
             if (!force && lastPlayed.TryGetValue(name, out var last) && last + gap > now) return;
             lastPlayed[name] = now;
             sfxSource.PlayOneShot(clip, 1);
+        }
+
+        /// <summary>
+        /// The soundtrack for the screen (Resources/Music/&lt;name&gt;): it loops, and a change fades the old one out while
+        /// the new one comes in. False when there is no such track, so the synthesized music carries on instead.
+        /// </summary>
+        public bool Track(string name)
+        {
+            if (name == track) return true;
+            var clip = Resources.Load<AudioClip>("Music/" + name);
+            if (clip == null) return false;
+            track = name;
+            (trackA, trackB) = (trackB, trackA);  // A is always the one coming in.
+            trackA.clip = clip;
+            trackA.volume = 0;
+            trackA.Play();
+            fadeStart = Time.unscaledTime;
+            return true;
+        }
+
+        /// <summary>A soundtrack is playing, so the synthesized music stays quiet.</summary>
+        public bool TrackPlaying => track != null;
+
+        void Update()
+        {
+            if (trackA == null) return;
+            float t = Mathf.Clamp01((Time.unscaledTime - fadeStart) / FadeTime);
+            float level = Enabled && MusicOn ? TrackVolume * Master : 0;
+            trackA.volume = level * t;
+            trackB.volume = level * (1 - t);
+            if (t >= 1 && trackB.isPlaying) trackB.Stop();
         }
 
         /// <summary>One step of the ambient soundtrack, every 1.48 s while playing.</summary>

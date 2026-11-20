@@ -279,7 +279,8 @@ namespace Colonia09.Presentation
             }
             mesh.colors32 = colors;
             mesh.RecalculateBounds();
-            MeshObject("Terrain", mesh, groundMat).transform.localPosition = Vector3.zero;
+            // The ground only receives shadows: casting them onto itself darkened whole slopes in bands.
+            MeshObject("Terrain", mesh, groundMat, false).transform.localPosition = Vector3.zero;
         }
 
         void BuildWater()
@@ -346,7 +347,7 @@ namespace Colonia09.Presentation
                         roads.Quad(path[i] + o + Vector3.up * .04f, path[i] + o + Vector3.up * .2f, path[i + 1] + o + Vector3.up * .2f, path[i + 1] + o + Vector3.up * .04f, rail);
                 }
             }
-            MeshObject("Roads", roads.Build("Roads"), paveMat);
+            MeshObject("Roads", roads.Build("Roads"), paveMat, false);
         }
 
         static readonly string[] DistrictPaving = { "#7d8a70", "#8a9670", "#7a8c86", "#83924f", "#968f74", "#868f89", "#8a9592", "#8ea06a" };
@@ -524,19 +525,35 @@ namespace Colonia09.Presentation
             return models[name];
         }
 
-        /// <summary>The model's yaw on the map: its front faces the camera like the rendered pictures did.</summary>
-        const float ModelYaw = 0f;
+        /// <summary>The model's yaw on the map: its front faces the camera like the rendered pictures did (checked with ModelPreview).</summary>
+        const float ModelYaw = 180f;
+
+        static readonly HashSet<Material> glowing = new HashSet<Material>();
+
+        /// <summary>The emission maps (lit windows, cyan strips) only show with the keyword on, which the conversion lost.</summary>
+        static void LightUp(Renderer r)
+        {
+            foreach (var m in r.sharedMaterials)
+                if (m != null && glowing.Add(m) && m.HasProperty("_EmissionMap") && m.GetTexture("_EmissionMap") != null)
+                {
+                    m.EnableKeyword("_EMISSION");
+                    m.globalIlluminationFlags = MaterialGlobalIlluminationFlags.None;
+                }
+        }
 
         GameObject PutModel(string name, Vector3 lotCenter, bool flip)
         {
             var (prefab, scale, offset) = Model(name);
             if (prefab == null) return null;
             var go = Instantiate(prefab, root);
-            var turn = Quaternion.Euler(0, ModelYaw + (flip ? 90 : 0), 0);
-            go.transform.SetPositionAndRotation(lotCenter + Vector3.up * LotTop + turn * offset, turn);
-            go.transform.localScale = Vector3.one * scale;
+            // The second look of a kind is the same model mirrored, as the pictures were.
+            var turn = Quaternion.Euler(0, ModelYaw, 0);
+            var mirror = flip ? new Vector3(-1, 1, 1) : Vector3.one;
+            go.transform.SetPositionAndRotation(lotCenter + Vector3.up * LotTop + turn * Vector3.Scale(mirror, offset), turn);
+            go.transform.localScale = mirror * scale;
             foreach (var r in go.GetComponentsInChildren<Renderer>())
             {
+                LightUp(r);
                 r.shadowCastingMode = ShadowCastingMode.On;
                 r.receiveShadows = true;
             }
