@@ -334,6 +334,13 @@ for n in range(7):
     pts.append(CENTERS[n+1])
     links.append({"points":[point(p) for p in pts]})
 OUT.mkdir(parents=True,exist_ok=True)
-art.resize((4095,2730),Image.Resampling.LANCZOS).save(OUT/"DistrictWorks.png",optimize=True)
+# The 2D drawing is kept as a reference for the 3D island, which builds its roads and districts from the JSON.
+art.resize((4095,2730),Image.Resampling.LANCZOS).save(Path(__file__).resolve().parent/"reference"/"DistrictWorks.png",optimize=True)
+# The 3D island lays every road, viaduct and the pier from these same curves.
+roads=[{"points":[point(p) for p in paths[a,b]]} for a,b,_ in EDGES]+[{"points":[point(p) for p in spline(pier)]}]
+viaducts=[]
+for a,b,lo,hi in [(7,10,.79,.99),(3,10,.50,.77),(9,11,.48,.75),(6,11,.28,.53),(0,5,.25,.43)]:
+    p=paths[a,b]
+    viaducts.append({"points":[point(q) for q in p[int(len(p)*lo):int(len(p)*hi)+1]]})
 (OUT/"IslandLayout.json").write_text(json.dumps({"width":W,"height":H,"pixelsPerTile":TILE,
-    "centers":[point(p) for p in CENTERS],"links":links},separators=(",",":")),encoding="utf-8")
+    "centers":[point(p) for p in CENTERS],"links":links,"roads":roads,"viaducts":viaducts},separators=(",",":")),encoding="utf-8")

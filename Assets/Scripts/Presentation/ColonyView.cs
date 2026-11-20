@@ -69,18 +69,17 @@ namespace Colonia09.Presentation
         const float LandmarkLift = .3674f;
         /// <summary>Screen height of one Blender unit of height (cos 30° / sqrt 2).</summary>
         const float Rise = .6124f;
-        const float MinZoom = 4f, StartZoom = 7.2f;
 
         GameController game;
         Camera cam;
         Material material;
         Transform root;
-        Sprite diamond, outline, glow;
+        Sprite diamond, outline, glow, bigDiamond, bigOutline;
         readonly Dictionary<string, (Sprite day, Sprite night)> art = new Dictionary<string, (Sprite, Sprite)>();
         readonly Dictionary<Vector2Int, (Transform node, float scale)> placed = new Dictionary<Vector2Int, (Transform, float)>();
         readonly List<SpriteRenderer> nightLayers = new List<SpriteRenderer>();
         SpriteRenderer selection;
-        float zoom = StartZoom;
+        float zoom = 9f;
         Vector2 center;
         Vector2Int popTile;
         float popAt = -10;
@@ -94,28 +93,16 @@ namespace Colonia09.Presentation
         /// <summary>0 in full daylight, 1 at night, in between at dawn and dusk.</summary>
         public float Nightness { get; private set; }
 
-        public static string LandmarkFor(CampaignSector sector)
-        {
-            switch (sector.Id)
-            {
-                case "landing": return "lm_landing";
-                case "camp": return "lm_camp";
-                case "well": return "lm_well";
-                case "greenhouse": return "lm_greenhouse";
-                case "mines": return "lm_mines";
-                case "workshop": return "lm_workshop";
-                case "port": return "lm_port";
-                default: return "lm_core";
-            }
-        }
-
         public void Init(GameController controller)
         {
             game = controller;
             cam = Camera.main;
             material = Resources.Load<Material>("Materials/SpriteUnlit");
-            diamond = MakeDiamond(false);
-            outline = MakeDiamond(true);
+            diamond = MakeDiamond(false, 128);
+            outline = MakeDiamond(true, 128);
+            // Zone-sized shapes get their own big textures so their edges stay smooth at nine tiles across.
+            bigDiamond = MakeDiamond(false, 1024, 8);
+            bigOutline = MakeDiamond(true, 1024, 26);
             glow = MakeGlow();
             root = new GameObject("Colony").transform;
             root.SetParent(transform, false);
@@ -153,6 +140,7 @@ namespace Colonia09.Presentation
             Active = true;
             root.gameObject.SetActive(true);
             Rebuild();
+            if (world != null) world.gameObject.SetActive(true);
         }
 
         public void Hide()
@@ -160,6 +148,7 @@ namespace Colonia09.Presentation
             if (Active) cam.backgroundColor = boardBackground;
             Active = false;
             root.gameObject.SetActive(false);
+            if (world != null) world.gameObject.SetActive(false);
         }
 
         float insetTop, insetBottom;
@@ -169,15 +158,6 @@ namespace Colonia09.Presentation
         {
             insetTop = top;
             insetBottom = bottom;
-        }
-
-        public void Focus(CampaignSector sector)
-        {
-            var (cx, cy) = CampaignData.ZoneCenter(sector);
-            if (Distant) zoom = StartZoom;
-            var p = TileWorld(cx, cy) - Origin;
-            center = new Vector2(p.x, p.y - (insetBottom - insetTop) / 2 * UnitsPerPixel);
-            Clamp();
         }
 
         // ---- Building the scene -------------------------------------------------------
@@ -204,6 +184,7 @@ namespace Colonia09.Presentation
                 if (material != null) n.sharedMaterial = material;
                 nightLayers.Add(n);
             }
+            Place3D(r, sprite == diamond || sprite == outline || sprite == bigDiamond || sprite == bigOutline);
             return r;
         }
 
@@ -258,14 +239,12 @@ namespace Colonia09.Presentation
             }
         }
         sealed class Pulse { public Path Path; public SpriteRenderer R; public float Offset; }
-        sealed class Drone { public Path Path; public SpriteRenderer R, Shadow; public float Offset, Speed; }
+        sealed class Drone { public Path Path; public Transform R; public SpriteRenderer Shadow; public float Offset, Speed; }
         sealed class Blink { public SpriteRenderer R; public Color Color; public float Rate, Phase, Base; }
         sealed class Frames { public SpriteRenderer Day, Night; public Sprite[] DaySprites, NightSprites; public float Fps; }
         sealed class Puff { public Vector3 From; public SpriteRenderer R; public float Phase, Rate; }
         sealed class LinkBuild { public LinkSave Work; public List<GameObject> Tiles = new List<GameObject>(); public Path Path; public SpriteRenderer Tip; }
         sealed class Spark { public SpriteRenderer R; public Vector3 Center; }
-        sealed class Rising { public BuildingSave Work; public SpriteRenderer Day, Night; public Sprite FullDay, FullNight; public int Step; }
-        readonly List<Rising> rises = new List<Rising>();
 
         readonly List<Pulse> pulses = new List<Pulse>();
         readonly List<Drone> drones = new List<Drone>();
@@ -288,7 +267,7 @@ namespace Colonia09.Presentation
             for (int i = root.childCount - 1; i >= 0; i--) Destroy(root.GetChild(i).gameObject);
             placed.Clear();
             nightLayers.Clear();
-            pulses.Clear(); drones.Clear(); blinks.Clear(); frames.Clear(); puffs.Clear(); linkBuilds.Clear(); sparks.Clear(); roadPaths.Clear(); rises.Clear();
+            pulses.Clear(); drones.Clear(); blinks.Clear(); frames.Clear(); puffs.Clear(); linkBuilds.Clear(); sparks.Clear(); roadPaths.Clear(); spinners.Clear();
             DrawIsland();
             var lift = new Vector3(0, SpriteLift, 0);
 
@@ -313,10 +292,9 @@ namespace Colonia09.Presentation
                 if (path.Length <= 0) continue;
                 for (float d = 0; d < path.Length; d += 2.6f)
                     pulses.Add(new Pulse { Path = path, Offset = d, R = Light(Vector3.zero, PulseColor, .32f, -5800) });
-                var drone = Put("deco_drone", Vector3.zero, 0);
+                var drone = Drone3D();
                 if (drone != null)
                 {
-                    foreach (var r in drone.GetComponentsInChildren<SpriteRenderer>()) r.sortingOrder += 9200;
                     var shadow = Put(diamond, Vector3.zero, 0, new Color(0, 0, 0, .28f), .3f);
                     shadow.sortingOrder = -5790;
                     drones.Add(new Drone { Path = path, R = drone, Shadow = shadow, Offset = i * 2.3f, Speed = .55f + .07f * i });
@@ -331,45 +309,39 @@ namespace Colonia09.Presentation
                 bool connected = state.Connected.Contains(sector.Id);
                 int rad = CampaignData.ZoneRadius;
                 float side = rad * 2 + 1;
-                if (sector.Id == "core") PlaceSpire(sector, free && connected);
                 var (lx, ly) = CampaignData.LandmarkCenter(sector);
                 if (free)
                 {
                     // Lamps just outside the corners and beside the streets where they leave the zone; every tile inside is a lot.
                     float edge = rad + .62f;
                     foreach (var (dx, dy) in new[] { (edge, -edge), (edge, edge), (-edge, edge), (.62f, -edge), (-edge, .62f), (.62f, edge), (edge, .62f) })
-                        Put("deco_lamp", TileWorld(cx + dx, cy + dy) + lift, Depth(cx + Mathf.RoundToInt(dx), cy + Mathf.RoundToInt(dy)));
-                    // The zone's landmark stands in its far quarter: what this place is for.
-                    if (sector.Id != "core")
                     {
-                        var lmName = LandmarkFor(sector);
-                        int lmOrder = Depth(lx + 1, ly + 1) + 1;
-                        var landmark = Put(lmName, TileWorld(lx, ly) + new Vector3(0, LandmarkLift, 0), lmOrder);
-                        if (landmark != null && !connected) Darken(landmark);
-                        AddMovingPart(sector, lmName, lmOrder, connected);
-                        if (connected) AddZoneLife(sector);
+                        var lamp = TileWorld(cx + dx, cy + dy);
+                        Lamp(lamp);
+                        blinks.Add(new Blink { R = Light(lamp + new Vector3(.13f, .78f, -.13f), new Color(1, .8f, .5f, 1), .5f, 9000), Color = new Color(1, .8f, .5f, .5f), Rate = .05f, Base = .9f });
                     }
+                    // The zone's landmark stands on its plaza behind the district: what this place is for.
+                    Landmark3D(sector, TileWorld(lx, ly), connected);
+                    if (connected) AddZoneLife(sector);
                 }
                 else
                 {
                     // Enemy ground: the whole platform glows red; the next battle glows amber.
                     var tint = next ? new Color(1f, .55f, .2f, .10f) : new Color(.48f, .11f, .07f, .16f);
-                    Put(diamond, TileWorld(cx, cy), -2500, tint, side * .99f);
-                    Put(outline, TileWorld(cx, cy), -2490, new Color(1f, .25f, .2f, next ? .8f : .5f), side * .985f);
+                    Put(bigDiamond, TileWorld(cx, cy), -2500, tint, side * .99f);
+                    Put(bigOutline, TileWorld(cx, cy), -2490, new Color(1f, .25f, .2f, next ? .8f : .5f), side * .985f);
                     foreach (var (dx, dy) in new[] { (-3, 0), (3, 0), (0, 3), (0, -3), (-2, 2), (2, -2), (2, 2), (1, 0), (0, 1) })
-                        Put("deco_barricade", TileWorld(cx + dx, cy + dy) + lift, Depth(cx + dx, cy + dy));
+                        Barricade(TileWorld(cx + dx, cy + dy), dx == 0 ? 0 : dy == 0 ? 90 : 45);
                     // Enemy pylons on the corners and the middle of each side, their red lights blinking out of step.
                     int k = 0;
                     foreach (var (dx, dy) in new[] { (-rad, -rad), (rad, -rad), (rad, rad), (-rad, rad), (-rad, 0), (rad, 0), (0, rad), (0, -rad) })
                     {
                         int px = cx + dx, py = cy + dy;
-                        var beacon = Put("deco_beacon", TileWorld(px, py) + lift, Depth(px, py) + 1);
-                        if (beacon == null) continue;
-                        var top = TileWorld(px, py) + new Vector3(0, 1.05f * Rise, 0);
+                        Pylon(TileWorld(px, py));
+                        var top = TileWorld(px, py) + new Vector3(0, 1.2f, 0);
                         blinks.Add(new Blink { R = Light(top, Color.red, .55f, Depth(px, py) * 2 + 4), Color = new Color(1f, .2f, .12f, 1), Rate = 1.1f, Phase = k++ * .37f + sector.Number * .21f, Base = 0 });
                     }
                 }
-                if (sector.Number == 1) Put("deco_ship", TileWorld(lx, ly) + lift, Depth(lx + 1, ly + 1) + 2, 1.35f);
             }
 
             foreach (var b in Colony.Saved)
@@ -382,19 +354,13 @@ namespace Colonia09.Presentation
                 var at = LotWorld(b.x, b.y) + lift;
                 // What stands now: the foundation of a new building, or the building at its level.
                 var raised = at + Vector3.up * (SpriteLift * (size - 1));
-                var r = b.level == 0 ? Put("deco_site", raised, order - 1, size) : PutBuilding(type, b.style, b.level, at, order - 1, size);
-                if (r != null) placed[new Vector2Int(b.x, b.y)] = (r.transform, r.transform.localScale.x);
+                var r = b.level == 0 ? WorksSite(LotWorld(b.x, b.y), size) : PutBuilding(type, b.style, b.level, at, order - 1, size);
+                if (r != null) placed[new Vector2Int(b.x, b.y)] = (r, r.localScale.x);
+                if (!b.UnderWork && b.level >= 1 && Colony.IsConnected(b.sector)) AddBuildingLife(type, LotWorld(b.x, b.y), size, order, b.x * .37f + b.y * .23f);
                 if (b.UnderWork)
                 {
-                    // The level being built rises from the ground inside the scaffold as the work advances.
-                    var target = PutBuilding(type, b.style, b.pending, at, order, size);
-                    if (target != null)
-                    {
-                        var night = target.transform.childCount > 0 ? target.transform.GetChild(0).GetComponent<SpriteRenderer>() : null;
-                        rises.Add(new Rising { Work = b, Day = target, Night = night, FullDay = target.sprite, FullNight = night != null ? night.sprite : null, Step = -1 });
-                    }
                     // Scaffold, a hazard light and welding sparks while the work runs.
-                    Put("deco_scaffold", raised, order + 1, size);
+                    Scaffold(LotWorld(b.x, b.y), size);
                     var tileCenter = LotWorld(b.x, b.y);
                     blinks.Add(new Blink { R = Light(tileCenter + new Vector3(-.21f, 1.26f * Rise, 0) * size, new Color(1, .6f, .15f, 1), .35f * size, order * 2 + 5), Color = new Color(1, .6f, .15f, 1), Rate = 1.6f, Phase = b.x * .3f, Base = .15f });
                     sparks.Add(new Spark { R = Light(tileCenter, new Color(1f, .9f, .6f, 1), .22f * size, order * 2 + 6), Center = tileCenter + new Vector3(0, .45f * Rise * size, 0) });
@@ -448,83 +414,96 @@ namespace Colonia09.Presentation
             return $"bld_{type.ToString().ToLowerInvariant()}_{style}_{i + 1}";
         }
 
-        SpriteRenderer PutBuilding(BuildingType type, int style, int level, Vector3 at, int order, float lot = 1)
+        Transform PutBuilding(BuildingType type, int style, int level, Vector3 at, int order, float lot = 1)
         {
             int looks = ColonyData.Buildings[type].Styles;
             int appearance = ((style % looks) + looks) % looks;
             float scale = (type == BuildingType.Fortification ? 1f : 1.24f) * lot;
             // Old homes may still have the third cosmetic style saved before AS01 became its own building.
             var artName = BuildingArt(type, type == BuildingType.Housing ? style : appearance, level);
+            // The outside 3D model when there is one; the old picture otherwise (the fortification).
+            var model = ModelName(artName) is string modelName ? PutModel(modelName, at - new Vector3(0, SpriteLift, 0), appearance % 2 == 1 && ModelNames.ContainsKey(type)) : null;
+            if (model != null) return model.transform;
+            if (type == BuildingType.Fortification) return Turret(at - new Vector3(0, SpriteLift, 0), lot, level);
             var building = Put(artName, at + Vector3.up * (SpriteLift * (scale - 1)), order, scale)
                 ?? Put("bld_" + type.ToString().ToLowerInvariant(), at + Vector3.up * (SpriteLift * (lot - 1)), order, (.92f + level * .06f) * lot);
             if (building != null && appearance % 2 == 1 && ModelNames.ContainsKey(type))
                 foreach (var layer in building.GetComponentsInChildren<SpriteRenderer>()) layer.flipX = true;
-            return building;
+            return building != null ? building.transform : null;
         }
 
-        const int RiseSteps = 24;
-        readonly Dictionary<(Sprite, int), Sprite> risen = new Dictionary<(Sprite, int), Sprite>();
-        readonly Dictionary<Sprite, Vector2> constructionHeights = new Dictionary<Sprite, Vector2>();
+        static readonly Dictionary<Sprite, Sprite> trimCache = new Dictionary<Sprite, Sprite>();
 
-        /// <summary>The lower part of a building's picture, up to a share of its height: how far it has risen.</summary>
-        Sprite Risen(Sprite full, int step)
+        /// <summary>The same picture cut to its visible pixels, so an icon fills its box instead of its transparent margin.</summary>
+        public static Sprite Trimmed(Sprite full)
         {
-            if (full == null || step >= RiseSteps) return full;
-            if (risen.TryGetValue((full, step), out var cut)) return cut;
+            if (full == null) return null;
+            if (trimCache.TryGetValue(full, out var cut)) return cut;
             var rect = full.rect;
-            // The render has transparent margins. Spend the construction time raising the
-            // silhouette, with the pivot fixed to the same ground point at every stage.
-            if (!constructionHeights.TryGetValue(full, out var range))
+            var min = new Vector2(rect.width, rect.height);
+            var max = Vector2.zero;
+            foreach (var vertex in full.vertices)
             {
-                range = new Vector2(rect.height, 0);
-                foreach (var vertex in full.vertices)
-                {
-                    float y = full.pivot.y + vertex.y * full.pixelsPerUnit;
-                    range.x = Mathf.Min(range.x, y);
-                    range.y = Mathf.Max(range.y, y);
-                }
-                constructionHeights[full] = range;
+                var p = full.pivot + vertex * full.pixelsPerUnit;
+                min = Vector2.Min(min, p);
+                max = Vector2.Max(max, p);
             }
-            float height = Mathf.Clamp(Mathf.Lerp(range.x, range.y, (float)step / RiseSteps), 2, rect.height);
-            var pivot = new Vector2(full.pivot.x / rect.width, full.pivot.y / height);
-            cut = Sprite.Create(full.texture, new Rect(rect.x, rect.y, rect.width, height), pivot, full.pixelsPerUnit, 0, SpriteMeshType.FullRect);
-            risen[(full, step)] = cut;
+            min = Vector2.Max(min - Vector2.one * 2, Vector2.zero);
+            max = Vector2.Min(max + Vector2.one * 2, new Vector2(rect.width, rect.height));
+            cut = max.x - min.x < 4 || max.y - min.y < 4 ? full
+                : Sprite.Create(full.texture, new Rect(rect.x + min.x, rect.y + min.y, max.x - min.x, max.y - min.y), new Vector2(.5f, .5f), full.pixelsPerUnit);
+            trimCache[full] = cut;
             return cut;
         }
 
-        void Darken(SpriteRenderer r)
+        /// <summary>
+        /// A working building shows it: windows that glow and flicker, smoke from the extractor and refinery, welding
+        /// at the works yard, grow lights in the farm, a pulsing tank in the water tower and beacons on the defenses.
+        /// </summary>
+        void AddBuildingLife(BuildingType type, Vector3 center, float size, int order, float phase)
         {
-            r.color = new Color(.55f, .55f, .6f);
-            if (r.transform.childCount > 0)
+            int top = order * 2 + 5;
+            Vector3 Up(float h) => center + new Vector3(0, h * size * .5f, 0);
+            switch (type)
             {
-                var night = r.transform.GetChild(0).GetComponent<SpriteRenderer>();
-                nightLayers.Remove(night);
-                Destroy(night.gameObject);
+                case BuildingType.Extractor:
+                    puffs.AddRange(Smoke(Up(1.1f), top, new Color(.62f, .52f, .42f, .5f), 3));
+                    blinks.Add(new Blink { R = Light(Up(.9f) + new Vector3(-.18f * size, 0, 0), new Color(1, .7f, .3f, 1), .28f * size, top), Color = new Color(1, .7f, .3f, 1), Rate = 1.3f, Phase = phase, Base = .1f });
+                    break;
+                case BuildingType.Refinery:
+                    puffs.AddRange(Smoke(Up(1.3f) + new Vector3(.15f * size, 0, 0), top, new Color(.72f, .74f, .76f, .5f), 4));
+                    blinks.Add(new Blink { R = Light(Up(.45f), new Color(1, .55f, .2f, 1), .55f * size, top), Color = new Color(1, .55f, .2f, .5f), Rate = 3.1f, Phase = phase, Base = .45f });
+                    break;
+                case BuildingType.Works:
+                    sparks.Add(new Spark { R = Light(Up(.5f), new Color(1f, .9f, .6f, 1), .22f * size, top + 1), Center = Up(.55f) });
+                    blinks.Add(new Blink { R = Light(Up(1.15f), new Color(1, .65f, .2f, 1), .3f * size, top), Color = new Color(1, .65f, .2f, 1), Rate = 1.0f, Phase = phase, Base = 0 });
+                    break;
+                case BuildingType.Laboratory:
+                    blinks.Add(new Blink { R = Light(Up(.55f), new Color(.35f, .9f, 1, 1), .8f * size, top), Color = new Color(.35f, .9f, 1, .4f), Rate = .45f, Phase = phase, Base = .35f });
+                    blinks.Add(new Blink { R = Light(Up(1.0f) + new Vector3(.2f * size, 0, 0), Color.white, .18f * size, top), Color = new Color(.8f, 1, 1, 1), Rate = 2.2f, Phase = phase, Base = 0 });
+                    break;
+                case BuildingType.Solar:
+                    blinks.Add(new Blink { R = Light(Up(.45f), new Color(.5f, .75f, 1, 1), 1.1f * size, top), Color = new Color(.55f, .8f, 1, .22f), Rate = .2f, Phase = phase, Base = .3f });
+                    break;
+                case BuildingType.Farm:
+                    blinks.Add(new Blink { R = Light(Up(.4f), new Color(.45f, 1, .5f, 1), .95f * size, top), Color = new Color(.45f, 1, .5f, .35f), Rate = .25f, Phase = phase, Base = .45f });
+                    break;
+                case BuildingType.WaterTower:
+                    blinks.Add(new Blink { R = Light(Up(.7f), new Color(.3f, .75f, 1, 1), .8f * size, top), Color = new Color(.3f, .75f, 1, .38f), Rate = .35f, Phase = phase, Base = .35f });
+                    blinks.Add(new Blink { R = Light(Up(1.35f), Color.red, .16f * size, top), Color = new Color(1, .25f, .15f, 1), Rate = .9f, Phase = phase, Base = 0 });
+                    break;
+                case BuildingType.Fortification:
+                    blinks.Add(new Blink { R = Light(Up(1.0f), Color.red, .22f * size, top), Color = new Color(1, .2f, .12f, 1), Rate = 1.1f, Phase = phase, Base = 0 });
+                    break;
+                case BuildingType.SelfSufficientHousing:
+                    blinks.Add(new Blink { R = Light(Up(.45f), new Color(.5f, 1, .55f, 1), .7f * size, top), Color = new Color(.5f, 1, .55f, .3f), Rate = .3f, Phase = phase, Base = .45f });
+                    blinks.Add(new Blink { R = Light(Up(.6f), new Color(1, .8f, .5f, 1), .75f * size, top), Color = new Color(1, .8f, .5f, .3f), Rate = .12f, Phase = phase + .5f, Base = .5f });
+                    break;
+                default:
+                    // Homes: warm windows that brighten and dim as people come and go.
+                    blinks.Add(new Blink { R = Light(Up(.6f), new Color(1, .8f, .5f, 1), .75f * size, top), Color = new Color(1, .8f, .5f, .3f), Rate = .12f, Phase = phase, Base = .5f });
+                    break;
             }
-        }
-
-        /// <summary>The landmark's moving part (radar dish, excavator arm, gantry crane), played over its picture.</summary>
-        void AddMovingPart(CampaignSector sector, string lmName, int order, bool running)
-        {
-            string part = lmName == "lm_landing" ? "radar" : lmName == "lm_mines" ? "arm" : lmName == "lm_port" ? "crane" : null;
-            if (part == null) return;
-            var day = new List<Sprite>();
-            var night = new List<Sprite>();
-            for (int f = 0; f < 32; f++)
-            {
-                var (d, n) = Art($"{lmName}_{part}_{f}");
-                if (d == null) break;
-                day.Add(d);
-                night.Add(n ?? d);
-            }
-            if (day.Count == 0) return;
-            var (cx, cy) = CampaignData.LandmarkCenter(sector);
-            var r = Put(day[0], TileWorld(cx, cy) + new Vector3(0, LandmarkLift, 0), order, Color.white, 1, night[0]);
-            r.sortingOrder += 1;  // Just over the landmark's own night layer.
-            if (r.transform.childCount > 0) r.transform.GetChild(0).GetComponent<SpriteRenderer>().sortingOrder += 1;
-            if (!running) { Darken(r); return; }
-            var nightRenderer = r.transform.childCount > 0 ? r.transform.GetChild(0).GetComponent<SpriteRenderer>() : null;
-            frames.Add(new Frames { Day = r, Night = nightRenderer, DaySprites = day.ToArray(), NightSprites = night.ToArray(), Fps = part == "radar" ? 6 : 3 });
         }
 
         /// <summary>Lights and smoke that show a connected zone at work.</summary>
@@ -612,8 +591,9 @@ namespace Colonia09.Presentation
             if (selection == null) return;
             selection.gameObject.SetActive(tile.HasValue);
             if (!tile.HasValue) return;
-            selection.transform.position = LotWorld(tile.Value.x, tile.Value.y);
-            selection.transform.localScale = Vector3.one * (LotSize(tile.Value.x, tile.Value.y) * .96f);
+            selection.transform.position = LotWorld(tile.Value.x, tile.Value.y) + Vector3.up * .12f;
+            float s = LotSize(tile.Value.x, tile.Value.y) * .96f * 1.41421356f;
+            selection.transform.localScale = new Vector3(s, 2 * s, 1);
         }
 
         /// <summary>Plays a short bounce on a building that was just started; a bigger one with a flash when it is finished.</summary>
@@ -654,9 +634,9 @@ namespace Colonia09.Presentation
         {
             if (!Active) return;
             if (Time.frameCount % 120 == 0) ApplyLight();  // The hour changes slowly.
-            cam.orthographicSize = zoom;
-            cam.transform.position = Origin + new Vector3(center.x, center.y, -10);
+            ApplyCamera();
             float now = Time.unscaledTime;
+            TurnSpinners(now);
             float glowBoost = .65f + .35f * Nightness;  // Lights read stronger after dark.
 
             float t = now - popAt;
@@ -683,8 +663,9 @@ namespace Colonia09.Presentation
                 float d = Mathf.PingPong(now * dr.Speed + dr.Offset, dr.Path.Length);
                 var ground = dr.Path.At(d);
                 float bob = Mathf.Sin(now * 2.4f + dr.Offset) * .04f;
-                dr.R.transform.position = ground + new Vector3(0, SpriteLift + .55f + bob, 0);
-                dr.R.transform.localScale = Vector3.one * .9f;
+                dr.R.position = ground + new Vector3(0, .9f + bob, 0);
+                var ahead = dr.Path.At(Mathf.Min(dr.Path.Length, d + .3f)) - ground;
+                if (ahead.sqrMagnitude > 1e-4f) dr.R.rotation = Quaternion.LookRotation(new Vector3(ahead.x, 0, ahead.z));
                 dr.Shadow.transform.position = ground;
             }
             foreach (var bl in blinks)
@@ -716,14 +697,6 @@ namespace Colonia09.Presentation
                 s.R.gameObject.SetActive(on);
                 if (on) s.R.transform.position = s.Center + new Vector3((Mathf.PerlinNoise(now * 2, 1) - .5f) * .5f, (Mathf.PerlinNoise(1, now * 2) - .5f) * .4f, 0);
             }
-            foreach (var rise in rises)
-            {
-                int step = Mathf.Clamp(Mathf.FloorToInt(Colony.Progress(rise.Work.startTicks, rise.Work.readyTicks) * RiseSteps), 0, RiseSteps - 1);
-                if (step == rise.Step) continue;
-                rise.Step = step;
-                rise.Day.sprite = Risen(rise.FullDay, step);
-                if (rise.Night != null) rise.Night.sprite = Risen(rise.FullNight, step);
-            }
             foreach (var lb in linkBuilds)
             {
                 float progress = Colony.Progress(lb.Work.startTicks, lb.Work.readyTicks);
@@ -748,32 +721,6 @@ namespace Colonia09.Presentation
                 flash.transform.localScale = Vector3.one * flashSize * (.6f + ft);
                 flash.color = new Color(.6f, 1f, .9f, (1 - ft / .8f) * .8f);
             }
-        }
-
-        float UnitsPerPixel => 2 * zoom / Mathf.Max(1, Screen.height);
-
-        public void Pan(Vector2 screenDelta)
-        {
-            center -= screenDelta * UnitsPerPixel;
-            Clamp();
-        }
-
-        public void Zoom(float factor)
-        {
-            zoom = Mathf.Clamp(zoom * factor, MinZoom, OverviewZoom);
-            Clamp();
-        }
-
-        void Clamp()
-        {
-            float halfW = Island.width / (2 * Island.pixelsPerTile);
-            float halfH = Island.height / (2 * Island.pixelsPerTile);
-            zoom = Mathf.Min(zoom, OverviewZoom);
-            float spanX = Mathf.Max(0, halfW * 1.04f - zoom * cam.aspect);
-            float spanY = Mathf.Max(0, halfH * 1.04f - zoom * (Screen.height - insetTop - insetBottom) / Mathf.Max(1, Screen.height));
-            float midY = (insetTop - insetBottom) * .5f * UnitsPerPixel;
-            center.x = Mathf.Clamp(center.x, -spanX, spanX);
-            center.y = Mathf.Clamp(center.y, midY - spanY, midY + spanY);
         }
 
         public Vector2 TileScreen(int x, int y) => cam.WorldToScreenPoint(TileWorld(x, y));
@@ -809,9 +756,10 @@ namespace Colonia09.Presentation
             ui.OpenPicker(zone, x, y);
         }
 
-        static Sprite MakeDiamond(bool outlineOnly)
+        /// <summary>A diamond one unit wide; the outline is <paramref name="line"/> texture pixels thick.</summary>
+        static Sprite MakeDiamond(bool outlineOnly, int W, float line = 6)
         {
-            const int W = 128, H = 64;
+            int H = W / 2;
             var tex = new Texture2D(W, H, TextureFormat.RGBA32, false) { filterMode = FilterMode.Bilinear };
             var px = new Color32[W * H];
             for (int y = 0; y < H; y++)
@@ -819,12 +767,12 @@ namespace Colonia09.Presentation
                 {
                     // Distance inside the diamond |dx| / (W/2) + |dy| / (H/2) <= 1, in pixels along x.
                     float d = (1 - (Mathf.Abs(x + .5f - W / 2f) / (W / 2f) + Mathf.Abs(y + .5f - H / 2f) / (H / 2f))) * (W / 2f);
-                    float alpha = outlineOnly ? Mathf.Clamp01(d) * Mathf.Clamp01(6 - d) : Mathf.Clamp01(d);
+                    float alpha = outlineOnly ? Mathf.Clamp01(d) * Mathf.Clamp01(line - d) : Mathf.Clamp01(d);
                     px[y * W + x] = new Color32(255, 255, 255, (byte)(alpha * 255));
                 }
             tex.SetPixels32(px);
             tex.Apply();
-            return Sprite.Create(tex, new Rect(0, 0, W, H), new Vector2(.5f, .5f), 128);
+            return Sprite.Create(tex, new Rect(0, 0, W, H), new Vector2(.5f, .5f), W);
         }
 
         /// <summary>A soft round light, one unit across, bright in the middle and fading out.</summary>

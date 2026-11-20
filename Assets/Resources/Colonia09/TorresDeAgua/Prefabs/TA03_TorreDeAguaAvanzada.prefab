@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4554720452758527365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4337706640515374382}
+  - component: {fileID: 329665086089387332}
+  - component: {fileID: 443299578694937497}
+  - component: {fileID: 2313195021107280167}
+  m_Layer: 0
+  m_Name: TA03_TorreDeAguaAvanzada
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4337706640515374382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4554720452758527365}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6812228537324057256}
+  - {fileID: 665260444247039940}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &329665086089387332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4554720452758527365}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.12, y: 5.5711, z: 5.92}
+  m_Center: {x: 0, y: 2.78555, z: 0}
+--- !u!114 &443299578694937497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4554720452758527365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1962b7852e6c39f468a9e7d5c6c2029f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Colonia09.TorreDeAgua
+  aguaPorHora: 18
+--- !u!205 &2313195021107280167
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4554720452758527365}
+  serializedVersion: 3
+  m_LocalReferencePoint: {x: 0, y: 2.78555, z: 0}
+  m_Size: 6.298
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.25
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5455493089315160242}
+    - renderer: {fileID: 5107847452863862302}
+  - screenRelativeHeight: 0.008
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5452039486834751227}
+    - renderer: {fileID: 7501655991549950373}
+  m_Enabled: 1
+  m_GlobalIlluminationLOD: 0
+--- !u!1001 &1058842496832632879
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4337706640515374382}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+      propertyPath: m_Name
+      value: TA03_TorreDeAguaAvanzada_Distancia
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978811451511394004, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+--- !u!4 &665260444247039940 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+  m_PrefabInstance: {fileID: 1058842496832632879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5452039486834751227 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4978811451511394004, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+  m_PrefabInstance: {fileID: 1058842496832632879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &7501655991549950373 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7398006559135498634, guid: d39b8b61de2ba6645b083fcec7c41ac7, type: 3}
+  m_PrefabInstance: {fileID: 1058842496832632879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6414072267319792963
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4337706640515374382}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7874945608992336399, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+      propertyPath: m_Name
+      value: TA03_TorreDeAguaAvanzada
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+--- !u!23 &5107847452863862302 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2297368576284312413, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+  m_PrefabInstance: {fileID: 6414072267319792963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5455493089315160242 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7874945608992336399, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+  m_PrefabInstance: {fileID: 6414072267319792963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6812228537324057256 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 34e5e8f3118e7ca4bbf2ad2775d858ab, type: 3}
+  m_PrefabInstance: {fileID: 6414072267319792963}
+  m_PrefabAsset: {fileID: 0}

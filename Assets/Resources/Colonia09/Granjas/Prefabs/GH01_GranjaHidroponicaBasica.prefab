@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4830526306289825275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8759486342891151244}
+  - component: {fileID: 4771736527237268167}
+  - component: {fileID: 9016606064114831014}
+  - component: {fileID: 9035484173530051690}
+  m_Layer: 0
+  m_Name: GH01_GranjaHidroponicaBasica
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8759486342891151244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4830526306289825275}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5512241914217368973}
+  - {fileID: 2282793535233193026}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4771736527237268167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4830526306289825275}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.54, y: 3.045, z: 5.56}
+  m_Center: {x: 0, y: 1.5225, z: 0}
+--- !u!114 &9016606064114831014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4830526306289825275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90bb94634c7e0ac4c8fe0431f71dc47f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Colonia09.GranjaHidroponica
+  comidaPorHora: 6
+--- !u!205 &9035484173530051690
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4830526306289825275}
+  serializedVersion: 3
+  m_LocalReferencePoint: {x: 0, y: 1.5225, z: 0}
+  m_Size: 5.738
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.25
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 2977365908396062587}
+    - renderer: {fileID: 6891387587796046267}
+  - screenRelativeHeight: 0.008
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1848422400531173198}
+    - renderer: {fileID: 4804013408239415907}
+  m_Enabled: 1
+  m_GlobalIlluminationLOD: 0
+--- !u!1001 &1739697726248752041
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8759486342891151244}
+    m_Modifications:
+    - target: {fileID: -9114635026450506521, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+      propertyPath: m_Name
+      value: GH01_GranjaHidroponicaBasica_Distancia
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+--- !u!23 &1848422400531173198 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -9114635026450506521, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+  m_PrefabInstance: {fileID: 1739697726248752041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2282793535233193026 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+  m_PrefabInstance: {fileID: 1739697726248752041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &4804013408239415907 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6525695384538210762, guid: d99b497a74a2ed54c98589669006bcb6, type: 3}
+  m_PrefabInstance: {fileID: 1739697726248752041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5473513664844622438
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8759486342891151244}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+      propertyPath: m_Name
+      value: GH01_GranjaHidroponicaBasica
+      objectReference: {fileID: 0}
+    - target: {fileID: 7107921738758970653, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+--- !u!23 &2977365908396062587 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7107921738758970653, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+  m_PrefabInstance: {fileID: 5473513664844622438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5512241914217368973 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+  m_PrefabInstance: {fileID: 5473513664844622438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6891387587796046267 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1465626812533046237, guid: 77eb877ce0c5cfe4eb54194908d01820, type: 3}
+  m_PrefabInstance: {fileID: 5473513664844622438}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6777592282490906847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1961218149723558023}
+  - component: {fileID: 988092174163194785}
+  - component: {fileID: 4677746235955414936}
+  - component: {fileID: 5316291935039831035}
+  m_Layer: 0
+  m_Name: RF02_RefineriaModular
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1961218149723558023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6777592282490906847}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5329156350358781891}
+  - {fileID: 5355826158119569233}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &988092174163194785
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6777592282490906847}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.87, y: 4.2280707, z: 5.74}
+  m_Center: {x: 0, y: 2.1140354, z: 0}
+--- !u!114 &4677746235955414936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6777592282490906847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded37d0967bd10944a38fced29207638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Colonia09.Refineria
+  energiaInicialDeMision: 22
+--- !u!205 &5316291935039831035
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6777592282490906847}
+  serializedVersion: 3
+  m_LocalReferencePoint: {x: 0, y: 2.11565, z: 0}
+  m_Size: 6.048
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.25
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4445420677032257093}
+    - renderer: {fileID: 3382369487022386388}
+  - screenRelativeHeight: 0.008
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6586440153407215971}
+    - renderer: {fileID: 3143928928502636912}
+  m_Enabled: 1
+  m_GlobalIlluminationLOD: 0
+--- !u!1001 &5609531298437341370
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1961218149723558023}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+      propertyPath: m_Name
+      value: RF02_RefineriaModular_Distancia
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638943656725445081, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+--- !u!23 &3143928928502636912 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7383779453634232778, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+  m_PrefabInstance: {fileID: 5609531298437341370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5355826158119569233 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+  m_PrefabInstance: {fileID: 5609531298437341370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6586440153407215971 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1638943656725445081, guid: 5d3fd770d70307d44a048e1dea594ae6, type: 3}
+  m_PrefabInstance: {fileID: 5609531298437341370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5656043988241324072
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1961218149723558023}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -878482818824094099, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+      propertyPath: m_Name
+      value: RF02_RefineriaModular
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+--- !u!23 &3382369487022386388 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -2265634784148622084, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+  m_PrefabInstance: {fileID: 5656043988241324072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &4445420677032257093 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -878482818824094099, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+  m_PrefabInstance: {fileID: 5656043988241324072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5329156350358781891 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 46013de6c885e1b4cb34bc9cef09c2fc, type: 3}
+  m_PrefabInstance: {fileID: 5656043988241324072}
+  m_PrefabAsset: {fileID: 0}

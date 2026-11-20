@@ -2,9 +2,15 @@ using System;
 using System.Collections.Generic;
 using Colonia09.Simulation;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 namespace Colonia09.Presentation
 {
+    /// <summary>
+    /// Where things are on the 3D island and how the camera looks at it: a light perspective from the south-east,
+    /// panned and zoomed by touch. Save files keep CampaignData's tile grid; each zone is placed on its district.
+    /// </summary>
     public sealed partial class ColonyView
     {
         [Serializable] sealed class RoadCurve { public Vector2[] points; }
@@ -12,36 +18,56 @@ namespace Colonia09.Presentation
         {
             public float width, height, pixelsPerTile;
             public Vector2[] centers;
-            public RoadCurve[] links;
+            public RoadCurve[] links, roads, viaducts;
         }
 
-        // The art uses top-left pixels. Save files always use CampaignData's original grid.
+        // The district plan is drawn in top-left pixels of the 2D plate (Tools/Render/draw_alpine_districts.py).
         static IslandLayout layout;
         static IslandLayout Island => layout ?? (layout = JsonUtility.FromJson<IslandLayout>(
             Resources.Load<TextAsset>("Island/IslandLayout").text));
-        static Vector3 IslandPoint(Vector2 pixel) => Origin + new Vector3(
-            (pixel.x - Island.width / 2) / Island.pixelsPerTile,
-            (Island.height / 2 - pixel.y) / Island.pixelsPerTile, 0);
 
-        static Vector3 LocalTile(CampaignSector sector, float dx, float dy) =>
-            IslandPoint(Island.centers[sector.Number - 1]) + new Vector3((dx - dy) * .5f, -(dx + dy) * .25f, 0);
+        /// <summary>A point of the district plan (roads, links) on the island, just over the road surface.</summary>
+        static Vector3 IslandPoint(Vector2 pixel)
+        {
+            var ab = PlanAb(pixel);
+            return World(ab.x, ab.y, .04f);
+        }
+
+        static Vector3 LocalTile(CampaignSector sector, float dx, float dy)
+        {
+            var c = ZoneAb(sector);
+            return World(c.x + dx, c.y + dy, PaveTop);
+        }
 
         public static Vector3 TileWorld(float x, float y)
         {
-            // Zones, and the landmark plazas just outside them, follow their district on the island art.
+            // Zones, and the landmark plazas just outside them, follow their district on the island.
             var sector = CampaignData.ZoneNear(x, y);
-            if (sector == null) return Origin + new Vector3((x - y) * .5f, -(x + y) * .25f, 0);
+            if (sector == null) return World(x - 31, y - 31, 0);
             var (cx, cy) = CampaignData.ZoneCenter(sector);
-            return LocalTile(sector, x - cx, y - cy);
+            float dx = x - cx, dy = y - cy;
+            var c = ZoneAb(sector);
+            bool inZone = Mathf.Max(Mathf.Abs(dx), Mathf.Abs(dy)) <= CampaignData.ZoneRadius + .5f;
+            bool onPlaza = Mathf.Max(Mathf.Abs(dx + 6), Mathf.Abs(dy + 6)) <= 2.3f && sector.Id != "mines";
+            float h = inZone || onPlaza ? PaveTop : Mathf.Max(TerrainHeight(c.x + dx, c.y + dy), sector.Id == "mines" ? -3 : 0);
+            return World(c.x + dx, c.y + dy, h);
         }
 
         public bool ScreenToTile(Vector2 screen, out int x, out int y)
         {
-            var point = cam.ScreenToWorldPoint(new Vector3(screen.x, screen.y, 10));
+            ApplyCamera();
+            var ray = cam.ScreenPointToRay(new Vector3(screen.x, screen.y, 0));
+            float plane = IslandOrigin.y + LotTop;
+            x = y = -1;
+            if (Mathf.Abs(ray.direction.y) < 1e-4f) return false;
+            float t = (plane - ray.origin.y) / ray.direction.y;
+            if (t < 0) return false;
+            var hit = ray.origin + ray.direction * t - IslandOrigin;
+            float a = hit.x, b = -hit.z;
             foreach (var sector in CampaignData.Sectors)
             {
-                var d = point - LocalTile(sector, 0, 0);
-                int dx = Mathf.RoundToInt(d.x - 2 * d.y), dy = Mathf.RoundToInt(-d.x - 2 * d.y);
+                var c = ZoneAb(sector);
+                int dx = Mathf.RoundToInt(a - c.x), dy = Mathf.RoundToInt(b - c.y);
                 if (Math.Abs(dx) > CampaignData.ZoneRadius || Math.Abs(dy) > CampaignData.ZoneRadius) continue;
                 var (cx, cy) = CampaignData.ZoneCenter(sector);
                 x = cx + dx;
@@ -50,44 +76,27 @@ namespace Colonia09.Presentation
                 if (CampaignData.LotAnchor(x, y) is (int ax, int ay)) (x, y) = (ax, ay);
                 return true;
             }
-            x = y = -1;
             return false;
         }
 
-        SpriteRenderer landscape, districts, spire;
-        bool dormantSpire;
+        void DrawIsland() => BuildWorld();
 
-        SpriteRenderer MapLayer(string name, int order)
-        {
-            var sprite = Resources.Load<Sprite>("Island/" + name);
-            float width = Island.width / Island.pixelsPerTile;
-            return Put(sprite, Origin, order, Color.white, width / sprite.bounds.size.x);
-        }
-
-        void DrawIsland()
-        {
-            landscape = MapLayer("AlpineIsland", -5100);
-            districts = MapLayer("DistrictWorks", -5000);
-            spire = null;
-        }
-
-        void PlaceSpire(CampaignSector sector, bool active)
-        {
-            var sprite = Resources.Load<Sprite>("Island/CivicSpire");
-            var (x, y) = CampaignData.LandmarkCenter(sector);
-            // The imported pivot is at the center of the circular footing.
-            spire = Put(sprite, TileWorld(x, y), Depth(x + 1, y + 1) + 1, Color.white, 5.8f / (sprite.rect.width / sprite.pixelsPerUnit));
-            dormantSpire = !active;
-        }
-
+        /// <summary>Sun, sky light and the sea's backdrop for the hour: warm day, blue moonlit night.</summary>
         void LightIsland()
         {
-            landscape.color = Color.Lerp(Color.white, new Color(.29f, .38f, .53f), Nightness);
-            districts.color = Color.Lerp(Color.white, new Color(.43f, .52f, .62f), Nightness);
-            if (spire != null)
-                spire.color = Color.Lerp(dormantSpire ? new Color(.48f, .51f, .55f) : Color.white,
-                    dormantSpire ? new Color(.26f, .33f, .42f) : new Color(.60f, .79f, .91f), Nightness);
-            cam.backgroundColor = Color.Lerp((Color)new Color32(0, 72, 94, 255), new Color32(0, 21, 46, 255), Nightness);
+            if (sun != null)
+            {
+                sun.intensity = Mathf.Lerp(1.25f, .32f, Nightness);
+                sun.color = Color.Lerp(new Color(1f, .95f, .86f), new Color(.55f, .66f, 1f), Nightness);
+            }
+            var ambient = Color.Lerp(new Color(.52f, .58f, .66f), new Color(.1f, .14f, .26f), Nightness);
+            RenderSettings.ambientMode = AmbientMode.Flat;
+            RenderSettings.ambientLight = ambient;
+            var sh = new SphericalHarmonicsL2();
+            sh.AddAmbientLight(ambient);
+            RenderSettings.ambientProbe = sh;
+            if (waterMat != null) waterMat.SetColor("_Emission", Color.Lerp(new Color(.02f, .07f, .09f), new Color(.0f, .02f, .05f), Nightness));
+            cam.backgroundColor = Color.Lerp((Color)new Color32(16, 74, 96, 255), new Color32(0, 18, 40, 255), Nightness);
         }
 
         List<GameObject> LightRoad(CampaignSector to, out Path path)
@@ -99,21 +108,106 @@ namespace Colonia09.Presentation
             {
                 var p = path.At(d);
                 var direction = (path.At(d + .10f) - p).normalized;
-                var curb = p + new Vector3(-direction.y, direction.x, 0) * .10f;
+                var curb = p + new Vector3(-direction.z, 0, direction.x) * .5f;
                 var marker = Light(curb, new Color(.28f, .86f, .95f, .85f), .12f, -5830);
                 markers.Add(marker.gameObject);
             }
             return markers;
         }
 
-        public bool Distant => zoom > 14f;
-        float OverviewZoom => Mathf.Max(Island.width / (2 * Island.pixelsPerTile * cam.aspect),
-            Island.height / (2 * Island.pixelsPerTile) * Screen.height / Mathf.Max(1, Screen.height - insetTop - insetBottom)) * 1.035f;
+        // ---- Camera ----------------------------------------------------------------------
+
+        /// <summary>A light perspective: tilted down this much, a narrow lens, looking from the south-east.</summary>
+        const float Pitch = 42f, Fov = 30f, Yaw = -45f;
+        const float CloseZoom = 2.6f;
+        /// <summary>Zoom that fits a whole district across the screen.</summary>
+        float FocusZoom => Mathf.Max(6.5f, 6.2f / Mathf.Max(.3f, cam != null ? cam.aspect : .5f));
+        static readonly Quaternion CamRotation = Quaternion.Euler(Pitch, Yaw, 0);
+        /// <summary>The part of the ground plan the camera may look at, in island tiles.</summary>
+        const float IslandReach = 52f;
+
+        public bool Distant => zoom > Mathf.Max(15f, FocusZoom * 1.5f);
+        float OverviewZoom => Mathf.Max(44f / Mathf.Max(.3f, cam.aspect), 34f) * Screen.height / Mathf.Max(1, Screen.height - insetTop - insetBottom);
+
+        /// <summary>World units per screen pixel at the point the camera looks at.</summary>
+        float UnitsPerPixel => 2 * zoom / Mathf.Max(1, Screen.height);
+
+        /// <summary>The ground (a, b) shift that moves the view by this many screen pixels.</summary>
+        Vector2 ScreenToGround(Vector2 pixels)
+        {
+            var right = CamRotation * Vector3.right;
+            var ahead = CamRotation * Vector3.forward;
+            ahead.y = 0;
+            ahead.Normalize();
+            var move = (right * pixels.x + ahead * (pixels.y / Mathf.Sin(Pitch * Mathf.Deg2Rad))) * UnitsPerPixel;
+            return new Vector2(move.x, -move.z);
+        }
+
+        void ApplyCamera()
+        {
+            cam.orthographic = false;
+            cam.fieldOfView = Fov;
+            cam.nearClipPlane = .5f;
+            cam.farClipPlane = 2500;
+            var data = cam.GetUniversalAdditionalCameraData();
+            if (data != null) data.SetRenderer(1);
+            float distance = zoom / Mathf.Tan(Fov * .5f * Mathf.Deg2Rad);
+            cam.transform.SetPositionAndRotation(World(center.x, center.y, 0) - CamRotation * Vector3.forward * distance, CamRotation);
+        }
+
+        public void Focus(CampaignSector sector)
+        {
+            if (Distant || zoom < CloseZoom) zoom = FocusZoom;
+            center = ZoneAb(sector) + ScreenToGround(new Vector2(0, (insetBottom - insetTop) / 2));
+            Clamp();
+        }
 
         public void Overview()
         {
             zoom = OverviewZoom;
-            center = new Vector2(0, (insetTop - insetBottom) * .5f * UnitsPerPixel);
+            center = ScreenToGround(new Vector2(0, (insetBottom - insetTop) / 2));
+            Clamp();
+        }
+
+        public void Pan(Vector2 screenDelta)
+        {
+            center -= ScreenToGround(screenDelta);
+            Clamp();
+        }
+
+        public void Zoom(float factor)
+        {
+            zoom = Mathf.Clamp(zoom * factor, CloseZoom, OverviewZoom);
+            Clamp();
+        }
+
+        void Clamp()
+        {
+            zoom = Mathf.Clamp(zoom, CloseZoom, OverviewZoom);
+            center.x = Mathf.Clamp(center.x, -IslandReach, IslandReach);
+            center.y = Mathf.Clamp(center.y, -IslandReach, IslandReach);
+        }
+
+        /// <summary>
+        /// Sprites still standing on the island (landmarks, lamps, lights) face the camera; ground marks lie flat.
+        /// A tile is a unit square here, and the sprites were drawn for tiles one unit wide on screen, so they grow by √2.
+        /// </summary>
+        void Place3D(SpriteRenderer r, bool flat)
+        {
+            var t = r.transform;
+            const float Root2 = 1.41421356f;
+            if (flat)
+            {
+                t.rotation = Quaternion.Euler(90, 45, 0);
+                var s = t.localScale.x;
+                t.localScale = new Vector3(s * Root2, s * 2 * Root2, 1);
+                t.position += Vector3.up * .03f;
+                return;
+            }
+            t.rotation = CamRotation;
+            t.localScale *= 1.1f;
+            // Pulled toward the camera so the lower half of the picture, drawn below its ground point, is not buried.
+            t.position -= CamRotation * Vector3.forward * (1.2f * t.localScale.y);
         }
     }
 }

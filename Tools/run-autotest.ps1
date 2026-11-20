@@ -1,6 +1,7 @@
 ﻿# Builds the Windows development player and runs the automated UI test on several screen shapes.
 # Close the Unity Editor first: batch builds cannot run while this project is open.
-param([switch]$SkipBuild)
+# -Colony runs only the quick colony check (every sector already won), in about two minutes.
+param([switch]$SkipBuild, [switch]$Colony)
 $root = (Resolve-Path "$PSScriptRoot\..").Path
 $unity = 'C:\Program Files\Unity\Hub\Editor\6000.6.7f1\Editor\Unity.exe'
 if (-not $SkipBuild) {
@@ -15,6 +16,7 @@ $runs = @(
   @{ Name = 'tablet-4x3'; W = 768; H = 1024; Extra = @('-colonia-quick') },
   @{ Name = 'campaign'; W = 540; H = 1170; Extra = @('-colonia-campaign') }
 )
+if ($Colony) { $runs = @(@{ Name = 'colony'; W = 540; H = 1170; Extra = @('-colonia-colony') }) }
 $failed = 0
 foreach ($run in $runs) {
   $out = "$root\Builds\Autotest\$($run.Name)"

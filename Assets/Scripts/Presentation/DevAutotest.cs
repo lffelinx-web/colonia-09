@@ -329,11 +329,36 @@ namespace Colonia09.Presentation
             yield return Shot($"{shot:00}_map_after");
             Check("progress is saved", SaveGame.Data.sectors.Count >= 8 && SaveGame.Data.seenEnemies.Contains("Commander") && SaveGame.Data.tutorials.Count == 8);
 
+            yield return ColonyChecks(shot);
+        }
+
+        /// <summary>Only the colony: every sector already won, so the map can be checked in a couple of minutes.</summary>
+        IEnumerator ColonyOnly()
+        {
+            SaveGame.ResetForTests();
+            foreach (var sector in CampaignData.Sectors)
+            {
+                var progress = SaveGame.Sector(sector.Id);
+                progress.stars = 3;
+                progress.wins = progress.attempts = 1;
+            }
+            SaveGame.Data.materials = 958;
+            SaveGame.Data.data = 222;
+            game.ShowCampaignMap();
+            yield return Frames(3);
+            yield return ColonyChecks(42);
+        }
+
+        IEnumerator ColonyChecks(int shot)
+        {
+            var sim = game.Sim;
+            var ui = game.Ui;
             // Colony: rewards, building on a lot, production while away, and the mission bonus.
             var save = SaveGame.Data;
             report.Add($"Rewards after the campaign: {save.materials:0} materials, {save.data:0} data");
             Check("winning sectors pays resources", save.materials >= 300 && save.data >= 50);
             var map = game.ColonyMap;
+            map.ForceHour = 13;  // Screenshots in daylight, whatever the hour of the run.
             Check("colony map is drawn while the map is open", map.Active);
             map.Focus(CampaignData.Sectors[0]);
             yield return Frames(2);
@@ -471,6 +496,12 @@ namespace Colonia09.Presentation
             Check("tilted pieces load (every level, aim directions, enemies)", game.Board.TiltedPiecesLoaded);
             Check("main menu opens first", ui.MainMenuOpen && !ui.ModalOpen);
             Check("campaign is open and multiplayer is marked unavailable", ui.CampaignButton.interactable && !ui.MultiplayerButton.interactable);
+            if (Array.IndexOf(Environment.GetCommandLineArgs(), "-colonia-colony") >= 0)
+            {
+                yield return ColonyOnly();
+                Finish();
+                yield break;
+            }
             if (Array.IndexOf(Environment.GetCommandLineArgs(), "-colonia-campaign") >= 0)
             {
                 yield return FullCampaign();

@@ -271,7 +271,7 @@ namespace Colonia09.Presentation
             var bg = row.gameObject.AddComponent<Image>();
             bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = PanelLight; bg.raycastTarget = false;
             var icon = Rt("Icon", row).gameObject.AddComponent<Image>();
-            icon.sprite = BuildingIcon(type); icon.preserveAspect = true; icon.raycastTarget = false;
+            icon.sprite = ColonyView.Trimmed(BuildingIcon(type)); icon.preserveAspect = true; icon.raycastTarget = false;
             icon.rectTransform.anchorMin = new Vector2(0, 0); icon.rectTransform.anchorMax = new Vector2(0, 1); icon.rectTransform.pivot = new Vector2(0, .5f);
             icon.rectTransform.sizeDelta = new Vector2(150, 0); icon.rectTransform.anchoredPosition = new Vector2(4, 0);
             var text = Label(row, $"<b>{def.Name}</b>  <size=22><color=#91e5bd>{EffectText(type, 1)}</color></size>\n<size=21><color=#99b5c7>{def.Description}</color></size>", 30, Txt, TextAnchor.MiddleLeft);
@@ -370,7 +370,7 @@ namespace Colonia09.Presentation
             var def = ColonyData.Buildings[type];
             bool max = b.level >= def.MaxLevel;
             // The card shows this very building: its look, at its level (or the one it is rising to).
-            infoIcon.sprite = Resources.Load<Sprite>("Sprites/Colony/" + ColonyView.BuildingArt(type, b.style, Mathf.Max(1, b.level))) ?? BuildingIcon(type);
+            infoIcon.sprite = ColonyView.Trimmed(Resources.Load<Sprite>("Sprites/Colony/" + ColonyView.BuildingArt(type, b.style, Mathf.Max(1, b.level))) ?? BuildingIcon(type));
             bool working = Colony.IsConnected(b.sector);
             string left = Colony.TimeText(Colony.SecondsLeft(b.readyTicks));
             if (b.UnderWork && b.level == 0)
