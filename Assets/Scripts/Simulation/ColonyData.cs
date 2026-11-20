@@ -3,13 +3,14 @@ using System.Collections.Generic;
 
 namespace Colonia09.Simulation
 {
-    public enum BuildingType { Extractor, Laboratory, Refinery, Fortification, Housing, Solar, Farm, WaterTower, Works }
+    public enum BuildingType { Extractor, Laboratory, Refinery, Fortification, Housing, Solar, Farm, WaterTower, Works, SelfSufficientHousing }
 
     public sealed class BuildingDef
     {
         public string Name, Description;
         /// <summary>Indexed by level - 1. Level 1 is the construction cost.</summary>
         public int[] MaterialCost, DataCost;
+        public int MaxLevel => MaterialCost.Length;
         public double[] MaterialsPerHour = { 0, 0, 0 }, DataPerHour = { 0, 0, 0 }, EnergyPerHour = { 0, 0, 0 }, WaterPerHour = { 0, 0, 0 }, FoodPerHour = { 0, 0, 0 };
         /// <summary>Share of the time taken off every work, by level (0.15 is 15 % faster).</summary>
         public double[] WorkSpeed = { 0, 0, 0 };
@@ -80,6 +81,7 @@ namespace Colonia09.Simulation
         {
             var r = new ResourceSet();
             double upkeep = 0, energyIn = 0;
+            int waterSavingBeds = 0;
             foreach (var id in Connected)
                 if (ColonyData.Zones.TryGetValue(id, out var z))
                 {
@@ -98,10 +100,12 @@ namespace Colonia09.Simulation
                 r.Food += def.FoodPerHour[b.Level - 1] * crew * power;
                 energyIn += def.EnergyPerHour[b.Level - 1];
                 upkeep += def.Upkeep;
+                if (b.Type == BuildingType.SelfSufficientHousing) waterSavingBeds += def.Housing[b.Level - 1];
             }
             r.Energy = energyIn - upkeep;
             // Colonists drink and eat; they arrive while there is water and food and room, and leave when there is none.
             r.Water -= Stock.Population * .1;
+            r.Water += Math.Min(Stock.Population, waterSavingBeds) * .05;
             r.Food -= Stock.Population * .1;
             bool supplied = Stock.Water > .01 && Stock.Food > .01;
             int cap = Capacity;
@@ -136,9 +140,10 @@ namespace Colonia09.Simulation
         /// <summary>Zone development from 0 to 1: building levels against what the zone can hold.</summary>
         public double Development(string sector)
         {
-            int levels = 0;
-            foreach (var b in Buildings) if (b.Sector == sector) levels += b.Level;
-            return Math.Min(1, levels / (double)(ColonyData.LotsFor(sector) * ColonyData.MaxLevel));
+            double developedLots = 0;
+            foreach (var b in Buildings)
+                if (b.Sector == sector) developedLots += (double)b.Level / ColonyData.Buildings[b.Type].MaxLevel;
+            return Math.Min(1, developedLots / ColonyData.LotsFor(sector));
         }
     }
 
@@ -169,8 +174,8 @@ namespace Colonia09.Simulation
         }
 
         public static readonly BuildingType[] Types =
-            { BuildingType.Extractor, BuildingType.Laboratory, BuildingType.Solar, BuildingType.Housing, BuildingType.Farm, BuildingType.WaterTower,
-              BuildingType.Refinery, BuildingType.Fortification, BuildingType.Works };
+            { BuildingType.Housing, BuildingType.SelfSufficientHousing, BuildingType.Extractor, BuildingType.Laboratory, BuildingType.Solar,
+              BuildingType.Farm, BuildingType.WaterTower, BuildingType.Refinery, BuildingType.Works, BuildingType.Fortification };
 
         public static readonly Dictionary<BuildingType, BuildingDef> Buildings = new Dictionary<BuildingType, BuildingDef>
         {
@@ -180,8 +185,11 @@ namespace Colonia09.Simulation
                 MaterialCost = new[] { 60, 120, 220 }, DataCost = new[] { 0, 15, 35 }, DataPerHour = new double[] { 4, 8, 14 }, Upkeep = 2, Styles = 2 } },
             { BuildingType.Solar, new BuildingDef { Name = "Planta solar", Description = "Paneles que dan la energía que gastan los demás edificios.",
                 MaterialCost = new[] { 50, 100, 180 }, DataCost = new[] { 0, 10, 25 }, EnergyPerHour = new double[] { 8, 16, 26 }, Styles = 2 } },
-            { BuildingType.Housing, new BuildingDef { Name = "Vivienda", Description = "Más espacio para colonos: cada uno suma producción a toda la colonia.",
-                MaterialCost = new[] { 50, 110, 200 }, DataCost = new[] { 0, 10, 30 }, Housing = new[] { 8, 16, 28 }, Upkeep = 1, Styles = 3 } },
+            { BuildingType.Housing, new BuildingDef { Name = "Vivienda colonial", Description = "Aloja colonos. Las mejoras amplían su capacidad.",
+                MaterialCost = new[] { 50, 110, 200 }, DataCost = new[] { 0, 10, 30 }, Housing = new[] { 8, 16, 28 }, Upkeep = 1, Styles = 2 } },
+            { BuildingType.SelfSufficientHousing, new BuildingDef { Name = "Vivienda autosuficiente", Description = "Su invernadero aporta comida y sus paneles generan energía. Sus residentes consumen la mitad de agua.",
+                MaterialCost = new[] { 85 }, DataCost = new[] { 10 }, Housing = new[] { 6 },
+                FoodPerHour = new double[] { 2 }, EnergyPerHour = new double[] { 2 } } },
             { BuildingType.Refinery, new BuildingDef { Name = "Refinería", Description = "Prepara combustible: empiezas cada misión con más energía.",
                 MaterialCost = new[] { 80, 150, 260 }, DataCost = new[] { 0, 20, 45 }, StartCharge = new[] { 15, 30, 50 }, Upkeep = 1 } },
             { BuildingType.Fortification, new BuildingDef { Name = "Fortificación", Description = "Refuerza la base: más integridad en cada misión.",

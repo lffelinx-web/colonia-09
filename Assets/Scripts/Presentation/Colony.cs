@@ -18,27 +18,27 @@ namespace Colonia09.Presentation
         }
         static bool migrated;
 
-        /// <summary>Buildings saved before the isometric map used numbered lots; give them a tile in their zone.</summary>
+        /// <summary>
+        /// Buildings saved on single tiles (or, earlier still, numbered lots) move to a 2 x 2 lot of their zone: the lot
+        /// under their tile when it is free, otherwise the first free one.
+        /// </summary>
         static void Migrate(SaveData data)
         {
+            var taken = new HashSet<(int, int)>();
+            var moved = new List<BuildingSave>();
             foreach (var b in data.buildings)
             {
-                if (CampaignData.ZoneAt(b.x, b.y)?.Id == b.sector && !CampaignData.Reserved(b.x, b.y)) continue;
+                var anchor = CampaignData.ZoneAt(b.x, b.y)?.Id == b.sector && !CampaignData.Reserved(b.x, b.y) ? CampaignData.LotAnchor(b.x, b.y) : null;
+                if (anchor != null && taken.Add(anchor.Value)) (b.x, b.y) = anchor.Value;
+                else moved.Add(b);
+            }
+            foreach (var b in moved)
+            {
                 var sector = CampaignData.Find(b.sector);
                 if (sector == null) continue;
-                var free = FreeTiles(data, sector);
-                if (free.Count > 0) (b.x, b.y) = free[0];
+                foreach (var lot in CampaignData.Lots(sector))
+                    if (taken.Add(lot)) { (b.x, b.y) = lot; break; }
             }
-        }
-
-        static List<(int x, int y)> FreeTiles(SaveData data, CampaignSector sector)
-        {
-            var (cx, cy) = CampaignData.ZoneCenter(sector);
-            var free = new List<(int, int)>();
-            for (int y = cy - CampaignData.ZoneRadius; y <= cy + CampaignData.ZoneRadius; y++)
-                for (int x = cx - CampaignData.ZoneRadius; x <= cx + CampaignData.ZoneRadius; x++)
-                    if (!CampaignData.Reserved(x, y) && data.buildings.Find(b => b.x == x && b.y == y && b.sector == sector.Id) == null) free.Add((x, y));
-            return free;
         }
 
         /// <summary>Finished buildings at their current level; one still rising for its first level does not count yet.</summary>
@@ -184,7 +184,12 @@ namespace Colonia09.Presentation
         }
 
         public static IReadOnlyList<BuildingSave> Saved => Data.buildings;
-        public static BuildingSave At(int x, int y) => Data.buildings.Find(b => b.x == x && b.y == y);
+        /// <summary>The building on the lot that holds this tile.</summary>
+        public static BuildingSave At(int x, int y)
+        {
+            var (ax, ay) = CampaignData.LotAnchor(x, y) ?? (x, y);
+            return Data.buildings.Find(b => b.x == ax && b.y == ay);
+        }
         public static int CountIn(string sector) => Data.buildings.FindAll(b => b.sector == sector).Count;
 
         /// <summary>Optional clock for tests; real time otherwise.</summary>
@@ -277,7 +282,8 @@ namespace Colonia09.Presentation
         public static bool Upgrade(int x, int y)
         {
             var b = At(x, y);
-            if (b == null || b.UnderWork || b.level >= ColonyData.MaxLevel || !Enum.TryParse(b.type, out BuildingType type) || !CanAfford(type, b.level + 1) || !WorkersFree) return false;
+            if (b == null || b.UnderWork || !Enum.TryParse(b.type, out BuildingType type) ||
+                b.level >= ColonyData.Buildings[type].MaxLevel || !CanAfford(type, b.level + 1) || !WorkersFree) return false;
             Collect(out _);
             Pay(type, b.level + 1);
             b.pending = b.level + 1;

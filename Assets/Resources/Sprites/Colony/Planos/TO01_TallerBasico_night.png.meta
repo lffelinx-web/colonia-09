@@ -1,0 +1,7583 @@
+fileFormatVersion: 2
+guid: fb45d29d32caba34d82fb3a94e4e8522
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7816025678742266485
+    second: TO01_TallerBasico_night_0
+  - first:
+      213: 6762474202011869662
+    second: TO01_TallerBasico_night_1
+  - first:
+      213: 148383901141863857
+    second: TO01_TallerBasico_night_2
+  - first:
+      213: -6448739946795928409
+    second: TO01_TallerBasico_night_3
+  - first:
+      213: -3758760500545834227
+    second: TO01_TallerBasico_night_4
+  - first:
+      213: -4397872813079810275
+    second: TO01_TallerBasico_night_5
+  - first:
+      213: -5873164232009102737
+    second: TO01_TallerBasico_night_6
+  - first:
+      213: 6655933025049916713
+    second: TO01_TallerBasico_night_7
+  - first:
+      213: -9180541596527767884
+    second: TO01_TallerBasico_night_8
+  - first:
+      213: -4796288388984702680
+    second: TO01_TallerBasico_night_9
+  - first:
+      213: -6098568641358930068
+    second: TO01_TallerBasico_night_10
+  - first:
+      213: -683442717553908898
+    second: TO01_TallerBasico_night_11
+  - first:
+      213: -1373131827293001098
+    second: TO01_TallerBasico_night_12
+  - first:
+      213: 6384187035820852319
+    second: TO01_TallerBasico_night_13
+  - first:
+      213: 5029510872530765026
+    second: TO01_TallerBasico_night_14
+  - first:
+      213: -6639594489089682767
+    second: TO01_TallerBasico_night_15
+  - first:
+      213: 6614301205444677497
+    second: TO01_TallerBasico_night_16
+  - first:
+      213: 3793709621607836000
+    second: TO01_TallerBasico_night_17
+  - first:
+      213: -5430962920607377989
+    second: TO01_TallerBasico_night_18
+  - first:
+      213: 6631926131871063726
+    second: TO01_TallerBasico_night_19
+  - first:
+      213: 8453551840820747958
+    second: TO01_TallerBasico_night_20
+  - first:
+      213: 7221194961839769811
+    second: TO01_TallerBasico_night_21
+  - first:
+      213: -3788597328653610449
+    second: TO01_TallerBasico_night_22
+  - first:
+      213: -1984811225729520598
+    second: TO01_TallerBasico_night_23
+  - first:
+      213: -1370835000821871679
+    second: TO01_TallerBasico_night_24
+  - first:
+      213: 8264276458707935728
+    second: TO01_TallerBasico_night_25
+  - first:
+      213: -5204184461244227422
+    second: TO01_TallerBasico_night_26
+  - first:
+      213: -3726090916188241634
+    second: TO01_TallerBasico_night_27
+  - first:
+      213: -4827935348795680326
+    second: TO01_TallerBasico_night_28
+  - first:
+      213: 2264991777248778816
+    second: TO01_TallerBasico_night_29
+  - first:
+      213: -1151050541791500807
+    second: TO01_TallerBasico_night_30
+  - first:
+      213: 976478611851679349
+    second: TO01_TallerBasico_night_31
+  - first:
+      213: -6594426422154544467
+    second: TO01_TallerBasico_night_32
+  - first:
+      213: -6030527777684695468
+    second: TO01_TallerBasico_night_33
+  - first:
+      213: 3729418592679861646
+    second: TO01_TallerBasico_night_34
+  - first:
+      213: -7101457900374620320
+    second: TO01_TallerBasico_night_35
+  - first:
+      213: 4474124627341559382
+    second: TO01_TallerBasico_night_36
+  - first:
+      213: 3782217390403740052
+    second: TO01_TallerBasico_night_37
+  - first:
+      213: -4398484542372618206
+    second: TO01_TallerBasico_night_38
+  - first:
+      213: 1754716857997582233
+    second: TO01_TallerBasico_night_39
+  - first:
+      213: -7928569005292259571
+    second: TO01_TallerBasico_night_40
+  - first:
+      213: 2836410064665349130
+    second: TO01_TallerBasico_night_41
+  - first:
+      213: 7266467032444029448
+    second: TO01_TallerBasico_night_42
+  - first:
+      213: 6430912963895748496
+    second: TO01_TallerBasico_night_43
+  - first:
+      213: -2083304593812263753
+    second: TO01_TallerBasico_night_44
+  - first:
+      213: 3231073614245911908
+    second: TO01_TallerBasico_night_45
+  - first:
+      213: 3048718967989497225
+    second: TO01_TallerBasico_night_46
+  - first:
+      213: -7944746539213026476
+    second: TO01_TallerBasico_night_47
+  - first:
+      213: 3161900285199092791
+    second: TO01_TallerBasico_night_48
+  - first:
+      213: -6490829767443630272
+    second: TO01_TallerBasico_night_49
+  - first:
+      213: -7948239470638662874
+    second: TO01_TallerBasico_night_50
+  - first:
+      213: 4774892267395429341
+    second: TO01_TallerBasico_night_51
+  - first:
+      213: 6077281720166850735
+    second: TO01_TallerBasico_night_52
+  - first:
+      213: -6946648218579034569
+    second: TO01_TallerBasico_night_53
+  - first:
+      213: -7592495653749289906
+    second: TO01_TallerBasico_night_54
+  - first:
+      213: -7493635523602890297
+    second: TO01_TallerBasico_night_55
+  - first:
+      213: 296697941612178614
+    second: TO01_TallerBasico_night_56
+  - first:
+      213: 1199999648851685245
+    second: TO01_TallerBasico_night_57
+  - first:
+      213: -2270006679120105153
+    second: TO01_TallerBasico_night_58
+  - first:
+      213: 8246263204790263271
+    second: TO01_TallerBasico_night_59
+  - first:
+      213: 19908464293451298
+    second: TO01_TallerBasico_night_60
+  - first:
+      213: 4883387928705357047
+    second: TO01_TallerBasico_night_61
+  - first:
+      213: -7822050707243953045
+    second: TO01_TallerBasico_night_62
+  - first:
+      213: -2024010616915536749
+    second: TO01_TallerBasico_night_63
+  - first:
+      213: 7851228347745482134
+    second: TO01_TallerBasico_night_64
+  - first:
+      213: 4936651024383635751
+    second: TO01_TallerBasico_night_65
+  - first:
+      213: -810042660391596588
+    second: TO01_TallerBasico_night_66
+  - first:
+      213: -7864022426857358651
+    second: TO01_TallerBasico_night_67
+  - first:
+      213: -6453497882197436305
+    second: TO01_TallerBasico_night_68
+  - first:
+      213: -8280278794199982068
+    second: TO01_TallerBasico_night_69
+  - first:
+      213: 6382620207746743275
+    second: TO01_TallerBasico_night_70
+  - first:
+      213: 1368531361089009221
+    second: TO01_TallerBasico_night_71
+  - first:
+      213: 720930151124200093
+    second: TO01_TallerBasico_night_72
+  - first:
+      213: -6126199289502879314
+    second: TO01_TallerBasico_night_73
+  - first:
+      213: 6056014629321411133
+    second: TO01_TallerBasico_night_74
+  - first:
+      213: -8467185881517662053
+    second: TO01_TallerBasico_night_75
+  - first:
+      213: -515727951989228866
+    second: TO01_TallerBasico_night_76
+  - first:
+      213: -8471815754547295341
+    second: TO01_TallerBasico_night_77
+  - first:
+      213: -5779126415215255671
+    second: TO01_TallerBasico_night_78
+  - first:
+      213: 1763218400834655759
+    second: TO01_TallerBasico_night_79
+  - first:
+      213: 4074949898822529567
+    second: TO01_TallerBasico_night_80
+  - first:
+      213: -7594117541919074420
+    second: TO01_TallerBasico_night_81
+  - first:
+      213: 6212276645207847584
+    second: TO01_TallerBasico_night_82
+  - first:
+      213: -2602702335163618515
+    second: TO01_TallerBasico_night_83
+  - first:
+      213: 8657186342601098080
+    second: TO01_TallerBasico_night_84
+  - first:
+      213: 8019992564150991404
+    second: TO01_TallerBasico_night_85
+  - first:
+      213: 1420184432068396755
+    second: TO01_TallerBasico_night_86
+  - first:
+      213: 1090835249818147611
+    second: TO01_TallerBasico_night_87
+  - first:
+      213: 3478388377290669617
+    second: TO01_TallerBasico_night_88
+  - first:
+      213: 5008906298684720933
+    second: TO01_TallerBasico_night_89
+  - first:
+      213: -3090297447162851557
+    second: TO01_TallerBasico_night_90
+  - first:
+      213: 1847476633301796692
+    second: TO01_TallerBasico_night_91
+  - first:
+      213: -238799421094916420
+    second: TO01_TallerBasico_night_92
+  - first:
+      213: -2192929323719082498
+    second: TO01_TallerBasico_night_93
+  - first:
+      213: -8868751407252491383
+    second: TO01_TallerBasico_night_94
+  - first:
+      213: -596899017648898977
+    second: TO01_TallerBasico_night_95
+  - first:
+      213: 5640344447730624363
+    second: TO01_TallerBasico_night_96
+  - first:
+      213: 8026477301582639208
+    second: TO01_TallerBasico_night_97
+  - first:
+      213: 7012384181550767124
+    second: TO01_TallerBasico_night_98
+  - first:
+      213: -8423210863343918750
+    second: TO01_TallerBasico_night_99
+  - first:
+      213: -2873792432965762378
+    second: TO01_TallerBasico_night_100
+  - first:
+      213: -5194872013264730068
+    second: TO01_TallerBasico_night_101
+  - first:
+      213: 262931243045383985
+    second: TO01_TallerBasico_night_102
+  - first:
+      213: -173994613122279100
+    second: TO01_TallerBasico_night_103
+  - first:
+      213: -532119981420224
+    second: TO01_TallerBasico_night_104
+  - first:
+      213: -8899873171529550716
+    second: TO01_TallerBasico_night_105
+  - first:
+      213: 3027107785346743550
+    second: TO01_TallerBasico_night_106
+  - first:
+      213: -908302024354411095
+    second: TO01_TallerBasico_night_107
+  - first:
+      213: 1400219531842927247
+    second: TO01_TallerBasico_night_108
+  - first:
+      213: 998264069271456371
+    second: TO01_TallerBasico_night_109
+  - first:
+      213: -1557876216281000359
+    second: TO01_TallerBasico_night_110
+  - first:
+      213: -8880394139519725023
+    second: TO01_TallerBasico_night_111
+  - first:
+      213: -3226863479653813376
+    second: TO01_TallerBasico_night_112
+  - first:
+      213: -6438213845127221705
+    second: TO01_TallerBasico_night_113
+  - first:
+      213: -3272276633646945166
+    second: TO01_TallerBasico_night_114
+  - first:
+      213: 1130346518594393130
+    second: TO01_TallerBasico_night_115
+  - first:
+      213: -3318622682313256280
+    second: TO01_TallerBasico_night_116
+  - first:
+      213: -4141430504009865340
+    second: TO01_TallerBasico_night_117
+  - first:
+      213: -858874041946821943
+    second: TO01_TallerBasico_night_118
+  - first:
+      213: -3541556763559765303
+    second: TO01_TallerBasico_night_119
+  - first:
+      213: 7371919952811058693
+    second: TO01_TallerBasico_night_120
+  - first:
+      213: 5112246206813189539
+    second: TO01_TallerBasico_night_121
+  - first:
+      213: -915443714183830242
+    second: TO01_TallerBasico_night_122
+  - first:
+      213: 3005745168951286901
+    second: TO01_TallerBasico_night_123
+  - first:
+      213: -4387854472283874626
+    second: TO01_TallerBasico_night_124
+  - first:
+      213: 9013176453538299654
+    second: TO01_TallerBasico_night_125
+  - first:
+      213: 8959901468841383699
+    second: TO01_TallerBasico_night_126
+  - first:
+      213: 7506794717066103059
+    second: TO01_TallerBasico_night_127
+  - first:
+      213: -4432469954425693233
+    second: TO01_TallerBasico_night_128
+  - first:
+      213: 1262352276251184002
+    second: TO01_TallerBasico_night_129
+  - first:
+      213: 4442809078734233678
+    second: TO01_TallerBasico_night_130
+  - first:
+      213: 2820412482247829335
+    second: TO01_TallerBasico_night_131
+  - first:
+      213: 8532357211936820792
+    second: TO01_TallerBasico_night_132
+  - first:
+      213: -1797792629415034482
+    second: TO01_TallerBasico_night_133
+  - first:
+      213: 7879486611142629840
+    second: TO01_TallerBasico_night_134
+  - first:
+      213: -7539579414246308431
+    second: TO01_TallerBasico_night_135
+  - first:
+      213: -7453293367648926650
+    second: TO01_TallerBasico_night_136
+  - first:
+      213: 6096198933535963617
+    second: TO01_TallerBasico_night_137
+  - first:
+      213: -4452897337117818785
+    second: TO01_TallerBasico_night_138
+  - first:
+      213: -1054519691275155939
+    second: TO01_TallerBasico_night_139
+  - first:
+      213: 1585399289499217840
+    second: TO01_TallerBasico_night_140
+  - first:
+      213: -8195914853787514877
+    second: TO01_TallerBasico_night_141
+  - first:
+      213: 3975361961420724090
+    second: TO01_TallerBasico_night_142
+  - first:
+      213: -3129525990796784245
+    second: TO01_TallerBasico_night_143
+  - first:
+      213: -4568305837193699464
+    second: TO01_TallerBasico_night_144
+  - first:
+      213: 1490567342325682196
+    second: TO01_TallerBasico_night_145
+  - first:
+      213: -3165832271734267341
+    second: TO01_TallerBasico_night_146
+  - first:
+      213: 747603156762192321
+    second: TO01_TallerBasico_night_147
+  - first:
+      213: -4090170841914979367
+    second: TO01_TallerBasico_night_148
+  - first:
+      213: -2356596436794421563
+    second: TO01_TallerBasico_night_149
+  - first:
+      213: -3880813247271424866
+    second: TO01_TallerBasico_night_150
+  - first:
+      213: -8234770571317605212
+    second: TO01_TallerBasico_night_151
+  - first:
+      213: 7636806929524722149
+    second: TO01_TallerBasico_night_152
+  - first:
+      213: -796511537860436317
+    second: TO01_TallerBasico_night_153
+  - first:
+      213: 4127605560203871169
+    second: TO01_TallerBasico_night_154
+  - first:
+      213: -1100459158289900146
+    second: TO01_TallerBasico_night_155
+  - first:
+      213: 5330831607398231392
+    second: TO01_TallerBasico_night_156
+  - first:
+      213: -4862674911550435938
+    second: TO01_TallerBasico_night_157
+  - first:
+      213: 631327160441652123
+    second: TO01_TallerBasico_night_158
+  - first:
+      213: 6811048333291392746
+    second: TO01_TallerBasico_night_159
+  - first:
+      213: 795677619413598307
+    second: TO01_TallerBasico_night_160
+  - first:
+      213: -2468914090981021070
+    second: TO01_TallerBasico_night_161
+  - first:
+      213: 6257559955958005
+    second: TO01_TallerBasico_night_162
+  - first:
+      213: 5377566314469892915
+    second: TO01_TallerBasico_night_163
+  - first:
+      213: -231114019809725935
+    second: TO01_TallerBasico_night_164
+  - first:
+      213: 644090516376556398
+    second: TO01_TallerBasico_night_165
+  - first:
+      213: -7833071039845921903
+    second: TO01_TallerBasico_night_166
+  - first:
+      213: -7082374798492784869
+    second: TO01_TallerBasico_night_167
+  - first:
+      213: 6122206804091855394
+    second: TO01_TallerBasico_night_168
+  - first:
+      213: -7252339993413633064
+    second: TO01_TallerBasico_night_169
+  - first:
+      213: 5647893944050665343
+    second: TO01_TallerBasico_night_170
+  - first:
+      213: 2552585944265350441
+    second: TO01_TallerBasico_night_171
+  - first:
+      213: 2517700865055189940
+    second: TO01_TallerBasico_night_172
+  - first:
+      213: -431758247081321104
+    second: TO01_TallerBasico_night_173
+  - first:
+      213: 7432515350433536661
+    second: TO01_TallerBasico_night_174
+  - first:
+      213: -3025904489742143856
+    second: TO01_TallerBasico_night_175
+  - first:
+      213: 712005262423420817
+    second: TO01_TallerBasico_night_176
+  - first:
+      213: -3916334114915899569
+    second: TO01_TallerBasico_night_177
+  - first:
+      213: 178130617743056040
+    second: TO01_TallerBasico_night_178
+  - first:
+      213: 627755103893818186
+    second: TO01_TallerBasico_night_179
+  - first:
+      213: 2066537123330921769
+    second: TO01_TallerBasico_night_180
+  - first:
+      213: -6151575207688560766
+    second: TO01_TallerBasico_night_181
+  - first:
+      213: -8963870613865674802
+    second: TO01_TallerBasico_night_182
+  - first:
+      213: 7653612566352410095
+    second: TO01_TallerBasico_night_183
+  - first:
+      213: 2232861886513506831
+    second: TO01_TallerBasico_night_184
+  - first:
+      213: 8166561936287788070
+    second: TO01_TallerBasico_night_185
+  - first:
+      213: -1655992334479296533
+    second: TO01_TallerBasico_night_186
+  - first:
+      213: -2076644558289786404
+    second: TO01_TallerBasico_night_187
+  - first:
+      213: -5483880881441072328
+    second: TO01_TallerBasico_night_188
+  - first:
+      213: 7386186293126905282
+    second: TO01_TallerBasico_night_189
+  - first:
+      213: 2588240747968377999
+    second: TO01_TallerBasico_night_190
+  - first:
+      213: 3881108696426825914
+    second: TO01_TallerBasico_night_191
+  - first:
+      213: -3514146798052853195
+    second: TO01_TallerBasico_night_192
+  - first:
+      213: -9085643909163737277
+    second: TO01_TallerBasico_night_193
+  - first:
+      213: 4590721033927350038
+    second: TO01_TallerBasico_night_194
+  - first:
+      213: -9144228411804751698
+    second: TO01_TallerBasico_night_195
+  - first:
+      213: 6299475347617286291
+    second: TO01_TallerBasico_night_196
+  - first:
+      213: 3718551257018556166
+    second: TO01_TallerBasico_night_197
+  - first:
+      213: -5825031099757154129
+    second: TO01_TallerBasico_night_198
+  - first:
+      213: 1239195140316475303
+    second: TO01_TallerBasico_night_199
+  - first:
+      213: -86776418479438765
+    second: TO01_TallerBasico_night_200
+  - first:
+      213: 2115838195153230177
+    second: TO01_TallerBasico_night_201
+  - first:
+      213: 2608822427462755356
+    second: TO01_TallerBasico_night_202
+  - first:
+      213: 2969022401365336614
+    second: TO01_TallerBasico_night_203
+  - first:
+      213: 4739826349156661774
+    second: TO01_TallerBasico_night_204
+  - first:
+      213: -2635408765755462092
+    second: TO01_TallerBasico_night_205
+  - first:
+      213: -8184811780834100461
+    second: TO01_TallerBasico_night_206
+  - first:
+      213: -4399009922682310669
+    second: TO01_TallerBasico_night_207
+  - first:
+      213: -2620250992957080676
+    second: TO01_TallerBasico_night_208
+  - first:
+      213: 1863425478749416770
+    second: TO01_TallerBasico_night_209
+  - first:
+      213: 4897658675360601727
+    second: TO01_TallerBasico_night_210
+  - first:
+      213: 2805132935362310180
+    second: TO01_TallerBasico_night_211
+  - first:
+      213: -6704580850517931257
+    second: TO01_TallerBasico_night_212
+  - first:
+      213: 406004439654235169
+    second: TO01_TallerBasico_night_213
+  - first:
+      213: -961892489455309820
+    second: TO01_TallerBasico_night_214
+  - first:
+      213: 8752668943620222504
+    second: TO01_TallerBasico_night_215
+  - first:
+      213: -3971625375241732602
+    second: TO01_TallerBasico_night_216
+  - first:
+      213: -3091697818308815447
+    second: TO01_TallerBasico_night_217
+  - first:
+      213: 731474585513452460
+    second: TO01_TallerBasico_night_218
+  - first:
+      213: -717259331012986060
+    second: TO01_TallerBasico_night_219
+  - first:
+      213: 2099132020140929018
+    second: TO01_TallerBasico_night_220
+  - first:
+      213: 227369246038453247
+    second: TO01_TallerBasico_night_221
+  - first:
+      213: 5546805397700364317
+    second: TO01_TallerBasico_night_222
+  - first:
+      213: -3322918338269934479
+    second: TO01_TallerBasico_night_223
+  - first:
+      213: -8812109529859963766
+    second: TO01_TallerBasico_night_224
+  - first:
+      213: -1732240386588922595
+    second: TO01_TallerBasico_night_225
+  - first:
+      213: 3442730464301896383
+    second: TO01_TallerBasico_night_226
+  - first:
+      213: 7295978168693280137
+    second: TO01_TallerBasico_night_227
+  - first:
+      213: -6595204766393418338
+    second: TO01_TallerBasico_night_228
+  - first:
+      213: -4807952877439128202
+    second: TO01_TallerBasico_night_229
+  - first:
+      213: 4292796908427562018
+    second: TO01_TallerBasico_night_230
+  - first:
+      213: 2014559776360436750
+    second: TO01_TallerBasico_night_231
+  - first:
+      213: -7121051756953456279
+    second: TO01_TallerBasico_night_232
+  - first:
+      213: 594139334313476237
+    second: TO01_TallerBasico_night_233
+  - first:
+      213: 3110862459215335969
+    second: TO01_TallerBasico_night_234
+  - first:
+      213: -6808223132927311129
+    second: TO01_TallerBasico_night_235
+  - first:
+      213: 1056025526162171172
+    second: TO01_TallerBasico_night_236
+  - first:
+      213: 4845924297064604563
+    second: TO01_TallerBasico_night_237
+  - first:
+      213: -1089668092781658849
+    second: TO01_TallerBasico_night_238
+  - first:
+      213: -4258860986516666032
+    second: TO01_TallerBasico_night_239
+  - first:
+      213: -1807473003001702555
+    second: TO01_TallerBasico_night_240
+  - first:
+      213: 3918384343745588417
+    second: TO01_TallerBasico_night_241
+  - first:
+      213: -5784243323260472385
+    second: TO01_TallerBasico_night_242
+  - first:
+      213: 8708781951394745260
+    second: TO01_TallerBasico_night_243
+  - first:
+      213: -2815275566582215137
+    second: TO01_TallerBasico_night_244
+  - first:
+      213: -1393415042676704027
+    second: TO01_TallerBasico_night_245
+  - first:
+      213: -1953723781706133411
+    second: TO01_TallerBasico_night_246
+  - first:
+      213: 309014461121502
+    second: TO01_TallerBasico_night_247
+  - first:
+      213: 8548980466313769693
+    second: TO01_TallerBasico_night_248
+  - first:
+      213: 6696621271815472301
+    second: TO01_TallerBasico_night_249
+  - first:
+      213: -8959883818600474096
+    second: TO01_TallerBasico_night_250
+  - first:
+      213: -3169390203167701302
+    second: TO01_TallerBasico_night_251
+  - first:
+      213: 5621347252860854247
+    second: TO01_TallerBasico_night_252
+  - first:
+      213: 4751383774813488481
+    second: TO01_TallerBasico_night_253
+  - first:
+      213: -7795091543898240413
+    second: TO01_TallerBasico_night_254
+  - first:
+      213: -820826598848764566
+    second: TO01_TallerBasico_night_255
+  - first:
+      213: 3840143468974352680
+    second: TO01_TallerBasico_night_256
+  - first:
+      213: 623719498094591272
+    second: TO01_TallerBasico_night_257
+  - first:
+      213: 6804842502793728042
+    second: TO01_TallerBasico_night_258
+  - first:
+      213: 4682617228597216514
+    second: TO01_TallerBasico_night_259
+  - first:
+      213: 3579428358026373439
+    second: TO01_TallerBasico_night_260
+  - first:
+      213: -3912365645039207296
+    second: TO01_TallerBasico_night_261
+  - first:
+      213: -5290784353362310691
+    second: TO01_TallerBasico_night_262
+  - first:
+      213: 1697437293467353583
+    second: TO01_TallerBasico_night_263
+  - first:
+      213: 2145011785891046979
+    second: TO01_TallerBasico_night_264
+  - first:
+      213: -6536888630774121292
+    second: TO01_TallerBasico_night_265
+  - first:
+      213: -8526671367033038485
+    second: TO01_TallerBasico_night_266
+  - first:
+      213: 8202671530089848606
+    second: TO01_TallerBasico_night_267
+  - first:
+      213: -6635493862240788750
+    second: TO01_TallerBasico_night_268
+  - first:
+      213: -4766440691176856633
+    second: TO01_TallerBasico_night_269
+  - first:
+      213: 1347813139818197250
+    second: TO01_TallerBasico_night_270
+  - first:
+      213: -1488726970909784822
+    second: TO01_TallerBasico_night_271
+  - first:
+      213: -7053471276071229903
+    second: TO01_TallerBasico_night_272
+  - first:
+      213: -9048179677184156765
+    second: TO01_TallerBasico_night_273
+  - first:
+      213: 6444724869131650079
+    second: TO01_TallerBasico_night_274
+  - first:
+      213: 603740034078174718
+    second: TO01_TallerBasico_night_275
+  - first:
+      213: 2358006585391763141
+    second: TO01_TallerBasico_night_276
+  - first:
+      213: 4759356943438006262
+    second: TO01_TallerBasico_night_277
+  - first:
+      213: -629979927382210671
+    second: TO01_TallerBasico_night_278
+  - first:
+      213: -4280378145199264933
+    second: TO01_TallerBasico_night_279
+  - first:
+      213: -1977903784038461475
+    second: TO01_TallerBasico_night_280
+  - first:
+      213: -4288263808377889790
+    second: TO01_TallerBasico_night_281
+  - first:
+      213: -3282317450076760945
+    second: TO01_TallerBasico_night_282
+  - first:
+      213: -4517188808202428397
+    second: TO01_TallerBasico_night_283
+  - first:
+      213: -4580660087667152355
+    second: TO01_TallerBasico_night_284
+  - first:
+      213: -6695027624516580861
+    second: TO01_TallerBasico_night_285
+  - first:
+      213: 7844581764121249427
+    second: TO01_TallerBasico_night_286
+  - first:
+      213: -1453485703352484201
+    second: TO01_TallerBasico_night_287
+  - first:
+      213: 5574495772222070045
+    second: TO01_TallerBasico_night_288
+  - first:
+      213: 2363728113210188622
+    second: TO01_TallerBasico_night_289
+  - first:
+      213: 270649532808515326
+    second: TO01_TallerBasico_night_290
+  - first:
+      213: -3674804834705023176
+    second: TO01_TallerBasico_night_291
+  - first:
+      213: -652124308870652409
+    second: TO01_TallerBasico_night_292
+  - first:
+      213: -4142806806422672457
+    second: TO01_TallerBasico_night_293
+  - first:
+      213: -8110446333493367240
+    second: TO01_TallerBasico_night_294
+  - first:
+      213: -357436262972444986
+    second: TO01_TallerBasico_night_295
+  - first:
+      213: -8140460176993288526
+    second: TO01_TallerBasico_night_296
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 234
+        width: 195
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d5c376e06e78390800000000000000
+      internalID: -7816025678742266485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 17
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed129a5257229dd50800000000000000
+      internalID: 6762474202011869662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 71
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd82f53f5a2f0200800000000000000
+      internalID: 148383901141863857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a47b5e6f297186a0800000000000000
+      internalID: -6448739946795928409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 53
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0332315d3336dbc0800000000000000
+      internalID: -3758760500545834227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 287
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1fa7093afd97f2c0800000000000000
+      internalID: -4397872813079810275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 205
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a41939f345e7ea0800000000000000
+      internalID: -5873164232009102737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_7
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 217
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92534e652df9e5c50800000000000000
+      internalID: 6655933025049916713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_8
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 164
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bec34dfe0a289080800000000000000
+      internalID: -9180541596527767884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 201
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8297c3e3f19207db0800000000000000
+      internalID: -4796288388984702680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_10
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 224
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6fd67dd1288d5ba0800000000000000
+      internalID: -6098568641358930068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_11
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e532fdb287ce386f0800000000000000
+      internalID: -683442717553908898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_12
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 30
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67aea64d0e7a1fce0800000000000000
+      internalID: -1373131827293001098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 150
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5481c1c840399850800000000000000
+      internalID: 6384187035820852319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_14
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 184
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e44927bd796cc540800000000000000
+      internalID: 5029510872530765026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_15
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 212
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b21b218dfb6bd3a0800000000000000
+      internalID: -6639594489089682767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_16
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 238
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97fc7fbf6e7bacb50800000000000000
+      internalID: 6614301205444677497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_17
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 220
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069aae80dc6f5a430800000000000000
+      internalID: 3793709621607836000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_18
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 201
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb511e88ff751a4b0800000000000000
+      internalID: -5430962920607377989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_19
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 104
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae1ec2fda5590c50800000000000000
+      internalID: 6631926131871063726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_20
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 213
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be58724c9c015570800000000000000
+      internalID: 8453551840820747958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_21
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 83
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8cc4aee86d63460800000000000000
+      internalID: 7221194961839769811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 114
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f229b9c6dc23c6bc0800000000000000
+      internalID: -3788597328653610449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c2f28c4b88474e0800000000000000
+      internalID: -1984811225729520598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_24
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 203
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb075a64d0d9fce0800000000000000
+      internalID: -1370835000821871679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_25
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 40
+        width: 30
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1e8e637ab90b270800000000000000
+      internalID: 8264276458707935728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_26
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 168
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a02ee13ec507c7b0800000000000000
+      internalID: -5204184461244227422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_27
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 209
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e114acbad044a4cc0800000000000000
+      internalID: -3726090916188241634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_28
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 194
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab95b78316abffcb0800000000000000
+      internalID: -4827935348795680326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_29
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 103
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a181e550ede6f10800000000000000
+      internalID: 2264991777248778816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_30
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 274
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f52ff971a5a600f0800000000000000
+      internalID: -1151050541791500807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_31
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 111
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5769f26bf162d8d00800000000000000
+      internalID: 976478611851679349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_32
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 61
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa370a9b14eb74a0800000000000000
+      internalID: -6594426422154544467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_33
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 319
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4565af2ffe24f4ca0800000000000000
+      internalID: -6030527777684695468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_34
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 268
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d9b63637e81c330800000000000000
+      internalID: 3729418592679861646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_35
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 188
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06787cc2aad827d90800000000000000
+      internalID: -7101457900374620320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_36
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 354
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6564585c4a8471e30800000000000000
+      internalID: 4474124627341559382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_37
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 448
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491e1527da22d7430800000000000000
+      internalID: 3782217390403740052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_38
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 209
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22065d5ec9175f2c0800000000000000
+      internalID: -4398484542372618206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_39
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 96
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99fd55a7fa10a5810800000000000000
+      internalID: 1754716857997582233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_40
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 298
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07f16e3f7018f190800000000000000
+      internalID: -7928569005292259571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_41
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 49
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c88b50de3fc5720800000000000000
+      internalID: 2836410064665349130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_42
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 263
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ac9e0444da7d460800000000000000
+      internalID: 7266467032444029448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_43
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 172
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097e57aa4413f3950800000000000000
+      internalID: 6430912963895748496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_44
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 164
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc61ee728d9613e0800000000000000
+      internalID: -2083304593812263753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_45
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 289
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46dd34c455417dc20800000000000000
+      internalID: 3231073614245911908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_46
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 85
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98d6203afb93f4a20800000000000000
+      internalID: 3048718967989497225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_47
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 280
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b81bb9d179eb190800000000000000
+      internalID: -7944746539213026476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_48
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 96
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c8f729e8351eb20800000000000000
+      internalID: 3161900285199092791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_49
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 64
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047bdf567b0fbe5a0800000000000000
+      internalID: -6490829767443630272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_50
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 423
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62bf7d2205e22b190800000000000000
+      internalID: -7948239470638662874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_51
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 264
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd33ddef733d34240800000000000000
+      internalID: 4774892267395429341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_52
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 43
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa025829687d65450800000000000000
+      internalID: 6077281720166850735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_53
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 329
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e1ff7004c889f90800000000000000
+      internalID: -6946648218579034569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_54
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 280
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c839ffd6902a690800000000000000
+      internalID: -7592495653749289906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_55
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 357
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1c66bb132410890800000000000000
+      internalID: -7493635523602890297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 136
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc2267b4351e1400800000000000000
+      internalID: 296697941612178614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_57
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 294
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fe560a25147a010800000000000000
+      internalID: 1199999648851685245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_58
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 309
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31384dc3f05f70e0800000000000000
+      internalID: -2270006679120105153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_59
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 379
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7edd5e5b1bc907270800000000000000
+      internalID: 8246263204790263271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_60
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 303
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2261c3e84aab64000800000000000000
+      internalID: 19908464293451298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_61
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 279
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4d9e6a27745c340800000000000000
+      internalID: 4883387928705357047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_62
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 99
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6491a3235e727390800000000000000
+      internalID: -7822050707243953045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_63
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 438
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394512d411549e3e0800000000000000
+      internalID: -2024010616915536749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_64
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 315
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695b8dda59a25fc60800000000000000
+      internalID: 7851228347745482134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_65
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 72
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721747083f1828440800000000000000
+      internalID: 4936651024383635751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_66
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 288
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd427efd7622c4f0800000000000000
+      internalID: -810042660391596588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_67
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 52
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca3675a4416dd290800000000000000
+      internalID: -7864022426857358651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_68
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 308
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68d2e44ed19076a0800000000000000
+      internalID: -6453497882197436305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_69
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 337
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00a286be4a861d80800000000000000
+      internalID: -8280278794199982068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_70
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 325
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb79fa234f939850800000000000000
+      internalID: 6382620207746743275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_71
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 67
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54631b9a5000ef210800000000000000
+      internalID: 1368531361089009221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_72
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 382
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a60ad1722410a00800000000000000
+      internalID: 720930151124200093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_73
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 122
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea13ee5443e5bfaa0800000000000000
+      internalID: -6126199289502879314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_74
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 284
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a854f18394b0450800000000000000
+      internalID: 6056014629321411133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_75
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 59
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90efe44d438e7a80800000000000000
+      internalID: -8467185881517662053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_76
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 49
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba31fcf824c7d8f0800000000000000
+      internalID: -515727951989228866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_77
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 251
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b86a3f4701e6a80800000000000000
+      internalID: -8471815754547295341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_78
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 365
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f940df42b6ccfa0800000000000000
+      internalID: -5779126415215255671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_79
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 73
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f069e2b2bc5387810800000000000000
+      internalID: 1763218400834655759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_80
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 315
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12b4dcc7512d8830800000000000000
+      internalID: 4074949898822529567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_81
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 401
+        width: 74
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87d95bb4564c9690800000000000000
+      internalID: -7594117541919074420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_82
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 306
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2b11cd1b0763650800000000000000
+      internalID: 6212276645207847584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_83
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 117
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b2e70140851ebd0800000000000000
+      internalID: -2602702335163618515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_84
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 296
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0630a116c11842870800000000000000
+      internalID: 8657186342601098080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_85
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 285
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a7e7fcebcbc4f60800000000000000
+      internalID: 8019992564150991404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_86
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 299
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d60afc673285b310800000000000000
+      internalID: 1420184432068396755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_87
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 366
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b92e551ec632f00800000000000000
+      internalID: 1090835249818147611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_88
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 107
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ef143ccc7b54030800000000000000
+      internalID: 3478388377290669617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_89
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 293
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527c1568db5338540800000000000000
+      internalID: 5008906298684720933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_90
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 359
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1fcf8b48de0d15d0800000000000000
+      internalID: -3090297447162851557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_91
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 283
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457c9caa53e83a910800000000000000
+      internalID: 1847476633301796692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_92
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 370
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe8115113d9facf0800000000000000
+      internalID: -238799421094916420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_93
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 302
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efdbf2216662191e0800000000000000
+      internalID: -2192929323719082498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_94
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 347
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9833871759ddbe480800000000000000
+      internalID: -8868751407252491383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_95
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 288
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cf146818367b7f0800000000000000
+      internalID: -596899017648898977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_96
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 316
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67a4d13467864e40800000000000000
+      internalID: 5640344447730624363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_97
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 135
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860b1966496c36f60800000000000000
+      internalID: 8026477301582639208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_98
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 99
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41cd6e9824ef05160800000000000000
+      internalID: 7012384181550767124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_99
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 146
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261ac2e095eba1b80800000000000000
+      internalID: -8423210863343918750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_100
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 112
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2ceda120d3e18d0800000000000000
+      internalID: -2873792432965762378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_101
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 422
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28ccb37d6b18e7b0800000000000000
+      internalID: -5194872013264730068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_102
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 336
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f621e829e16a300800000000000000
+      internalID: 262931243045383985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_103
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 75
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449d30c32d8d59df0800000000000000
+      internalID: -173994613122279100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_104
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 93
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04197892a0c1efff0800000000000000
+      internalID: -532119981420224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_105
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 142
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484b3f8018c4d7480800000000000000
+      internalID: -8899873171529550716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_106
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 276
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc79621e72720a20800000000000000
+      internalID: 3027107785346743550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_107
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 103
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad46990f101563f0800000000000000
+      internalID: -908302024354411095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_108
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 294
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8abf0bde349e6310800000000000000
+      internalID: 1400219531842927247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_109
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 307
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a06f8c1eb8add00800000000000000
+      internalID: 998264069271456371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_110
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 119
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9569a84d5df416ae0800000000000000
+      internalID: -1557876216281000359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_111
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 312
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1225778949082c480800000000000000
+      internalID: -8880394139519725023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_112
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 152
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 083bd8c03c0e733d0800000000000000
+      internalID: -3226863479653813376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_113
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 20
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ea0357e9ed6a6a0800000000000000
+      internalID: -6438213845127221705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_114
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 280
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ca9ac2db98692d0800000000000000
+      internalID: -3272276633646945166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_115
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 60
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a241be97b2ccfaf00800000000000000
+      internalID: 1130346518594393130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_116
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 51
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a21a25d042e1f1d0800000000000000
+      internalID: -3318622682313256280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_117
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 37
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487668a16eea686c0800000000000000
+      internalID: -4141430504009865340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_118
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 359
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9caa4fefb9aa414f0800000000000000
+      internalID: -858874041946821943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_119
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 290
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca532433ecd9dec0800000000000000
+      internalID: -3541556763559765303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_120
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 134
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506eae393225e4660800000000000000
+      internalID: 7371919952811058693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_121
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 90
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a53079d6d852f640800000000000000
+      internalID: 5112246206813189539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_122
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 345
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15653ccac0bb43f0800000000000000
+      internalID: -915443714183830242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_123
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 330
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c10b85e4d86b920800000000000000
+      internalID: 3005745168951286901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_124
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 21
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba1965fa953b13c0800000000000000
+      internalID: -4387854472283874626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_125
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 304
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fb01b0b3c351d70800000000000000
+      internalID: 9013176453538299654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_126
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 0
+        width: 274
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3179ac01ae6f75c70800000000000000
+      internalID: 8959901468841383699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_127
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 111
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3190180c50e7d2860800000000000000
+      internalID: 7506794717066103059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_128
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 295
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb5dd88f04bc72c0800000000000000
+      internalID: -4432469954425693233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_129
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b8b5ff4b6c48110800000000000000
+      internalID: 1262352276251184002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_130
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 339
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40a5de615708ad30800000000000000
+      internalID: 4442809078734233678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_131
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 280
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757a57c953e142720800000000000000
+      internalID: 2820412482247829335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_132
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 125
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e8c3a8da5096670800000000000000
+      internalID: 8532357211936820792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_133
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 362
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e81c6efe025fc07e0800000000000000
+      internalID: -1797792629415034482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_134
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 333
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d95a95535f895d60800000000000000
+      internalID: 7879486611142629840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_135
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 285
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5400a18780e5790800000000000000
+      internalID: -7539579414246308431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_136
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 38
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644c28edb25909890800000000000000
+      internalID: -7453293367648926650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_137
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 353
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9b68981ac0a9450800000000000000
+      internalID: 6096198933535963617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_138
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 303
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f504fcfd6712432c0800000000000000
+      internalID: -4452897337117818785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_139
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 64
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16c3e88de79d51f0800000000000000
+      internalID: -1054519691275155939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_140
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 21
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bfe1c50148700610800000000000000
+      internalID: 1585399289499217840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_141
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 319
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308c5a24dd2424e80800000000000000
+      internalID: -8195914853787514877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_142
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 43
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77151c34a25b2730800000000000000
+      internalID: 3975361961420724090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_143
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 4
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d843b31b0b194d0800000000000000
+      internalID: -3129525990796784245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_144
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 83
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87fd9b48b0e1a90c0800000000000000
+      internalID: -4568305837193699464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_145
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 295
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410de19b91f8fa410800000000000000
+      internalID: 1490567342325682196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_146
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 386
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 332afc87254b014d0800000000000000
+      internalID: -3165832271734267341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_147
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 332
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c965cf2c15006a00800000000000000
+      internalID: 747603156762192321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_148
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 50
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db4ff83a4bcc37c0800000000000000
+      internalID: -4090170841914979367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_149
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cecae9c600bb4fd0800000000000000
+      internalID: -2356596436794421563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_150
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 83
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ca1ccb9e4942ac0800000000000000
+      internalID: -3880813247271424866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_151
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 317
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac06c98bc738bd80800000000000000
+      internalID: -8234770571317605212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_152
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 53
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9009cd0736bf960800000000000000
+      internalID: 7636806929524722149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_153
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 290
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae1456f9f832f4f0800000000000000
+      internalID: -796511537860436317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_154
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 64
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c301e45363384930800000000000000
+      internalID: 4127605560203871169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_155
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 295
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d1e4cd9326ab0f0800000000000000
+      internalID: -1100459158289900146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_156
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 69
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d656c5a1beaf940800000000000000
+      internalID: 5330831607398231392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_157
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 40
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d05d67eee448cb0800000000000000
+      internalID: -4862674911550435938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_158
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 280
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b934e2f15bce2c800800000000000000
+      internalID: 631327160441652123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_159
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 59
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee89d56f54b58e50800000000000000
+      internalID: 6811048333291392746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_160
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 300
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36040e44490da0b00800000000000000
+      internalID: 795677619413598307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_161
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 109
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27aae1217b7acbdd0800000000000000
+      internalID: -2468914090981021070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_162
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 329
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8e556b73b361000800000000000000
+      internalID: 6257559955958005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_163
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 65
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333a51a4214f0aa40800000000000000
+      internalID: 5377566314469892915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_164
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 25
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112f0a2060beaccf0800000000000000
+      internalID: -231114019809725935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_165
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 20
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6392df79e440f800800000000000000
+      internalID: 644090516376556398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_166
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 291
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b859104675b4390800000000000000
+      internalID: -7833071039845921903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_167
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 80
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b17a8a115a956bd90800000000000000
+      internalID: -7082374798492784869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_168
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 66
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222ef57c6a276f450800000000000000
+      internalID: 6122206804091855394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_169
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 284
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dbb83653338a5b90800000000000000
+      internalID: -7252339993413633064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_170
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 51
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7748384e99516e40800000000000000
+      internalID: 5647893944050665343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_171
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 327
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d5792646b9c6320800000000000000
+      internalID: 2552585944265350441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_172
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 61
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bbee40f89ba0f220800000000000000
+      internalID: 2517700865055189940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_173
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 98
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d5fdd6926120af0800000000000000
+      internalID: -431758247081321104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_174
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 288
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59a9a320559952760800000000000000
+      internalID: 7432515350433536661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_175
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 303
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ee8a406e3d106d0800000000000000
+      internalID: -3025904489742143856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_176
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 337
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19fe4f8830d81e900800000000000000
+      internalID: 712005262423420817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_177
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 113
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47a1b24fd266a9c0800000000000000
+      internalID: -3916334114915899569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_178
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac12326ad8d87200800000000000000
+      internalID: 178130617743056040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_179
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 56
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b8785e0fb36b800800000000000000
+      internalID: 627755103893818186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_180
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 24
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9251c4f8090ddac10800000000000000
+      internalID: 2066537123330921769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_181
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 282
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f9f98e0f631aaa0800000000000000
+      internalID: -6151575207688560766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_182
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 67
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec749f75b2fe99380800000000000000
+      internalID: -8963870613865674802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_183
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5b6e91418173a60800000000000000
+      internalID: 7653612566352410095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_184
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a652a3e08bcfe10800000000000000
+      internalID: 2232861886513506831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_185
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 304
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ce8a010d4755170800000000000000
+      internalID: 8166561936287788070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_186
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 105
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be77790eebbb409e0800000000000000
+      internalID: -1655992334479296533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_187
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 77
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9a36ad6c64e23e0800000000000000
+      internalID: -2076644558289786404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_188
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 287
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b1627a46755e3b0800000000000000
+      internalID: -5483880881441072328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_189
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 61
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd30b6cc41018660800000000000000
+      internalID: 7386186293126905282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_190
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 298
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f84b8d74f374be320800000000000000
+      internalID: 2588240747968377999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_191
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 92
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab84331ebc77cd530800000000000000
+      internalID: 3881108696426825914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_192
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 21
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53abb7d1b1e3b3fc0800000000000000
+      internalID: -3514146798052853195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_193
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 52
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f9a9e900f49e180800000000000000
+      internalID: -9085643909163737277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_194
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 285
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617572a257485bf30800000000000000
+      internalID: 4590721033927350038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_195
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 141
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8e75925bc291180800000000000000
+      internalID: -9144228411804751698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_196
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 82
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3980f0ed37b3c6750800000000000000
+      internalID: 6299475347617286291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_197
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 121
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60f5ca1aaa2fa9330800000000000000
+      internalID: 3718551257018556166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_198
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 99
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa03f5db315592fa0800000000000000
+      internalID: -5825031099757154129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_199
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 109
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af24f12a61823110800000000000000
+      internalID: 1239195140316475303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_200
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 55
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35407a1ae45bbcef0800000000000000
+      internalID: -86776418479438765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_201
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 312
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169df48d0a7fc5d10800000000000000
+      internalID: 2115838195153230177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_202
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 355
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c146df6fc26643420800000000000000
+      internalID: 2608822427462755356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_203
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 75
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622ee8bb426143920800000000000000
+      internalID: 2969022401365336614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_204
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 89
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0af48ea3fe37c140800000000000000
+      internalID: 4739826349156661774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_205
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 136
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ee137c0b52d6bd0800000000000000
+      internalID: -2635408765755462092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_206
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 80
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b73f1ec05b96e80800000000000000
+      internalID: -8184811780834100461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_207
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 252
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff2a1348c393f2c0800000000000000
+      internalID: -4399009922682310669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_208
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 244
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9bbd66ca9ff2abd0800000000000000
+      internalID: -2620250992957080676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_209
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 259
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d654e99973cd910800000000000000
+      internalID: 1863425478749416770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_210
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 63
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f769af7cd9af7f340800000000000000
+      internalID: 4897658675360601727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_211
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 272
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420f400ea85dde620800000000000000
+      internalID: 2805132935362310180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_212
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 94
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b0ef42d3b84f2a0800000000000000
+      internalID: -6704580850517931257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_213
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 284
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c72d203ea62a500800000000000000
+      internalID: 406004439654235169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_214
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 249
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c66ed80eba6a2f0800000000000000
+      internalID: -961892489455309820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_215
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 238
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ea315d70ab77970800000000000000
+      internalID: 8752668943620222504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_216
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 52
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ef9c783c3f1e8c0800000000000000
+      internalID: -3971625375241732602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_217
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 227
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a55adaf6351815d0800000000000000
+      internalID: -3091697818308815447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_218
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 139
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca361cf8248b62a00800000000000000
+      internalID: 731474585513452460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_219
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 254
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43bf22b4078cb06f0800000000000000
+      internalID: -717259331012986060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_220
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 145
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: affe52d537d912d10800000000000000
+      internalID: 2099132020140929018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_221
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 243
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb68f6ef17c72300800000000000000
+      internalID: 227369246038453247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_222
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 215
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d184628fe163afc40800000000000000
+      internalID: 5546805397700364317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_223
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 172
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c0acd706f92e1d0800000000000000
+      internalID: -3322918338269934479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_224
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 181
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84ccd6321915b580800000000000000
+      internalID: -8812109529859963766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_225
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 103
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d28c3db88d5f7e0800000000000000
+      internalID: -1732240386588922595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_226
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 89
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2512eed1907cf20800000000000000
+      internalID: 3442730464301896383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_227
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 284
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98dc7f91d75804560800000000000000
+      internalID: 7295978168693280137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_228
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 204
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d382635302974a0800000000000000
+      internalID: -6595204766393418338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_229
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 243
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d6c63e458b64db0800000000000000
+      internalID: -4807952877439128202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_230
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 293
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c48b34b04139b30800000000000000
+      internalID: 4292796908427562018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_231
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 196
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0411c8617725fb10800000000000000
+      internalID: 2014559776360436750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_232
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 7
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9613e9fe721fc2d90800000000000000
+      internalID: -7121051756953456279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_233
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 110
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8087d0a39ece3800800000000000000
+      internalID: 594139334313476237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_234
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 98
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122d0a2bce00c2b20800000000000000
+      internalID: 3110862459215335969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_235
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 195
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e24542d1255481a0800000000000000
+      internalID: -6808223132927311129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_236
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 138
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42524a8fe91c7ae00800000000000000
+      internalID: 1056025526162171172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_237
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 216
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39368fe297e204340800000000000000
+      internalID: 4845924297064604563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_238
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 278
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1dfba694a8b0e0f0800000000000000
+      internalID: -1089668092781658849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_239
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 208
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05987e64f7c75e4c0800000000000000
+      internalID: -4258860986516666032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_240
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 182
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56799f251e09ae6e0800000000000000
+      internalID: -1807473003001702555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_241
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 153
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc6866dcc5e06630800000000000000
+      internalID: 3918384343745588417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_242
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 113
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb372aef75d3abfa0800000000000000
+      internalID: -5784243323260472385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_243
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 284
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab873f2b0fcbd870800000000000000
+      internalID: 8708781951394745260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_244
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 133
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ec705c9c12ee8d0800000000000000
+      internalID: -2815275566582215137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_245
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 121
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ecb19cb66899ace0800000000000000
+      internalID: -1393415042676704027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_246
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 195
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d505c22629af2e4e0800000000000000
+      internalID: -1953723781706133411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_247
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 84
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed38f290c09110000800000000000000
+      internalID: 309014461121502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_248
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 74
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2b26e807414a670800000000000000
+      internalID: 8548980466313769693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_249
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 210
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4c2e5019d2fec50800000000000000
+      internalID: 6696621271815472301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_250
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 64
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a5c83732918a380800000000000000
+      internalID: -8959883818600474096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_251
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 220
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6069107601404d0800000000000000
+      internalID: -3169390203167701302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_252
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 173
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef93e51b89030e40800000000000000
+      internalID: 5621347252860854247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_253
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 160
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16500598e5e40f140800000000000000
+      internalID: 4751383774813488481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_254
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 262
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a4b4e7a8542d390800000000000000
+      internalID: -7795091543898240413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_255
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 210
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a656d69ae86db94f0800000000000000
+      internalID: -820826598848764566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_256
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 172
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829a0ca932eea4530800000000000000
+      internalID: 3840143468974352680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_257
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 121
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82db9633495e7a800800000000000000
+      internalID: 623719498094591272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_258
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 48
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a201083e338af6e50800000000000000
+      internalID: 6804842502793728042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_259
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 164
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20549a15f8ffbf040800000000000000
+      internalID: 4682617228597216514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_260
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 277
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f392f13802faca130800000000000000
+      internalID: 3579428358026373439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_261
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 324
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08cfef7ac2c74b9c0800000000000000
+      internalID: -3912365645039207296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_262
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 201
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd905a299ab5396b0800000000000000
+      internalID: -5290784353362310691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_263
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 301
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe14f9999328e8710800000000000000
+      internalID: 1697437293467353583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_264
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 124
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 346ef01cadc94cd10800000000000000
+      internalID: 2145011785891046979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_265
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 276
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc3b6a9c6e4845a0800000000000000
+      internalID: -6536888630774121292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_266
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 154
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b695083619d2ba980800000000000000
+      internalID: -8526671367033038485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_267
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 161
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f17380c4eb5d170800000000000000
+      internalID: 8202671530089848606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_268
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 298
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe5ad71d7df9e3a0800000000000000
+      internalID: -6635493862240788750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_269
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 195
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3af6fe1733addb0800000000000000
+      internalID: -4766440691176856633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_270
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 391
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 201b77ed8e464b210800000000000000
+      internalID: 1347813139818197250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_271
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 172
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05016325baf65be0800000000000000
+      internalID: -1488726970909784822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_272
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 136
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1366a5cce390d1e90800000000000000
+      internalID: -7053471276071229903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_273
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 117
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab978dd5886e6280800000000000000
+      internalID: -9048179677184156765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_274
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 319
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14c7b37f13407950800000000000000
+      internalID: 6444724869131650079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_275
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 258
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd69ebbc5ae06800800000000000000
+      internalID: 603740034078174718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_276
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 112
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cece440f7259b020800000000000000
+      internalID: 2358006585391763141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_277
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 200
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f749e48ce1ac0240800000000000000
+      internalID: 4759356943438006262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_278
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 295
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197c1c4089cd147f0800000000000000
+      internalID: -629979927382210671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_279
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 343
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b6d0f51ca0994c0800000000000000
+      internalID: -4280378145199264933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_280
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 147
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf8c70ecf21d84e0800000000000000
+      internalID: -1977903784038461475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_281
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 82
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20cd87659c60d74c0800000000000000
+      internalID: -4288263808377889790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_282
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 263
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f84db1c6badd272d0800000000000000
+      internalID: -3282317450076760945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_283
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 131
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31069b746b8bf41c0800000000000000
+      internalID: -4517188808202428397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_284
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a2acd6be93e60c0800000000000000
+      internalID: -4580660087667152355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_285
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a0347e8db7613a0800000000000000
+      internalID: -6695027624516580861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_286
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 251
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39644f55d8d8ddc60800000000000000
+      internalID: 7844581764121249427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_287
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 197
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ef095247e24dbe0800000000000000
+      internalID: -1453485703352484201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_288
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 118
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d9631be569c5d40800000000000000
+      internalID: 5574495772222070045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_289
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 283
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e436f750236adc020800000000000000
+      internalID: 2363728113210188622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_290
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 106
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe4dade05a81c300800000000000000
+      internalID: 270649532808515326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_291
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 300
+        width: 11
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83fd4880978700dc0800000000000000
+      internalID: -3674804834705023176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_292
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 152
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e1e5c656033f6f0800000000000000
+      internalID: -652124308870652409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_293
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 246
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb2b1ab82bc186c0800000000000000
+      internalID: -4142806806422672457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_294
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 179
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e224ad708e17f80800000000000000
+      internalID: -8110446333493367240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_295
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 122
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce2fa3dc912a0bf0800000000000000
+      internalID: -357436262972444986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_night_296
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 58
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bef91a5996470f80800000000000000
+      internalID: -8140460176993288526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

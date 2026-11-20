@@ -1,0 +1,4283 @@
+fileFormatVersion: 2
+guid: 57ee0c30583513348a6b930eab524021
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2758072830020647849
+    second: TA02_TorreDeAguaModular_0
+  - first:
+      213: 7446598881984823313
+    second: TA02_TorreDeAguaModular_1
+  - first:
+      213: -5859048331908512657
+    second: TA02_TorreDeAguaModular_2
+  - first:
+      213: 8996367642281680674
+    second: TA02_TorreDeAguaModular_3
+  - first:
+      213: -3212365122014097622
+    second: TA02_TorreDeAguaModular_4
+  - first:
+      213: -5511468256108477375
+    second: TA02_TorreDeAguaModular_5
+  - first:
+      213: -7628453276298765567
+    second: TA02_TorreDeAguaModular_6
+  - first:
+      213: -8096029766735757176
+    second: TA02_TorreDeAguaModular_7
+  - first:
+      213: -4943829287310697190
+    second: TA02_TorreDeAguaModular_8
+  - first:
+      213: 1858414901083731054
+    second: TA02_TorreDeAguaModular_9
+  - first:
+      213: -5489045294129629042
+    second: TA02_TorreDeAguaModular_10
+  - first:
+      213: 1793338647655825212
+    second: TA02_TorreDeAguaModular_11
+  - first:
+      213: 6747854079887185758
+    second: TA02_TorreDeAguaModular_12
+  - first:
+      213: -2317331303638929965
+    second: TA02_TorreDeAguaModular_13
+  - first:
+      213: -7695798841313130732
+    second: TA02_TorreDeAguaModular_14
+  - first:
+      213: -4778170156085492947
+    second: TA02_TorreDeAguaModular_15
+  - first:
+      213: 6245964978091781979
+    second: TA02_TorreDeAguaModular_16
+  - first:
+      213: 263806363510606871
+    second: TA02_TorreDeAguaModular_17
+  - first:
+      213: 6739178230506441884
+    second: TA02_TorreDeAguaModular_18
+  - first:
+      213: -2450854366541970337
+    second: TA02_TorreDeAguaModular_19
+  - first:
+      213: -196034334431403678
+    second: TA02_TorreDeAguaModular_20
+  - first:
+      213: -1824850999102527100
+    second: TA02_TorreDeAguaModular_21
+  - first:
+      213: 6060055416110010375
+    second: TA02_TorreDeAguaModular_22
+  - first:
+      213: -419847590744662825
+    second: TA02_TorreDeAguaModular_23
+  - first:
+      213: 3173939653504410443
+    second: TA02_TorreDeAguaModular_24
+  - first:
+      213: -4314466518901847787
+    second: TA02_TorreDeAguaModular_25
+  - first:
+      213: 5229921129683391416
+    second: TA02_TorreDeAguaModular_26
+  - first:
+      213: -1839872466711533397
+    second: TA02_TorreDeAguaModular_27
+  - first:
+      213: -5600906499997779938
+    second: TA02_TorreDeAguaModular_28
+  - first:
+      213: -4226473822025479105
+    second: TA02_TorreDeAguaModular_29
+  - first:
+      213: -4209843324285817724
+    second: TA02_TorreDeAguaModular_30
+  - first:
+      213: -1085085087671639020
+    second: TA02_TorreDeAguaModular_31
+  - first:
+      213: -9120726560885077903
+    second: TA02_TorreDeAguaModular_32
+  - first:
+      213: -780172877031024310
+    second: TA02_TorreDeAguaModular_33
+  - first:
+      213: -787689786375475486
+    second: TA02_TorreDeAguaModular_34
+  - first:
+      213: 403679587446370335
+    second: TA02_TorreDeAguaModular_35
+  - first:
+      213: -31893964192858898
+    second: TA02_TorreDeAguaModular_36
+  - first:
+      213: -2883053886528149738
+    second: TA02_TorreDeAguaModular_37
+  - first:
+      213: -1470294693484359742
+    second: TA02_TorreDeAguaModular_38
+  - first:
+      213: 3289464812709256664
+    second: TA02_TorreDeAguaModular_39
+  - first:
+      213: 4424135407978826365
+    second: TA02_TorreDeAguaModular_40
+  - first:
+      213: 1345393653972439717
+    second: TA02_TorreDeAguaModular_41
+  - first:
+      213: 7172326601625020358
+    second: TA02_TorreDeAguaModular_42
+  - first:
+      213: -852839517606807504
+    second: TA02_TorreDeAguaModular_43
+  - first:
+      213: -4340105802356024400
+    second: TA02_TorreDeAguaModular_44
+  - first:
+      213: 5038350203894820035
+    second: TA02_TorreDeAguaModular_45
+  - first:
+      213: 665812732484300662
+    second: TA02_TorreDeAguaModular_46
+  - first:
+      213: 4112303381049694885
+    second: TA02_TorreDeAguaModular_47
+  - first:
+      213: -8288417122327476599
+    second: TA02_TorreDeAguaModular_48
+  - first:
+      213: -2127800304252893808
+    second: TA02_TorreDeAguaModular_49
+  - first:
+      213: -7066636986496029972
+    second: TA02_TorreDeAguaModular_50
+  - first:
+      213: 7388657280033333401
+    second: TA02_TorreDeAguaModular_51
+  - first:
+      213: -66563584603278594
+    second: TA02_TorreDeAguaModular_52
+  - first:
+      213: -7481927975064942901
+    second: TA02_TorreDeAguaModular_53
+  - first:
+      213: 2611623321801075473
+    second: TA02_TorreDeAguaModular_54
+  - first:
+      213: -5623969830768367535
+    second: TA02_TorreDeAguaModular_55
+  - first:
+      213: -7778407532416392456
+    second: TA02_TorreDeAguaModular_56
+  - first:
+      213: 5730596307911896108
+    second: TA02_TorreDeAguaModular_57
+  - first:
+      213: -6609478791884747874
+    second: TA02_TorreDeAguaModular_58
+  - first:
+      213: -6626450780584251094
+    second: TA02_TorreDeAguaModular_59
+  - first:
+      213: -7411165303476396922
+    second: TA02_TorreDeAguaModular_60
+  - first:
+      213: 146687728400610520
+    second: TA02_TorreDeAguaModular_61
+  - first:
+      213: -6412010434293266244
+    second: TA02_TorreDeAguaModular_62
+  - first:
+      213: 1282359517841294320
+    second: TA02_TorreDeAguaModular_63
+  - first:
+      213: -1861858059026217949
+    second: TA02_TorreDeAguaModular_64
+  - first:
+      213: -7953774533256145248
+    second: TA02_TorreDeAguaModular_65
+  - first:
+      213: 7756365324342425472
+    second: TA02_TorreDeAguaModular_66
+  - first:
+      213: 1971459723622941303
+    second: TA02_TorreDeAguaModular_67
+  - first:
+      213: 4799925445614594937
+    second: TA02_TorreDeAguaModular_68
+  - first:
+      213: 5430983837932509476
+    second: TA02_TorreDeAguaModular_69
+  - first:
+      213: -8380442820934135226
+    second: TA02_TorreDeAguaModular_70
+  - first:
+      213: -6076314652534740644
+    second: TA02_TorreDeAguaModular_71
+  - first:
+      213: 1754267945675159774
+    second: TA02_TorreDeAguaModular_72
+  - first:
+      213: -6072182947752387191
+    second: TA02_TorreDeAguaModular_73
+  - first:
+      213: -917536554564158981
+    second: TA02_TorreDeAguaModular_74
+  - first:
+      213: -7568179370948761582
+    second: TA02_TorreDeAguaModular_75
+  - first:
+      213: -9096462289529959621
+    second: TA02_TorreDeAguaModular_76
+  - first:
+      213: -582630451504725078
+    second: TA02_TorreDeAguaModular_77
+  - first:
+      213: -5728860273773815858
+    second: TA02_TorreDeAguaModular_78
+  - first:
+      213: 1397667133676907384
+    second: TA02_TorreDeAguaModular_79
+  - first:
+      213: 2741394466928310787
+    second: TA02_TorreDeAguaModular_80
+  - first:
+      213: -8606086598221355300
+    second: TA02_TorreDeAguaModular_81
+  - first:
+      213: -5547745263214878373
+    second: TA02_TorreDeAguaModular_82
+  - first:
+      213: 9088157535631806692
+    second: TA02_TorreDeAguaModular_83
+  - first:
+      213: 1443905421586721923
+    second: TA02_TorreDeAguaModular_84
+  - first:
+      213: 4625241301588728741
+    second: TA02_TorreDeAguaModular_85
+  - first:
+      213: 7801818010480538147
+    second: TA02_TorreDeAguaModular_86
+  - first:
+      213: 9125357001072700381
+    second: TA02_TorreDeAguaModular_87
+  - first:
+      213: 6624544028355461712
+    second: TA02_TorreDeAguaModular_88
+  - first:
+      213: 6336336856628657772
+    second: TA02_TorreDeAguaModular_89
+  - first:
+      213: 4102002171322013444
+    second: TA02_TorreDeAguaModular_90
+  - first:
+      213: -511218223832414533
+    second: TA02_TorreDeAguaModular_91
+  - first:
+      213: -4012636122777349970
+    second: TA02_TorreDeAguaModular_92
+  - first:
+      213: 4052944095414196012
+    second: TA02_TorreDeAguaModular_93
+  - first:
+      213: -5067515306139505092
+    second: TA02_TorreDeAguaModular_94
+  - first:
+      213: 773067976695198424
+    second: TA02_TorreDeAguaModular_95
+  - first:
+      213: -754381072116305151
+    second: TA02_TorreDeAguaModular_96
+  - first:
+      213: 2325995911761017573
+    second: TA02_TorreDeAguaModular_97
+  - first:
+      213: -793386766801424248
+    second: TA02_TorreDeAguaModular_98
+  - first:
+      213: -2476002392034762662
+    second: TA02_TorreDeAguaModular_99
+  - first:
+      213: -6269825833947413907
+    second: TA02_TorreDeAguaModular_100
+  - first:
+      213: 7146937298549334355
+    second: TA02_TorreDeAguaModular_101
+  - first:
+      213: 8453414662163419937
+    second: TA02_TorreDeAguaModular_102
+  - first:
+      213: -1586917745603523545
+    second: TA02_TorreDeAguaModular_103
+  - first:
+      213: -8510651130634563183
+    second: TA02_TorreDeAguaModular_104
+  - first:
+      213: -3930098796429653128
+    second: TA02_TorreDeAguaModular_105
+  - first:
+      213: -238817590752298549
+    second: TA02_TorreDeAguaModular_106
+  - first:
+      213: -1223686034139387834
+    second: TA02_TorreDeAguaModular_107
+  - first:
+      213: 6031468280038226163
+    second: TA02_TorreDeAguaModular_108
+  - first:
+      213: 7277877778821471126
+    second: TA02_TorreDeAguaModular_109
+  - first:
+      213: 1035605901656365372
+    second: TA02_TorreDeAguaModular_110
+  - first:
+      213: 3795004643636863881
+    second: TA02_TorreDeAguaModular_111
+  - first:
+      213: -7582759090658361466
+    second: TA02_TorreDeAguaModular_112
+  - first:
+      213: -5422350623515442079
+    second: TA02_TorreDeAguaModular_113
+  - first:
+      213: -1475689220314937164
+    second: TA02_TorreDeAguaModular_114
+  - first:
+      213: 4672322464308994873
+    second: TA02_TorreDeAguaModular_115
+  - first:
+      213: -577993647201986042
+    second: TA02_TorreDeAguaModular_116
+  - first:
+      213: -2395361728842107887
+    second: TA02_TorreDeAguaModular_117
+  - first:
+      213: 2851796602955066612
+    second: TA02_TorreDeAguaModular_118
+  - first:
+      213: 6712150077471875014
+    second: TA02_TorreDeAguaModular_119
+  - first:
+      213: -3715788945235954179
+    second: TA02_TorreDeAguaModular_120
+  - first:
+      213: 5115106204921763966
+    second: TA02_TorreDeAguaModular_121
+  - first:
+      213: 6770448689837835736
+    second: TA02_TorreDeAguaModular_122
+  - first:
+      213: -6930180968937203317
+    second: TA02_TorreDeAguaModular_123
+  - first:
+      213: 8787656860982929082
+    second: TA02_TorreDeAguaModular_124
+  - first:
+      213: -3636957786943355752
+    second: TA02_TorreDeAguaModular_125
+  - first:
+      213: -3317299676456535282
+    second: TA02_TorreDeAguaModular_126
+  - first:
+      213: -7686651068098904464
+    second: TA02_TorreDeAguaModular_127
+  - first:
+      213: 5257027240855237529
+    second: TA02_TorreDeAguaModular_128
+  - first:
+      213: -188212997607293395
+    second: TA02_TorreDeAguaModular_129
+  - first:
+      213: -996942823441157397
+    second: TA02_TorreDeAguaModular_130
+  - first:
+      213: 4569430219330919945
+    second: TA02_TorreDeAguaModular_131
+  - first:
+      213: -5350688018085987968
+    second: TA02_TorreDeAguaModular_132
+  - first:
+      213: -667798057633399081
+    second: TA02_TorreDeAguaModular_133
+  - first:
+      213: -1659629604113277442
+    second: TA02_TorreDeAguaModular_134
+  - first:
+      213: -3493571026424319489
+    second: TA02_TorreDeAguaModular_135
+  - first:
+      213: -1844015458986838441
+    second: TA02_TorreDeAguaModular_136
+  - first:
+      213: 6309422888805801839
+    second: TA02_TorreDeAguaModular_137
+  - first:
+      213: -4363710181093777647
+    second: TA02_TorreDeAguaModular_138
+  - first:
+      213: 5904691088666565205
+    second: TA02_TorreDeAguaModular_139
+  - first:
+      213: 2816632070910771034
+    second: TA02_TorreDeAguaModular_140
+  - first:
+      213: 1623586505903543079
+    second: TA02_TorreDeAguaModular_141
+  - first:
+      213: -7473083053048672427
+    second: TA02_TorreDeAguaModular_142
+  - first:
+      213: 213804378659753401
+    second: TA02_TorreDeAguaModular_143
+  - first:
+      213: -6559934188205846394
+    second: TA02_TorreDeAguaModular_144
+  - first:
+      213: 5085332393879098277
+    second: TA02_TorreDeAguaModular_145
+  - first:
+      213: 306244419912057089
+    second: TA02_TorreDeAguaModular_146
+  - first:
+      213: -3639286337025371097
+    second: TA02_TorreDeAguaModular_147
+  - first:
+      213: -8055800713383064961
+    second: TA02_TorreDeAguaModular_148
+  - first:
+      213: -6450853613511511409
+    second: TA02_TorreDeAguaModular_149
+  - first:
+      213: 750330755367888113
+    second: TA02_TorreDeAguaModular_150
+  - first:
+      213: 3442322031964248193
+    second: TA02_TorreDeAguaModular_151
+  - first:
+      213: 238901262673619901
+    second: TA02_TorreDeAguaModular_152
+  - first:
+      213: 3730826519393213523
+    second: TA02_TorreDeAguaModular_153
+  - first:
+      213: 8130366515725116793
+    second: TA02_TorreDeAguaModular_154
+  - first:
+      213: 4840668413977937373
+    second: TA02_TorreDeAguaModular_155
+  - first:
+      213: -3630706432283515091
+    second: TA02_TorreDeAguaModular_156
+  - first:
+      213: 7731278630936945892
+    second: TA02_TorreDeAguaModular_157
+  - first:
+      213: 7476257637408762254
+    second: TA02_TorreDeAguaModular_158
+  - first:
+      213: 6817085113092219220
+    second: TA02_TorreDeAguaModular_159
+  - first:
+      213: 2292282857745284074
+    second: TA02_TorreDeAguaModular_160
+  - first:
+      213: 7612944954099747641
+    second: TA02_TorreDeAguaModular_161
+  - first:
+      213: -3295899808375283770
+    second: TA02_TorreDeAguaModular_162
+  - first:
+      213: 1723231898575299791
+    second: TA02_TorreDeAguaModular_163
+  - first:
+      213: -4310676603679539157
+    second: TA02_TorreDeAguaModular_164
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 98
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75486fdbf5b59b9d0800000000000000
+      internalID: -2758072830020647849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 345
+        width: 170
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110c689ba32a75760800000000000000
+      internalID: 7446598881984823313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_2
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 493
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f648fbea59a70bea0800000000000000
+      internalID: -5859048331908512657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_3
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 345
+        width: 231
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f9403b4b489dc70800000000000000
+      internalID: 8996367642281680674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_4
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 486
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2fce7df0f26b63d0800000000000000
+      internalID: -3212365122014097622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_5
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 315
+        width: 27
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14400d372d45383b0800000000000000
+      internalID: -5511468256108477375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_6
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 506
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b1c88992a422690800000000000000
+      internalID: -7628453276298765567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_7
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 457
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8800abe52df15af80800000000000000
+      internalID: -8096029766735757176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_8
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 459
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d5cabe47df36bb0800000000000000
+      internalID: -4943829287310697190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 444
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e647368918a6ac910800000000000000
+      internalID: 1858414901083731054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_10
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 444
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88bf5f136ef2d3b0800000000000000
+      internalID: -5489045294129629042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_11
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 447
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f318f9ff733e810800000000000000
+      internalID: 1793338647655825212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 437
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5798d3b88135ad50800000000000000
+      internalID: 6747854079887185758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_13
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 434
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd65b3057f27dfd0800000000000000
+      internalID: -2317331303638929965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_14
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 428
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4170ba85ab7033590800000000000000
+      internalID: -7695798841313130732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 418
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23c6221f8780bdb0800000000000000
+      internalID: -4778170156085492947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_16
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 421
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5fe0b61e002ea650800000000000000
+      internalID: 6245964978091781979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_17
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 419
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c898a6d7a39a300800000000000000
+      internalID: 263806363510606871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_18
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 406
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9cc16b15ee568d50800000000000000
+      internalID: 6739178230506441884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_19
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 406
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f540d0650f0dcfdd0800000000000000
+      internalID: -2450854366541970337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_20
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 405
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261af6cbfcb874df0800000000000000
+      internalID: -196034334431403678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_21
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 405
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4892a7e4fa3dca6e0800000000000000
+      internalID: -1824850999102527100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_22
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 412
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7005b6c1b44a91450800000000000000
+      internalID: 6060055416110010375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_23
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 389
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc5cd537d66c2af0800000000000000
+      internalID: -419847590744662825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_24
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 397
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4328a17c491c0c20800000000000000
+      internalID: 3173939653504410443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_25
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 393
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5190a816f8fef14c0800000000000000
+      internalID: -4314466518901847787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_26
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 397
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b39612ee89649840800000000000000
+      internalID: 5229921129683391416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_27
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 392
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba823a55db57776e0800000000000000
+      internalID: -1839872466711533397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_28
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 394
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18b47f86359542b0800000000000000
+      internalID: -5600906499997779938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_29
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 390
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c0fa1a37c8855c0800000000000000
+      internalID: -4226473822025479105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_30
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 393
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ce4ef1dc1a395c0800000000000000
+      internalID: -4209843324285817724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_31
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 391
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 414224e9cd001f0f0800000000000000
+      internalID: -1085085087671639020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_32
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 396
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17889fc348bac6180800000000000000
+      internalID: -9120726560885077903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_33
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 392
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49db21e6e44c25f0800000000000000
+      internalID: -780172877031024310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_34
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 386
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eee2e900509115f0800000000000000
+      internalID: -787689786375475486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_35
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 386
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1031dc22782a9500800000000000000
+      internalID: 403679587446370335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_36
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 380
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec3ec9cb90be8ff0800000000000000
+      internalID: -31893964192858898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_37
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 381
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6172e29e3c55df7d0800000000000000
+      internalID: -2883053886528149738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_38
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 381
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf09b724c6789be0800000000000000
+      internalID: -1470294693484359742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_39
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 385
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd9eae91d686ad20800000000000000
+      internalID: 3289464812709256664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_40
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 378
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a4ec6a6bfa56d30800000000000000
+      internalID: 4424135407978826365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_41
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 372
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2971c666ccba210800000000000000
+      internalID: 1345393653972439717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_42
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 373
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7a1f62b09398360800000000000000
+      internalID: 7172326601625020358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_43
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 373
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03871ae2afa1a24f0800000000000000
+      internalID: -852839517606807504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_44
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 377
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb15f284c8d4c3c0800000000000000
+      internalID: -4340105802356024400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_45
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 373
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ccea2de0d0dbe540800000000000000
+      internalID: 5038350203894820035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_46
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 375
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fa8ae07217d3900800000000000000
+      internalID: 665812732484300662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_47
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 376
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aada1c1326d11930800000000000000
+      internalID: 4112303381049694885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_48
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 377
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986c7698a80a9fc80800000000000000
+      internalID: -8288417122327476599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_49
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 373
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095c90895e88872e0800000000000000
+      internalID: -2127800304252893808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_50
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 364
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea6447f9134eed90800000000000000
+      internalID: -7066636986496029972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_51
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 368
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990ad7f36a8c98660800000000000000
+      internalID: 7388657280033333401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_52
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 365
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2beb0c5c4831ff0800000000000000
+      internalID: -66563584603278594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_53
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 363
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6423bc52ada2890800000000000000
+      internalID: -7481927975064942901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_54
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 364
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b241ff2995e3420800000000000000
+      internalID: 2611623321801075473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_55
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 364
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158a9896c35a3f1b0800000000000000
+      internalID: -5623969830768367535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_56
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 369
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f22910af8b8d0490800000000000000
+      internalID: -7778407532416392456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_57
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 365
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ce044eafa278f40800000000000000
+      internalID: 5730596307911896108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_58
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 358
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b4b3bae0a6644a0800000000000000
+      internalID: -6609478791884747874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_59
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 357
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a217aad9f1e1a04a0800000000000000
+      internalID: -6626450780584251094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_60
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 356
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68cd69a2c60462990800000000000000
+      internalID: -7411165303476396922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_61
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 359
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d43a3836b3290200800000000000000
+      internalID: 146687728400610520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_62
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 357
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb80ad77b76f307a0800000000000000
+      internalID: -6412010434293266244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_63
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 361
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3854fef2bdbc110800000000000000
+      internalID: 1282359517841294320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_64
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 358
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3244b89b5f95926e0800000000000000
+      internalID: -1861858059026217949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_65
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 356
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a618b1f3348e9190800000000000000
+      internalID: -7953774533256145248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_66
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 359
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0877691ea2524ab60800000000000000
+      internalID: 7756365324342425472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_67
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 345
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77209836c280c5b10800000000000000
+      internalID: 1971459723622941303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_68
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 345
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b673ef2c2cc9240800000000000000
+      internalID: 4799925445614594937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_69
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 350
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429dad8a60bbe5b40800000000000000
+      internalID: 5430983837932509476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_70
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 347
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6429fb5e7afa2bb80800000000000000
+      internalID: -8380442820934135226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_71
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 350
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c596a2864089caba0800000000000000
+      internalID: -6076314652534740644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_72
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 350
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed872dee669685810800000000000000
+      internalID: 1754267945675159774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_73
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 353
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98dd804e7c54bbba0800000000000000
+      internalID: -6072182947752387191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_74
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 345
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf974cc6d514443f0800000000000000
+      internalID: -917536554564158981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_75
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 350
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218e826c5fc68f690800000000000000
+      internalID: -7568179370948761582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_76
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 354
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b84d72ebfd2c180800000000000000
+      internalID: -9096462289529959621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_77
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 353
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa34cb6f0b41ae7f0800000000000000
+      internalID: -582630451504725078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_78
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 346
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec75ddd0feffe70b0800000000000000
+      internalID: -5728860273773815858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_79
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 346
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87bec095ad2856310800000000000000
+      internalID: 1397667133676907384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_80
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 353
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30abb7e3eb36b0620800000000000000
+      internalID: 2741394466928310787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_81
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 352
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd624cef5d9019880800000000000000
+      internalID: -8606086598221355300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_82
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51a8b983137203b0800000000000000
+      internalID: -5547745263214878373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_83
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 342
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e09f16a02f9f1e70800000000000000
+      internalID: 9088157535631806692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_84
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 338
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38cefeea458c90410800000000000000
+      internalID: 1443905421586721923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_85
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab59ad4578203040800000000000000
+      internalID: 4625241301588728741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_86
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 333
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322ffec0520a54c60800000000000000
+      internalID: 7801818010480538147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_87
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 341
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddbef8128d7c3ae70800000000000000
+      internalID: 9125357001072700381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_88
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 342
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052001902bb1feb50800000000000000
+      internalID: 6624544028355461712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_89
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 345
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ef09cbcc03fe750800000000000000
+      internalID: 6336336856628657772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_90
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 332
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4079781dd3d3de830800000000000000
+      internalID: 4102002171322013444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 262
+        width: 27
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb643c5ebb9c7e8f0800000000000000
+      internalID: -511218223832414533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_92
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 226
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea094f8c4b04058c0800000000000000
+      internalID: -4012636122777349970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_93
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 299
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c271ead6e23fe3830800000000000000
+      internalID: 4052944095414196012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_94
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 275
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e23bb8da19ca9b0800000000000000
+      internalID: -5067515306139505092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_95
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 255
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2b52a9a3d7aba00800000000000000
+      internalID: 773067976695198424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_96
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 282
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103ba3b6966e785f0800000000000000
+      internalID: -754381072116305151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_97
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 277
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eab68545f8974020800000000000000
+      internalID: 2325995911761017573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_98
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 256
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8803e4b60f25df4f0800000000000000
+      internalID: -793386766801424248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_99
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 261
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5020cf51f873add0800000000000000
+      internalID: -2476002392034762662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_100
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 299
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d624ffb7f9a1df8a0800000000000000
+      internalID: -6269825833947413907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_101
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 266
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351e5006b950f2360800000000000000
+      internalID: 7146937298549334355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_102
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 288
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 123545dd8df805570800000000000000
+      internalID: 8453414662163419937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_103
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 253
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72cc98dd7b22af9e0800000000000000
+      internalID: -1586917745603523545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_104
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 196
+        width: 10
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191104753e714e980800000000000000
+      internalID: -8510651130634563183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_105
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 286
+        width: 8
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87bce9a97fb7579c0800000000000000
+      internalID: -3930098796429653128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_106
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 245
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc93811aaac8facf0800000000000000
+      internalID: -238817590752298549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_107
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 249
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648e38a0908940fe0800000000000000
+      internalID: -1223686034139387834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_108
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 239
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8f6b1d17414b350800000000000000
+      internalID: 6031468280038226163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_109
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 234
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69bdc5da747300560800000000000000
+      internalID: 7277877778821471126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_110
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 231
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c399687a4163f5e00800000000000000
+      internalID: 1035605901656365372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_111
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 217
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983eee8dd909aa430800000000000000
+      internalID: 3795004643636863881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_112
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 236
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fb1ff38c0a4c690800000000000000
+      internalID: -7582759090658361466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_113
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 222
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1648eb536d0ffb4b0800000000000000
+      internalID: -5422350623515442079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_114
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 221
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b84140097c458be0800000000000000
+      internalID: -1475689220314937164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_115
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 226
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9332739b68c67d040800000000000000
+      internalID: 4672322464308994873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_116
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 206
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ad71817dd8af7f0800000000000000
+      internalID: -577993647201986042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_117
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 213
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114fcc3e237f1ced0800000000000000
+      internalID: -2395361728842107887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_118
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 201
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc6dc2a6ed939720800000000000000
+      internalID: 2851796602955066612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_119
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 205
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf52d6dee8562d50800000000000000
+      internalID: 6712150077471875014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_120
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 205
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df533e234adde6cc0800000000000000
+      internalID: -3715788945235954179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_121
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 193
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7812cc0ef18cf640800000000000000
+      internalID: 5115106204921763966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_122
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 201
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d50bc7463775fd50800000000000000
+      internalID: 6770448689837835736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_123
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 194
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b89535d502d03df90800000000000000
+      internalID: -6930180968937203317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_124
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 180
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab669e62b5704f970800000000000000
+      internalID: 8787656860982929082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_125
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 198
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8948626892ee68dc0800000000000000
+      internalID: -3636957786943355752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_126
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 180
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b3a43258596f1d0800000000000000
+      internalID: -3317299676456535282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_127
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 174
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e76954497835590800000000000000
+      internalID: -7686651068098904464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_128
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 160
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9937ab13c66b4f840800000000000000
+      internalID: 5257027240855237529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_129
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 141
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e718f9645536df0800000000000000
+      internalID: -188212997607293395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_130
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 161
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be23a6bb8c52a22f0800000000000000
+      internalID: -996942823441157397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_131
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 144
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e97291390e96f30800000000000000
+      internalID: 4569430219330919945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_132
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 137
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089bb02c8998eb5b0800000000000000
+      internalID: -5350688018085987968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_133
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 127
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7deb01964318bb6f0800000000000000
+      internalID: -667798057633399081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_134
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 121
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd1b1c0bafc7f8e0800000000000000
+      internalID: -1659629604113277442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_135
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 122
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1b16449a7548fc0800000000000000
+      internalID: -3493571026424319489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_136
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 112
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756b2c6c5bdb866e0800000000000000
+      internalID: -1844015458986838441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_137
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 83
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f1df840b29f8750800000000000000
+      internalID: 6309422888805801839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_138
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f5621d5bcf073c0800000000000000
+      internalID: -4363710181093777647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_139
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 29
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a9260c24da1f150800000000000000
+      internalID: 5904691088666565205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_140
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 0
+        width: 13
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ffb9102ffa61720800000000000000
+      internalID: 2816632070910771034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_141
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 31
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7239f723353288610800000000000000
+      internalID: 1623586505903543079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_142
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 9
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fca0eae864a4890800000000000000
+      internalID: -7473083053048672427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_143
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 5
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd007913f597f200800000000000000
+      internalID: 213804378659753401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_144
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 13
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680dc02ac9e66f4a0800000000000000
+      internalID: -6559934188205846394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_145
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 20
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a353f57edab29640800000000000000
+      internalID: 5085332393879098277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_146
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 6
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101cd476dafff3400800000000000000
+      internalID: 306244419912057089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_147
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 4
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7249ba5bb58ae7dc0800000000000000
+      internalID: -3639286337025371097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_148
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 5
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ac671ceeb043090800000000000000
+      internalID: -8055800713383064961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_149
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 6
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82f99c01d6f976a0800000000000000
+      internalID: -6450853613511511409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_150
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 9
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4e0c9b8d5b96a00800000000000000
+      internalID: 750330755367888113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_151
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 4
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188dabd56a595cf20800000000000000
+      internalID: 3442322031964248193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_152
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 3
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbad02ce6fb05300800000000000000
+      internalID: 238901262673619901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_153
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 5
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c1a0fd3fe86c330800000000000000
+      internalID: 3730826519393213523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_154
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 5
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975a68ff44dd4d070800000000000000
+      internalID: 8130366515725116793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_155
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 7
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd5cb9a86428d2340800000000000000
+      internalID: 4840668413977937373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_156
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 6
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27e3047cb32d9dc0800000000000000
+      internalID: -3630706432283515091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_157
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 9
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e4a098e3f40b4b60800000000000000
+      internalID: 7731278630936945892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_158
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 4
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89ec07d5b001c760800000000000000
+      internalID: 7476257637408762254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_159
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 6
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4512779bac62b9e50800000000000000
+      internalID: 6817085113092219220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_160
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 9
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aebff943d13dfcf10800000000000000
+      internalID: 2292282857745284074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_161
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 7
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93bc7b3c91d96a960800000000000000
+      internalID: 7612944954099747641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_162
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 8
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf5382369c9242d0800000000000000
+      internalID: -3295899808375283770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_163
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4e33c18462ae710800000000000000
+      internalID: 1723231898575299791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA02_TorreDeAguaModular_164
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 77
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b200818c7766d24c0800000000000000
+      internalID: -4310676603679539157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

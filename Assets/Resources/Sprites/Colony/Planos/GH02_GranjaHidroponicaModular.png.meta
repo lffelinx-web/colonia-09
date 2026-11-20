@@ -1,0 +1,1283 @@
+fileFormatVersion: 2
+guid: f0968ebafbcbb32439828fa9137632b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7139724189961861311
+    second: GH02_GranjaHidroponicaModular_0
+  - first:
+      213: 3872424249375679533
+    second: GH02_GranjaHidroponicaModular_1
+  - first:
+      213: -652766252006469266
+    second: GH02_GranjaHidroponicaModular_2
+  - first:
+      213: 4404771634179574394
+    second: GH02_GranjaHidroponicaModular_3
+  - first:
+      213: -6924157809571903969
+    second: GH02_GranjaHidroponicaModular_4
+  - first:
+      213: -4939277182730720370
+    second: GH02_GranjaHidroponicaModular_5
+  - first:
+      213: 6685109377942186812
+    second: GH02_GranjaHidroponicaModular_6
+  - first:
+      213: -3258500996942296897
+    second: GH02_GranjaHidroponicaModular_7
+  - first:
+      213: -8726102166437629990
+    second: GH02_GranjaHidroponicaModular_8
+  - first:
+      213: 1683375320287882320
+    second: GH02_GranjaHidroponicaModular_9
+  - first:
+      213: 2401482709420114089
+    second: GH02_GranjaHidroponicaModular_10
+  - first:
+      213: -3638039487521064712
+    second: GH02_GranjaHidroponicaModular_11
+  - first:
+      213: -6035165147271227631
+    second: GH02_GranjaHidroponicaModular_12
+  - first:
+      213: -4461825580671637655
+    second: GH02_GranjaHidroponicaModular_13
+  - first:
+      213: -2873478085758017361
+    second: GH02_GranjaHidroponicaModular_14
+  - first:
+      213: 8305480666985917735
+    second: GH02_GranjaHidroponicaModular_15
+  - first:
+      213: -3331862318484815648
+    second: GH02_GranjaHidroponicaModular_16
+  - first:
+      213: -8780947390275460896
+    second: GH02_GranjaHidroponicaModular_17
+  - first:
+      213: -3526781353369529736
+    second: GH02_GranjaHidroponicaModular_18
+  - first:
+      213: -4601733247734590651
+    second: GH02_GranjaHidroponicaModular_19
+  - first:
+      213: 861308065298477566
+    second: GH02_GranjaHidroponicaModular_20
+  - first:
+      213: 8262647309388850608
+    second: GH02_GranjaHidroponicaModular_21
+  - first:
+      213: -1096384142027742658
+    second: GH02_GranjaHidroponicaModular_22
+  - first:
+      213: 6283015958721165845
+    second: GH02_GranjaHidroponicaModular_23
+  - first:
+      213: -2861648842875116332
+    second: GH02_GranjaHidroponicaModular_24
+  - first:
+      213: 6195959895528792058
+    second: GH02_GranjaHidroponicaModular_25
+  - first:
+      213: -1099298128602291033
+    second: GH02_GranjaHidroponicaModular_26
+  - first:
+      213: 2174793139948364011
+    second: GH02_GranjaHidroponicaModular_27
+  - first:
+      213: 608018327033299226
+    second: GH02_GranjaHidroponicaModular_28
+  - first:
+      213: 3167307925727451502
+    second: GH02_GranjaHidroponicaModular_29
+  - first:
+      213: -7838775797367540597
+    second: GH02_GranjaHidroponicaModular_30
+  - first:
+      213: 6395537470452273015
+    second: GH02_GranjaHidroponicaModular_31
+  - first:
+      213: 5518042719601741198
+    second: GH02_GranjaHidroponicaModular_32
+  - first:
+      213: 3842685947352996296
+    second: GH02_GranjaHidroponicaModular_33
+  - first:
+      213: -3125968817889506631
+    second: GH02_GranjaHidroponicaModular_34
+  - first:
+      213: 8856375122516659995
+    second: GH02_GranjaHidroponicaModular_35
+  - first:
+      213: 4512443303047517208
+    second: GH02_GranjaHidroponicaModular_36
+  - first:
+      213: 5249176754651944584
+    second: GH02_GranjaHidroponicaModular_37
+  - first:
+      213: -8085566368720845027
+    second: GH02_GranjaHidroponicaModular_38
+  - first:
+      213: 283545678435094690
+    second: GH02_GranjaHidroponicaModular_39
+  - first:
+      213: -6022274722657043612
+    second: GH02_GranjaHidroponicaModular_40
+  - first:
+      213: 5495944884127195771
+    second: GH02_GranjaHidroponicaModular_41
+  - first:
+      213: -6804688309039438302
+    second: GH02_GranjaHidroponicaModular_42
+  - first:
+      213: 5585390912121666184
+    second: GH02_GranjaHidroponicaModular_43
+  - first:
+      213: 4506900775638677372
+    second: GH02_GranjaHidroponicaModular_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 153
+        width: 134
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1474f075daa9aec90800000000000000
+      internalID: -7139724189961861311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 492
+        width: 345
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2465ab765d9db530800000000000000
+      internalID: 3872424249375679533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_2
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 0
+        width: 82
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e619ac36d88e0f6f0800000000000000
+      internalID: -652766252006469266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 473
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a8dfbb674e02d30800000000000000
+      internalID: 4404771634179574394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 320
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1648bf682378ef90800000000000000
+      internalID: -6924157809571903969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_5
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 320
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ba42c5299247bb0800000000000000
+      internalID: -4939277182730720370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_6
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 324
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b60ec5f8746cc50800000000000000
+      internalID: 6685109377942186812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_7
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 326
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb88ff88b9a77c2d0800000000000000
+      internalID: -3258500996942296897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 321
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adfe7bfff48a6e680800000000000000
+      internalID: -8726102166437629990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 257
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c2b655fec8c5710800000000000000
+      internalID: 1683375320287882320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 268
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a08a35fcc7c35120800000000000000
+      internalID: 2401482709420114089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_11
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 250
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f8767b7c56138dc0800000000000000
+      internalID: -3638039487521064712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 253
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11794143649ce3ca0800000000000000
+      internalID: -6035165147271227631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_13
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 252
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 967e05e26496412c0800000000000000
+      internalID: -4461825580671637655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_14
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 239
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa02684c7ea5f18d0800000000000000
+      internalID: -2873478085758017361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_15
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 227
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72de19c89aef24370800000000000000
+      internalID: 8305480666985917735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_16
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 224
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e00432dfd8d2c1d0800000000000000
+      internalID: -3331862318484815648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_17
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 213
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0ec3b3fdec32680800000000000000
+      internalID: -8780947390275460896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_18
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 220
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87210f77b0b5e0fc0800000000000000
+      internalID: -3526781353369529736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_19
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 205
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543dca10efb5320c0800000000000000
+      internalID: -4601733247734590651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_20
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 210
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef17b4a3f1bf3fb00800000000000000
+      internalID: 861308065298477566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_21
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 198
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5a57453f1daa270800000000000000
+      internalID: 8262647309388850608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 192
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32a0158e6cd8c0f0800000000000000
+      internalID: -1096384142027742658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_23
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 197
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a7fa1c9b1c13750800000000000000
+      internalID: 6283015958721165845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_24
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 192
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d465800a816948d0800000000000000
+      internalID: -2861648842875116332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 175
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff5f8782b87cf550800000000000000
+      internalID: 6195959895528792058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_26
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 26
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4a8662d228eb0f0800000000000000
+      internalID: -1099298128602291033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_27
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 26
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0249696da6e2e10800000000000000
+      internalID: 2174793139948364011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_28
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 25
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a114fbf627d107800800000000000000
+      internalID: 608018327033299226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_29
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 29
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69934ff6c984fb20800000000000000
+      internalID: 3167307925727451502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_30
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 29
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b847af3a1f2173390800000000000000
+      internalID: -7838775797367540597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_31
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 24
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f0202c17381c850800000000000000
+      internalID: 6395537470452273015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_32
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 17
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8dca4d1e96049c40800000000000000
+      internalID: 5518042719601741198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c95c5b7286f35530800000000000000
+      internalID: 3842685947352996296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_34
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 13
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba8fb61ce35e94d0800000000000000
+      internalID: -3125968817889506631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_35
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 9
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f4637304a28ea70800000000000000
+      internalID: 8856375122516659995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 12
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814dc33b64b6f9e30800000000000000
+      internalID: 4512443303047517208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_37
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 9
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88654407272d8d840800000000000000
+      internalID: 5249176754651944584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_38
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 9
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d178c801a3c4acf80800000000000000
+      internalID: -8085566368720845027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_39
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 14
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a098b0da4b5fe300800000000000000
+      internalID: 283545678435094690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_40
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 9
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b76301c059c6ca0800000000000000
+      internalID: -6022274722657043612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_41
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72e68bd0c4854c40800000000000000
+      internalID: 5495944884127195771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_42
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 9
+        width: 48
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22663742904e091a0800000000000000
+      internalID: -6804688309039438302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_43
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 7
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88af4b0217b438d40800000000000000
+      internalID: 5585390912121666184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH02_GranjaHidroponicaModular_44
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 10
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7730e9706abb8e30800000000000000
+      internalID: 4506900775638677372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

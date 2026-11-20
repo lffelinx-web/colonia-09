@@ -1,0 +1,3933 @@
+fileFormatVersion: 2
+guid: 3f2ad874464a1e9428a5176cded6e283
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3015865451832550547
+    second: TO02_TallerConGrua_0
+  - first:
+      213: 975506237262903765
+    second: TO02_TallerConGrua_1
+  - first:
+      213: 8077546293435079236
+    second: TO02_TallerConGrua_2
+  - first:
+      213: -8803195767190849177
+    second: TO02_TallerConGrua_3
+  - first:
+      213: 7910400987959310379
+    second: TO02_TallerConGrua_4
+  - first:
+      213: 8283529693154737594
+    second: TO02_TallerConGrua_5
+  - first:
+      213: 2437128928028376835
+    second: TO02_TallerConGrua_6
+  - first:
+      213: -961341971957346006
+    second: TO02_TallerConGrua_7
+  - first:
+      213: -1086803176217614881
+    second: TO02_TallerConGrua_8
+  - first:
+      213: 2663591188789515780
+    second: TO02_TallerConGrua_9
+  - first:
+      213: 6260489597597698479
+    second: TO02_TallerConGrua_10
+  - first:
+      213: -8172124940739409397
+    second: TO02_TallerConGrua_11
+  - first:
+      213: 8164361074671675121
+    second: TO02_TallerConGrua_12
+  - first:
+      213: 2168119856848604700
+    second: TO02_TallerConGrua_13
+  - first:
+      213: -5015508629867439046
+    second: TO02_TallerConGrua_14
+  - first:
+      213: 6992123122669717817
+    second: TO02_TallerConGrua_15
+  - first:
+      213: -2324106941590517829
+    second: TO02_TallerConGrua_16
+  - first:
+      213: 760368208315087277
+    second: TO02_TallerConGrua_17
+  - first:
+      213: 2379801362675066241
+    second: TO02_TallerConGrua_18
+  - first:
+      213: 6561253887988283598
+    second: TO02_TallerConGrua_19
+  - first:
+      213: 4829033601041445369
+    second: TO02_TallerConGrua_20
+  - first:
+      213: -1118322966728807949
+    second: TO02_TallerConGrua_21
+  - first:
+      213: 386632880371331203
+    second: TO02_TallerConGrua_22
+  - first:
+      213: 7564259173666669664
+    second: TO02_TallerConGrua_23
+  - first:
+      213: -9142093931894755940
+    second: TO02_TallerConGrua_24
+  - first:
+      213: 7678804513410475047
+    second: TO02_TallerConGrua_25
+  - first:
+      213: 837063652197378823
+    second: TO02_TallerConGrua_26
+  - first:
+      213: -31662160755002881
+    second: TO02_TallerConGrua_27
+  - first:
+      213: 3843238095695275678
+    second: TO02_TallerConGrua_28
+  - first:
+      213: -4412114183769799161
+    second: TO02_TallerConGrua_29
+  - first:
+      213: -4432452158189228746
+    second: TO02_TallerConGrua_30
+  - first:
+      213: 7537473187172334578
+    second: TO02_TallerConGrua_31
+  - first:
+      213: 8787051249609700964
+    second: TO02_TallerConGrua_32
+  - first:
+      213: 2131888351477687984
+    second: TO02_TallerConGrua_33
+  - first:
+      213: 1393507797923290412
+    second: TO02_TallerConGrua_34
+  - first:
+      213: 8893751283515425459
+    second: TO02_TallerConGrua_35
+  - first:
+      213: -9175489585253519387
+    second: TO02_TallerConGrua_36
+  - first:
+      213: 8715534832110846083
+    second: TO02_TallerConGrua_37
+  - first:
+      213: 4847872535192569716
+    second: TO02_TallerConGrua_38
+  - first:
+      213: 3889694944898852629
+    second: TO02_TallerConGrua_39
+  - first:
+      213: 3394319343867131024
+    second: TO02_TallerConGrua_40
+  - first:
+      213: 6524599080826581179
+    second: TO02_TallerConGrua_41
+  - first:
+      213: 8870645735603910598
+    second: TO02_TallerConGrua_42
+  - first:
+      213: 5680558027279108062
+    second: TO02_TallerConGrua_43
+  - first:
+      213: -4904712277278555956
+    second: TO02_TallerConGrua_44
+  - first:
+      213: 8474288113604804209
+    second: TO02_TallerConGrua_45
+  - first:
+      213: -7779912809729649929
+    second: TO02_TallerConGrua_46
+  - first:
+      213: -5673805277721792558
+    second: TO02_TallerConGrua_47
+  - first:
+      213: -7404422894814350366
+    second: TO02_TallerConGrua_48
+  - first:
+      213: -4524168397640994146
+    second: TO02_TallerConGrua_49
+  - first:
+      213: 4092271263587315309
+    second: TO02_TallerConGrua_50
+  - first:
+      213: 4007030974687983004
+    second: TO02_TallerConGrua_51
+  - first:
+      213: -1849085745806622052
+    second: TO02_TallerConGrua_52
+  - first:
+      213: -8406039118308506395
+    second: TO02_TallerConGrua_53
+  - first:
+      213: -7139333619241062131
+    second: TO02_TallerConGrua_54
+  - first:
+      213: -2388808560729509110
+    second: TO02_TallerConGrua_55
+  - first:
+      213: -3297270478443626335
+    second: TO02_TallerConGrua_56
+  - first:
+      213: 5020467126289324287
+    second: TO02_TallerConGrua_57
+  - first:
+      213: 6233084460038789596
+    second: TO02_TallerConGrua_58
+  - first:
+      213: -1965467598925038132
+    second: TO02_TallerConGrua_59
+  - first:
+      213: -1193701968679215514
+    second: TO02_TallerConGrua_60
+  - first:
+      213: 2156935349972448484
+    second: TO02_TallerConGrua_61
+  - first:
+      213: -8084635559913840505
+    second: TO02_TallerConGrua_62
+  - first:
+      213: 4994750963508433594
+    second: TO02_TallerConGrua_63
+  - first:
+      213: -7810069024779821444
+    second: TO02_TallerConGrua_64
+  - first:
+      213: 6238905245155782937
+    second: TO02_TallerConGrua_65
+  - first:
+      213: 285860993372071587
+    second: TO02_TallerConGrua_66
+  - first:
+      213: 2387769869160309523
+    second: TO02_TallerConGrua_67
+  - first:
+      213: 5261957962659850311
+    second: TO02_TallerConGrua_68
+  - first:
+      213: 5353511155533400232
+    second: TO02_TallerConGrua_69
+  - first:
+      213: -5598172638222627840
+    second: TO02_TallerConGrua_70
+  - first:
+      213: -6531709119819555421
+    second: TO02_TallerConGrua_71
+  - first:
+      213: 8692935271247478676
+    second: TO02_TallerConGrua_72
+  - first:
+      213: -7485090377716391581
+    second: TO02_TallerConGrua_73
+  - first:
+      213: -2715407330456799861
+    second: TO02_TallerConGrua_74
+  - first:
+      213: -5947950377696704834
+    second: TO02_TallerConGrua_75
+  - first:
+      213: 8083890654545419138
+    second: TO02_TallerConGrua_76
+  - first:
+      213: 6811693383039596109
+    second: TO02_TallerConGrua_77
+  - first:
+      213: 6597433972991325089
+    second: TO02_TallerConGrua_78
+  - first:
+      213: 6776935893511079570
+    second: TO02_TallerConGrua_79
+  - first:
+      213: -3715560685165649021
+    second: TO02_TallerConGrua_80
+  - first:
+      213: 2866635677057796448
+    second: TO02_TallerConGrua_81
+  - first:
+      213: 1546891661560317176
+    second: TO02_TallerConGrua_82
+  - first:
+      213: -8632588515924498262
+    second: TO02_TallerConGrua_83
+  - first:
+      213: 1619970868287968789
+    second: TO02_TallerConGrua_84
+  - first:
+      213: -2984116821086329245
+    second: TO02_TallerConGrua_85
+  - first:
+      213: -206970022008562131
+    second: TO02_TallerConGrua_86
+  - first:
+      213: 6617919202514372393
+    second: TO02_TallerConGrua_87
+  - first:
+      213: 4029477435859228485
+    second: TO02_TallerConGrua_88
+  - first:
+      213: -1783206656788284220
+    second: TO02_TallerConGrua_89
+  - first:
+      213: 634551288326916949
+    second: TO02_TallerConGrua_90
+  - first:
+      213: -1986117282560150827
+    second: TO02_TallerConGrua_91
+  - first:
+      213: -11237920233888813
+    second: TO02_TallerConGrua_92
+  - first:
+      213: -1953346393863389603
+    second: TO02_TallerConGrua_93
+  - first:
+      213: -6105158977555199409
+    second: TO02_TallerConGrua_94
+  - first:
+      213: 9213671649874305824
+    second: TO02_TallerConGrua_95
+  - first:
+      213: 3821417141040311885
+    second: TO02_TallerConGrua_96
+  - first:
+      213: -8632209883356204269
+    second: TO02_TallerConGrua_97
+  - first:
+      213: 7321422016688447101
+    second: TO02_TallerConGrua_98
+  - first:
+      213: -2485793130891890972
+    second: TO02_TallerConGrua_99
+  - first:
+      213: 342337734252364722
+    second: TO02_TallerConGrua_100
+  - first:
+      213: 6438387551381543682
+    second: TO02_TallerConGrua_101
+  - first:
+      213: -4140155217400598892
+    second: TO02_TallerConGrua_102
+  - first:
+      213: 6686283604373700002
+    second: TO02_TallerConGrua_103
+  - first:
+      213: 6042467979181076815
+    second: TO02_TallerConGrua_104
+  - first:
+      213: 3327848790405851785
+    second: TO02_TallerConGrua_105
+  - first:
+      213: -7643535804613910670
+    second: TO02_TallerConGrua_106
+  - first:
+      213: -9097795914560402757
+    second: TO02_TallerConGrua_107
+  - first:
+      213: -9093843011457316819
+    second: TO02_TallerConGrua_108
+  - first:
+      213: -1707401223135016336
+    second: TO02_TallerConGrua_109
+  - first:
+      213: 7587676079291935790
+    second: TO02_TallerConGrua_110
+  - first:
+      213: -7402648137135503458
+    second: TO02_TallerConGrua_111
+  - first:
+      213: -9059597804552268268
+    second: TO02_TallerConGrua_112
+  - first:
+      213: 6771586236302375367
+    second: TO02_TallerConGrua_113
+  - first:
+      213: -64829920511088063
+    second: TO02_TallerConGrua_114
+  - first:
+      213: -7097844219927495761
+    second: TO02_TallerConGrua_115
+  - first:
+      213: -2265916796274711839
+    second: TO02_TallerConGrua_116
+  - first:
+      213: 6779261930281825079
+    second: TO02_TallerConGrua_117
+  - first:
+      213: 7437894389556326156
+    second: TO02_TallerConGrua_118
+  - first:
+      213: 2046448200819857329
+    second: TO02_TallerConGrua_119
+  - first:
+      213: -1082725899468391115
+    second: TO02_TallerConGrua_120
+  - first:
+      213: 3521292561713613649
+    second: TO02_TallerConGrua_121
+  - first:
+      213: 246591105094740067
+    second: TO02_TallerConGrua_122
+  - first:
+      213: 1186456660349636004
+    second: TO02_TallerConGrua_123
+  - first:
+      213: 4530507603764982319
+    second: TO02_TallerConGrua_124
+  - first:
+      213: -3018251204661613587
+    second: TO02_TallerConGrua_125
+  - first:
+      213: -716955337011087897
+    second: TO02_TallerConGrua_126
+  - first:
+      213: -4104243691543026546
+    second: TO02_TallerConGrua_127
+  - first:
+      213: -6839349422981923021
+    second: TO02_TallerConGrua_128
+  - first:
+      213: -7267244794387944262
+    second: TO02_TallerConGrua_129
+  - first:
+      213: -7537023527738929344
+    second: TO02_TallerConGrua_130
+  - first:
+      213: -1661331279738526694
+    second: TO02_TallerConGrua_131
+  - first:
+      213: -8314056076373051090
+    second: TO02_TallerConGrua_132
+  - first:
+      213: 4440539184304611127
+    second: TO02_TallerConGrua_133
+  - first:
+      213: -5214513293699040223
+    second: TO02_TallerConGrua_134
+  - first:
+      213: 2830877364423713566
+    second: TO02_TallerConGrua_135
+  - first:
+      213: -932709844201563948
+    second: TO02_TallerConGrua_136
+  - first:
+      213: -5332500698759688689
+    second: TO02_TallerConGrua_137
+  - first:
+      213: -4645899401722720510
+    second: TO02_TallerConGrua_138
+  - first:
+      213: -796474730193097491
+    second: TO02_TallerConGrua_139
+  - first:
+      213: 5009252367475355745
+    second: TO02_TallerConGrua_140
+  - first:
+      213: -5711459870590122070
+    second: TO02_TallerConGrua_141
+  - first:
+      213: 2797444931135038591
+    second: TO02_TallerConGrua_142
+  - first:
+      213: -8292808282933152026
+    second: TO02_TallerConGrua_143
+  - first:
+      213: -4563957059509303895
+    second: TO02_TallerConGrua_144
+  - first:
+      213: 4534348231963293978
+    second: TO02_TallerConGrua_145
+  - first:
+      213: 8697205863699395483
+    second: TO02_TallerConGrua_146
+  - first:
+      213: -353511892172759173
+    second: TO02_TallerConGrua_147
+  - first:
+      213: 3389556672283952355
+    second: TO02_TallerConGrua_148
+  - first:
+      213: 8805490971353926362
+    second: TO02_TallerConGrua_149
+  - first:
+      213: 9062698185208200604
+    second: TO02_TallerConGrua_150
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 233
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3942ad256a18ad920800000000000000
+      internalID: 3015865451832550547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 445
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9bb3c11c1b98d00800000000000000
+      internalID: 975506237262903765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_2
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 421
+        width: 51
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a98f4ae85391070800000000000000
+      internalID: 8077546293435079236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_3
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 347
+        width: 154
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769fd505714c4d580800000000000000
+      internalID: -8803195767190849177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_4
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 451
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28b63699c367cd60800000000000000
+      internalID: 7910400987959310379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_5
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 348
+        width: 132
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd73ee2e5205f270800000000000000
+      internalID: 8283529693154737594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_6
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 441
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30fb5faf8db62d120800000000000000
+      internalID: 2437128928028376835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_7
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 424
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a211fc5e190a8a2f0800000000000000
+      internalID: -961341971957346006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_8
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 444
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd568c4f446eae0f0800000000000000
+      internalID: -1086803176217614881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_9
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 267
+        width: 37
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406d8aae21af6f420800000000000000
+      internalID: 2663591188789515780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_10
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 434
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9c6d89e1ab1e650800000000000000
+      internalID: 6260489597597698479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_11
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 437
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a0e170aa7c69e80800000000000000
+      internalID: -8172124940739409397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_12
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 430
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6e4d90423ad4170800000000000000
+      internalID: 8164361074671675121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_13
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 428
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e8ee9c585b61e10800000000000000
+      internalID: 2168119856848604700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_14
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 420
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c58d47975556ab0800000000000000
+      internalID: -5015508629867439046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_15
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 421
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93906882fe2090160800000000000000
+      internalID: 6992123122669717817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_16
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 422
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb74a7edc0d1fbfd0800000000000000
+      internalID: -2324106941590517829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_17
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 369
+        width: 25
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9fe1b5bde5d8a00800000000000000
+      internalID: 760368208315087277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 411
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 185ec3a0bb0c60120800000000000000
+      internalID: 2379801362675066241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_19
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 414
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec831bae5a14e0b50800000000000000
+      internalID: 6561253887988283598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_20
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 398
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1308e897c240340800000000000000
+      internalID: 4829033601041445369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_21
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 408
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9e7f7df2bea70f0800000000000000
+      internalID: -1118322966728807949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_22
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 407
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380f4056e889d5500800000000000000
+      internalID: 386632880371331203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_23
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 400
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064446b24a5a9f860800000000000000
+      internalID: 7564259173666669664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_24
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 397
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9da82e7102c02180800000000000000
+      internalID: -9142093931894755940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_25
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 405
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7246f795508909a60800000000000000
+      internalID: 7678804513410475047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_26
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 397
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70bad9be4f8dd9b00800000000000000
+      internalID: 837063652197378823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_27
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 397
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1706bbe638f8ff0800000000000000
+      internalID: -31662160755002881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_28
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 393
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e966a298face55530800000000000000
+      internalID: 3843238095695275678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_29
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 392
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70640f7b68505c2c0800000000000000
+      internalID: -4412114183769799161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_30
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 394
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63da73b0f34cc72c0800000000000000
+      internalID: -4432452158189228746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_31
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 394
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb3071bdeb7a9860800000000000000
+      internalID: 7537473187172334578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_32
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 398
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46673244e80e1f970800000000000000
+      internalID: 8787051249609700964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_33
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 386
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b6ee92192df59d10800000000000000
+      internalID: 2131888351477687984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_34
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 384
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d54f685fbb65310800000000000000
+      internalID: 1393507797923290412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_35
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 382
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b28c96dba3fc6b70800000000000000
+      internalID: 8893751283515425459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_36
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 382
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5efeaa606dc1aa080800000000000000
+      internalID: -9175489585253519387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_37
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 373
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380c28fb0ccc3f870800000000000000
+      internalID: 8715534832110846083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_38
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 375
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4778688b26a174340800000000000000
+      internalID: 4847872535192569716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_39
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 373
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5172453a1f8faf530800000000000000
+      internalID: 3889694944898852629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_40
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 369
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094ff69957b0b1f20800000000000000
+      internalID: 3394319343867131024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_41
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 361
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb032829b480c8a50800000000000000
+      internalID: 6524599080826581179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_42
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 365
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7310f3c4dda1b70800000000000000
+      internalID: 8870645735603910598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_43
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 363
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed707fdcd6565de40800000000000000
+      internalID: 5680558027279108062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_44
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 365
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0805b8b26feebb0800000000000000
+      internalID: -4904712277278555956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_45
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 367
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ebabff328ba9570800000000000000
+      internalID: 8474288113604804209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_46
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 365
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f29d80f482380490800000000000000
+      internalID: -7779912809729649929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_47
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 363
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dfe7a839289241b0800000000000000
+      internalID: -5673805277721792558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_48
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 364
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e332d38b943e3990800000000000000
+      internalID: -7404422894814350366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_49
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 368
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e927f8affcce631c0800000000000000
+      internalID: -4524168397640994146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_50
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 364
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e29ae480baac830800000000000000
+      internalID: 4092271263587315309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_51
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 368
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95b34af075db9730800000000000000
+      internalID: 4007030974687983004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_52
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 361
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9245f1af4ab656e0800000000000000
+      internalID: -1849085745806622052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_53
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 358
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e40f2185ffb75b80800000000000000
+      internalID: -8406039118308506395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_54
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 360
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01f12c26edfbec90800000000000000
+      internalID: -7139333619241062131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_55
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 336
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a033e4d354f39ded0800000000000000
+      internalID: -2388808560729509110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_56
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 360
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a04cf338fdbd32d0800000000000000
+      internalID: -3297270478443626335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_57
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 361
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8500570484ca540800000000000000
+      internalID: 5020467126289324287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_58
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 357
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd99e97ca4d508650800000000000000
+      internalID: 6233084460038789596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_59
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 354
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd788cd1a149b4e0800000000000000
+      internalID: -1965467598925038132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_60
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 344
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ed03d426e1f6fe0800000000000000
+      internalID: -1193701968679215514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_61
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 346
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e4379ad549feed10800000000000000
+      internalID: 2156935349972448484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_62
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 348
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78028d0eaca9dcf80800000000000000
+      internalID: -8084635559913840505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_63
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 353
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2d579b98be05540800000000000000
+      internalID: 4994750963508433594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_64
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 347
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e97baf99f0d9390800000000000000
+      internalID: -7810069024779821444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_65
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 346
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911f4dce34b059650800000000000000
+      internalID: 6238905245155782937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_66
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 346
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a625151f0597f300800000000000000
+      internalID: 285860993372071587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_67
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 352
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3136ea88b00132120800000000000000
+      internalID: 2387769869160309523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_68
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 348
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 748e06353ea360940800000000000000
+      internalID: 5261957962659850311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_69
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 349
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8c8a6280e7b4a40800000000000000
+      internalID: 5353511155533400232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_70
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 351
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ccd6b55ab4f42b0800000000000000
+      internalID: -5598172638222627840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_71
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 345
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3add9f87925ba55a0800000000000000
+      internalID: -6531709119819555421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 497
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f7b22729283a870800000000000000
+      internalID: 8692935271247478676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_73
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 342
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361258c85fd9f1890800000000000000
+      internalID: -7485090377716391581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_74
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 345
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8571a77b6fe05ad0800000000000000
+      internalID: -2715407330456799861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_75
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 342
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6ccb325a2a47da0800000000000000
+      internalID: -5947950377696704834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_76
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 344
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b974358bfbf2070800000000000000
+      internalID: 8083890654545419138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_77
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 345
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4634feba0ff78e50800000000000000
+      internalID: 6811693383039596109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_78
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 341
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3fd356e3bce8b50800000000000000
+      internalID: 6597433972991325089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_79
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 341
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29682561a438c0e50800000000000000
+      internalID: 6776935893511079570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_80
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 341
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3836b432e3daf6cc0800000000000000
+      internalID: -3715560685165649021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_81
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 323
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069cd7fc5f558c720800000000000000
+      internalID: 2866635677057796448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_82
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 333
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4015935c9a77510800000000000000
+      internalID: 1546891661560317176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_83
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 323
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa824307b72e23880800000000000000
+      internalID: -8632588515924498262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_84
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 319
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51619c6fbea4b7610800000000000000
+      internalID: 1619970868287968789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_85
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 301
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366a1eecf894696d0800000000000000
+      internalID: -2984116821086329245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_86
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 289
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e560f8cd1b02df0800000000000000
+      internalID: -206970022008562131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_87
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 285
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9270b12937297db50800000000000000
+      internalID: 6617919202514372393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_88
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 292
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54757daf0649be730800000000000000
+      internalID: 4029477435859228485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_89
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 281
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ccb5055ef6c047e0800000000000000
+      internalID: -1783206656788284220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b0e74e8016ec800800000000000000
+      internalID: 634551288326916949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_91
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 257
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2fcbabad4ef64e0800000000000000
+      internalID: -1986117282560150827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_92
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 254
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3e17ccb2318dff0800000000000000
+      internalID: -11237920233888813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_93
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 257
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e7b76ddc154e4e0800000000000000
+      internalID: -1953346393863389603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_94
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 255
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a0985a14e164ba0800000000000000
+      internalID: -6105158977555199409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_95
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 236
+        width: 13
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02368d7ac898ddf70800000000000000
+      internalID: 9213671649874305824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_96
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 238
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4eeb4e94a6680530800000000000000
+      internalID: 3821417141040311885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_97
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 244
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313ffe3b8da343880800000000000000
+      internalID: -8632209883356204269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_98
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 241
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e507b988aea9560800000000000000
+      internalID: 7321422016688447101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_99
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 246
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee25185150b08dd0800000000000000
+      internalID: -2485793130891890972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_100
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 195
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b303530b5a30c400800000000000000
+      internalID: 342337734252364722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_101
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 232
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20bd46ead5fb95950800000000000000
+      internalID: 6438387551381543682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_102
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 225
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e6bd7e3c63b86c0800000000000000
+      internalID: -4140155217400598892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_103
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 220
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad763243837acc50800000000000000
+      internalID: 6686283604373700002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_104
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 189
+        width: 7
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41b2c9dc982bd350800000000000000
+      internalID: 6042467979181076815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_105
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 200
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98aaa5ad7d4ee2e20800000000000000
+      internalID: 3327848790405851785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_106
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 205
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f1202dea4bce590800000000000000
+      internalID: -7643535804613910670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_107
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 194
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba80a161d22eb180800000000000000
+      internalID: -9097795914560402757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_108
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 194
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d280bea56fd2cc180800000000000000
+      internalID: -9093843011457316819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_109
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 196
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a48fd32a71e48e0800000000000000
+      internalID: -1707401223135016336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_110
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 122
+        width: 28
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2cace06137dc4960800000000000000
+      internalID: 7587676079291935790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_111
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 177
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97c4dc7db2844990800000000000000
+      internalID: -7402648137135503458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_112
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 182
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416d0cbebc7d54280800000000000000
+      internalID: -9059597804552268268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_113
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 177
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c93ab4fdc189fd50800000000000000
+      internalID: 6771586236302375367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_114
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 183
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14aae11e78da91ff0800000000000000
+      internalID: -64829920511088063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_115
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 160
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab7928b9446f7d90800000000000000
+      internalID: -7097844219927495761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_116
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 162
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2647bdda8dd80e0800000000000000
+      internalID: -2265916796274711839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_117
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 161
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733f6c9bec6c41e50800000000000000
+      internalID: 6779261930281825079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_118
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 152
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f20662a85b83760800000000000000
+      internalID: 7437894389556326156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_119
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 149
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7da1dcbc1766c10800000000000000
+      internalID: 2046448200819857329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_120
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 144
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d321de78269f0f0800000000000000
+      internalID: -1082725899468391115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_121
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 134
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b4a23ade42ed030800000000000000
+      internalID: 3521292561713613649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_122
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 133
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36861f7bd411c6300800000000000000
+      internalID: 246591105094740067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_123
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 128
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad4985eb04277010800000000000000
+      internalID: 1186456660349636004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_124
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 134
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f223e9679a89fde30800000000000000
+      internalID: 4530507603764982319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_125
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 133
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: debef3f45840d16d0800000000000000
+      internalID: -3018251204661613587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_126
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 125
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e532a96becdc06f0800000000000000
+      internalID: -716955337011087897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_127
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 121
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84a0f59b1cca07c0800000000000000
+      internalID: -4104243691543026546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_128
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 107
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fb36cafefb511a0800000000000000
+      internalID: -6839349422981923021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_129
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 99
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc23beec5f852b90800000000000000
+      internalID: -7267244794387944262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_130
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 84
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f0c5dc80d176790800000000000000
+      internalID: -7537023527738929344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_131
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 65
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14a0f0d004c1f8e0800000000000000
+      internalID: -1661331279738526694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_132
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 67
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e293b1d5c0a8e9c80800000000000000
+      internalID: -8314056076373051090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_133
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 0
+        width: 70
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73fdda37cd6ff9d30800000000000000
+      internalID: 4440539184304611127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_134
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 60
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c348c79c352a7b0800000000000000
+      internalID: -5214513293699040223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_135
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 41
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e136b2dd6fb494720800000000000000
+      internalID: 2830877364423713566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_136
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 6
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d81bd1a6595e03f0800000000000000
+      internalID: -932709844201563948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_137
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 9
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e08e50ed62ff5b0800000000000000
+      internalID: -5332500698759688689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_138
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 16
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f0e12fb13768fb0800000000000000
+      internalID: -4645899401722720510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_139
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dece34ae37a52f4f0800000000000000
+      internalID: -796474730193097491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_140
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 7
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16037a1fc70748540800000000000000
+      internalID: 5009252367475355745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_141
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 4
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7c3902281dcb0b0800000000000000
+      internalID: -5711459870590122070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_142
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 7
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f746507e75582d620800000000000000
+      internalID: 2797444931135038591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_143
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 4
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e63a59cdc60aec80800000000000000
+      internalID: -8292808282933152026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_144
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 9
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5cfc93c3199a0c0800000000000000
+      internalID: -4563957059509303895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_145
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 4
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19b71661bd3dee30800000000000000
+      internalID: 4534348231963293978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_146
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 4
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b933f3c37aea2b870800000000000000
+      internalID: 8697205863699395483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_147
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 6
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f9a2b9ec2181bf0800000000000000
+      internalID: -353511892172759173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_148
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 7
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e44a85b5df1a0f20800000000000000
+      internalID: 3389556672283952355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_149
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 8
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adac57c8263633a70800000000000000
+      internalID: 8805490971353926362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO02_TallerConGrua_150
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 24
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d79e3bbfb25cd70800000000000000
+      internalID: 9062698185208200604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

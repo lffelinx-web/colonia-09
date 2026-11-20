@@ -1,0 +1,4508 @@
+fileFormatVersion: 2
+guid: d9d5c4e1b24e44b4cab6380b01911bae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -272475681890422342
+    second: RF02_RefineriaModular_0
+  - first:
+      213: -7113726684732255948
+    second: RF02_RefineriaModular_1
+  - first:
+      213: -3405692732179289346
+    second: RF02_RefineriaModular_2
+  - first:
+      213: 987407594923853643
+    second: RF02_RefineriaModular_3
+  - first:
+      213: -7954577322216795197
+    second: RF02_RefineriaModular_4
+  - first:
+      213: -9157950195633534483
+    second: RF02_RefineriaModular_5
+  - first:
+      213: 6748082923189140174
+    second: RF02_RefineriaModular_6
+  - first:
+      213: 4669352341459798273
+    second: RF02_RefineriaModular_7
+  - first:
+      213: 5773667150596428593
+    second: RF02_RefineriaModular_8
+  - first:
+      213: -7491767487994867538
+    second: RF02_RefineriaModular_9
+  - first:
+      213: 8566213148226886256
+    second: RF02_RefineriaModular_10
+  - first:
+      213: -9068269447325650147
+    second: RF02_RefineriaModular_11
+  - first:
+      213: 6719244980786361677
+    second: RF02_RefineriaModular_12
+  - first:
+      213: -6732197681467596918
+    second: RF02_RefineriaModular_13
+  - first:
+      213: 3360853865526625867
+    second: RF02_RefineriaModular_14
+  - first:
+      213: -2982447686321950993
+    second: RF02_RefineriaModular_15
+  - first:
+      213: 704103891033724649
+    second: RF02_RefineriaModular_16
+  - first:
+      213: -3200370963780241293
+    second: RF02_RefineriaModular_17
+  - first:
+      213: -1927153093636910663
+    second: RF02_RefineriaModular_18
+  - first:
+      213: 5943479517931413475
+    second: RF02_RefineriaModular_19
+  - first:
+      213: 7635851294198127825
+    second: RF02_RefineriaModular_20
+  - first:
+      213: -7886996964701539840
+    second: RF02_RefineriaModular_21
+  - first:
+      213: 2538301720482949463
+    second: RF02_RefineriaModular_22
+  - first:
+      213: 495420696614747037
+    second: RF02_RefineriaModular_23
+  - first:
+      213: 2760977213227511015
+    second: RF02_RefineriaModular_24
+  - first:
+      213: -3553003378723259764
+    second: RF02_RefineriaModular_25
+  - first:
+      213: 2882028491823368622
+    second: RF02_RefineriaModular_26
+  - first:
+      213: -1556787656707106836
+    second: RF02_RefineriaModular_27
+  - first:
+      213: 5480934580252063530
+    second: RF02_RefineriaModular_28
+  - first:
+      213: -1404998683872566297
+    second: RF02_RefineriaModular_29
+  - first:
+      213: -1320145709470058142
+    second: RF02_RefineriaModular_30
+  - first:
+      213: 6904797240332130142
+    second: RF02_RefineriaModular_31
+  - first:
+      213: 3849386861529740613
+    second: RF02_RefineriaModular_32
+  - first:
+      213: -4996816290581136368
+    second: RF02_RefineriaModular_33
+  - first:
+      213: 3509623519482161990
+    second: RF02_RefineriaModular_34
+  - first:
+      213: -9070614703471609610
+    second: RF02_RefineriaModular_35
+  - first:
+      213: 4628867924917219422
+    second: RF02_RefineriaModular_36
+  - first:
+      213: 1439595983969221096
+    second: RF02_RefineriaModular_37
+  - first:
+      213: 6363440224898191439
+    second: RF02_RefineriaModular_38
+  - first:
+      213: 6439682616841469176
+    second: RF02_RefineriaModular_39
+  - first:
+      213: 2637014474515012003
+    second: RF02_RefineriaModular_40
+  - first:
+      213: 2406730666002886670
+    second: RF02_RefineriaModular_41
+  - first:
+      213: -2357693712525593017
+    second: RF02_RefineriaModular_42
+  - first:
+      213: 2773370004218615720
+    second: RF02_RefineriaModular_43
+  - first:
+      213: -6897812582430031643
+    second: RF02_RefineriaModular_44
+  - first:
+      213: 934712157110447467
+    second: RF02_RefineriaModular_45
+  - first:
+      213: -7513097070249730712
+    second: RF02_RefineriaModular_46
+  - first:
+      213: 1003583631836655961
+    second: RF02_RefineriaModular_47
+  - first:
+      213: 2603017651523254450
+    second: RF02_RefineriaModular_48
+  - first:
+      213: -7019056085476024432
+    second: RF02_RefineriaModular_49
+  - first:
+      213: -3240110892102435446
+    second: RF02_RefineriaModular_50
+  - first:
+      213: -2651073135338909659
+    second: RF02_RefineriaModular_51
+  - first:
+      213: 4335016567164908990
+    second: RF02_RefineriaModular_52
+  - first:
+      213: -5631636969321626134
+    second: RF02_RefineriaModular_53
+  - first:
+      213: -4031772215867422615
+    second: RF02_RefineriaModular_54
+  - first:
+      213: 3352276906701803076
+    second: RF02_RefineriaModular_55
+  - first:
+      213: -4864262247743998058
+    second: RF02_RefineriaModular_56
+  - first:
+      213: 3969181273472488439
+    second: RF02_RefineriaModular_57
+  - first:
+      213: -1981218787350847557
+    second: RF02_RefineriaModular_58
+  - first:
+      213: -1666314465518105344
+    second: RF02_RefineriaModular_59
+  - first:
+      213: 2738137330974609086
+    second: RF02_RefineriaModular_60
+  - first:
+      213: 6051528075280953336
+    second: RF02_RefineriaModular_61
+  - first:
+      213: 689666617480305060
+    second: RF02_RefineriaModular_62
+  - first:
+      213: 1727801037718029871
+    second: RF02_RefineriaModular_63
+  - first:
+      213: -8889612974623819976
+    second: RF02_RefineriaModular_64
+  - first:
+      213: 3148371422538716930
+    second: RF02_RefineriaModular_65
+  - first:
+      213: 7518245314244685206
+    second: RF02_RefineriaModular_66
+  - first:
+      213: 3001606537716706104
+    second: RF02_RefineriaModular_67
+  - first:
+      213: -1828972538154146183
+    second: RF02_RefineriaModular_68
+  - first:
+      213: 6793091568915749692
+    second: RF02_RefineriaModular_69
+  - first:
+      213: 1490848715837432497
+    second: RF02_RefineriaModular_70
+  - first:
+      213: 7488385253203450301
+    second: RF02_RefineriaModular_71
+  - first:
+      213: -3580864387746279918
+    second: RF02_RefineriaModular_72
+  - first:
+      213: -7577861211854100871
+    second: RF02_RefineriaModular_73
+  - first:
+      213: 7727663474208044408
+    second: RF02_RefineriaModular_74
+  - first:
+      213: -859987235858124628
+    second: RF02_RefineriaModular_75
+  - first:
+      213: 2343649830535677752
+    second: RF02_RefineriaModular_76
+  - first:
+      213: 8435213337182942661
+    second: RF02_RefineriaModular_77
+  - first:
+      213: -173578566097202498
+    second: RF02_RefineriaModular_78
+  - first:
+      213: 6481257844111308948
+    second: RF02_RefineriaModular_79
+  - first:
+      213: 1832503461642966483
+    second: RF02_RefineriaModular_80
+  - first:
+      213: -4468307570512387379
+    second: RF02_RefineriaModular_81
+  - first:
+      213: -2399337434429702111
+    second: RF02_RefineriaModular_82
+  - first:
+      213: 2911381055773006479
+    second: RF02_RefineriaModular_83
+  - first:
+      213: -4019216833283770437
+    second: RF02_RefineriaModular_84
+  - first:
+      213: 7355361754296798248
+    second: RF02_RefineriaModular_85
+  - first:
+      213: 8015342489443091288
+    second: RF02_RefineriaModular_86
+  - first:
+      213: 1633166317611072935
+    second: RF02_RefineriaModular_87
+  - first:
+      213: 4960797262866567567
+    second: RF02_RefineriaModular_88
+  - first:
+      213: 4753497048620238622
+    second: RF02_RefineriaModular_89
+  - first:
+      213: -154834951494451962
+    second: RF02_RefineriaModular_90
+  - first:
+      213: 2986817606827172793
+    second: RF02_RefineriaModular_91
+  - first:
+      213: -4005995912244989100
+    second: RF02_RefineriaModular_92
+  - first:
+      213: -3858297525957833069
+    second: RF02_RefineriaModular_93
+  - first:
+      213: 4898486783681368705
+    second: RF02_RefineriaModular_94
+  - first:
+      213: 7592122688135148622
+    second: RF02_RefineriaModular_95
+  - first:
+      213: -5207721593663475652
+    second: RF02_RefineriaModular_96
+  - first:
+      213: -7178021649145178610
+    second: RF02_RefineriaModular_97
+  - first:
+      213: 7903024266081428019
+    second: RF02_RefineriaModular_98
+  - first:
+      213: -2694678823583977889
+    second: RF02_RefineriaModular_99
+  - first:
+      213: 8549337284868469882
+    second: RF02_RefineriaModular_100
+  - first:
+      213: -8984639859215765445
+    second: RF02_RefineriaModular_101
+  - first:
+      213: -7884342314103562519
+    second: RF02_RefineriaModular_102
+  - first:
+      213: -6213663732253219870
+    second: RF02_RefineriaModular_103
+  - first:
+      213: -8433598585025318702
+    second: RF02_RefineriaModular_104
+  - first:
+      213: -4121945393329398198
+    second: RF02_RefineriaModular_105
+  - first:
+      213: 5127770499740081064
+    second: RF02_RefineriaModular_106
+  - first:
+      213: 4421889903018946708
+    second: RF02_RefineriaModular_107
+  - first:
+      213: 3483239364073539328
+    second: RF02_RefineriaModular_108
+  - first:
+      213: -5667330055519498174
+    second: RF02_RefineriaModular_109
+  - first:
+      213: -1481461335972811716
+    second: RF02_RefineriaModular_110
+  - first:
+      213: 3273728202843538886
+    second: RF02_RefineriaModular_111
+  - first:
+      213: -4427252073697157674
+    second: RF02_RefineriaModular_112
+  - first:
+      213: -1549769819837020218
+    second: RF02_RefineriaModular_113
+  - first:
+      213: 1734817222121720574
+    second: RF02_RefineriaModular_114
+  - first:
+      213: 6773754369489393826
+    second: RF02_RefineriaModular_115
+  - first:
+      213: 4350764972276605984
+    second: RF02_RefineriaModular_116
+  - first:
+      213: -5294749927997438662
+    second: RF02_RefineriaModular_117
+  - first:
+      213: -5035132627432398463
+    second: RF02_RefineriaModular_118
+  - first:
+      213: -1497115503312738747
+    second: RF02_RefineriaModular_119
+  - first:
+      213: 2826476439898655644
+    second: RF02_RefineriaModular_120
+  - first:
+      213: 4527713635022956695
+    second: RF02_RefineriaModular_121
+  - first:
+      213: 2526600558065046877
+    second: RF02_RefineriaModular_122
+  - first:
+      213: 4336719221881136683
+    second: RF02_RefineriaModular_123
+  - first:
+      213: 7038180767711400314
+    second: RF02_RefineriaModular_124
+  - first:
+      213: -8574072638593575012
+    second: RF02_RefineriaModular_125
+  - first:
+      213: 2356864240092147575
+    second: RF02_RefineriaModular_126
+  - first:
+      213: -3228778914978634473
+    second: RF02_RefineriaModular_127
+  - first:
+      213: 1540818947071308879
+    second: RF02_RefineriaModular_128
+  - first:
+      213: -5710278897997280255
+    second: RF02_RefineriaModular_129
+  - first:
+      213: 5404186991250193521
+    second: RF02_RefineriaModular_130
+  - first:
+      213: -7849344914423355114
+    second: RF02_RefineriaModular_131
+  - first:
+      213: 8540078594253663400
+    second: RF02_RefineriaModular_132
+  - first:
+      213: 5592002515506534920
+    second: RF02_RefineriaModular_133
+  - first:
+      213: 9002316878866535898
+    second: RF02_RefineriaModular_134
+  - first:
+      213: -1498456794365412819
+    second: RF02_RefineriaModular_135
+  - first:
+      213: 1002623706890381053
+    second: RF02_RefineriaModular_136
+  - first:
+      213: 3240512382842431675
+    second: RF02_RefineriaModular_137
+  - first:
+      213: 6324344040514968120
+    second: RF02_RefineriaModular_138
+  - first:
+      213: 7488349849126485269
+    second: RF02_RefineriaModular_139
+  - first:
+      213: -1039305504783924292
+    second: RF02_RefineriaModular_140
+  - first:
+      213: 1630020177166527769
+    second: RF02_RefineriaModular_141
+  - first:
+      213: 6108194773652566392
+    second: RF02_RefineriaModular_142
+  - first:
+      213: 4543797157733692741
+    second: RF02_RefineriaModular_143
+  - first:
+      213: -3819424746340532155
+    second: RF02_RefineriaModular_144
+  - first:
+      213: -3230137837764492095
+    second: RF02_RefineriaModular_145
+  - first:
+      213: -2281502517685448650
+    second: RF02_RefineriaModular_146
+  - first:
+      213: -4564204120192587523
+    second: RF02_RefineriaModular_147
+  - first:
+      213: 8925920872996557983
+    second: RF02_RefineriaModular_148
+  - first:
+      213: 5603763844480821895
+    second: RF02_RefineriaModular_149
+  - first:
+      213: -7555778399383539184
+    second: RF02_RefineriaModular_150
+  - first:
+      213: 4187423508499422498
+    second: RF02_RefineriaModular_151
+  - first:
+      213: -2409977331419406087
+    second: RF02_RefineriaModular_152
+  - first:
+      213: -7722819860694899108
+    second: RF02_RefineriaModular_153
+  - first:
+      213: -5506373910058786076
+    second: RF02_RefineriaModular_154
+  - first:
+      213: -485330645588315753
+    second: RF02_RefineriaModular_155
+  - first:
+      213: 9197707720200178290
+    second: RF02_RefineriaModular_156
+  - first:
+      213: -1260871575076268998
+    second: RF02_RefineriaModular_157
+  - first:
+      213: -5791137409664707118
+    second: RF02_RefineriaModular_158
+  - first:
+      213: -2735789852176122745
+    second: RF02_RefineriaModular_159
+  - first:
+      213: 101858850529395450
+    second: RF02_RefineriaModular_160
+  - first:
+      213: -8243134007138471990
+    second: RF02_RefineriaModular_161
+  - first:
+      213: -6716152622432157518
+    second: RF02_RefineriaModular_162
+  - first:
+      213: -1280113672644287628
+    second: RF02_RefineriaModular_163
+  - first:
+      213: -7108142536434573969
+    second: RF02_RefineriaModular_164
+  - first:
+      213: -5071034245016179661
+    second: RF02_RefineriaModular_165
+  - first:
+      213: 1417466144416718814
+    second: RF02_RefineriaModular_166
+  - first:
+      213: 7068720073662379464
+    second: RF02_RefineriaModular_167
+  - first:
+      213: -8696400573263777401
+    second: RF02_RefineriaModular_168
+  - first:
+      213: 1605810573064314068
+    second: RF02_RefineriaModular_169
+  - first:
+      213: -454458744473601928
+    second: RF02_RefineriaModular_170
+  - first:
+      213: -8507331722560058099
+    second: RF02_RefineriaModular_171
+  - first:
+      213: 3547917453088432562
+    second: RF02_RefineriaModular_172
+  - first:
+      213: -6629334941394781117
+    second: RF02_RefineriaModular_173
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 33
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab13dfa9fc8f73cf0800000000000000
+      internalID: -272475681890422342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 324
+        width: 182
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43111573547f64d90800000000000000
+      internalID: -7113726684732255948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_2
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 329
+        width: 118
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efae254118c8cb0d0800000000000000
+      internalID: -3405692732179289346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_3
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 304
+        width: 187
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4785ffd9f9f3bd00800000000000000
+      internalID: 987407594923853643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_4
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 285
+        width: 27
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3d3e2121aab9190800000000000000
+      internalID: -7954577322216795197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_5
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 506
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de94b8661dc68e080800000000000000
+      internalID: -9157950195633534483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_6
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 494
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca719f6aa106ad50800000000000000
+      internalID: 6748082923189140174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_7
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 474
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10989db173fdcc040800000000000000
+      internalID: 4669352341459798273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_8
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 452
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13354aaeeaf202050800000000000000
+      internalID: 5773667150596428593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_9
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 430
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0de3aa925e70890800000000000000
+      internalID: -7491767487994867538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_10
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 422
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a185af87d41e670800000000000000
+      internalID: 8566213148226886256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_11
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 412
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1370a0cbf8072280800000000000000
+      internalID: -9068269447325650147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 409
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45f89eb5bd8f3d50800000000000000
+      internalID: 6719244980786361677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_13
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 405
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f5a6e90ed6292a0800000000000000
+      internalID: -6732197681467596918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_14
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 407
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4686bcb8c624ae20800000000000000
+      internalID: 3360853865526625867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_15
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 406
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee289781a73c96d0800000000000000
+      internalID: -2982447686321950993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_16
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 399
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6190622ca75c900800000000000000
+      internalID: 704103891033724649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_17
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 400
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3787762909ff593d0800000000000000
+      internalID: -3200370963780241293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_18
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 393
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b11af9c8706145e0800000000000000
+      internalID: -1927153093636910663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_19
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 400
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef9c14b12b7b7250800000000000000
+      internalID: 5943479517931413475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_20
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 386
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dcd26cab4ef7f960800000000000000
+      internalID: 7635851294198127825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_21
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 392
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00271663c02cb8290800000000000000
+      internalID: -7886996964701539840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_22
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 389
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759262e57fbd93320800000000000000
+      internalID: 2538301720482949463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_23
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 390
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b391caf7610e600800000000000000
+      internalID: 495420696614747037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_24
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 384
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ecaf5ba526f05620800000000000000
+      internalID: 2760977213227511015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_25
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 381
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8aff6d604231bec0800000000000000
+      internalID: -3553003378723259764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_26
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 382
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9cfa7c4a50ff720800000000000000
+      internalID: 2882028491823368622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_27
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 378
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce7924bdfdd256ae0800000000000000
+      internalID: -1556787656707106836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_28
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 382
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27341526f0301c40800000000000000
+      internalID: 5480934580252063530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_29
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 365
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e362e91421708ce0800000000000000
+      internalID: -1404998683872566297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_30
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 372
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269f74fb876edade0800000000000000
+      internalID: -1320145709470058142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_31
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 374
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e571814c184c2df50800000000000000
+      internalID: 6904797240332130142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_32
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 367
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5453984a4f4cb6530800000000000000
+      internalID: 3849386861529740613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_33
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 374
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01cb608de0eb7aab0800000000000000
+      internalID: -4996816290581136368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_34
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 368
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b27160fffa4b030800000000000000
+      internalID: 3509623519482161990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_35
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 360
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8b3214cf3be1280800000000000000
+      internalID: -9070614703471609610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_36
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 365
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50f3e85ada0d3040800000000000000
+      internalID: 4628867924917219422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_37
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 367
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9709c8be87af310800000000000000
+      internalID: 1439595983969221096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_38
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 360
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f401d7a6b2b7f4850800000000000000
+      internalID: 6363440224898191439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_39
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 365
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fcf71b98395e5950800000000000000
+      internalID: 6439682616841469176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_40
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 363
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9d70d61be889420800000000000000
+      internalID: 2637014474515012003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_41
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 364
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0034211acc666120800000000000000
+      internalID: 2406730666002886670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_42
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 365
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7467dbf5f0ac74fd0800000000000000
+      internalID: -2357693712525593017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_43
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 361
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a79c2c235dfc7620800000000000000
+      internalID: 2773370004218615720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_44
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 364
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e0c901a00c0640a0800000000000000
+      internalID: -6897812582430031643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_45
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 365
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6daecb21c3c8fc00800000000000000
+      internalID: 934712157110447467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_46
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 351
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d9cbc450e1cb790800000000000000
+      internalID: -7513097070249730712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_47
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 358
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9513506fef17ded00800000000000000
+      internalID: 1003583631836655961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_48
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 350
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b87d1f33c6cf1420800000000000000
+      internalID: 2603017651523254450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_49
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 353
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f58a6cdad479e90800000000000000
+      internalID: -7019056085476024432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_50
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 351
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d3c5b7f40d803d0800000000000000
+      internalID: -3240110892102435446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_51
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 358
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5201b86870f753bd0800000000000000
+      internalID: -2651073135338909659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_52
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 356
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb53c459992192c30800000000000000
+      internalID: 4335016567164908990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_53
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 345
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae580ab930868d1b0800000000000000
+      internalID: -5631636969321626134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_54
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968cee9e7844c08c0800000000000000
+      internalID: -4031772215867422615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_55
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 350
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ec4b4e51ea58e20800000000000000
+      internalID: 3352276906701803076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_56
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 345
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69730e4f14bae7cb0800000000000000
+      internalID: -4864262247743998058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_57
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 350
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3d57ea65d551730800000000000000
+      internalID: 3969181273472488439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_58
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 342
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf5f95820c4184e0800000000000000
+      internalID: -1981218787350847557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_59
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 343
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00dc2b672df00e8e0800000000000000
+      internalID: -1666314465518105344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_60
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 343
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe4afe2561dff520800000000000000
+      internalID: 2738137330974609086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_61
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 345
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ffac6bd8b85bf350800000000000000
+      internalID: 6051528075280953336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_62
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 342
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9db547220329900800000000000000
+      internalID: 689666617480305060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_63
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 335
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f260cb7b3e16af710800000000000000
+      internalID: 1727801037718029871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_64
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 337
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837f7d84910c1a480800000000000000
+      internalID: -8889612974623819976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_65
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 341
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2075965c02341bb20800000000000000
+      internalID: 3148371422538716930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_66
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 333
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69dacc9a74c265860800000000000000
+      internalID: 7518245314244685206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_67
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 339
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b281c2e39d7a920800000000000000
+      internalID: 3001606537716706104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976a067ba2f2e96e0800000000000000
+      internalID: -1828972538154146183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_69
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 324
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b9ce36ac8e54e50800000000000000
+      internalID: 6793091568915749692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_70
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 330
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b26659120f80b410800000000000000
+      internalID: 1490848715837432497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_71
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 330
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9177e66b61ce760800000000000000
+      internalID: 7488385253203450301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_72
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 327
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e4983cfc63e4ec0800000000000000
+      internalID: -3580864387746279918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_73
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 328
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976a936806706d690800000000000000
+      internalID: -7577861211854100871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_74
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 334
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8757ee3acfc2e3b60800000000000000
+      internalID: 7727663474208044408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_75
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 323
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca07e475a26b014f0800000000000000
+      internalID: -859987235858124628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_76
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 333
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837cbfa8a11568020800000000000000
+      internalID: 2343649830535677752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_77
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 330
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c53d67a6d5ef0570800000000000000
+      internalID: 8435213337182942661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_78
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 310
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2972bb633579df0800000000000000
+      internalID: -173578566097202498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_79
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 316
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498f7f78bad02f950800000000000000
+      internalID: 6481257844111308948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_80
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 325
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d517e8703c5e6910800000000000000
+      internalID: 1832503461642966483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_81
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 323
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2ab6050f16df1c0800000000000000
+      internalID: -4468307570512387379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_82
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 321
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120458cc057d3bed0800000000000000
+      internalID: -2399337434429702111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_83
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 320
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ad62325ad476820800000000000000
+      internalID: 2911381055773006479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_84
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 322
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7b9d8b59fd838c0800000000000000
+      internalID: -4019216833283770437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_85
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 326
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82cca5f8b8e731660800000000000000
+      internalID: 7355361754296798248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_86
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853c95ce6873c3f60800000000000000
+      internalID: 8015342489443091288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_87
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 324
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad375cec1c2aa610800000000000000
+      internalID: 1633166317611072935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_88
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 323
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8154efb3da48d440800000000000000
+      internalID: 4960797262866567567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_89
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 296
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1780ef6160d7f140800000000000000
+      internalID: 4753497048620238622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_90
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 283
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60dbb559e6ae9ddf0800000000000000
+      internalID: -154834951494451962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_91
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 289
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3e0dfd9ce437920800000000000000
+      internalID: 2986817606827172793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_92
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 270
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45378f641f7d768c0800000000000000
+      internalID: -4005995912244989100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_93
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 277
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ec38f97d2947ac0800000000000000
+      internalID: -3858297525957833069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_94
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 272
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1821646c6cbeaf340800000000000000
+      internalID: 4898486783681368705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_95
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 273
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44ba7d2c53ac5960800000000000000
+      internalID: 7592122688135148622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_96
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 202
+        width: 14
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30be806dc47ab7b0800000000000000
+      internalID: -5207721593663475652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_97
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 265
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0653a4475b826c90800000000000000
+      internalID: -7178021649145178610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_98
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 262
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 332631fa2be2dad60800000000000000
+      internalID: 7903024266081428019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_99
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 251
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e628013e39a9ad0800000000000000
+      internalID: -2694678823583977889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 234
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a747699d6f855a670800000000000000
+      internalID: 8549337284868469882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_101
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 257
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30f0a496a5205380800000000000000
+      internalID: -8984639859215765445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_102
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 250
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee96483070359290800000000000000
+      internalID: -7884342314103562519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_103
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 216
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e3a155c1c1a4c9a0800000000000000
+      internalID: -6213663732253219870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_104
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 242
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0345125c6d5fa80800000000000000
+      internalID: -8433598585025318702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_105
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 247
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e1b07f088ebc6c0800000000000000
+      internalID: -4121945393329398198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_106
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 225
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab1cb6f910892740800000000000000
+      internalID: 5127770499740081064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_107
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 235
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490b4594075bd5d30800000000000000
+      internalID: 4421889903018946708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_108
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 232
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007c2432fb3f65030800000000000000
+      internalID: 3483239364073539328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_109
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 232
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2409ddf57599951b0800000000000000
+      internalID: -5667330055519498174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_110
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 233
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c6dd893cac07be0800000000000000
+      internalID: -1481461335972811716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_111
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 225
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5caad947e9e6d20800000000000000
+      internalID: 3273728202843538886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_112
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 221
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd5b2012bd3f82c0800000000000000
+      internalID: -4427252073697157674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_113
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 210
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c74ef45f8c1e7ae0800000000000000
+      internalID: -1549769819837020218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_114
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 213
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa8bc2721f431810800000000000000
+      internalID: 1734817222121720574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_115
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 197
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a85a2dc5b5310e50800000000000000
+      internalID: 6773754369489393826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_116
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 200
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02462c1e0b5016c30800000000000000
+      internalID: 4350764972276605984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_117
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 193
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3500374ef44586b0800000000000000
+      internalID: -5294749927997438662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_118
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 205
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181a9e87d8d9f1ab0800000000000000
+      internalID: -5035132627432398463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_119
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 194
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546605db16d293be0800000000000000
+      internalID: -1497115503312738747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_120
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 183
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b8b26c859a93720800000000000000
+      internalID: 2826476439898655644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_121
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 196
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7986c3cef8ba5de30800000000000000
+      internalID: 4527713635022956695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_122
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 174
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5555c032d9401320800000000000000
+      internalID: 2526600558065046877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_123
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2665d6c72f1f2c30800000000000000
+      internalID: 4336719221881136683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_124
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 172
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a719c6c4e14aca160800000000000000
+      internalID: 7038180767711400314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_125
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 181
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97db32dc56c20980800000000000000
+      internalID: -8574072638593575012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_126
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 177
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f63860a8345b020800000000000000
+      internalID: 2356864240092147575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_127
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 171
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7156d620fa21133d0800000000000000
+      internalID: -3228778914978634473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_128
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 169
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4470633ba6126510800000000000000
+      internalID: 1540818947071308879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_129
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 165
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c867cb89301c0b0800000000000000
+      internalID: -5710278897997280255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_130
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 164
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c31499f678ffa40800000000000000
+      internalID: 5404186991250193521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_131
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 133
+        width: 8
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619e6405366811390800000000000000
+      internalID: -7849344914423355114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_132
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 157
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac2864fb34748670800000000000000
+      internalID: 8540078594253663400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_133
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 146
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a9bdff8a8ca9d40800000000000000
+      internalID: 5592002515506534920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_134
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 149
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5d7584187aeec70800000000000000
+      internalID: 9002316878866535898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_135
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 145
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a34941c79643be0800000000000000
+      internalID: -1498456794365412819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_136
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 137
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6269403f80aed00800000000000000
+      internalID: 1002623706890381053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_137
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 132
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8e39dd7dc98fc20800000000000000
+      internalID: 3240512382842431675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_138
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 122
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ad044a56594c750800000000000000
+      internalID: 6324344040514968120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_139
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51db8074386fbe760800000000000000
+      internalID: 7488349849126485269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_140
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 122
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb30f3e5625a391f0800000000000000
+      internalID: -1039305504783924292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_141
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 110
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91deab407befe9610800000000000000
+      internalID: 1630020177166527769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_142
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 109
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8717576b8caa4c450800000000000000
+      internalID: 6108194773652566392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_143
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 99
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545752ed07fce0f30800000000000000
+      internalID: 4543797157733692741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_144
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540490ced6daefac0800000000000000
+      internalID: -3819424746340532155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_145
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 0
+        width: 15
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4cf7420ce3c23d0800000000000000
+      internalID: -3230137837764492095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_146
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 48
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630133f4c897650e0800000000000000
+      internalID: -2281502517685448650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_147
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 26
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8eb8de880b8a0c0800000000000000
+      internalID: -4564204120192587523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_148
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 7
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9454301ebd3fdb70800000000000000
+      internalID: 8925920872996557983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_149
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 13
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ae47bc68194cd40800000000000000
+      internalID: 5603763844480821895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_150
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 9
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012bc27f39b742790800000000000000
+      internalID: -7555778399383539184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_151
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 9
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d5a3cbe77bc1a30800000000000000
+      internalID: 4187423508499422498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_152
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 8
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0a00cb26a0e8ed0800000000000000
+      internalID: -2409977331419406087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_153
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 14
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56e2f2014803d490800000000000000
+      internalID: -7722819860694899108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_154
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 9
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2a7725a1e6593b0800000000000000
+      internalID: -5506373910058786076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_155
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791f8176952c349f0800000000000000
+      internalID: -485330645588315753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_156
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 14
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a4662a072d4af70800000000000000
+      internalID: 9197707720200178290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_157
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 16
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34113c9bfb708ee0800000000000000
+      internalID: -1260871575076268998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_158
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 6
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5957b653fb1afa0800000000000000
+      internalID: -5791137409664707118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_159
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 4
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c7ce0df95880ad0800000000000000
+      internalID: -2735789852176122745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_160
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 9
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2c80bb510e96100800000000000000
+      internalID: 101858850529395450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_161
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 8
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acfa1946b418a9d80800000000000000
+      internalID: -8243134007138471990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_162
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 4
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b08f9a06ce6bc2a0800000000000000
+      internalID: -6716152622432157518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_163
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 4
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473aae5a56f1c3ee0800000000000000
+      internalID: -1280113672644287628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_164
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 9
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d19fe060eca5d90800000000000000
+      internalID: -7108142536434573969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_165
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 5
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c28fdb83110a9b0800000000000000
+      internalID: -5071034245016179661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_166
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 9
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edfd913c2f9dba310800000000000000
+      internalID: 1417466144416718814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_167
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 4
+        width: 23
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5b15f8473291260800000000000000
+      internalID: 7068720073662379464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_168
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 9
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781fb1e01cd205780800000000000000
+      internalID: -8696400573263777401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_169
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 6
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc9010553cf84610800000000000000
+      internalID: 1605810573064314068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_170
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 6
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878b4920e2071b9f0800000000000000
+      internalID: -454458744473601928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_171
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 7
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0d45624fd2efe980800000000000000
+      internalID: -8507331722560058099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_172
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 9
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1aebb302cbc3130800000000000000
+      internalID: 3547917453088432562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF02_RefineriaModular_173
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c34199efedff3a0800000000000000
+      internalID: -6629334941394781117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

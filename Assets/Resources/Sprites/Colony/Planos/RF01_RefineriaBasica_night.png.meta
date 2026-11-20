@@ -1,0 +1,5683 @@
+fileFormatVersion: 2
+guid: a8daaac336f0ede429fc839e49cad6cd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8707780838247287501
+    second: RF01_RefineriaBasica_night_0
+  - first:
+      213: -7841202752710950527
+    second: RF01_RefineriaBasica_night_1
+  - first:
+      213: 9175611408156185065
+    second: RF01_RefineriaBasica_night_2
+  - first:
+      213: 7406478756926240553
+    second: RF01_RefineriaBasica_night_3
+  - first:
+      213: -1312097039133744182
+    second: RF01_RefineriaBasica_night_4
+  - first:
+      213: 2347231150223748904
+    second: RF01_RefineriaBasica_night_5
+  - first:
+      213: -4054976526166138784
+    second: RF01_RefineriaBasica_night_6
+  - first:
+      213: -1763298865808928421
+    second: RF01_RefineriaBasica_night_7
+  - first:
+      213: 6752023901062681448
+    second: RF01_RefineriaBasica_night_8
+  - first:
+      213: 4422749731186161538
+    second: RF01_RefineriaBasica_night_9
+  - first:
+      213: 8084846097251514490
+    second: RF01_RefineriaBasica_night_10
+  - first:
+      213: 8888940980430905929
+    second: RF01_RefineriaBasica_night_11
+  - first:
+      213: -5325787664554455693
+    second: RF01_RefineriaBasica_night_12
+  - first:
+      213: -6654656179621030098
+    second: RF01_RefineriaBasica_night_13
+  - first:
+      213: 4181037089721901220
+    second: RF01_RefineriaBasica_night_14
+  - first:
+      213: -5806770976420033652
+    second: RF01_RefineriaBasica_night_15
+  - first:
+      213: 3138362241345710141
+    second: RF01_RefineriaBasica_night_16
+  - first:
+      213: 4930081330053845314
+    second: RF01_RefineriaBasica_night_17
+  - first:
+      213: 1393776189944496540
+    second: RF01_RefineriaBasica_night_18
+  - first:
+      213: 8425332113171346861
+    second: RF01_RefineriaBasica_night_19
+  - first:
+      213: -3994377578956549937
+    second: RF01_RefineriaBasica_night_20
+  - first:
+      213: 2365382757876432307
+    second: RF01_RefineriaBasica_night_21
+  - first:
+      213: 1495185630865647783
+    second: RF01_RefineriaBasica_night_22
+  - first:
+      213: 1101060240706620500
+    second: RF01_RefineriaBasica_night_23
+  - first:
+      213: 2000401338126654622
+    second: RF01_RefineriaBasica_night_24
+  - first:
+      213: 5812343354114409497
+    second: RF01_RefineriaBasica_night_25
+  - first:
+      213: -2109943646621145260
+    second: RF01_RefineriaBasica_night_26
+  - first:
+      213: 7662523438345279702
+    second: RF01_RefineriaBasica_night_27
+  - first:
+      213: -6377219181851207823
+    second: RF01_RefineriaBasica_night_28
+  - first:
+      213: 1956471758739127195
+    second: RF01_RefineriaBasica_night_29
+  - first:
+      213: -233568454335582878
+    second: RF01_RefineriaBasica_night_30
+  - first:
+      213: 596901631014735888
+    second: RF01_RefineriaBasica_night_31
+  - first:
+      213: -7443111143705734522
+    second: RF01_RefineriaBasica_night_32
+  - first:
+      213: 1006158167408118924
+    second: RF01_RefineriaBasica_night_33
+  - first:
+      213: 6504509438898410465
+    second: RF01_RefineriaBasica_night_34
+  - first:
+      213: -990548111078009361
+    second: RF01_RefineriaBasica_night_35
+  - first:
+      213: 3927759026281618378
+    second: RF01_RefineriaBasica_night_36
+  - first:
+      213: -264563285379921874
+    second: RF01_RefineriaBasica_night_37
+  - first:
+      213: -6716225099975935218
+    second: RF01_RefineriaBasica_night_38
+  - first:
+      213: -8163378108723695649
+    second: RF01_RefineriaBasica_night_39
+  - first:
+      213: 5884257325443600972
+    second: RF01_RefineriaBasica_night_40
+  - first:
+      213: -8793659421207672437
+    second: RF01_RefineriaBasica_night_41
+  - first:
+      213: -3451136548522954049
+    second: RF01_RefineriaBasica_night_42
+  - first:
+      213: -7818233084540507078
+    second: RF01_RefineriaBasica_night_43
+  - first:
+      213: 2462233067622966832
+    second: RF01_RefineriaBasica_night_44
+  - first:
+      213: 139156267425416121
+    second: RF01_RefineriaBasica_night_45
+  - first:
+      213: 3571247348352449382
+    second: RF01_RefineriaBasica_night_46
+  - first:
+      213: -703582912280913582
+    second: RF01_RefineriaBasica_night_47
+  - first:
+      213: -3143185827826486625
+    second: RF01_RefineriaBasica_night_48
+  - first:
+      213: 6700557727143997436
+    second: RF01_RefineriaBasica_night_49
+  - first:
+      213: 739511262147885435
+    second: RF01_RefineriaBasica_night_50
+  - first:
+      213: 448490673039949937
+    second: RF01_RefineriaBasica_night_51
+  - first:
+      213: 709744146979018710
+    second: RF01_RefineriaBasica_night_52
+  - first:
+      213: -8685281900559252672
+    second: RF01_RefineriaBasica_night_53
+  - first:
+      213: 6232498202319623759
+    second: RF01_RefineriaBasica_night_54
+  - first:
+      213: 4835496610237580748
+    second: RF01_RefineriaBasica_night_55
+  - first:
+      213: 1451948351645942954
+    second: RF01_RefineriaBasica_night_56
+  - first:
+      213: 633272483484203566
+    second: RF01_RefineriaBasica_night_57
+  - first:
+      213: -1377795273756351598
+    second: RF01_RefineriaBasica_night_58
+  - first:
+      213: -5206450598789000781
+    second: RF01_RefineriaBasica_night_59
+  - first:
+      213: 8897987369232679319
+    second: RF01_RefineriaBasica_night_60
+  - first:
+      213: 268438762604178833
+    second: RF01_RefineriaBasica_night_61
+  - first:
+      213: 4924969415515012599
+    second: RF01_RefineriaBasica_night_62
+  - first:
+      213: -2680191037527233961
+    second: RF01_RefineriaBasica_night_63
+  - first:
+      213: 3034951549247263338
+    second: RF01_RefineriaBasica_night_64
+  - first:
+      213: 8539644837464303857
+    second: RF01_RefineriaBasica_night_65
+  - first:
+      213: 4635202869999859466
+    second: RF01_RefineriaBasica_night_66
+  - first:
+      213: -5628825156653284767
+    second: RF01_RefineriaBasica_night_67
+  - first:
+      213: 7292064330410447824
+    second: RF01_RefineriaBasica_night_68
+  - first:
+      213: -973837432234815312
+    second: RF01_RefineriaBasica_night_69
+  - first:
+      213: 6853660681990860573
+    second: RF01_RefineriaBasica_night_70
+  - first:
+      213: 4751085385469700463
+    second: RF01_RefineriaBasica_night_71
+  - first:
+      213: 4206399351905002445
+    second: RF01_RefineriaBasica_night_72
+  - first:
+      213: 8609959963084421684
+    second: RF01_RefineriaBasica_night_73
+  - first:
+      213: -3105725599975014135
+    second: RF01_RefineriaBasica_night_74
+  - first:
+      213: -550210777205967269
+    second: RF01_RefineriaBasica_night_75
+  - first:
+      213: -1257298179646342050
+    second: RF01_RefineriaBasica_night_76
+  - first:
+      213: 2526765287304782269
+    second: RF01_RefineriaBasica_night_77
+  - first:
+      213: -2151221434413932136
+    second: RF01_RefineriaBasica_night_78
+  - first:
+      213: -3460436572943146649
+    second: RF01_RefineriaBasica_night_79
+  - first:
+      213: -9011016971824865348
+    second: RF01_RefineriaBasica_night_80
+  - first:
+      213: 504476284487721635
+    second: RF01_RefineriaBasica_night_81
+  - first:
+      213: 3853577307499146252
+    second: RF01_RefineriaBasica_night_82
+  - first:
+      213: -8614378877955620530
+    second: RF01_RefineriaBasica_night_83
+  - first:
+      213: 4881504779516866099
+    second: RF01_RefineriaBasica_night_84
+  - first:
+      213: 5657397425749833863
+    second: RF01_RefineriaBasica_night_85
+  - first:
+      213: 2565682297169786973
+    second: RF01_RefineriaBasica_night_86
+  - first:
+      213: 2223774454823894176
+    second: RF01_RefineriaBasica_night_87
+  - first:
+      213: -2200423618673025185
+    second: RF01_RefineriaBasica_night_88
+  - first:
+      213: -1957047869119409615
+    second: RF01_RefineriaBasica_night_89
+  - first:
+      213: -2776343561355370128
+    second: RF01_RefineriaBasica_night_90
+  - first:
+      213: -7361964620825954911
+    second: RF01_RefineriaBasica_night_91
+  - first:
+      213: -2778685254767137777
+    second: RF01_RefineriaBasica_night_92
+  - first:
+      213: -7380789065371178303
+    second: RF01_RefineriaBasica_night_93
+  - first:
+      213: -3624287297192467047
+    second: RF01_RefineriaBasica_night_94
+  - first:
+      213: -411501035439693810
+    second: RF01_RefineriaBasica_night_95
+  - first:
+      213: -3327299602326450971
+    second: RF01_RefineriaBasica_night_96
+  - first:
+      213: -8810377591277157162
+    second: RF01_RefineriaBasica_night_97
+  - first:
+      213: 2054102499113793227
+    second: RF01_RefineriaBasica_night_98
+  - first:
+      213: 8367356211946939938
+    second: RF01_RefineriaBasica_night_99
+  - first:
+      213: 1839873023057169399
+    second: RF01_RefineriaBasica_night_100
+  - first:
+      213: -2659073869810549414
+    second: RF01_RefineriaBasica_night_101
+  - first:
+      213: -7643813764209402988
+    second: RF01_RefineriaBasica_night_102
+  - first:
+      213: -117957496037528344
+    second: RF01_RefineriaBasica_night_103
+  - first:
+      213: -3810396949918259414
+    second: RF01_RefineriaBasica_night_104
+  - first:
+      213: -8138945923827256843
+    second: RF01_RefineriaBasica_night_105
+  - first:
+      213: 3630226851814574672
+    second: RF01_RefineriaBasica_night_106
+  - first:
+      213: -8807301147437540288
+    second: RF01_RefineriaBasica_night_107
+  - first:
+      213: 6889971144739907820
+    second: RF01_RefineriaBasica_night_108
+  - first:
+      213: -5748644922681552388
+    second: RF01_RefineriaBasica_night_109
+  - first:
+      213: -1510774505651186612
+    second: RF01_RefineriaBasica_night_110
+  - first:
+      213: -6725771359182383275
+    second: RF01_RefineriaBasica_night_111
+  - first:
+      213: 9130742644770060669
+    second: RF01_RefineriaBasica_night_112
+  - first:
+      213: 5386435775919424713
+    second: RF01_RefineriaBasica_night_113
+  - first:
+      213: -5413315090412211604
+    second: RF01_RefineriaBasica_night_114
+  - first:
+      213: 614232767817883685
+    second: RF01_RefineriaBasica_night_115
+  - first:
+      213: -6114481011972990696
+    second: RF01_RefineriaBasica_night_116
+  - first:
+      213: 5424300486166420910
+    second: RF01_RefineriaBasica_night_117
+  - first:
+      213: -6105343573893574829
+    second: RF01_RefineriaBasica_night_118
+  - first:
+      213: 6616809868683115621
+    second: RF01_RefineriaBasica_night_119
+  - first:
+      213: -1663241877692582495
+    second: RF01_RefineriaBasica_night_120
+  - first:
+      213: -3405494457949055252
+    second: RF01_RefineriaBasica_night_121
+  - first:
+      213: -4381431231855869060
+    second: RF01_RefineriaBasica_night_122
+  - first:
+      213: 6628332470603910267
+    second: RF01_RefineriaBasica_night_123
+  - first:
+      213: 5442093165819995357
+    second: RF01_RefineriaBasica_night_124
+  - first:
+      213: -2904350464196003670
+    second: RF01_RefineriaBasica_night_125
+  - first:
+      213: -8866075440256436246
+    second: RF01_RefineriaBasica_night_126
+  - first:
+      213: -7577366288920376354
+    second: RF01_RefineriaBasica_night_127
+  - first:
+      213: 6562476868330625556
+    second: RF01_RefineriaBasica_night_128
+  - first:
+      213: 284848801500519056
+    second: RF01_RefineriaBasica_night_129
+  - first:
+      213: -7613557294515461177
+    second: RF01_RefineriaBasica_night_130
+  - first:
+      213: 7662402951226113875
+    second: RF01_RefineriaBasica_night_131
+  - first:
+      213: 1636888907084692748
+    second: RF01_RefineriaBasica_night_132
+  - first:
+      213: 7513674344831288931
+    second: RF01_RefineriaBasica_night_133
+  - first:
+      213: -1740943903051317657
+    second: RF01_RefineriaBasica_night_134
+  - first:
+      213: 5198509693085108104
+    second: RF01_RefineriaBasica_night_135
+  - first:
+      213: 496093172157036977
+    second: RF01_RefineriaBasica_night_136
+  - first:
+      213: -2387155332441453509
+    second: RF01_RefineriaBasica_night_137
+  - first:
+      213: 4995800026513086309
+    second: RF01_RefineriaBasica_night_138
+  - first:
+      213: -2270297245848446673
+    second: RF01_RefineriaBasica_night_139
+  - first:
+      213: 413657351317215511
+    second: RF01_RefineriaBasica_night_140
+  - first:
+      213: -5373121002103481531
+    second: RF01_RefineriaBasica_night_141
+  - first:
+      213: -7187847720629977443
+    second: RF01_RefineriaBasica_night_142
+  - first:
+      213: 8624233853373518504
+    second: RF01_RefineriaBasica_night_143
+  - first:
+      213: 1150493732531000338
+    second: RF01_RefineriaBasica_night_144
+  - first:
+      213: 1848711940975079114
+    second: RF01_RefineriaBasica_night_145
+  - first:
+      213: 1089981645038850895
+    second: RF01_RefineriaBasica_night_146
+  - first:
+      213: 3218640563896736123
+    second: RF01_RefineriaBasica_night_147
+  - first:
+      213: 1549948970174894427
+    second: RF01_RefineriaBasica_night_148
+  - first:
+      213: -8416821597370920020
+    second: RF01_RefineriaBasica_night_149
+  - first:
+      213: -127341774119397512
+    second: RF01_RefineriaBasica_night_150
+  - first:
+      213: 9097567234763212520
+    second: RF01_RefineriaBasica_night_151
+  - first:
+      213: 7010206859925323457
+    second: RF01_RefineriaBasica_night_152
+  - first:
+      213: -3199404941854688790
+    second: RF01_RefineriaBasica_night_153
+  - first:
+      213: 3481372122966222358
+    second: RF01_RefineriaBasica_night_154
+  - first:
+      213: 6405387968807714030
+    second: RF01_RefineriaBasica_night_155
+  - first:
+      213: -8112124678966668384
+    second: RF01_RefineriaBasica_night_156
+  - first:
+      213: -4914521678744183460
+    second: RF01_RefineriaBasica_night_157
+  - first:
+      213: 1257789102771242104
+    second: RF01_RefineriaBasica_night_158
+  - first:
+      213: -5060983113557206321
+    second: RF01_RefineriaBasica_night_159
+  - first:
+      213: 3376159517867418093
+    second: RF01_RefineriaBasica_night_160
+  - first:
+      213: -9167792776677638138
+    second: RF01_RefineriaBasica_night_161
+  - first:
+      213: 1438355030806221441
+    second: RF01_RefineriaBasica_night_162
+  - first:
+      213: 6019666379711826675
+    second: RF01_RefineriaBasica_night_163
+  - first:
+      213: 3999461222715041139
+    second: RF01_RefineriaBasica_night_164
+  - first:
+      213: -8751105283707594764
+    second: RF01_RefineriaBasica_night_165
+  - first:
+      213: 2631046839420657654
+    second: RF01_RefineriaBasica_night_166
+  - first:
+      213: 7765540649137832048
+    second: RF01_RefineriaBasica_night_167
+  - first:
+      213: 930061588741927655
+    second: RF01_RefineriaBasica_night_168
+  - first:
+      213: -6272931562856044904
+    second: RF01_RefineriaBasica_night_169
+  - first:
+      213: 5989424920617453068
+    second: RF01_RefineriaBasica_night_170
+  - first:
+      213: -3781474434261368095
+    second: RF01_RefineriaBasica_night_171
+  - first:
+      213: 1820314964285530061
+    second: RF01_RefineriaBasica_night_172
+  - first:
+      213: -621973921398217368
+    second: RF01_RefineriaBasica_night_173
+  - first:
+      213: 1233005415343764348
+    second: RF01_RefineriaBasica_night_174
+  - first:
+      213: 560192414843937030
+    second: RF01_RefineriaBasica_night_175
+  - first:
+      213: 6275465863584390441
+    second: RF01_RefineriaBasica_night_176
+  - first:
+      213: -3185112800899519906
+    second: RF01_RefineriaBasica_night_177
+  - first:
+      213: 446327719119105430
+    second: RF01_RefineriaBasica_night_178
+  - first:
+      213: 3467579285900442189
+    second: RF01_RefineriaBasica_night_179
+  - first:
+      213: 7294137104776061865
+    second: RF01_RefineriaBasica_night_180
+  - first:
+      213: -2225989639648709025
+    second: RF01_RefineriaBasica_night_181
+  - first:
+      213: -8275760547912804737
+    second: RF01_RefineriaBasica_night_182
+  - first:
+      213: -8448405605245561161
+    second: RF01_RefineriaBasica_night_183
+  - first:
+      213: -3228698794987781613
+    second: RF01_RefineriaBasica_night_184
+  - first:
+      213: 8413230724480832094
+    second: RF01_RefineriaBasica_night_185
+  - first:
+      213: 1121599296730721746
+    second: RF01_RefineriaBasica_night_186
+  - first:
+      213: -1622046976152970675
+    second: RF01_RefineriaBasica_night_187
+  - first:
+      213: 8485318517706609490
+    second: RF01_RefineriaBasica_night_188
+  - first:
+      213: 4947889371055548791
+    second: RF01_RefineriaBasica_night_189
+  - first:
+      213: 2084966587714097008
+    second: RF01_RefineriaBasica_night_190
+  - first:
+      213: -8261210279981701273
+    second: RF01_RefineriaBasica_night_191
+  - first:
+      213: 1416166793016674026
+    second: RF01_RefineriaBasica_night_192
+  - first:
+      213: 6654334119780430221
+    second: RF01_RefineriaBasica_night_193
+  - first:
+      213: -2631921296106416527
+    second: RF01_RefineriaBasica_night_194
+  - first:
+      213: 8101262259142454615
+    second: RF01_RefineriaBasica_night_195
+  - first:
+      213: -59995393520525571
+    second: RF01_RefineriaBasica_night_196
+  - first:
+      213: 2269473778910120633
+    second: RF01_RefineriaBasica_night_197
+  - first:
+      213: 1321729093191677317
+    second: RF01_RefineriaBasica_night_198
+  - first:
+      213: 9134509537346446816
+    second: RF01_RefineriaBasica_night_199
+  - first:
+      213: 9015596268399687441
+    second: RF01_RefineriaBasica_night_200
+  - first:
+      213: -4251041815506902080
+    second: RF01_RefineriaBasica_night_201
+  - first:
+      213: -8657031660269776905
+    second: RF01_RefineriaBasica_night_202
+  - first:
+      213: -4167848363721499709
+    second: RF01_RefineriaBasica_night_203
+  - first:
+      213: -5705517828885887043
+    second: RF01_RefineriaBasica_night_204
+  - first:
+      213: 8456509366499318414
+    second: RF01_RefineriaBasica_night_205
+  - first:
+      213: 4189012228075350767
+    second: RF01_RefineriaBasica_night_206
+  - first:
+      213: -5863165478760692544
+    second: RF01_RefineriaBasica_night_207
+  - first:
+      213: 9154536021324449358
+    second: RF01_RefineriaBasica_night_208
+  - first:
+      213: -7106722231084921871
+    second: RF01_RefineriaBasica_night_209
+  - first:
+      213: -5298562194611926822
+    second: RF01_RefineriaBasica_night_210
+  - first:
+      213: 6263828495551076566
+    second: RF01_RefineriaBasica_night_211
+  - first:
+      213: 419655821271573097
+    second: RF01_RefineriaBasica_night_212
+  - first:
+      213: 19025545892171653
+    second: RF01_RefineriaBasica_night_213
+  - first:
+      213: 1377895774734227960
+    second: RF01_RefineriaBasica_night_214
+  - first:
+      213: -5768029911308091453
+    second: RF01_RefineriaBasica_night_215
+  - first:
+      213: -6270678430002739165
+    second: RF01_RefineriaBasica_night_216
+  - first:
+      213: 7896624735344472577
+    second: RF01_RefineriaBasica_night_217
+  - first:
+      213: 7019945909813830829
+    second: RF01_RefineriaBasica_night_218
+  - first:
+      213: 4404119307528793653
+    second: RF01_RefineriaBasica_night_219
+  - first:
+      213: -3941745520332601396
+    second: RF01_RefineriaBasica_night_220
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 138
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcacead598048d870800000000000000
+      internalID: 8707780838247287501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 292
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18149d014a37e2390800000000000000
+      internalID: -7841202752710950527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 244
+        width: 141
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e1db2416f1565f70800000000000000
+      internalID: 9175611408156185065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 346
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927b01f203919c660800000000000000
+      internalID: 7406478756926240553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_4
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 319
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac36797d1be7acde0800000000000000
+      internalID: -1312097039133744182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_5
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 287
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f61d28b4a039020800000000000000
+      internalID: 2347231150223748904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_6
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 301
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060e1596554d9b7c0800000000000000
+      internalID: -4054976526166138784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_7
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 271
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b511c9e16018787e0800000000000000
+      internalID: -1763298865808928421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_8
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 289
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863d9c9d6f104bd50800000000000000
+      internalID: 6752023901062681448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_9
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 389
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2873ec1a273c06d30800000000000000
+      internalID: 4422749731186161538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_10
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 323
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78316aa0b4233070800000000000000
+      internalID: 8084846097251514490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_11
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 283
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9422fffd9bcdb5b70800000000000000
+      internalID: 8888940980430905929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_12
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 295
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d031916500716b0800000000000000
+      internalID: -5325787664554455693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_13
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 369
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2794576679e5a3a0800000000000000
+      internalID: -6654656179621030098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_14
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 324
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a06b9db417060a30800000000000000
+      internalID: 4181037089721901220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_15
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 311
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b8f6200943a6fa0800000000000000
+      internalID: -5806770976420033652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_16
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 292
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38e8eba4d3bd8b20800000000000000
+      internalID: 3138362241345710141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_17
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 339
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24115a759da2b6440800000000000000
+      internalID: 4930081330053845314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_18
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 299
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c910a0a6f00b75310800000000000000
+      internalID: 1393776189944496540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_19
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 363
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da5f448eaeacce470800000000000000
+      internalID: 8425332113171346861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_20
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 255
+        width: 203
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0928b41ce1198c0800000000000000
+      internalID: -3994377578956549937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_21
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 285
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bdfe01061783d020800000000000000
+      internalID: 2365382757876432307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_22
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 372
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8e301d867ffb410800000000000000
+      internalID: 1495185630865647783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_23
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 293
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ccf9b8470c74f00800000000000000
+      internalID: 1101060240706620500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_24
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 313
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c514f1b6ad2cb10800000000000000
+      internalID: 2000401338126654622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_25
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 293
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91487964c7799a050800000000000000
+      internalID: 5812343354114409497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_26
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 361
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457ed0fae69f7b2e0800000000000000
+      internalID: -2109943646621145260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_27
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 289
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8dca92870c65a60800000000000000
+      internalID: 7662523438345279702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_28
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 290
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17793fa21f09f77a0800000000000000
+      internalID: -6377219181851207823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_29
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 302
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9bbab0e2b8c62b10800000000000000
+      internalID: 1956471758739127195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_30
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 283
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d27907ab232ccf0800000000000000
+      internalID: -233568454335582878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_31
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 301
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0101c72fede984800800000000000000
+      internalID: 596901631014735888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_32
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 308
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6821baf99d1c4b890800000000000000
+      internalID: -7443111143705734522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_33
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 335
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c083cb58796fd00800000000000000
+      internalID: 1006158167408118924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_34
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 316
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e317bf4fd8a44a50800000000000000
+      internalID: 6504509438898410465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_35
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 289
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5d24abdbdd042f0800000000000000
+      internalID: -990548111078009361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_36
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 393
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acb99d43604328630800000000000000
+      internalID: 3927759026281618378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_37
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 291
+        width: 80
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28c15af715145cf0800000000000000
+      internalID: -264563285379921874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_38
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 304
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b3f5c0bdc2bc2a0800000000000000
+      internalID: -6716225099975935218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_39
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 277
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdfe25e8cdad5be80800000000000000
+      internalID: -8163378108723695649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_40
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 191
+        width: 22
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c425e028cd419a150800000000000000
+      internalID: 5884257325443600972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_41
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 301
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b894623e855a6f580800000000000000
+      internalID: -8793659421207672437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_42
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 281
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2fbe118991b10d0800000000000000
+      internalID: -3451136548522954049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_43
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 282
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ca1c0be6e008390800000000000000
+      internalID: -7818233084540507078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_44
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 279
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03623e5fdeb9b2220800000000000000
+      internalID: 2462233067622966832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_45
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 275
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3492053e16ee100800000000000000
+      internalID: 139156267425416121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_46
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 278
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b7a93ca8e9f8130800000000000000
+      internalID: 3571247348352449382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_47
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 281
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259167ba11f5c36f0800000000000000
+      internalID: -703582912280913582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_48
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 280
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f923c5594292164d0800000000000000
+      internalID: -3143185827826486625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_49
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 276
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffaa6370c92dfc50800000000000000
+      internalID: 6700557727143997436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_50
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 278
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79b9b72395434a00800000000000000
+      internalID: 739511262147885435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_51
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 281
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1704f9314eb593600800000000000000
+      internalID: 448490673039949937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_52
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7d8129a8489d900800000000000000
+      internalID: 709744146979018710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_53
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 199
+        width: 31
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0434907c02ea77780800000000000000
+      internalID: -8685281900559252672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_54
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 216
+        width: 32
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46958408184e7650800000000000000
+      internalID: 6232498202319623759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_55
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 278
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc501d52c822b1340800000000000000
+      internalID: 4835496610237580748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_56
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 273
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa40214455b562410800000000000000
+      internalID: 1451948351645942954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_57
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 270
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2afa10f7f5d9c800800000000000000
+      internalID: 633272483484203566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_58
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 268
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2936a869f7611ece0800000000000000
+      internalID: -1377795273756351598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_59
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 267
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b1df8ee3c8feb7b0800000000000000
+      internalID: -5206450598789000781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_60
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 272
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791c6076e500c7b70800000000000000
+      internalID: 8897987369232679319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_61
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 263
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19da7f0e1afa9b300800000000000000
+      internalID: 268438762604178833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_62
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 273
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fd7f6df691095440800000000000000
+      internalID: 4924969415515012599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_63
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 270
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ae00e937c0ecad0800000000000000
+      internalID: -2680191037527233961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_64
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 274
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a62976baa505e1a20800000000000000
+      internalID: 3034951549247263338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_65
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 264
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f8ee051cb9e28670800000000000000
+      internalID: 8539644837464303857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_66
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 256
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a077630b37c835040800000000000000
+      internalID: 4635202869999859466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_67
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 263
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16206e2c75562e1b0800000000000000
+      internalID: -5628825156653284767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_68
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 258
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3596d9fdd923560800000000000000
+      internalID: 7292064330410447824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_69
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 263
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b05aa6d30c3c72f0800000000000000
+      internalID: -973837432234815312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_70
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 260
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f6029f3181d1f50800000000000000
+      internalID: 6853660681990860573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_71
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 266
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69a87a5cfe3fe140800000000000000
+      internalID: 4751085385469700463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_72
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 256
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc32bb19ce1206a30800000000000000
+      internalID: 4206399351905002445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_73
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 247
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a7bf908f8bc7770800000000000000
+      internalID: 8609959963084421684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_74
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 250
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90107ab850f36e4d0800000000000000
+      internalID: -3105725599975014135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_75
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 249
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56fb0996324d58f0800000000000000
+      internalID: -550210777205967269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_76
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 255
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c3f6197fd2d8ee0800000000000000
+      internalID: -1257298179646342050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_77
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 288
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db1e69434afd01320800000000000000
+      internalID: 2526765287304782269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_78
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 250
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8912d88c0835522e0800000000000000
+      internalID: -2151221434413932136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_79
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 225
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76124f5654f0affc0800000000000000
+      internalID: -3460436572943146649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_80
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 252
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfdc597ecf62f280800000000000000
+      internalID: -9011016971824865348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_81
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 253
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2ef760282400700800000000000000
+      internalID: 504476284487721635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_82
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 241
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c2effd428aa7530800000000000000
+      internalID: 3853577307499146252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_83
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 233
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41c3da2d04937880800000000000000
+      internalID: -8614378877955620530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_84
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 247
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e6970dbb69eb340800000000000000
+      internalID: 4881504779516866099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_85
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 225
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788370b0cfc138e40800000000000000
+      internalID: 5657397425749833863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_86
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 243
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d583059a4722b9320800000000000000
+      internalID: 2565682297169786973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_87
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 208
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0acbd58a51f6cde10800000000000000
+      internalID: 2223774454823894176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_88
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 217
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f5d9d80668671e0800000000000000
+      internalID: -2200423618673025185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_89
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 229
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132d3b8f45b27d4e0800000000000000
+      internalID: -1957047869119409615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_90
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 214
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07168fa9d327879d0800000000000000
+      internalID: -2776343561355370128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_91
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 227
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5fca6ce2c05d990800000000000000
+      internalID: -7361964620825954911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_92
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 213
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c2dfe9b702079d0800000000000000
+      internalID: -2778685254767137777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_93
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 210
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1caa67c337b229990800000000000000
+      internalID: -7380789065371178303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_94
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 214
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995e1eec7e1f3bdc0800000000000000
+      internalID: -3624287297192467047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_95
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 217
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0069ed0dfd0a4af0800000000000000
+      internalID: -411501035439693810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_96
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 196
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec8806f3ae03d1d0800000000000000
+      internalID: -3327299602326450971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_97
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 216
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d40dd692404bb580800000000000000
+      internalID: -8810377591277157162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_98
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 226
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc67beff653a18c10800000000000000
+      internalID: 2054102499113793227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_99
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 206
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22661428422de1470800000000000000
+      internalID: 8367356211946939938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_100
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 227
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb852334ca888910800000000000000
+      internalID: 1839873023057169399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_101
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 203
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d3b6e5762191bd0800000000000000
+      internalID: -2659073869810549414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_102
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 188
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b9e0f41e7bbe590800000000000000
+      internalID: -7643813764209402988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_103
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 198
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eca616484eec5ef0800000000000000
+      internalID: -117957496037528344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_104
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 197
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27e3e29920ce1bc0800000000000000
+      internalID: -3810396949918259414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_105
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 180
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f1b924edc7ac0f80800000000000000
+      internalID: -8138945923827256843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_106
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 203
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a0e748618216230800000000000000
+      internalID: 3630226851814574672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_107
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 193
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c581df44e26c580800000000000000
+      internalID: -8807301147437540288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_108
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 189
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8e9e260481e9f50800000000000000
+      internalID: 6889971144739907820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_109
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 179
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf196b386e5b830b0800000000000000
+      internalID: -5748644922681552388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_110
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 173
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44d1fe6796a80be0800000000000000
+      internalID: -1510774505651186612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_111
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 175
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557107f559249a2a0800000000000000
+      internalID: -6725771359182383275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_112
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 181
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d79b7050f0ae6be70800000000000000
+      internalID: 9130742644770060669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_113
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 176
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c40225bcc670ca40800000000000000
+      internalID: 5386435775919424713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_114
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 177
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c62f7b23b9a00e4b0800000000000000
+      internalID: -5413315090412211604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_115
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 42
+        width: 37
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520a03fa271368800800000000000000
+      internalID: 614232767817883685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_116
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 157
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8199a7f5aeff42ba0800000000000000
+      internalID: -6114481011972990696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_117
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 159
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead9de09d8cf64b40800000000000000
+      internalID: 5424300486166420910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_118
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 145
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f0c56fd56754ba0800000000000000
+      internalID: -6105343573893574829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_119
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 153
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56cf729a481a3db50800000000000000
+      internalID: 6616809868683115621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_120
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 157
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a57490135afae8e0800000000000000
+      internalID: -1663241877692582495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_121
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 149
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce6926565d04db0d0800000000000000
+      internalID: -3405494457949055252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_122
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 157
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73cd6922870233c0800000000000000
+      internalID: -4381431231855869060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_123
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 144
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c888b73419cfb50800000000000000
+      internalID: 6628332470603910267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_124
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 151
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4284f96e2368b40800000000000000
+      internalID: 5442093165819995357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_125
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 133
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa83b5604aca1b7d0800000000000000
+      internalID: -2904350464196003670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_126
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 131
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae733bf8c5f55f480800000000000000
+      internalID: -8866075440256436246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_127
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 133
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb81efb189c7d690800000000000000
+      internalID: -7577366288920376354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_128
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 139
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a909731f9921b50800000000000000
+      internalID: 6562476868330625556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_129
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 122
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a522cc97cf3f300800000000000000
+      internalID: 284848801500519056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_130
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 131
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3625f9af5375690800000000000000
+      internalID: -7613557294515461177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_131
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 139
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35fbcb113e2565a60800000000000000
+      internalID: 7662402951226113875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_132
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 134
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d7f83d9c567b610800000000000000
+      internalID: 1636888907084692748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_133
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 0
+        width: 58
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36682a9e10fe54860800000000000000
+      internalID: 7513674344831288931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_134
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 136
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e7ebc7ebce6d7e0800000000000000
+      internalID: -1740943903051317657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_135
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 128
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88743c1e501d42840800000000000000
+      internalID: 5198509693085108104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_136
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 128
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9bae59c1a72e600800000000000000
+      internalID: 496093172157036977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_137
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 130
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3cc5227fde1fded0800000000000000
+      internalID: -2387155332441453509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_138
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 127
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567133db7a5a45540800000000000000
+      internalID: 4995800026513086309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_139
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 126
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29d7a6fea84e70e0800000000000000
+      internalID: -2270297245848446673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_140
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 117
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719ddfb5b2b9db500800000000000000
+      internalID: 413657351317215511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_141
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 121
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b5e66aae6de65b0800000000000000
+      internalID: -5373121002103481531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_142
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 121
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ebf38b492af3c90800000000000000
+      internalID: -7187847720629977443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_143
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 113
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a21a3a1ffe6fa770800000000000000
+      internalID: 8624233853373518504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_144
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 118
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214d2d344ff57ff00800000000000000
+      internalID: 1150493732531000338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_145
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 113
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acea7d527b1f7a910800000000000000
+      internalID: 1848711940975079114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_146
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 107
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f439c3cf784602f00800000000000000
+      internalID: 1089981645038850895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_147
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 107
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b795abe2a88eaac20800000000000000
+      internalID: 3218640563896736123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_148
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 111
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51d14b5066828510800000000000000
+      internalID: 1549948970174894427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_149
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 111
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3ded6f951713b80800000000000000
+      internalID: -8416821597370920020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_150
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 107
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8779b84c4579b3ef0800000000000000
+      internalID: -127341774119397512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_151
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 107
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e64b44f23d014e70800000000000000
+      internalID: 9097567234763212520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_152
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 109
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cefad75ff1494160800000000000000
+      internalID: 7010206859925323457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_153
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 104
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae93f14182e6993d0800000000000000
+      internalID: -3199404941854688790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_154
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 104
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61669503081505030800000000000000
+      internalID: 3481372122966222358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_155
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 96
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec3851ab6284e850800000000000000
+      internalID: 6405387968807714030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_156
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 96
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a313889591fb6f80800000000000000
+      internalID: -8112124678966668384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_157
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 91
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d1f79429c1ccbb0800000000000000
+      internalID: -4914521678744183460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_158
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 92
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87489016680947110800000000000000
+      internalID: 1257789102771242104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_159
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 99
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca1c262ca6c3c9b0800000000000000
+      internalID: -5060983113557206321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_160
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 99
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1aa8f91378ade20800000000000000
+      internalID: 3376159517867418093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_161
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 97
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600ccbbea0575c080800000000000000
+      internalID: -9167792776677638138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_162
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 94
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182d910a74016f310800000000000000
+      internalID: 1438355030806221441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_163
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 91
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fac515cda62a8350800000000000000
+      internalID: 6019666379711826675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_164
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 92
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37521e0cac0f08730800000000000000
+      internalID: 3999461222715041139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_165
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 97
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7909c1c14dd8680800000000000000
+      internalID: -8751105283707594764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_166
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 95
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff151b192b538420800000000000000
+      internalID: 2631046839420657654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_167
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 85
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07087b8a31eb4cb60800000000000000
+      internalID: 7765540649137832048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_168
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 85
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e2b238561e38ec00800000000000000
+      internalID: 930061588741927655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_169
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 81
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89621af9af112f8a0800000000000000
+      internalID: -6272931562856044904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_170
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 84
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0686426b36be1350800000000000000
+      internalID: 5989424920617453068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_171
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 86
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e241a28901858bc0800000000000000
+      internalID: -3781474434261368095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_172
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 87
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf1199c0de034910800000000000000
+      internalID: 1820314964285530061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_173
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 83
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865a08b830e4e57f0800000000000000
+      internalID: -621973921398217368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_174
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 81
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73b2bb74e38c1110800000000000000
+      internalID: 1233005415343764348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_175
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 82
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60124a4880436c700800000000000000
+      internalID: 560192414843937030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_176
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 80
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d990f34fee61750800000000000000
+      internalID: 6275465863584390441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_177
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 75
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5aa5d478c43cc3d0800000000000000
+      internalID: -3185112800899519906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_178
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 79
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d218f12bca13600800000000000000
+      internalID: 446327719119105430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_179
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 70
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a399e0df05f1030800000000000000
+      internalID: 3467579285900442189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_180
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 75
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a36c210d0bf93560800000000000000
+      internalID: 7294137104776061865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_181
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 73
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56f90f6732bb11e0800000000000000
+      internalID: -2225989639648709025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_182
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 70
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f761777e0a7962d80800000000000000
+      internalID: -8275760547912804737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_183
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 75
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b65be41ddb31ca80800000000000000
+      internalID: -8448405605245561161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_184
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 73
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31285066d8b5133d0800000000000000
+      internalID: -3228698794987781613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_185
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 69
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52151ac4ccc1c470800000000000000
+      internalID: 8413230724480832094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_186
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 65
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd66fd2e98b09f00800000000000000
+      internalID: 1121599296730721746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_187
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 72
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ad7618ed45d79e0800000000000000
+      internalID: -1622046976152970675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_188
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 68
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25352f51c38e1c570800000000000000
+      internalID: 8485318517706609490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_189
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 65
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77962bdfa2f6aa440800000000000000
+      internalID: 4947889371055548791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_190
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 69
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07fc14d901a4fec10800000000000000
+      internalID: 2084966587714097008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_191
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 54
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767a2e625094a5d80800000000000000
+      internalID: -8261210279981701273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_192
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 59
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae68670f13c37a310800000000000000
+      internalID: 1416166793016674026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_193
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 58
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81364230a1f85c50800000000000000
+      internalID: 6654334119780430221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_194
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 56
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1769ac49689897bd0800000000000000
+      internalID: -2631921296106416527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_195
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 56
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75de6743a177d6070800000000000000
+      internalID: 8101262259142454615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_196
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 62
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe9c09e18ada2ff0800000000000000
+      internalID: -59995393520525571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_197
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 58
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba4003b06ace7f10800000000000000
+      internalID: 2269473778910120633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_198
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 45
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5853df08b99b75210800000000000000
+      internalID: 1321729093191677317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_199
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 52
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e5e3fa070c44ce70800000000000000
+      internalID: 9134509537346446816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_200
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 50
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117fc481a05dd1d70800000000000000
+      internalID: 9015596268399687441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_201
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 47
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c32165edf34105c0800000000000000
+      internalID: -4251041815506902080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_202
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 47
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff4f48629b0cd780800000000000000
+      internalID: -8657031660269776905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_203
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 51
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cbdfa2def3d826c0800000000000000
+      internalID: -4167848363721499709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_204
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 48
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7499583cde1d0b0800000000000000
+      internalID: -5705517828885887043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_205
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a94fdd67e8b5570800000000000000
+      internalID: 8456509366499318414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_206
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 37
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feae2365d6c522a30800000000000000
+      internalID: 4189012228075350767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_207
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 43
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4c22bbf0ad1aea0800000000000000
+      internalID: -5863165478760692544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_208
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 45
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46cf8232027b0f70800000000000000
+      internalID: 9154536021324449358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_209
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 40
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fbcfcaa8c9df5d90800000000000000
+      internalID: -7106722231084921871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_210
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 39
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad887d9c1c9b776b0800000000000000
+      internalID: -5298562194611926822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_211
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d89a4b54d69de650800000000000000
+      internalID: 6263828495551076566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_212
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96221dafebae2d500800000000000000
+      internalID: 419655821271573097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_213
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 35
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f8f8812a7934000800000000000000
+      internalID: 19025545892171653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_214
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 19
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f99b8e18e44f1310800000000000000
+      internalID: 1377895774734227960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_215
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 7
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf37a22b57d3ffa0800000000000000
+      internalID: -5768029911308091453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_216
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 2
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3288bfef0331af8a0800000000000000
+      internalID: -6270678430002739165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_217
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 8
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10235c2db52769d60800000000000000
+      internalID: 7896624735344472577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_218
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 6
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4e8e89c9bdb6160800000000000000
+      internalID: 7019945909813830829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_219
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 9
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e61b91d239e1d30800000000000000
+      internalID: 4404119307528793653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RF01_RefineriaBasica_night_220
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc78691655b1c49c0800000000000000
+      internalID: -3941745520332601396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

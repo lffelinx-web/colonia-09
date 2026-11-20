@@ -7,7 +7,7 @@ using UnityEngine.UI;
 namespace Colonia09.Presentation
 {
     /// <summary>Invisible full-screen area over the colony map: one finger pans, two fingers zoom, a tap picks a tile.</summary>
-    public sealed class MapTouchArea : Graphic, IPointerDownHandler, IDragHandler, IPointerUpHandler
+    public sealed class MapTouchArea : Graphic, IPointerDownHandler, IDragHandler, IPointerUpHandler, IScrollHandler
     {
         public GameController Game;
         readonly Dictionary<int, Vector2> pointers = new Dictionary<int, Vector2>();
@@ -42,6 +42,11 @@ namespace Colonia09.Presentation
             pointers[e.pointerId] = e.position;
         }
 
+        public void OnScroll(PointerEventData e)
+        {
+            Game.ColonyMap.Zoom(Mathf.Pow(.86f, e.scrollDelta.y));
+        }
+
         public void OnPointerUp(PointerEventData e)
         {
             pointers.Remove(e.pointerId);
@@ -51,13 +56,11 @@ namespace Colonia09.Presentation
     }
 
     /// <summary>
-    /// The isometric colony, drawn by the game camera far from the battle board. The zones stand on raised
-    /// platforms joined by walkways (both part of the terrain art). Zones still held by the enemy show red
-    /// ground, barricades and blinking pylons; liberated zones turn into paved tiles where the player places
-    /// buildings. Linked walkways light up with energy pulses and cargo drones, and the landmarks move.
+    /// The alpine island and its road network share a camera with the interactive districts.
+    /// Barricades mark hostile ground; energy pulses and cargo drones follow completed connections.
     /// Tile (x, y) is a diamond one unit wide and half a unit tall.
     /// </summary>
-    public sealed class ColonyView : MonoBehaviour
+    public sealed partial class ColonyView : MonoBehaviour
     {
         static readonly Vector3 Origin = new Vector3(300, 0, 0);
         /// <summary>The sprites were rendered aimed 0.35 above the ground; this lifts them back onto their tile.</summary>
@@ -66,10 +69,7 @@ namespace Colonia09.Presentation
         const float LandmarkLift = .3674f;
         /// <summary>Screen height of one Blender unit of height (cos 30° / sqrt 2).</summary>
         const float Rise = .6124f;
-        const float MinZoom = 4f, MaxZoom = 24f;  // Closer than MinZoom the art would blur.
-        /// <summary>Size in units of each of the 2 x 2 pictures of the island.</summary>
-        const float BgPieceW = 44, BgPieceH = 24;
-        const float StartZoom = 6.2f;
+        const float MinZoom = 4f, StartZoom = 7.2f;
 
         GameController game;
         Camera cam;
@@ -77,7 +77,7 @@ namespace Colonia09.Presentation
         Transform root;
         Sprite diamond, outline, glow;
         readonly Dictionary<string, (Sprite day, Sprite night)> art = new Dictionary<string, (Sprite, Sprite)>();
-        readonly Dictionary<Vector2Int, Transform> placed = new Dictionary<Vector2Int, Transform>();
+        readonly Dictionary<Vector2Int, (Transform node, float scale)> placed = new Dictionary<Vector2Int, (Transform, float)>();
         readonly List<SpriteRenderer> nightLayers = new List<SpriteRenderer>();
         SpriteRenderer selection;
         float zoom = StartZoom;
@@ -130,12 +130,10 @@ namespace Colonia09.Presentation
             return pair;
         }
 
-        public static Vector3 TileWorld(float x, float y) => Origin + new Vector3((x - y) * .5f, -(x + y) * .25f, 0);
-
         /// <summary>A point of a zone's landmark scene (Blender units around the zone center, z up) in the world.</summary>
         static Vector3 LandmarkPoint(CampaignSector sector, float lx, float ly, float lz)
         {
-            var (cx, cy) = CampaignData.ZoneCenter(sector);
+            var (cx, cy) = CampaignData.LandmarkCenter(sector);
             return TileWorld(cx + lx, cy - ly) + new Vector3(0, lz * Rise, 0);
         }
 
@@ -176,6 +174,7 @@ namespace Colonia09.Presentation
         public void Focus(CampaignSector sector)
         {
             var (cx, cy) = CampaignData.ZoneCenter(sector);
+            if (Distant) zoom = StartZoom;
             var p = TileWorld(cx, cy) - Origin;
             center = new Vector2(p.x, p.y - (insetBottom - insetTop) / 2 * UnitsPerPixel);
             Clamp();
@@ -224,21 +223,38 @@ namespace Colonia09.Presentation
 
         static int Depth(int x, int y) => (x + y) * 4;
 
+        /// <summary>The middle of a 2 x 2 lot named by its anchor tile (or of a single tile), on the ground.</summary>
+        static Vector3 LotWorld(int x, int y)
+        {
+            var (lx, ly) = CampaignData.LotCenter(x, y);
+            return TileWorld(lx, ly);
+        }
+
+        /// <summary>Tiles across a lot: 2 for a building lot, 1 for any other tile.</summary>
+        static float LotSize(int x, int y) => CampaignData.IsLotAnchor(x, y) ? 2 : 1;
+
         // Moving things, refreshed every frame by Render.
         sealed class Path
         {
-            public readonly List<Vector3> Points = new List<Vector3>();
-            public float Length;
-            public Vector3 At(float d)
+            readonly List<Vector3> points = new List<Vector3>();
+            readonly List<float> distances = new List<float>();
+            public float Length => distances.Count == 0 ? 0 : distances[distances.Count - 1];
+
+            public void Append(Vector3 point)
             {
-                d = Mathf.Clamp(d, 0, Length);
-                for (int i = 1; i < Points.Count; i++)
-                {
-                    float seg = Vector3.Distance(Points[i - 1], Points[i]);
-                    if (d <= seg || i == Points.Count - 1) return Vector3.Lerp(Points[i - 1], Points[i], seg > 0 ? Mathf.Clamp01(d / seg) : 0);
-                    d -= seg;
-                }
-                return Points[0];
+                float length = points.Count == 0 ? 0 : Length + Vector3.Distance(points[points.Count - 1], point);
+                if (points.Count != 0 && length <= Length) return;
+                points.Add(point);
+                distances.Add(length);
+            }
+
+            public Vector3 At(float distance)
+            {
+                float d = Mathf.Clamp(distance, 0, Length);
+                int i = distances.BinarySearch(d);
+                if (i >= 0) return points[i];
+                i = ~i;
+                return Vector3.Lerp(points[i - 1], points[i], (d - distances[i - 1]) / (distances[i] - distances[i - 1]));
             }
         }
         sealed class Pulse { public Path Path; public SpriteRenderer R; public float Offset; }
@@ -266,66 +282,6 @@ namespace Colonia09.Presentation
 
         static readonly Color PulseColor = new Color(.45f, .95f, 1f, .9f);
 
-        /// <summary>Every tile of the walk from one zone's center to the next: along x, then along y.</summary>
-        static List<Vector2Int> Walk(CampaignSector from, CampaignSector to)
-        {
-            var steps = new List<Vector2Int>();
-            var (x, y) = CampaignData.ZoneCenter(from);
-            var (tx, ty) = CampaignData.ZoneCenter(to);
-            steps.Add(new Vector2Int(x, y));
-            while (x != tx) { x += System.Math.Sign(tx - x); steps.Add(new Vector2Int(x, y)); }
-            while (y != ty) { y += System.Math.Sign(ty - y); steps.Add(new Vector2Int(x, y)); }
-            return steps;
-        }
-
-        /// <summary>Draws a walkway's lit lines: half a tile toward each neighbor on the walk, and a glowing pad at each platform entrance.</summary>
-        List<GameObject> LightRoad(CampaignSector from, CampaignSector to, out Path path)
-        {
-            var made = new List<GameObject>();
-            var steps = Walk(from, to);
-            path = new Path();
-            var lift = new Vector3(0, SpriteLift, 0);
-            var half = Art("road_half_pos").day != null;
-            for (int i = 1; i + 1 < steps.Count; i++)
-            {
-                var s = steps[i];
-                if (CampaignData.ZoneAt(s.x, s.y) != null) continue;
-                var pos = TileWorld(s.x, s.y);
-                path.Points.Add(pos);
-                int order = -3000 + s.x + s.y;
-                if (!half)
-                {
-                    var r = Put("tile_road", pos + lift, order);
-                    if (r != null) made.Add(r.gameObject);
-                    continue;
-                }
-                foreach (var n in new[] { steps[i - 1], steps[i + 1] })
-                {
-                    var d = n - s;
-                    // +x and -x halves as drawn; the y halves are the same art mirrored left to right.
-                    var r = Put(d.x + d.y > 0 ? "road_half_pos" : "road_half_neg", pos + lift, order);
-                    if (r == null) continue;
-                    r.flipX = d.y != 0;
-                    foreach (var child in r.GetComponentsInChildren<SpriteRenderer>()) child.flipX = d.y != 0;
-                    made.Add(r.gameObject);
-                    if (CampaignData.ZoneAt(n.x, n.y) != null)
-                    {
-                        var node = Put("road_node", pos + lift, order + 1);
-                        if (node != null) made.Add(node.gameObject);
-                    }
-                }
-            }
-            // The pulses run from platform edge to platform edge.
-            if (path.Points.Count > 0)
-            {
-                var first = steps[0]; var last = steps[steps.Count - 1];
-                path.Points.Insert(0, TileWorld(first.x, first.y));  // Along the zone's street, from its center.
-                path.Points.Add(TileWorld(last.x, last.y));
-            }
-            for (int i = 1; i < path.Points.Count; i++) path.Length += Vector3.Distance(path.Points[i - 1], path.Points[i]);
-            return made;
-        }
-
         public void Rebuild()
         {
             if (root == null) return;
@@ -333,17 +289,7 @@ namespace Colonia09.Presentation
             placed.Clear();
             nightLayers.Clear();
             pulses.Clear(); drones.Clear(); blinks.Clear(); frames.Clear(); puffs.Clear(); linkBuilds.Clear(); sparks.Clear(); roadPaths.Clear(); rises.Clear();
-            float half = (CampaignData.ColonySize - 1) / 2f;
-            // The whole island and its sea come in 2 x 2 pieces of 44 x 24 units around the map center.
-            for (int j = 0; j < 2; j++)
-                for (int i = 0; i < 2; i++)
-                    Put($"colony_bg_{i}_{j}", TileWorld(half, half) + new Vector3((i - .5f) * BgPieceW, (.5f - j) * BgPieceH, 0), -5100);
-            // A sharper close-up of every zone's platform, with its paving and streets, lies over it.
-            foreach (var sector in CampaignData.Sectors)
-            {
-                var (zx, zy) = CampaignData.ZoneCenter(sector);
-                Put($"colony_zone_{sector.Number}", TileWorld(zx, zy), -5000);
-            }
+            DrawIsland();
             var lift = new Vector3(0, SpriteLift, 0);
 
             // Lit walkways are the energy links: they join each connected zone to the one before it.
@@ -354,7 +300,7 @@ namespace Colonia09.Presentation
                 if (!state.Connected.Contains(sectors[i].Id)) continue;
                 var work = Colony.LinkWork(sectors[i + 1].Id);
                 if (!state.Connected.Contains(sectors[i + 1].Id) && work == null) continue;
-                var tiles = LightRoad(sectors[i], sectors[i + 1], out var path);
+                var tiles = LightRoad(sectors[i + 1], out var path);
                 roadPaths[sectors[i + 1].Id] = path;
                 if (work != null)
                 {
@@ -365,7 +311,7 @@ namespace Colonia09.Presentation
                     continue;
                 }
                 if (path.Length <= 0) continue;
-                for (float d = 0; d < path.Length; d += 1.6f)
+                for (float d = 0; d < path.Length; d += 2.6f)
                     pulses.Add(new Pulse { Path = path, Offset = d, R = Light(Vector3.zero, PulseColor, .32f, -5800) });
                 var drone = Put("deco_drone", Vector3.zero, 0);
                 if (drone != null)
@@ -385,25 +331,29 @@ namespace Colonia09.Presentation
                 bool connected = state.Connected.Contains(sector.Id);
                 int rad = CampaignData.ZoneRadius;
                 float side = rad * 2 + 1;
+                if (sector.Id == "core") PlaceSpire(sector, free && connected);
                 var (lx, ly) = CampaignData.LandmarkCenter(sector);
                 if (free)
                 {
-                    // Lamps on the corners and where the streets leave the zone.
-                    foreach (var (dx, dy) in new[] { (-rad, -rad), (rad, -rad), (rad, rad), (-rad, rad), (1, -rad), (-rad, 1), (1, rad), (rad, 1) })
-                        Put("deco_lamp", TileWorld(cx + dx, cy + dy) + lift, Depth(cx + dx, cy + dy));
+                    // Lamps just outside the corners and beside the streets where they leave the zone; every tile inside is a lot.
+                    float edge = rad + .62f;
+                    foreach (var (dx, dy) in new[] { (edge, -edge), (edge, edge), (-edge, edge), (.62f, -edge), (-edge, .62f), (.62f, edge), (edge, .62f) })
+                        Put("deco_lamp", TileWorld(cx + dx, cy + dy) + lift, Depth(cx + Mathf.RoundToInt(dx), cy + Mathf.RoundToInt(dy)));
                     // The zone's landmark stands in its far quarter: what this place is for.
-                    var lmName = LandmarkFor(sector);
-                    int lmOrder = Depth(lx + 1, ly + 1) + 1;
-                    var landmark = Put(lmName, TileWorld(lx, ly) + new Vector3(0, LandmarkLift, 0), lmOrder);
-                    // Until the zone is connected its landmark stands dark and idle.
-                    if (landmark != null && !connected) Darken(landmark);
-                    AddMovingPart(sector, lmName, lmOrder, connected);
-                    if (connected) AddZoneLife(sector);
+                    if (sector.Id != "core")
+                    {
+                        var lmName = LandmarkFor(sector);
+                        int lmOrder = Depth(lx + 1, ly + 1) + 1;
+                        var landmark = Put(lmName, TileWorld(lx, ly) + new Vector3(0, LandmarkLift, 0), lmOrder);
+                        if (landmark != null && !connected) Darken(landmark);
+                        AddMovingPart(sector, lmName, lmOrder, connected);
+                        if (connected) AddZoneLife(sector);
+                    }
                 }
                 else
                 {
                     // Enemy ground: the whole platform glows red; the next battle glows amber.
-                    var tint = next ? new Color(1f, .45f, .2f, .3f) : new Color(.6f, .06f, .05f, .48f);
+                    var tint = next ? new Color(1f, .55f, .2f, .10f) : new Color(.48f, .11f, .07f, .16f);
                     Put(diamond, TileWorld(cx, cy), -2500, tint, side * .99f);
                     Put(outline, TileWorld(cx, cy), -2490, new Color(1f, .25f, .2f, next ? .8f : .5f), side * .985f);
                     foreach (var (dx, dy) in new[] { (-3, 0), (3, 0), (0, 3), (0, -3), (-2, 2), (2, -2), (2, 2), (1, 0), (0, 1) })
@@ -425,38 +375,40 @@ namespace Colonia09.Presentation
             foreach (var b in Colony.Saved)
             {
                 if (!System.Enum.TryParse(b.type, out BuildingType type)) continue;
-                int order = Depth(b.x, b.y) + 2;
-                var at = TileWorld(b.x, b.y) + lift;
+                // A building fills its 2 x 2 lot: it stands on the lot's middle and sorts by its front tile.
+                float size = LotSize(b.x, b.y);
+                int front = (int)size - 1;
+                int order = Depth(b.x + front, b.y + front) + 2;
+                var at = LotWorld(b.x, b.y) + lift;
                 // What stands now: the foundation of a new building, or the building at its level.
-                var r = b.level == 0 ? Put("deco_site", at, order - 1) : PutBuilding(type, b.style, b.level, at, order - 1);
-                if (r != null) placed[new Vector2Int(b.x, b.y)] = r.transform;
+                var raised = at + Vector3.up * (SpriteLift * (size - 1));
+                var r = b.level == 0 ? Put("deco_site", raised, order - 1, size) : PutBuilding(type, b.style, b.level, at, order - 1, size);
+                if (r != null) placed[new Vector2Int(b.x, b.y)] = (r.transform, r.transform.localScale.x);
                 if (b.UnderWork)
                 {
                     // The level being built rises from the ground inside the scaffold as the work advances.
-                    var target = PutBuilding(type, b.style, b.pending, at, order);
+                    var target = PutBuilding(type, b.style, b.pending, at, order, size);
                     if (target != null)
                     {
                         var night = target.transform.childCount > 0 ? target.transform.GetChild(0).GetComponent<SpriteRenderer>() : null;
                         rises.Add(new Rising { Work = b, Day = target, Night = night, FullDay = target.sprite, FullNight = night != null ? night.sprite : null, Step = -1 });
                     }
                     // Scaffold, a hazard light and welding sparks while the work runs.
-                    Put("deco_scaffold", at, order + 1);
-                    var tileCenter = TileWorld(b.x, b.y);
-                    blinks.Add(new Blink { R = Light(tileCenter + new Vector3(-.21f, 1.26f * Rise, 0), new Color(1, .6f, .15f, 1), .35f, order * 2 + 5), Color = new Color(1, .6f, .15f, 1), Rate = 1.6f, Phase = b.x * .3f, Base = .15f });
-                    sparks.Add(new Spark { R = Light(tileCenter, new Color(1f, .9f, .6f, 1), .22f, order * 2 + 6), Center = tileCenter + new Vector3(0, .45f * Rise, 0) });
+                    Put("deco_scaffold", raised, order + 1, size);
+                    var tileCenter = LotWorld(b.x, b.y);
+                    blinks.Add(new Blink { R = Light(tileCenter + new Vector3(-.21f, 1.26f * Rise, 0) * size, new Color(1, .6f, .15f, 1), .35f * size, order * 2 + 5), Color = new Color(1, .6f, .15f, 1), Rate = 1.6f, Phase = b.x * .3f, Base = .15f });
+                    sparks.Add(new Spark { R = Light(tileCenter, new Color(1f, .9f, .6f, 1), .22f * size, order * 2 + 6), Center = tileCenter + new Vector3(0, .45f * Rise * size, 0) });
                 }
             }
             if (showFree)
             {
-                // Construction mode: every free tile of a liberated zone gets a green outline.
+                // Construction mode: every free lot of a liberated zone gets a green outline.
                 foreach (var sector in sectors)
                 {
                     if (!SaveGame.Completed(sector.Id)) continue;
-                    var (cx, cy) = CampaignData.ZoneCenter(sector);
-                    for (int y = cy - CampaignData.ZoneRadius; y <= cy + CampaignData.ZoneRadius; y++)
-                        for (int x = cx - CampaignData.ZoneRadius; x <= cx + CampaignData.ZoneRadius; x++)
-                            if (!CampaignData.Reserved(x, y) && Colony.At(x, y) == null)
-                                Put(outline, TileWorld(x, y), -2100, new Color(.5f, 1f, .7f, .9f), .92f);
+                    foreach (var (x, y) in CampaignData.Lots(sector))
+                        if (Colony.At(x, y) == null)
+                            Put(outline, LotWorld(x, y), -2100, new Color(.5f, 1f, .7f, .9f), 1.9f);
                 }
             }
             selection = Put(outline, Vector3.zero, -2000, new Color(1, .83f, .55f, 1));
@@ -469,18 +421,50 @@ namespace Colonia09.Presentation
             ApplyLight();
         }
 
-        /// <summary>The picture of a building kind in one of its looks and levels; older art has a single picture per kind.</summary>
-        public static string BuildingArt(BuildingType type, int style, int level) => $"bld_{type.ToString().ToLowerInvariant()}_{style}_{Mathf.Clamp(level, 1, ColonyData.MaxLevel)}";
+        static readonly Dictionary<BuildingType, string[]> ModelNames = new Dictionary<BuildingType, string[]>
+        {
+            { BuildingType.Extractor, new[] { "EX01_ExtractorBasico", "EX02_ExtractorProcesador", "EX03_ExtractorIndustrial" } },
+            { BuildingType.Laboratory, new[] { "LB01_LaboratorioBasico", "LB02_LaboratorioDeAnalisis", "LB03_LaboratorioAvanzado" } },
+            { BuildingType.Solar, new[] { "PS01_PlantaSolarBasica", "PS02_PlantaSolarModular", "PS03_PlantaSolarAvanzada" } },
+            { BuildingType.Farm, new[] { "GH01_GranjaHidroponicaBasica", "GH02_GranjaHidroponicaModular", "GH03_GranjaHidroponicaAvanzada" } },
+            { BuildingType.WaterTower, new[] { "TA01_TorreDeAguaBasica", "TA02_TorreDeAguaModular", "TA03_TorreDeAguaAvanzada" } },
+            { BuildingType.Refinery, new[] { "RF01_RefineriaBasica", "RF02_RefineriaModular", "RF03_RefineriaIndustrial" } },
+            { BuildingType.Works, new[] { "TO01_TallerBasico", "TO02_TallerConGrua", "TO03_TallerAvanzado" } }
+        };
+        static readonly string[,] HousingModels =
+        {
+            { "N1_RefugioBasico", "N2_ViviendaModular", "N3_ViviendaFamiliar" },
+            { "N2_ViviendaModular", "N3_ViviendaFamiliar", "N4_ResidencialColectivo" },
+            { "N1_RefugioBasico", "N2_ViviendaModular", "AS01_ViviendaAutosuficiente" }
+        };
 
-        SpriteRenderer PutBuilding(BuildingType type, int style, int level, Vector3 at, int order)
+        public static string BuildingArt(BuildingType type, int style, int level)
+        {
+            if (type == BuildingType.SelfSufficientHousing) return "Planos/AS01_ViviendaAutosuficiente";
+            int i = Mathf.Clamp(level, 1, ColonyData.MaxLevel) - 1;
+            if (type == BuildingType.Housing)
+                return "Planos/" + HousingModels[Mathf.Clamp(style, 0, HousingModels.GetLength(0) - 1), i];
+            if (ModelNames.TryGetValue(type, out var names)) return "Planos/" + names[i];
+            return $"bld_{type.ToString().ToLowerInvariant()}_{style}_{i + 1}";
+        }
+
+        SpriteRenderer PutBuilding(BuildingType type, int style, int level, Vector3 at, int order, float lot = 1)
         {
             int looks = ColonyData.Buildings[type].Styles;
-            return Put(BuildingArt(type, ((style % looks) + looks) % looks, level), at, order)
-                ?? Put("bld_" + type.ToString().ToLowerInvariant(), at, order, .92f + level * .06f);
+            int appearance = ((style % looks) + looks) % looks;
+            float scale = (type == BuildingType.Fortification ? 1f : 1.24f) * lot;
+            // Old homes may still have the third cosmetic style saved before AS01 became its own building.
+            var artName = BuildingArt(type, type == BuildingType.Housing ? style : appearance, level);
+            var building = Put(artName, at + Vector3.up * (SpriteLift * (scale - 1)), order, scale)
+                ?? Put("bld_" + type.ToString().ToLowerInvariant(), at + Vector3.up * (SpriteLift * (lot - 1)), order, (.92f + level * .06f) * lot);
+            if (building != null && appearance % 2 == 1 && ModelNames.ContainsKey(type))
+                foreach (var layer in building.GetComponentsInChildren<SpriteRenderer>()) layer.flipX = true;
+            return building;
         }
 
         const int RiseSteps = 24;
         readonly Dictionary<(Sprite, int), Sprite> risen = new Dictionary<(Sprite, int), Sprite>();
+        readonly Dictionary<Sprite, Vector2> constructionHeights = new Dictionary<Sprite, Vector2>();
 
         /// <summary>The lower part of a building's picture, up to a share of its height: how far it has risen.</summary>
         Sprite Risen(Sprite full, int step)
@@ -488,9 +472,22 @@ namespace Colonia09.Presentation
             if (full == null || step >= RiseSteps) return full;
             if (risen.TryGetValue((full, step), out var cut)) return cut;
             var rect = full.rect;
-            // The ground of the tile lies a little over a quarter up the picture; the building grows from there to the top.
-            float height = Mathf.Max(2, rect.height * (.28f + .72f * step / RiseSteps));
-            cut = Sprite.Create(full.texture, new Rect(rect.x, rect.y, rect.width, height), new Vector2(.5f, rect.height * .5f / height), full.pixelsPerUnit, 0, SpriteMeshType.FullRect);
+            // The render has transparent margins. Spend the construction time raising the
+            // silhouette, with the pivot fixed to the same ground point at every stage.
+            if (!constructionHeights.TryGetValue(full, out var range))
+            {
+                range = new Vector2(rect.height, 0);
+                foreach (var vertex in full.vertices)
+                {
+                    float y = full.pivot.y + vertex.y * full.pixelsPerUnit;
+                    range.x = Mathf.Min(range.x, y);
+                    range.y = Mathf.Max(range.y, y);
+                }
+                constructionHeights[full] = range;
+            }
+            float height = Mathf.Clamp(Mathf.Lerp(range.x, range.y, (float)step / RiseSteps), 2, rect.height);
+            var pivot = new Vector2(full.pivot.x / rect.width, full.pivot.y / height);
+            cut = Sprite.Create(full.texture, new Rect(rect.x, rect.y, rect.width, height), pivot, full.pixelsPerUnit, 0, SpriteMeshType.FullRect);
             risen[(full, step)] = cut;
             return cut;
         }
@@ -589,7 +586,7 @@ namespace Colonia09.Presentation
                 n.color = c;
             }
             // The open sea of the rendered art, which the background continues past the overview's edges.
-            cam.backgroundColor = Color.Lerp(new Color32(55, 91, 113, 255), new Color32(15, 70, 96, 255), Nightness);
+            LightIsland();
         }
 
         void UpdateHint()
@@ -614,7 +611,9 @@ namespace Colonia09.Presentation
         {
             if (selection == null) return;
             selection.gameObject.SetActive(tile.HasValue);
-            if (tile.HasValue) selection.transform.position = TileWorld(tile.Value.x, tile.Value.y);
+            if (!tile.HasValue) return;
+            selection.transform.position = LotWorld(tile.Value.x, tile.Value.y);
+            selection.transform.localScale = Vector3.one * (LotSize(tile.Value.x, tile.Value.y) * .96f);
         }
 
         /// <summary>Plays a short bounce on a building that was just started; a bigger one with a flash when it is finished.</summary>
@@ -625,9 +624,9 @@ namespace Colonia09.Presentation
             popBig = finished;
             if (finished)
             {
-                flashAtPoint = TileWorld(x, y) + new Vector3(0, .3f, 0);
+                flashAtPoint = LotWorld(x, y) + new Vector3(0, .3f * LotSize(x, y), 0);
                 flashAt = Time.unscaledTime;
-                flashSize = 1.6f;
+                flashSize = 1.6f * LotSize(x, y);
             }
         }
 
@@ -662,11 +661,11 @@ namespace Colonia09.Presentation
 
             float t = now - popAt;
             float popTime = popBig ? .6f : .45f;
-            if (t < popTime && placed.TryGetValue(popTile, out var tr) && tr != null)
+            if (popAt >= 0 && placed.TryGetValue(popTile, out var entry) && entry.node != null)
             {
-                var b = Colony.At(popTile.x, popTile.y);
-                float baseScale = 1;
-                tr.localScale = Vector3.one * baseScale * (1 + Mathf.Sin(t / popTime * Mathf.PI) * (popBig ? .3f : .18f));
+                float bounce = t < popTime ? Mathf.Sin(t / popTime * Mathf.PI) * (popBig ? .3f : .18f) : 0;
+                entry.node.localScale = Vector3.one * entry.scale * (1 + bounce);
+                if (t >= popTime) popAt = -10;
             }
             if (selection != null && selection.gameObject.activeSelf)
                 selection.color = new Color(1, .83f, .55f, .6f + .4f * Mathf.PingPong(now * 2, 1));
@@ -761,44 +760,32 @@ namespace Colonia09.Presentation
 
         public void Zoom(float factor)
         {
-            zoom = Mathf.Clamp(zoom * factor, MinZoom, MaxZoom);
+            zoom = Mathf.Clamp(zoom * factor, MinZoom, OverviewZoom);
             Clamp();
         }
 
-        /// <summary>
-        /// Keeps the view on the island overview (44 x 30 units around the map center); past its edges the camera's
-        /// sea color carries on, so the far zoom can show the whole island on a wide screen.
-        /// </summary>
         void Clamp()
         {
-            const float HalfW = BgPieceW, HalfH = BgPieceH;
-            float aspect = Screen.width / (float)Mathf.Max(1, Screen.height);
-            zoom = Mathf.Min(zoom, MaxZoom);
-            float mapY = -(CampaignData.ColonySize - 1) * .25f;
-            float spanX = Mathf.Max(0, HalfW - zoom * aspect), spanY = Mathf.Max(0, HalfH - zoom);
+            float halfW = Island.width / (2 * Island.pixelsPerTile);
+            float halfH = Island.height / (2 * Island.pixelsPerTile);
+            zoom = Mathf.Min(zoom, OverviewZoom);
+            float spanX = Mathf.Max(0, halfW * 1.04f - zoom * cam.aspect);
+            float spanY = Mathf.Max(0, halfH * 1.04f - zoom * (Screen.height - insetTop - insetBottom) / Mathf.Max(1, Screen.height));
+            float midY = (insetTop - insetBottom) * .5f * UnitsPerPixel;
             center.x = Mathf.Clamp(center.x, -spanX, spanX);
-            center.y = Mathf.Clamp(center.y, mapY - spanY, mapY + spanY);
-        }
-
-        public bool ScreenToTile(Vector2 screen, out int x, out int y)
-        {
-            var world = cam.ScreenToWorldPoint(new Vector3(screen.x, screen.y, 10)) - Origin;
-            float u = world.x / .5f, v = -world.y / .25f;  // u = x - y, v = x + y
-            x = Mathf.RoundToInt((u + v) / 2);
-            y = Mathf.RoundToInt((v - u) / 2);
-            return x >= 0 && y >= 0 && x < CampaignData.ColonySize && y < CampaignData.ColonySize;
+            center.y = Mathf.Clamp(center.y, midY - spanY, midY + spanY);
         }
 
         public Vector2 TileScreen(int x, int y) => cam.WorldToScreenPoint(TileWorld(x, y));
 
         /// <summary>Screen point above a building's tile, where its construction timer floats.</summary>
-        public Vector2 TileTagScreen(int x, int y) => cam.WorldToScreenPoint(TileWorld(x, y) + new Vector3(0, 1.1f, 0));
+        public Vector2 TileTagScreen(int x, int y) => cam.WorldToScreenPoint(LotWorld(x, y) + new Vector3(0, 1.1f * LotSize(x, y), 0));
 
         /// <summary>Screen point just above a zone's far corner, where its floating tag sits.</summary>
         public Vector2 ZoneTagScreen(CampaignSector sector)
         {
-            var (cx, cy) = CampaignData.ZoneCenter(sector);
-            return cam.WorldToScreenPoint(TileWorld(cx - CampaignData.ZoneRadius - .5f, cy - CampaignData.ZoneRadius - .5f) + new Vector3(0, .15f, 0));
+            float edge = -CampaignData.ZoneRadius - .5f;
+            return cam.WorldToScreenPoint(LocalTile(sector, edge, edge) + new Vector3(0, .15f, 0));
         }
 
         public void Tap(Vector2 screen)

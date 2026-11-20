@@ -1,0 +1,1108 @@
+fileFormatVersion: 2
+guid: acc4a70da07a29b4aaf5298314b9deb0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4842623095077727546
+    second: N1_RefugioBasico_0
+  - first:
+      213: -3458333508521812060
+    second: N1_RefugioBasico_1
+  - first:
+      213: -4552522270325397779
+    second: N1_RefugioBasico_2
+  - first:
+      213: -4066236845879411445
+    second: N1_RefugioBasico_3
+  - first:
+      213: 4058707812905596665
+    second: N1_RefugioBasico_4
+  - first:
+      213: 2068323380003239373
+    second: N1_RefugioBasico_5
+  - first:
+      213: 5651058869806222048
+    second: N1_RefugioBasico_6
+  - first:
+      213: 2179060304068576480
+    second: N1_RefugioBasico_7
+  - first:
+      213: 2059940306662321846
+    second: N1_RefugioBasico_8
+  - first:
+      213: 6916978809745627735
+    second: N1_RefugioBasico_9
+  - first:
+      213: 8118201911145043271
+    second: N1_RefugioBasico_10
+  - first:
+      213: -6858826997570345027
+    second: N1_RefugioBasico_11
+  - first:
+      213: 7348487217956071185
+    second: N1_RefugioBasico_12
+  - first:
+      213: -6514485757858328012
+    second: N1_RefugioBasico_13
+  - first:
+      213: 1023215048787831918
+    second: N1_RefugioBasico_14
+  - first:
+      213: 2714524051920072213
+    second: N1_RefugioBasico_15
+  - first:
+      213: -7775530416162473946
+    second: N1_RefugioBasico_16
+  - first:
+      213: -8897044034445370967
+    second: N1_RefugioBasico_17
+  - first:
+      213: -2805082070288446626
+    second: N1_RefugioBasico_18
+  - first:
+      213: -5154962061496394244
+    second: N1_RefugioBasico_19
+  - first:
+      213: 1217255134174712046
+    second: N1_RefugioBasico_20
+  - first:
+      213: 349677893914105963
+    second: N1_RefugioBasico_21
+  - first:
+      213: -8349361664056593825
+    second: N1_RefugioBasico_22
+  - first:
+      213: -4760560787874800227
+    second: N1_RefugioBasico_23
+  - first:
+      213: -7554136236218018522
+    second: N1_RefugioBasico_24
+  - first:
+      213: 6513533368677022460
+    second: N1_RefugioBasico_25
+  - first:
+      213: 8859722908611965943
+    second: N1_RefugioBasico_26
+  - first:
+      213: 7584522202519566490
+    second: N1_RefugioBasico_27
+  - first:
+      213: 5848212739868205685
+    second: N1_RefugioBasico_28
+  - first:
+      213: 4778334295104163720
+    second: N1_RefugioBasico_29
+  - first:
+      213: 60643559160560775
+    second: N1_RefugioBasico_30
+  - first:
+      213: -8875682357348665551
+    second: N1_RefugioBasico_31
+  - first:
+      213: 5727397610684929842
+    second: N1_RefugioBasico_32
+  - first:
+      213: 1202051182724087412
+    second: N1_RefugioBasico_33
+  - first:
+      213: 119861663115233327
+    second: N1_RefugioBasico_34
+  - first:
+      213: -7618922383092753862
+    second: N1_RefugioBasico_35
+  - first:
+      213: 8773418350625058756
+    second: N1_RefugioBasico_36
+  - first:
+      213: -800569667893410932
+    second: N1_RefugioBasico_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: N1_RefugioBasico_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 104
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3de5333c04743340800000000000000
+      internalID: 4842623095077727546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af1abd3ff78100d0800000000000000
+      internalID: -3458333508521812060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 464
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6233d8d1132d0c0800000000000000
+      internalID: -4552522270325397779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_3
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0db0cce123d197c0800000000000000
+      internalID: -4066236845879411445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 232
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f6375b704d635830800000000000000
+      internalID: 4058707812905596665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 268
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc57ab9d72924bc10800000000000000
+      internalID: 2068323380003239373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 232
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eace9bf9189c6e40800000000000000
+      internalID: 5651058869806222048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_7
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 226
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e489282dc39d3e10800000000000000
+      internalID: 2179060304068576480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_8
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 216
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6beed1d7bc0669c10800000000000000
+      internalID: 2059940306662321846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_9
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 0
+        width: 373
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75adac9649b0eff50800000000000000
+      internalID: 6916978809745627735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_10
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 316
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74592b840a5a9a070800000000000000
+      internalID: 8118201911145043271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_11
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 312
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7e5f17f2d80d0a0800000000000000
+      internalID: -6858826997570345027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_12
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 9
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11725c6d0321bf560800000000000000
+      internalID: 7348487217956071185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 326
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432538ce7b5e795a0800000000000000
+      internalID: -6514485757858328012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_14
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 315
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c25d76aa0333e00800000000000000
+      internalID: 1023215048787831918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_15
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 9
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e23f83e3deba520800000000000000
+      internalID: 2714524051920072213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_16
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 320
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628f3647844c71490800000000000000
+      internalID: -7775530416162473946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_17
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 7
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a910e7d699578480800000000000000
+      internalID: -8897044034445370967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_18
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 49
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5bc3a218b85219d0800000000000000
+      internalID: -2805082070288446626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_19
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 43
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd54e53155e578b0800000000000000
+      internalID: -5154962061496394244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_20
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 58
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee01181681f84e010800000000000000
+      internalID: 1217255134174712046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_21
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 56
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b689e8c113e4ad400800000000000000
+      internalID: 349677893914105963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_22
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 316
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5274a8adcb112c80800000000000000
+      internalID: -8349361664056593825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_23
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 9
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d911b9f271fedb0800000000000000
+      internalID: -4760560787874800227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_24
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 6
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625915fdd115a2790800000000000000
+      internalID: -7554136236218018522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_25
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 54
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfab5a0b618b46a50800000000000000
+      internalID: 6513533368677022460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_26
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 23
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3f4386b0f04fa70800000000000000
+      internalID: 8859722908611965943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_27
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 33
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98fd3832c2a14960800000000000000
+      internalID: 7584522202519566490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_28
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 9
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57222c27086092150800000000000000
+      internalID: 5848212739868205685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_29
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 316
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f00c589bd005240800000000000000
+      internalID: 4778334295104163720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_30
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 312
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c3ea9eef277d000800000000000000
+      internalID: 60643559160560775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_31
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 39
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 137f70fdbed33d480800000000000000
+      internalID: -8875682357348665551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_32
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 177
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237db4828cdcb7f40800000000000000
+      internalID: 5727397610684929842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_33
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 225
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e7b149e2b8ea010800000000000000
+      internalID: 1202051182724087412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_34
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 187
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28cb2c2c85d9a100800000000000000
+      internalID: 119861663115233327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_35
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 218
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3adb789576244690800000000000000
+      internalID: -7618922383092753862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_36
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 188
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf66ee918171c970800000000000000
+      internalID: 8773418350625058756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N1_RefugioBasico_37
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 215
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c83c24fe02ec3e4f0800000000000000
+      internalID: -800569667893410932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

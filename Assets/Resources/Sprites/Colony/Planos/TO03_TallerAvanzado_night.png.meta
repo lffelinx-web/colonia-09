@@ -1,0 +1,6183 @@
+fileFormatVersion: 2
+guid: b0c0cbc063c56734db496d278ffd342e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4027736732092911240
+    second: TO03_TallerAvanzado_night_0
+  - first:
+      213: -6723669788536361038
+    second: TO03_TallerAvanzado_night_1
+  - first:
+      213: -3026264379634536391
+    second: TO03_TallerAvanzado_night_2
+  - first:
+      213: -3892321388059690746
+    second: TO03_TallerAvanzado_night_3
+  - first:
+      213: 5327966276539387400
+    second: TO03_TallerAvanzado_night_4
+  - first:
+      213: -3053954234028307801
+    second: TO03_TallerAvanzado_night_5
+  - first:
+      213: 184964819084135069
+    second: TO03_TallerAvanzado_night_6
+  - first:
+      213: -1260312016015615570
+    second: TO03_TallerAvanzado_night_7
+  - first:
+      213: 3607333725640566184
+    second: TO03_TallerAvanzado_night_8
+  - first:
+      213: 8796844073987878945
+    second: TO03_TallerAvanzado_night_9
+  - first:
+      213: -4549064794223518555
+    second: TO03_TallerAvanzado_night_10
+  - first:
+      213: -381909867994578903
+    second: TO03_TallerAvanzado_night_11
+  - first:
+      213: -2457347944718040048
+    second: TO03_TallerAvanzado_night_12
+  - first:
+      213: -3950849426816426614
+    second: TO03_TallerAvanzado_night_13
+  - first:
+      213: 3892105692940845824
+    second: TO03_TallerAvanzado_night_14
+  - first:
+      213: 769655628423848631
+    second: TO03_TallerAvanzado_night_15
+  - first:
+      213: -4730088952685736220
+    second: TO03_TallerAvanzado_night_16
+  - first:
+      213: -3369764129802993348
+    second: TO03_TallerAvanzado_night_17
+  - first:
+      213: 6854734761870666553
+    second: TO03_TallerAvanzado_night_18
+  - first:
+      213: 4903333977536475765
+    second: TO03_TallerAvanzado_night_19
+  - first:
+      213: -8602846511501522421
+    second: TO03_TallerAvanzado_night_20
+  - first:
+      213: -3499529360609130877
+    second: TO03_TallerAvanzado_night_21
+  - first:
+      213: 6742006425808181883
+    second: TO03_TallerAvanzado_night_22
+  - first:
+      213: 5218365532587992635
+    second: TO03_TallerAvanzado_night_23
+  - first:
+      213: 3959328182509488500
+    second: TO03_TallerAvanzado_night_24
+  - first:
+      213: -1127256303091362785
+    second: TO03_TallerAvanzado_night_25
+  - first:
+      213: -8601207299319545346
+    second: TO03_TallerAvanzado_night_26
+  - first:
+      213: 3127490258396293415
+    second: TO03_TallerAvanzado_night_27
+  - first:
+      213: -4233004275920009109
+    second: TO03_TallerAvanzado_night_28
+  - first:
+      213: 7120923358509522767
+    second: TO03_TallerAvanzado_night_29
+  - first:
+      213: 3667383783876898527
+    second: TO03_TallerAvanzado_night_30
+  - first:
+      213: 3161464120161214750
+    second: TO03_TallerAvanzado_night_31
+  - first:
+      213: -4607288167016768610
+    second: TO03_TallerAvanzado_night_32
+  - first:
+      213: -2504353529241764510
+    second: TO03_TallerAvanzado_night_33
+  - first:
+      213: -8207752258705315055
+    second: TO03_TallerAvanzado_night_34
+  - first:
+      213: 8218016335447238029
+    second: TO03_TallerAvanzado_night_35
+  - first:
+      213: 3300950795709665669
+    second: TO03_TallerAvanzado_night_36
+  - first:
+      213: 2607168141893167656
+    second: TO03_TallerAvanzado_night_37
+  - first:
+      213: -2672780094721232815
+    second: TO03_TallerAvanzado_night_38
+  - first:
+      213: -2587049635700959710
+    second: TO03_TallerAvanzado_night_39
+  - first:
+      213: -2336266391702054870
+    second: TO03_TallerAvanzado_night_40
+  - first:
+      213: -241817289716428639
+    second: TO03_TallerAvanzado_night_41
+  - first:
+      213: -5423722163196807737
+    second: TO03_TallerAvanzado_night_42
+  - first:
+      213: -116719748899044524
+    second: TO03_TallerAvanzado_night_43
+  - first:
+      213: -1360949818044154285
+    second: TO03_TallerAvanzado_night_44
+  - first:
+      213: -6804215457670858693
+    second: TO03_TallerAvanzado_night_45
+  - first:
+      213: 9117910807236359160
+    second: TO03_TallerAvanzado_night_46
+  - first:
+      213: -7671846496727956236
+    second: TO03_TallerAvanzado_night_47
+  - first:
+      213: 3543092392115053432
+    second: TO03_TallerAvanzado_night_48
+  - first:
+      213: 601145541416436787
+    second: TO03_TallerAvanzado_night_49
+  - first:
+      213: -947762229530797442
+    second: TO03_TallerAvanzado_night_50
+  - first:
+      213: 3706743367070239919
+    second: TO03_TallerAvanzado_night_51
+  - first:
+      213: -2716371314552268715
+    second: TO03_TallerAvanzado_night_52
+  - first:
+      213: -378024098583115823
+    second: TO03_TallerAvanzado_night_53
+  - first:
+      213: -5980644075464181321
+    second: TO03_TallerAvanzado_night_54
+  - first:
+      213: -6483623441751436978
+    second: TO03_TallerAvanzado_night_55
+  - first:
+      213: 239369063466709042
+    second: TO03_TallerAvanzado_night_56
+  - first:
+      213: -4881149080777779050
+    second: TO03_TallerAvanzado_night_57
+  - first:
+      213: -7937471592158007711
+    second: TO03_TallerAvanzado_night_58
+  - first:
+      213: -3810154796944129422
+    second: TO03_TallerAvanzado_night_59
+  - first:
+      213: -4722220134594083273
+    second: TO03_TallerAvanzado_night_60
+  - first:
+      213: 285355851476892880
+    second: TO03_TallerAvanzado_night_61
+  - first:
+      213: -1923305113883944395
+    second: TO03_TallerAvanzado_night_62
+  - first:
+      213: 7224517654719341531
+    second: TO03_TallerAvanzado_night_63
+  - first:
+      213: -7649744094386906202
+    second: TO03_TallerAvanzado_night_64
+  - first:
+      213: -5010500479021631472
+    second: TO03_TallerAvanzado_night_65
+  - first:
+      213: 2640242998973678246
+    second: TO03_TallerAvanzado_night_66
+  - first:
+      213: 4967754763229358375
+    second: TO03_TallerAvanzado_night_67
+  - first:
+      213: -5303064151966883126
+    second: TO03_TallerAvanzado_night_68
+  - first:
+      213: 7907891927668473363
+    second: TO03_TallerAvanzado_night_69
+  - first:
+      213: 7826298131864791110
+    second: TO03_TallerAvanzado_night_70
+  - first:
+      213: -2189143610528593000
+    second: TO03_TallerAvanzado_night_71
+  - first:
+      213: -8085947057517934604
+    second: TO03_TallerAvanzado_night_72
+  - first:
+      213: 5800074146259518218
+    second: TO03_TallerAvanzado_night_73
+  - first:
+      213: 1424273336982884981
+    second: TO03_TallerAvanzado_night_74
+  - first:
+      213: 5459430786721932179
+    second: TO03_TallerAvanzado_night_75
+  - first:
+      213: 8892637495789409927
+    second: TO03_TallerAvanzado_night_76
+  - first:
+      213: -3405388895705383591
+    second: TO03_TallerAvanzado_night_77
+  - first:
+      213: -5760906130516504663
+    second: TO03_TallerAvanzado_night_78
+  - first:
+      213: -6604625404894029810
+    second: TO03_TallerAvanzado_night_79
+  - first:
+      213: 5612745642616208551
+    second: TO03_TallerAvanzado_night_80
+  - first:
+      213: -1824010348715741940
+    second: TO03_TallerAvanzado_night_81
+  - first:
+      213: 1776717294412803977
+    second: TO03_TallerAvanzado_night_82
+  - first:
+      213: -8376887455900321430
+    second: TO03_TallerAvanzado_night_83
+  - first:
+      213: -2166497697401352463
+    second: TO03_TallerAvanzado_night_84
+  - first:
+      213: -6704887023314601842
+    second: TO03_TallerAvanzado_night_85
+  - first:
+      213: -4198330540380713154
+    second: TO03_TallerAvanzado_night_86
+  - first:
+      213: 3783890005236267055
+    second: TO03_TallerAvanzado_night_87
+  - first:
+      213: 5150071063858935663
+    second: TO03_TallerAvanzado_night_88
+  - first:
+      213: 5689928347242416587
+    second: TO03_TallerAvanzado_night_89
+  - first:
+      213: -4227581463493936810
+    second: TO03_TallerAvanzado_night_90
+  - first:
+      213: 2125315372612857001
+    second: TO03_TallerAvanzado_night_91
+  - first:
+      213: -2108074400775369536
+    second: TO03_TallerAvanzado_night_92
+  - first:
+      213: -4605283275936221865
+    second: TO03_TallerAvanzado_night_93
+  - first:
+      213: -8675789484877707697
+    second: TO03_TallerAvanzado_night_94
+  - first:
+      213: -2427354835900271201
+    second: TO03_TallerAvanzado_night_95
+  - first:
+      213: 3984113605123719137
+    second: TO03_TallerAvanzado_night_96
+  - first:
+      213: 8308449320918476105
+    second: TO03_TallerAvanzado_night_97
+  - first:
+      213: -7921783602620346518
+    second: TO03_TallerAvanzado_night_98
+  - first:
+      213: 749178108744645258
+    second: TO03_TallerAvanzado_night_99
+  - first:
+      213: -2067513470190097743
+    second: TO03_TallerAvanzado_night_100
+  - first:
+      213: -3784897015625530968
+    second: TO03_TallerAvanzado_night_101
+  - first:
+      213: 7476569594518692800
+    second: TO03_TallerAvanzado_night_102
+  - first:
+      213: 5967607403372726823
+    second: TO03_TallerAvanzado_night_103
+  - first:
+      213: -6927132581981358473
+    second: TO03_TallerAvanzado_night_104
+  - first:
+      213: -8220178593849302477
+    second: TO03_TallerAvanzado_night_105
+  - first:
+      213: -4838387879585479045
+    second: TO03_TallerAvanzado_night_106
+  - first:
+      213: -8284853248883094450
+    second: TO03_TallerAvanzado_night_107
+  - first:
+      213: -7529733591829750606
+    second: TO03_TallerAvanzado_night_108
+  - first:
+      213: -4590069786960971470
+    second: TO03_TallerAvanzado_night_109
+  - first:
+      213: -5645939851376674590
+    second: TO03_TallerAvanzado_night_110
+  - first:
+      213: -712145970628599826
+    second: TO03_TallerAvanzado_night_111
+  - first:
+      213: 1440859103541577305
+    second: TO03_TallerAvanzado_night_112
+  - first:
+      213: 4758526632005433380
+    second: TO03_TallerAvanzado_night_113
+  - first:
+      213: 1132471990410898770
+    second: TO03_TallerAvanzado_night_114
+  - first:
+      213: -5741641039336425511
+    second: TO03_TallerAvanzado_night_115
+  - first:
+      213: -5046349586003177168
+    second: TO03_TallerAvanzado_night_116
+  - first:
+      213: -6597880430179171168
+    second: TO03_TallerAvanzado_night_117
+  - first:
+      213: 4745684752964011826
+    second: TO03_TallerAvanzado_night_118
+  - first:
+      213: -1883029865980062350
+    second: TO03_TallerAvanzado_night_119
+  - first:
+      213: 7548039962850756923
+    second: TO03_TallerAvanzado_night_120
+  - first:
+      213: -5718776884697680259
+    second: TO03_TallerAvanzado_night_121
+  - first:
+      213: -3324888325380273138
+    second: TO03_TallerAvanzado_night_122
+  - first:
+      213: 7781967364631837882
+    second: TO03_TallerAvanzado_night_123
+  - first:
+      213: 1903742817854505360
+    second: TO03_TallerAvanzado_night_124
+  - first:
+      213: 5495460540019104462
+    second: TO03_TallerAvanzado_night_125
+  - first:
+      213: 2483243674470703379
+    second: TO03_TallerAvanzado_night_126
+  - first:
+      213: -5364781294268318428
+    second: TO03_TallerAvanzado_night_127
+  - first:
+      213: 1356336532285551189
+    second: TO03_TallerAvanzado_night_128
+  - first:
+      213: 1425808793157750594
+    second: TO03_TallerAvanzado_night_129
+  - first:
+      213: -6477404111894347036
+    second: TO03_TallerAvanzado_night_130
+  - first:
+      213: 1672894201308988330
+    second: TO03_TallerAvanzado_night_131
+  - first:
+      213: -4068483675329016806
+    second: TO03_TallerAvanzado_night_132
+  - first:
+      213: -2763961559758115040
+    second: TO03_TallerAvanzado_night_133
+  - first:
+      213: -8483662943102984588
+    second: TO03_TallerAvanzado_night_134
+  - first:
+      213: 2666250136441228294
+    second: TO03_TallerAvanzado_night_135
+  - first:
+      213: 4688136213905685581
+    second: TO03_TallerAvanzado_night_136
+  - first:
+      213: -29839482012046342
+    second: TO03_TallerAvanzado_night_137
+  - first:
+      213: 7041491965349678193
+    second: TO03_TallerAvanzado_night_138
+  - first:
+      213: 5605886072772576563
+    second: TO03_TallerAvanzado_night_139
+  - first:
+      213: -305549122979499560
+    second: TO03_TallerAvanzado_night_140
+  - first:
+      213: -5568007326634814201
+    second: TO03_TallerAvanzado_night_141
+  - first:
+      213: -3085207177753494936
+    second: TO03_TallerAvanzado_night_142
+  - first:
+      213: -4668343048774508256
+    second: TO03_TallerAvanzado_night_143
+  - first:
+      213: 2429445628297023681
+    second: TO03_TallerAvanzado_night_144
+  - first:
+      213: -6705791745069823964
+    second: TO03_TallerAvanzado_night_145
+  - first:
+      213: -5796363618551660059
+    second: TO03_TallerAvanzado_night_146
+  - first:
+      213: -7322759031000260709
+    second: TO03_TallerAvanzado_night_147
+  - first:
+      213: 7405483625246888671
+    second: TO03_TallerAvanzado_night_148
+  - first:
+      213: 67840155814977277
+    second: TO03_TallerAvanzado_night_149
+  - first:
+      213: 7954745162943269860
+    second: TO03_TallerAvanzado_night_150
+  - first:
+      213: -4257732948911231995
+    second: TO03_TallerAvanzado_night_151
+  - first:
+      213: 7915646244453100582
+    second: TO03_TallerAvanzado_night_152
+  - first:
+      213: 4088275571473999356
+    second: TO03_TallerAvanzado_night_153
+  - first:
+      213: -3452037048016064109
+    second: TO03_TallerAvanzado_night_154
+  - first:
+      213: -2633383215240035300
+    second: TO03_TallerAvanzado_night_155
+  - first:
+      213: -3768955106146063762
+    second: TO03_TallerAvanzado_night_156
+  - first:
+      213: 5148527509989068273
+    second: TO03_TallerAvanzado_night_157
+  - first:
+      213: 379090805607820939
+    second: TO03_TallerAvanzado_night_158
+  - first:
+      213: 6074218666633071220
+    second: TO03_TallerAvanzado_night_159
+  - first:
+      213: 636472427020662023
+    second: TO03_TallerAvanzado_night_160
+  - first:
+      213: 6588976045399480360
+    second: TO03_TallerAvanzado_night_161
+  - first:
+      213: 6675534189019013755
+    second: TO03_TallerAvanzado_night_162
+  - first:
+      213: -7875399062536736534
+    second: TO03_TallerAvanzado_night_163
+  - first:
+      213: -2097571098021196844
+    second: TO03_TallerAvanzado_night_164
+  - first:
+      213: -357125239807042811
+    second: TO03_TallerAvanzado_night_165
+  - first:
+      213: 1708489690330199583
+    second: TO03_TallerAvanzado_night_166
+  - first:
+      213: -5971062194879682236
+    second: TO03_TallerAvanzado_night_167
+  - first:
+      213: 6447306257601482417
+    second: TO03_TallerAvanzado_night_168
+  - first:
+      213: 1650581227936216211
+    second: TO03_TallerAvanzado_night_169
+  - first:
+      213: 2514140823700206361
+    second: TO03_TallerAvanzado_night_170
+  - first:
+      213: -5685471132078797816
+    second: TO03_TallerAvanzado_night_171
+  - first:
+      213: -6111823419066165412
+    second: TO03_TallerAvanzado_night_172
+  - first:
+      213: -124045832791364318
+    second: TO03_TallerAvanzado_night_173
+  - first:
+      213: -5051812916668844937
+    second: TO03_TallerAvanzado_night_174
+  - first:
+      213: -1609360367426851087
+    second: TO03_TallerAvanzado_night_175
+  - first:
+      213: -4904286922191526669
+    second: TO03_TallerAvanzado_night_176
+  - first:
+      213: -4924360598912308986
+    second: TO03_TallerAvanzado_night_177
+  - first:
+      213: -9097156755719747212
+    second: TO03_TallerAvanzado_night_178
+  - first:
+      213: 8928978121694678385
+    second: TO03_TallerAvanzado_night_179
+  - first:
+      213: 915823108252440492
+    second: TO03_TallerAvanzado_night_180
+  - first:
+      213: 5816183206180054649
+    second: TO03_TallerAvanzado_night_181
+  - first:
+      213: -3624073512143682879
+    second: TO03_TallerAvanzado_night_182
+  - first:
+      213: 6307231715769455980
+    second: TO03_TallerAvanzado_night_183
+  - first:
+      213: 6298015715252436867
+    second: TO03_TallerAvanzado_night_184
+  - first:
+      213: 3954666967342195906
+    second: TO03_TallerAvanzado_night_185
+  - first:
+      213: -5207871014483266071
+    second: TO03_TallerAvanzado_night_186
+  - first:
+      213: -2558415700113381741
+    second: TO03_TallerAvanzado_night_187
+  - first:
+      213: -7376607280441621974
+    second: TO03_TallerAvanzado_night_188
+  - first:
+      213: -6981198728649840462
+    second: TO03_TallerAvanzado_night_189
+  - first:
+      213: 7469411231148716506
+    second: TO03_TallerAvanzado_night_190
+  - first:
+      213: 376730001028436065
+    second: TO03_TallerAvanzado_night_191
+  - first:
+      213: 1435131407221334016
+    second: TO03_TallerAvanzado_night_192
+  - first:
+      213: 8371029393919868267
+    second: TO03_TallerAvanzado_night_193
+  - first:
+      213: -2973157935240692047
+    second: TO03_TallerAvanzado_night_194
+  - first:
+      213: -3515275015962731336
+    second: TO03_TallerAvanzado_night_195
+  - first:
+      213: 4426073135906652269
+    second: TO03_TallerAvanzado_night_196
+  - first:
+      213: -5868186059090332200
+    second: TO03_TallerAvanzado_night_197
+  - first:
+      213: -3182922575240980448
+    second: TO03_TallerAvanzado_night_198
+  - first:
+      213: -4981145045151725662
+    second: TO03_TallerAvanzado_night_199
+  - first:
+      213: -530696566667040893
+    second: TO03_TallerAvanzado_night_200
+  - first:
+      213: 2238613521442060365
+    second: TO03_TallerAvanzado_night_201
+  - first:
+      213: 812288617310116166
+    second: TO03_TallerAvanzado_night_202
+  - first:
+      213: 9219066578651224882
+    second: TO03_TallerAvanzado_night_203
+  - first:
+      213: 2034573545459886214
+    second: TO03_TallerAvanzado_night_204
+  - first:
+      213: -8099091105086465403
+    second: TO03_TallerAvanzado_night_205
+  - first:
+      213: -8907613137546928535
+    second: TO03_TallerAvanzado_night_206
+  - first:
+      213: -6552548280854880216
+    second: TO03_TallerAvanzado_night_207
+  - first:
+      213: -2295907882557993051
+    second: TO03_TallerAvanzado_night_208
+  - first:
+      213: 1280962708122731923
+    second: TO03_TallerAvanzado_night_209
+  - first:
+      213: -5388191152085338698
+    second: TO03_TallerAvanzado_night_210
+  - first:
+      213: -3002666206676692117
+    second: TO03_TallerAvanzado_night_211
+  - first:
+      213: -1781121872830854705
+    second: TO03_TallerAvanzado_night_212
+  - first:
+      213: 921132558273681211
+    second: TO03_TallerAvanzado_night_213
+  - first:
+      213: 7678341728681134693
+    second: TO03_TallerAvanzado_night_214
+  - first:
+      213: -6355907255339447477
+    second: TO03_TallerAvanzado_night_215
+  - first:
+      213: 8615690302286525048
+    second: TO03_TallerAvanzado_night_216
+  - first:
+      213: 7592779983636160068
+    second: TO03_TallerAvanzado_night_217
+  - first:
+      213: 6299276847005885997
+    second: TO03_TallerAvanzado_night_218
+  - first:
+      213: 194584336036180957
+    second: TO03_TallerAvanzado_night_219
+  - first:
+      213: 1760601357175054209
+    second: TO03_TallerAvanzado_night_220
+  - first:
+      213: 2404563003999774941
+    second: TO03_TallerAvanzado_night_221
+  - first:
+      213: -8675806762915217814
+    second: TO03_TallerAvanzado_night_222
+  - first:
+      213: 2141893421419078362
+    second: TO03_TallerAvanzado_night_223
+  - first:
+      213: -4688246600996291507
+    second: TO03_TallerAvanzado_night_224
+  - first:
+      213: -7164999265188931815
+    second: TO03_TallerAvanzado_night_225
+  - first:
+      213: -6427643320134777755
+    second: TO03_TallerAvanzado_night_226
+  - first:
+      213: -3383947681914271343
+    second: TO03_TallerAvanzado_night_227
+  - first:
+      213: -215241085977510034
+    second: TO03_TallerAvanzado_night_228
+  - first:
+      213: 1767307317603337478
+    second: TO03_TallerAvanzado_night_229
+  - first:
+      213: -837730148169564471
+    second: TO03_TallerAvanzado_night_230
+  - first:
+      213: 6557356374586905716
+    second: TO03_TallerAvanzado_night_231
+  - first:
+      213: -1814896218941190477
+    second: TO03_TallerAvanzado_night_232
+  - first:
+      213: -7873637927575670310
+    second: TO03_TallerAvanzado_night_233
+  - first:
+      213: -5486363750132353729
+    second: TO03_TallerAvanzado_night_234
+  - first:
+      213: -3778802046824616727
+    second: TO03_TallerAvanzado_night_235
+  - first:
+      213: 6835942147863389673
+    second: TO03_TallerAvanzado_night_236
+  - first:
+      213: -2700176028024521396
+    second: TO03_TallerAvanzado_night_237
+  - first:
+      213: -8106594583324776928
+    second: TO03_TallerAvanzado_night_238
+  - first:
+      213: 8902258887893576926
+    second: TO03_TallerAvanzado_night_239
+  - first:
+      213: -2373220581624985490
+    second: TO03_TallerAvanzado_night_240
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 229
+        width: 113
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ec03dc73565e730800000000000000
+      internalID: 4027736732092911240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 311
+        width: 218
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bfa34b63f9b0b2a0800000000000000
+      internalID: -6723669788536361038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_2
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 314
+        width: 174
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930377f949c8006d0800000000000000
+      internalID: -3026264379634536391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_3
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 482
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609fb09e152bbf9c0800000000000000
+      internalID: -3892321388059690746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_4
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 314
+        width: 58
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e0468891db0f940800000000000000
+      internalID: 5327966276539387400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_5
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 452
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa41700ecc2e95d0800000000000000
+      internalID: -3053954234028307801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_6
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 446
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a4471e580219200800000000000000
+      internalID: 184964819084135069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_7
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 441
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea99b3b16e8728ee0800000000000000
+      internalID: -1260312016015615570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_8
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 442
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5a71739e2df0230800000000000000
+      internalID: 3607333725640566184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_9
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 443
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1203c8ed31ba41a70800000000000000
+      internalID: 8796844073987878945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 421
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac5210fba97ed0c0800000000000000
+      internalID: -4549064794223518555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_11
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 427
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92087fd9ffe23baf0800000000000000
+      internalID: -381909867994578903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_12
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 421
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0148b89501fb5edd0800000000000000
+      internalID: -2457347944718040048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_13
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 425
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d1d89f063cb29c0800000000000000
+      internalID: -3950849426816426614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 414
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003c308a189830630800000000000000
+      internalID: 3892105692940845824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_15
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 412
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b2659b57bd5eaa00800000000000000
+      internalID: 769655628423848631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_16
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 418
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eeca2b98295b5eb0800000000000000
+      internalID: -4730088952685736220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_17
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 412
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c314d32b0613c31d0800000000000000
+      internalID: -3369764129802993348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_18
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 403
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ba2dea2f8e02f50800000000000000
+      internalID: 6854734761870666553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_19
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 401
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5723a2a06442c0440800000000000000
+      internalID: 4903333977536475765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_20
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 401
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a4eb87dac8c9880800000000000000
+      internalID: -8602846511501522421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_21
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 403
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386c7db769c2f6fc0800000000000000
+      internalID: -3499529360609130877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_22
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 398
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a92b3af1b609d50800000000000000
+      internalID: 6742006425808181883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_23
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 393
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36ac06cdcb5b6840800000000000000
+      internalID: 5218365532587992635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_24
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 389
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 479cbab210c52f630800000000000000
+      internalID: 3959328182509488500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_25
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 396
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f145b636d5e2b50f0800000000000000
+      internalID: -1127256303091362785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_26
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 384
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1cf8c488f52a880800000000000000
+      internalID: -8601207299319545346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_27
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 380
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729a432e1d3176b20800000000000000
+      internalID: 3127490258396293415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_28
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 388
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b680419d9095145c0800000000000000
+      internalID: -4233004275920009109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_29
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 384
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4fddb8f01a92d260800000000000000
+      internalID: 7120923358509522767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_30
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 387
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdea20dee1a25e230800000000000000
+      internalID: 3667383783876898527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_31
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 375
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e112a5cfdd6cfdb20800000000000000
+      internalID: 3161464120161214750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_32
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 374
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9bda1392df9f00c0800000000000000
+      internalID: -4607288167016768610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_33
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 380
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d7c89dbbfbe3dd0800000000000000
+      internalID: -2504353529241764510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_34
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 365
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ba577aec4381e80800000000000000
+      internalID: -8207752258705315055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_35
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 371
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85a0b0f0524c0270800000000000000
+      internalID: 8218016335447238029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 373
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581515f62455fcd20800000000000000
+      internalID: 3300950795709665669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_37
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 374
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ae1479c958e2420800000000000000
+      internalID: 2607168141893167656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_38
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 362
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150f7633aa068ead0800000000000000
+      internalID: -2672780094721232815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_39
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 366
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2269db72014f81cd0800000000000000
+      internalID: -2587049635700959710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 361
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a285ae5481ae39fd0800000000000000
+      internalID: -2336266391702054870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_41
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 361
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a097e9c474e4acf0800000000000000
+      internalID: -241817289716428639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_42
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 369
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5bd3ebd611bb4b0800000000000000
+      internalID: -5423722163196807737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_43
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 369
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453899cb104516ef0800000000000000
+      internalID: -116719748899044524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_44
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 366
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e7852e95fec1de0800000000000000
+      internalID: -1360949818044154285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_45
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 359
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b387e4e67129291a0800000000000000
+      internalID: -6804215457670858693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_46
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 354
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3b4070293598e70800000000000000
+      internalID: 9117910807236359160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_47
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 362
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f484372240288590800000000000000
+      internalID: -7671846496727956236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_48
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 353
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873286e22c79b2130800000000000000
+      internalID: 3543092392115053432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_49
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 357
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334cf665fa2b75800800000000000000
+      internalID: 601145541416436787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_50
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 357
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ad841164fd8d2f0800000000000000
+      internalID: -947762229530797442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_51
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 350
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: facc1c3047ff07330800000000000000
+      internalID: 3706743367070239919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_52
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 344
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5581d0e6ea28d4ad0800000000000000
+      internalID: -2716371314552268715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_53
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 350
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d78a6fc51df0caf0800000000000000
+      internalID: -378024098583115823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_54
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 355
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9b9e176eb700da0800000000000000
+      internalID: -5980644075464181321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_55
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 348
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e419209d4da8506a0800000000000000
+      internalID: -6483623441751436978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_56
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 348
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 230b62e15e8625300800000000000000
+      internalID: 239369063466709042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_57
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 347
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6981480c5cca24cb0800000000000000
+      internalID: -4881149080777779050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_58
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16eeaa634af68d190800000000000000
+      internalID: -7937471592158007711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_59
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 343
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27205e4366c9f1bc0800000000000000
+      internalID: -3810154796944129422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_60
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 337
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73682569ecd477eb0800000000000000
+      internalID: -4722220134594083273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_61
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 332
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dcfbd192a9c5f300800000000000000
+      internalID: 285355851476892880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_62
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 343
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a5144603c0f45e0800000000000000
+      internalID: -1923305113883944395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_63
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 342
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3a513a784a24460800000000000000
+      internalID: 7224517654719341531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_64
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 348
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab1d67b646a6d590800000000000000
+      internalID: -7649744094386906202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_65
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 341
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018bdf07c50277ab0800000000000000
+      internalID: -5010500479021631472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_66
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 336
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2c98ad40704a420800000000000000
+      internalID: 2640242998973678246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_67
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 322
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7296a8903a201f440800000000000000
+      internalID: 4967754763229358375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_68
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 338
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2e7e8204bb766b0800000000000000
+      internalID: -5303064151966883126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_69
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 340
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ebbd67fc97ebd60800000000000000
+      internalID: 7907891927668473363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_70
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 338
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648aa187fa89c9c60800000000000000
+      internalID: 7826298131864791110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_71
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 335
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b802c1c799e91e0800000000000000
+      internalID: -2189143610528593000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_72
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 338
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7470c0ef1f8cf80800000000000000
+      internalID: -8085947057517934604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_73
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 332
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03c9b6b4b00e7050800000000000000
+      internalID: 5800074146259518218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_74
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 318
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572dce9cd0904c310800000000000000
+      internalID: 1424273336982884981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_75
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 331
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393646e006bc3cb40800000000000000
+      internalID: 5459430786721932179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_76
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 328
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786d8dcefaef86b70800000000000000
+      internalID: 8892637495789409927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_77
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 325
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95dbb6587d0adb0d0800000000000000
+      internalID: -3405388895705383591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_78
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 328
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af813a95662d00b0800000000000000
+      internalID: -5760906130516504663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_79
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 283
+        width: 83
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0855c2ef28a754a0800000000000000
+      internalID: -6604625404894029810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_80
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 329
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7acb2c2ac6a74ed40800000000000000
+      internalID: 5612745642616208551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_81
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 321
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d692a7040dfa6e0800000000000000
+      internalID: -1824010348715741940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_82
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 332
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98fa4cf37fa28a810800000000000000
+      internalID: 1776717294412803977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_83
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 331
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69b2a3dd315fbb80800000000000000
+      internalID: -8376887455900321430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_84
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 323
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fec0b3a2dd0fe1e0800000000000000
+      internalID: -2166497697401352463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_85
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 317
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88f43cb6c473f2a0800000000000000
+      internalID: -6704887023314601842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_86
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 317
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f0fe20e988cb5c0800000000000000
+      internalID: -4198330540380713154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_87
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 324
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28324f69e3138430800000000000000
+      internalID: 3783890005236267055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_88
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 320
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f677459a85ab87740800000000000000
+      internalID: 5150071063858935663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_89
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 305
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc94fce6fafa6fe40800000000000000
+      internalID: 5689928347242416587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 659fa61ce0d9455c0800000000000000
+      internalID: -4227581463493936810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_91
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 299
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac244c2213ae7d10800000000000000
+      internalID: 2125315372612857001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_92
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 314
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc80b5608d9eb2e0800000000000000
+      internalID: -2108074400775369536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_93
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 279
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75536c7a24fb610c0800000000000000
+      internalID: -4605283275936221865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_94
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 314
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f468bc70e67699780800000000000000
+      internalID: -8675789484877707697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_95
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 305
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95765e23ad405ed0800000000000000
+      internalID: -2427354835900271201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_96
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 316
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef3332173a6a4730800000000000000
+      internalID: 3984113605123719137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_97
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 312
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9456ea723aa8d4370800000000000000
+      internalID: 8308449320918476105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_98
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 315
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6fcc4ae8cb201290800000000000000
+      internalID: -7921783602620346518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_99
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 313
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a3935458d956a00800000000000000
+      internalID: 749178108744645258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_100
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 303
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1baebf8f377be43e0800000000000000
+      internalID: -2067513470190097743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_101
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 314
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a14430b738597bc0800000000000000
+      internalID: -3784897015625530968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_102
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 311
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c3e5c30f6c12c760800000000000000
+      internalID: 7476569594518692800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_103
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 308
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ac50dc05331d250800000000000000
+      internalID: 5967607403372726823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_104
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 305
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77677f24e91eddf90800000000000000
+      internalID: -6927132581981358473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_105
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 303
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 332a75b0f1f0ced80800000000000000
+      internalID: -8220178593849302477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_106
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 303
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7680cfbbd79adcb0800000000000000
+      internalID: -4838387879585479045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_107
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 294
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c051c7dd9460d80800000000000000
+      internalID: -8284853248883094450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_108
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 218
+        width: 72
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc59a54133018790800000000000000
+      internalID: -7529733591829750606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_109
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 274
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23930f519dbcc40c0800000000000000
+      internalID: -4590069786960971470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_110
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 264
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8b87f5e9795a1b0800000000000000
+      internalID: -5645939851376674590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_111
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 266
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eefd4784303fd16f0800000000000000
+      internalID: -712145970628599826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_112
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 250
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956cbfd78b5fef310800000000000000
+      internalID: 1440859103541577305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_113
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4287be292cea90240800000000000000
+      internalID: 4758526632005433380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_114
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 228
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d6582764957bf00800000000000000
+      internalID: 1132471990410898770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_115
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d73c8e25e79150b0800000000000000
+      internalID: -5741641039336425511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_116
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 194
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03157d9c9c3c7f9b0800000000000000
+      internalID: -5046349586003177168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_117
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 203
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a44ba0b4be9f64a0800000000000000
+      internalID: -6597880430179171168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_118
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 147
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237486c932f0cd140800000000000000
+      internalID: 4745684752964011826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_119
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 190
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2759ec840522ed5e0800000000000000
+      internalID: -1883029865980062350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_120
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 174
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b390c20ea5600c860800000000000000
+      internalID: 7548039962850756923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_121
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 168
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7631e509b2d2a0b0800000000000000
+      internalID: -5718776884697680259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_122
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c8ddf1faf9bd1d0800000000000000
+      internalID: -3324888325380273138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_123
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 63
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc3096661a1ffb60800000000000000
+      internalID: 7781967364631837882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_124
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 104
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0914be1a1047b6a10800000000000000
+      internalID: 1903742817854505360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_125
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 126
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecad305be3cc34c40800000000000000
+      internalID: 5495460540019104462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_126
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 80
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311ef8317f0467220800000000000000
+      internalID: 2483243674470703379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_127
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 77
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42df97136d77c85b0800000000000000
+      internalID: -5364781294268318428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_128
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 552f3c2d3eca2d210800000000000000
+      internalID: 1356336532285551189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_129
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 81
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fcbc90b8d79c310800000000000000
+      internalID: 1425808793157750594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_130
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 83
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e202eb6743ab16a0800000000000000
+      internalID: -6477404111894347036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_131
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 77
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa345d7a960573710800000000000000
+      internalID: 1672894201308988330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_132
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 78
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1cc98d27a7d987c0800000000000000
+      internalID: -4068483675329016806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_133
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 85
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f68c10b9f64a9d0800000000000000
+      internalID: -2763961559758115040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_134
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 70
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e933a6089f34a80800000000000000
+      internalID: -8483662943102984588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_135
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 77
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c8ae86f5c600520800000000000000
+      internalID: 2666250136441228294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_136
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 81
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c3e783c0b9f0140800000000000000
+      internalID: 4688136213905685581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_137
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbe362362df59ff0800000000000000
+      internalID: -29839482012046342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_138
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 83
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c4f6392a768b160800000000000000
+      internalID: 7041491965349678193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_139
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 80
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3354be29eab1ccd40800000000000000
+      internalID: 5605886072772576563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_140
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 70
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d1ff5701b872cbf0800000000000000
+      internalID: -305549122979499560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_141
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 72
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705d82546d67ab2b0800000000000000
+      internalID: -5568007326634814201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_142
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 72
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a748ffa642f25d0800000000000000
+      internalID: -3085207177753494936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_143
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 67
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021a1282bb6b63fb0800000000000000
+      internalID: -4668343048774508256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_144
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 73
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c015cb5def17b120800000000000000
+      internalID: 2429445628297023681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_145
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 76
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428cd59cfed30f2a0800000000000000
+      internalID: -6705791745069823964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_146
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 75
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e10b37dffd2f8fa0800000000000000
+      internalID: -5796363618551660059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_147
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 69
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f127d7575506a90800000000000000
+      internalID: -7322759031000260709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_148
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 66
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd210d80f1095c660800000000000000
+      internalID: 7405483625246888671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_149
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 69
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfedbd4234401f000800000000000000
+      internalID: 67840155814977277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_150
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 67
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb8df3649ee46e60800000000000000
+      internalID: 7954745162943269860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_151
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 75
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c6baff07e79e4c0800000000000000
+      internalID: -4257732948911231995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_152
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 76
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c284802560add60800000000000000
+      internalID: 7915646244453100582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_153
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 67
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf56d9db8f87cb830800000000000000
+      internalID: 4088275571473999356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_154
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 66
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391b3813896e710d0800000000000000
+      internalID: -3452037048016064109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_155
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 69
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1444220be7547bd0800000000000000
+      internalID: -2633383215240035300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_156
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 69
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ae4cbbc4bf1bbc0800000000000000
+      internalID: -3768955106146063762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_157
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 71
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd89350e7e337740800000000000000
+      internalID: 5148527509989068273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_158
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 69
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8eeed5441dc24500800000000000000
+      internalID: 379090805607820939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_159
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 72
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a06b8d1b5fb4450800000000000000
+      internalID: 6074218666633071220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_160
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 63
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705b5e9dc4435d800800000000000000
+      internalID: 636472427020662023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_161
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 61
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828189badceb07b50800000000000000
+      internalID: 6588976045399480360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_162
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 66
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b722476f9f244ac50800000000000000
+      internalID: 6675534189019013755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_163
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 63
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0bd0d3746f4b290800000000000000
+      internalID: -7875399062536736534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_164
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 58
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db0253233ee3e2e0800000000000000
+      internalID: -2097571098021196844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_165
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 60
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b99fc8c7c3b0bf0800000000000000
+      internalID: -357125239807042811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_166
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 58
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f167c864256c5b710800000000000000
+      internalID: 1708489690330199583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_167
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 63
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449ae6ed196822da0800000000000000
+      internalID: -5971062194879682236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_168
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 61
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be4d7ac1ee697950800000000000000
+      internalID: 6447306257601482417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_169
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 61
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394f014b1ea08e610800000000000000
+      internalID: 1650581227936216211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_170
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 53
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91375f732c504e220800000000000000
+      internalID: 2514140823700206361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_171
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 63
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c84b7d0262911b0800000000000000
+      internalID: -5685471132078797816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_172
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 58
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57d5a07bf07e2ba0800000000000000
+      internalID: -6111823419066165412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_173
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 63
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d6a98e8fc474ef0800000000000000
+      internalID: -124045832791364318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_174
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 61
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 774393efaea54e9b0800000000000000
+      internalID: -5051812916668844937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_175
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 60
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe2ee7c5476aa9e0800000000000000
+      internalID: -1609360367426851087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_176
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 60
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f42e2e370970fbb0800000000000000
+      internalID: -4904286922191526669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_177
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 49
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609e6eb202829abb0800000000000000
+      internalID: -4924360598912308986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_178
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 59
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4798745212860c180800000000000000
+      internalID: -9097156755719747212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_179
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 56
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d88de3b4a1aeb70800000000000000
+      internalID: 8928978121694678385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_180
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 52
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca71b74c348a5bc00800000000000000
+      internalID: 915823108252440492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_181
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 52
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97664f08fcb37b050800000000000000
+      internalID: 5816183206180054649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_182
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 38
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c206c48754b4bdc0800000000000000
+      internalID: -3624073512143682879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_183
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 35
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65148e04d9c78750800000000000000
+      internalID: 6307231715769455980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_184
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 56
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ff279bceb076750800000000000000
+      internalID: 6298015715252436867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_185
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 47
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c4276177acc1e630800000000000000
+      internalID: 3954666967342195906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_186
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 55
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5fba1a7ece9b7b0800000000000000
+      internalID: -5207871014483266071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_187
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 51
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 396a5fec97eae7cd0800000000000000
+      internalID: -2558415700113381741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_188
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 59
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2287b9e2c601a990800000000000000
+      internalID: -7376607280441621974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_189
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 42
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8ea688ebccd1f90800000000000000
+      internalID: -6981198728649840462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_190
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 52
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1bee9a0fda8a760800000000000000
+      internalID: 7469411231148716506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_191
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 47
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 160588f90f96a3500800000000000000
+      internalID: 376730001028436065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_192
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 51
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0002f65496c9ae310800000000000000
+      internalID: 1435131407221334016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_193
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 40
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d72f4d1eedb2470800000000000000
+      internalID: 8371029393919868267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_194
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 48
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be38d04c983db6d0800000000000000
+      internalID: -2973157935240692047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_195
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 48
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bc5cb96ffb373fc0800000000000000
+      internalID: -3515275015962731336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_196
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 48
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d608d9711129c6d30800000000000000
+      internalID: 4426073135906652269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_197
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 40
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d57508ced3009ea0800000000000000
+      internalID: -5868186059090332200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_198
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 39
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028903b18ccf3d3d0800000000000000
+      internalID: -3182922575240980448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_199
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 42
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7c80109fa6fdab0800000000000000
+      internalID: -4981145045151725662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_200
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 45
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387aa4cc84692a8f0800000000000000
+      internalID: -530696566667040893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_201
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 30
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48b0f61327211f10800000000000000
+      internalID: 2238613521442060365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_202
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 44
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649dcd99134d54b00800000000000000
+      internalID: 812288617310116166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_203
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 38
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b9e256534b0ff70800000000000000
+      internalID: 9219066578651224882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_204
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 37
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6882b862cd14c3c10800000000000000
+      internalID: 2034573545459886214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_205
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 41
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a9bcdfc8f3a9f80800000000000000
+      internalID: -8099091105086465403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_206
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 37
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96e99e3cb0dc16480800000000000000
+      internalID: -8907613137546928535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_207
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 43
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8206c023e0ca015a0800000000000000
+      internalID: -6552548280854880216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_208
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 35
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af8c1fe1fb4320e0800000000000000
+      internalID: -2295907882557993051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_209
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 29
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3958d24dbc4e6c110800000000000000
+      internalID: 1280962708122731923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_210
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 31
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5fc0ee1bc4935b0800000000000000
+      internalID: -5388191152085338698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_211
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 33
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6357fb6ef26456d0800000000000000
+      internalID: -3002666206676692117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_212
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 26
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc90d3ce71f2847e0800000000000000
+      internalID: -1781121872830854705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_213
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 27
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3713fe6e2588cc00800000000000000
+      internalID: 921132558273681211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_214
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 35
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a0912ee13fe8a60800000000000000
+      internalID: 7678341728681134693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_215
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 25
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b0a2cb6084bc7a0800000000000000
+      internalID: -6355907255339447477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_216
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 27
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 872f09a9ea4119770800000000000000
+      internalID: 8615690302286525048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_217
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 21
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e5456ba29fe5960800000000000000
+      internalID: 7592779983636160068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_218
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 21
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26e0a7dae68b6750800000000000000
+      internalID: 6299276847005885997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_219
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 23
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3ba443c6d43b200800000000000000
+      internalID: 194584336036180957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_220
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 20
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f5d753b99ee6810800000000000000
+      internalID: 1760601357175054209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_221
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 23
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8e37def49be5120800000000000000
+      internalID: 2404563003999774941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_222
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 19
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6eb18c27b7599780800000000000000
+      internalID: -8675806762915217814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_223
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 21
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad22e62f7b889bd10800000000000000
+      internalID: 2141893421419078362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_224
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 20
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4cfe284e8000feb0800000000000000
+      internalID: -4688246600996291507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_225
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 24
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9179a7e412fc09c90800000000000000
+      internalID: -7164999265188931815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_226
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 22
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5644478947c6cc6a0800000000000000
+      internalID: -6427643320134777755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_227
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1994ef0238dc901d0800000000000000
+      internalID: -3383947681914271343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_228
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 20
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6fbd396f5f430df0800000000000000
+      internalID: -215241085977510034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_229
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 16
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60502ba44acb68810800000000000000
+      internalID: 1767307317603337478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_230
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 17
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ceb7b46ed8cf54f0800000000000000
+      internalID: -837730148169564471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_231
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 14
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47455ec51e8600b50800000000000000
+      internalID: 6557356374586905716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_232
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 4
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be8fcd218130d6e0800000000000000
+      internalID: -1814896218941190477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_233
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 9
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad13fcc65083bb290800000000000000
+      internalID: -7873637927575670310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_234
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 4
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35f7ccbc358cd3b0800000000000000
+      internalID: -5486363750132353729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_235
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 5
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ecef723f8ffe8bc0800000000000000
+      internalID: -3778802046824616727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_236
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 5
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5a4844a252ede50800000000000000
+      internalID: 6835942147863389673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_237
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 7
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4db29a653c078ad0800000000000000
+      internalID: -2700176028024521396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_238
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 7
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02622d25d279f7f80800000000000000
+      internalID: -8106594583324776928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_239
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edce577da4d2b8b70800000000000000
+      internalID: 8902258887893576926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_night_240
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68c8927470a01fd0800000000000000
+      internalID: -2373220581624985490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -24,7 +24,7 @@ namespace Colonia09.Presentation
         {
             public CampaignSector Sector;
             public Button Button;
-            public RectTransform Tag, DevFill;
+            public RectTransform Tag, DevFill, Details;
             public GameObject DevBar;
             public Image Ring, Icon, StatusIcon;
             public Sprite ZoneSprite;
@@ -170,8 +170,7 @@ namespace Colonia09.Presentation
 
             foreach (var sector in CampaignData.Sectors) mapNodes.Add(BuildNode(sector));
             BuildResourceBar(safe);
-            BuildMapHint(safe);
-            mapHint.transform.parent.gameObject.SetActive(false);  // The access cards say it now; more map stays visible.
+            BuildOverviewButton(safe);
             BuildAccessCards(safe);
             BuildStages(safe);
             campaignMap.SetActive(false);
@@ -198,7 +197,7 @@ namespace Colonia09.Presentation
 
         RectTransform mapTags, mapHeader, mapStrip, mapCards;
         Image mapTopFill, mapBottomFill;
-        Text mapHint;
+        Text overviewCaption;
 
         /// <summary>Sizes the solid bands so they run from each screen edge to the inner edge of the header and cards.</summary>
         void FitMapBands()
@@ -216,16 +215,18 @@ namespace Colonia09.Presentation
             game.ColonyMap.SetViewInsets(mapTopFill.rectTransform.sizeDelta.y * scale, mapBottomFill.rectTransform.sizeDelta.y * scale);
         }
 
-        void BuildMapHint(RectTransform safe)
+        void BuildOverviewButton(RectTransform safe)
         {
-            var hint = Rt("Hint", safe);
-            hint.anchorMin = new Vector2(.05f, 0); hint.anchorMax = new Vector2(.95f, 0); hint.pivot = new Vector2(.5f, 0);
-            hint.sizeDelta = new Vector2(0, 60); hint.anchoredPosition = new Vector2(0, 236);
-            var bg = hint.gameObject.AddComponent<Image>();
-            bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = new Color(.02f, .06f, .09f, .78f); bg.raycastTarget = false;
-            mapHint = Label(hint, "", 24, Muted, TextAnchor.MiddleCenter);
-            mapHint.resizeTextForBestFit = true; mapHint.resizeTextMinSize = 15; mapHint.resizeTextMaxSize = 24;
-            mapHint.rectTransform.offsetMin = new Vector2(14, 0); mapHint.rectTransform.offsetMax = new Vector2(-14, 0);
+            var overview = TextButton(safe, "Ver isla", 26, PanelLight, Cyan, () =>
+            {
+                if (!game.ColonyMap.Distant) game.ColonyMap.Overview();
+                else game.ColonyMap.Focus(System.Array.Find(CampaignData.Sectors, s => !SaveGame.Completed(s.Id) && CampaignDirector.Unlocked(s)) ?? CampaignData.Sectors[7]);
+            });
+            var rt = (RectTransform)overview.transform;
+            rt.anchorMin = rt.anchorMax = rt.pivot = new Vector2(0, 1);
+            rt.sizeDelta = new Vector2(168, 82);
+            rt.anchoredPosition = new Vector2(16, -246);
+            overviewCaption = overview.GetComponentInChildren<Text>();
         }
 
         // ---- The three access cards ---------------------------------------------------
@@ -434,21 +435,23 @@ namespace Colonia09.Presentation
             icon.rectTransform.anchorMin = icon.rectTransform.anchorMax = new Vector2(0, .5f); icon.rectTransform.pivot = new Vector2(0, .5f);
             icon.rectTransform.sizeDelta = new Vector2(70, 70); icon.rectTransform.anchoredPosition = new Vector2(10, 0);
             node.Icon = icon;
-            node.Caption = Label(tag, $"{sector.Number} · {sector.Name}", 27, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
+            node.Details = Rt("Details", tag);
+            Stretch(node.Details);
+            node.Caption = Label(node.Details, $"{sector.Number} · {sector.Name}", 27, Txt, TextAnchor.MiddleLeft, FontStyle.Bold);
             node.Caption.rectTransform.anchorMin = new Vector2(0, .45f);
             node.Caption.resizeTextForBestFit = true; node.Caption.resizeTextMinSize = 16; node.Caption.resizeTextMaxSize = 27;
             node.Caption.rectTransform.offsetMin = new Vector2(88, 0); node.Caption.rectTransform.offsetMax = new Vector2(-10, -4);
             // Bottom row: stars, a check or padlock, then the zone's state. RefreshMap lays it out.
-            node.StatusIcon = Rt("Status", tag).gameObject.AddComponent<Image>();
+            node.StatusIcon = Rt("Status", node.Details).gameObject.AddComponent<Image>();
             node.StatusIcon.preserveAspect = true; node.StatusIcon.raycastTarget = false;
             node.StatusIcon.rectTransform.anchorMin = node.StatusIcon.rectTransform.anchorMax = new Vector2(0, .25f);
             node.StatusIcon.rectTransform.pivot = new Vector2(0, .5f); node.StatusIcon.rectTransform.sizeDelta = new Vector2(26, 26);
-            node.State = Label(tag, "", 20, Muted, TextAnchor.MiddleLeft, FontStyle.Bold);
+            node.State = Label(node.Details, "", 20, Muted, TextAnchor.MiddleLeft, FontStyle.Bold);
             node.State.rectTransform.anchorMax = new Vector2(1, .45f);
             node.State.rectTransform.offsetMin = new Vector2(88, 6); node.State.rectTransform.offsetMax = new Vector2(-10, 0);
             node.State.resizeTextForBestFit = true; node.State.resizeTextMinSize = 13; node.State.resizeTextMaxSize = 20;
             // Development bar along the bottom edge of the tag.
-            var dev = Rt("Development", tag).gameObject.AddComponent<Image>();
+            var dev = Rt("Development", node.Details).gameObject.AddComponent<Image>();
             dev.sprite = rounded; dev.type = Image.Type.Sliced; dev.color = new Color(.1f, .2f, .26f, 1); dev.raycastTarget = false;
             dev.rectTransform.anchorMin = new Vector2(0, 0); dev.rectTransform.anchorMax = new Vector2(1, 0); dev.rectTransform.pivot = new Vector2(.5f, 0);
             dev.rectTransform.sizeDelta = new Vector2(-24, 9); dev.rectTransform.anchoredPosition = new Vector2(0, 5);
@@ -459,7 +462,7 @@ namespace Colonia09.Presentation
             node.DevFill.anchorMin = Vector2.zero; node.DevFill.anchorMax = new Vector2(0, 1); node.DevFill.offsetMin = node.DevFill.offsetMax = Vector2.zero;
             for (int i = 0; i < 3; i++)
             {
-                var s = Rt("Star", tag).gameObject.AddComponent<Image>();
+                var s = Rt("Star", node.Details).gameObject.AddComponent<Image>();
                 s.sprite = starSprite; s.raycastTarget = false;
                 s.rectTransform.anchorMin = s.rectTransform.anchorMax = new Vector2(0, .25f); s.rectTransform.pivot = new Vector2(0, .5f);
                 s.rectTransform.sizeDelta = new Vector2(26, 26); s.rectTransform.anchoredPosition = new Vector2(88 + i * 27, 0);
@@ -556,6 +559,12 @@ namespace Colonia09.Presentation
                     || SaveGame.Completed(node.Sector.Id) && !Colony.IsConnected(node.Sector.Id);
                 float pulse = Mathf.PingPong(Time.unscaledTime * 1.4f, 1);
                 node.Ring.color = next ? new Color(Gold.r, Gold.g, Gold.b, .4f + .6f * pulse) : SaveGame.Stars(node.Sector.Id) > 0 ? new Color(Green.r, Green.g, Green.b, .6f) : new Color(1, 1, 1, .08f);
+                bool compact = game.ColonyMap.Distant;
+                if (node.Details.gameObject.activeSelf == compact)
+                {
+                    node.Details.gameObject.SetActive(!compact);
+                    node.Tag.sizeDelta = compact ? new Vector2(90, 82) : new Vector2(400, 100);
+                }
                 node.Tag.localScale = Vector3.one * Mathf.Clamp(game.ColonyMap.TagScale, .7f, 1.1f);
                 var link = Colony.LinkWork(node.Sector.Id);
                 if (link != null)
@@ -570,7 +579,7 @@ namespace Colonia09.Presentation
                     node.Ring.color = new Color(Red.r, Red.g, Red.b, .45f + .55f * pulse);
             }
             PlaceWorkTags();
-            mapHint.text = game.ColonyMap.Hint;
+            overviewCaption.text = game.ColonyMap.Distant ? "Ver sector" : "Ver isla";
         }
 
         // ---- Mission briefing ---------------------------------------------------------

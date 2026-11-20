@@ -203,8 +203,69 @@ namespace Colonia09.Simulation
         public const int ZoneRadius = 4;
         static readonly int[,] ZoneCenters = { { 51, 51 }, { 53, 35 }, { 30, 48 }, { 39, 25 }, { 18, 35 }, { 25, 16 }, { 9, 21 }, { 9, 7 } };
 
-        /// <summary>The zone's landmark stands on 3 x 3 tiles of its far quarter, beside the two streets.</summary>
-        public static (int x, int y) LandmarkCenter(CampaignSector sector) => (ZoneCenters[sector.Number - 1, 0] - 2, ZoneCenters[sector.Number - 1, 1] - 2);
+        /// <summary>The zone's landmark stands on its own plaza just behind the zone's far corner, outside the lots.</summary>
+        public static (int x, int y) LandmarkCenter(CampaignSector sector) => (ZoneCenters[sector.Number - 1, 0] - 6, ZoneCenters[sector.Number - 1, 1] - 6);
+
+        /// <summary>
+        /// Lots are 2 x 2 tiles: four in each quarter, sixteen per zone. A lot is named by its anchor, the tile with the
+        /// lowest x and y. Zones with fewer lots than sixteen leave their outer corners as gardens, in this order.
+        /// </summary>
+        static readonly (int u, int v)[] GardenCorners = { (3, 3), (3, -4), (-4, 3), (-4, -4) };
+
+        /// <summary>The anchor offset (from the zone center) of the lot holding this offset; streets have none.</summary>
+        static int LotSide(int offset) => offset > 0 ? (offset <= 2 ? 1 : 3) : (offset >= -2 ? -2 : -4);
+
+        /// <summary>The anchor tile of the lot under (x, y), or null on the streets or outside the zones.</summary>
+        public static (int x, int y)? LotAnchor(int x, int y)
+        {
+            var zone = ZoneAt(x, y);
+            if (zone == null) return null;
+            var (cx, cy) = ZoneCenter(zone);
+            if (x == cx || y == cy) return null;
+            return (cx + LotSide(x - cx), cy + LotSide(y - cy));
+        }
+
+        public static bool IsLotAnchor(int x, int y) => LotAnchor(x, y) is (int ax, int ay) && ax == x && ay == y;
+
+        /// <summary>The middle of the lot anchored at (x, y), where its building stands; any other tile is its own middle.</summary>
+        public static (float x, float y) LotCenter(int x, int y) => IsLotAnchor(x, y) ? (x + .5f, y + .5f) : (x, y);
+
+        static bool Garden(CampaignSector zone, int ax, int ay)
+        {
+            var (cx, cy) = ZoneCenter(zone);
+            int gardens = 16 - ColonyData.LotsFor(zone.Id);
+            for (int i = 0; i < gardens && i < GardenCorners.Length; i++)
+                if (ax - cx == GardenCorners[i].u && ay - cy == GardenCorners[i].v) return true;
+            return false;
+        }
+
+        /// <summary>The anchors of the zone's building lots, from the crossing outwards; gardens are left out.</summary>
+        public static List<(int x, int y)> Lots(CampaignSector zone)
+        {
+            var (cx, cy) = ZoneCenter(zone);
+            var lots = new List<(int x, int y)>();
+            foreach (int v in new[] { -2, 1, -4, 3 })
+                foreach (int u in new[] { -2, 1, -4, 3 })
+                    if (!Garden(zone, cx + u, cy + v)) lots.Add((cx + u, cy + v));
+            lots.Sort((a, b) => Ring(a.x - cx, a.y - cy).CompareTo(Ring(b.x - cx, b.y - cy)));
+            return lots;
+        }
+
+        static int Ring(int u, int v) => (u == -2 || u == 1 ? 0 : 1) + (v == -2 || v == 1 ? 0 : 1);
+
+        /// <summary>The zone nearest to a tile, if the tile lies within reach of it: a zone, its landmark plaza or its surroundings.</summary>
+        public static CampaignSector ZoneNear(float x, float y, float reach = 8)
+        {
+            CampaignSector best = null;
+            float bestDistance = reach;
+            foreach (var s in Sectors)
+            {
+                var (cx, cy) = ZoneCenter(s);
+                float d = System.Math.Max(System.Math.Abs(x - cx), System.Math.Abs(y - cy));
+                if (d <= bestDistance) { best = s; bestDistance = d; }
+            }
+            return best;
+        }
 
         /// <summary>Two streets cross each zone through its center; the walkways between zones arrive along them.</summary>
         public static bool Street(int x, int y)
@@ -228,15 +289,13 @@ namespace Colonia09.Simulation
             return null;
         }
 
-        /// <summary>Tiles that take no building: the streets, the lamps on the corners and the far quarter, kept for the landmark and its yard.</summary>
+        /// <summary>Tiles that take no building: the two streets and the garden lots of the smaller zones.</summary>
         public static bool Reserved(int x, int y)
         {
             var zone = ZoneAt(x, y);
             if (zone == null) return false;
-            var (cx, cy) = ZoneCenter(zone);
-            bool corner = System.Math.Abs(x - cx) == ZoneRadius && System.Math.Abs(y - cy) == ZoneRadius;
-            bool landmark = x < cx && y < cy;
-            return corner || landmark || x == cx || y == cy;
+            var anchor = LotAnchor(x, y);
+            return anchor == null || Garden(zone, anchor.Value.x, anchor.Value.y);
         }
 
         /// <summary>Road tiles from one zone to the next: along x, then along y, outside both zones.</summary>

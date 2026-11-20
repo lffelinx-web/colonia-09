@@ -354,15 +354,15 @@ namespace Colonia09.Presentation
             Check("extractor is started on the tapped tile", extractor?.type == "Extractor" && !ui.PickerOpen);
             Check("a new building rises for a minute before it works", extractor != null && extractor.level == 0 && extractor.pending == 1
                 && System.Math.Abs(Colony.SecondsLeft(extractor.readyTicks) - ColonyData.BuildSeconds(1)) < 5);
-            yield return RealTouch(map.TileScreen(53, 52));
+            yield return RealTouch(map.TileScreen(54, 52));
             ui.PickerButtons[BuildingType.Fortification].onClick.Invoke();
             yield return Frames(2);
             Check("two works can run at the same time", Colony.WorkCount() == 2);
-            yield return RealTouch(map.TileScreen(52, 53));
+            yield return RealTouch(map.TileScreen(52, 54));
             Check("a third work is refused while two are running", ui.PickerOpen && !ui.PickerButtons[BuildingType.Solar].interactable);
             ui.CloseColonySheets();
-            yield return RealTouch(map.TileScreen(49, 49));
-            Check("the ship's tile cannot be built on", !ui.PickerOpen && Colony.At(49, 49) == null);
+            yield return RealTouch(map.TileScreen(51, 49));
+            Check("a street tile cannot be built on", !ui.PickerOpen && Colony.At(51, 49) == null);
             yield return RealTouch(map.TileScreen(52, 52));
             Check("tapping a building under construction opens its card", ui.BuildingInfoOpen && !ui.UpgradeBuildingButton.interactable);
             yield return Frames(30);  // Let the scaffold sparks and timers run.
@@ -377,24 +377,24 @@ namespace Colonia09.Presentation
             // Two minutes later both buildings are done; the map celebrates them.
             Colony.Now = () => DateTime.UtcNow.AddMinutes(2);
             yield return new WaitForSecondsRealtime(1.4f);
-            Check("finished works become level 1 buildings", Colony.At(52, 52)?.level == 1 && Colony.At(53, 52)?.level == 1 && Colony.WorkCount() == 0);
+            Check("finished works become level 1 buildings", Colony.At(52, 52)?.level == 1 && Colony.At(54, 52)?.level == 1 && Colony.WorkCount() == 0);
             yield return Shot($"{shot + 1:00}_colony_done");
             // The new kinds: a works yard (only one, and it speeds every work up) and a farm.
-            yield return RealTouch(map.TileScreen(52, 53));
+            yield return RealTouch(map.TileScreen(52, 54));
             ui.PickerButtons[BuildingType.Works].onClick.Invoke();
             yield return Frames(2);
-            yield return RealTouch(map.TileScreen(52, 50));
-            Check("only one works yard may stand", ui.PickerOpen && !ui.PickerButtons[BuildingType.Works].interactable && Colony.At(52, 53)?.type == "Works");
+            yield return RealTouch(map.TileScreen(52, 49));
+            Check("only one works yard may stand", ui.PickerOpen && !ui.PickerButtons[BuildingType.Works].interactable && Colony.At(52, 54)?.type == "Works");
             ui.PickerButtons[BuildingType.Farm].onClick.Invoke();
             yield return Frames(2);
-            Check("the farm is started", Colony.At(52, 50)?.type == "Farm" && Colony.WorkCount() == 2);
+            Check("the farm is started", Colony.At(52, 49)?.type == "Farm" && Colony.WorkCount() == 2);
             Colony.Now = () => DateTime.UtcNow.AddMinutes(2.5);
             map.Focus(CampaignData.Sectors[0]);
             yield return Frames(8);
             yield return Shot($"{shot + 1:00}_colony_rising");
             Colony.Now = () => DateTime.UtcNow.AddMinutes(4);
             yield return new WaitForSecondsRealtime(1.4f);
-            Check("the works yard makes every work 15 % faster", Colony.At(52, 53)?.level == 1 && Colony.BuildTime(1) == 51 && Colony.BuildTime(3) == 1020);
+            Check("the works yard makes every work 15 % faster", Colony.At(52, 54)?.level == 1 && Colony.BuildTime(1) == 51 && Colony.BuildTime(3) == 1020);
             Check("the farm grows food", Colony.Rates().Food >= 5.5);
             yield return Shot($"{shot + 1:00}_colony_new_kinds");
             ui.SectorButton(2).onClick.Invoke();

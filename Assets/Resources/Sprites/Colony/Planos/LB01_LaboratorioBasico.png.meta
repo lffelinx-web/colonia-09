@@ -1,0 +1,1083 @@
+fileFormatVersion: 2
+guid: 1e85c738cdbf15149a78fdf5eaaf856e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7556464660314438688
+    second: LB01_LaboratorioBasico_0
+  - first:
+      213: -5825094267038131652
+    second: LB01_LaboratorioBasico_1
+  - first:
+      213: 3607269839007616493
+    second: LB01_LaboratorioBasico_2
+  - first:
+      213: -3544594918511306439
+    second: LB01_LaboratorioBasico_3
+  - first:
+      213: 8859751128894435468
+    second: LB01_LaboratorioBasico_4
+  - first:
+      213: -1117438521067972753
+    second: LB01_LaboratorioBasico_5
+  - first:
+      213: 7545454215461671874
+    second: LB01_LaboratorioBasico_6
+  - first:
+      213: -8880392355956936538
+    second: LB01_LaboratorioBasico_7
+  - first:
+      213: 1483649959636394182
+    second: LB01_LaboratorioBasico_8
+  - first:
+      213: -6407086532672597124
+    second: LB01_LaboratorioBasico_9
+  - first:
+      213: -7782645139827741972
+    second: LB01_LaboratorioBasico_10
+  - first:
+      213: 4836369479220092754
+    second: LB01_LaboratorioBasico_11
+  - first:
+      213: 8982102804249365998
+    second: LB01_LaboratorioBasico_12
+  - first:
+      213: 7678961540006498358
+    second: LB01_LaboratorioBasico_13
+  - first:
+      213: 4465769227641140768
+    second: LB01_LaboratorioBasico_14
+  - first:
+      213: 1181092953841240945
+    second: LB01_LaboratorioBasico_15
+  - first:
+      213: 6348633006777579843
+    second: LB01_LaboratorioBasico_16
+  - first:
+      213: -4436480783607252990
+    second: LB01_LaboratorioBasico_17
+  - first:
+      213: 5884943134609202712
+    second: LB01_LaboratorioBasico_18
+  - first:
+      213: -249055235143097909
+    second: LB01_LaboratorioBasico_19
+  - first:
+      213: 4223788373460207378
+    second: LB01_LaboratorioBasico_20
+  - first:
+      213: -1085800808956569437
+    second: LB01_LaboratorioBasico_21
+  - first:
+      213: 5987230350447056286
+    second: LB01_LaboratorioBasico_22
+  - first:
+      213: -1359640044539746420
+    second: LB01_LaboratorioBasico_23
+  - first:
+      213: 6571397488192042853
+    second: LB01_LaboratorioBasico_24
+  - first:
+      213: -3836905743970077846
+    second: LB01_LaboratorioBasico_25
+  - first:
+      213: -1290437580882793796
+    second: LB01_LaboratorioBasico_26
+  - first:
+      213: -1564178832123083660
+    second: LB01_LaboratorioBasico_27
+  - first:
+      213: -6177826241157173365
+    second: LB01_LaboratorioBasico_28
+  - first:
+      213: 3184844586503886248
+    second: LB01_LaboratorioBasico_29
+  - first:
+      213: -8025432687887635857
+    second: LB01_LaboratorioBasico_30
+  - first:
+      213: -2001981762627917012
+    second: LB01_LaboratorioBasico_31
+  - first:
+      213: -690525622809433049
+    second: LB01_LaboratorioBasico_32
+  - first:
+      213: -2076565718787090982
+    second: LB01_LaboratorioBasico_33
+  - first:
+      213: -20113917359828487
+    second: LB01_LaboratorioBasico_34
+  - first:
+      213: 7614778794311507871
+    second: LB01_LaboratorioBasico_35
+  - first:
+      213: -8270781483102022026
+    second: LB01_LaboratorioBasico_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 71
+        width: 101
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02cb5db9294fdd860800000000000000
+      internalID: 7556464660314438688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 95
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a170670ab192fa0800000000000000
+      internalID: -5825094267038131652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_2
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 191
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded87037ec89f0230800000000000000
+      internalID: 3607269839007616493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 207
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9399a71a3b11fcec0800000000000000
+      internalID: -3544594918511306439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_4
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 234
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c807e14f5b824fa70800000000000000
+      internalID: 8859751128894435468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_5
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 9
+        width: 404
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67d765e59f0e70f0800000000000000
+      internalID: -1117438521067972753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_6
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 218
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c31195a1a6d6b860800000000000000
+      internalID: 7545454215461671874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_7
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 417
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0b71dd33282c480800000000000000
+      internalID: -8880392355956936538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_8
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 312
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0662f07cbf69410800000000000000
+      internalID: 1483649959636394182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_9
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 9
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c735cd6aeb47517a0800000000000000
+      internalID: -6407086532672597124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_10
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 38
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceaa5a3ca7d7ef390800000000000000
+      internalID: -7782645139827741972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_11
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 14
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f547bca6c3e1340800000000000000
+      internalID: 4836369479220092754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_12
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 22
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eedc25749e6d6ac70800000000000000
+      internalID: 8982102804249365998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_13
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 9
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63059f3f5d6219a60800000000000000
+      internalID: 7678961540006498358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_14
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 25
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 026bb6ea37999fd30800000000000000
+      internalID: 4465769227641140768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_15
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 12
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b8c68a8c5146010800000000000000
+      internalID: 1181092953841240945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_16
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 37
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3493c4a4510ea1850800000000000000
+      internalID: 6348633006777579843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_17
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 13
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2083e389b347e62c0800000000000000
+      internalID: -4436480783607252990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 9
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e51c5e9948ba150800000000000000
+      internalID: 5884943134609202712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_19
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 14
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc128db459d2b8cf0800000000000000
+      internalID: -249055235143097909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_20
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 27
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2174586a529ed9a30800000000000000
+      internalID: 4223788373460207378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_21
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 9
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8df45cae57ee0f0800000000000000
+      internalID: -1085800808956569437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_22
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 309
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9595d2384ae61350800000000000000
+      internalID: 5987230350447056286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_23
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 22
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87efca4596912de0800000000000000
+      internalID: -1359640044539746420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_24
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 10
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567b491e23b423b50800000000000000
+      internalID: 6571397488192042853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_25
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 31
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63f10efd8290cac0800000000000000
+      internalID: -3836905743970077846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_26
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 307
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbaaaa27bd1771ee0800000000000000
+      internalID: -1290437580882793796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_27
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 32
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4744e1ab3abea4ae0800000000000000
+      internalID: -1564178832123083660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_28
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 10
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f6db3e3c3f34aa0800000000000000
+      internalID: -6177826241157173365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_29
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 193
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5d3630747d23c20800000000000000
+      internalID: 3184844586503886248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_30
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 175
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a26adad7fef9090800000000000000
+      internalID: -8025432687887635857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_31
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 226
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ba0cf91388734e0800000000000000
+      internalID: -2001981762627917012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_32
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 212
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c6328ca92ca66f0800000000000000
+      internalID: -690525622809433049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_33
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad511fa1b7e8e23e0800000000000000
+      internalID: -2076565718787090982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_34
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 186
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1d9bcaf7a88bff0800000000000000
+      internalID: -20113917359828487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_35
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 160
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f5d16f7f02da960800000000000000
+      internalID: 7614778794311507871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB01_LaboratorioBasico_36
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 194
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67653d4cf08483d80800000000000000
+      internalID: -8270781483102022026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

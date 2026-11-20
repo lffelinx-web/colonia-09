@@ -1,0 +1,983 @@
+fileFormatVersion: 2
+guid: c2621c28ecf39ba4f890248391241672
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5708473783820835533
+    second: LB03_LaboratorioAvanzado_night_0
+  - first:
+      213: 2182972019670147824
+    second: LB03_LaboratorioAvanzado_night_1
+  - first:
+      213: -1932569418429122872
+    second: LB03_LaboratorioAvanzado_night_2
+  - first:
+      213: -2508393554556647901
+    second: LB03_LaboratorioAvanzado_night_3
+  - first:
+      213: -3391566053849894409
+    second: LB03_LaboratorioAvanzado_night_4
+  - first:
+      213: -7406387676898972280
+    second: LB03_LaboratorioAvanzado_night_5
+  - first:
+      213: 511854792699343965
+    second: LB03_LaboratorioAvanzado_night_6
+  - first:
+      213: -6673841118822898010
+    second: LB03_LaboratorioAvanzado_night_7
+  - first:
+      213: 4049172367931587024
+    second: LB03_LaboratorioAvanzado_night_8
+  - first:
+      213: -3454010671189878836
+    second: LB03_LaboratorioAvanzado_night_9
+  - first:
+      213: -7879871794143327699
+    second: LB03_LaboratorioAvanzado_night_10
+  - first:
+      213: 749137174259557403
+    second: LB03_LaboratorioAvanzado_night_11
+  - first:
+      213: 6966406876213551953
+    second: LB03_LaboratorioAvanzado_night_12
+  - first:
+      213: -7824799349878437651
+    second: LB03_LaboratorioAvanzado_night_13
+  - first:
+      213: -2319197001365417058
+    second: LB03_LaboratorioAvanzado_night_14
+  - first:
+      213: 3895047872877163058
+    second: LB03_LaboratorioAvanzado_night_15
+  - first:
+      213: 5410618082667623847
+    second: LB03_LaboratorioAvanzado_night_16
+  - first:
+      213: 5195715706613393127
+    second: LB03_LaboratorioAvanzado_night_17
+  - first:
+      213: 1296890426847930642
+    second: LB03_LaboratorioAvanzado_night_18
+  - first:
+      213: -8790768143362603554
+    second: LB03_LaboratorioAvanzado_night_19
+  - first:
+      213: -457766640578150832
+    second: LB03_LaboratorioAvanzado_night_20
+  - first:
+      213: -1901198404103120246
+    second: LB03_LaboratorioAvanzado_night_21
+  - first:
+      213: 6750603045518195899
+    second: LB03_LaboratorioAvanzado_night_22
+  - first:
+      213: 351990636689672651
+    second: LB03_LaboratorioAvanzado_night_23
+  - first:
+      213: 7165648905827781389
+    second: LB03_LaboratorioAvanzado_night_24
+  - first:
+      213: -7814003568409455308
+    second: LB03_LaboratorioAvanzado_night_25
+  - first:
+      213: 6031686288003788472
+    second: LB03_LaboratorioAvanzado_night_26
+  - first:
+      213: 255982758266004804
+    second: LB03_LaboratorioAvanzado_night_27
+  - first:
+      213: -4602541052519764340
+    second: LB03_LaboratorioAvanzado_night_28
+  - first:
+      213: 7718003392930128768
+    second: LB03_LaboratorioAvanzado_night_29
+  - first:
+      213: 7293587932421788679
+    second: LB03_LaboratorioAvanzado_night_30
+  - first:
+      213: 8921030564077966479
+    second: LB03_LaboratorioAvanzado_night_31
+  - first:
+      213: -7776167605087738386
+    second: LB03_LaboratorioAvanzado_night_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 83
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca554e59a2983f40800000000000000
+      internalID: 5708473783820835533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 490
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f26e0b6c797b4e10800000000000000
+      internalID: 2182972019670147824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_2
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 356
+        width: 328
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6bfb66a522e25e0800000000000000
+      internalID: -1932569418429122872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_3
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 0
+        width: 49
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32685c72a55603dd0800000000000000
+      internalID: -2508393554556647901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_4
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 326
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1f000b4acbee0d0800000000000000
+      internalID: -3391566053849894409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_5
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 331
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d2b9906a9373990800000000000000
+      internalID: -7406387676898972280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 264
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54fc67d8397a1700800000000000000
+      internalID: 511854792699343965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_7
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 260
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a66a29acd0c163a0800000000000000
+      internalID: -6673841118822898010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_8
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 301
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9b3e0b0dc813830800000000000000
+      internalID: 4049172367931587024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_9
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 249
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7915d3893e010d0800000000000000
+      internalID: -3454010671189878836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_10
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 265
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a87724a5215a290800000000000000
+      internalID: -7879871794143327699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_11
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14e7c77a48756a00800000000000000
+      internalID: 749137174259557403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_12
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 264
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1532c81f426ada060800000000000000
+      internalID: 6966406876213551953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_13
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 267
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de8c9c7e27ab86390800000000000000
+      internalID: -7824799349878437651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 250
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9396796d9e80dfd0800000000000000
+      internalID: -2319197001365417058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_15
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 281
+        width: 12
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232fbfd476dfd0630800000000000000
+      internalID: 3895047872877163058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_16
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 230
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a575b0ca70661b40800000000000000
+      internalID: 5410618082667623847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_17
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 256
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6eb9638e3ea1840800000000000000
+      internalID: 5195715706613393127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 248
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21920e4d8fa7ff110800000000000000
+      internalID: 1296890426847930642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_19
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 238
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed54d08f2fae00680800000000000000
+      internalID: -8790768143362603554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_20
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 242
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05eb05e6aafa5a9f0800000000000000
+      internalID: -457766640578150832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_21
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 233
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8ad4ebdf169d95e0800000000000000
+      internalID: -1901198404103120246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_22
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 235
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc38c324b5fead50800000000000000
+      internalID: 6750603045518195899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_23
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 212
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9c6208e9582e400800000000000000
+      internalID: 351990636689672651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_24
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 98
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b0801f6bf717360800000000000000
+      internalID: 7165648905827781389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_25
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 102
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435d157a7251f8390800000000000000
+      internalID: -7814003568409455308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_26
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 41
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be6f01c8bad4b350800000000000000
+      internalID: 6031686288003788472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_27
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 46
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445e11f56fe6d8300800000000000000
+      internalID: 255982758266004804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_28
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 26
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e286c4c4d7020c0800000000000000
+      internalID: -4602541052519764340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_29
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 22
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0832cd2b13bdb1b60800000000000000
+      internalID: 7718003392930128768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_30
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 20
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704931ad497083560800000000000000
+      internalID: 7293587932421788679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_31
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 24
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f84154a480eddcb70800000000000000
+      internalID: 8921030564077966479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LB03_LaboratorioAvanzado_night_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee568d853c0851490800000000000000
+      internalID: -7776167605087738386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

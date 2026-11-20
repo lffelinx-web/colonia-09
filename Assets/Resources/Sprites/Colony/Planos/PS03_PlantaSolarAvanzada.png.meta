@@ -1,0 +1,958 @@
+fileFormatVersion: 2
+guid: 9589a81c016d3e24495f5aed9abdf040
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8065559887376550251
+    second: PS03_PlantaSolarAvanzada_0
+  - first:
+      213: -2389917905340878700
+    second: PS03_PlantaSolarAvanzada_1
+  - first:
+      213: -1811392721969522806
+    second: PS03_PlantaSolarAvanzada_2
+  - first:
+      213: 7868400967259344492
+    second: PS03_PlantaSolarAvanzada_3
+  - first:
+      213: 5298458258609434478
+    second: PS03_PlantaSolarAvanzada_4
+  - first:
+      213: -2746220743208904952
+    second: PS03_PlantaSolarAvanzada_5
+  - first:
+      213: 1863763716334410059
+    second: PS03_PlantaSolarAvanzada_6
+  - first:
+      213: -4271938301211244521
+    second: PS03_PlantaSolarAvanzada_7
+  - first:
+      213: -8801374395699749326
+    second: PS03_PlantaSolarAvanzada_8
+  - first:
+      213: 3771392848704465592
+    second: PS03_PlantaSolarAvanzada_9
+  - first:
+      213: -4881485203625900437
+    second: PS03_PlantaSolarAvanzada_10
+  - first:
+      213: 8277980195576485444
+    second: PS03_PlantaSolarAvanzada_11
+  - first:
+      213: 8255558396155488717
+    second: PS03_PlantaSolarAvanzada_12
+  - first:
+      213: -6880702943389640452
+    second: PS03_PlantaSolarAvanzada_13
+  - first:
+      213: -4726723268572442092
+    second: PS03_PlantaSolarAvanzada_14
+  - first:
+      213: -9077156121155358583
+    second: PS03_PlantaSolarAvanzada_15
+  - first:
+      213: -8014211872129987738
+    second: PS03_PlantaSolarAvanzada_16
+  - first:
+      213: 3450603465135516026
+    second: PS03_PlantaSolarAvanzada_17
+  - first:
+      213: -8061089667649256240
+    second: PS03_PlantaSolarAvanzada_18
+  - first:
+      213: -830347079358428435
+    second: PS03_PlantaSolarAvanzada_19
+  - first:
+      213: 6326480551561958546
+    second: PS03_PlantaSolarAvanzada_20
+  - first:
+      213: 5226711876643957247
+    second: PS03_PlantaSolarAvanzada_21
+  - first:
+      213: -2916334597876009205
+    second: PS03_PlantaSolarAvanzada_22
+  - first:
+      213: 5865537063475359006
+    second: PS03_PlantaSolarAvanzada_23
+  - first:
+      213: -4962353927830415133
+    second: PS03_PlantaSolarAvanzada_24
+  - first:
+      213: 3082395038213148499
+    second: PS03_PlantaSolarAvanzada_25
+  - first:
+      213: -6696552939393907868
+    second: PS03_PlantaSolarAvanzada_26
+  - first:
+      213: -6510783536955989720
+    second: PS03_PlantaSolarAvanzada_27
+  - first:
+      213: 6328379979665890002
+    second: PS03_PlantaSolarAvanzada_28
+  - first:
+      213: -453107460254209707
+    second: PS03_PlantaSolarAvanzada_29
+  - first:
+      213: 151310340296975525
+    second: PS03_PlantaSolarAvanzada_30
+  - first:
+      213: -1436602508968126298
+    second: PS03_PlantaSolarAvanzada_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 154
+        width: 31
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6908b10cff9eef60800000000000000
+      internalID: 8065559887376550251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490bfc1d35e45ded0800000000000000
+      internalID: -2389917905340878700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 348
+        width: 448
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a875742aae3acd6e0800000000000000
+      internalID: -1811392721969522806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 346
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e45dbbdfc223d60800000000000000
+      internalID: 7868400967259344492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 353
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f66a9b6b7e78940800000000000000
+      internalID: 5298458258609434478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_5
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 345
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807593eb8c673e9d0800000000000000
+      internalID: -2746220743208904952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_6
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 346
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49df51b93b6dd910800000000000000
+      internalID: 1863763716334410059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_7
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 347
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7180bedafb607b4c0800000000000000
+      internalID: -4271938301211244521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 343
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e19196e9c3bd580800000000000000
+      internalID: -8801374395699749326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_9
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 362
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba6a7f60dda65430800000000000000
+      internalID: 3771392848704465592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_10
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 340
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b668d8d021b714cb0800000000000000
+      internalID: -4881485203625900437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_11
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 346
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4461e07112b41e270800000000000000
+      internalID: 8277980195576485444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_12
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 356
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc967591f92a19270800000000000000
+      internalID: 8255558396155488717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_13
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 346
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf89646e025d280a0800000000000000
+      internalID: -6880702943389640452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_14
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 9
+        width: 9
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4129a210b3e476eb0800000000000000
+      internalID: -4726723268572442092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 250
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980b5c3c996770280800000000000000
+      internalID: -9077156121155358583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_16
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 242
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b49fe63ccc7c090800000000000000
+      internalID: -8014211872129987738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 234
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a796228c19103ef20800000000000000
+      internalID: 3450603465135516026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_18
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 228
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4c13128a1412090800000000000000
+      internalID: -8061089667649256240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_19
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 228
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deace8e0bb30a74f0800000000000000
+      internalID: -830347079358428435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 219
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2949442ea8c2cc750800000000000000
+      internalID: 6326480551561958546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_21
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 212
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9adae62c2098840800000000000000
+      internalID: 5226711876643957247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 191
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b073b6772291787d0800000000000000
+      internalID: -2916334597876009205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_23
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 206
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d265dd1e2966150800000000000000
+      internalID: 5865537063475359006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_24
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 207
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e857e1f46d222bb0800000000000000
+      internalID: -4962353927830415133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_25
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 200
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f0f1eb4fdd6ca20800000000000000
+      internalID: 3082395038213148499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_26
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 166
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46304dbd4901113a0800000000000000
+      internalID: -6696552939393907868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_27
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 170
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821e6466edc05a5a0800000000000000
+      internalID: -6510783536955989720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 174
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dadda3ff0ce2d750800000000000000
+      internalID: 6328379979665890002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_29
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 165
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559e7726a2d36b9f0800000000000000
+      internalID: -453107460254209707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_30
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 148
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a4ae3ce3ff891200800000000000000
+      internalID: 151310340296975525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PS03_PlantaSolarAvanzada_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8158921a9201ce0800000000000000
+      internalID: -1436602508968126298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,4258 @@
+fileFormatVersion: 2
+guid: a2f033b03b048b441a38e14ca77926f6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3680817117114476644
+    second: TA01_TorreDeAguaBasica_0
+  - first:
+      213: -4884879727647388316
+    second: TA01_TorreDeAguaBasica_1
+  - first:
+      213: 1315566258071099310
+    second: TA01_TorreDeAguaBasica_2
+  - first:
+      213: -1330808741584027807
+    second: TA01_TorreDeAguaBasica_3
+  - first:
+      213: -4304017908131695366
+    second: TA01_TorreDeAguaBasica_4
+  - first:
+      213: -444459390258022104
+    second: TA01_TorreDeAguaBasica_5
+  - first:
+      213: -7327441279710928151
+    second: TA01_TorreDeAguaBasica_6
+  - first:
+      213: 5699385997103449462
+    second: TA01_TorreDeAguaBasica_7
+  - first:
+      213: -3351996282727904892
+    second: TA01_TorreDeAguaBasica_8
+  - first:
+      213: 4663050709549356593
+    second: TA01_TorreDeAguaBasica_9
+  - first:
+      213: -6640282539928154363
+    second: TA01_TorreDeAguaBasica_10
+  - first:
+      213: -1253914028801788187
+    second: TA01_TorreDeAguaBasica_11
+  - first:
+      213: 4282071902790879628
+    second: TA01_TorreDeAguaBasica_12
+  - first:
+      213: -75700779506887708
+    second: TA01_TorreDeAguaBasica_13
+  - first:
+      213: 623656030650365358
+    second: TA01_TorreDeAguaBasica_14
+  - first:
+      213: -1207576121299048806
+    second: TA01_TorreDeAguaBasica_15
+  - first:
+      213: -8401681229138513004
+    second: TA01_TorreDeAguaBasica_16
+  - first:
+      213: 276736705585811164
+    second: TA01_TorreDeAguaBasica_17
+  - first:
+      213: -6143108171201970919
+    second: TA01_TorreDeAguaBasica_18
+  - first:
+      213: -3548287636773738807
+    second: TA01_TorreDeAguaBasica_19
+  - first:
+      213: 8469539956168660414
+    second: TA01_TorreDeAguaBasica_20
+  - first:
+      213: -8787831782986633572
+    second: TA01_TorreDeAguaBasica_21
+  - first:
+      213: -8523145925601163515
+    second: TA01_TorreDeAguaBasica_22
+  - first:
+      213: 8988823061491178165
+    second: TA01_TorreDeAguaBasica_23
+  - first:
+      213: 7356644036346503975
+    second: TA01_TorreDeAguaBasica_24
+  - first:
+      213: -5524308993781156837
+    second: TA01_TorreDeAguaBasica_25
+  - first:
+      213: -3814396274088844564
+    second: TA01_TorreDeAguaBasica_26
+  - first:
+      213: -5876554532577098392
+    second: TA01_TorreDeAguaBasica_27
+  - first:
+      213: 8331408104397531250
+    second: TA01_TorreDeAguaBasica_28
+  - first:
+      213: -8112490772838761571
+    second: TA01_TorreDeAguaBasica_29
+  - first:
+      213: 2031242932002769761
+    second: TA01_TorreDeAguaBasica_30
+  - first:
+      213: 873831985805659406
+    second: TA01_TorreDeAguaBasica_31
+  - first:
+      213: -5525202362153507712
+    second: TA01_TorreDeAguaBasica_32
+  - first:
+      213: -695175822478957870
+    second: TA01_TorreDeAguaBasica_33
+  - first:
+      213: -4583999455721997310
+    second: TA01_TorreDeAguaBasica_34
+  - first:
+      213: -6968413624108995449
+    second: TA01_TorreDeAguaBasica_35
+  - first:
+      213: -3970764047143999675
+    second: TA01_TorreDeAguaBasica_36
+  - first:
+      213: -1021055581109639736
+    second: TA01_TorreDeAguaBasica_37
+  - first:
+      213: 5873562141433573225
+    second: TA01_TorreDeAguaBasica_38
+  - first:
+      213: 264174234531345727
+    second: TA01_TorreDeAguaBasica_39
+  - first:
+      213: -5994934596237975576
+    second: TA01_TorreDeAguaBasica_40
+  - first:
+      213: -4972063277270683363
+    second: TA01_TorreDeAguaBasica_41
+  - first:
+      213: 6767644304933542365
+    second: TA01_TorreDeAguaBasica_42
+  - first:
+      213: 8929645245274951831
+    second: TA01_TorreDeAguaBasica_43
+  - first:
+      213: -4338720469115249964
+    second: TA01_TorreDeAguaBasica_44
+  - first:
+      213: -219366136244810421
+    second: TA01_TorreDeAguaBasica_45
+  - first:
+      213: -7529845902299816363
+    second: TA01_TorreDeAguaBasica_46
+  - first:
+      213: -8616285621559284795
+    second: TA01_TorreDeAguaBasica_47
+  - first:
+      213: -697282250591455414
+    second: TA01_TorreDeAguaBasica_48
+  - first:
+      213: 2659712239993401612
+    second: TA01_TorreDeAguaBasica_49
+  - first:
+      213: 3932384934046568501
+    second: TA01_TorreDeAguaBasica_50
+  - first:
+      213: 604107217823666355
+    second: TA01_TorreDeAguaBasica_51
+  - first:
+      213: -5668397992581626015
+    second: TA01_TorreDeAguaBasica_52
+  - first:
+      213: -7943598951742778796
+    second: TA01_TorreDeAguaBasica_53
+  - first:
+      213: -4947216782546629059
+    second: TA01_TorreDeAguaBasica_54
+  - first:
+      213: -4099780634348749481
+    second: TA01_TorreDeAguaBasica_55
+  - first:
+      213: 2426668547981211272
+    second: TA01_TorreDeAguaBasica_56
+  - first:
+      213: 2303939599010131849
+    second: TA01_TorreDeAguaBasica_57
+  - first:
+      213: 2302089402519908930
+    second: TA01_TorreDeAguaBasica_58
+  - first:
+      213: -5856710777198744496
+    second: TA01_TorreDeAguaBasica_59
+  - first:
+      213: 1028606704726402878
+    second: TA01_TorreDeAguaBasica_60
+  - first:
+      213: -5725176015917002213
+    second: TA01_TorreDeAguaBasica_61
+  - first:
+      213: -1584766966727205713
+    second: TA01_TorreDeAguaBasica_62
+  - first:
+      213: 3871118283525727742
+    second: TA01_TorreDeAguaBasica_63
+  - first:
+      213: 6267591883900214816
+    second: TA01_TorreDeAguaBasica_64
+  - first:
+      213: 5197508651434599662
+    second: TA01_TorreDeAguaBasica_65
+  - first:
+      213: -3636377844213373911
+    second: TA01_TorreDeAguaBasica_66
+  - first:
+      213: 7304656446252491299
+    second: TA01_TorreDeAguaBasica_67
+  - first:
+      213: -3070857091103342693
+    second: TA01_TorreDeAguaBasica_68
+  - first:
+      213: 4060257742438227646
+    second: TA01_TorreDeAguaBasica_69
+  - first:
+      213: 21559760549397507
+    second: TA01_TorreDeAguaBasica_70
+  - first:
+      213: -9178352299737968103
+    second: TA01_TorreDeAguaBasica_71
+  - first:
+      213: -3722163634937342249
+    second: TA01_TorreDeAguaBasica_72
+  - first:
+      213: -3060241876608253655
+    second: TA01_TorreDeAguaBasica_73
+  - first:
+      213: -2733862053889314376
+    second: TA01_TorreDeAguaBasica_74
+  - first:
+      213: 8733985187136888041
+    second: TA01_TorreDeAguaBasica_75
+  - first:
+      213: 1059461720692677211
+    second: TA01_TorreDeAguaBasica_76
+  - first:
+      213: -8012238787377514503
+    second: TA01_TorreDeAguaBasica_77
+  - first:
+      213: -3129347037038973648
+    second: TA01_TorreDeAguaBasica_78
+  - first:
+      213: -590639134943960293
+    second: TA01_TorreDeAguaBasica_79
+  - first:
+      213: -6721692315703471928
+    second: TA01_TorreDeAguaBasica_80
+  - first:
+      213: 4720775880955153789
+    second: TA01_TorreDeAguaBasica_81
+  - first:
+      213: 3197282708224142929
+    second: TA01_TorreDeAguaBasica_82
+  - first:
+      213: 4079753767989496483
+    second: TA01_TorreDeAguaBasica_83
+  - first:
+      213: 4075978169245600610
+    second: TA01_TorreDeAguaBasica_84
+  - first:
+      213: -1313071023797779788
+    second: TA01_TorreDeAguaBasica_85
+  - first:
+      213: 4513328575356342262
+    second: TA01_TorreDeAguaBasica_86
+  - first:
+      213: 5823797546662809319
+    second: TA01_TorreDeAguaBasica_87
+  - first:
+      213: 7524579645748257669
+    second: TA01_TorreDeAguaBasica_88
+  - first:
+      213: 4931178789043176992
+    second: TA01_TorreDeAguaBasica_89
+  - first:
+      213: 8479866943445170202
+    second: TA01_TorreDeAguaBasica_90
+  - first:
+      213: -2574106119625175061
+    second: TA01_TorreDeAguaBasica_91
+  - first:
+      213: -2017540725791632558
+    second: TA01_TorreDeAguaBasica_92
+  - first:
+      213: 7603919194700109722
+    second: TA01_TorreDeAguaBasica_93
+  - first:
+      213: -2864575928593705758
+    second: TA01_TorreDeAguaBasica_94
+  - first:
+      213: 8133024425422140489
+    second: TA01_TorreDeAguaBasica_95
+  - first:
+      213: 8492347676934016778
+    second: TA01_TorreDeAguaBasica_96
+  - first:
+      213: 5594272459109962702
+    second: TA01_TorreDeAguaBasica_97
+  - first:
+      213: -905756198556346195
+    second: TA01_TorreDeAguaBasica_98
+  - first:
+      213: 9170590775257836950
+    second: TA01_TorreDeAguaBasica_99
+  - first:
+      213: 5254807221054704968
+    second: TA01_TorreDeAguaBasica_100
+  - first:
+      213: -2183326820168175302
+    second: TA01_TorreDeAguaBasica_101
+  - first:
+      213: 6201382809195488209
+    second: TA01_TorreDeAguaBasica_102
+  - first:
+      213: -1885447656730376618
+    second: TA01_TorreDeAguaBasica_103
+  - first:
+      213: -5038963675399764520
+    second: TA01_TorreDeAguaBasica_104
+  - first:
+      213: 7918034449619537105
+    second: TA01_TorreDeAguaBasica_105
+  - first:
+      213: 6960539233683003606
+    second: TA01_TorreDeAguaBasica_106
+  - first:
+      213: 6914509761616846151
+    second: TA01_TorreDeAguaBasica_107
+  - first:
+      213: 6313133265967655278
+    second: TA01_TorreDeAguaBasica_108
+  - first:
+      213: 1005447989710701328
+    second: TA01_TorreDeAguaBasica_109
+  - first:
+      213: 6081582617843876242
+    second: TA01_TorreDeAguaBasica_110
+  - first:
+      213: -2714374832822581122
+    second: TA01_TorreDeAguaBasica_111
+  - first:
+      213: 7505565543168472858
+    second: TA01_TorreDeAguaBasica_112
+  - first:
+      213: -8546568719239211576
+    second: TA01_TorreDeAguaBasica_113
+  - first:
+      213: -4366483700256482535
+    second: TA01_TorreDeAguaBasica_114
+  - first:
+      213: -6030911616645023562
+    second: TA01_TorreDeAguaBasica_115
+  - first:
+      213: -2004049684508010397
+    second: TA01_TorreDeAguaBasica_116
+  - first:
+      213: -9172983715914510671
+    second: TA01_TorreDeAguaBasica_117
+  - first:
+      213: 5783017519618107955
+    second: TA01_TorreDeAguaBasica_118
+  - first:
+      213: -1273282679395045915
+    second: TA01_TorreDeAguaBasica_119
+  - first:
+      213: -4924444510417435537
+    second: TA01_TorreDeAguaBasica_120
+  - first:
+      213: 4361485823091181590
+    second: TA01_TorreDeAguaBasica_121
+  - first:
+      213: -4318984914971744611
+    second: TA01_TorreDeAguaBasica_122
+  - first:
+      213: -943575419130031886
+    second: TA01_TorreDeAguaBasica_123
+  - first:
+      213: -9099179242208002787
+    second: TA01_TorreDeAguaBasica_124
+  - first:
+      213: 3367250851172788086
+    second: TA01_TorreDeAguaBasica_125
+  - first:
+      213: -5578033556865955922
+    second: TA01_TorreDeAguaBasica_126
+  - first:
+      213: -5320521742248038386
+    second: TA01_TorreDeAguaBasica_127
+  - first:
+      213: -4095056740874769805
+    second: TA01_TorreDeAguaBasica_128
+  - first:
+      213: -2611237896413398846
+    second: TA01_TorreDeAguaBasica_129
+  - first:
+      213: 8442674084785836978
+    second: TA01_TorreDeAguaBasica_130
+  - first:
+      213: -8228877655917878966
+    second: TA01_TorreDeAguaBasica_131
+  - first:
+      213: 2897540895527245765
+    second: TA01_TorreDeAguaBasica_132
+  - first:
+      213: -6581267770342113603
+    second: TA01_TorreDeAguaBasica_133
+  - first:
+      213: -2003122686208240071
+    second: TA01_TorreDeAguaBasica_134
+  - first:
+      213: 795663435569914104
+    second: TA01_TorreDeAguaBasica_135
+  - first:
+      213: 5829994711046648634
+    second: TA01_TorreDeAguaBasica_136
+  - first:
+      213: 5493642672220155111
+    second: TA01_TorreDeAguaBasica_137
+  - first:
+      213: -8971795412304048709
+    second: TA01_TorreDeAguaBasica_138
+  - first:
+      213: 5925655032963525317
+    second: TA01_TorreDeAguaBasica_139
+  - first:
+      213: 8269944859583892698
+    second: TA01_TorreDeAguaBasica_140
+  - first:
+      213: -5418003081963430872
+    second: TA01_TorreDeAguaBasica_141
+  - first:
+      213: -7833356460958566295
+    second: TA01_TorreDeAguaBasica_142
+  - first:
+      213: -7508677796377443406
+    second: TA01_TorreDeAguaBasica_143
+  - first:
+      213: -1579158822872916490
+    second: TA01_TorreDeAguaBasica_144
+  - first:
+      213: -1149889138480165678
+    second: TA01_TorreDeAguaBasica_145
+  - first:
+      213: 7023249494925716529
+    second: TA01_TorreDeAguaBasica_146
+  - first:
+      213: 7915620059713566393
+    second: TA01_TorreDeAguaBasica_147
+  - first:
+      213: 3306252438083971117
+    second: TA01_TorreDeAguaBasica_148
+  - first:
+      213: 6080846289807600189
+    second: TA01_TorreDeAguaBasica_149
+  - first:
+      213: 5661809916633287823
+    second: TA01_TorreDeAguaBasica_150
+  - first:
+      213: 8948875890698758322
+    second: TA01_TorreDeAguaBasica_151
+  - first:
+      213: -3880909003940208349
+    second: TA01_TorreDeAguaBasica_152
+  - first:
+      213: -3484725809333873509
+    second: TA01_TorreDeAguaBasica_153
+  - first:
+      213: -6672464409920720311
+    second: TA01_TorreDeAguaBasica_154
+  - first:
+      213: 2741330684762155014
+    second: TA01_TorreDeAguaBasica_155
+  - first:
+      213: -4567889222036511734
+    second: TA01_TorreDeAguaBasica_156
+  - first:
+      213: -1104005764922063485
+    second: TA01_TorreDeAguaBasica_157
+  - first:
+      213: -2434664037552166369
+    second: TA01_TorreDeAguaBasica_158
+  - first:
+      213: -5104369663718471939
+    second: TA01_TorreDeAguaBasica_159
+  - first:
+      213: 1577515830231856849
+    second: TA01_TorreDeAguaBasica_160
+  - first:
+      213: -5479415083728826508
+    second: TA01_TorreDeAguaBasica_161
+  - first:
+      213: 4372953903709679201
+    second: TA01_TorreDeAguaBasica_162
+  - first:
+      213: 8119189794989323392
+    second: TA01_TorreDeAguaBasica_163
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 99
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46829cc8aa3e41330800000000000000
+      internalID: 3680817117114476644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 492
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d0217d4cb653cb0800000000000000
+      internalID: -4884879727647388316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea751d2aa84d14210800000000000000
+      internalID: 1315566258071099310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 305
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f36ed1084088de0800000000000000
+      internalID: -1330808741584027807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 288
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4f3e6248e0544c0800000000000000
+      internalID: -4304017908131695366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_5
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 285
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82975961a86f4d9f0800000000000000
+      internalID: -444459390258022104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 345
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2eb428af2bf4a90800000000000000
+      internalID: -7327441279710928151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_7
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 492
+        width: 139
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675cf232e59481f40800000000000000
+      internalID: 5699385997103449462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_8
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 322
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489c297f3215b71d0800000000000000
+      internalID: -3351996282727904892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_9
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 321
+        width: 306
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13692581aeb76b040800000000000000
+      internalID: 4663050709549356593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_10
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 397
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f8a5f263af8d3a0800000000000000
+      internalID: -6640282539928154363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 342
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6f36695d3399ee0800000000000000
+      internalID: -1253914028801788187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_12
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 375
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89088c45b9fc6b30800000000000000
+      internalID: 4282071902790879628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_13
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 377
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e39548ca8e03fef0800000000000000
+      internalID: -75700779506887708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_14
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 352
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea5f1f80bdba7a800800000000000000
+      internalID: 623656030650365358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_15
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 336
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96e9ba6ae3dd3fe0800000000000000
+      internalID: -1207576121299048806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_16
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 321
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493b125af6b376b80800000000000000
+      internalID: -8401681229138513004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_17
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 363
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde01c8419a27d300800000000000000
+      internalID: 276736705585811164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_18
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 346
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91df4b67aab4fbaa0800000000000000
+      internalID: -6143108171201970919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_19
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 338
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6e039a133f1cec0800000000000000
+      internalID: -3548287636773738807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_20
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 313
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5196277b9d98570800000000000000
+      internalID: 8469539956168660414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_21
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 386
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ea135ad895b0680800000000000000
+      internalID: -8787831782986633572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_22
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 368
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50789bf20f3b7b980800000000000000
+      internalID: -8523145925601163515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_23
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 350
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba550913f6bebc70800000000000000
+      internalID: 8988823061491178165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_24
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 322
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723ed6d16cc081660800000000000000
+      internalID: 7356644036346503975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_25
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 316
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14bd2c3d36b553b0800000000000000
+      internalID: -5524308993781156837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_26
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce26c5a5cca801bc0800000000000000
+      internalID: -3814396274088844564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_27
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 372
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 865c786b9c8427ea0800000000000000
+      internalID: -5876554532577098392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_28
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 351
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278ec6d778b1f9370800000000000000
+      internalID: 8331408104397531250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_29
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 316
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9bbf49bf94aa6f80800000000000000
+      internalID: -8112490772838761571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_30
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 373
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b4c864fac603c10800000000000000
+      internalID: 2031242932002769761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_31
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 379
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d0253bf89702c00800000000000000
+      internalID: 873831985805659406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_32
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 411
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084e0b3b9b98253b0800000000000000
+      internalID: -5525202362153507712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_33
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 330
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2a3bcc54d3a56f0800000000000000
+      internalID: -695175822478957870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_34
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 312
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c3b1738cc5260c0800000000000000
+      internalID: -4583999455721997310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_35
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 361
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78cadf6aab83b4f90800000000000000
+      internalID: -6968413624108995449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_36
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 462
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547e61b132305e8c0800000000000000
+      internalID: -3970764047143999675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_37
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 398
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5a708db5b74d1f0800000000000000
+      internalID: -1021055581109639736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_38
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 367
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fa45ee5a5138150800000000000000
+      internalID: 5873562141433573225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_39
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 341
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f353d0011198aa300800000000000000
+      internalID: 264174234531345727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_40
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 315
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef198b4fb6bdcca0800000000000000
+      internalID: -5994934596237975576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_41
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 393
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11348ddaceaffab0800000000000000
+      internalID: -4972063277270683363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_42
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 404
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd952c983a08bed50800000000000000
+      internalID: 6767644304933542365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_43
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 361
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7909ede0a097ceb70800000000000000
+      internalID: 8929645245274951831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_44
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 444
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da5baa88b4c9c3c0800000000000000
+      internalID: -4338720469115249964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_45
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 323
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4dc06d49a7a4fcf0800000000000000
+      internalID: -219366136244810421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_46
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 311
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e1df3fb0d908790800000000000000
+      internalID: -7529845902299816363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_47
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 331
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb27a3d0edcc6880800000000000000
+      internalID: -8616285621559284795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_48
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 355
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47bf49cc71c256f0800000000000000
+      internalID: -697282250591455414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_49
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 394
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01b095c03239e420800000000000000
+      internalID: 2659712239993401612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_50
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 320
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53091f94343a29630800000000000000
+      internalID: 3932384934046568501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_51
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 360
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b011ac5058326800800000000000000
+      internalID: 604107217823666355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_52
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 324
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16782a6ee0ec551b0800000000000000
+      internalID: -5668397992581626015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_53
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 307
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452d43327daa2c190800000000000000
+      internalID: -7943598951742778796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_54
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 361
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e05793c84f75bb0800000000000000
+      internalID: -4947216782546629059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_55
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 389
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75dfd901c37aa17c0800000000000000
+      internalID: -4099780634348749481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_56
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 358
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8867806ff224da120800000000000000
+      internalID: 2426668547981211272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_57
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 311
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f64f6cbdc39ff10800000000000000
+      internalID: 2303939599010131849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_58
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 346
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 242f3665d1aa2ff10800000000000000
+      internalID: 2302089402519908930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_59
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 347
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ceddc0498c8bea0800000000000000
+      internalID: -5856710777198744496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_60
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 384
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e376dc02958564e00800000000000000
+      internalID: 1028606704726402878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_61
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 329
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b125eae2fb61c80b0800000000000000
+      internalID: -5725176015917002213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_62
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 317
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac937817d6c10ae0800000000000000
+      internalID: -1584766966727205713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_63
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 321
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5221d9199f8b530800000000000000
+      internalID: 3871118283525727742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_64
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 335
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e5efc7c95faf650800000000000000
+      internalID: 6267591883900214816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_65
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 415
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee467c5b492412840800000000000000
+      internalID: 5197508651434599662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_66
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 312
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924af86fd9df88dc0800000000000000
+      internalID: -3636377844213373911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_67
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 326
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322a52d065a5f5560800000000000000
+      internalID: 7304656446252491299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_68
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 350
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9fbbc8eebf1265d0800000000000000
+      internalID: -3070857091103342693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_69
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 354
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe5f8297eee85830800000000000000
+      internalID: 4060257742438227646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_70
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 335
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3044dfcec789c4000800000000000000
+      internalID: 21559760549397507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_71
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 315
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9129abe5631ff9080800000000000000
+      internalID: -9178352299737968103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_72
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 391
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6dea715e7385cc0800000000000000
+      internalID: -3722163634937342249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_73
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 350
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9218df12a36d785d0800000000000000
+      internalID: -3060241876608253655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_74
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 340
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1f10552fe5f0ad0800000000000000
+      internalID: -2733862053889314376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_75
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 284
+        width: 109
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec51d8c049553970800000000000000
+      internalID: 8733985187136888041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_76
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 395
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ad20b52d6f3be00800000000000000
+      internalID: 1059461720692677211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_77
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 330
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7b1c6064fcec090800000000000000
+      internalID: -8012238787377514503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_78
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 348
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dee5623735294d0800000000000000
+      internalID: -3129347037038973648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_79
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 328
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b13a83b06d0adc7f0800000000000000
+      internalID: -590639134943960293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_80
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 361
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c09501b370c7b2a0800000000000000
+      internalID: -6721692315703471928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_81
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 323
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d4098e6a0938140800000000000000
+      internalID: 4720775880955153789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_82
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 297
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ee236eea70f5c20800000000000000
+      internalID: 3197282708224142929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_83
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 284
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa4310cf623e9830800000000000000
+      internalID: 4079753767989496483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_84
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 322
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b812aac88c09830800000000000000
+      internalID: 4075978169245600610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_85
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 285
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2ccad5cd807cde0800000000000000
+      internalID: -1313071023797779788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_86
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 273
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff0cb83d6092ae30800000000000000
+      internalID: 4513328575356342262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_87
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 349
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eec0ac430942d050800000000000000
+      internalID: 5823797546662809319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_88
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 298
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583a5f4225dac6860800000000000000
+      internalID: 7524579645748257669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_89
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 266
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0260cdc6bf01f6440800000000000000
+      internalID: 4931178789043176992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_90
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 345
+        width: 24
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1870aa8e0a8ea570800000000000000
+      internalID: 8479866943445170202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_91
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 309
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef05955f10f64cd0800000000000000
+      internalID: -2574106119625175061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_92
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 396
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2535e4736614004e0800000000000000
+      internalID: -2017540725791632558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_93
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 301
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97dfd4683c868960800000000000000
+      internalID: 7603919194700109722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_94
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 342
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e49900ce5bfe38d0800000000000000
+      internalID: -2864575928593705758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_95
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 267
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944bcd2df9e4ed070800000000000000
+      internalID: 8133024425422140489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_96
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 251
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f04c0c731ead570800000000000000
+      internalID: 8492347676934016778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_97
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 236
+        width: 7
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3100e6929d2ad40800000000000000
+      internalID: 5594272459109962702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 18
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8d0fb498b1e63f0800000000000000
+      internalID: -905756198556346195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_99
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 203
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69da7b3e8bb744f70800000000000000
+      internalID: 9170590775257836950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_100
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 191
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d8f1e8353dce840800000000000000
+      internalID: 5254807221054704968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_101
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 243
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31fa4723d343b1e0800000000000000
+      internalID: -2183326820168175302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_102
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 197
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d3af420fccbf0650800000000000000
+      internalID: 6201382809195488209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_103
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 204
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6564ef1885b85d5e0800000000000000
+      internalID: -1885447656730376618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_104
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 245
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d543bb1c31021ab0800000000000000
+      internalID: -5038963675399764520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_105
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 257
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dcc0e0616282ed60800000000000000
+      internalID: 7918034449619537105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_106
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 241
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d858d4fd8dc89060800000000000000
+      internalID: 6960539233683003606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_107
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 234
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d94295ef545ff50800000000000000
+      internalID: 6914509761616846151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_108
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 218
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6924b9c141cc9750800000000000000
+      internalID: 6313133265967655278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_109
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 196
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01346da9e9114fd00800000000000000
+      internalID: 1005447989710701328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_110
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 238
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29146c85b2f166450800000000000000
+      internalID: 6081582617843876242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_111
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 228
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78895e887a945ad0800000000000000
+      internalID: -2714374832822581122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_112
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 196
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17f7f66810292860800000000000000
+      internalID: 7505565543168472858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_113
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 198
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c51841180d746980800000000000000
+      internalID: -8546568719239211576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_114
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 248
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91bdda095322763c0800000000000000
+      internalID: -4366483700256482535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_115
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 236
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8b81a76d5ed4ca0800000000000000
+      internalID: -6030911616645023562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_116
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 201
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3689aaa0e6f2034e0800000000000000
+      internalID: -2004049684508010397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_117
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 192
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be097239e303b080800000000000000
+      internalID: -9172983715914510671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_118
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 168
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33aa2ba5bc7614050800000000000000
+      internalID: 5783017519618107955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_119
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 185
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed20043624645ee0800000000000000
+      internalID: -1273282679395045915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_120
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 174
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6442700fcbd8abb0800000000000000
+      internalID: -4924444510417435537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_121
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 176
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618804a7f3c178c30800000000000000
+      internalID: 4361485823091181590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_122
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 170
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96a6d05a12ef04c0800000000000000
+      internalID: -4318984914971744611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_123
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 174
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0d6f3d72fb7e2f0800000000000000
+      internalID: -943575419130031886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_124
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 141
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d759050b839b180800000000000000
+      internalID: -9099179242208002787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_125
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 162
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67729c50fc0eabe20800000000000000
+      internalID: 3367250851172788086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_126
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 135
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7cbc1a808d692b0800000000000000
+      internalID: -5578033556865955922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_127
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 157
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00309d2aa5b926b0800000000000000
+      internalID: -5320521742248038386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_128
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 58
+        width: 22
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a2719379f6b27c0800000000000000
+      internalID: -4095056740874769805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_129
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 163
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8bd38d7f403cbd0800000000000000
+      internalID: -2611237896413398846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_130
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 148
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b35e0259576a2570800000000000000
+      internalID: 8442674084785836978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_131
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 131
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41add2de572dcd80800000000000000
+      internalID: -8228877655917878966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_132
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 132
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c79118b712263820800000000000000
+      internalID: 2897540895527245765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_133
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 122
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbef709f4d3aaa4a0800000000000000
+      internalID: -6581267770342113603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_134
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 125
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9361807a78a7334e0800000000000000
+      internalID: -2003122686208240071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_135
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 116
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f069e5dda3ca0b00800000000000000
+      internalID: 795663435569914104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_136
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 110
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3377521d4d48e050800000000000000
+      internalID: 5829994711046648634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_137
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 111
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec2c9067e65d3c40800000000000000
+      internalID: 5493642672220155111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_138
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 112
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd432c6b97cd7380800000000000000
+      internalID: -8971795412304048709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_139
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 107
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5caeb456bd72c3250800000000000000
+      internalID: 5925655032963525317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_140
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 87
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adcc093a80fb4c270800000000000000
+      internalID: 8269944859583892698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_141
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 90
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c199b17e26fc4b0800000000000000
+      internalID: -5418003081963430872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_142
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 48
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968bd893dc35a4390800000000000000
+      internalID: -7833356460958566295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_143
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 0
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b34f0ea351dbc790800000000000000
+      internalID: -7508677796377443406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_144
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 22
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fd5cb6da63b51ae0800000000000000
+      internalID: -1579158822872916490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_145
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 6
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc4fc1cbe5ca00f0800000000000000
+      internalID: -1149889138480165678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_146
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 9
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c2df17438977160800000000000000
+      internalID: 7023249494925716529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_147
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 3
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6fe2c618ee9dd60800000000000000
+      internalID: 7915620059713566393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_148
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 9
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d28a3cd331b22ed20800000000000000
+      internalID: 3306252438083971117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_149
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 9
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3aebbd9b71836450800000000000000
+      internalID: 6080846289807600189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_150
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 8
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c06b22f1ac29e40800000000000000
+      internalID: 5661809916633287823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_151
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 6
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8282c953bc03c70800000000000000
+      internalID: 8948875890698758322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_152
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 9
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3216786a2dd342ac0800000000000000
+      internalID: -3880909003940208349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_153
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 4
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94d40bd654c3afc0800000000000000
+      internalID: -3484725809333873509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_154
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 9
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9423d3ea8f4a663a0800000000000000
+      internalID: -6672464409920720311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_155
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 7
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608602dcbb92b0620800000000000000
+      internalID: 2741330684762155014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_156
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 4
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a04ad2b44f89b90c0800000000000000
+      internalID: -4567889222036511734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_157
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 5
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38546d72b98cda0f0800000000000000
+      internalID: -1104005764922063485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_158
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 5
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ae84e05f5563ed0800000000000000
+      internalID: -2434664037552166369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_159
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 5
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6c7cfb5d2a929b0800000000000000
+      internalID: -5104369663718471939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_160
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 6
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d676802a4674e510800000000000000
+      internalID: 1577515830231856849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_161
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 7
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f0d65330535f3b0800000000000000
+      internalID: -5479415083728826508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_162
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 7
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ee5c1186adfac30800000000000000
+      internalID: 4372953903709679201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TA01_TorreDeAguaBasica_163
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084b05ae9182da070800000000000000
+      internalID: 8119189794989323392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

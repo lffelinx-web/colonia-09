@@ -1,0 +1,4058 @@
+fileFormatVersion: 2
+guid: 6099d6fe80ffa874ca7af9b580fcddb5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -992765708398545356
+    second: TO01_TallerBasico_0
+  - first:
+      213: -1846562676010923006
+    second: TO01_TallerBasico_1
+  - first:
+      213: 6284221889096490093
+    second: TO01_TallerBasico_2
+  - first:
+      213: -8105833506115605624
+    second: TO01_TallerBasico_3
+  - first:
+      213: 6952140772330753859
+    second: TO01_TallerBasico_4
+  - first:
+      213: 3154819828216169725
+    second: TO01_TallerBasico_5
+  - first:
+      213: -1936779099461835738
+    second: TO01_TallerBasico_6
+  - first:
+      213: 6395860161601361391
+    second: TO01_TallerBasico_7
+  - first:
+      213: -2089354810068880079
+    second: TO01_TallerBasico_8
+  - first:
+      213: 7220384197976032676
+    second: TO01_TallerBasico_9
+  - first:
+      213: -8210092723594360097
+    second: TO01_TallerBasico_10
+  - first:
+      213: -6579459824297024774
+    second: TO01_TallerBasico_11
+  - first:
+      213: 7689784557198856585
+    second: TO01_TallerBasico_12
+  - first:
+      213: -6035888503554586750
+    second: TO01_TallerBasico_13
+  - first:
+      213: 8970854462258053433
+    second: TO01_TallerBasico_14
+  - first:
+      213: 2756902997532261914
+    second: TO01_TallerBasico_15
+  - first:
+      213: -2608063412516927301
+    second: TO01_TallerBasico_16
+  - first:
+      213: -6684418393655514376
+    second: TO01_TallerBasico_17
+  - first:
+      213: 8186054228057896760
+    second: TO01_TallerBasico_18
+  - first:
+      213: -8248129079141648915
+    second: TO01_TallerBasico_19
+  - first:
+      213: -7317832656768316372
+    second: TO01_TallerBasico_20
+  - first:
+      213: 943911206441262150
+    second: TO01_TallerBasico_21
+  - first:
+      213: 144403254425020616
+    second: TO01_TallerBasico_22
+  - first:
+      213: 2229330885242756342
+    second: TO01_TallerBasico_23
+  - first:
+      213: -9039927493270957127
+    second: TO01_TallerBasico_24
+  - first:
+      213: -5168954501647347526
+    second: TO01_TallerBasico_25
+  - first:
+      213: -6724557060038088782
+    second: TO01_TallerBasico_26
+  - first:
+      213: 1192429350261805538
+    second: TO01_TallerBasico_27
+  - first:
+      213: 8776544822657891583
+    second: TO01_TallerBasico_28
+  - first:
+      213: 5976602327266964409
+    second: TO01_TallerBasico_29
+  - first:
+      213: -6686627022048140091
+    second: TO01_TallerBasico_30
+  - first:
+      213: 2100976095354410228
+    second: TO01_TallerBasico_31
+  - first:
+      213: 6665407266706790982
+    second: TO01_TallerBasico_32
+  - first:
+      213: -6166500604954538818
+    second: TO01_TallerBasico_33
+  - first:
+      213: 6384417874052958082
+    second: TO01_TallerBasico_34
+  - first:
+      213: -5827403587136175425
+    second: TO01_TallerBasico_35
+  - first:
+      213: 2719894263546042122
+    second: TO01_TallerBasico_36
+  - first:
+      213: -7923842046101369967
+    second: TO01_TallerBasico_37
+  - first:
+      213: 5111951104092843186
+    second: TO01_TallerBasico_38
+  - first:
+      213: 643756718071022976
+    second: TO01_TallerBasico_39
+  - first:
+      213: -5661906901024514113
+    second: TO01_TallerBasico_40
+  - first:
+      213: -706886453385201040
+    second: TO01_TallerBasico_41
+  - first:
+      213: -8793492118075713609
+    second: TO01_TallerBasico_42
+  - first:
+      213: 4262115073696973173
+    second: TO01_TallerBasico_43
+  - first:
+      213: -9110816479882904981
+    second: TO01_TallerBasico_44
+  - first:
+      213: -162165007101783741
+    second: TO01_TallerBasico_45
+  - first:
+      213: 8140753851948317931
+    second: TO01_TallerBasico_46
+  - first:
+      213: -3994102388007967507
+    second: TO01_TallerBasico_47
+  - first:
+      213: 3676955761776791753
+    second: TO01_TallerBasico_48
+  - first:
+      213: -8801656206040497261
+    second: TO01_TallerBasico_49
+  - first:
+      213: -5294092783666074798
+    second: TO01_TallerBasico_50
+  - first:
+      213: -7373616959233245255
+    second: TO01_TallerBasico_51
+  - first:
+      213: -3119489692845698556
+    second: TO01_TallerBasico_52
+  - first:
+      213: -8523374925732601728
+    second: TO01_TallerBasico_53
+  - first:
+      213: 9204545253170132291
+    second: TO01_TallerBasico_54
+  - first:
+      213: -2706055242544981932
+    second: TO01_TallerBasico_55
+  - first:
+      213: 3214009907330376961
+    second: TO01_TallerBasico_56
+  - first:
+      213: -4526088679955903548
+    second: TO01_TallerBasico_57
+  - first:
+      213: 5034213721891743198
+    second: TO01_TallerBasico_58
+  - first:
+      213: -1467887857439706865
+    second: TO01_TallerBasico_59
+  - first:
+      213: -3652855873223737153
+    second: TO01_TallerBasico_60
+  - first:
+      213: 4221532768375605144
+    second: TO01_TallerBasico_61
+  - first:
+      213: -7541913081018104138
+    second: TO01_TallerBasico_62
+  - first:
+      213: 9011989063314293959
+    second: TO01_TallerBasico_63
+  - first:
+      213: -2148412383069097845
+    second: TO01_TallerBasico_64
+  - first:
+      213: 3816931232162205641
+    second: TO01_TallerBasico_65
+  - first:
+      213: 3181192535934363942
+    second: TO01_TallerBasico_66
+  - first:
+      213: -7249777341012367231
+    second: TO01_TallerBasico_67
+  - first:
+      213: 3445577415425690880
+    second: TO01_TallerBasico_68
+  - first:
+      213: 7582203881727191108
+    second: TO01_TallerBasico_69
+  - first:
+      213: -6693286185915687247
+    second: TO01_TallerBasico_70
+  - first:
+      213: -2775396829125731995
+    second: TO01_TallerBasico_71
+  - first:
+      213: -998785988548727388
+    second: TO01_TallerBasico_72
+  - first:
+      213: -2357992660837890405
+    second: TO01_TallerBasico_73
+  - first:
+      213: -377203093849800148
+    second: TO01_TallerBasico_74
+  - first:
+      213: -2435776789614121156
+    second: TO01_TallerBasico_75
+  - first:
+      213: 7153466034850236984
+    second: TO01_TallerBasico_76
+  - first:
+      213: 3504428124419715350
+    second: TO01_TallerBasico_77
+  - first:
+      213: -3795910083883161425
+    second: TO01_TallerBasico_78
+  - first:
+      213: -2379885389444543977
+    second: TO01_TallerBasico_79
+  - first:
+      213: -4344040126273373033
+    second: TO01_TallerBasico_80
+  - first:
+      213: -3406260321050518097
+    second: TO01_TallerBasico_81
+  - first:
+      213: -8126018625285547585
+    second: TO01_TallerBasico_82
+  - first:
+      213: 5891400822444700017
+    second: TO01_TallerBasico_83
+  - first:
+      213: -2423886869033256672
+    second: TO01_TallerBasico_84
+  - first:
+      213: 4134651548664421394
+    second: TO01_TallerBasico_85
+  - first:
+      213: -7894391982421960636
+    second: TO01_TallerBasico_86
+  - first:
+      213: 2603548717834503833
+    second: TO01_TallerBasico_87
+  - first:
+      213: 1442619346496842451
+    second: TO01_TallerBasico_88
+  - first:
+      213: 9062208753218357472
+    second: TO01_TallerBasico_89
+  - first:
+      213: 6237793469867659143
+    second: TO01_TallerBasico_90
+  - first:
+      213: 8544387760625608732
+    second: TO01_TallerBasico_91
+  - first:
+      213: -4901540765183439232
+    second: TO01_TallerBasico_92
+  - first:
+      213: 3717505873677843047
+    second: TO01_TallerBasico_93
+  - first:
+      213: 5061748718053089568
+    second: TO01_TallerBasico_94
+  - first:
+      213: -976840179180888617
+    second: TO01_TallerBasico_95
+  - first:
+      213: -2780364840728605403
+    second: TO01_TallerBasico_96
+  - first:
+      213: 1096978964144523533
+    second: TO01_TallerBasico_97
+  - first:
+      213: -4585754967799160251
+    second: TO01_TallerBasico_98
+  - first:
+      213: -7394431410378725812
+    second: TO01_TallerBasico_99
+  - first:
+      213: -1123945515124894285
+    second: TO01_TallerBasico_100
+  - first:
+      213: -1552882340636647843
+    second: TO01_TallerBasico_101
+  - first:
+      213: 6951612251007662827
+    second: TO01_TallerBasico_102
+  - first:
+      213: 5549822825388867598
+    second: TO01_TallerBasico_103
+  - first:
+      213: 3373301858782453513
+    second: TO01_TallerBasico_104
+  - first:
+      213: 4491640887508228443
+    second: TO01_TallerBasico_105
+  - first:
+      213: 5590172437035877584
+    second: TO01_TallerBasico_106
+  - first:
+      213: -6404042006936672958
+    second: TO01_TallerBasico_107
+  - first:
+      213: -8852591319083663401
+    second: TO01_TallerBasico_108
+  - first:
+      213: 4546390336031373785
+    second: TO01_TallerBasico_109
+  - first:
+      213: 1839485654891541562
+    second: TO01_TallerBasico_110
+  - first:
+      213: 3024923411693442608
+    second: TO01_TallerBasico_111
+  - first:
+      213: -8744785376359579101
+    second: TO01_TallerBasico_112
+  - first:
+      213: -2470491280807050306
+    second: TO01_TallerBasico_113
+  - first:
+      213: 5847490528995084939
+    second: TO01_TallerBasico_114
+  - first:
+      213: 8590223632482703519
+    second: TO01_TallerBasico_115
+  - first:
+      213: -5601518926332580573
+    second: TO01_TallerBasico_116
+  - first:
+      213: 1426433892544841634
+    second: TO01_TallerBasico_117
+  - first:
+      213: 6414002844404026162
+    second: TO01_TallerBasico_118
+  - first:
+      213: 3862864624941552709
+    second: TO01_TallerBasico_119
+  - first:
+      213: -3610535473024540988
+    second: TO01_TallerBasico_120
+  - first:
+      213: -8865411048053078126
+    second: TO01_TallerBasico_121
+  - first:
+      213: 8291048794355723238
+    second: TO01_TallerBasico_122
+  - first:
+      213: -5168031471651593673
+    second: TO01_TallerBasico_123
+  - first:
+      213: -2061961215823498659
+    second: TO01_TallerBasico_124
+  - first:
+      213: -4588713636072032702
+    second: TO01_TallerBasico_125
+  - first:
+      213: 6726481615210788560
+    second: TO01_TallerBasico_126
+  - first:
+      213: 3130221761229040847
+    second: TO01_TallerBasico_127
+  - first:
+      213: 3941890345719666874
+    second: TO01_TallerBasico_128
+  - first:
+      213: 6531705202533297695
+    second: TO01_TallerBasico_129
+  - first:
+      213: 7744298472551415178
+    second: TO01_TallerBasico_130
+  - first:
+      213: 2654918378032733914
+    second: TO01_TallerBasico_131
+  - first:
+      213: 7125134449927379480
+    second: TO01_TallerBasico_132
+  - first:
+      213: -5318308813422621009
+    second: TO01_TallerBasico_133
+  - first:
+      213: -640975550667445064
+    second: TO01_TallerBasico_134
+  - first:
+      213: 8536283216109417171
+    second: TO01_TallerBasico_135
+  - first:
+      213: -2415563452238705688
+    second: TO01_TallerBasico_136
+  - first:
+      213: -5634368525418090021
+    second: TO01_TallerBasico_137
+  - first:
+      213: 550351564379626214
+    second: TO01_TallerBasico_138
+  - first:
+      213: 1868502603069741900
+    second: TO01_TallerBasico_139
+  - first:
+      213: 7405510894323499769
+    second: TO01_TallerBasico_140
+  - first:
+      213: -7838133123826263503
+    second: TO01_TallerBasico_141
+  - first:
+      213: -1998026256487575589
+    second: TO01_TallerBasico_142
+  - first:
+      213: 5610937142709520379
+    second: TO01_TallerBasico_143
+  - first:
+      213: 1601698159291705996
+    second: TO01_TallerBasico_144
+  - first:
+      213: 2657532684467552247
+    second: TO01_TallerBasico_145
+  - first:
+      213: -7197660165172697821
+    second: TO01_TallerBasico_146
+  - first:
+      213: 4426118526106314638
+    second: TO01_TallerBasico_147
+  - first:
+      213: 6285675829439596833
+    second: TO01_TallerBasico_148
+  - first:
+      213: -8671437524359312258
+    second: TO01_TallerBasico_149
+  - first:
+      213: -5673257608720402487
+    second: TO01_TallerBasico_150
+  - first:
+      213: 733196515033092626
+    second: TO01_TallerBasico_151
+  - first:
+      213: 6151087890855908962
+    second: TO01_TallerBasico_152
+  - first:
+      213: -5651291623608700697
+    second: TO01_TallerBasico_153
+  - first:
+      213: 8394288425094924140
+    second: TO01_TallerBasico_154
+  - first:
+      213: 2523166726553139592
+    second: TO01_TallerBasico_155
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TO01_TallerBasico_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 253
+        width: 249
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43637bd19dcf832f0800000000000000
+      internalID: -992765708398545356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 491
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ccfd89701bf56e0800000000000000
+      internalID: -1846562676010923006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_2
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 298
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c945d438a063750800000000000000
+      internalID: 6284221889096490093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_3
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 240
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b258b6f5b428f80800000000000000
+      internalID: -8105833506115605624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_4
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 266
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34fc84bc237fa7060800000000000000
+      internalID: 6952140772330753859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 386
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df40f273beb28cb20800000000000000
+      internalID: 3154819828216169725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_6
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 363
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6242d28abad2f15e0800000000000000
+      internalID: -1936779099461835738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_7
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 330
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe552552ee8a2c850800000000000000
+      internalID: 6395860161601361391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_8
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 311
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1353710cede1103e0800000000000000
+      internalID: -2089354810068880079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_9
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 314
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5843e3c25f33460800000000000000
+      internalID: 7220384197976032676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 330
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fda8325ba24ef0e80800000000000000
+      internalID: -8210092723594360097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_11
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 309
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af262d6362011b4a0800000000000000
+      internalID: -6579459824297024774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_12
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 365
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9815f13005a97ba60800000000000000
+      internalID: 7689784557198856585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 339
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287c3c1b2673c3ca0800000000000000
+      internalID: -6035888503554586750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_14
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 315
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9318e929a90ee7c70800000000000000
+      internalID: 8970854462258053433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_15
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 355
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ebe186bac724620800000000000000
+      internalID: 2756902997532261914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_16
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 315
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb84c39f42c4ecbd0800000000000000
+      internalID: -2608063412516927301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_17
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 307
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fa6314f2ec2c33a0800000000000000
+      internalID: -6684418393655514376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_18
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 338
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837b977e2f4ba9170800000000000000
+      internalID: 8186054228057896760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_19
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 381
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de531309d42c88d80800000000000000
+      internalID: -8248129079141648915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_20
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 310
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c429f58f5d17a90800000000000000
+      internalID: -7317832656768316372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_21
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 365
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c117fbd32791d00800000000000000
+      internalID: 943911206441262150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_22
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 360
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8e96caef5010200800000000000000
+      internalID: 144403254425020616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_23
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 399
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc93bde0ac20fe10800000000000000
+      internalID: 2229330885242756342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_24
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 315
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b31c4827d9bb8280800000000000000
+      internalID: -9039927493270957127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_25
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 336
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0572d544f2448b0800000000000000
+      internalID: -5168954501647347526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_26
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 299
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7a59c6bf29da2a0800000000000000
+      internalID: -6724557060038088782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_27
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 373
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1da122d2c5c8010800000000000000
+      internalID: 1192429350261805538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_28
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 365
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc31dd140d8cc970800000000000000
+      internalID: 8776544822657891583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_29
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 322
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b33588b62821f250800000000000000
+      internalID: 5976602327266964409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_30
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 400
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4ea4596245433a0800000000000000
+      internalID: -6686627022048140091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_31
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 322
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f4df2590aa282d10800000000000000
+      internalID: 2100976095354410228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_32
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 369
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a9d5f1898408c50800000000000000
+      internalID: 6665407266706790982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_33
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 316
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc047e0f503c6aa0800000000000000
+      internalID: -6166500604954538818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_34
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 323
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287c498fa320a9850800000000000000
+      internalID: 6384417874052958082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_35
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 309
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb249e9ff47e02fa0800000000000000
+      internalID: -5827403587136175425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_36
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 337
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07d84d0c610fb520800000000000000
+      internalID: 2719894263546042122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_37
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 315
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19bc2d134abd80290800000000000000
+      internalID: -7923842046101369967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_38
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 493
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bcae94e17c41f640800000000000000
+      internalID: 5111951104092843186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_39
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 325
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085056603551fe800800000000000000
+      internalID: 643756718071022976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_40
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 380
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbfd91debaddc61b0800000000000000
+      internalID: -5661906901024514113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_41
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 318
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a70711482a036f0800000000000000
+      internalID: -706886453385201040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_42
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 330
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b756ee228d37f580800000000000000
+      internalID: -8793492118075713609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_43
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 311
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 571cb8fe313162b30800000000000000
+      internalID: 4262115073696973173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_44
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 349
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6afdc6cea0ef8180800000000000000
+      internalID: -9110816479882904981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_45
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 332
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34113b409cfdfbdf0800000000000000
+      internalID: -162165007101783741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_46
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 311
+        width: 210
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: becb54d2f74c9f070800000000000000
+      internalID: 8140753851948317931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_47
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 393
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4ee3e2a091298c0800000000000000
+      internalID: -3994102388007967507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_48
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 362
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c01883b8cb270330800000000000000
+      internalID: 3676955761776791753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_49
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 319
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39308d3505c3ad580800000000000000
+      internalID: -8801656206040497261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_50
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 331
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25bef9d99aa9786b0800000000000000
+      internalID: -5294092783666074798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_51
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 394
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bf3b135176aba990800000000000000
+      internalID: -7373616959233245255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_52
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 372
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4029071f6a855b4d0800000000000000
+      internalID: -3119489692845698556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_53
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 360
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080ac30f9a3e6b980800000000000000
+      internalID: -8523374925732601728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_54
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 324
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345b636d32d1dbf70800000000000000
+      internalID: 9204545253170132291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_55
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 312
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 458d58d1819227ad0800000000000000
+      internalID: -2706055242544981932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_56
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 389
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105630f6bf47a9c20800000000000000
+      internalID: 3214009907330376961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_57
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 318
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cbcf49635a1031c0800000000000000
+      internalID: -4526088679955903548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_58
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 309
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed521c825be1dd540800000000000000
+      internalID: 5034213721891743198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_59
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 394
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f01723755c301abe0800000000000000
+      internalID: -1467887857439706865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_60
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 343
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb0ccccdfe27e4dc0800000000000000
+      internalID: -3652855873223737153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_61
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 330
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89703baafa5e59a30800000000000000
+      internalID: 4221532768375605144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_62
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 364
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b64b07f20eb55790800000000000000
+      internalID: -7541913081018104138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_63
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 315
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4cd863e44011d70800000000000000
+      internalID: 9011989063314293959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_64
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 316
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b80bd14025e4f22e0800000000000000
+      internalID: -2148412383069097845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_65
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 353
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf4f119bb678f430800000000000000
+      internalID: 3816931232162205641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_66
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 370
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629ed7ab1cdd52c20800000000000000
+      internalID: 3181192535934363942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_67
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 321
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18828485bed936b90800000000000000
+      internalID: -7249777341012367231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_68
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 310
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d8e84676621df20800000000000000
+      internalID: 3445577415425690880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_69
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 330
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448efe81246693960800000000000000
+      internalID: 7582203881727191108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_70
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 356
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be577c2dabac13a0800000000000000
+      internalID: -6693286185915687247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_71
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 322
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5691731e94fcb79d0800000000000000
+      internalID: -2775396829125731995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_72
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 226
+        width: 61
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad6ae96f699322f0800000000000000
+      internalID: -998785988548727388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_73
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 237
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9687cb0b2ab64fd0800000000000000
+      internalID: -2357992660837890405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_74
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 324
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2287eed8c7e3caf0800000000000000
+      internalID: -377203093849800148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_75
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 226
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3fa8e64ae1623ed0800000000000000
+      internalID: -2435776789614121156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_76
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 252
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a02104577364360800000000000000
+      internalID: 7153466034850236984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_77
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 264
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611fce8dfca32a030800000000000000
+      internalID: 3504428124419715350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_78
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 310
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa822dae3e7325bc0800000000000000
+      internalID: -3795910083883161425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_79
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 220
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a0404f8d2f8fed0800000000000000
+      internalID: -2379885389444543977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_80
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 282
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79cbe67558ed6b3c0800000000000000
+      internalID: -4344040126273373033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_81
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad964ff8488ab0d0800000000000000
+      internalID: -3406260321050518097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_82
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 241
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb995a12d159a3f80800000000000000
+      internalID: -8126018625285547585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_83
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 256
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171b24385d572c150800000000000000
+      internalID: 5891400822444700017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_84
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 100
+        width: 42
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 029f9832cbf9c5ed0800000000000000
+      internalID: -2423886869033256672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_85
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 303
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c592c5dab316930800000000000000
+      internalID: 4134651548664421394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_86
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 243
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4481c0a715c717290800000000000000
+      internalID: -7894391982421960636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_87
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 261
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99603f1c3c9a12420800000000000000
+      internalID: 2603548717834503833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_88
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 219
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3daec0ef6a6350410800000000000000
+      internalID: 1442619346496842451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_89
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 218
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e80400f8de63cd70800000000000000
+      internalID: 9062208753218357472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_90
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 247
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f86b19c18119650800000000000000
+      internalID: 6237793469867659143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_91
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 226
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18e84fe563c39670800000000000000
+      internalID: 8544387760625608732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_92
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 218
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e052fb4aa3afbb0800000000000000
+      internalID: -4901540765183439232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_93
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 199
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76afefa55eb379330800000000000000
+      internalID: 3717505873677843047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_94
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 206
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021e7d904a1fe3640800000000000000
+      internalID: 5061748718053089568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_95
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 206
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd189558019172f0800000000000000
+      internalID: -976840179180888617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_96
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 193
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52dc26a88e82a69d0800000000000000
+      internalID: -2780364840728605403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_97
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 194
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0909eb4e80493f00800000000000000
+      internalID: 1096978964144523533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_98
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 196
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542295537202c50c0800000000000000
+      internalID: -4585754967799160251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_99
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 185
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46a2644fc3b16990800000000000000
+      internalID: -7394431410378725812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_100
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 184
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b556184281f660f0800000000000000
+      internalID: -1123945515124894285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_101
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 188
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e106c1dbd037ae0800000000000000
+      internalID: -1552882340636647843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_102
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 179
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beab095d286197060800000000000000
+      internalID: 6951612251007662827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_103
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 176
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0088a9947ee40d40800000000000000
+      internalID: 5549822825388867598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_104
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 172
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f94e40b2060de20800000000000000
+      internalID: 3373301858782453513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_105
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 177
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b595c86e693855e30800000000000000
+      internalID: 4491640887508228443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_106
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 175
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d404b6a638449d40800000000000000
+      internalID: 5590172437035877584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_107
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 163
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2452cd989b54027a0800000000000000
+      internalID: -6404042006936672958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_108
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 168
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dfbf4c2917452580800000000000000
+      internalID: -8852591319083663401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_109
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 164
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d93b6d3ce5081f30800000000000000
+      internalID: 4546390336031373785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_110
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 161
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34bc35057a278910800000000000000
+      internalID: 1839485654891541562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_111
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 149
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03610c2f0dfaaf920800000000000000
+      internalID: 3024923411693442608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_112
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 146
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3228e05380844a680800000000000000
+      internalID: -8744785376359579101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_113
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 155
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb3cbc2f44d07bdd0800000000000000
+      internalID: -2470491280807050306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_114
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 133
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a8630a7a5762150800000000000000
+      internalID: 5847490528995084939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_115
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 115
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f981c4b71ea963770800000000000000
+      internalID: 8590223632482703519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_116
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 112
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32da151f6386342b0800000000000000
+      internalID: -5601518926332580573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_117
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 106
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a786b45116bbc310800000000000000
+      internalID: 1426433892544841634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_118
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 90
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b0c09aa9d130950800000000000000
+      internalID: 6414002844404026162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_119
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 94
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5445019f8e6ab9530800000000000000
+      internalID: 3862864624941552709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_120
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 0
+        width: 21
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cedc61ed1dc4edc0800000000000000
+      internalID: -3610535473024540988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_121
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 73
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29709fc6f9bb7f480800000000000000
+      internalID: -8865411048053078126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_122
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 29
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebe00b53f8bf0370800000000000000
+      internalID: 8291048794355723238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_123
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 46
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 732ea2802c67748b0800000000000000
+      internalID: -5168031471651593673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_124
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 47
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d52353ee2317263e0800000000000000
+      internalID: -2061961215823498659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_125
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 23
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2467fe1924d9150c0800000000000000
+      internalID: -4588713636072032702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_126
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 26
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6b5def363495d50800000000000000
+      internalID: 6726481615210788560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_127
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 24
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcc21427b18c07b20800000000000000
+      internalID: 3130221761229040847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_128
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 27
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab89928626864b630800000000000000
+      internalID: 3941890345719666874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_129
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 21
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e6196764745aa50800000000000000
+      internalID: 6531705202533297695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_130
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 24
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8df6030e66497b60800000000000000
+      internalID: 7744298472551415178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_131
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 17
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade1c4ec23a28d420800000000000000
+      internalID: 2654918378032733914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_132
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 29
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ad1d8180091e260800000000000000
+      internalID: 7125134449927379480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_133
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 28
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae8d12df429136b0800000000000000
+      internalID: -5318308813422621009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_134
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 23
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bca1c8f12cca17f0800000000000000
+      internalID: -640975550667445064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_135
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 23
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2b45e9b58f67670800000000000000
+      internalID: 8536283216109417171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_136
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 26
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb45e0a6d13a7ed0800000000000000
+      internalID: -2415563452238705688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_137
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 27
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd130d4ada3bec1b0800000000000000
+      internalID: -5634368525418090021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_138
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea9d68f4dd33a700800000000000000
+      internalID: 550351564379626214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_139
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 9
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b5dddb7314ee910800000000000000
+      internalID: 1868502603069741900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_140
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 17
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f2007c1ce8a5c660800000000000000
+      internalID: 7405510894323499769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_141
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 7
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13adc1cb37b593390800000000000000
+      internalID: -7838133123826263503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_142
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 16
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf872aa4b59544e0800000000000000
+      internalID: -1998026256487575589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_143
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 4
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf70f307a9d0edd40800000000000000
+      internalID: 5610937142709520379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_144
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 9
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8aaafd5dff5a3610800000000000000
+      internalID: 1601698159291705996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffbda475e371e420800000000000000
+      internalID: 2657532684467552247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_146
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325e6e0f636cc1c90800000000000000
+      internalID: -7197660165172697821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_147
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 9
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e87a752595bbc6d30800000000000000
+      internalID: 4426118526106314638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_148
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 4
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129810b2dd43b3750800000000000000
+      internalID: 6285675829439596833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_149
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 9
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c029cc38dd8a780800000000000000
+      internalID: -8671437524359312258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_150
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 7
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c730f8534a8441b0800000000000000
+      internalID: -5673257608720402487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_151
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 9
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2121a158856dc2a00800000000000000
+      internalID: 733196515033092626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_152
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 9
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2665cacc8dd0d5550800000000000000
+      internalID: 6151087890855908962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_153
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 7
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0b9acc5349291b0800000000000000
+      internalID: -5651291623608700697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_154
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 7
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67c4f709d08e7470800000000000000
+      internalID: 8394288425094924140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO01_TallerBasico_155
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 7
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889f84df4c6140320800000000000000
+      internalID: 2523166726553139592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1583 @@
+fileFormatVersion: 2
+guid: 7eb393b7356c2af4abe021cefb233445
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2388424352505580951
+    second: N2_ViviendaModular_0
+  - first:
+      213: 5689517869264898323
+    second: N2_ViviendaModular_1
+  - first:
+      213: -654033699228081632
+    second: N2_ViviendaModular_2
+  - first:
+      213: 2290419191494711103
+    second: N2_ViviendaModular_3
+  - first:
+      213: -6198214234803599854
+    second: N2_ViviendaModular_4
+  - first:
+      213: -7510208546656843666
+    second: N2_ViviendaModular_5
+  - first:
+      213: 6860227586713426129
+    second: N2_ViviendaModular_6
+  - first:
+      213: -6755843865964648369
+    second: N2_ViviendaModular_7
+  - first:
+      213: -5318016834147170717
+    second: N2_ViviendaModular_8
+  - first:
+      213: -5582575405387908475
+    second: N2_ViviendaModular_9
+  - first:
+      213: 675482860596235601
+    second: N2_ViviendaModular_10
+  - first:
+      213: 6066634386838128938
+    second: N2_ViviendaModular_11
+  - first:
+      213: 3499244017603454617
+    second: N2_ViviendaModular_12
+  - first:
+      213: 518287417118007041
+    second: N2_ViviendaModular_13
+  - first:
+      213: -3768479446796423010
+    second: N2_ViviendaModular_14
+  - first:
+      213: 6521433237695186069
+    second: N2_ViviendaModular_15
+  - first:
+      213: 1177510121491595389
+    second: N2_ViviendaModular_16
+  - first:
+      213: -4943138262327265960
+    second: N2_ViviendaModular_17
+  - first:
+      213: 7148311660470856348
+    second: N2_ViviendaModular_18
+  - first:
+      213: -2443726688663065905
+    second: N2_ViviendaModular_19
+  - first:
+      213: 3470645046353011155
+    second: N2_ViviendaModular_20
+  - first:
+      213: 8398954719088940397
+    second: N2_ViviendaModular_21
+  - first:
+      213: -3118306837891771703
+    second: N2_ViviendaModular_22
+  - first:
+      213: -5397582237422844761
+    second: N2_ViviendaModular_23
+  - first:
+      213: 8063669565072340428
+    second: N2_ViviendaModular_24
+  - first:
+      213: 3084097482910885959
+    second: N2_ViviendaModular_25
+  - first:
+      213: -3391582700213866275
+    second: N2_ViviendaModular_26
+  - first:
+      213: 5869096333942205116
+    second: N2_ViviendaModular_27
+  - first:
+      213: -3230014273910254727
+    second: N2_ViviendaModular_28
+  - first:
+      213: -3336720869124083475
+    second: N2_ViviendaModular_29
+  - first:
+      213: 1507342236506391313
+    second: N2_ViviendaModular_30
+  - first:
+      213: 2616792482087797068
+    second: N2_ViviendaModular_31
+  - first:
+      213: -8020584757549257525
+    second: N2_ViviendaModular_32
+  - first:
+      213: 5821493122569435859
+    second: N2_ViviendaModular_33
+  - first:
+      213: -4895366756285635567
+    second: N2_ViviendaModular_34
+  - first:
+      213: -8102077551911061577
+    second: N2_ViviendaModular_35
+  - first:
+      213: 1625477231449680383
+    second: N2_ViviendaModular_36
+  - first:
+      213: -534486668749018368
+    second: N2_ViviendaModular_37
+  - first:
+      213: 771063189255539518
+    second: N2_ViviendaModular_38
+  - first:
+      213: -65137545683319849
+    second: N2_ViviendaModular_39
+  - first:
+      213: 7789090763300817864
+    second: N2_ViviendaModular_40
+  - first:
+      213: 8283704835119010096
+    second: N2_ViviendaModular_41
+  - first:
+      213: 6020603799259518441
+    second: N2_ViviendaModular_42
+  - first:
+      213: -4625984082260775016
+    second: N2_ViviendaModular_43
+  - first:
+      213: 8505639527151459690
+    second: N2_ViviendaModular_44
+  - first:
+      213: -4116082566145159247
+    second: N2_ViviendaModular_45
+  - first:
+      213: -9077780405931775406
+    second: N2_ViviendaModular_46
+  - first:
+      213: -7426820660441580759
+    second: N2_ViviendaModular_47
+  - first:
+      213: 2436341309300021017
+    second: N2_ViviendaModular_48
+  - first:
+      213: -5359630857914481235
+    second: N2_ViviendaModular_49
+  - first:
+      213: -8400607863624319004
+    second: N2_ViviendaModular_50
+  - first:
+      213: -498713920514371863
+    second: N2_ViviendaModular_51
+  - first:
+      213: 1166146407121469843
+    second: N2_ViviendaModular_52
+  - first:
+      213: 5909336180980335735
+    second: N2_ViviendaModular_53
+  - first:
+      213: -7377771053485626614
+    second: N2_ViviendaModular_54
+  - first:
+      213: 2499113974929994257
+    second: N2_ViviendaModular_55
+  - first:
+      213: 3720069331529820723
+    second: N2_ViviendaModular_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: N2_ViviendaModular_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 398
+        width: 16
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79dccff4b43652120800000000000000
+      internalID: 2388424352505580951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 486
+        width: 484
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31985c49b5a35fe40800000000000000
+      internalID: 5689517869264898323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 180
+        width: 72
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0222066d0d76ce6f0800000000000000
+      internalID: -654033699228081632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3797c79e1439cf10800000000000000
+      internalID: 2290419191494711103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_4
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 352
+        width: 11
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21603c43ef48bf9a0800000000000000
+      internalID: -6198214234803599854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_5
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 350
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e688a6b1e1166c790800000000000000
+      internalID: -7510208546656843666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_6
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 353
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d89360a4ac643f50800000000000000
+      internalID: 6860227586713426129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_7
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 347
+        width: 119
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f48ec234ccb6e32a0800000000000000
+      internalID: -6755843865964648369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_8
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 356
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3664c1b8ddb9236b0800000000000000
+      internalID: -5318016834147170717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_9
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 338
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a750e1f35b682b0800000000000000
+      internalID: -5582575405387908475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 343
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d04b5351ccf5900800000000000000
+      internalID: 675482860596235601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_11
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 345
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2908a915d3013450800000000000000
+      internalID: 6066634386838128938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 346
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9962aabe4efcf8030800000000000000
+      internalID: 3499244017603454617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_13
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 340
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f9fdce8a3513700800000000000000
+      internalID: 518287417118007041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_14
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 344
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e90b65ec8eba3bbc0800000000000000
+      internalID: -3768479446796423010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_15
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 346
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5944f374af8c08a50800000000000000
+      internalID: 6521433237695186069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_16
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 344
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d700fee773b575010800000000000000
+      internalID: 1177510121491595389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_17
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 346
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8557756b0f1766bb0800000000000000
+      internalID: -4943138262327265960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_18
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 344
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ae522f497e33360800000000000000
+      internalID: 7148311660470856348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_19
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 265
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcaa81a2683261ed0800000000000000
+      internalID: -2443726688663065905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 272
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1275908453a2030800000000000000
+      internalID: 3470645046353011155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6513e341d41f8470800000000000000
+      internalID: 8398954719088940397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_22
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 253
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c21ac2d37c89b4d0800000000000000
+      internalID: -3118306837891771703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_23
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 242
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4047c7d8fe715b0800000000000000
+      internalID: -5397582237422844761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 198
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc5f34c0fb8e7ef60800000000000000
+      internalID: 8063669565072340428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_25
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 34
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7486499025aecca20800000000000000
+      internalID: 3084097482910885959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_26
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 33
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd07467e08daee0d0800000000000000
+      internalID: -3391582700213866275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_27
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 30
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba2c291508337150800000000000000
+      internalID: 5869096333942205116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_28
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 36
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9735328912fac23d0800000000000000
+      internalID: -3230014273910254727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_29
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 35
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0f9395c0691b1d0800000000000000
+      internalID: -3336720869124083475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_30
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 9
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11308e127c72be410800000000000000
+      internalID: 1507342236506391313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_31
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 26
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4181c9e5e6b05420800000000000000
+      internalID: 2616792482087797068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_32
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 18
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc2d5b68a821b090800000000000000
+      internalID: -8020584757549257525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_33
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 14
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da7121c6291ac050800000000000000
+      internalID: 5821493122569435859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_34
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 3
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114a6563fd9201cb0800000000000000
+      internalID: -4895366756285635567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_35
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 21
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b7bca7a463af8f80800000000000000
+      internalID: -8102077551911061577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_36
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 25
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff92b0b0eeade8610800000000000000
+      internalID: 1625477231449680383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_37
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 19
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b6804e43f1598f0800000000000000
+      internalID: -534486668749018368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 17
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3bc4f6a2ed53ba00800000000000000
+      internalID: 771063189255539518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_39
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 13
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d341005fb5981ff0800000000000000
+      internalID: -65137545683319849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_40
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 16
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb42d5e7c8681c60800000000000000
+      internalID: 7789090763300817864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_41
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 6
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031547998a1a5f270800000000000000
+      internalID: 8283704835119010096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_42
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 13
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e51b34c14b7d8350800000000000000
+      internalID: 6020603799259518441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_43
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 13
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f2c389cf33dcfb0800000000000000
+      internalID: -4625984082260775016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_44
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 9
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d526bc51a1a0670800000000000000
+      internalID: 8505639527151459690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_45
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 5
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf4dbac6bcb0e6c0800000000000000
+      internalID: -4116082566145159247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_46
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 7
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a6f6321de350280800000000000000
+      internalID: -9077780405931775406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_47
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 14
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92bf8d355f1aee890800000000000000
+      internalID: -7426820660441580759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_48
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 3
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9171074338f9fc120800000000000000
+      internalID: 2436341309300021017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_49
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 15
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da509ca9124ce95b0800000000000000
+      internalID: -5359630857914481235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_50
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 13
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4efb15708ab0b6b80800000000000000
+      internalID: -8400607863624319004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_51
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 9
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eec233e4563419f0800000000000000
+      internalID: -498713920514371863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_52
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 13
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391c2909afbfe2010800000000000000
+      internalID: 1166146407121469843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77442b592fd220250800000000000000
+      internalID: 5909336180980335735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_54
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 6
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b64d2e054ec9990800000000000000
+      internalID: -7377771053485626614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_55
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 35
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112bae85be2aea220800000000000000
+      internalID: 2499113974929994257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N2_ViviendaModular_56
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 7
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ae8a5e85750a330800000000000000
+      internalID: 3720069331529820723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

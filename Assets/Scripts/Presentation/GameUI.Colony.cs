@@ -12,6 +12,7 @@ namespace Colonia09.Presentation
         Text pickerTitle, mapNotice, infoTitle, infoText;
         Image infoIcon;
         RectTransform pickerList;
+        ScrollRect pickerScroll;
         Button infoUpgrade;
         Text infoUpgradeLabel;
         CampaignSector pickSector;
@@ -29,8 +30,8 @@ namespace Colonia09.Presentation
         Sprite BuildingIcon(BuildingType type)
         {
             if (!buildingIcons.TryGetValue(type, out var sprite))
-                buildingIcons[type] = sprite = Resources.Load<Sprite>("Sprites/UI/icon_" + type.ToString().ToLowerInvariant())
-                    ?? Resources.Load<Sprite>("Sprites/Colony/" + ColonyView.BuildingArt(type, 0, 1))
+                buildingIcons[type] = sprite = Resources.Load<Sprite>("Sprites/Colony/" + ColonyView.BuildingArt(type, 0, 1))
+                    ?? Resources.Load<Sprite>("Sprites/UI/icon_" + type.ToString().ToLowerInvariant())
                     ?? Resources.Load<Sprite>("Sprites/Colony/bld_" + type.ToString().ToLowerInvariant());
             return sprite;
         }
@@ -49,6 +50,7 @@ namespace Colonia09.Presentation
                 case BuildingType.Farm: return $"+{def.FoodPerHour[i]:0} de comida por hora";
                 case BuildingType.WaterTower: return $"+{def.WaterPerHour[i]:0} de agua por hora";
                 case BuildingType.Works: return $"Obras {def.WorkSpeed[i] * 100:0} % más rápidas";
+                case BuildingType.SelfSufficientHousing: return $"{def.Housing[i]} colonos · +{def.EnergyPerHour[i]:0} energía/h · +{def.FoodPerHour[i]:0} comida/h";
                 default: return $"Espacio para {def.Housing[i]} colonos";
             }
         }
@@ -112,6 +114,7 @@ namespace Colonia09.Presentation
                 Colony.Collect(out _);  // Production also runs while the map is open.
                 rates = Colony.Rates();
                 nextCollect = Time.unscaledTime + 1;
+                if (pickerSheet.activeSelf) RefreshPicker();
                 if (Time.unscaledTime >= nextSave) { SaveGame.Save(); nextSave = Time.unscaledTime + 15; }
             }
             var data = SaveGame.Data;
@@ -239,12 +242,23 @@ namespace Colonia09.Presentation
             var closeRt = (RectTransform)close.transform;
             closeRt.anchorMin = closeRt.anchorMax = Vector2.one; closeRt.pivot = Vector2.one;
             closeRt.sizeDelta = new Vector2(90, 74); closeRt.anchoredPosition = new Vector2(-14, -12);
-            pickerList = Rt("List", sheet);
-            pickerList.anchorMin = new Vector2(.03f, .02f); pickerList.anchorMax = new Vector2(.97f, .915f);
-            pickerList.offsetMin = pickerList.offsetMax = Vector2.zero;
+            var viewport = Rt("Viewport", sheet);
+            viewport.anchorMin = new Vector2(.03f, .02f); viewport.anchorMax = new Vector2(.97f, .915f);
+            viewport.offsetMin = viewport.offsetMax = Vector2.zero;
+            viewport.gameObject.AddComponent<RectMask2D>();
+            pickerScroll = viewport.gameObject.AddComponent<ScrollRect>();
+            pickerScroll.viewport = viewport;
+            pickerScroll.horizontal = false;
+            pickerScroll.movementType = ScrollRect.MovementType.Clamped;
+            pickerScroll.scrollSensitivity = 34;
+            pickerList = Rt("List", viewport);
+            pickerList.anchorMin = new Vector2(0, 1); pickerList.anchorMax = Vector2.one;
+            pickerList.pivot = new Vector2(.5f, 1); pickerList.sizeDelta = Vector2.zero;
+            pickerScroll.content = pickerList;
+            pickerList.gameObject.AddComponent<ContentSizeFitter>().verticalFit = ContentSizeFitter.FitMode.PreferredSize;
             var list = pickerList.gameObject.AddComponent<VerticalLayoutGroup>();
             list.spacing = 7; list.childControlHeight = true; list.childControlWidth = true;
-            list.childForceExpandHeight = true; list.childForceExpandWidth = true;
+            list.childForceExpandHeight = false; list.childForceExpandWidth = true;
             foreach (var type in ColonyData.Types) PickerButtons[type] = PickerRow(type);
             pickerSheet.SetActive(false);
         }
@@ -253,6 +267,7 @@ namespace Colonia09.Presentation
         {
             var def = ColonyData.Buildings[type];
             var row = Rt("Row", pickerList);
+            row.gameObject.AddComponent<LayoutElement>().preferredHeight = 136;
             var bg = row.gameObject.AddComponent<Image>();
             bg.sprite = rounded; bg.type = Image.Type.Sliced; bg.color = PanelLight; bg.raycastTarget = false;
             var icon = Rt("Icon", row).gameObject.AddComponent<Image>();
@@ -274,16 +289,27 @@ namespace Colonia09.Presentation
         {
             game.Audio.Play("select", true);
             pickSector = sector; pickX = x; pickY = y;
-            int built = Colony.CountIn(sector.Id), capacity = ColonyData.LotsFor(sector.Id);
-            bool free = Colony.WorkersFree;
-            pickerTitle.text = $"Construir · {sector.Name} <size=26><color=#99b5c7>{built}/{capacity} edificios · obras {Colony.WorkCount()}/{ColonyData.MaxWorks}</color></size>";
-            // The price of each kind grows with how many already stand, so it is read again every time.
-            foreach (var pair in PickerButtons) pair.Value.GetComponentInChildren<Text>().text = $"CONSTRUIR\n<size=20>{CostText(pair.Key, 1)}</size>";
-            foreach (var pair in PickerButtons) pair.Value.interactable = Colony.CanAfford(pair.Key, 1) && built < capacity && free && Colony.RefuseType(pair.Key) == null;
-            if (!free) ShowMapNotice(Colony.RefuseWork(), 2.6f);
+            RefreshPicker();
+            if (!Colony.WorkersFree) ShowMapNotice(Colony.RefuseWork(), 2.6f);
             infoSheet.SetActive(false);
             pickerSheet.SetActive(true);
             pickerSheet.transform.SetAsLastSibling();
+            pickerScroll.StopMovement();
+            LayoutRebuilder.ForceRebuildLayoutImmediate(pickerList);
+            pickerScroll.verticalNormalizedPosition = 1;
+        }
+
+        void RefreshPicker()
+        {
+            int built = Colony.CountIn(pickSector.Id), capacity = ColonyData.LotsFor(pickSector.Id);
+            bool available = built < capacity && Colony.WorkersFree;
+            pickerTitle.text = $"Construir · {pickSector.Name} <size=26><color=#99b5c7>{built}/{capacity} edificios · obras {Colony.WorkCount()}/{ColonyData.MaxWorks}</color></size>";
+            string duration = Colony.TimeText(Colony.BuildTime(1));
+            foreach (var pair in PickerButtons)
+            {
+                pair.Value.GetComponentInChildren<Text>().text = $"CONSTRUIR · {duration}\n<size=20>{CostText(pair.Key, 1)}</size>";
+                pair.Value.interactable = available && Colony.RefuseType(pair.Key) == null && Colony.CanAfford(pair.Key, 1);
+            }
         }
 
         void BuildHere(BuildingType type)
@@ -342,7 +368,7 @@ namespace Colonia09.Presentation
             var b = shownBuilding;
             if (!System.Enum.TryParse(b.type, out BuildingType type)) return;
             var def = ColonyData.Buildings[type];
-            bool max = b.level >= ColonyData.MaxLevel;
+            bool max = b.level >= def.MaxLevel;
             // The card shows this very building: its look, at its level (or the one it is rising to).
             infoIcon.sprite = Resources.Load<Sprite>("Sprites/Colony/" + ColonyView.BuildingArt(type, b.style, Mathf.Max(1, b.level))) ?? BuildingIcon(type);
             bool working = Colony.IsConnected(b.sector);

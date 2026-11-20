@@ -1,0 +1,4308 @@
+fileFormatVersion: 2
+guid: 4687842b128d2734e8594c46d8606ccc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1739681688740650882
+    second: TO03_TallerAvanzado_0
+  - first:
+      213: -6678897943239367437
+    second: TO03_TallerAvanzado_1
+  - first:
+      213: 8506678822057586643
+    second: TO03_TallerAvanzado_2
+  - first:
+      213: 8521248001821998690
+    second: TO03_TallerAvanzado_3
+  - first:
+      213: 1138035702862902612
+    second: TO03_TallerAvanzado_4
+  - first:
+      213: 9200645571008200283
+    second: TO03_TallerAvanzado_5
+  - first:
+      213: 1008390006082766917
+    second: TO03_TallerAvanzado_6
+  - first:
+      213: -7416880575083526727
+    second: TO03_TallerAvanzado_7
+  - first:
+      213: -899784256519502751
+    second: TO03_TallerAvanzado_8
+  - first:
+      213: 5328011528136938109
+    second: TO03_TallerAvanzado_9
+  - first:
+      213: 6305134377626686291
+    second: TO03_TallerAvanzado_10
+  - first:
+      213: 8419483821712946585
+    second: TO03_TallerAvanzado_11
+  - first:
+      213: -2479884049106559584
+    second: TO03_TallerAvanzado_12
+  - first:
+      213: 3165930928176555014
+    second: TO03_TallerAvanzado_13
+  - first:
+      213: -4204616970606569658
+    second: TO03_TallerAvanzado_14
+  - first:
+      213: 9124638605361699788
+    second: TO03_TallerAvanzado_15
+  - first:
+      213: 2564339220452008794
+    second: TO03_TallerAvanzado_16
+  - first:
+      213: 6071411952315975496
+    second: TO03_TallerAvanzado_17
+  - first:
+      213: -8443614527827842630
+    second: TO03_TallerAvanzado_18
+  - first:
+      213: -8595184296733131955
+    second: TO03_TallerAvanzado_19
+  - first:
+      213: -1272418751106327136
+    second: TO03_TallerAvanzado_20
+  - first:
+      213: 6992458819795722081
+    second: TO03_TallerAvanzado_21
+  - first:
+      213: -5768367689039326644
+    second: TO03_TallerAvanzado_22
+  - first:
+      213: 5671652317354567774
+    second: TO03_TallerAvanzado_23
+  - first:
+      213: -7492748757091912381
+    second: TO03_TallerAvanzado_24
+  - first:
+      213: -1749098320803664390
+    second: TO03_TallerAvanzado_25
+  - first:
+      213: -6783634618400497322
+    second: TO03_TallerAvanzado_26
+  - first:
+      213: 4172670907379030403
+    second: TO03_TallerAvanzado_27
+  - first:
+      213: 3345599299480230359
+    second: TO03_TallerAvanzado_28
+  - first:
+      213: -5257601267907422218
+    second: TO03_TallerAvanzado_29
+  - first:
+      213: -5911602140359191848
+    second: TO03_TallerAvanzado_30
+  - first:
+      213: -1268806960818702407
+    second: TO03_TallerAvanzado_31
+  - first:
+      213: -1656340249070649234
+    second: TO03_TallerAvanzado_32
+  - first:
+      213: 3834206578481961542
+    second: TO03_TallerAvanzado_33
+  - first:
+      213: -2596884634921015352
+    second: TO03_TallerAvanzado_34
+  - first:
+      213: 3577517931702762238
+    second: TO03_TallerAvanzado_35
+  - first:
+      213: -4318997387708466617
+    second: TO03_TallerAvanzado_36
+  - first:
+      213: 292896734039009315
+    second: TO03_TallerAvanzado_37
+  - first:
+      213: -8491428238627807311
+    second: TO03_TallerAvanzado_38
+  - first:
+      213: -4433643050197054718
+    second: TO03_TallerAvanzado_39
+  - first:
+      213: -4725458421401580827
+    second: TO03_TallerAvanzado_40
+  - first:
+      213: 3973104575271689985
+    second: TO03_TallerAvanzado_41
+  - first:
+      213: 191319573827683875
+    second: TO03_TallerAvanzado_42
+  - first:
+      213: 5919856227534902223
+    second: TO03_TallerAvanzado_43
+  - first:
+      213: 4653278168324087731
+    second: TO03_TallerAvanzado_44
+  - first:
+      213: -4599599992271783084
+    second: TO03_TallerAvanzado_45
+  - first:
+      213: -6530526534851211403
+    second: TO03_TallerAvanzado_46
+  - first:
+      213: -1791181919424563406
+    second: TO03_TallerAvanzado_47
+  - first:
+      213: -4410835713125244154
+    second: TO03_TallerAvanzado_48
+  - first:
+      213: 6542396222608553836
+    second: TO03_TallerAvanzado_49
+  - first:
+      213: -8697511441617032221
+    second: TO03_TallerAvanzado_50
+  - first:
+      213: 5990211899737261661
+    second: TO03_TallerAvanzado_51
+  - first:
+      213: 4408846923086792676
+    second: TO03_TallerAvanzado_52
+  - first:
+      213: -5775964436334854217
+    second: TO03_TallerAvanzado_53
+  - first:
+      213: -5862293705595278539
+    second: TO03_TallerAvanzado_54
+  - first:
+      213: 4093532126875483471
+    second: TO03_TallerAvanzado_55
+  - first:
+      213: 6604124712355267170
+    second: TO03_TallerAvanzado_56
+  - first:
+      213: -6437151055172388127
+    second: TO03_TallerAvanzado_57
+  - first:
+      213: 3689204016375003323
+    second: TO03_TallerAvanzado_58
+  - first:
+      213: 8598461061888963488
+    second: TO03_TallerAvanzado_59
+  - first:
+      213: -4167455897102573306
+    second: TO03_TallerAvanzado_60
+  - first:
+      213: 1054971266688249119
+    second: TO03_TallerAvanzado_61
+  - first:
+      213: 4092715802486921382
+    second: TO03_TallerAvanzado_62
+  - first:
+      213: 1857424080577654190
+    second: TO03_TallerAvanzado_63
+  - first:
+      213: -162331145051711767
+    second: TO03_TallerAvanzado_64
+  - first:
+      213: 1269368613939905942
+    second: TO03_TallerAvanzado_65
+  - first:
+      213: 7501309998157916646
+    second: TO03_TallerAvanzado_66
+  - first:
+      213: 979036284190388735
+    second: TO03_TallerAvanzado_67
+  - first:
+      213: 5361539848338127694
+    second: TO03_TallerAvanzado_68
+  - first:
+      213: -2391858926663474325
+    second: TO03_TallerAvanzado_69
+  - first:
+      213: 6810407938372213601
+    second: TO03_TallerAvanzado_70
+  - first:
+      213: -3033772338505230025
+    second: TO03_TallerAvanzado_71
+  - first:
+      213: 8470954140838874140
+    second: TO03_TallerAvanzado_72
+  - first:
+      213: -6944593750665215860
+    second: TO03_TallerAvanzado_73
+  - first:
+      213: 780153026579855930
+    second: TO03_TallerAvanzado_74
+  - first:
+      213: -3955653232504001027
+    second: TO03_TallerAvanzado_75
+  - first:
+      213: -8337554537869659934
+    second: TO03_TallerAvanzado_76
+  - first:
+      213: -130626223436437069
+    second: TO03_TallerAvanzado_77
+  - first:
+      213: 2506294285017530922
+    second: TO03_TallerAvanzado_78
+  - first:
+      213: 2059842066768586244
+    second: TO03_TallerAvanzado_79
+  - first:
+      213: -1435695181332344573
+    second: TO03_TallerAvanzado_80
+  - first:
+      213: 1464624905240346518
+    second: TO03_TallerAvanzado_81
+  - first:
+      213: -831223891866876210
+    second: TO03_TallerAvanzado_82
+  - first:
+      213: -5416044194053067862
+    second: TO03_TallerAvanzado_83
+  - first:
+      213: 7259550708116476737
+    second: TO03_TallerAvanzado_84
+  - first:
+      213: -1878473912962890793
+    second: TO03_TallerAvanzado_85
+  - first:
+      213: -2301120095440163978
+    second: TO03_TallerAvanzado_86
+  - first:
+      213: 7148360151840912263
+    second: TO03_TallerAvanzado_87
+  - first:
+      213: -5898026560664674394
+    second: TO03_TallerAvanzado_88
+  - first:
+      213: 5170090608379925534
+    second: TO03_TallerAvanzado_89
+  - first:
+      213: 3298837568570068801
+    second: TO03_TallerAvanzado_90
+  - first:
+      213: 1899578229989923490
+    second: TO03_TallerAvanzado_91
+  - first:
+      213: 805696695311494225
+    second: TO03_TallerAvanzado_92
+  - first:
+      213: 8459807902051616901
+    second: TO03_TallerAvanzado_93
+  - first:
+      213: 8981252135643946231
+    second: TO03_TallerAvanzado_94
+  - first:
+      213: 4674292790893158171
+    second: TO03_TallerAvanzado_95
+  - first:
+      213: -8649421404764063370
+    second: TO03_TallerAvanzado_96
+  - first:
+      213: -5735876933053882501
+    second: TO03_TallerAvanzado_97
+  - first:
+      213: 5331131145529834814
+    second: TO03_TallerAvanzado_98
+  - first:
+      213: 3350215128358080603
+    second: TO03_TallerAvanzado_99
+  - first:
+      213: -4461303638783616420
+    second: TO03_TallerAvanzado_100
+  - first:
+      213: 7367488274391853727
+    second: TO03_TallerAvanzado_101
+  - first:
+      213: -5842287341921175359
+    second: TO03_TallerAvanzado_102
+  - first:
+      213: 9144436452346828600
+    second: TO03_TallerAvanzado_103
+  - first:
+      213: 5396602804959147898
+    second: TO03_TallerAvanzado_104
+  - first:
+      213: -1769249729130051415
+    second: TO03_TallerAvanzado_105
+  - first:
+      213: -3652216147773419035
+    second: TO03_TallerAvanzado_106
+  - first:
+      213: 835086179666674908
+    second: TO03_TallerAvanzado_107
+  - first:
+      213: 787562344272887170
+    second: TO03_TallerAvanzado_108
+  - first:
+      213: -7063427238330323054
+    second: TO03_TallerAvanzado_109
+  - first:
+      213: -4854812070144386230
+    second: TO03_TallerAvanzado_110
+  - first:
+      213: -1796694935234925364
+    second: TO03_TallerAvanzado_111
+  - first:
+      213: -1948296228281035899
+    second: TO03_TallerAvanzado_112
+  - first:
+      213: -6792512208046739230
+    second: TO03_TallerAvanzado_113
+  - first:
+      213: 3537340112472225847
+    second: TO03_TallerAvanzado_114
+  - first:
+      213: 5933297033144715418
+    second: TO03_TallerAvanzado_115
+  - first:
+      213: 8001133040584384912
+    second: TO03_TallerAvanzado_116
+  - first:
+      213: 6385705072231735374
+    second: TO03_TallerAvanzado_117
+  - first:
+      213: 2533888365234195055
+    second: TO03_TallerAvanzado_118
+  - first:
+      213: -2113974334572587960
+    second: TO03_TallerAvanzado_119
+  - first:
+      213: 7930577668963428301
+    second: TO03_TallerAvanzado_120
+  - first:
+      213: -8321149558290767058
+    second: TO03_TallerAvanzado_121
+  - first:
+      213: 8921865644292123868
+    second: TO03_TallerAvanzado_122
+  - first:
+      213: -1906353091628885733
+    second: TO03_TallerAvanzado_123
+  - first:
+      213: 6739731451090456777
+    second: TO03_TallerAvanzado_124
+  - first:
+      213: -4464908849874247395
+    second: TO03_TallerAvanzado_125
+  - first:
+      213: 5514111473748315439
+    second: TO03_TallerAvanzado_126
+  - first:
+      213: -1813535673699777197
+    second: TO03_TallerAvanzado_127
+  - first:
+      213: 1568218671229325510
+    second: TO03_TallerAvanzado_128
+  - first:
+      213: 7935264212273093687
+    second: TO03_TallerAvanzado_129
+  - first:
+      213: 5680437853799498895
+    second: TO03_TallerAvanzado_130
+  - first:
+      213: 4324970011051982446
+    second: TO03_TallerAvanzado_131
+  - first:
+      213: 5757469485359632563
+    second: TO03_TallerAvanzado_132
+  - first:
+      213: -7718757865130403596
+    second: TO03_TallerAvanzado_133
+  - first:
+      213: -7849891744605655892
+    second: TO03_TallerAvanzado_134
+  - first:
+      213: 3744717588352448795
+    second: TO03_TallerAvanzado_135
+  - first:
+      213: 8783333785966866330
+    second: TO03_TallerAvanzado_136
+  - first:
+      213: -3911492439290333629
+    second: TO03_TallerAvanzado_137
+  - first:
+      213: -1209393911921900944
+    second: TO03_TallerAvanzado_138
+  - first:
+      213: -1205827978434145848
+    second: TO03_TallerAvanzado_139
+  - first:
+      213: 6056813874873660865
+    second: TO03_TallerAvanzado_140
+  - first:
+      213: 5547342224352250453
+    second: TO03_TallerAvanzado_141
+  - first:
+      213: -7323225102259939697
+    second: TO03_TallerAvanzado_142
+  - first:
+      213: 5646682328954708420
+    second: TO03_TallerAvanzado_143
+  - first:
+      213: 7594666251158518756
+    second: TO03_TallerAvanzado_144
+  - first:
+      213: -552482503274540974
+    second: TO03_TallerAvanzado_145
+  - first:
+      213: 3093901326870688184
+    second: TO03_TallerAvanzado_146
+  - first:
+      213: -7371278766778621984
+    second: TO03_TallerAvanzado_147
+  - first:
+      213: 4600641323425234433
+    second: TO03_TallerAvanzado_148
+  - first:
+      213: -6496487440382140152
+    second: TO03_TallerAvanzado_149
+  - first:
+      213: -8434336517113832558
+    second: TO03_TallerAvanzado_150
+  - first:
+      213: 2326998791247614816
+    second: TO03_TallerAvanzado_151
+  - first:
+      213: 1566635567309792522
+    second: TO03_TallerAvanzado_152
+  - first:
+      213: -1141876962378892278
+    second: TO03_TallerAvanzado_153
+  - first:
+      213: -7938300507004398315
+    second: TO03_TallerAvanzado_154
+  - first:
+      213: 2896253981693352208
+    second: TO03_TallerAvanzado_155
+  - first:
+      213: -4001577926114756287
+    second: TO03_TallerAvanzado_156
+  - first:
+      213: -7755017855424764703
+    second: TO03_TallerAvanzado_157
+  - first:
+      213: -5406343048861662096
+    second: TO03_TallerAvanzado_158
+  - first:
+      213: -8781361813008365506
+    second: TO03_TallerAvanzado_159
+  - first:
+      213: -2618164483367489698
+    second: TO03_TallerAvanzado_160
+  - first:
+      213: -8375863092293476543
+    second: TO03_TallerAvanzado_161
+  - first:
+      213: -1818782757294662427
+    second: TO03_TallerAvanzado_162
+  - first:
+      213: -8188296428901182378
+    second: TO03_TallerAvanzado_163
+  - first:
+      213: 2095783294790937354
+    second: TO03_TallerAvanzado_164
+  - first:
+      213: 7430005457259094993
+    second: TO03_TallerAvanzado_165
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 325
+        width: 366
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70ac58a8b86bd7e0800000000000000
+      internalID: -1739681688740650882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_1
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 493
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f4612af4b9cf43a0800000000000000
+      internalID: -6678897943239367437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 491
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dfa41f715bcd0670800000000000000
+      internalID: 8506678822057586643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_3
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 493
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e7b9ff8ed814670800000000000000
+      internalID: 8521248001821998690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 493
+        width: 47
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 455fad2317d1bcf00800000000000000
+      internalID: 1138035702862902612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_5
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 348
+        width: 231
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ef63456624faf70800000000000000
+      internalID: 9200645571008200283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_6
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 485
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5480e9b2e558efd00800000000000000
+      internalID: 1008390006082766917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_7
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 487
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b5c6acc962f11990800000000000000
+      internalID: -7416880575083526727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_8
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 344
+        width: 9
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1648aa76cf25383f0800000000000000
+      internalID: -899784256519502751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_9
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 477
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72d9cd7146e0f940800000000000000
+      internalID: 5328011528136938109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_10
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 478
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353da877f46508750800000000000000
+      internalID: 6305134377626686291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_11
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 473
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99539517de308d470800000000000000
+      internalID: 8419483821712946585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_12
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 461
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad98d8a89ea59dd0800000000000000
+      internalID: -2479884049106559584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_13
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 449
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604e265c765afeb20800000000000000
+      internalID: 3165930928176555014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 450
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6479a6a642336a5c0800000000000000
+      internalID: -4204616970606569658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_15
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 452
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb5668977a31ae70800000000000000
+      internalID: 9124638605361699788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_16
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 454
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a53e4ae3fec569320800000000000000
+      internalID: 2564339220452008794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_17
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 447
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847cadeb00df14450800000000000000
+      internalID: 6071411952315975496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_18
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 437
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab96e78b25142da80800000000000000
+      internalID: -8443614527827842630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_19
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 444
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4bb43edb65c7b880800000000000000
+      internalID: -8595184296733131955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_20
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 442
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0add2ce23e5775ee0800000000000000
+      internalID: -1272418751106327136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_21
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 441
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f987cbf343a0160800000000000000
+      internalID: 6992458819795722081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_22
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 434
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4258f02624a2ffa0800000000000000
+      internalID: -5768367689039326644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_23
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 434
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58a071abb1c5be40800000000000000
+      internalID: 5671652317354567774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_24
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 429
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345794624b8640890800000000000000
+      internalID: -7492748757091912381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_25
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 436
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afde3472854f9b7e0800000000000000
+      internalID: -1749098320803664390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_26
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 433
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651223c7140bbd1a0800000000000000
+      internalID: -6783634618400497322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_27
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 420
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3891fee151e48e930800000000000000
+      internalID: 4172670907379030403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_28
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 421
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9905e46d4fd6e20800000000000000
+      internalID: 3345599299480230359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_29
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 427
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f71cb7b08f3907b0800000000000000
+      internalID: -5257601267907422218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_30
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 423
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d29372ac25c5fda0800000000000000
+      internalID: -5911602140359191848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_31
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 420
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7bbd3aaca446ee0800000000000000
+      internalID: -1268806960818702407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_32
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 426
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6046f2b15f7309e0800000000000000
+      internalID: -1656340249070649234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_33
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 426
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a12e19196d53530800000000000000
+      internalID: 3834206578481961542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 411
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7ecd4fe2306fbd0800000000000000
+      internalID: -2596884634921015352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_35
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 417
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efabbb8ba95e5a130800000000000000
+      internalID: 3577517931702762238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_36
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 406
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74afbc742c6df04c0800000000000000
+      internalID: -4318997387708466617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_37
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 412
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328644c1704901400800000000000000
+      internalID: 292896734039009315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_38
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 411
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf5ed8a103682a80800000000000000
+      internalID: -8491428238627807311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_39
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 403
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b0024e2298872c0800000000000000
+      internalID: -4433643050197054718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_40
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 409
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea0b7f2a9ccb6eb0800000000000000
+      internalID: -4725458421401580827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_41
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 409
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f5c809f8d432730800000000000000
+      internalID: 3973104575271689985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_42
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 404
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32604948324b7a200800000000000000
+      internalID: 191319573827683875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_43
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 404
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc31a9bcfdd872250800000000000000
+      internalID: 5919856227534902223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_44
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 404
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bf990807d3c39040800000000000000
+      internalID: 4653278168324087731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_45
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 401
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b30cf3d20fa20c0800000000000000
+      internalID: -4599599992271783084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_46
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 405
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f4eed77b8ee55a0800000000000000
+      internalID: -6530526534851211403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_47
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 409
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237b89cc8817427e0800000000000000
+      internalID: -1791181919424563406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_48
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 394
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603209cd94099c2c0800000000000000
+      internalID: -4410835713125244154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_49
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 397
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67b07c83b24bca50800000000000000
+      internalID: 6542396222608553836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_50
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 397
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb658cdc6b3c4780800000000000000
+      internalID: -8697511441617032221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_51
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 400
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56482d3cf1812350800000000000000
+      internalID: 5990211899737261661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_52
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 395
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e789afdaee5f2d30800000000000000
+      internalID: 4408846923086792676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_53
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 399
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bfb8f092f6a7dfa0800000000000000
+      internalID: -5775964436334854217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_54
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 394
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b2cfc3fe2f4aea0800000000000000
+      internalID: -5862293705595278539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_55
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 393
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4dff0be7c52fc830800000000000000
+      internalID: 4093532126875483471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_56
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 394
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262805c8f6096ab50800000000000000
+      internalID: 6604124712355267170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_57
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 389
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea3be68835aaa6a0800000000000000
+      internalID: -6437151055172388127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_58
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 390
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8f9f3b18fa23330800000000000000
+      internalID: 3689204016375003323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_59
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 387
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a37be877ced35770800000000000000
+      internalID: 8598461061888963488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_60
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 392
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601281411f83a26c0800000000000000
+      internalID: -4167455897102573306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_61
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 391
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d623f07c204ae00800000000000000
+      internalID: 1054971266688249119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_62
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 393
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a85cd5965f3cc830800000000000000
+      internalID: 4092715802486921382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_63
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 388
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead66183c55e6c910800000000000000
+      internalID: 1857424080577654190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_64
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 386
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6d5330fa84fbdf0800000000000000
+      internalID: -162331145051711767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_65
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 380
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6950bea6704bd9110800000000000000
+      internalID: 1269368613939905942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_66
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 379
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9e94e13b10a1860800000000000000
+      internalID: 7501309998157916646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_67
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 378
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1f265305c369d00800000000000000
+      internalID: 979036284190388735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_68
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 379
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bbb4dd514086a40800000000000000
+      internalID: 5361539848338127694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_69
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 381
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6360639af86eced0800000000000000
+      internalID: -2391858926663474325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_70
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 382
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b1d26dfed638e50800000000000000
+      internalID: 6810407938372213601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_71
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 380
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7395df9b120e5e5d0800000000000000
+      internalID: -3033772338505230025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_72
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 382
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c4359f8efde8570800000000000000
+      internalID: 8470954140838874140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_73
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 380
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80c33e17c8df9f90800000000000000
+      internalID: -6944593750665215860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_74
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 373
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3afcb35b09a3da00800000000000000
+      internalID: 780153026579855930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_75
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 372
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd29fdc752ba19c0800000000000000
+      internalID: -3955653232504001027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_76
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 372
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e035d2725e0b4c80800000000000000
+      internalID: -8337554537869659934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_77
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 374
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b968b1542cef2ef0800000000000000
+      internalID: -130626223436437069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_78
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 377
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22cf019f5528c220800000000000000
+      internalID: 2506294285017530922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_79
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 373
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406e52b3277069c10800000000000000
+      internalID: 2059842066768586244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_80
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 370
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30112f6d6d2631ce0800000000000000
+      internalID: -1435695181332344573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_81
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 373
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f7a066794635410800000000000000
+      internalID: 1464624905240346518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_82
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 374
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec6057c3646e674f0800000000000000
+      internalID: -831223891866876210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_83
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 373
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aab66ad308856d4b0800000000000000
+      internalID: -5416044194053067862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_84
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 365
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143d73208ea1fb460800000000000000
+      internalID: 7259550708116476737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_85
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 368
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d34202cde15ee5e0800000000000000
+      internalID: -1878473912962890793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_86
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 366
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ba6cd0777c010e0800000000000000
+      internalID: -2301120095440163978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_87
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 362
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783f8093fa3143360800000000000000
+      internalID: 7148360151840912263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_88
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 366
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af53c79710062ea0800000000000000
+      internalID: -5898026560664674394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_89
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 365
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e149119140adfb740800000000000000
+      internalID: 5170090608379925534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_90
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 365
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f05566a43d7cd20800000000000000
+      internalID: 3298837568570068801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_91
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 366
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa5d95f558ac5a10800000000000000
+      internalID: 1899578229989923490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_92
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 341
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c6fb820e86e2b00800000000000000
+      internalID: 805696695311494225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_93
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 360
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58844d50776476570800000000000000
+      internalID: 8459807902051616901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_94
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 363
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc964f8b31d3ac70800000000000000
+      internalID: 8981252135643946231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_95
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 364
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f1b51278c6ed040800000000000000
+      internalID: 4674292790893158171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_96
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 353
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679b0681f0517f780800000000000000
+      internalID: -8649421404764063370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_97
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 368
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f57f1c1521660b0800000000000000
+      internalID: -5735876933053882501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_98
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 370
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3db354088bfbf940800000000000000
+      internalID: 5331131145529834814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_99
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 368
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b505ce6b8ea5e7e20800000000000000
+      internalID: 3350215128358080603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_100
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 363
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a152f3af34612c0800000000000000
+      internalID: -4461303638783616420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_101
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 365
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a6bf90d839e3660800000000000000
+      internalID: 7367488274391853727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_102
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 369
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8f605cd960ceea0800000000000000
+      internalID: -5842287341921175359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_103
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 360
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837144d018097ee70800000000000000
+      internalID: 9144436452346828600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_104
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 353
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77777f98a594ea40800000000000000
+      internalID: 5396602804959147898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_105
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 327
+        width: 55
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a84f38cebc5277e0800000000000000
+      internalID: -1769249729130051415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_106
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 348
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e1150d83c8b05dc0800000000000000
+      internalID: -3652216147773419035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_107
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 354
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4ced7b472d69b00800000000000000
+      internalID: 835086179666674908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_108
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 354
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28dfbd887cbfdea00800000000000000
+      internalID: 787562344272887170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_109
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 355
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29fa082b95aa9fd90800000000000000
+      internalID: -7063427238330323054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_110
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 355
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4bd3c3e42e30acb0800000000000000
+      internalID: -4854812070144386230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_111
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 348
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc2497c97bd017e0800000000000000
+      internalID: -1796694935234925364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_112
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 359
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583531427e246f4e0800000000000000
+      internalID: -1948296228281035899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_113
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 352
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0bed292262cb1a0800000000000000
+      internalID: -6792512208046739230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_114
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 358
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 738b5a53718271130800000000000000
+      internalID: 3537340112472225847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_115
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 352
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a984877373e475250800000000000000
+      internalID: 5933297033144715418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_116
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0916caccb1cb90f60800000000000000
+      internalID: 8001133040584384912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_117
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 342
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4068c62ee49e9850800000000000000
+      internalID: 6385705072231735374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_118
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 344
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a87460b0e2a2320800000000000000
+      internalID: 2533888365234195055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_119
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 350
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84412830b87a9a2e0800000000000000
+      internalID: -2113974334572587960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_120
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 344
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7e5363f521f0e60800000000000000
+      internalID: 7930577668963428301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_121
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 346
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e232e276096558c80800000000000000
+      internalID: -8321149558290767058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_122
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 342
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc2bcd8885d0db70800000000000000
+      internalID: 8921865644292123868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_123
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 345
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b191ef4a6f54b85e0800000000000000
+      internalID: -1906353091628885733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_124
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 345
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c056cfcb06588d50800000000000000
+      internalID: 6739731451090456777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_125
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 351
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d116fb0ae057902c0800000000000000
+      internalID: -4464908849874247395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_126
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 343
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d8cac9b2f068c40800000000000000
+      internalID: 5514111473748315439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_127
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 347
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35540adc9e605d6e0800000000000000
+      internalID: -1813535673699777197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_128
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 347
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c052cc929e63c510800000000000000
+      internalID: 1568218671229325510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_129
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 345
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c586b12c8bf1e60800000000000000
+      internalID: 7935264212273093687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_130
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 341
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f84c66cb128f4de40800000000000000
+      internalID: 5680437853799498895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_131
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 344
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e78f47f41650c30800000000000000
+      internalID: 4324970011051982446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_132
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 338
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b013081ef3a6ef40800000000000000
+      internalID: 5757469485359632563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_133
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 343
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f856ad0e9671e490800000000000000
+      internalID: -7718757865130403596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_134
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 344
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac228d7c059f0390800000000000000
+      internalID: -7849891744605655892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_135
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 340
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19b7e56ec8e7f330800000000000000
+      internalID: 3744717588352448795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_136
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 341
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9fed30da8ba4e970800000000000000
+      internalID: 8783333785966866330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_137
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 285
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3463976b95697b9c0800000000000000
+      internalID: -3911492439290333629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_138
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 276
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072006e05ae573fe0800000000000000
+      internalID: -1209393911921900944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_139
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 263
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c19435a7d9044fe0800000000000000
+      internalID: -1205827978434145848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_140
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 224
+        width: 10
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5708af0202e0450800000000000000
+      internalID: 6056813874873660865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_141
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 257
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a8a0aac5e1cfc40800000000000000
+      internalID: 5547342224352250453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_142
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 248
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f869291d19dae5a90800000000000000
+      internalID: -7323225102259939697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_143
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 241
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c122d829ab0d5e40800000000000000
+      internalID: 5646682328954708420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_144
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 224
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb73f797bca56960800000000000000
+      internalID: 7594666251158518756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_145
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 188
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250d3b727103558f0800000000000000
+      internalID: -552482503274540974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_146
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 168
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1bc365ddebfea20800000000000000
+      internalID: 3093901326870688184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_147
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 196
+        width: 9
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0efd7cd2405f3b990800000000000000
+      internalID: -7371278766778621984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_148
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 169
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e7ebd88e2c8df30800000000000000
+      internalID: 4600641323425234433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_149
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 178
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8016c34c717d7d5a0800000000000000
+      internalID: -6496487440382140152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_150
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 162
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b135def9733fa80800000000000000
+      internalID: -8434336517113832558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_151
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 150
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063d31952192b4020800000000000000
+      internalID: 2326998791247614816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_152
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 132
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a052ef18fbecdb510800000000000000
+      internalID: 1566635567309792522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_153
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 133
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c3430e3fc3720f0800000000000000
+      internalID: -1141876962378892278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_154
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 133
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51513bf6fbd75d190800000000000000
+      internalID: -7938300507004398315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_155
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 124
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019942eb6af813820800000000000000
+      internalID: 2896253981693352208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_156
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 149b2e4d31a8778c0800000000000000
+      internalID: -4001577926114756287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_157
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 97
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4689c2954a06490800000000000000
+      internalID: -7755017855424764703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_158
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074c2be14afc8f4b0800000000000000
+      internalID: -5406343048861662096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_159
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 5
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38c47be4f5522680800000000000000
+      internalID: -8781361813008365506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_160
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 4
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f265526496aabd0800000000000000
+      internalID: -2618164483367489698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_161
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 4
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14fda8015e4f2cb80800000000000000
+      internalID: -8375863092293476543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_162
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 4
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec98d3f7b262c6e0800000000000000
+      internalID: -1818782757294662427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_163
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 4
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 654deb708c35d5e80800000000000000
+      internalID: -8188296428901182378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_164
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 34
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b263c7dc7b51d10800000000000000
+      internalID: 2095783294790937354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TO03_TallerAvanzado_165
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 0
+        width: 13
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d36427f89eac1760800000000000000
+      internalID: 7430005457259094993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
