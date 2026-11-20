@@ -227,7 +227,6 @@ namespace Colonia09.Presentation
 
             BuildTerrain();
             BuildWater();
-            BuildRoads(paveMat);
             BuildDistricts(paveMat);
             BuildPlants(plantMat);
             world.gameObject.SetActive(Active);
@@ -249,7 +248,10 @@ namespace Colonia09.Presentation
                 for (int i = 0; i < n; i++)
                 {
                     float a = g.a0 + i * step, b = g.a0 + j * step;
-                    verts[j * n + i] = World(a, b, TerrainHeight(a, b)) - IslandOrigin;
+                    // Routes are cleared and sunk a little, so the road decks sit on them without the ground poking through.
+                    float h = TerrainHeight(a, b);
+                    if (RoadDistance(a, b) < 1.05f) h = Mathf.Min(h, GroundLevel - .06f);
+                    verts[j * n + i] = World(a, b, h) - IslandOrigin;
                 }
             var tris = new int[(n - 1) * (n - 1) * 6];
             int t = 0;
@@ -275,6 +277,8 @@ namespace Colonia09.Presentation
                 if (h < -1.5f) c = Color.Lerp(c, sand, Mathf.InverseLerp(-1.5f, -2.2f, h) * .6f);
                 float snowLine = 6.6f + Mathf.PerlinNoise(a * .3f, b * .3f) * 1.4f;
                 c = Color.Lerp(c, snow, Mathf.InverseLerp(snowLine, snowLine + .8f, h) * Mathf.Lerp(1, .55f, steep));
+                // Planned routes show as dusty regolith tracks until a connection lays its deck.
+                c = Color.Lerp(c, (Color)Regolith, Mathf.InverseLerp(1.3f, .6f, RoadDistance(a, b)) * .85f);
                 colors[k] = c;
             }
             mesh.colors32 = colors;
@@ -314,48 +318,12 @@ namespace Colonia09.Presentation
             MeshObject("Falls", foam.Build("Falls"), foamMat, false);
         }
 
-        void BuildRoads(Material paveMat)
-        {
-            var roads = new MeshBuilder();
-            var asphalt = Rgb("#3a4146"); var curb = Rgb("#a3aba7"); var mark = Rgb("#d9cc94");
-            foreach (var road in Island.roads)
-            {
-                var path = new List<Vector3>();
-                foreach (var p in road.points) { var ab = PlanAb(p); path.Add(World(ab.x, ab.y, GroundLevel) - IslandOrigin); }
-                roads.Ribbon(path, 1.15f, .015f, curb);
-                roads.Ribbon(path, .9f, .03f, asphalt);
-                for (int i = 0; i + 2 < path.Count; i += 4) roads.Ribbon(new[] { path[i], path[i + 1] }, .06f, .035f, mark);
-            }
-            // Viaducts: rails along both sides and piers down to the river bed.
-            var rail = Rgb("#c3ced3"); var pier = Rgb("#5d666c");
-            foreach (var viaduct in Island.viaducts)
-            {
-                for (int i = 0; i < viaduct.points.Length; i += 3)
-                {
-                    var ab = PlanAb(viaduct.points[i]);
-                    float ground = TerrainHeight(ab.x, ab.y);
-                    if (ground > -.2f) continue;
-                    roads.Box(World(ab.x, ab.y, 0) - IslandOrigin, .12f, .12f, ground - .1f, 0, pier, pier);
-                }
-                var path = new List<Vector3>();
-                foreach (var p in viaduct.points) { var ab = PlanAb(p); path.Add(World(ab.x, ab.y, GroundLevel) - IslandOrigin); }
-                for (int i = 0; i + 1 < path.Count; i++)
-                {
-                    var d = path[i + 1] - path[i];
-                    var s = new Vector3(-d.z, 0, d.x).normalized * .55f;
-                    foreach (var o in new[] { s, -s })
-                        roads.Quad(path[i] + o + Vector3.up * .04f, path[i] + o + Vector3.up * .2f, path[i + 1] + o + Vector3.up * .2f, path[i + 1] + o + Vector3.up * .04f, rail);
-                }
-            }
-            MeshObject("Roads", roads.Build("Roads"), paveMat, false);
-        }
-
         static readonly string[] DistrictPaving = { "#7d8a70", "#8a9670", "#7a8c86", "#83924f", "#968f74", "#868f89", "#8a9592", "#8ea06a" };
 
         void BuildDistricts(Material paveMat)
         {
             var mb = new MeshBuilder();
-            var street = Rgb("#3a4146"); var walk = Rgb("#9aa3a6"); var wall = Rgb("#59636a"); var mark = Rgb("#d9cc94");
+            var street = DeckColor; var walk = Rgb("#9aa3a6"); var wall = Rgb("#59636a"); var mark = Rgb("#5fc6d8");
             var garden = Rgb("#5d8a42"); var plaza = Rgb("#aab3b5");
             foreach (var sector in CampaignData.Sectors)
             {
@@ -472,6 +440,7 @@ namespace Colonia09.Presentation
             for (int k = 0; k + 4 < f.trees.Length; k += 5)
             {
                 float a = f.trees[k], b = f.trees[k + 1], y = f.trees[k + 2], s = f.trees[k + 3];
+                if (RoadDistance(a, b) < 1.0f + .4f * s) continue;  // Crowns stay clear of the road decks.
                 int kind = (int)f.trees[k + 4];
                 var leaf = Color.Lerp(leaves[kind], Color.white, (float)rng.NextDouble() * .08f) * (.9f + (float)rng.NextDouble() * .15f);
                 var m = Matrix4x4.TRS(World(a, b, y - .03f) - IslandOrigin, Quaternion.Euler(0, (float)rng.NextDouble() * 360, 0), Vector3.one * s);
@@ -482,6 +451,7 @@ namespace Colonia09.Presentation
             for (int k = 0; k + 4 < f.rocks.Length; k += 5)
             {
                 float a = f.rocks[k], b = f.rocks[k + 1], y = f.rocks[k + 2], s = f.rocks[k + 3];
+                if (RoadDistance(a, b) < 1.0f + .5f * s) continue;
                 var m = Matrix4x4.TRS(World(a, b, y - s * .2f) - IslandOrigin, Quaternion.Euler(0, (float)rng.NextDouble() * 360, 0),
                     new Vector3(s * (.8f + (float)rng.NextDouble() * .5f), s * (.5f + (float)rng.NextDouble() * .6f), s * (.8f + (float)rng.NextDouble() * .5f)));
                 Area(a, b).Add(rock, m, Tint(rock, stone[(int)f.rocks[k + 4] % 3], stone[0]));

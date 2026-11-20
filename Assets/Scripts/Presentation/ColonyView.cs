@@ -57,7 +57,7 @@ namespace Colonia09.Presentation
 
     /// <summary>
     /// The alpine island and its road network share a camera with the interactive districts.
-    /// Barricades mark hostile ground; energy pulses and cargo drones follow completed connections.
+    /// Barricades mark hostile ground; hover pods and cargo drones follow completed connections.
     /// Tile (x, y) is a diamond one unit wide and half a unit tall.
     /// </summary>
     public sealed partial class ColonyView : MonoBehaviour
@@ -238,15 +238,15 @@ namespace Colonia09.Presentation
                 return Vector3.Lerp(points[i - 1], points[i], (d - distances[i - 1]) / (distances[i] - distances[i - 1]));
             }
         }
-        sealed class Pulse { public Path Path; public SpriteRenderer R; public float Offset; }
+        sealed class Pod { public Path Path; public Transform R; public float Offset, Speed; }
         sealed class Drone { public Path Path; public Transform R; public SpriteRenderer Shadow; public float Offset, Speed; }
         sealed class Blink { public SpriteRenderer R; public Color Color; public float Rate, Phase, Base; }
         sealed class Frames { public SpriteRenderer Day, Night; public Sprite[] DaySprites, NightSprites; public float Fps; }
         sealed class Puff { public Vector3 From; public SpriteRenderer R; public float Phase, Rate; }
-        sealed class LinkBuild { public LinkSave Work; public List<GameObject> Tiles = new List<GameObject>(); public Path Path; public SpriteRenderer Tip; }
+        sealed class LinkBuild { public LinkSave Work; public List<GameObject> Sections; public List<float> Ends; public Path Path; public SpriteRenderer Tip; public Transform Rig; }
         sealed class Spark { public SpriteRenderer R; public Vector3 Center; }
 
-        readonly List<Pulse> pulses = new List<Pulse>();
+        readonly List<Pod> pods = new List<Pod>();
         readonly List<Drone> drones = new List<Drone>();
         readonly List<Blink> blinks = new List<Blink>();
         readonly List<Frames> frames = new List<Frames>();
@@ -259,39 +259,34 @@ namespace Colonia09.Presentation
         Path sweepPath;
         Vector3 flashAtPoint;
 
-        static readonly Color PulseColor = new Color(.45f, .95f, 1f, .9f);
-
         public void Rebuild()
         {
             if (root == null) return;
             for (int i = root.childCount - 1; i >= 0; i--) Destroy(root.GetChild(i).gameObject);
             placed.Clear();
             nightLayers.Clear();
-            pulses.Clear(); drones.Clear(); blinks.Clear(); frames.Clear(); puffs.Clear(); linkBuilds.Clear(); sparks.Clear(); roadPaths.Clear(); spinners.Clear();
+            pods.Clear(); drones.Clear(); blinks.Clear(); frames.Clear(); puffs.Clear(); linkBuilds.Clear(); sparks.Clear(); roadPaths.Clear(); spinners.Clear();
             DrawIsland();
             var lift = new Vector3(0, SpriteLift, 0);
 
-            // Lit walkways are the energy links: they join each connected zone to the one before it.
+            // Mag-lev roads are the connections: each joins a connected zone to the one before it. Only finished
+            // connections have their deck; the rest of the routes stay regolith tracks.
             var sectors = CampaignData.Sectors;
             var state = Colony.State();
+            var built = new HashSet<int>();
+            var laying = new List<(int link, LinkSave work, Path path)>();
             for (int i = 0; i + 1 < sectors.Length; i++)
             {
                 if (!state.Connected.Contains(sectors[i].Id)) continue;
                 var work = Colony.LinkWork(sectors[i + 1].Id);
                 if (!state.Connected.Contains(sectors[i + 1].Id) && work == null) continue;
-                var tiles = LightRoad(sectors[i + 1], out var path);
+                var path = LinkPath(i);
                 roadPaths[sectors[i + 1].Id] = path;
-                if (work != null)
-                {
-                    // Still being laid: the lights come on tile by tile as the work advances.
-                    var build = new LinkBuild { Work = work, Tiles = tiles, Path = path };
-                    build.Tip = Light(Vector3.zero, new Color(1f, .8f, .4f, 1), .5f, 9000);
-                    linkBuilds.Add(build);
-                    continue;
-                }
+                if (work != null) { laying.Add((i, work, path)); continue; }
+                built.UnionWith(linkRoads[i]);
                 if (path.Length <= 0) continue;
-                for (float d = 0; d < path.Length; d += 2.6f)
-                    pulses.Add(new Pulse { Path = path, Offset = d, R = Light(Vector3.zero, PulseColor, .32f, -5800) });
+                for (int k = 0; k < 2; k++)
+                    pods.Add(new Pod { Path = path, R = HoverPod(i + k), Offset = k * path.Length * .55f + i, Speed = .9f + .1f * k });
                 var drone = Drone3D();
                 if (drone != null)
                 {
@@ -299,6 +294,17 @@ namespace Colonia09.Presentation
                     shadow.sortingOrder = -5790;
                     drones.Add(new Drone { Path = path, R = drone, Shadow = shadow, Offset = i * 2.3f, Speed = .55f + .07f * i });
                 }
+            }
+            if (state.Connected.Contains("port")) built.Add(Island.roads.Length - 1);  // The harbor's pier.
+            LayRoads(built);
+            foreach (var (link, work, path) in laying)
+            {
+                // Still being laid: the deck grows section by section behind a construction drone.
+                var build = new LinkBuild { Work = work, Path = path, Ends = new List<float>() };
+                build.Sections = RoadSections(link, built, build.Ends);
+                build.Tip = Light(Vector3.zero, new Color(1f, .8f, .4f, 1), .5f, 9000);
+                build.Rig = Drone3D();
+                linkBuilds.Add(build);
             }
 
             foreach (var sector in sectors)
@@ -651,12 +657,15 @@ namespace Colonia09.Presentation
             if (selection != null && selection.gameObject.activeSelf)
                 selection.color = new Color(1, .83f, .55f, .6f + .4f * Mathf.PingPong(now * 2, 1));
 
-            foreach (var p in pulses)
+            foreach (var p in pods)
             {
-                float d = Mathf.Repeat(now * 1.2f + p.Offset, p.Path.Length);
-                p.R.transform.position = p.Path.At(d);
-                float edge = Mathf.Clamp01(Mathf.Min(d, p.Path.Length - d) / .4f);  // Fade at the platform edges.
-                p.R.color = new Color(PulseColor.r, PulseColor.g, PulseColor.b, PulseColor.a * edge * glowBoost);
+                // Back and forth between the two districts, gliding just over the deck, slowing at each end.
+                float cycle = Mathf.PingPong(now * p.Speed + p.Offset, p.Path.Length);
+                float d = Mathf.SmoothStep(0, p.Path.Length, cycle / p.Path.Length);
+                var at = p.Path.At(d);
+                var ahead = p.Path.At(Mathf.Min(p.Path.Length, d + .25f)) - p.Path.At(Mathf.Max(0, d - .25f));
+                p.R.position = at + new Vector3(0, .06f + Mathf.Sin(now * 3 + p.Offset) * .01f, 0);
+                if (ahead.sqrMagnitude > 1e-5f) p.R.rotation = Quaternion.LookRotation(new Vector3(ahead.x, 0, ahead.z));
             }
             foreach (var dr in drones)
             {
@@ -701,19 +710,28 @@ namespace Colonia09.Presentation
             foreach (var lb in linkBuilds)
             {
                 float progress = Colony.Progress(lb.Work.startTicks, lb.Work.readyTicks);
-                int lit = Mathf.FloorToInt(progress * lb.Tiles.Count + .001f);
-                for (int i = 0; i < lb.Tiles.Count; i++) lb.Tiles[i].SetActive(i < lit);
+                float reach = progress * lb.Path.Length;
+                for (int i = 0; i < lb.Sections.Count; i++) lb.Sections[i].SetActive(lb.Ends[i] <= reach + .01f);
                 bool tip = lb.Path.Length > 0;
                 lb.Tip.gameObject.SetActive(tip);
+                if (lb.Rig != null) lb.Rig.gameObject.SetActive(tip);
                 if (tip)
                 {
-                    lb.Tip.transform.position = lb.Path.At(progress * lb.Path.Length) + new Vector3(0, .05f, 0);
+                    // The drone hovers over the end of the laid deck, welding the next section.
+                    var end = lb.Path.At(reach);
+                    lb.Tip.transform.position = end + new Vector3(0, .3f, 0);
                     lb.Tip.color = new Color(1, .8f, .4f, .6f + .4f * Mathf.PingPong(now * 4, 1));
+                    if (lb.Rig != null)
+                    {
+                        lb.Rig.position = end + new Vector3(Mathf.Sin(now * 1.7f) * .15f, .75f + Mathf.Sin(now * 2.6f) * .05f, Mathf.Cos(now * 1.3f) * .15f);
+                        var ahead = lb.Path.At(reach + .3f) - end;
+                        if (ahead.sqrMagnitude > 1e-5f) lb.Rig.rotation = Quaternion.LookRotation(new Vector3(ahead.x, 0, ahead.z));
+                    }
                 }
             }
             float st = now - sweepAt;
             sweep.gameObject.SetActive(sweepPath != null && st < SweepTime);
-            if (sweep.gameObject.activeSelf) sweep.transform.position = sweepPath.At(st / SweepTime * sweepPath.Length);
+            if (sweep.gameObject.activeSelf) sweep.transform.position = sweepPath.At(st / SweepTime * sweepPath.Length) + new Vector3(0, .35f, 0);
             float ft = now - flashAt;
             flash.gameObject.SetActive(ft >= 0 && ft < .8f);
             if (flash.gameObject.activeSelf)

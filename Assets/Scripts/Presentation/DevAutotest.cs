@@ -428,7 +428,7 @@ namespace Colonia09.Presentation
             yield return Frames(2);
             Check("connecting the camp starts laying the link", Colony.IsConnecting("camp") && !Colony.IsConnected("camp") && !ui.BriefingOpen);
             Colony.Now = () => DateTime.UtcNow.AddMinutes(5);
-            map.Focus(CampaignData.Sectors[1]);
+            map.LookAtLink(0, 4.5f);  // The deck growing between the landing and the camp.
             yield return Frames(8);
             yield return Shot($"{shot + 1:00}_link_building");
             Colony.Now = () => DateTime.UtcNow.AddMinutes(7);
@@ -466,6 +466,16 @@ namespace Colonia09.Presentation
             map.Rebuild();
             yield return Frames(3);
             yield return Shot("51_map_far_day");
+            // The mag-lev road between the first two zones, close up, by day and by night.
+            map.LookAtLink(0, 3.2f);
+            yield return Frames(3);
+            yield return Shot("52_road_day");
+            map.ForceHour = 23;
+            map.Rebuild();
+            yield return Frames(3);
+            yield return Shot("53_road_night");
+            map.ForceHour = 13;
+            map.Rebuild();
             map.Zoom(.1f);
             map.Focus(CampaignData.Sectors[1]);
             map.ForceHour = null;

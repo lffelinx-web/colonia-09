@@ -26,13 +26,6 @@ namespace Colonia09.Presentation
         static IslandLayout Island => layout ?? (layout = JsonUtility.FromJson<IslandLayout>(
             Resources.Load<TextAsset>("Island/IslandLayout").text));
 
-        /// <summary>A point of the district plan (roads, links) on the island, just over the road surface.</summary>
-        static Vector3 IslandPoint(Vector2 pixel)
-        {
-            var ab = PlanAb(pixel);
-            return World(ab.x, ab.y, .04f);
-        }
-
         static Vector3 LocalTile(CampaignSector sector, float dx, float dy)
         {
             var c = ZoneAb(sector);
@@ -99,22 +92,6 @@ namespace Colonia09.Presentation
             cam.backgroundColor = Color.Lerp((Color)new Color32(16, 74, 96, 255), new Color32(0, 18, 40, 255), Nightness);
         }
 
-        List<GameObject> LightRoad(CampaignSector to, out Path path)
-        {
-            path = new Path();
-            foreach (var pixel in Island.links[to.Number - 2].points) path.Append(IslandPoint(pixel));
-            var markers = new List<GameObject>();
-            for (float d = .35f; d < path.Length; d += .75f)
-            {
-                var p = path.At(d);
-                var direction = (path.At(d + .10f) - p).normalized;
-                var curb = p + new Vector3(-direction.z, 0, direction.x) * .5f;
-                var marker = Light(curb, new Color(.28f, .86f, .95f, .85f), .12f, -5830);
-                markers.Add(marker.gameObject);
-            }
-            return markers;
-        }
-
         // ---- Camera ----------------------------------------------------------------------
 
         /// <summary>A light perspective: tilted down this much, a narrow lens, looking from the south-east.</summary>
@@ -163,6 +140,16 @@ namespace Colonia09.Presentation
         {
             if (Distant || zoom < CloseZoom) zoom = FocusZoom;
             center = ZoneAb(sector) + ScreenToGround(new Vector2(0, (insetBottom - insetTop) / 2));
+            Clamp();
+        }
+
+        /// <summary>For the automated screenshots: the middle of a connection's road, close up.</summary>
+        public void LookAtLink(int link, float closeZoom)
+        {
+            var path = LinkPath(link);
+            var middle = path.At(path.Length * .5f) - IslandOrigin;
+            center = new Vector2(middle.x, -middle.z);
+            zoom = closeZoom;
             Clamp();
         }
 
